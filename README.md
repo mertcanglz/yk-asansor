@@ -11,7 +11,7 @@ Saf HTML/CSS/JS tanıtım sitesi. Derleme gerekmez; `main` dalına her push GitH
    - "Hizmetler bölümüne 'Yük asansörü' kartı ekle"
    - "Ana renkleri koyu yeşil ve sarı yap"
 4. Claude değişikliği yapar ve kendi dalına push'lar. Uygulamadaki **PR oluştur** ile `main`'e birleştir.
-5. 1–2 dakika içinde canlı site güncellenir: `https://<kullanici-adi>.github.io/yk-asansor/`
+5. 1–2 dakika içinde canlı site güncellenir: `https://mertcanglz.github.io/yk-asansor/`
 
 ## Bilgisayarda önizleme
 
