@@ -12,7 +12,7 @@ Bu repo, **YK Asansör** işletmesinin tanıtım web sitesidir. Site sahibi proj
 
 - **Derleme yok**: saf HTML + CSS + JavaScript. npm, framework veya build adımı ekleme
   (kullanıcı açıkça istemedikçe). Böylece bulut oturumunda kurulum gerekmez.
-- Yayın: GitHub Pages, `.github/workflows/pages.yml` ile `main` dalından otomatik.
+- Yayın: GitHub Pages, "Deploy from a branch" (main, / kök) ile otomatik. Workflow dosyası ekleme.
 - Yerel önizleme: `python3 -m http.server 8080` → http://localhost:8080
 
 ## Dosya yapısı
