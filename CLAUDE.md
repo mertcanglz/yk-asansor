@@ -41,7 +41,16 @@ Aşağıdaki `TODO` alanları sitede yer tutucu olarak duruyor. Kullanıcı bilg
 hem buraya hem siteye işle:
 
 - Firma adı: YK Asansör
-- Hizmetler: TODO (ör. asansör montajı, bakım, onarım, modernizasyon, 7/24 arıza)
+- Hizmetler (kullanıcı onayladı; referans: gunesasansor.com.tr ile aynı kapsam):
+  - Yeni asansör montajı (projelendirme dahil)
+  - Periyodik bakım sözleşmesi (aylık bakım)
+  - Modernizasyon ve revizyon
+  - 7/24 acil arıza ve teknik destek
+  - Genel temizlik ve muayene servisi
+  - Yeşil etiket / A tipi muayene hazırlığı (sitede ayrı bilgilendirme bölümü olacak)
+- Asansör sistemleri: dişli, dişlisiz, hidrolik, yük, lift (villa/engelli), araç,
+  yürüyen merdiven, makine dairesiz (monospace)
+- Kabin çözümleri: panoramik cam, rezidans ve yolcu, sedye/medikal, yük ve araç
 - Hizmet bölgesi / şehir: TODO
 - Telefon: TODO
 - WhatsApp: TODO
