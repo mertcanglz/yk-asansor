@@ -35,6 +35,28 @@ ve tüm sayfalardaki menüyü güncelle.
 - Görsellere anlamlı `alt` metni yaz; başlık hiyerarşisini (h1 → h2 → h3) koru.
 - Her sayfada `<title>` ve `<meta name="description">` Türkçe ve işletmeye özgü olsun (SEO).
 
+## Yasal sayfalar, form ve çerezler (KVKK)
+
+Sitede **iletişim/teklif formu** (ad soyad, e-posta, telefon), **Google Analytics** ve
+**Meta Pixel** kullanılacak. Bu yüzden aşağıdakilerin hepsi zorunlu, siteye eklenecek:
+
+- **Sayfalar** (footer'dan bağlanır; metinlerin son hâlini bir avukata kontrol ettir):
+  - `kvkk-aydinlatma.html`: KVKK Aydınlatma Metni (veri sorumlusu, işlenen veriler, amaç,
+    hukuki sebep, aktarım — GA ve Meta yurt dışına aktarım dahil —, saklama süresi, haklar, başvuru yolu)
+  - `cerez-politikasi.html`: Çerez Politikası (zorunlu / analiz / pazarlama çerezleri tablosu,
+    süreleri, sağlayıcıları, tercih nasıl değiştirilir)
+  - `gizlilik-politikasi.html`: Gizlilik Politikası
+  - `kullanim-sartlari.html`: Kullanım Şartları
+- **Form**: gönder butonunun yanında aydınlatma metni bağlantısı; pazarlama iletişimi
+  (SMS/e-posta) için ayrı, işaretsiz gelen bir açık rıza kutusu. Ön-işaretli kutu yok.
+- **Çerez onay kutusu** (tasarımı tuvalde, B5-Hero-YeniKabin): "Reddet" ve "Kabul et" eşit
+  görünürlükte; "Tercihler" ile zorunlu (kapatılamaz) / analiz / pazarlama ayrı ayrı seçilir,
+  analiz ve pazarlama varsayılan kapalı. Seçim tarayıcıda saklanır, footer'daki
+  "Çerez tercihleri" bağlantısı ve sol alttaki küçük çerez butonu ile tekrar açılır.
+- **Onaydan önce GA ve Meta Pixel yüklenmez**: Google Consent Mode v2 varsayılanı "denied";
+  analiz onayıyla GA, pazarlama onayıyla Meta Pixel yüklenir/etkinleşir.
+- **Yazı tipleri sitenin kendisinden sunulur** (Google Fonts bağlantısı yok; IP yurt dışına gitmesin).
+
 ## İşletme bilgileri (doldurulacak)
 
 Aşağıdaki `TODO` alanları sitede yer tutucu olarak duruyor. Kullanıcı bilgi verdikçe
