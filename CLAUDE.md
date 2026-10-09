@@ -86,7 +86,7 @@ hem buraya hem siteye işle:
   rakamlar → kabin çözümleri → bakım paketleri → blog → SSS → footer (hızlı teklif formu:
   ad soyad, telefon, hizmet zorunlu). "Teklif alın" butonları detaylı form açar.
   Header'daki "Yeşil etiket" → `yesil-etiket.html`; "Etiketler ne anlama gelir?" → ana sayfadaki `#etiket`.
-- Telefon: TODO
+- Telefon: 0543 542 86 75 (sitede "0 (543) 542 86 75", bağlantı `tel:+905435428675`)
 - WhatsApp: TODO
 - E-posta: TODO
 - Adres: TODO (açık adres metni bekleniyor). Google İşletme Profili bağlantısı:
