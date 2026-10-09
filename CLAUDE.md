@@ -51,8 +51,10 @@ Sitede **iletişim/teklif formu** (ad soyad, e-posta, telefon), **Google Analyti
   (SMS/e-posta) için ayrı, işaretsiz gelen bir açık rıza kutusu. Ön-işaretli kutu yok.
 - **Çerez onay kutusu** (tasarımı tuvalde, B5-Hero-YeniKabin): "Reddet" ve "Kabul et" eşit
   görünürlükte; "Tercihler" ile zorunlu (kapatılamaz) / analiz / pazarlama ayrı ayrı seçilir,
-  analiz ve pazarlama varsayılan kapalı. Seçim tarayıcıda saklanır, footer'daki
-  "Çerez tercihleri" bağlantısı ve sol alttaki küçük çerez butonu ile tekrar açılır.
+  analiz ve pazarlama varsayılan kapalı. Seçim tarayıcıda saklanır (180 gün, her girişte
+  sorulmaz), footer'daki "Çerez tercihleri" bağlantısı ve sol alttaki küçük çerez butonu ile
+  tekrar açılır. KVKK Çerez Rehberi gereği: "Kabul et" öne çıkarılmaz (butonlar aynı renk,
+  boyut, punto); "siteyi kullanarak kabul etmiş sayılırsınız" gibi örtülü rıza ifadesi kullanılmaz.
 - **Onaydan önce GA ve Meta Pixel yüklenmez**: Google Consent Mode v2 varsayılanı "denied";
   analiz onayıyla GA, pazarlama onayıyla Meta Pixel yüklenir/etkinleşir.
 - **Yazı tipleri sitenin kendisinden sunulur** (Google Fonts bağlantısı yok; IP yurt dışına gitmesin).
