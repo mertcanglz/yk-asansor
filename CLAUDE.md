@@ -75,7 +75,17 @@ hem buraya hem siteye işle:
 - Asansör sistemleri: dişli, dişlisiz, hidrolik, yük, lift (villa/engelli), araç,
   yürüyen merdiven, makine dairesiz (monospace)
 - Kabin çözümleri: panoramik cam, rezidans ve yolcu, sedye/medikal, yük ve araç
-- Hizmet bölgesi / şehir: TODO
+- Hizmet bölgesi: Türkiye geneli; SEO için yakın bölgeler öne çıkar (Sancaktepe, Samandıra,
+  Yenidoğan, Sarıgazi, Sultanbeyli). Bölge adları özellikle SSS yanıtlarında ve blog yazılarında
+  geçer ("Sancaktepe asansör bakım" gibi aramalar); "Türkiye geneli" bunların gölgesinde kalmasın.
+- Rakamlar şeridi (kullanıcı verdi): 10+ yıl ekip tecrübesi, 30 dk ortalama arıza müdahalesi,
+  500+ asansör montajı.
+- SSS: yanıtlar düz metin olarak sayfada, marka adı ve bölgeler doğal geçer; `FAQPage`
+  yapılandırılmış verisi (JSON-LD) eklenir ki arama motorları ve yapay zekâ asistanları alıntılasın.
+- Ana sayfa sırası: hero (3 kat) → asansör sistemleri → neden YK Asansör → etiket bölümü →
+  rakamlar → kabin çözümleri → bakım paketleri → blog → SSS → footer (hızlı teklif formu:
+  ad soyad, telefon, hizmet zorunlu). "Teklif alın" butonları detaylı form açar.
+  Header'daki "Yeşil etiket" → `yesil-etiket.html`; "Etiketler ne anlama gelir?" → ana sayfadaki `#etiket`.
 - Telefon: TODO
 - WhatsApp: TODO
 - E-posta: TODO
