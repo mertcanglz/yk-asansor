@@ -48,7 +48,13 @@ Sitede **iletişim/teklif formu** (ad soyad, e-posta, telefon), **Google Analyti
   - `cerez-politikasi.html`: Çerez Politikası (zorunlu / analiz / pazarlama çerezleri tablosu,
     süreleri, sağlayıcıları, tercih nasıl değiştirilir)
   - `gizlilik-politikasi.html`: Gizlilik Politikası
-  - `kullanim-sartlari.html`: Kullanım Şartları
+  - `kullanim-sartlari.html`: Kullanım Şartları (6563 m. 3 site sahibi bilgileri burada; ayrı künye sayfası yok)
+  - `acik-riza-metni.html`: Açık Rıza ve Ticari Elektronik İleti Onay Metni (footer'da değil, yalnızca
+    formdaki pazarlama onay kutusundan bağlanır; kampanya kanalları SMS, e-posta, arama — WhatsApp yok)
+  - Ayrı KVKK başvuru formu sayfası ve künye sayfası **olmayacak** (kullanıcı kararı).
+  - Tasarımları Claude Design'daki ana proje "YK Asansör Hero" içinde "Yasal sayfalar" sayfasında (onaylandı): sitenin header/footer'ı,
+    ortalı sayfa konumu + italik olmayan başlık, altında sade paragraf metin. Kart, kutu, turuncu etiket,
+    "ilgili yasal metinler" alanı yok; yasal metinler göze batmamalı.
 - **Form**: gönder butonunun yanında aydınlatma metni bağlantısı; pazarlama iletişimi
   (SMS/e-posta) için ayrı, işaretsiz gelen bir açık rıza kutusu. Ön-işaretli kutu yok.
 - **Çerez onay kutusu** (tasarımı tuvalde, B5-Hero-YeniKabin): "Reddet" ve "Kabul et" eşit
@@ -66,7 +72,12 @@ Sitede **iletişim/teklif formu** (ad soyad, e-posta, telefon), **Google Analyti
 Aşağıdaki `TODO` alanları sitede yer tutucu olarak duruyor. Kullanıcı bilgi verdikçe
 hem buraya hem siteye işle:
 
-- Firma adı: YK Asansör
+- Firma adı: YK Asansör (marka adı kesin değil, marka tescili yok)
+- Resmi bilgiler henüz yok (vergi levhası, ticari unvan, MERSİS, vergi no, KEP). Yasal sayfalarda
+  sarı vurgulu `<span class="ph">[...]</span>` yer tutucu olarak duruyor; bilgi gelince hepsini
+  doldur (`grep -n 'class="ph"' *.html`). Yasal metinlerde marka yerine “İşletme” tanımı kullanılır.
+- Tasarım: Claude Design'daki "YK Asansör Hero" projesinin **A grubu** kullanılacak; fotoğrafları
+  kullanıcı sonra üretip iletecek.
 - Hizmetler (kullanıcı onayladı; referans: gunesasansor.com.tr ile aynı kapsam):
   - Yeni asansör montajı (projelendirme dahil)
   - Periyodik bakım sözleşmesi (aylık bakım)
