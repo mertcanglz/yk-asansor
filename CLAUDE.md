@@ -66,7 +66,12 @@ Sitede **iletişim/teklif formu** (ad soyad, e-posta, telefon), **Google Analyti
 Aşağıdaki `TODO` alanları sitede yer tutucu olarak duruyor. Kullanıcı bilgi verdikçe
 hem buraya hem siteye işle:
 
-- Firma adı: YK Asansör
+- Firma adı: YK Asansör (marka adı kesin değil, marka tescili yok)
+- Resmi bilgiler henüz yok (vergi levhası, ticari unvan, MERSİS, vergi no, KEP). Yasal sayfalarda
+  sarı vurgulu `<span class="ph">[...]</span>` yer tutucu olarak duruyor; bilgi gelince hepsini
+  doldur (`grep -n 'class="ph"' *.html`). Yasal metinlerde marka yerine “İşletme” tanımı kullanılır.
+- Tasarım: Claude Design'daki "YK Asansör Hero" projesinin **A grubu** kullanılacak; fotoğrafları
+  kullanıcı sonra üretip iletecek.
 - Hizmetler (kullanıcı onayladı; referans: gunesasansor.com.tr ile aynı kapsam):
   - Yeni asansör montajı (projelendirme dahil)
   - Periyodik bakım sözleşmesi (aylık bakım)
