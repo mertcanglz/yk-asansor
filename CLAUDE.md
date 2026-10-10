@@ -52,7 +52,7 @@ Sitede **iletişim/teklif formu** (ad soyad, e-posta, telefon), **Google Analyti
   - `acik-riza-metni.html`: Açık Rıza ve Ticari Elektronik İleti Onay Metni (footer'da değil, yalnızca
     formdaki pazarlama onay kutusundan bağlanır; kampanya kanalları SMS, e-posta, arama — WhatsApp yok)
   - Ayrı KVKK başvuru formu sayfası ve künye sayfası **olmayacak** (kullanıcı kararı).
-  - Tasarımları Claude Design'daki "YK Asansör — Yasal Sayfalar" tuvalinde (onaylandı): sitenin header/footer'ı,
+  - Tasarımları Claude Design'daki ana proje "YK Asansör Hero" içinde "Yasal sayfalar" sayfasında (onaylandı): sitenin header/footer'ı,
     ortalı sayfa konumu + italik olmayan başlık, altında sade paragraf metin. Kart, kutu, turuncu etiket,
     "ilgili yasal metinler" alanı yok; yasal metinler göze batmamalı.
 - **Form**: gönder butonunun yanında aydınlatma metni bağlantısı; pazarlama iletişimi
