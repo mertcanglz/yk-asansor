@@ -88,7 +88,8 @@ hem buraya hem siteye işle:
   geçer ("Sancaktepe asansör bakım" gibi aramalar); "Türkiye geneli" bunların gölgesinde kalmasın.
 - Rakamlar şeridi (kullanıcı verdi): 10+ yıl ekip tecrübesi, 30 dk ortalama arıza müdahalesi,
   500+ asansör montajı.
-- SSS: yanıtlar düz metin olarak sayfada, marka adı ve bölgeler doğal geçer; `FAQPage`
+- SSS: yanıtlar düz metin olarak sayfada (mobilde açılışta hepsi kapalı akordeon; kapalıyken de
+  HTML'de dursun, `<details>`/`<summary>` ile — JS ile sonradan eklenmesin), marka adı ve bölgeler doğal geçer; `FAQPage`
   yapılandırılmış verisi (JSON-LD) eklenir ki arama motorları ve yapay zekâ asistanları alıntılasın.
 - Ana sayfa sırası: hero (3 kat) → asansör sistemleri → neden YK Asansör → etiket bölümü →
   rakamlar → kabin çözümleri → bakım paketleri → blog → SSS → footer (hızlı teklif formu:
