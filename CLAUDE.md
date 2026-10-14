@@ -34,6 +34,12 @@ ve tüm sayfalardaki menüyü güncelle.
 - Telefon numarası tıklanınca arama yapmalı (`tel:`), WhatsApp butonu `https://wa.me/90XXXXXXXXXX`.
 - Sağ alttaki turuncu WhatsApp butonu **tüm sayfalarda** aynı görünümde ve sabit (`position: fixed`).
   Kampanya kutusu yalnızca ana sayfada.
+- **Mobil hero, koda çevirirken** (tasarım: tuvaldeki "Ana sayfa — mobil · geliştirme kopyası"):
+  hero metni ekranın altına yaslı; butonların altında şimdilik sabit bir boşluk var (tuvalde 120 px).
+  Sitede bu boşluk sabit px olmasın, telefona göre hesaplansın: WhatsApp butonu alanı
+  (alt 16 px + 56 px) + `env(safe-area-inset-bottom)` + küçük pay. Çerez bildirimi açıkken
+  bildirimin gerçek yüksekliği kadar artar. Hero yüksekliği `100vh` değil `100svh`/`100dvh`
+  olsun (adres çubuğu butonları örtmesin); 360 px genişlik ve kısa ekranlarda (≤ 720 px) test et.
 - Görsellere anlamlı `alt` metni yaz; başlık hiyerarşisini (h1 → h2 → h3) koru.
 - Her sayfada `<title>` ve `<meta name="description">` Türkçe ve işletmeye özgü olsun (SEO).
 
