@@ -34,7 +34,7 @@ ve tüm sayfalardaki menüyü güncelle.
 - Telefon numarası tıklanınca arama yapmalı (`tel:`), WhatsApp butonu `https://wa.me/90XXXXXXXXXX`.
 - Sağ alttaki turuncu WhatsApp butonu **tüm sayfalarda** aynı görünümde ve sabit (`position: fixed`).
   Kampanya kutusu yalnızca ana sayfada.
-- **Mobil hero, koda çevirirken** (tasarım: tuvaldeki "Ana sayfa — mobil · geliştirme kopyası"):
+- **Mobil hero, koda çevirirken** (onaylı tasarım: tuvalde "Onaylanan sayfalar" → "Ana sayfa — mobil"):
   hero metni ekranın altına yaslı; butonların altında şimdilik sabit bir boşluk var (tuvalde 120 px).
   Sitede bu boşluk sabit px olmasın, telefona göre hesaplansın: WhatsApp butonu alanı
   (alt 16 px + 56 px) + `env(safe-area-inset-bottom)` + küçük pay. Çerez bildirimi açıkken
@@ -61,7 +61,7 @@ Sitede **iletişim/teklif formu** (ad soyad, e-posta, telefon), **Google Analyti
   görünürlükte; "Tercihler" ile zorunlu (kapatılamaz) / analiz / pazarlama ayrı ayrı seçilir,
   analiz ve pazarlama varsayılan kapalı. Seçim tarayıcıda saklanır (180 gün, her girişte
   sorulmaz), footer'daki "Çerez tercihleri" bağlantısı ve sol alttaki küçük çerez butonu ile
-  tekrar açılır. KVKK Çerez Rehberi gereği: "Kabul et" öne çıkarılmaz (butonlar aynı renk,
+  tekrar açılır (telefonda seçim yapılınca küçük çerez butonu gösterilmez, yalnızca footer bağlantısı). KVKK Çerez Rehberi gereği: "Kabul et" öne çıkarılmaz (butonlar aynı renk,
   boyut, punto); "siteyi kullanarak kabul etmiş sayılırsınız" gibi örtülü rıza ifadesi kullanılmaz.
 - **Onaydan önce GA ve Meta Pixel yüklenmez**: Google Consent Mode v2 varsayılanı "denied";
   analiz onayıyla GA, pazarlama onayıyla Meta Pixel yüklenir/etkinleşir.
