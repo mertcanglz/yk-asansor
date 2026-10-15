@@ -16,7 +16,7 @@ Bu repo, **YK Asansör** işletmesinin tanıtım web sitesidir. Site sahibi proj
   onaylanırsa işletmenin kendi hosting'i (Alastyr) ve alan adıyla yayınlanır.
 - Formlar: Alastyr hosting'de çalışan küçük bir PHP betiğiyle kurumsal e-postaya gönderilir (SMTP).
   Sunucu tarafı doğrulama (ör. telefon `^05\d{9}$`) bu betikte yapılır. Derleme yok kuralı geçerli;
-  PHP yalnızca form gönderimi için. Kurumsal e-posta adresi: TODO.
+  PHP yalnızca form gönderimi için. Kurumsal e-posta adresi: TODO (marka adı kesinleşince).
 - Yerel önizleme: `python3 -m http.server 8080` → http://localhost:8080
 
 ## Dosya yapısı
@@ -85,7 +85,8 @@ Sitede **iletişim/teklif formu** (ad soyad, e-posta, telefon), **Google Analyti
 Aşağıdaki `TODO` alanları sitede yer tutucu olarak duruyor. Kullanıcı bilgi verdikçe
 hem buraya hem siteye işle:
 
-- Firma adı: YK Asansör
+- Firma adı: YK Asansör (çalışma adı; marka adı henüz kesinleşmedi — kesinleşince sitedeki
+  tüm geçişleri, `<title>`/meta açıklamaları ve yasal metinleri güncelle)
 - Hizmetler (kullanıcı onayladı; referans: gunesasansor.com.tr ile aynı kapsam):
   - Yeni asansör montajı (projelendirme dahil)
   - Periyodik bakım sözleşmesi (aylık bakım)
@@ -115,7 +116,8 @@ hem buraya hem siteye işle:
   Teklif formunda isteğe bağlı, göze batmayan "Sizi yönlendiren müşterimiz" alanı var;
 - Telefon: 0543 542 86 75 (sitede "0 (543) 542 86 75", bağlantı `tel:+905435428675`)
 - WhatsApp: iletişim numarasıyla aynı, 0543 542 86 75 (`https://wa.me/905435428675`)
-- E-posta: TODO
+- E-posta: TODO — marka adı kesinleşince belirlenecek kurumsal adres; hem sitedeki iletişim
+  e-postası hem form gönderimlerinin gideceği adres bu olacak (şimdilik `[E-POSTA ADRESİ]` yer tutucusu).
 - Adres: Abdurrahman Gazi Mah. Altınordu Cad. No: 38-40/A, Sancaktepe / İstanbul
   (Google İşletme Profili ve Instagram'daki adresle aynı). Google İşletme Profili bağlantısı:
   https://share.google/k3h68ZxTo8hSalAoL (tek doğru konum bağlantısı) — footer'daki adres ve
