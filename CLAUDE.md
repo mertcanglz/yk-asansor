@@ -41,6 +41,9 @@ ve tüm sayfalardaki menüyü güncelle.
   (alt 16 px + 56 px) + `env(safe-area-inset-bottom)` + küçük pay. Çerez bildirimi açıkken
   bildirimin gerçek yüksekliği kadar artar. Hero yüksekliği `100vh` değil `100svh`/`100dvh`
   olsun (adres çubuğu butonları örtmesin); 360 px genişlik ve kısa ekranlarda (≤ 720 px) test et.
+- **Başlıklarda anlamsız satır kırılması olmaz:** iki parçalı başlıklarda (ör. blog: "X: Y?") ":" sonrası
+  alt satıra geçer, her parça `text-wrap: balance` ile dengeli kırılır; tek kelime alt satırda kalmaz.
+  Blog yazı başlığının genişliği yazı sütununu (848 px) geçmez; yazı kapağı görselsiz ve ortalıdır.
 - Görsellere anlamlı `alt` metni yaz; başlık hiyerarşisini (h1 → h2 → h3) koru.
 - Her sayfada `<title>` ve `<meta name="description">` Türkçe ve işletmeye özgü olsun (SEO).
 
