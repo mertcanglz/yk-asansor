@@ -6,13 +6,17 @@ Bu repo, **YK Asansör** işletmesinin tanıtım web sitesidir. Site sahibi proj
 - Kullanıcıyla **Türkçe** konuş. Site içeriği de Türkçe.
 - Değişiklikleri küçük ve anlaşılır tut; her işten sonra kısa bir Türkçe özet ver.
 - İş bitince değişiklikleri commit'le ve push'la (bulut oturumu kendi dalında çalışır;
-  kullanıcı isterse PR açıp `main`'e birleştir). `main`'e gelen her push siteyi otomatik yayınlar.
+  kullanıcı isterse PR açıp `main`'e birleştir). Site şu an hiçbir yere otomatik yayınlanmıyor (bkz. Yayın).
 
 ## Teknoloji
 
 - **Derleme yok**: saf HTML + CSS + JavaScript. npm, framework veya build adımı ekleme
   (kullanıcı açıkça istemedikçe). Böylece bulut oturumunda kurulum gerekmez.
-- Yayın: GitHub Pages, "Deploy from a branch" (main, / kök) ile otomatik. Workflow dosyası ekleme.
+- Yayın: GitHub Pages kullanılmaz. Site bitince deneme için Claude geçici bir adreste yayınlar;
+  onaylanırsa işletmenin kendi hosting'i (Alastyr) ve alan adıyla yayınlanır.
+- Formlar: Alastyr hosting'de çalışan küçük bir PHP betiğiyle kurumsal e-postaya gönderilir (SMTP).
+  Sunucu tarafı doğrulama (ör. telefon `^05\d{9}$`) bu betikte yapılır. Derleme yok kuralı geçerli;
+  PHP yalnızca form gönderimi için. Kurumsal e-posta adresi: TODO.
 - Yerel önizleme: `python3 -m http.server 8080` → http://localhost:8080
 
 ## Dosya yapısı
@@ -31,7 +35,7 @@ ve tüm sayfalardaki menüyü güncelle.
 
 - **Önce mobil**: site önce telefonda iyi görünmeli (360px genişlikte test et), sonra masaüstü.
 - Renk ve font değişiklikleri yalnızca `style.css` içindeki `:root` değişkenlerinden yapılır.
-- Telefon numarası tıklanınca arama yapmalı (`tel:`), WhatsApp butonu `https://wa.me/90XXXXXXXXXX`.
+- Telefon numarası tıklanınca arama yapmalı (`tel:`), WhatsApp butonu `https://wa.me/905435428675` (iletişim numarasıyla aynı).
 - Sağ alttaki turuncu WhatsApp butonu **tüm sayfalarda** aynı görünümde ve sabit (`position: fixed`);
   tek istisna teklif formu sayfası (`teklif-formu.html`), orada WhatsApp butonu yok.
   Kampanya kutusu yalnızca ana sayfada.
@@ -64,7 +68,7 @@ Sitede **iletişim/teklif formu** (ad soyad, e-posta, telefon), **Google Analyti
 - **Form**: gönder butonunun yanında aydınlatma metni bağlantısı. Pazarlama iletişimi (SMS/e-posta
   kampanya duyurusu) yapılmayacak; bu yüzden formlarda pazarlama izni / açık rıza kutusu yok
   (kullanıcı kararı). İleride ticari ileti gönderilirse ayrı, işaretsiz bir onay kutusu eklenmeli.
-- **Çerez onay kutusu** (tasarımı tuvalde, B5-Hero-YeniKabin): "Reddet" ve "Kabul et" eşit
+- **Çerez onay kutusu** (tasarımı tuvalde, "Ana sayfa — masaüstü" ve "Ana sayfa — mobil"): "Reddet" ve "Kabul et" eşit
   görünürlükte; "Tercihler" ile zorunlu (kapatılamaz) / analiz / pazarlama ayrı ayrı seçilir,
   analiz ve pazarlama varsayılan kapalı. Seçim tarayıcıda saklanır (180 gün, her girişte
   sorulmaz), footer'daki "Çerez tercihleri" bağlantısı ve sol alttaki küçük çerez butonu ile
@@ -103,11 +107,12 @@ hem buraya hem siteye işle:
   ad soyad, telefon, hizmet zorunlu). "Teklif alın" butonları detaylı form açar.
   Header'daki "Yeşil etiket" → `yesil-etiket.html`; "Etiketler ne anlama gelir?" → ana sayfadaki `#etiket`.
 - Kampanyalar: (1) bakım sözleşmelerinde ilk keşif ve 3 lt ray yağı değişimi ücretsiz;
-  (2) referans kampanyası: yeni müşteri yönlendiren mevcut müşterilere indirim (oran/koşullar TODO).
+  (2) referans kampanyası: yeni bir apartman yönlendiren mevcut müşteriye bir sonraki bakım
+  faturasında indirim (indirim oranı TODO).
   Teklif formunda isteğe bağlı, göze batmayan "Sizi yönlendiren müşterimiz" alanı var;
   ana sayfaya ayrıca bir referans kampanyası bölümü eklenecek.
 - Telefon: 0543 542 86 75 (sitede "0 (543) 542 86 75", bağlantı `tel:+905435428675`)
-- WhatsApp: TODO
+- WhatsApp: iletişim numarasıyla aynı, 0543 542 86 75 (`https://wa.me/905435428675`)
 - E-posta: TODO
 - Adres: Abdurrahman Gazi Mah. Altınordu Cad. No: 38-40/A, Sancaktepe / İstanbul
   (Google İşletme Profili ve Instagram'daki adresle aynı). Google İşletme Profili bağlantısı:

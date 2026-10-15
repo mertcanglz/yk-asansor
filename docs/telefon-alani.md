@@ -21,7 +21,7 @@ Tasarım tuvalinde (Onaylanan sayfalar) 12 çerçevede uygulandı: `telAlan()` y
 8. **Hiç doldurulmadıysa temizle:** yalnızca `0 5` ile çıkılırsa alan boşaltılır, uyarı yok.
 9. **Sunucu tarafı da doğrular:** rakam dışı her şey atılır, sonuç `^05\d{9}$` olmalı; değilse
    "Telefon numarası geçersiz." (JSON'da HTTP 422). E-postada numara `0 538 985 27 56` biçiminde.
-   Not: site GitHub Pages'te statik; form gönderimi için seçilecek servis/arka uçta bu kontrol kurulmalı.
+   Not: formlar Alastyr hosting'deki PHP betiğiyle kurumsal e-postaya gider; bu kontrol o betikte yapılır.
 10. **Erişilebilirlik:** etiket alana bağlı; uyarı `role="alert"`, alandan `aria-describedby` ile işaretli.
     Sayfada birden fazla form varsa her telefon alanının `id`'si ve uyarı öğesi kendine ait olmalı.
 
