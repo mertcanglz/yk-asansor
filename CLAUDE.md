@@ -106,7 +106,7 @@ hem buraya hem siteye işle:
   iletişim ve yasal metinlerde.
 - Rakamlar şeridi (kullanıcı verdi): 10+ yıl ekip tecrübesi, 30 dk ortalama arıza müdahalesi,
   500+ asansör montajı.
-- SSS: yanıtlar düz metin olarak sayfada (mobilde açılışta hepsi kapalı akordeon; kapalıyken de
+- SSS: yanıtlar düz metin olarak sayfada (mobilde tüm sayfalarda açılışta hepsi kapalı akordeon, aynı anda tek soru açık — biri açılınca önceki kapanır, `<details name="sss">`; kapalıyken de
   HTML'de dursun, `<details>`/`<summary>` ile — JS ile sonradan eklenmesin), marka adı doğal geçer (bölge adı yok); `FAQPage`
   yapılandırılmış verisi (JSON-LD) eklenir ki arama motorları ve yapay zekâ asistanları alıntılasın.
 - Ana sayfa sırası: hero (3 kat) → asansör sistemleri → neden YK Asansör → etiket bölümü →
