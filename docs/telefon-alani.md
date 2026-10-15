@@ -9,8 +9,13 @@ Tasarım tuvalinde (Onaylanan sayfalar) 12 çerçevede uygulandı: `telAlan()` y
 1. **Biçim:** `0 5XX XXX XX XX`, toplam 11 rakam, öbekler 1-3-3-2-2. Boşlukları sistem koyar.
 2. **Sabit önek "0 5":** Boş alana tıklanınca/odaklanınca `0 5` yazılır, imleç arkasına konur.
    Önek silinemez (imleç önekin içindeyken Backspace/Delete çalışmaz).
+   **Önekin içine ya da başına yazılamaz (2026-10-15 düzeltmesi):** imleç/seçim hiçbir zaman
+   `0 5`in içine giremez. Tıklama, dokunma ve ok tuşlarında (`select`/`click`/`keyup`) ve yazılabilir
+   bir tuşa basıldığında (`keydown`) imleç önekin arkasına alınır. Seçim öneki de kapsıyorsa yalnızca
+   önekten sonraki kısım değişir.
 3. **Yalnızca rakam;** mobilde rakam klavyesi (`inputmode="numeric"`).
-4. **Yapıştırma kalıba oturur:** `+90 538 985 27 56`, `0090 538…`, `90538…`, `0538…`, `538…`,
+4. **Yapıştırma kalıba oturur** (`paste` olayında varsayılan engellenir, kendimiz yerleştiririz:
+   10+ rakamlı tam numara alanın yerine geçer; kısa parça imlecin olduğu yere, önekin arkasına eklenir): `+90 538 985 27 56`, `0090 538…`, `90538…`, `0538…`, `538…`,
    `(0538) 985-27-56` → `0 538 985 27 56`. Fazla rakam 11'de kesilir.
 5. **İmleç korunur** (sondan sayılarak); ortadan silip yazınca sona zıplamaz.
 6. **Eksik numara gönderilemez:** boşsa `required` uyarısı; yalnızca `0 5` ise
@@ -106,10 +111,42 @@ export function baslat() {
       yaz(sonrasi);
       if (uyari && !uyari.hidden && tamMi(alan.value)) uyariGoster(false);
     });
+    /* Imlec ve secim onegin icine giremez. */
+    const onekUz = bicimle(ONEK).length;
+    const imleciDuzelt = () => {
+      if (!alan.value) return;
+      const a = alan.selectionStart || 0, b = alan.selectionEnd || 0;
+      if (a < onekUz || b < onekUz) alan.setSelectionRange(Math.max(a, onekUz), Math.max(b, onekUz));
+    };
+    alan.addEventListener('select', imleciDuzelt);
+    alan.addEventListener('click', imleciDuzelt);
+    alan.addEventListener('keyup', imleciDuzelt);
+    /* Onek silinemez; onegin icine yazilamaz. */
     alan.addEventListener('keydown', (o) => {
-      if (o.key !== 'Backspace' && o.key !== 'Delete') return;
       const k = alan.selectionStart || 0;
-      if (k <= bicimle(ONEK).length && alan.selectionEnd === k) o.preventDefault();
+      if (o.key && o.key.length === 1 && !o.ctrlKey && !o.metaKey && !o.altKey) { imleciDuzelt(); return; }
+      if (o.key !== 'Backspace' && o.key !== 'Delete') return;
+      if (k <= onekUz && alan.selectionEnd === k) { o.preventDefault(); return; }
+      if (k < onekUz) alan.setSelectionRange(onekUz, Math.max(alan.selectionEnd || 0, onekUz));
+    });
+    /* Yapistirma: tam numara alanin yerine gecer, kisa parca imlece eklenir. */
+    alan.addEventListener('paste', (o) => {
+      const t = (o.clipboardData && o.clipboardData.getData('text')) || '';
+      const pd = t.replace(/\D+/g, '');
+      o.preventDefault();
+      if (!pd) return;
+      if (pd.length >= 10) {
+        alan.value = bicimle(rakamlar(t));
+        alan.setSelectionRange(alan.value.length, alan.value.length);
+        denetle();
+      } else {
+        if (!alan.value.trim()) alan.value = bicimle(ONEK);
+        imleciDuzelt();
+        const a = alan.selectionStart || 0, b = alan.selectionEnd || a;
+        alan.value = alan.value.slice(0, a) + pd + alan.value.slice(b);
+        yaz(alan.value.slice(a + pd.length).replace(/\D+/g, '').length);
+      }
+      if (uyari && !uyari.hidden && tamMi(alan.value)) uyariGoster(false);
     });
     alan.addEventListener('blur', () => {
       if (rakamlar(alan.value).length <= ONEK.length) { alan.value = ''; uyariGoster(false); }
@@ -133,3 +170,6 @@ export function baslat() {
 7. Önekin içindeyken Backspace → `0 5` silinmez.
 8. Sunucuya `telefon=12345` gönder → reddedilir (422).
 9. Telefonda alana dokun → rakam klavyesi açılır.
+10. İmleci `0` ile `5` arasına ya da en başa koyup rakam yaz → rakam önekin arkasına girer, önek bozulmaz.
+11. Tümünü seç (öneki de kapsayan) ve rakam yaz → `0 5` korunur, yalnızca sonrası değişir.
+12. `0 5` varken `+90 538 985 27 56` yapıştır → `0 538 985 27 56` (önek iki kez eklenmez).
