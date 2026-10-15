@@ -56,6 +56,8 @@ Sitede **iletişim/teklif formu** (ad soyad, e-posta, telefon), **Google Analyti
     süreleri, sağlayıcıları, tercih nasıl değiştirilir)
   - `gizlilik-politikasi.html`: Gizlilik Politikası
   - `kullanim-sartlari.html`: Kullanım Şartları
+- **Telefon alanları**: tüm formlarda 11 haneli TR cep maskesi ve doğrulaması — kurallar, kod ve
+  kabul testleri `docs/telefon-alani.md` dosyasında; birebir uygula.
 - **Form**: gönder butonunun yanında aydınlatma metni bağlantısı. Pazarlama iletişimi (SMS/e-posta
   kampanya duyurusu) yapılmayacak; bu yüzden formlarda pazarlama izni / açık rıza kutusu yok
   (kullanıcı kararı). İleride ticari ileti gönderilirse ayrı, işaretsiz bir onay kutusu eklenmeli.
