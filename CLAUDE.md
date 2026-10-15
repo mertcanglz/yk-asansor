@@ -106,7 +106,8 @@ hem buraya hem siteye işle:
 - Telefon: 0543 542 86 75 (sitede "0 (543) 542 86 75", bağlantı `tel:+905435428675`)
 - WhatsApp: TODO
 - E-posta: TODO
-- Adres: TODO (açık adres metni bekleniyor). Google İşletme Profili bağlantısı:
+- Adres: Abdurrahman Gazi Mah. Altınordu Cad. No: 38-40/A, Sancaktepe / İstanbul
+  (Google İşletme Profili ve Instagram'daki adresle aynı). Google İşletme Profili bağlantısı:
   https://share.google/k3h68ZxTo8hSalAoL (tek doğru konum bağlantısı) — footer'daki adres ve
   iletişim sayfasındaki bağlantılar buna gider (yeni sekmede). İletişim sayfasında ekran genişliğinde
   gömülü Google Haritalar olacak; KVKK gereği harita ziyaretçi "Haritayı göster"e basınca yüklenir.
