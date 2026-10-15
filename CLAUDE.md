@@ -56,8 +56,9 @@ Sitede **iletişim/teklif formu** (ad soyad, e-posta, telefon), **Google Analyti
     süreleri, sağlayıcıları, tercih nasıl değiştirilir)
   - `gizlilik-politikasi.html`: Gizlilik Politikası
   - `kullanim-sartlari.html`: Kullanım Şartları
-- **Form**: gönder butonunun yanında aydınlatma metni bağlantısı; pazarlama iletişimi
-  (SMS/e-posta) için ayrı, işaretsiz gelen bir açık rıza kutusu. Ön-işaretli kutu yok.
+- **Form**: gönder butonunun yanında aydınlatma metni bağlantısı. Pazarlama iletişimi (SMS/e-posta
+  kampanya duyurusu) yapılmayacak; bu yüzden formlarda pazarlama izni / açık rıza kutusu yok
+  (kullanıcı kararı). İleride ticari ileti gönderilirse ayrı, işaretsiz bir onay kutusu eklenmeli.
 - **Çerez onay kutusu** (tasarımı tuvalde, B5-Hero-YeniKabin): "Reddet" ve "Kabul et" eşit
   görünürlükte; "Tercihler" ile zorunlu (kapatılamaz) / analiz / pazarlama ayrı ayrı seçilir,
   analiz ve pazarlama varsayılan kapalı. Seçim tarayıcıda saklanır (180 gün, her girişte
