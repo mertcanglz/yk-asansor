@@ -76,7 +76,9 @@ Sitede **iletişim/teklif formu** (ad soyad, e-posta, telefon), **Google Analyti
   boyut, punto); "siteyi kullanarak kabul etmiş sayılırsınız" gibi örtülü rıza ifadesi kullanılmaz.
 - **Onaydan önce GA ve Meta Pixel yüklenmez**: Google Consent Mode v2 varsayılanı "denied";
   analiz onayıyla GA, pazarlama onayıyla Meta Pixel yüklenir/etkinleşir.
-- **Yazı tipleri sitenin kendisinden sunulur** (Google Fonts bağlantısı yok; IP yurt dışına gitmesin).
+- **Yazı tipleri sitenin kendisinden sunulur** (Google Fonts bağlantısı yok; IP yurt dışına gitmesin):
+  Manrope (değişken, 300–600) + Newsreader italik 500, `woff2`, Türkçe karakterler için latin + latin-ext
+  alt kümesi, `font-display: swap`, ana yazı tipi `<link rel="preload">`. Toplam ~100 KB hedef.
 
 ## İşletme bilgileri (doldurulacak)
 
@@ -108,9 +110,9 @@ hem buraya hem siteye işle:
   Header'daki "Yeşil etiket" → `yesil-etiket.html`; "Etiketler ne anlama gelir?" → ana sayfadaki `#etiket`.
 - Kampanyalar: (1) bakım sözleşmelerinde ilk keşif ve 3 lt ray yağı değişimi ücretsiz;
   (2) referans kampanyası: yeni bir apartman yönlendiren mevcut müşteriye bir sonraki bakım
-  faturasında indirim (indirim oranı TODO).
+  faturasında indirim (sitede oran yazılmaz). Ana sayfada bakım paketlerinin altında yalnızca
+  bilgilendirme bandı (3 adım, buton yok).
   Teklif formunda isteğe bağlı, göze batmayan "Sizi yönlendiren müşterimiz" alanı var;
-  ana sayfaya ayrıca bir referans kampanyası bölümü eklenecek.
 - Telefon: 0543 542 86 75 (sitede "0 (543) 542 86 75", bağlantı `tel:+905435428675`)
 - WhatsApp: iletişim numarasıyla aynı, 0543 542 86 75 (`https://wa.me/905435428675`)
 - E-posta: TODO
