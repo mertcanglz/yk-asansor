@@ -107,6 +107,8 @@ hem buraya hem siteye işle:
 - WhatsApp: TODO
 - E-posta: TODO
 - Adres: TODO (açık adres metni bekleniyor). Google İşletme Profili bağlantısı:
-  https://share.google/9scsSjWYzQAXmW9uN — footer'daki adres buna bağlanır (yeni sekmede).
+  https://share.google/k3h68ZxTo8hSalAoL (tek doğru konum bağlantısı) — footer'daki adres ve
+  iletişim sayfasındaki bağlantılar buna gider (yeni sekmede). İletişim sayfasında ekran genişliğinde
+  gömülü Google Haritalar olacak; KVKK gereği harita ziyaretçi "Haritayı göster"e basınca yüklenir.
 - Kuruluş yılı / deneyim: TODO
 - Logo ve marka renkleri: TODO (şu an geçici lacivert + turuncu)
