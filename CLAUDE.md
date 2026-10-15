@@ -32,7 +32,8 @@ ve tüm sayfalardaki menüyü güncelle.
 - **Önce mobil**: site önce telefonda iyi görünmeli (360px genişlikte test et), sonra masaüstü.
 - Renk ve font değişiklikleri yalnızca `style.css` içindeki `:root` değişkenlerinden yapılır.
 - Telefon numarası tıklanınca arama yapmalı (`tel:`), WhatsApp butonu `https://wa.me/90XXXXXXXXXX`.
-- Sağ alttaki turuncu WhatsApp butonu **tüm sayfalarda** aynı görünümde ve sabit (`position: fixed`).
+- Sağ alttaki turuncu WhatsApp butonu **tüm sayfalarda** aynı görünümde ve sabit (`position: fixed`);
+  tek istisna teklif formu sayfası (`teklif-formu.html`), orada WhatsApp butonu yok.
   Kampanya kutusu yalnızca ana sayfada.
 - **Mobil hero, koda çevirirken** (onaylı tasarım: tuvalde "Onaylanan sayfalar" → "Ana sayfa — mobil"):
   hero metni ekranın altına yaslı; butonların altında şimdilik sabit bir boşluk var (tuvalde 120 px).
