@@ -99,13 +99,15 @@ hem buraya hem siteye işle:
 - Asansör sistemleri: dişli, dişlisiz, hidrolik, yük, lift (villa/engelli), araç,
   yürüyen merdiven, makine dairesiz (monospace)
 - Kabin çözümleri: panoramik cam, rezidans ve yolcu, sedye/medikal, yük ve araç
-- Hizmet bölgesi: Türkiye geneli; SEO için yakın bölgeler öne çıkar (Sancaktepe, Samandıra,
-  Yenidoğan, Sarıgazi, Sultanbeyli). Bölge adları özellikle SSS yanıtlarında ve blog yazılarında
-  geçer ("Sancaktepe asansör bakım" gibi aramalar); "Türkiye geneli" bunların gölgesinde kalmasın.
+- Hizmet bölgesi: Türkiye geneli. Sayfa metinlerinde (giriş metinleri, SSS, meta açıklamaları)
+  ilçe/mahalle adı ve "X merkezli ekibimiz" kalıbı kullanılmaz; hedef kitleyi daraltıyor (kullanıcı kararı).
+  Yerel SEO ("Sancaktepe asansör bakım" gibi aramalar) yalnızca bu bölgeler için ayrı, özgün blog
+  yazılarıyla yapılır (Sancaktepe, Samandıra, Yenidoğan, Sarıgazi, Sultanbeyli). Adres yalnızca footer,
+  iletişim ve yasal metinlerde.
 - Rakamlar şeridi (kullanıcı verdi): 10+ yıl ekip tecrübesi, 30 dk ortalama arıza müdahalesi,
   500+ asansör montajı.
 - SSS: yanıtlar düz metin olarak sayfada (mobilde açılışta hepsi kapalı akordeon; kapalıyken de
-  HTML'de dursun, `<details>`/`<summary>` ile — JS ile sonradan eklenmesin), marka adı ve bölgeler doğal geçer; `FAQPage`
+  HTML'de dursun, `<details>`/`<summary>` ile — JS ile sonradan eklenmesin), marka adı doğal geçer (bölge adı yok); `FAQPage`
   yapılandırılmış verisi (JSON-LD) eklenir ki arama motorları ve yapay zekâ asistanları alıntılasın.
 - Ana sayfa sırası: hero (3 kat) → asansör sistemleri → neden YK Asansör → etiket bölümü →
   rakamlar → kabin çözümleri → bakım paketleri → blog → SSS → footer (hızlı teklif formu:
