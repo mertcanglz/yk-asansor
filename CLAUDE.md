@@ -129,5 +129,8 @@ hem buraya hem siteye işle:
   https://share.google/k3h68ZxTo8hSalAoL (tek doğru konum bağlantısı) — footer'daki adres ve
   iletişim sayfasındaki bağlantılar buna gider (yeni sekmede). İletişim sayfasında ekran genişliğinde
   gömülü Google Haritalar olacak; KVKK gereği harita ziyaretçi "Haritayı göster"e basınca yüklenir.
+- Sosyal medya: Instagram, Facebook, LinkedIn — hesap adresleri TODO (sitede `[INSTAGRAM]`, `[FACEBOOK]`,
+  `[LINKEDIN]` yer tutucusu). İkonlar tüm footer'ların alt şeridinde (masaüstünde telif yazısının sağında,
+  mobilde üstünde) ve iletişim sayfasında "Bizi takip edin" olarak başlığın karşısında; yeni sekmede açılır.
 - Kuruluş yılı / deneyim: TODO
 - Logo ve marka renkleri: TODO (şu an geçici lacivert + turuncu)
