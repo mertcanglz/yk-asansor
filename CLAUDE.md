@@ -67,6 +67,8 @@ Sitede **iletişim/teklif formu** (ad soyad, e-posta, telefon), **Google Analyti
     süreleri, sağlayıcıları, tercih nasıl değiştirilir)
   - `gizlilik-politikasi.html`: Gizlilik Politikası
   - `kullanim-sartlari.html`: Kullanım Şartları
+  - Mobil: yalnızca KVKK için örnek tasarım var (tuvalde "1 — KVKK Aydınlatma Metni (mobil örnek)");
+    diğer üç yasal sayfa koda çevrilirken aynı yapıyla (ortalı koyu başlık + sade metin) mobile uyarlanır.
 - **Telefon alanları**: tüm formlarda 11 haneli TR cep maskesi ve doğrulaması — kurallar, kod ve
   kabul testleri `docs/telefon-alani.md` dosyasında; birebir uygula.
 - **Form**: gönder butonunun yanında aydınlatma metni bağlantısı. Pazarlama iletişimi (SMS/e-posta
