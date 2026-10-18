@@ -195,7 +195,7 @@ Kodlamadan önce taslaklar `docs/blog-taslaklari/` altında Markdown olarak yaz�
 
 `CLAUDE.md` kararına göre yerel SEO ayrı ve özgün blog yazılarıyla, aşama aşama ve her aşama onaydan
 sonra yapılır: **(1) Sancaktepe** ana yazısı (taslak: `docs/blog-taslaklari/sancaktepe-asansor.md`)
-→ **(2) Samandıra, Sarıgazi, Yenidoğan** (Sancaktepe'nin semtleri) → **(3) çevre ilçeler**, yakından uzağa:
+→ **(2) Samandıra ve Sarıgazi** (talep görülen semtler; Yenidoğan bekletildi, 19 mahallenin her birine ayrı yazı yok: `docs/mahalle-talep-analizi.md`) → **(3) çevre ilçeler**, yakından uzağa:
 Sultanbeyli, Çekmeköy, Ümraniye, Ataşehir, Kartal, Maltepe, Pendik, sonra Üsküdar, Kadıköy, Tuzla, Beykoz.
 Sınır İstanbul Anadolu Yakası.
 
@@ -223,10 +223,10 @@ değişen şablon metin yasak). Kullanıcı kararı (18 Ekim 2026): bloglarda i�
 | Yazı (çalışma başlığı) | Odak açısı |
 |---|---|
 | Sancaktepe'de asansör hizmetleri: bakımdan montaja bina yöneticisinin rehberi | **Taslak v2 hazır** (18 Ekim 2026): tüm hizmetleri kapsayan ana yerel yazı; resmî bilgiler doğrulandı. |
-| Samandıra'da asansör: yeni binalar ve bakım | Yeni yapılaşma, montaj ve bakım geçişi. |
+| Samandıra'da asansör: yeni binalar ve bakım | Sıradaki. Otomatik tamamlamada talep var ("samandıra asansör"). Yeni yapılaşma, montaj ve bakım geçişi. |
 | Sultanbeyli'de eski apartmana asansör ve modernizasyon | Sonradan asansör, revizyon. |
-| Sarıgazi'de asansör arıza ve bakım hizmeti | Arıza belirtileri, hızlı müdahale. |
-| Yenidoğan'da asansör periyodik kontrol hazırlığı | Etiket alma süreci, eksik giderme. |
+| Sarıgazi'de asansör arıza ve bakım hizmeti | Sıradaki. Otomatik tamamlamada talep var ("sarıgazi asansör firmaları"). Arıza belirtileri, hızlı müdahale. |
+| Yenidoğan'da asansör periyodik kontrol hazırlığı | **Bekletildi** (otomatik tamamlamada talep görülmedi); Search Console'da gösterim gelirse yazılır. |
 
 Açılar örnektir. Gerçek işlere göre değiştirilir; her yazı **farklı** bir ana konuya odaklanır.
 
