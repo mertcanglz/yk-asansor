@@ -59,6 +59,18 @@ Yalnızca adı ve "asansör"ü birlikte içeren öneriler sayıldı (Chrome, 19 
 Karşılaştırma için "sancaktepe asansör" araması 8 öneri veriyor: firmaları, bakım, kiralama, **belediyesi
 asansör muayene** gibi. Yani ilçe düzeyinde talep açık; mahalle düzeyinde neredeyse yok.
 
+## 3b. Arama hacmi araçları (19 Ekim 2026)
+
+| Araç | Sonuç | Sınır |
+|---|---|---|
+| **Ubersuggest** (Türkiye, Türkçe; Google verisi) | "sancaktepe asansör" **30/ay** (SEO zorluğu 22, düşük; tıklama başı reklam maliyeti ₺51,49) · "sancaktepe asansör firmaları" **90/ay** · "sancaktepe asansörlü nakliyat" 10 · "kahvecioğlu asansör sancaktepe" 10 · "sancaktepe asansör kiralama yorumları" 0 | Kayıtsız kullanımda tek arama hakkı; kayıtla günde 3 arama. Hesap açmayı ben yapamam. |
+| **Ahrefs ücretsiz anahtar kelime aracı** (Türkiye) | "sancaktepe asansör firmaları", "sancaktepe asansör tamiri": **<100/ay** | Yalnızca kaba aralık gösteriyor. |
+| **Google Ads Anahtar Kelime Planlayıcı** | Bakılmadı. Chrome'daki hesapta iki Ads hesabı var: biri kapalı, diğeri "Alfa Spor Kulübü". Başka işletmenin hesabına izinsiz girilmedi. | Toplu kontrol için en iyisi (60+ kelime tek seferde), ama hesap izni gerekiyor. |
+
+**Okuma:** İlçe düzeyindeki en güçlü arama bile ayda ~30–90. Mahalle + asansör aramalarının bunun çok
+altında (çoğu 0–10) olması beklenir; otomatik tamamlama sonucu da bunu destekliyor. Kesin mahalle sayıları
+için Anahtar Kelime Planlayıcı veya kayıtlı Ubersuggest/Semrush gerekir.
+
 ## 4. Sonuç ve öneri
 
 1. **19 mahallenin her birine ayrı yazı açmak mantıklı değil.** 17 mahallede Google'ın fark edeceği kadar
