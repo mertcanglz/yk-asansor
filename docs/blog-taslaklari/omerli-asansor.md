@@ -1,7 +1,8 @@
 # Taslak: Ömerli asansör hizmetleri (semt yazısı)
 
-> **Durum:** taslak, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
+> **Durum:** taslak v2, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
 > **Bağlı olduğu ilçe yazısı:** `cekmekoy-asansor.md` · **Marka:** yalnızca "YK Asansör"
+> **v2:** Başlık genişletildi; tüm hizmetler ayrı başlıklarla açıldı; villa asansörleri ve elektrik kesintisi öne çıkan bölüm.
 
 ## Yayın bilgileri
 
@@ -9,149 +10,135 @@
 |---|---|
 | URL | `/blog/omerli-asansor.html` |
 | Ana sorgu | ömerli asansör |
-| Yan sorgular | ömerli asansör bakım, elektrik kesintisinde asansör, asansör otomatik kurtarma, asansörde mahsur kalma elektrik kesintisi, villa asansörü bakım |
-| `<title>` (57) | `Ömerli Asansör: Bakım, Arıza ve Elektrik Kesintisi \| YK Asansör` |
-| Meta (≈152) | `Çekmeköy Ömerli'de asansör ve villa asansörü bakımı, 7/24 arıza. Elektrik kesilince asansör ne olur, kabinde kalınca ne yapılır? 0 (543) 542 86 75.` |
-| H1 | Ömerli'de asansör: *Elektrik kesildiğinde ne olur, nasıl hazırlıklı olunur?* |
-| Ana konu | Elektrik kesintisi ve acil durumda asansör: kurtarma düzenekleri, akü, jeneratör, villa asansörleri |
+| Yan sorgular | ömerli asansör bakım, ömerli villa asansörü, ömerli asansör tamiri, ömerli asansör montaj |
+| `<title>` (58) | `Ömerli Asansör: Bakım, Arıza, Montaj ve Villa Asansörü \| YK Asansör` |
+| Meta (≈152) | `Çekmeköy Ömerli'de asansör ve villa asansörü bakımı, 7/24 arıza, montaj. Elektrik kesilince asansör ne olur, nasıl hazırlanılır? 0 (543) 542 86 75.` |
+| H1 | Ömerli'de asansör hizmetleri: *Bakım, arıza, villa asansörü ve elektrik kesintisine hazırlık* |
+| Öne çıkan bölüm | Villa asansörleri, acil durum donanımı ve elektrik kesintisi |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
-| İç bağlantılar | Çekmeköy, Taşdelen, Alemdağ yazıları; villa ve engelli lifti sayfası; 7/24 arıza sayfası; teklif formu |
+| İç bağlantılar | Çekmeköy, Taşdelen, Alemdağ yazıları; konu yazıları (akü ve elektrik kesintisi, merdiven asansörü ve engelli lifti, arızalar, bakım ücreti, asansör fiyatları); villa ve engelli lifti sayfası; teklif formu |
 
 ---
 
 ## Metin
 
-# Ömerli'de asansör: *Elektrik kesildiğinde ne olur, nasıl hazırlıklı olunur?*
+# Ömerli'de asansör hizmetleri: *Bakım, arıza, villa asansörü ve elektrik kesintisine hazırlık*
 
 Ömerli, Çekmeköy'ün bilinen semtlerinden biri ve aynı adlı bir mahallesi; kentin geri kalanına göre daha seyrek
-yapılaşmış, müstakil evlerin ve villaların da bulunduğu bir yer. Bize Ömerli'den gelen sorular arasında en çok
-"elektrik kesilince asansörde kalırsak ne olur?" sorusu öne çıkıyor. Bu yazıda bu soruyu, asansörün acil durum
-donanımını ve hazırlıklı olmak için yapılabilecekleri anlattık. Ömerli'de verdiğimiz bakım, arıza, modernizasyon ve
-montaj hizmetleri de yazının sonunda.
+yapılaşmış, müstakil evlerin ve villaların da bulunduğu bir yer. YK Asansör olarak Sancaktepe merkezli ekibimizle
+Ömerli'de apartman, iş yeri ve villa asansörlerinin bakımını, 7/24 arıza hizmetini, modernizasyonunu ve montajını
+yapıyoruz. Bu yazıda bütün hizmetleri anlattık; Ömerli'den en sık gelen soruya, yani elektrik kesilince asansörde ne
+olacağına ve villa asansörlerine de ayrıca yer verdik.
 
 **Bu yazıda**
 
-1. Elektrik kesilince asansör ne yapar?
-2. Kabinde kalan biri için ne yapılır?
-3. Asansörün acil durum donanımı
-4. Jeneratör ve kesintiye hazırlık
-5. Villa asansörlerinde özel durum
-6. Ömerli'de verdiğimiz hizmetler
-7. Periyodik kontrol ve bakım ücreti
-8. Sık sorulanlar
+1. Ömerli'de neler yapıyoruz?
+2. Aylık bakım ve sözleşme
+3. Periyodik kontrol ve etiketler
+4. Elektrik kesilince asansör ne yapar?
+5. Kabinde kalan biri için
+6. Acil durum donanımı ve jeneratör
+7. Villa asansörleri
+8. Modernizasyon ve yeni montaj
+9. Bakım ücreti ve firma seçimi
+10. Sık sorulanlar
+
+## Ömerli'de neler yapıyoruz?
+
+Aylık bakım, 7/24 arıza ve kurtarma, modernizasyon (otomatik kurtarma ve kabin iletişim sistemi eklenmesi dahil), villa
+asansörü, engelli lifti ve konut asansörü montajı, kuyu ve makine dairesi temizliği, yeşil etiket hazırlığı.
+
+## Aylık bakım ve sözleşme
+
+Bakım ayda en az bir kez yapılıyor; az kullanılan villa asansörlerinde de. Uzun süre hareket etmeyen parçalar sorun
+çıkarıyor: kapı mekanizmaları tutuklaşıyor, aküler zayıflıyor. Her bakımda fren, halatlar, kapılar ve kilitler, güvenlik
+devreleri ve kumandanın yanında acil durum donanımını da kontrol ediyor, föy bırakıyoruz. Bakım için sözleşme yapmak
+yöneticinin, villalarda çoğu zaman ev sahibinin işi; bakımı yapan firmanın TSE Hizmet Yeterlilik Belgesi olmalı.
+Sözleşmede nelere bakılacağını "Asansör bakım sözleşmesi" yazımızda anlattık.
+
+## Periyodik kontrol ve etiketler
+
+Ömerli Çekmeköy'e bağlı olduğu için yıllık periyodik kontrolü Akreditest yapıyor (protokol 2025–2029). Kabin aydınlatması
+ve alarm muayenede bakılan noktalar arasında; çalışmayan bir alarm etiket rengini etkileyebiliyor. Sarı etikette eksikler
+en geç 120 günde, kırmızı etikette en geç 60 günde giderilmeli. Ayrıntılar "Asansör etiket renkleri" yazımızda.
 
 ## Elektrik kesilince asansör ne yapar?
 
-Elektrik kesildiğinde asansör güvenlik gereği durur; frenler devreye girer ve kabin olduğu yerde kalır. Kabin
-düşmez. Bu konuda en çok duyduğumuz korku bu olduğu için baştan söyleyelim: frenler elektrik yokken kapalı kalacak
-şekilde tasarlanıyor.
+Elektrik kesildiğinde asansör güvenlik gereği durur; frenler devreye girer ve kabin olduğu yerde kalır. Kabin düşmez;
+frenler elektrik yokken kapalı kalacak şekilde tasarlanıyor. Kabin bir kata denk geldiyse kapı açılabilir. İki kat
+arasında durduysa içeridekiler elektrik gelene ya da kurtarma yapılana kadar bekler. Bazı asansörlerde otomatik kurtarma
+düzeneği var: aküyle çalışarak kabini en yakın kata götürüp kapıyı açıyor. Hidrolik asansörlerde kabin çoğu zaman valf
+yardımıyla en yakın alt kata indirilebiliyor. Ayrıntısı "Asansör aküsü ve elektrik kesintisi" yazımızda.
 
-Kabin bir kata denk geldiyse kapı açılabilir ve sorun yoktur. İki kat arasında durduysa içeridekiler elektrik
-gelene ya da kurtarma yapılana kadar beklemek zorunda kalır. Bazı asansörlerde otomatik kurtarma düzeneği var:
-elektrik kesilince aküyle çalışarak kabini en yakın kata götürüp kapıyı açıyor. Hidrolik asansörlerde ise kabin
-çoğu zaman valf yardımıyla en yakın alt kata indirilebiliyor.
+## Kabinde kalan biri için
 
-## Kabinde kalan biri için ne yapılır?
+İçeridekiyle konuşun; sakin kalmasını ve kapıyı zorlamamasını söyleyin. Kabinde aküyle çalışan acil aydınlatma ve alarm
+olmalı. Ardından 7/24 hattımızı arayın: 0 (543) 542 86 75; sağlık sorunu varsa önce 112. Elektriğin kısa sürede geleceğini
+düşünseniz bile haber verin. Kurtarma eğitimi almış biri firma gelene kadar kabini güvenle en yakın kata getirebilir; bakım
+firması bu eğitimi yılda en az bir kez vermek zorunda.
 
-İlk iş içeridekiyle konuşmak ve sakin kalmasını, kapıyı zorlamamasını söylemek. Kabinde aküyle çalışan acil durum
-aydınlatması ve alarm olmalı; kişi karanlıkta kalmaz ve sesini duyurabilir.
+## Acil durum donanımı ve jeneratör
 
-Ardından bakım firmasının 7/24 hattını arayın: 0 (543) 542 86 75. Sağlık sorunu varsa önce 112. Elektriğin kısa
-sürede geleceğini düşünseniz bile haber verin; kesinti uzarsa kurtarmanın planlanması gerekir.
-
-Binada kurtarma eğitimi almış biri varsa, firma gelene kadar kabini güvenle en yakın kata getirebilir. Bakım firması
-bu eğitimi yılda en az bir kez, yönetimin belirlediği kişilere vermek zorunda. Eğitimi almadıysanız kapıyı açmaya ya
-da makine dairesindeki düzeneklere dokunmaya çalışmayın.
-
-## Asansörün acil durum donanımı
-
-Her bakımda bu donanımın çalıştığını kontrol ediyoruz:
-
-**Acil aydınlatma ve alarm aküleri.** Aküler zamanla zayıflıyor; kesintide çalışmayan bir alarm, en çok ihtiyaç
-olduğu anda işe yaramıyor.
-
-**Kurtarma düzeneği.** Makine daireli asansörlerde makine dairesinde, makine dairesiz asansörlerde en üst kattaki
-kumanda panosunda. Her markanınki farklı; eğitimin sizin asansörünüzde yapılmasını isteyin.
-
-**Otomatik kurtarma (varsa).** Akünün durumu ve düzeneğin gerçekten kabini kata getirip getirmediği deneniyor.
-
-**Kurtarma talimatı.** Yönetmelik talimatın binada uygun bir yerde bulunmasını istiyor.
-
-Asansörünüzde otomatik kurtarma yoksa ve elektrik kesintisi sık yaşanıyorsa, bunun eklenmesi modernizasyon
-kapsamında değerlendirilebiliyor.
-
-## Jeneratör ve kesintiye hazırlık
-
-Sitelerde ve büyük binalarda asansörün jeneratöre bağlı olması kesinti sorununu büyük ölçüde çözüyor. Burada dikkat
-edilecek iki nokta var: jeneratör devreye girerken oluşan gerilim dalgalanması elektronik kartlara zarar
-verebiliyor, ve jeneratörün asansörü gerçekten taşıyacak güçte olması gerekiyor. Jeneratör bağlantısı yapılırken ya
-da değiştirilirken bakım firmasının da bilgilendirilmesini öneriyoruz.
-
-Planlı kesintilerde (elektrik idaresinin duyurduğu bakım çalışmaları) asansörü kesinti saatinde kullanmamak için
+Her bakımda acil aydınlatma ve alarm akülerini, kurtarma düzeneğini (makine dairesinde ya da en üst kattaki panoda),
+varsa otomatik kurtarmayı deniyoruz; kurtarma talimatının binada asılı olması da gerekiyor. Sitelerde asansörün
+jeneratöre bağlı olması kesinti sorununu büyük ölçüde çözüyor; ama jeneratör devreye girerken oluşan gerilim dalgalanması
+elektronik kartlara zarar verebiliyor ve jeneratörün asansörü taşıyacak güçte olması gerekiyor. Planlı kesintilerde
 sakinlere önceden duyuru yapmak en basit önlem.
 
-## Villa asansörlerinde özel durum
+## Villa asansörleri
 
-Müstakil evlerde ve villalarda asansörü çoğu zaman tek bir kişi ya da aile kullanıyor ve bazen evde başka kimse
-olmuyor. Kesintide kabinde tek başına kalmak bu yüzden daha büyük bir risk. Villa asansörlerinde şunları
-öneriyoruz:
+Villalarda asansörü çoğu zaman tek bir kişi ya da aile kullanıyor ve bazen evde başka kimse olmuyor; kesintide kabinde
+tek başına kalmak bu yüzden daha büyük risk. Önerilerimiz: otomatik kurtarma ya da hidrolik sistemde indirme düzeneği,
+kabinden dışarıya ulaşılabilen bir telefon veya GSM modülü, aile bireylerinden en az birinin kurtarma eğitimi alması ve
+aylık bakımın aksatılmaması. Villa asansörü seçerken kuyunun yerine ve sisteme bakmayı Çekmeköy yazımızda, engelli
+çözümlerini "Merdiven asansörü ve engelli lifti" yazımızda anlattık.
 
-- Otomatik kurtarma düzeneği ya da hidrolik sistemde indirme düzeneği olsun.
-- Kabinde telefonla ya da GSM modülüyle dışarıya ulaşılabilsin.
-- Aile bireylerinden en az biri kurtarma eğitimi alsın.
-- Az kullanılsa da aylık bakım aksatılmasın; aküler ve kapı mekanizması en çok bu asansörlerde zayıflıyor.
+## Modernizasyon ve yeni montaj
 
-Villa asansörü ve engelli lifti seçimini Çekmeköy yazımızda, hidrolik sistemleri Alemdağ yazımızda anlattık.
+Eski asansörlere otomatik kurtarma ve kabin iletişim sistemi eklenebiliyor; kumanda, sürücü ve kapı yenilenebiliyor.
+Villa asansörü, engelli lifti ve konut asansörlerini keşiften tescile kadar kuruyoruz; tescil öncesi ilk kontrolün ücreti
+normal periyodik kontrolün üç katı. Maliyeti belirleyen kalemleri "Asansör fiyatları" yazımızda anlattık.
 
-## Ömerli'de verdiğimiz hizmetler
+## Bakım ücreti ve firma seçimi
 
-YK Asansör olarak Sancaktepe merkezli ekibimizle Ömerli'de şunları yapıyoruz:
-
-**Aylık bakım.** Villa asansörleri, apartman ve iş yeri asansörleri; acil durum donanımının kontrolü, bakım föyü.
-
-**7/24 arıza ve kurtarma.** 0 (543) 542 86 75.
-
-**Modernizasyon.** Otomatik kurtarma ve kabin iletişim sistemi eklenmesi, kumanda ve sürücü yenilemesi.
-
-**Yeni montaj.** Villa asansörü, engelli lifti ve konut asansörleri; süreci Taşdelen yazımızda anlattık.
-
-**Temizlik, muayene ve yeşil etiket hazırlığı.**
-
-## Periyodik kontrol ve bakım ücreti
-
-Ömerli Çekmeköy'e bağlı olduğu için yıllık periyodik kontrolü Akreditest yapıyor (protokol 2025–2029). Kabin
-aydınlatması ve alarm, muayenede bakılan noktalar arasında; çalışmayan bir alarm etiket rengini etkileyebiliyor.
-
-Bakım ücretinde referans olarak TASİAD'ın 2026 tavsiyesi konut tipi bir asansör için (7 durağa kadar) aylık
-3.000 TL + KDV. Akü değişimi ve otomatik kurtarma eklenmesi bu rakama dahil değil.
+TASİAD'ın 2026 tavsiyesi konut tipi bir asansör için (7 durağa kadar) aylık 3.000 TL + KDV; panoramik asansörlerde 2.250 TL
+ek. Akü değişimi ve otomatik kurtarma eklenmesi bu rakama dahil değil. Firma seçerken arızaya varış süresini, acil durum
+donanımının bakıma dahil olup olmadığını ve TSE belgesini sorun.
 
 > ### Asansörünüz elektrik kesintisine hazır mı?
 > Acil durum donanımını birlikte kontrol edelim. **[Teklif alın]** · 7/24: 0 (543) 542 86 75
 
 ## Sık sorulanlar
 
+**Ömerli'de asansör bakımı yapıyor musunuz?**
+Evet. Sancaktepe merkezli ekibimizle apartman, iş yeri ve villa asansörlerinin bakımını, 7/24 arıza ve montajı yapıyoruz.
+
 **Elektrik kesilince asansör düşer mi?**
 Hayır. Frenler elektrik yokken kapalı kalacak şekilde tasarlanıyor; kabin olduğu yerde durur.
 
 **Kesintide kabinde kalırsam ne yapmalıyım?**
-Sakin kalın, kapıyı zorlamayın, alarm butonuna basın. Dışarıdakiler bakım firmasını arasın; sağlık sorunu varsa 112.
+Sakin kalın, kapıyı zorlamayın, alarm butonuna basın. Dışarıdakiler bakım firmasını arasın.
 
 **Otomatik kurtarma nedir?**
-Elektrik kesilince aküyle çalışıp kabini en yakın kata götüren ve kapıyı açan bir düzenek. Her asansörde yok;
-sonradan eklenebiliyor.
+Elektrik kesilince aküyle çalışıp kabini en yakın kata götüren ve kapıyı açan bir düzenek; sonradan eklenebiliyor.
+
+**Villa asansörü için de aylık bakım gerekir mi?**
+Evet. Az kullanılsa da en az ayda bir bakım gerekiyor.
 
 **Asansörü jeneratöre bağlamak sorun çıkarır mı?**
-Doğru güçte bir jeneratör ve düzgün bir bağlantıyla sorun çıkmaz. Gerilim dalgalanmasına karşı bakım firmanızın da
-bilgisi olsun.
-
-**Villa asansörü için ne önerirsiniz?**
-Otomatik kurtarma ya da indirme düzeneği, kabinden dışarıya ulaşılabilen bir iletişim sistemi ve aylık bakım.
-
-**Ömerli'de asansör bakımı yapıyor musunuz?**
-Evet. Aylık bakım, 7/24 arıza, modernizasyon ve montaj yapıyoruz.
+Doğru güçte bir jeneratör ve düzgün bir bağlantıyla sorun çıkmaz; bakım firmanızın da bilgisi olsun.
 
 **Ömerli'de periyodik kontrolü kim yapıyor?**
 Çekmeköy Belediyesi'yle protokolü olan Akreditest (2025–2029).
+
+**Sarı etiket aldık, ne kadar süremiz var?**
+En geç 120 gün; kırmızı etikette 60 gün.
+
+**Aylık bakım ücreti ne kadar?**
+Konut tipi bir asansör için TASİAD'ın 2026 tavsiyesi aylık 3.000 TL + KDV.
+
+**Gece arıza olursa kimi aramalıyım?**
+0 (543) 542 86 75. Hattımız 7/24 açık.
 
 ## Kaynaklar
 
@@ -164,7 +151,6 @@ Evet. Aylık bakım, 7/24 arıza, modernizasyon ve montaj yapıyoruz.
 
 ## Editör notları (yayınlanmaz)
 
-- Madde dayanakları: kurtarma eğitimi ve talimat İB m. 10/6; PK m. 11.
-- Fren davranışı, otomatik kurtarma, acil aydınlatma, jeneratör ve villa önerileri saha ve genel teknik bilgidir;
-  Ömürcan Bey kontrol etsin. Acil aydınlatmanın standarttaki süresi yazılmadı.
+- Madde dayanakları: İB m. 4/e, 14/1, 13/1, 10/6; PK m. 11, 23/2.
+- Fren davranışı, otomatik kurtarma, jeneratör ve villa önerileri saha ve genel teknik bilgidir; Ömürcan Bey kontrol etsin.
 - Ömerli'nin yapılaşması genel nitelemedir.

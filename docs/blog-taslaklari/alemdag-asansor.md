@@ -1,7 +1,8 @@
 # Taslak: Alemdağ asansör hizmetleri (semt yazısı)
 
-> **Durum:** taslak, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
+> **Durum:** taslak v2, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
 > **Bağlı olduğu ilçe yazısı:** `cekmekoy-asansor.md` · **Marka:** yalnızca "YK Asansör"
+> **v2:** Başlık genişletildi; tüm hizmetler ayrı başlıklarla açıldı; hidrolik asansör öne çıkan bölüm.
 
 ## Yayın bilgileri
 
@@ -9,148 +10,138 @@
 |---|---|
 | URL | `/blog/alemdag-asansor.html` |
 | Ana sorgu | alemdağ asansör |
-| Yan sorgular | alemdağ asansör bakım, alemdağ asansör firması, hidrolik asansör bakımı, hidrolik asansör yağ kaçağı, hidrolik asansör çökmesi |
-| `<title>` (57) | `Alemdağ Asansör: Hidrolik Asansör, Bakım ve Arıza \| YK Asansör` |
-| Meta (≈150) | `Çekmeköy Alemdağ'da asansör bakımı ve 7/24 arıza. Hidrolik asansörde yağ kaçağı, kabin çökmesi ve ısınma belirtileri: 0 (543) 542 86 75.` |
-| H1 | Alemdağ'da asansör: *Hidrolik asansörlerin bakımı ve dikkat edilecek belirtiler* |
-| Ana konu | Hidrolik asansör: çalışma, bakım kalemleri, belirtiler |
+| Yan sorgular | alemdağ asansör bakım, alemdağ asansör firması, alemdağ asansör tamiri, alemdağ asansör montaj |
+| `<title>` (57) | `Alemdağ Asansör: Bakım, Arıza, Montaj ve Hidrolik \| YK Asansör` |
+| Meta (≈152) | `Çekmeköy Alemdağ'da asansör bakımı, 7/24 arıza, montaj ve modernizasyon. Hidrolik asansörde yağ kaçağı ve kabin çökmesi: 0 (543) 542 86 75.` |
+| H1 | Alemdağ'da asansör hizmetleri: *Bakım, arıza, montaj ve hidrolik asansörler* |
+| Öne çıkan bölüm | Hidrolik asansör: çalışma, bakım kalemleri, belirtiler |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
-| İç bağlantılar | Çekmeköy, Taşdelen, Ömerli yazıları; hidrolik asansör sayfası; 7/24 arıza sayfası; teklif formu |
+| İç bağlantılar | Çekmeköy, Taşdelen, Ömerli yazıları; konu yazıları (sistem karşılaştırması, akü ve elektrik kesintisi, merdiven asansörü ve engelli lifti, bakım ücreti, etiket renkleri); hidrolik asansör sayfası; teklif formu |
 
 ---
 
 ## Metin
 
-# Alemdağ'da asansör: *Hidrolik asansörlerin bakımı ve dikkat edilecek belirtiler*
+# Alemdağ'da asansör hizmetleri: *Bakım, arıza, montaj ve hidrolik asansörler*
 
-Alemdağ, Çekmeköy'ün bilinen semtlerinden biri; az katlı binaların ve müstakil yapıların da bulunduğu bir yer. Bu
-tür binalarda en sık karşılaştığımız sistemlerden biri hidrolik asansör. Halatlı asansörden farklı çalışıyor,
-bakımında da farklı şeylere bakılıyor: yağ, piston, contalar, pompa. Bu yazıda hidrolik asansörü yöneticinin ya da
-ev sahibinin anlayacağı şekilde anlattık; sonunda Alemdağ'da verdiğimiz bakım, arıza, modernizasyon ve montaj
-hizmetlerinin tamamını bulacaksınız.
+Alemdağ, Çekmeköy'ün bilinen semtlerinden biri; apartmanların yanında az katlı binaların ve müstakil yapıların da
+bulunduğu bir yer. YK Asansör olarak Sancaktepe merkezli ekibimizle Alemdağ'da aylık bakım, 7/24 arıza, modernizasyon ve
+montaj yapıyoruz. Bu yazıda bütün hizmetleri anlattık; az katlı binalarda ve villalarda sık karşılaştığımız hidrolik
+asansörlere de ayrıca yer verdik.
 
 **Bu yazıda**
 
-1. Hidrolik asansör nasıl çalışır?
-2. Nerelerde kullanılır?
-3. Bakımda neye bakılır?
-4. Bu belirtileri ciddiye alın
-5. Hidrolik mi, halatlı mı?
-6. Alemdağ'da verdiğimiz hizmetler
-7. Periyodik kontrol ve bakım ücreti
-8. Sık sorulanlar
+1. Alemdağ'da neler yapıyoruz?
+2. Aylık bakım ve sözleşme
+3. Arıza ve kurtarma
+4. Periyodik kontrol ve etiketler
+5. Hidrolik asansör nasıl çalışır, nerede kullanılır?
+6. Hidrolik asansörde bakım ve belirtiler
+7. Hidrolik mi, halatlı mı?
+8. Modernizasyon ve yeni montaj
+9. Bakım ücreti ve firma seçimi
+10. Sık sorulanlar
 
-## Hidrolik asansör nasıl çalışır?
+## Alemdağ'da neler yapıyoruz?
 
-Bir elektrik motoru pompayı çalıştırıyor, pompa yağı silindire basıyor ve piston kabini yukarı itiyor. Aşağı
-inerken bir valf açılıyor ve yağ, kabinin kendi ağırlığıyla depoya geri dönüyor. Yani yukarı çıkarken motor
-çalışıyor, aşağı inerken çoğu zaman çalışmıyor.
+Aylık bakım, 7/24 arıza ve kurtarma, modernizasyon, yeni montaj ve sonradan asansör, villa asansörü ve engelli lifti,
+kuyu ve makine dairesi temizliği, yeşil etiket hazırlığı. Hidrolik, dişli, dişlisiz, makine dairesiz, yük ve araç
+asansörleriyle çalışıyoruz.
 
-Makinenin yeri de farklı: pompa ünitesi çatıda değil, genellikle en alt katta, kuyuya yakın küçük bir odada ya da
-dolapta duruyor. Bu, çatıda makine dairesi yapılamayan binalarda büyük avantaj.
+## Aylık bakım ve sözleşme
 
-## Nerelerde kullanılır?
+Bakım ayda en az bir kez, üreticinin bakım kılavuzuna ve TS EN 13015 standardına göre yapılıyor. Bakım için sözleşme
+yapmak, bakımı yaptırmak ve ücretini ödemek yöneticinin, villalarda çoğu zaman ev sahibinin işi; bakımı yapan firmanın
+TSE Hizmet Yeterlilik Belgesi olmalı. Her bakımdan sonra föy bırakılıyor. Sözleşmede nelere bakılacağını "Asansör bakım
+sözleşmesi" yazımızda anlattık.
 
-- Az katlı apartmanlar ve iş yerleri
-- Villalar ve müstakil evler
-- Kuyu üstünde yeterli boşluğun olmadığı binalar
-- Sonradan asansör eklenen eski yapılar
-- Kısa mesafede ağır yük taşıyan yük ve araç asansörleri
+## Arıza ve kurtarma
 
-Çok katlı binalar için ise uygun değil; mesafe uzadıkça hidrolik sistem hem yavaşlıyor hem pahalılaşıyor.
+Hattımız 7/24 açık: 0 (543) 542 86 75. İçeride biri kaldıysa kapıyı zorlamadan bizi arayın; sağlık sorunu ya da duman
+varsa önce 112. Hidrolik asansörde elektrik kesildiğinde kabin çoğu zaman kurtarma düzeneğiyle en yakın alt kata
+indirilebiliyor; bunu kendiniz denemeyin, bizi arayın. Elektrik kesintisini "Asansör aküsü ve elektrik kesintisi"
+yazımızda, belirtileri "Asansör arızaları" yazımızda anlattık.
 
-## Bakımda neye bakılır?
+## Periyodik kontrol ve etiketler
 
-Hidrolik asansörün bakımı da ayda en az bir kez, üreticinin bakım kılavuzuna ve TS EN 13015 standardına göre
-yapılıyor. Kapılar, güvenlik devreleri ve kumanda her asansörde olduğu gibi kontrol ediliyor; bunlara ek olarak:
+Alemdağ Çekmeköy'e bağlı olduğu için yıllık periyodik kontrolü Akreditest yapıyor (protokol 2025–2029). Tarih en az üç
+gün önce bildiriliyor, ücreti yönetim ödüyor. Sarı etikette eksikler en geç 120 günde, kırmızı etikette en geç 60 günde
+giderilmeli. Kuyu dibindeki yağ izleri muayenede dikkat çeken bir konu; kontrol öncesi temizlik bu yüzden önemli.
+Ayrıntılar "Asansör etiket renkleri" yazımızda.
 
-**Yağ.** Seviyesi ve durumu. Eksik ya da bozulmuş yağ hareketi sarsıntılı yapıyor ve pompanın ömrünü kısaltıyor.
+## Hidrolik asansör nasıl çalışır, nerede kullanılır?
 
-**Kaçak.** Silindirde, hortumlarda ve bağlantılarda yağ izi aranıyor. Kaçak hem arızanın habercisi hem de kuyu
-dibinde kayma ve çevre riski.
+Bir elektrik motoru pompayı çalıştırıyor, pompa yağı silindire basıyor ve piston kabini yukarı itiyor. Aşağı inerken bir
+valf açılıyor ve yağ, kabinin ağırlığıyla depoya geri dönüyor. Pompa ünitesi çatıda değil, genellikle en alt katta küçük
+bir odada ya da dolapta duruyor; çatıda makine dairesi yapılamayan binalarda büyük avantaj.
 
-**Piston ve contalar.** Aşınan conta kaçağa ve kabinin durduğu yerden yavaşça aşağı inmesine yol açıyor.
+Az katlı apartmanlarda ve iş yerlerinde, villalarda, kuyu üstünde yeterli boşluk olmayan binalarda, sonradan asansör
+eklenen eski yapılarda ve kısa mesafede ağır yük taşıyan yük ve araç asansörlerinde kullanılıyor. Çok katlı binalarda ise
+mesafe uzadıkça hem yavaşlıyor hem pahalılaşıyor.
 
-**Valfler.** İniş hızını ve kabinin kat hizasında tam durmasını belirliyor.
+## Hidrolik asansörde bakım ve belirtiler
 
-**Pompa ünitesinin ısısı.** Yoğun kullanımda yağ ısınıyor; aşırı ısınma sistemi durdurabiliyor.
+Bakımda yağın seviyesine ve durumuna, silindir, hortum ve bağlantılarda kaçak olup olmadığına, piston ve contalara,
+iniş hızını ve kat hizasını belirleyen valflere ve pompa ünitesinin ısınmasına bakılıyor.
 
-Her bakımdan sonra bakım föyü bırakılıyor ve bir nüshası yönetimde ya da ev sahibinde kalıyor.
-
-## Bu belirtileri ciddiye alın
-
-**Kabin durduğu katta yavaş yavaş aşağı iniyor.** Genellikle conta ya da valf sorunu. Bakım firmanıza hemen haber
-verin.
-
-**Pompa odasında ya da kuyu dibinde yağ var.** Kaçak demek. Asansörü kullanıma kapatın ve firmayı arayın.
-
-**Yoğun kullanımda asansör duruyor, bir süre sonra yine çalışıyor.** Pompa ünitesi ısınıyor olabilir.
-
-**Kalkışta sarsıntı ya da ses var.** Pompa, valf ya da yağ kaynaklı olabilir.
-
-**Kışın asansör ağır hareket ediyor.** Yağın kıvamı soğukta değişiyor; pompa odasının çok soğuk olmaması önemli.
-
-Yönetmelik, tehlikeli bir durum fark eden yöneticinin bakım firmasına bildirmesini ve müdahaleye kadar önlem
-almasını istiyor. Genel arıza belirtilerini Sarıgazi yazımızda bulabilirsiniz.
+Şu belirtileri ciddiye alın: kabin durduğu katta yavaş yavaş aşağı iniyorsa (genellikle conta ya da valf), pompa odasında
+ya da kuyu dibinde yağ varsa (kaçak; asansörü kapatın), yoğun kullanımda asansör durup bir süre sonra yine çalışıyorsa
+(pompa ısınması), kalkışta sarsıntı ya da ses varsa. Kışın ağır hareket de olağan; yağın kıvamı soğukta değişiyor, pompa
+odasının çok soğuk olmaması önemli.
 
 ## Hidrolik mi, halatlı mı?
 
-Cevap binaya bağlı. Az katlı binada, çatıda makine dairesi yapılamıyorsa ya da kuyu üstü boşluğu sınırlıysa
-hidrolik mantıklı. Çok katlı binada ise halatlı sistemler (bugün çoğunlukla makine dairesiz ve dişlisiz) hem daha
-hızlı hem daha ekonomik çalışıyor. Yeni binalarda sistem seçimini Taşdelen yazımızda anlattık.
+Az katlı binada, çatıda makine dairesi yapılamıyorsa ya da kuyu üstü boşluğu sınırlıysa hidrolik mantıklı. Çok katlı
+binada ise halatlı sistemler (bugün çoğunlukla makine dairesiz ve dişlisiz) hem daha hızlı hem daha ekonomik çalışıyor.
+Ayrıntılı karşılaştırma "Hidrolik mi, halatlı mı?" yazımızda.
 
-## Alemdağ'da verdiğimiz hizmetler
+## Modernizasyon ve yeni montaj
 
-YK Asansör olarak Sancaktepe merkezli ekibimizle Alemdağ'da şunları yapıyoruz:
+Eski hidrolik asansörlerde pompa ünitesi, valf grubu ve kumanda yenilenebiliyor; contalar değiştiriliyor. Halatlı
+asansörlerde kumanda, kapı ve makine yenilemesi yapıyoruz. Villalara ve az katlı binalara hidrolik ya da makine dairesiz
+asansör montajı yapıyoruz; tescil öncesi ilk kontrolün ücreti normal periyodik kontrolün üç katı. Villalarda erişim
+çözümlerini "Merdiven asansörü ve engelli lifti" yazımızda anlattık.
 
-**Aylık bakım.** Hidrolik, halatlı, makine dairesiz ve villa asansörlerinin bakımı; bakım föyü.
+## Bakım ücreti ve firma seçimi
 
-**7/24 arıza ve kurtarma.** 0 (543) 542 86 75. Hidrolik asansörde elektrik kesintisinde kabin çoğu zaman valfle
-aşağı indirilebiliyor; bunu ve diğer acil durum konularını Ömerli yazımızda anlattık.
-
-**Modernizasyon.** Eski hidrolik asansörlerde pompa ünitesi, valf grubu ve kumanda yenilemesi; contaların
-değişimi.
-
-**Yeni montaj ve sonradan asansör.** Villalara ve az katlı binalara hidrolik ya da makine dairesiz asansör montajı.
-
-**Temizlik, muayene ve yeşil etiket hazırlığı.** Kuyu dibindeki yağ izleri muayenede dikkat çeken bir konu;
-kontrol öncesi temizlik bu yüzden önemli.
-
-## Periyodik kontrol ve bakım ücreti
-
-Alemdağ Çekmeköy'e bağlı olduğu için yıllık periyodik kontrolü Akreditest yapıyor (protokol 2025–2029). Sarı
-etikette eksikler en geç 120 günde, kırmızı etikette en geç 60 günde giderilmeli.
-
-Bakım ücretinde referans olarak TASİAD'ın 2026 tavsiyesi konut tipi bir asansör için (7 durağa kadar) aylık
-3.000 TL + KDV. Hidrolik yağ değişimi ve conta gibi parçalar genellikle bu rakama dahil değil; sözleşmede yazılı
-olarak netleştirin.
+TASİAD'ın 2026 tavsiyesi konut tipi bir asansör için (7 durağa kadar) aylık 3.000 TL + KDV; her ek durak için 500 TL.
+Hidrolik yağ değişimi ve conta gibi parçalar genellikle bu rakama dahil değil; sözleşmede yazılı olarak netleştirin.
+Firma seçerken hidrolik sisteme hâkim teknisyen, TSE belgesi ve arızaya varış süresini sorun.
 
 > ### Hidrolik asansörünüz için bakım teklifi
 > **[Teklif alın]** · 7/24: 0 (543) 542 86 75
 
 ## Sık sorulanlar
 
+**Alemdağ'da asansör bakımı yapıyor musunuz?**
+Evet. Sancaktepe merkezli ekibimizle aylık bakım, 7/24 arıza, modernizasyon ve montaj yapıyoruz.
+
 **Hidrolik asansörün yağı ne sıklıkla değişir?**
 Yağın durumu her bakımda kontrol ediliyor; değişim aralığını üreticinin kılavuzu ve yağın durumu belirliyor.
 
 **Kabin durduğu katta aşağı iniyor, tehlikeli mi?**
-Conta ya da valf sorununa işaret edebilir. Bakım firmanıza hemen bildirin; yağ kaçağı varsa asansörü kapatın.
+Conta ya da valf sorununa işaret edebilir; hemen bildirin, yağ kaçağı varsa asansörü kapatın.
 
 **Hidrolik asansör çok katlı binaya uygun mu?**
-Genellikle değil. Mesafe uzadıkça yavaşlıyor ve pahalılaşıyor; çok katlı binalarda halatlı sistemler daha uygun.
+Genellikle değil; çok katlı binalarda halatlı sistemler daha uygun.
 
 **Villamıza hidrolik asansör yapılabilir mi?**
-Çoğu villada mümkün; pompa ünitesi için alt katta küçük bir yer yeterli. Keşifte uygun sistemi söylüyoruz.
+Çoğu villada mümkün; pompa ünitesi için alt katta küçük bir yer yeterli.
 
 **Elektrik kesilince hidrolik asansör ne olur?**
-Kabin durur. Çoğu sistemde kabin, kurtarma düzeneğiyle en yakın alt kata indirilebiliyor. Kendiniz denemeyin,
-bizi arayın.
-
-**Alemdağ'da asansör bakımı yapıyor musunuz?**
-Evet. Aylık bakım, 7/24 arıza, modernizasyon ve montaj yapıyoruz.
+Kabin durur; çoğu sistemde kurtarma düzeneğiyle en yakın alt kata indirilebiliyor. Kendiniz denemeyin, bizi arayın.
 
 **Alemdağ'da periyodik kontrolü kim yapıyor?**
 Çekmeköy Belediyesi'yle protokolü olan Akreditest (2025–2029).
+
+**Sarı etiket aldık, ne kadar süremiz var?**
+En geç 120 gün; kırmızı etikette 60 gün.
+
+**Aylık bakım ücreti ne kadar?**
+Konut tipi bir asansör için TASİAD'ın 2026 tavsiyesi aylık 3.000 TL + KDV.
+
+**Gece arıza olursa kimi aramalıyım?**
+0 (543) 542 86 75. Hattımız 7/24 açık.
 
 ## Kaynaklar
 
@@ -163,7 +154,5 @@ Evet. Aylık bakım, 7/24 arıza, modernizasyon ve montaj yapıyoruz.
 
 ## Editör notları (yayınlanmaz)
 
-- Madde dayanakları: bakım standardı İB m. 9; föy m. 10/2; tehlike bildirimi m. 14/3; PK m. 11.
-- Teknik anlatım ve belirtiler saha bilgisidir; Ömürcan Bey kontrol etsin (özellikle elektrik kesintisinde valfle
-  indirme ifadesi).
-- Alemdağ'ın bina dokusu genel nitelemedir.
+- Madde dayanakları: İB m. 9, 4/e, 14/1, 13/1, 10/2; PK m. 16/9, 23/1, 23/2, 11.
+- Teknik anlatım saha bilgisidir; Ömürcan Bey kontrol etsin (özellikle elektrik kesintisinde indirme).
