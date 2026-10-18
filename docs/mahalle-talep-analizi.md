@@ -187,10 +187,13 @@ apartmana sonradan asansör yaptırma
 - Seçilmeyenler: Bağlarbaşı, Altayçeşme, Zümrütevler ve diğer mahalleler (hacim yok; "çınar asansör" 170 ve
   "yalı asansör" 20 aynı adlı firmalara ait)
 
-**Periyodik kontrol kuruluşları:** Sancaktepe Royalcert (2024–2028), Ümraniye Royalcert (2024–2030), Çekmeköy
-Akreditest (20.05.2025–20.05.2029; kuruluşun yayımladığı protokol listesi). Sultanbeyli: bulunamadı. Maltepe:
-belediyenin tarihsiz bir yayınında TMMOB Kontrol Merkezi geçiyor, güncelliği teyit edilmedi. Bu ikisinde yazıda
-kuruluş adı verilmez.
+**Periyodik kontrol kuruluşları (doğrulandı):** Sancaktepe Royalcert (2024–2028), Ümraniye Royalcert (2024–2030),
+Çekmeköy Akreditest (20.05.2025–20.05.2029; kuruluşun protokol listesi), Sultanbeyli IQNORM (kuruluşun başvuru formunda
+Sultanbeyli Belediyesi var; tarih birincil kaynakta görülmedi), Maltepe TMMOB Makina Mühendisleri Odası İstanbul Şubesi
+(protokol 6 Şubat 2026; MMO haberi).
+
+**Durum (19 Ekim 2026):** 19 taslağın hepsi yazıldı. Semt yazıları ilçe yazıları kadar kapsamlı (tüm hizmetler + kendi
+ana konusu + geniş SSS); hepsi yapay zekâ dili açısından elden geçirildi. Kullanıcı onayı bekleniyor.
 
 Her yazı ilgili ilçenin doğrulanmış yerel bilgisini (kuruluş, muayene kuruluşu, bina dokusu) ve kendi ana
 konusunu taşır; aynı metin yer adı değiştirilerek kullanılmaz. Semt yazıları bağlı oldukları ilçe yazısına
@@ -203,6 +206,8 @@ bağlanır.
   Sultanbeyli: https://tr.wikipedia.org/wiki/Sultanbeyli
 - Maltepe: https://tr.wikipedia.org/wiki/Maltepe,_%C4%B0stanbul
 - Akreditest protokol listesi (Çekmeköy 2025–2029): https://www.akreditest.com/tr/akreditest-kurumsal/protokol-imzalanan-belediyeler
+- IQNORM başvuru formu (Sultanbeyli): https://www.iq-norm.com/index.php/asansor-periyodik-kontrol-basvurusu/
+- MMO İstanbul, Maltepe protokolü (6.2.2026): https://gunes.mmo.org.tr/istanbul/haber/subemiz-ile-maltepe-belediyesi-arasinda-asansor-kontrolleri-icin-protokol-imzalandi
 - Royalcert protokol listesi: https://tr.royalcert.com/protokoller/
 - Mahalle nüfusları ADNKS 2025: https://www.nufusune.com/sancaktepe-ilce-nufusu-istanbul
 - Karşılaştırma (farklı yıllar): https://www.i24haber.com/2081-sancaktepe-mahalle-nufusu ·

@@ -220,17 +220,15 @@ değişen şablon metin yasak). Kullanıcı kararı (18 Ekim 2026): bloglarda i�
 - Bölgeye özgü 3–4 soruluk **SSS** (akordeon, `FAQPage`).
 - İç bağlantılar: ilgili hizmet sayfası, yeşil etiket sayfası, teklif formu.
 
-| Yazı (çalışma başlığı) | Odak açısı |
+| Yazı grubu | Durum |
 |---|---|
-| Sancaktepe'de asansör hizmetleri: bakımdan montaja bina yöneticisinin rehberi | **Taslak v2 hazır** (18 Ekim 2026): tüm hizmetleri kapsayan ana yerel yazı; resmî bilgiler doğrulandı. |
-| Ümraniye'de asansör: iş merkezleri ve yoğun binalar | Sıra 2 (~160 arama/ay). Yüksek hızlı asansör, iş yerlerinde bakım planlaması. |
-| Çekmeköy'de asansör: villa, müstakil ev ve yeni siteler | Sıra 3 (~140/ay). Villa/engelli lifti, makine dairesiz sistemler. |
-| Sultanbeyli'de eski apartmana asansör ve modernizasyon | Sıra 4 (~70/ay). Sonradan asansör, revizyon. |
-| Dudullu'da yük ve sanayi asansörleri | Sıra 5 (~20/ay). Yük asansörü bakımı. |
-| Samandıra'da asansör periyodik kontrol hazırlığı | Sıra 6 (otomatik tamamlamada var). Yeşil etiket süreci. |
-| Sarıgazi'de asansör arıza ve kurtarma | Sıra 7 (otomatik tamamlamada var). Arıza belirtileri, 7/24 müdahale. |
-| Taşdelen'de yeni konutlarda asansör montajı | Sıra 8 (~10/ay). Montaj süreci. |
-| Yenidoğan, Alemdağ, Çakmak, Şerifali, Tepeüstü | Ölçülebilir talep yok; yalnızca istenirse. |
+| Sancaktepe (ilçe) + Samandıra, Sarıgazi, Yenidoğan | **Taslak hazır** (v3 / v2) |
+| Ümraniye (ilçe) + Dudullu, Çakmak, Şerifali, Tepeüstü | **Taslak hazır** |
+| Çekmeköy (ilçe) + Taşdelen, Alemdağ, Ömerli | **Taslak hazır** |
+| Sultanbeyli (ilçe) | **Taslak hazır** |
+| Maltepe (ilçe) + Küçükyalı, İdealtepe, Cevizli, Başıbüyük | **Taslak hazır** |
+
+Ayrıntılı liste, ana konular ve dosya adları: `docs/mahalle-talep-analizi.md` Bölüm 5.2.
 
 Açılar örnektir. Gerçek işlere göre değiştirilir; her yazı **farklı** bir ana konuya odaklanır.
 
