@@ -194,7 +194,7 @@ Kodlamadan önce taslaklar `docs/blog-taslaklari/` altında Markdown olarak yaz�
 ### 4.1 Yerel yazılar (5 bölge)
 
 `CLAUDE.md` kararına göre yerel SEO ayrı ve özgün blog yazılarıyla, aşama aşama ve her aşama onaydan
-sonra yapılır: **(1) Sancaktepe** ana yazısı (taslak: `docs/blog-taslaklari/sancaktepe-asansor-bakimi.md`)
+sonra yapılır: **(1) Sancaktepe** ana yazısı (taslak: `docs/blog-taslaklari/sancaktepe-asansor.md`)
 → **(2) Samandıra, Sarıgazi, Yenidoğan** (Sancaktepe'nin semtleri) → **(3) çevre ilçeler**, yakından uzağa:
 Sultanbeyli, Çekmeköy, Ümraniye, Ataşehir, Kartal, Maltepe, Pendik, sonra Üsküdar, Kadıköy, Tuzla, Beykoz.
 Sınır İstanbul Anadolu Yakası.
@@ -205,22 +205,24 @@ görünürlük, yer adı içermeyen bilgi yazılarıyla (etiket renkleri, bakım
 sonradan asansör…) hedeflenir; bu yazılar her ilçeden ve Türkiye genelinden gelen aramalarda çıkabilir.
 
 **Doorway riskinden kaçınmak için her yerel yazıda en az şunlar olmalı** (yalnızca semt adı
-değişen şablon metin yasak):
+değişen şablon metin yasak). Kullanıcı kararı (18 Ekim 2026): bloglarda iş fotoğrafı ve gerçek iş
+örneği kullanılmaz; özgünlük aşağıdaki doğrulanmış yerel bilgilerden ve her yazının farklı ana konusundan gelir.
 
-- O bölgede yaptığımız **gerçek bir iş**: fotoğraf, bina tipi, sorun, çözüm, süre.
+- Bölgenin **kuruluşu ve yapısı** (ör. Sancaktepe: 5747 sayılı Kanun, 2008; Samandıra, Sarıgazi, Yenidoğan).
 - Bölgenin **bina dokusu** ve ondan doğan ihtiyaç. Örnek: yeni siteler ve kentsel dönüşüm →
   montaj ve makine dairesiz sistemler; eski 4–5 katlı apartmanlar → sonradan asansör ve
   modernizasyon; sanayi ve ticari alanlar → yük asansörü.
 - **Periyodik kontrol pratik bilgisi:** ilgili belediyenin protokol yaptığı A tipi muayene
   kuruluşu ve başvuru yolu. Yazmadan önce belediyeden veya kuruluşun sitesinden doğrulanacak.
-  Bu aramada Sancaktepe'nin protokolü olduğu görüldü ama kuruluş adı bulunamadı.
-- Ofisten **gerçek varış süresi**. Ölçülmüş bir değer olmalı; "30 dk" iddiasıyla tutarlı olmalı.
+  Sancaktepe: Royalcert (protokol 2024–2028). Royalcert listesinde ayrıca Ümraniye (2024–2030) ve
+  Beykoz (2023–2026) var; diğer ilçeler yazı sırası gelince bakılacak.
+- Ofisten varış süresi: isteğe bağlı; ölçülmüş değer gelirse eklenir, yoksa yazılmaz.
 - Bölgeye özgü 3–4 soruluk **SSS** (akordeon, `FAQPage`).
 - İç bağlantılar: ilgili hizmet sayfası, yeşil etiket sayfası, teklif formu.
 
 | Yazı (çalışma başlığı) | Odak açısı |
 |---|---|
-| Sancaktepe'de asansör bakımı: bina yöneticisi neleri bilmeli? | **Taslak hazır** (18 Ekim 2026, gerçek iş bilgileri bekleniyor). Bina tipleri, yasal sorumluluk, periyodik kontrol, yıllık takvim, firma seçimi. |
+| Sancaktepe'de asansör hizmetleri: bakımdan montaja bina yöneticisinin rehberi | **Taslak v2 hazır** (18 Ekim 2026): tüm hizmetleri kapsayan ana yerel yazı; resmî bilgiler doğrulandı. |
 | Samandıra'da asansör: yeni binalar ve bakım | Yeni yapılaşma, montaj ve bakım geçişi. |
 | Sultanbeyli'de eski apartmana asansör ve modernizasyon | Sonradan asansör, revizyon. |
 | Sarıgazi'de asansör arıza ve bakım hizmeti | Arıza belirtileri, hızlı müdahale. |
@@ -279,11 +281,10 @@ geçirilir (fiyat ve yönetmelik değişiklikleri). Başlıktaki yıl güncellen
 ### 4.3 Her blog yazısının kalite kuralları
 
 - **İlk paragraf soruyu doğrudan yanıtlar** (2–3 cümle). Yapay zekâ özetleri ve Google bu kısmı alıntılar.
-- **Yazar kutusu:** "YK Asansör teknik ekibi". Teknik yazılarda kontrol eden teknisyen veya
-  mühendisin adı ve unvanı (izin verilirse).
+- **Yazar kutusu:** "YK Asansör teknik ekibi" · Kontrol eden: Ömürcan Altundaş.
 - **Yayın ve güncelleme tarihi** görünür. `BlogPosting` verisinde `datePublished` ve `dateModified`.
 - **Kaynak:** Yönetmelik ve belediye duyurularına bağlantı (mevzuat.gov.tr, Resmî Gazete).
-- **Gerçek görsel:** En az bir kendi fotoğrafımız. Stok görsel tek başına kullanılmaz.
+- **Görsel:** İş fotoğrafı kullanılmaz (kullanıcı kararı). Gerekirse kendi tasarımımız infografik veya şema (ör. etiket renkleri); stok fotoğraf tek başına kullanılmaz.
 - **Uzunluk:** Konuya göre. Tipik olarak 900–1.800 kelime; doldurma metin yok.
 - **İç bağlantı:** 1 hizmet sayfası, 1–2 ilgili yazı ve teklif çağrısı.
 - **Başlık biçimi:** `CLAUDE.md`'deki iki parçalı başlık kuralı ("X: Y?").

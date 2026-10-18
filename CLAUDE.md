@@ -109,14 +109,19 @@ hem buraya hem siteye işle:
 - Asansör sistemleri: dişli, dişlisiz, hidrolik, yük, lift (villa/engelli), araç,
   yürüyen merdiven, makine dairesiz (monospace)
 - Kabin çözümleri: panoramik cam, rezidans ve yolcu, sedye/medikal, yük ve araç
-- Hizmet bölgesi: Türkiye geneli. Sayfa metinlerinde (giriş metinleri, SSS, meta açıklamaları)
-  ilçe/mahalle adı ve "X merkezli ekibimiz" kalıbı kullanılmaz; hedef kitleyi daraltıyor (kullanıcı kararı).
+- Hizmet bölgesi: Türkiye geneli. Hizmet ve sistem sayfalarının metinlerinde (giriş metinleri, SSS, meta
+  açıklamaları) ilçe/mahalle adı ve "X merkezli ekibimiz" kalıbı kullanılmaz; hedef kitleyi daraltıyor
+  (kullanıcı kararı). İstisna: yerel blog yazıları (aşağıda).
   Yerel SEO ("Sancaktepe asansör bakım" gibi aramalar) yalnızca ayrı, özgün blog yazılarıyla yapılır.
   Sıra (kullanıcı kararı, her aşama onaydan sonra): (1) Sancaktepe ana yazısı → (2) Sancaktepe'nin
   semtleri: Samandıra, Sarıgazi, Yenidoğan → (3) çevre ilçeler yakından uzağa (Sultanbeyli, Çekmeköy,
   Ümraniye, Ataşehir, Kartal, Maltepe, Pendik…). **En uzak sınır İstanbul Anadolu Yakası**; dışına taşılmaz.
-  Her yazı farklı bir ana konuya odaklanır ve gerçek iş/fotoğraf/ölçülmüş süre içerir; yalnızca yer adı
-  değişen şablon yazı yazılmaz (doorway riski). Gerçek iş bilgisi gelmeyen yer için yazı yayınlanmaz.
+  Bloglarda iş fotoğrafı ve gerçek iş örneği kullanılmaz (kullanıcı kararı); özgünlük doğrulanmış yerel
+  bilgiyle (ör. belediyenin protokollü muayene kuruluşu, ilçenin kuruluşu ve bina dokusu), her yazının
+  farklı ana konusuyla ve kaynaklı, derin uzman içerikle sağlanır. Yalnızca yer adı değişen şablon yazı
+  yazılmaz (doorway riski). Yerel blog yazılarında "Sancaktepe merkezli ekibimiz" gibi ifadeler
+  kullanılabilir (kullanıcı onayı); hizmet/sistem sayfalarında ve meta açıklamalarda kullanılmaz.
+  Blog yazılarını kontrol eden: Ömürcan Altundaş (yazar kutusunda "Kontrol eden").
   İstanbul geneli görünürlük ilçe yazılarıyla değil, yer adı içermeyen bilgi yazılarıyla hedeflenir.
   Adres yalnızca footer, iletişim ve yasal metinlerde.
 - Rakamlar şeridi (kullanıcı verdi): 10+ yıl ekip tecrübesi, 30 dk ortalama arıza müdahalesi,
