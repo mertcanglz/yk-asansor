@@ -208,7 +208,7 @@ sonradan asansör…) hedeflenir; bu yazılar her ilçeden ve Türkiye genelinde
 değişen şablon metin yasak). Kullanıcı kararı (18 Ekim 2026): bloglarda iş fotoğrafı ve gerçek iş
 örneği kullanılmaz; özgünlük aşağıdaki doğrulanmış yerel bilgilerden ve her yazının farklı ana konusundan gelir.
 
-- Bölgenin **kuruluşu ve yapısı** (ör. Sancaktepe: 5747 sayılı Kanun, 2008; Samandıra, Sarıgazi, Yenidoğan).
+- Semtin **bağlı olduğu ilçe** ve buna bağlı pratik bilgi (ör. hangi belediyenin muayene kuruluşu geçerli). Kuruluş yılı ve tarihçe yalnızca Sancaktepe ana yazısında.
 - Bölgenin **bina dokusu** ve ondan doğan ihtiyaç. Örnek: yeni siteler ve kentsel dönüşüm →
   montaj ve makine dairesiz sistemler; eski 4–5 katlı apartmanlar → sonradan asansör ve
   modernizasyon; sanayi ve ticari alanlar → yük asansörü.

@@ -118,7 +118,8 @@ hem buraya hem siteye işle:
   `docs/mahalle-talep-analizi.md` Bölüm 5.2). **Mahalle yazıları iptal** (kullanıcı kararı) — bkz. `docs/mahalle-talep-analizi.md`
   → (3) diğer çevre ilçeler yakından uzağa (Ataşehir, Kartal, Maltepe, Pendik…). **En uzak sınır İstanbul Anadolu Yakası**; dışına taşılmaz.
   Bloglarda iş fotoğrafı ve gerçek iş örneği kullanılmaz (kullanıcı kararı); özgünlük doğrulanmış yerel
-  bilgiyle (ör. belediyenin protokollü muayene kuruluşu, ilçenin kuruluşu ve bina dokusu), her yazının
+  bilgiyle (ör. belediyenin protokollü muayene kuruluşu, semtin bağlı olduğu ilçe, bina dokusu; kuruluş
+  yılı ve tarihçe yalnızca Sancaktepe ana yazısında, diğer yazılarda yazılmaz — kullanıcı kararı), her yazının
   farklı ana konusuyla ve kaynaklı, derin uzman içerikle sağlanır. Yalnızca yer adı değişen şablon yazı
   yazılmaz (doorway riski). Yerel blog yazılarında "Sancaktepe merkezli ekibimiz" gibi ifadeler
   kullanılabilir (kullanıcı onayı); hizmet/sistem sayfalarında ve meta açıklamalarda kullanılmaz.

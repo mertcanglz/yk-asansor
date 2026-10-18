@@ -33,8 +33,7 @@ Rapor ve etiket · Takip kontrolü · Sık sorulanlar
 
 ## Samandıra'da periyodik kontrolü kim yapar?
 
-Samandıra, 2008'de Sancaktepe ilçesini oluşturan üç eski beldeden biri (Kartal'a bağlı Samandıra beldesi).
-Bugün Sancaktepe'nin bir semti olduğu için buradaki asansörler Sancaktepe Belediyesi'nin protokolüne tabidir.
+Samandıra Sancaktepe'nin bir semti olduğu için buradaki asansörler Sancaktepe Belediyesi'nin protokolüne tabidir.
 
 Periyodik kontrolü bakım firması yapamaz. Kontrolü, Bakanlıkça yetkilendirilmiş ve belediyeyle protokol imzalamış
 bir **A tipi muayene kuruluşu** yapar (Asansör Periyodik Kontrol Yönetmeliği m. 8–9). Sancaktepe'de bu kuruluş
@@ -126,7 +125,6 @@ hazırlık yapar ve kontrol günü eşlik eder.
 - Asansör İşletme ve Bakım Yönetmeliği, güncel metin:
   https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=7&MevzuatNo=31394&MevzuatTertip=5
 - Royalcert protokol listesi: https://tr.royalcert.com/protokoller/
-- Sancaktepe'nin kuruluşu: https://kureansiklopedi.com/tr/detay/sancaktepe-ilce-2bfbe
 
 ## Editör notları (yayınlanmaz)
 

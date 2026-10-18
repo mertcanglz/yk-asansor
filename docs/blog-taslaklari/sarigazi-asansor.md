@@ -33,9 +33,7 @@ Kurtarma eğitimi · Yöneticinin arıza sonrası yapacakları · Sık sorulanla
 
 ## Sarıgazi ve asansörler
 
-Sarıgazi, 2008'de Sancaktepe ilçesini oluşturan üç eski beldeden biri (Ümraniye'ye bağlı Sarıgazi beldesi);
-bugün Sancaktepe'nin bir mahallesi. Belde döneminden kalan apartmanlarla yeni binaların bir arada olduğu bu tür
-bölgelerde, eski asansörlerde mekanik ve kapı arızaları, yeni asansörlerde ise elektronik arızalar öne çıkar.
+Sarıgazi, Sancaktepe'nin bir mahallesi. Eski apartmanlarla yeni binaların bir arada olduğu bu tür bölgelerde, eski asansörlerde mekanik ve kapı arızaları, yeni asansörlerde ise elektronik arızalar öne çıkar.
 
 ## Arıza belirtileri: bunları gördüğünüzde haber verin
 
@@ -116,7 +114,6 @@ makine yenilemesi daha ekonomik olabilir.
 
 - Asansör İşletme ve Bakım Yönetmeliği, güncel metin:
   https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=7&MevzuatNo=31394&MevzuatTertip=5
-- Sancaktepe'nin kuruluşu: https://kureansiklopedi.com/tr/detay/sancaktepe-ilce-2bfbe
 
 ## Editör notları (yayınlanmaz)
 

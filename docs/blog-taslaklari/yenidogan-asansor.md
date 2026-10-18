@@ -34,8 +34,7 @@ değiştirme adımları · Kırmızı etiketli asansörde sözleşme · Sık sor
 
 ## Yenidoğan ve asansör bakımı
 
-Yenidoğan, 2008'de Sancaktepe ilçesini oluşturan üç eski beldeden biri (Ümraniye'ye bağlı Yenidoğan beldesi);
-bugün Sancaktepe'nin bir mahallesi. YK Asansör, Sancaktepe merkezli ekibiyle Yenidoğan'da aylık bakım ve 7/24
+Yenidoğan, Sancaktepe'nin bir mahallesi. YK Asansör, Sancaktepe merkezli ekibiyle Yenidoğan'da aylık bakım ve 7/24
 arıza hizmeti verir.
 
 ## Bakım sözleşmesi neden zorunlu?
@@ -113,7 +112,6 @@ Bina sorumlusu, föyleri makine dairesinde veya yönetim bürosunda kalıcı ola
 
 - Asansör İşletme ve Bakım Yönetmeliği, güncel metin:
   https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=7&MevzuatNo=31394&MevzuatTertip=5
-- Sancaktepe'nin kuruluşu: https://kureansiklopedi.com/tr/detay/sancaktepe-ilce-2bfbe
 
 ## Editör notları (yayınlanmaz)
 
