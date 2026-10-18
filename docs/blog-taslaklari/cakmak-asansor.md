@@ -1,157 +1,155 @@
 # Taslak: Çakmak asansör hizmetleri (semt yazısı)
 
-> **Durum:** taslak v2, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
+> **Durum:** taslak v3, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
 > **Bağlı olduğu ilçe yazısı:** `umraniye-asansor.md` · **Marka:** yalnızca "YK Asansör"
-> **v2:** İlçe yazısı kadar kapsamlı hâle getirildi (tüm hizmetler + kapı arızaları odağı + geniş SSS); dil sadeleştirildi.
+> **v3:** Başlık genişletildi; tüm hizmetler ayrı başlıklarla açıldı; kapı arızaları öne çıkan bölüm.
 
 ## Yayın bilgileri
 
 | Alan | Değer |
 |---|---|
 | URL | `/blog/cakmak-asansor.html` |
-| Ana sorgu | çakmak asansör tamiri / bakım (Ümraniye) |
-| Yan sorgular | ümraniye çakmak asansör, asansör kapısı kapanmıyor, asansör kapısı açılmıyor, asansör fotoseli |
-| `<title>` (57) | `Çakmak Asansör Bakım ve Tamiri, Ümraniye \| YK Asansör` |
-| Meta (≈150) | `Ümraniye Çakmak'ta asansör bakımı, 7/24 arıza ve kapı tamiri. Kapı neden kapanmaz, ne zaman tehlikelidir? Teklif: 0 (543) 542 86 75.` |
-| H1 | Çakmak'ta asansör: *Kapı arızalarından aylık bakıma, apartman yöneticisinin rehberi* |
-| Ana konu | Kapı arızaları (kat kapısı kilidi, fotosel, kapı operatörü) |
+| Ana sorgu | çakmak asansör bakım / tamiri (Ümraniye) |
+| Yan sorgular | ümraniye çakmak asansör, çakmak asansör firması, çakmak asansör montaj, asansör kapısı kapanmıyor |
+| `<title>` (58) | `Çakmak Asansör Bakım, Tamir ve Montaj, Ümraniye \| YK Asansör` |
+| Meta (≈150) | `Ümraniye Çakmak'ta asansör bakımı, 7/24 arıza ve tamir, montaj ve modernizasyon. Kapı arızaları, etiketler ve bakım ücreti: 0 (543) 542 86 75.` |
+| H1 | Çakmak'ta asansör hizmetleri: *Bakım, tamir, montaj ve sık görülen kapı arızaları* |
+| Öne çıkan bölüm | Kapı arızaları |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
-| İç bağlantılar | Ümraniye, Dudullu, Şerifali, Tepeüstü, Sarıgazi yazıları; 7/24 arıza sayfası; modernizasyon sayfası; teklif formu |
+| İç bağlantılar | Ümraniye, Dudullu, Şerifali, Tepeüstü yazıları; konu yazıları (asansör kapısı, asansör arızaları, etiket renkleri, bakım ücreti, bakım sözleşmesi); teklif formu |
 
-> "çakmak asansör" araması (50/ay) büyük olasılıkla "Çakmak Asansör" adlı firma aramalarıdır; başlıkta ve metinde
-> semt adı Ümraniye ile birlikte kullanıldı.
+> "çakmak asansör" araması (50/ay) büyük olasılıkla aynı adlı firma aramalarıdır; başlıkta semt adı Ümraniye ile birlikte.
 
 ---
 
 ## Metin
 
-# Çakmak'ta asansör: *Kapı arızalarından aylık bakıma, apartman yöneticisinin rehberi*
+# Çakmak'ta asansör hizmetleri: *Bakım, tamir, montaj ve sık görülen kapı arızaları*
 
-Bir apartmanda asansörle ilgili gelen şikâyetlerin önemli bir kısmı kapıyla ilgilidir: kapanmıyor, kapanıp yine
-açılıyor, bir katta hiç açılmıyor. Çoğu zaman sebep basit bir şeydir, eşikte bir taş ya da kirli bir fotosel. Ama
-bazı kapı sorunları gerçekten tehlikelidir ve beklemeye gelmez. Ümraniye'nin Çakmak Mahallesi'nde bina
-yöneticilerine bu farkı anlatmak için bu yazıyı hazırladık; sonunda Çakmak'ta verdiğimiz bakım, modernizasyon ve
-montaj hizmetlerini de bulacaksınız.
+Ümraniye'nin Çakmak Mahallesi çoğunlukla apartmanlardan oluşan bir yer ve apartman yöneticilerinden en çok duyduğumuz
+şikâyet kapıyla ilgili: kapanmıyor, kapanıp yine açılıyor, bir katta hiç açılmıyor. YK Asansör olarak Sancaktepe
+merkezli ekibimizle Çakmak'ta aylık bakım, 7/24 arıza ve tamir, modernizasyon ve montaj yapıyoruz. Bu yazıda bütün
+hizmetleri ve yöneticinin bilmesi gerekenleri anlattık; kapı arızalarına ayrıca yer verdik.
 
 **Bu yazıda**
 
-1. Asansör kapısı nasıl çalışır?
-2. Sık görülen kapı arızaları
-3. Hangi durum tehlikeli?
-4. Yöneticinin ve sakinlerin yapabilecekleri
-5. Kapıyı ne zaman yenilemek gerekir?
-6. Çakmak'ta verdiğimiz hizmetler
-7. Periyodik kontrol ve bakım ücreti
-8. Sık sorulanlar
+1. Çakmak'ta neler yapıyoruz?
+2. Aylık bakım ve sözleşme
+3. 7/24 arıza ve tamir
+4. Kapı nasıl çalışır, neden arızalanır?
+5. Hangi kapı sorunu tehlikeli?
+6. Periyodik kontrol ve etiketler
+7. Modernizasyon ve yeni montaj
+8. Bakım ücreti ve firma seçimi
+9. Sık sorulanlar
 
-## Asansör kapısı nasıl çalışır?
+## Çakmak'ta neler yapıyoruz?
 
-Bir asansörde aslında iki kapı vardır. Her katta bir **kat kapısı**, kabinde bir **kabin kapısı**. Otomatik
-kapılı asansörlerde kabin kapısını bir motor ve mekanizma, yani **kapı operatörü** açıp kapatır; kat kapısı da
-onunla birlikte hareket eder.
+Aylık bakım ve bakım sözleşmesi, 7/24 arıza ve tamir, kapı ve kumanda yenilemesi dahil modernizasyon, yeni montaj ve
+sonradan asansör, kuyu ve makine dairesi temizliği, yeşil etiket hazırlığı. Dişli, dişlisiz, hidrolik, makine dairesiz,
+yük, villa ve engelli lifti dahil tüm tiplerle çalışıyoruz.
 
-Kat kapısının bir **kilidi** vardır ve kabin o katta değilken kapının açılmasını engeller. Kapı arasında birisi
-varken kapanmasını ise **fotosel** ya da ışık perdesi önler. Kapılar ve kilitler asansörün güvenlik devresine
-bağlıdır: kapı tam kapanıp kilitlenmeden asansör hareket etmez. Yani "kapı kapanmıyor, asansör çalışmıyor"
-şikâyeti aslında sistemin doğru çalıştığını gösterir.
+## Aylık bakım ve sözleşme
 
-## Sık görülen kapı arızaları
+Bakım ayda en az bir kez yapılıyor. Her ay kapılar, kilitler ve fotosel dahil asansörün tüm güvenlik noktalarını
+kontrol ediyor, rayları yağlıyor ve bir föy bırakıyoruz. Bakım için sözleşme yapmak, bakımı yaptırmak ve ücretini
+ödemek yöneticinin işi; bakımı yapan firmanın TSE Hizmet Yeterlilik Belgesi olmalı. Kapı veya kapı operatörünün
+değişimi gibi büyük işler bakım kapsamında değil, ayrıca fiyatlanıyor. Sözleşmede nelere bakılacağını "Asansör bakım
+sözleşmesi" yazımızda, masrafın kat malikleri arasında paylaşımını "Asansör bakımını kim öder?" yazımızda anlattık.
+
+## 7/24 arıza ve tamir
+
+Kapı arızası çoğu zaman akşam saatlerinde, yoğun kullanımda ortaya çıkar. Hattımız her saat açık: 0 (543) 542 86 75.
+İçeride biri kaldıysa kapıyı zorlamadan bizi arayın; sağlık sorunu ya da duman varsa önce 112. Kurtarma eğitimini bakım
+firması yılda en az bir kez vermek zorunda. Genel arıza belirtilerini "Asansör arızaları" yazımızda anlattık.
+
+## Kapı nasıl çalışır, neden arızalanır?
+
+Bir asansörde iki kapı var: her katta bir kat kapısı, kabinde bir kabin kapısı. Otomatik kapılı asansörlerde kabin
+kapısını bir motor ve mekanizma, yani kapı operatörü açıp kapatıyor; kat kapısı da onunla birlikte hareket ediyor. Kat
+kapısının kilidi, kabin o katta değilken kapının açılmasını engelliyor; fotosel de kapı arasında biri varken kapanmasını
+önlüyor. Kapılar ve kilitler güvenlik devresine bağlı olduğu için kapı tam kapanıp kilitlenmeden asansör hareket
+etmiyor.
 
 | Belirti | Genellikle neden olur? |
 |---|---|
 | Kapı kapanıyor, tekrar açılıyor | Kirli ya da ayarı bozuk fotosel, eşikte yabancı cisim |
 | Kapı tam kapanmıyor, asansör kalkmıyor | Rayda kir, kilit kontağı, ayar |
 | Kapı yavaş ya da sarsıntılı açılıyor | Kapı operatörü, kayış veya makaralarda aşınma |
-| Kapı kapanırken çarpıyor | Kapı operatörü ayarı |
 | Bir katta kapı açılmıyor | O kattaki kilit ya da mekanizma |
-| Asansör iki kat arasında durdu | Hareket sırasında güvenlik devresinin açılması, çoğu zaman kapı kontağı |
+| Asansör iki kat arasında durdu | Hareket sırasında güvenlik devresinin açılması |
 
-Bizim sahada en sık gördüğümüz sebep kapı eşiğindeki taş, kum ve çöp. Apartman temizliğinden sonra eşiğe dolan
-su ve deterjan da bunu takip ediyor.
+Sahada en sık gördüğümüz sebep kapı eşiğindeki taş, kum ve çöp; apartman temizliğinden sonra eşiğe dolan su da bunu
+takip ediyor. Sakinlerin kapıyı eliyle ya da ayağıyla tutarak bekletmesi de kapı operatörünü yıpratıyor. Ayrıntısı
+"Asansör kapısı" yazımızda.
 
-## Hangi durum tehlikeli?
+## Hangi kapı sorunu tehlikeli?
 
-Şu durumlarda asansörü hemen kullanıma kapatın, her kata "arızalı" yazısı asın ve bakım firmanızı arayın:
+Kabin o katta değilken kat kapısı açılabiliyorsa, kapı açıkken asansör hareket ediyorsa ya da kapı paneli yerinden
+çıkmışsa asansörü hemen kullanıma kapatın, her kata uyarı asın ve bakım firmanızı arayın. İlk ikisi birinin boş
+kuyuya düşmesine ya da sıkışmasına yol açabilecek durumlar. Kapı mekanizmasına kendiniz dokunmayın; yönetmelik
+sözleşme dışındaki kişilerin asansöre müdahalesine izin vermiyor.
 
-- Kabin o katta değilken **kat kapısı açılabiliyorsa**
-- **Kapı açıkken asansör hareket ediyorsa**
-- Kapı paneli yerinden çıkmış ya da eğilmişse
+## Periyodik kontrol ve etiketler
 
-İlk ikisi, birinin boş kuyuya düşmesine ya da kabin ile kat arasında sıkışmasına yol açabilecek durumlar.
-Yönetmelik de tehlikeli bir durumu fark eden yöneticinin bakım firmasına haber vermesini ve müdahaleye kadar önlem
-almasını istiyor.
+Çakmak Ümraniye'ye bağlı olduğu için yıllık periyodik kontrolü Royalcert yapıyor (protokol 2024–2030). Kapı kilitleri
+ve fotosel muayenede mutlaka bakılan noktalar; kapıyla ilgili bir eksik sarı ya da mavi etiket sebebi olabilir.
 
-## Yöneticinin ve sakinlerin yapabilecekleri
+| Etiket | Anlamı | Süre |
+|---|---|---|
+| Yeşil | Kusursuz | – |
+| Mavi | Hafif kusurlu | Bir sonraki kontrole kadar |
+| Sarı | Kusurlu | En geç 120 gün |
+| Kırmızı | Güvensiz, kullanılmaz | En geç 60 gün |
 
-- Kapı eşiklerini temiz tutun; temizlikte eşiğe bol su dökülmemesini isteyin.
-- Sakinlere, kapıyı eliyle ya da ayağıyla tutarak bekletmemelerini, bunun yerine kapı açma butonunu kullanmalarını
-  hatırlatın. Elle zorlanan kapı, kapı operatörünü yıpratır.
-- Taşınma ve tadilat dönemlerinde kabin ve kapı koruması isteyin.
-- Kapı mekanizmasına ve kilitlere kendiniz dokunmayın. Yönetmelik, sözleşme dışındaki kişilerin asansöre müdahale
-  etmesine izin vermiyor.
+Ücreti yönetim ödüyor; kırmızı ya da sarı etiket sonrası ilk takip kontrolü ücretsiz. Ayrıntılar "Asansör etiket
+renkleri" yazımızda.
 
-## Kapıyı ne zaman yenilemek gerekir?
+## Modernizasyon ve yeni montaj
 
-Aynı arıza birkaç ayda bir tekrarlıyorsa, yedek parça bulunamıyorsa ya da asansörde hiç kabin kapısı yoksa kapı
-sisteminin yenilenmesini konuşmanın zamanı gelmiştir. Kapı ve kapı operatörünün değişimi bakım kapsamında değil,
-ayrıca teklif ediliyor. Periyodik kontrolde kapılarla ilgili bir eksik çıkmışsa yenileme o eksiği de kapatır.
+Aynı kapı arızası birkaç ayda bir tekrarlıyorsa, yedek parça bulunamıyorsa ya da asansörde hiç kabin kapısı yoksa kapı
+sisteminin yenilenmesini konuşmanın zamanı gelmiştir. Kumanda panosu ve makine de ayrı ayrı yenilenebiliyor. Asansörü
+olmayan apartmanlarda sonradan asansör de çoğu zaman mümkün; kat malikleri kararı, kuyu için uygun yer ve onaylı proje
+gerekiyor. Yeni asansörün maliyetini "Asansör fiyatları" yazımızda anlattık.
 
-## Çakmak'ta verdiğimiz hizmetler
+## Bakım ücreti ve firma seçimi
 
-YK Asansör olarak Sancaktepe merkezli ekibimizle Çakmak'ta şunları yapıyoruz:
-
-**Aylık bakım.** Her ay kapılar, kilitler ve fotosel dahil asansörün tüm güvenlik noktaları kontrol ediliyor,
-raylar yağlanıyor ve bakım föyü bırakılıyor. Bakım sözleşmesinde nelere bakılacağını Yenidoğan yazımızda
+TASİAD'ın 2026 tavsiyesi konut tipi bir asansör için (7 durağa kadar) aylık 3.000 TL + KDV; her ek durak için 500 TL.
+Kapı ayarı ve temizliği bakımın içinde; kapı ya da operatör değişimi ayrıca fiyatlanıyor. Firma seçerken TSE
+belgesini, arızaya varış süresini, ücrete dahil olanları ve föyü sorun. Teklif okumayı "Asansör bakım ücreti" yazımızda
 anlattık.
-
-**7/24 arıza ve kurtarma.** Kapı arızası çoğu zaman akşam saatlerinde, yoğun kullanımda ortaya çıkar. Hattımız
-her saat açık: 0 (543) 542 86 75. Genel arıza belirtilerini Sarıgazi yazımızda bulabilirsiniz.
-
-**Modernizasyon.** Kapı sistemi, kumanda panosu ve makine yenilemesi. Kabin kapısı olmayan eski asansörlere
-kabin kapısı eklenmesi.
-
-**Yeni montaj ve sonradan asansör.** Yeni binalar ve asansörü olmayan apartmanlar için keşiften tescile kadar.
-
-**Temizlik ve yeşil etiket hazırlığı.** Kontrol öncesi kuyu dibi, makine dairesi temizliği ve ön kontrol.
-
-Dişli, dişlisiz, hidrolik, makine dairesiz, yük, villa ve engelli lifti dahil tüm tiplerle çalışıyoruz.
-
-## Periyodik kontrol ve bakım ücreti
-
-Çakmak Ümraniye'ye bağlı olduğu için yıllık periyodik kontrolü Royalcert yapıyor (protokol 2024–2030). Kapı
-kilitleri ve fotosel muayenede mutlaka bakılan noktalar; kapıyla ilgili bir eksik sarı ya da mavi etiket sebebi
-olabilir. Sarı etikette eksikler en geç 120 günde, kırmızı etikette en geç 60 günde giderilmeli.
-
-Bakım ücreti asansöre ve sözleşmeye göre değişiyor. TASİAD'ın 2026 tavsiyesi konut tipi bir asansör için (7 durağa
-kadar) aylık 3.000 TL + KDV; her ek durak için 500 TL. Kapı ayarı ve temizliği bakımın içinde; kapı veya operatör
-değişimi ayrıca fiyatlanıyor.
 
 > ### Kapı arızası mı var?
 > 7/24 arıza hattı: **0 (543) 542 86 75** · Bakım sözleşmesi için **[Teklif alın]**
 
 ## Sık sorulanlar
 
+**Çakmak'ta aylık asansör bakımı yapıyor musunuz?**
+Evet. Sancaktepe merkezli ekibimizle aylık bakım, 7/24 arıza, modernizasyon ve montaj yapıyoruz.
+
 **Asansör kapısı kapanmıyor, asansör neden çalışmıyor?**
-Kapılar güvenlik devresine bağlı; kapı tam kapanıp kilitlenmeden asansör hareket etmez. Bu bir arıza değil,
-güvenlik önlemi.
+Kapılar güvenlik devresine bağlı; kapı tam kapanıp kilitlenmeden asansör hareket etmez. Bu bir güvenlik önlemi.
 
 **Kapı tekrar tekrar açılıyorsa ne yapmalıyım?**
-Önce eşikte bir engel olup olmadığına bakın. Sorun sürüyorsa fotosel ya da kapı ayarıdır; bakım firmanızı arayın.
+Önce eşikte bir engel olup olmadığına bakın; sorun sürüyorsa fotosel ya da kapı ayarıdır, bakım firmanızı arayın.
 
 **Kabin yokken kat kapısı açılıyor, ne yapmalıyım?**
 Asansörü hemen kapatın, her kata uyarı asın ve firmayı arayın. Bu ciddi bir tehlike.
 
 **Kapı arızası bakım ücretine dahil mi?**
-Ayar, temizlik ve aşınmaya bağlı küçük parçalar dahil; kapı ya da kapı operatörü değişimi ayrıca fiyatlanıyor.
+Ayar, temizlik ve küçük parçalar dahil; kapı ya da kapı operatörü değişimi ayrıca fiyatlanıyor.
 
 **Eski asansörümüzde kabin kapısı yok, eklenebilir mi?**
-Çoğu asansörde eklenebiliyor. Keşifte kabinin ve kuyunun ölçülerine bakıp seçenekleri söylüyoruz.
-
-**Çakmak'ta aylık asansör bakımı yapıyor musunuz?**
-Evet. Aylık bakım, 7/24 arıza, modernizasyon ve montaj yapıyoruz.
+Çoğu asansörde eklenebiliyor; keşifte kabinin ve kuyunun ölçülerine bakıyoruz.
 
 **Çakmak'ta periyodik kontrolü kim yapıyor?**
 Ümraniye Belediyesi'yle protokolü olan Royalcert (2024–2030).
+
+**Sarı etiket aldık, ne kadar süremiz var?**
+Eksikleri en geç 120 günde gidermeniz gerekiyor; kırmızı etikette süre 60 gün.
+
+**Aylık bakım ücreti ne kadar?**
+Konut tipi bir asansör için TASİAD'ın 2026 tavsiyesi aylık 3.000 TL + KDV.
 
 **Gece kapı arızası olursa kimi aramalıyım?**
 0 (543) 542 86 75. Hattımız 7/24 açık.
@@ -167,6 +165,5 @@ Evet. Aylık bakım, 7/24 arıza, modernizasyon ve montaj yapıyoruz.
 
 ## Editör notları (yayınlanmaz)
 
-- Madde dayanakları: tehlike bildirimi İB m. 14/3; üçüncü kişi müdahalesi İB m. 10; kapı değişimi kapsam dışı
-  İB m. 9; etiket süreleri PK m. 11.
-- Kapı sistemi anlatımı ve arıza tablosu saha bilgisidir; Ömürcan Bey kontrol etsin.
+- Madde dayanakları: İB m. 4/e, 14/1, 13/1, 9, 10/6, 14/3, 10/13; PK m. 11, 23/1, 9/7.
+- Kapı anlatımı ve arıza tablosu saha bilgisidir; Ömürcan Bey kontrol etsin.
