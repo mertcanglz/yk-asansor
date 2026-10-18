@@ -193,8 +193,16 @@ Kodlamadan önce taslaklar `docs/blog-taslaklari/` altında Markdown olarak yaz�
 
 ### 4.1 Yerel yazılar (5 bölge)
 
-`CLAUDE.md` kararına göre yerel SEO yalnızca şu bölgeler için ayrı ve özgün blog yazılarıyla
-yapılır: **Sancaktepe, Samandıra, Yenidoğan, Sarıgazi, Sultanbeyli.**
+`CLAUDE.md` kararına göre yerel SEO ayrı ve özgün blog yazılarıyla, aşama aşama ve her aşama onaydan
+sonra yapılır: **(1) Sancaktepe** ana yazısı (taslak: `docs/blog-taslaklari/sancaktepe-asansor-bakimi.md`)
+→ **(2) Samandıra, Sarıgazi, Yenidoğan** (Sancaktepe'nin semtleri) → **(3) çevre ilçeler**, yakından uzağa:
+Sultanbeyli, Çekmeköy, Ümraniye, Ataşehir, Kartal, Maltepe, Pendik, sonra Üsküdar, Kadıköy, Tuzla, Beykoz.
+Sınır İstanbul Anadolu Yakası.
+
+**Beklenti:** İlçe yazıları organik aramada (ilk 10 sonuç) yardımcı olur; Haritalar sıralaması ise
+uzaklığa bağlı olduğu için ofisten uzaklaştıkça yazıların harita etkisi azalır. İstanbul geneli
+görünürlük, yer adı içermeyen bilgi yazılarıyla (etiket renkleri, bakım ücretleri, kırmızı etiket,
+sonradan asansör…) hedeflenir; bu yazılar her ilçeden ve Türkiye genelinden gelen aramalarda çıkabilir.
 
 **Doorway riskinden kaçınmak için her yerel yazıda en az şunlar olmalı** (yalnızca semt adı
 değişen şablon metin yasak):
@@ -212,7 +220,7 @@ değişen şablon metin yasak):
 
 | Yazı (çalışma başlığı) | Odak açısı |
 |---|---|
-| Sancaktepe'de asansör bakımı: yönetici rehberi | Tuvalde şablonu var. Aylık bakım, sözleşme, etiket takvimi. |
+| Sancaktepe'de asansör bakımı: bina yöneticisi neleri bilmeli? | **Taslak hazır** (18 Ekim 2026, gerçek iş bilgileri bekleniyor). Bina tipleri, yasal sorumluluk, periyodik kontrol, yıllık takvim, firma seçimi. |
 | Samandıra'da asansör: yeni binalar ve bakım | Yeni yapılaşma, montaj ve bakım geçişi. |
 | Sultanbeyli'de eski apartmana asansör ve modernizasyon | Sonradan asansör, revizyon. |
 | Sarıgazi'de asansör arıza ve bakım hizmeti | Arıza belirtileri, hızlı müdahale. |

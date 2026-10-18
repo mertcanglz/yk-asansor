@@ -111,9 +111,14 @@ hem buraya hem siteye işle:
 - Kabin çözümleri: panoramik cam, rezidans ve yolcu, sedye/medikal, yük ve araç
 - Hizmet bölgesi: Türkiye geneli. Sayfa metinlerinde (giriş metinleri, SSS, meta açıklamaları)
   ilçe/mahalle adı ve "X merkezli ekibimiz" kalıbı kullanılmaz; hedef kitleyi daraltıyor (kullanıcı kararı).
-  Yerel SEO ("Sancaktepe asansör bakım" gibi aramalar) yalnızca bu bölgeler için ayrı, özgün blog
-  yazılarıyla yapılır (Sancaktepe, Samandıra, Yenidoğan, Sarıgazi, Sultanbeyli). Adres yalnızca footer,
-  iletişim ve yasal metinlerde.
+  Yerel SEO ("Sancaktepe asansör bakım" gibi aramalar) yalnızca ayrı, özgün blog yazılarıyla yapılır.
+  Sıra (kullanıcı kararı, her aşama onaydan sonra): (1) Sancaktepe ana yazısı → (2) Sancaktepe'nin
+  semtleri: Samandıra, Sarıgazi, Yenidoğan → (3) çevre ilçeler yakından uzağa (Sultanbeyli, Çekmeköy,
+  Ümraniye, Ataşehir, Kartal, Maltepe, Pendik…). **En uzak sınır İstanbul Anadolu Yakası**; dışına taşılmaz.
+  Her yazı farklı bir ana konuya odaklanır ve gerçek iş/fotoğraf/ölçülmüş süre içerir; yalnızca yer adı
+  değişen şablon yazı yazılmaz (doorway riski). Gerçek iş bilgisi gelmeyen yer için yazı yayınlanmaz.
+  İstanbul geneli görünürlük ilçe yazılarıyla değil, yer adı içermeyen bilgi yazılarıyla hedeflenir.
+  Adres yalnızca footer, iletişim ve yasal metinlerde.
 - Rakamlar şeridi (kullanıcı verdi): 10+ yıl ekip tecrübesi, 30 dk ortalama arıza müdahalesi,
   500+ asansör montajı.
 - SSS: yanıtlar düz metin olarak sayfada (mobilde tüm sayfalarda açılışta hepsi kapalı akordeon, aynı anda tek soru açık — biri açılınca önceki kapanır, `<details name="sss">`; kapalıyken de
