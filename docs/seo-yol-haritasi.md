@@ -1,15 +1,16 @@
 # YK Asansör: SEO ve yerel görünürlük yol haritası
 
-Hazırlanma: 18 Ekim 2026. Durum: **taslak, kullanıcı onayı bekliyor.**
+Hazırlanma: 18 Ekim 2026. Güncelleme: 18 Ekim 2026 (Chrome ile rakip incelemesi).
+Durum: **taslak, kullanıcı onayı bekliyor.**
 
 Bu belge, sitenin yerel aramalarda ("Sancaktepe asansör bakım" gibi), Google Haritalar'da ve
 yapay zekâ asistanlarında üst sıralara çıkması için yapılacak işleri üç döneme ayırır:
 **kodlamadan önce**, **kodlama sırasında** ve **yayından sonra**. Kodlama bu belgeye göre yapılır.
 
-> **Yöntem notu:** Bu araştırma bulut oturumundan, web araması ile yapıldı. Oturumun ağ
-> kısıtı yüzünden rakip sitelere doğrudan girilemedi; bilgiler arama sonuçlarındaki sayfa
-> özetlerinden derlendi. Google Haritalar'daki 3'lü yerel paket (harita sıralaması) da
-> buradan görülemedi. Bölüm 2.5'teki 5 dakikalık telefon kontrolü bu boşluğu kapatır.
+> **Yöntem notu:** İlk taslak bulut oturumundan, yalnızca web aramasıyla hazırlandı. 18 Ekim 2026'da
+> masaüstü oturumundan Chrome ile Google Haritalar (20 arama), Google arama sonuçları, 17 rakip site
+> ve YK Asansör'ün Google profili doğrudan incelendi. Ayrıntılar ve tablolar:
+> [`docs/rakip-inceleme.md`](rakip-inceleme.md). Bu belgedeki rakip ve harita bilgileri ona göre güncellendi.
 
 ---
 
@@ -19,10 +20,14 @@ yapay zekâ asistanlarında üst sıralara çıkması için yapılacak işleri �
    İşletme Profili (birincil kategori, eksiksiz bilgi, açık/kapalı saatleri) ve **yorumlar**
    belirliyor. Web sitesi bunu destekler ama tek başına yetmez. Profil ve yorum işi siteyi
    beklemeden **bugün** başlayabilir.
-2. **Organik sonuçlarda Sancaktepe ve çevresini dizin siteleri tutuyor** (Armut, firmasec,
-   asansor-firmalari.com, asansorcu.kim). Firma siteleri azınlıkta ve çoğu zayıf: şablon ilçe
-   sayfaları, eski içerik, gerçek fotoğraf yok. Hızlı, mobil uyumlu, gerçek iş fotoğraflı ve
-   2026'ya güncel bir site bu bölgede kolayca öne geçebilir.
+   **Mevcut durum (18 Ekim 2026):** YK Asansör Sancaktepe ve Samandıra harita aramalarının 10'unun
+   7'sinde ilk 5'te; Google'da "sancaktepe asansör bakım/firması" yerel 3'lü paketinde 3. sırada.
+   Montaj aramalarında, Sultanbeyli'de ve ilçesiz genel aramalarda görünmüyor. Profilde web sitesi
+   yok, saatler her gün 09:00–17:00, 15 yorum (rakip liderlerde 65–73).
+2. **Organik sonuçlarda Sancaktepe ve çevresini ilçe dışı firmaların şablon ilçe sayfaları, ilçe adlı
+   alan adı ağları ve Armut tutuyor.** İlk 10'da Sancaktepe'de oturan ve sitesi çalışan firma yok.
+   Rakip sitelerin çoğu zayıf: şablon ilçe sayfaları, eski içerik, gerçek fotoğraf ve belge numarası
+   yok. Hızlı, mobil uyumlu, gerçek iş fotoğraflı ve 2026'ya güncel bir site bu bölgede kolayca öne geçebilir.
 3. **Bilgi aramalarında** (etiket renkleri, bakım ücretleri, kırmızı etiket, sonradan asansör)
    rehber siteleri ve firma blogları var ama derinlik ve güncellik eksik. Doğru, kaynaklı ve
    yönetmeliğe dayalı yazılar hem trafik hem güven getirir.
@@ -41,7 +46,7 @@ yapay zekâ asistanlarında üst sıralara çıkması için yapılacak işleri �
 | # | Gereken | Neden |
 |---|---------|-------|
 | 1 | **Kesin marka adı ve alan adı** (ör. `markaadi.com.tr`, ek olarak `.com` yönlendirme) | Başlıklar, yapılandırılmış veri, Google profili ve tüm dizin kayıtları buna bağlı. Alan adı anahtar kelime içermek zorunda değil; marka adı daha iyi. `.com.tr` 2022'den beri belgesiz alınabiliyor. |
-| 2 | **Google İşletme Profili'ne yönetici erişimi** ve profilin mevcut durumu: adı, kategorisi, yorum sayısı, adres gösteriliyor mu | Haritadaki sıralamanın ana kaynağı. Ben düzenleyemem ama adım adım tarif ederim. |
+| 2 | **Google İşletme Profili'ne yönetici erişimi** ve iki karar: (a) 7/24 arıza hattı gerçekten açık mı? Açıksa profil "24 saat açık" olur, değilse her yerdeki "7/24" ifadesi gerçeğe uyarlanır. (b) Hangi Instagram hesabı resmî (`@ykasansorr` mı, `yk.asansorr` mı)? | Profilin durumu görüldü (rakip-inceleme.md, Bölüm 5): kategori doğru, adres ve telefon doğru; web sitesi yok, saatler 09–17 ve Instagram'daki "7/24" ile çelişiyor. Ben düzenleyemem ama adım adım tarif ederim. |
 | 3 | **Belgeler:** TSE Hizmet Yeterlilik Belgesi (TS 12255), varsa ISO 9001 ve CE belgeleri, ticaret unvanı, kuruluş yılı | Yönetmelik bakım firmasında TS 12255 kapsamında TSE HYB arıyor. Sitede belge numarasıyla göstermek en güçlü güven sinyali (E-E-A-T). Yasal metinlerde de unvan gerekli. |
 | 4 | **Gerçek fotoğraflar:** bitmiş montajlar, öncesi/sonrası modernizasyonlar, ekip, servis aracı, ofis | Hizmet, sistem ve yerel blog sayfalarının "özgün" sayılması bunlara dayanıyor. Telefonla çekilmiş net fotoğraflar yeter. Mümkünse hangi semtte çekildiğini not et. |
 | 5 | **Referans işler:** 5–10 proje (semt, bina tipi, yapılan iş, yıl). Müşteri izin verirse kısa yorum | Yerel blog yazıları ve olası bir "Projeler" sayfası için. |
@@ -60,34 +65,52 @@ dizine eklenebilir. README'yi de güncelleyelim.
 
 ### 2.1 Arama sonuçlarını kim tutuyor?
 
-"Sancaktepe asansör bakım", "Sancaktepe asansör montaj", "Sultanbeyli asansör bakım" gibi
-sorgularda ilk sıralar büyük ölçüde **dizin ve teklif platformlarında**:
+18 Ekim 2026'daki doğrudan kontrolde (rakip-inceleme.md, Bölüm 3) "sancaktepe asansör bakım",
+"sancaktepe asansör firması" ve "sultanbeyli asansör bakım" ilk 10'u şöyle dağıldı:
 
-- **Armut**: Her ilçe ve hizmet için ayrı sayfası var (ör. Sancaktepe asansör bakım: 177 firma;
-  asansör montaj: 266 firma; ayrıca revizyon, halat değişimi, yük asansörü, pano sayfaları).
-  Sayfalarda firma yorumları ve fiyat aralıkları görünüyor.
-- **firmasec.com, asansorcu.kim, sancaktepe.asansor-firmalari.com, ara.com.tr, aratsana.com,
-  sahibinden.com (hizmetler)**: Firma kartları, adres, telefon ve bazen yorum.
+- **İlçe dışı firmaların ilçe sayfaları** (çoğunluk): Trio Lift, Eren Lift (Pendik), Bilim-San,
+  Arken (Avrupa Yakası), Kaon, Meridyen.
+- **İlçe adlı alan adı ağları:** `sancaktepeasansor.com.tr` ve `sultanbeyliasansor.com.tr` aynı
+  0212 numarasıyla ikisi de 1. sırada; `sancaktepe.asansorr.com` alt alan adı.
+- **Platformlar ve dizinler:** Armut (her sorguda 1–2 sonuç), sahibinden hizmetler, asansorfirmalari.com,
+  kirlisepeti.com ve **Yandex Haritalar kartları**.
+- **Gerçekten Sancaktepe'de olan tek firma** Leon Asansör (2.–3. sırada); sitesi açılmıyor.
 
-**Çıkarım:** Bu platformlarda **yorumlu, eksiksiz bir profil**, aynı aramada birkaç kez
-görünmek demektir. Siteyle birlikte en hızlı kazanç budur (Bölüm 7.3).
+**Çıkarım:** Platformlarda **yorumlu, eksiksiz bir profil** aynı aramada birkaç kez görünmek demektir
+(Bölüm 7.3). Ama asıl boşluk, gerçek adresli ve gerçek işli yerel bir firma sayfasının olmaması.
 
 ### 2.2 Bölgedeki ve yakındaki firmalar
 
-| Firma | Konum / kapsam | Dijital durum (arama sonuçlarından) |
+Tam tablo (title, meta, H1, şema, fotoğraf, belge, hız, mobil): rakip-inceleme.md, Bölüm 4.
+
+**Haritada öne çıkanlar** (20 aramanın ilk 5'ine giriş sayısı; tarayıcı konumu Sancaktepe/Ümraniye sınırı):
+
+| Firma | Puan (yorum) | Web | İlk 5'te | Not |
+|---|---|---|---|---|
+| ERT Asansör | 4,9 (65) | Yok | 15 | 24 saat açık görünüyor. Haritanın lideri. |
+| Ayta Asansör | 5,0 (2) | Açılmıyor | 10 | Az yorumla 1. sıralar: yakınlık etkisi. |
+| Lineer Asansör | 5,0 (10) | Var | 9 | |
+| Vega Asansör | 4,4 (14) | Yok | 8 | |
+| **YK Asansör** | **5,0 (15)** | **Yok** | **7** | Sancaktepe ve Samandıra'da; montaj, Sultanbeyli ve ilçesiz aramalarda yok. |
+| Güneş Asansör | 5,0 (5) | Var | 5 | Montaj ve Samandıra'da güçlü. Doğrudan rakip. |
+| "Asansör bakım ve arıza servisi", Özkoçsan, Teknotek | 5,0 (31) · 5,0 (35) · 5,0 (73) | Yalnız Teknotek | Sultanbeyli'de | Sultanbeyli haritasını yerel firmalar tutuyor. |
+| Enes Asansör Mühendislik | 4,3 (24) | Var | Reklam | 20 aramanın 20'sinde reklam. |
+
+**Organikte ve listede adı geçen siteler:**
+
+| Firma | Konum / kapsam | Doğrudan inceleme (18 Ekim 2026) |
 |-------|----------------|-------------------------------------|
-| Sancaktepe Asansör (`sancaktepeasansor.com.tr`) | "Sancaktepe" adlı alan adı | Genel tanıtım metni; numarası 0212 (Avrupa Yakası). Muhtemelen yönlendirme amaçlı site. Adres ve fiyat yok. |
-| Kalitas Mühendislik (`kalitas.dev`) | Her ilçe için ayrı sayfa (Sancaktepe, Sultanbeyli…) | Şablon ilçe sayfaları: aynı metin, yalnızca ilçe adı değişiyor. Google bunu "doorway" sayabilir. |
-| Bilim-San Asansör (`bilimsanasansor.com`, `anadoluyakasiasansorbakimi.com`) | 1989, Kadıköy kökenli, Anadolu Yakası | İlçe sayfaları var (Kartal, Çekmeköy, Ümraniye, Samandıra…). Bazı sayfalar ~10 yıllık. Etiket konuları başlık düzeyinde, içerik sığ. |
-| Fia Lift | `…/sancaktepe-asansor-bakim.html` | Sancaktepe'ye özel bakım sayfası, 7/24 hat vurgusu. |
-| EMAS Asansör (`emasasansor.com/sancaktepe/`) | Adresi Yayalar | Sancaktepe sayfası: bakım, montaj, 7/24. |
-| Leon Asansör (`asansorservis.biz.tr`) | Adresi Sancaktepe | Etiketlerde Yenidoğan vb. semt adları; müşteri yorumu var. |
-| Trio Lift | Sancaktepe hizmet alanı | Bakım, arıza, modernizasyon, 7/24. |
-| Detay Lift | Sancaktepe, Atatürk Mah. | Dizinlerde; CE ve TS 12255 belgelerini öne çıkarıyor. |
-| Isas Asansör | Samandıra, 1988'den beri | Dizinlerde; TSE HYB bilgilendirmesi yapıyor. |
-| Saysa Asansör | Sarıgazi | Dizinlerde; TSE HYB ve TS 12255 vurgusu. |
-| Axel Asansör, Teknotek Asansör | Sultanbeyli | Dizinlerde yorumlu kart (Teknotek: 71 yorum, 5,0). |
-| Özhisar (Kartal), Lina (Kağıthane), Meridyen | Anadolu Yakası geneli | Lina'nın blogu var (kısa yeşil etiket yazısı). Meridyen'in SSS bölümü var. |
+| Sancaktepe Asansör (`sancaktepeasansor.com.tr`) | Bahçelievler (0212) | İlçe adlı alan adı; aynı numara `sultanbeyliasansor.com.tr`'de. WordPress, H1 ve meta açıklama yok, stok fotoğraf, 2023'ten beri güncellenmemiş. Yine de organikte 1. |
+| Kalitas Mühendislik (`kalitas.dev`) | ~40 şablon ilçe sayfası | Aynı metin, ilçe adı değişiyor. Meta açıklama yok, 3 H1, telefon tıklanamıyor. |
+| Bilim-San Asansör (`bilimsanasansor.com`) | Kadıköy kökenli, Anadolu Yakası | 14 ilçe kategorisi, WordPress 5.3 (eski), "Belgeler" ve "Asansör Muayene Eksikleri" sayfaları. Meta açıklama yok. |
+| Fia Lift (`fialift.com.tr`) | **Ankara** (0312) | Türkiye geneli 1.002 programatik "X asansör bakım/firması" yazısı; Sancaktepe sayfası 2020 tarihli. |
+| EMAS Asansör (`emasasansor.com/sancaktepe/`) | 13 ilçe sayfası | Yeni, çok hafif, LocalBusiness şeması var; hiç fotoğraf yok. |
+| Leon Asansör (`asansorservis.biz.tr`) | Sancaktepe | **Site açılmıyor** (sertifika hatası). Organikte 2.–3., haritada 4,2 (10). |
+| Trio Lift (`triolift.com`) | İlçe sayfaları, 0850 | En iyi kurgulanmış ilçe sayfası (bina tipine göre yaklaşım, mahalleler, SSS); adres ve fotoğraf yok. |
+| Özhisar (Kartal) | 9 ilçe sayfası | Modern statik site; Org + LocalBusiness + FAQPage şeması. Hiç fotoğraf yok, yorumlar baş harfli. |
+| Lina (Kağıthane) | İstanbul geneli | Blog var (etiketler, yönetmelik, sınıflar). Meta açıklama kelime listesi, sayfa 5 MB. |
+| Meridyen | İstanbul geneli, ilçe sayfaları | Çok zengin şema (LocalBusiness, Service, FAQPage); görseller yapay zekâ üretimi görünümlü. |
+| Detay Lift, Isas, Saysa, Axel | Sancaktepe, Samandıra, Sarıgazi, Sultanbeyli | İlk taslakta dizinlerden derlendi; bu kontrolde haritanın ilk 5'inde görünmediler. |
 
 ### 2.3 Bilgi içeriği rakipleri (blog konularında karşımıza çıkacaklar)
 
@@ -107,22 +130,24 @@ görünmek demektir. Siteyle birlikte en hızlı kazanç budur (Bölüm 7.3).
 2. **Eski ve tarihsiz içerik.** 2019'da yürürlükten kalkan 2015 yönetmeliğine atıf yapan
    sayfalar hâlâ yayında. Bizim yazılarımız 2019 İşletme ve Bakım Yönetmeliği ile 2025
    değişikliğine göre, tarihli ve kaynaklı olacak.
-3. **Gerçek kanıt yok.** Fotoğraflar stok, belge numarası yok, proje yok.
-4. **Mobil deneyim ve hız.** Çoğu eski WordPress veya `.asp` sitesi. Bizim derlemesiz HTML
-   sitemiz doğal olarak hızlı olacak (Core Web Vitals avantajı).
+3. **Gerçek kanıt yok.** İncelenen 17 sitenin hiçbirinde belge numarası yok. Fotoğraflar stok,
+   yapay zekâ üretimi ya da hiç yok (EMAS, Özhisar, Trio Lift'te tek fotoğraf yok). Yorumlar
+   doğrulanamaz (baş harfli avatarlar).
+4. **Hız ve teknik bakım.** Çoğu 0,5–5 MB WordPress sitesi. İki rakibin sitesi hiç açılmıyor (Leon,
+   Ayta), birçoğunda meta açıklama veya düzgün H1 yok, LocalBusiness şeması yalnızca 3 sitede.
+   Bizim derlemesiz HTML sitemiz doğal olarak hızlı olacak (Core Web Vitals avantajı).
 5. **Fiyat şeffaflığı yok.** "Teklif nasıl okunur?" ve "fiyatı ne belirler?" yazıları güven kazandırır.
 
-### 2.5 Senin yapacağın 5 dakikalık kontrol (harita sıralaması)
+Tam fırsat listesi: rakip-inceleme.md, Bölüm 6.
 
-Ofisteyken telefonda Google Haritalar'ı aç ve şu aramaları yap. Her birinde ilk 5 sonucun
-ekran görüntüsünü al: firma adı, puan, yorum sayısı ve kategori görünsün.
+### 2.5 Harita sıralaması: başlangıç ölçümü
 
-1. `asansör bakım` 2. `asansör firması` 3. `asansör servisi` 4. `asansör montaj`
-5. `asansör tamiri`
-
-Aynı aramaları normal Google'da da yap ve ilk sayfanın görüntüsünü al. Bunlar başlangıç
-noktamız olur ve 3 ay sonra karşılaştırırız. (Bilgisayarında Claude masaüstü uygulamasıyla
-veya `claude remote-control` ile bir oturum açarsan bu kontrolü ben de Chrome'dan yapabilirim.)
+**Yapıldı (18 Ekim 2026).** 5 arama (`asansör bakım`, `asansör firması`, `asansör servisi`,
+`asansör montaj`, `asansör tamiri`) hem tek başına hem "Sancaktepe", "Sultanbeyli", "Samandıra"
+eklenerek Google Haritalar'da; 5 yerel ve bilgi araması normal Google'da kontrol edildi. Sonuçlar
+rakip-inceleme.md, Bölüm 2 ve 3'te. Bu, başlangıç noktamız; **3 ayda bir aynı aramalarla tekrarlanır**
+(masaüstü oturumundan Chrome ile ben yapabilirim). Not: harita sonuçları aramanın yapıldığı konuma göre
+değişir; karşılaştırmalar aynı yerden yapılmalı.
 
 ---
 
@@ -201,9 +226,16 @@ Açılar örnektir. Gerçek işlere göre değiştirilir; her yazı **farklı** 
 
 1. **Asansör etiket renkleri: yeşil, mavi, sarı ve kırmızı ne anlama gelir?**
    Hedef: "asansör etiket renkleri", "mavi etiket asansör". Bağlantı: yeşil etiket sayfası.
+   Aramada en üstte görsel paketi ve AI Bakışı var (küçük firma bloglarını alıntılıyor). Yazıya
+   kendi tasarımımız bir **etiket renkleri infografiği** (anlamlı dosya adı ve `alt` metni) ve net
+   bir tablo konur. "Diğer sorular"daki sorular SSS olur: Etiket hangi renk olmalı? Mavi etiket kaç
+   yıl geçerli? Mavi etiketli asansör ne demek? Sarı etiketli asansöre binilir mi?
 2. **Asansör bakım ücretleri 2026: fiyatı neler belirler, teklif nasıl okunur?**
-   Durak sayısı, kapasite, marka, sözleşme kapsamı, KDV. Ankara Ticaret Odası 2026 azami
-   tarifesi gibi resmî örnekler. Kesin İstanbul fiyatı yazılmaz; teklif çağrısı yapılır.
+   Durak sayısı, kapasite, marka, sözleşme kapsamı, KDV. Aramada 1. sonuç ve AI Bakışı'nın kaynağı
+   **TASİAD 2026 tavsiye tarifesi**; yanında ATO ve EBSO (İzmir) 2026 azami tarifeleri çıkıyor. Yazı
+   üçünü yan yana, kaynaklı ve "yedek parça dahil mi?" notuyla verir (Bölüm 8). Kesin İstanbul fiyatı
+   yazılmaz; teklif çağrısı yapılır. Alt başlıklar: "Bakım ücretini kim öder?", "Periyodik kontrol
+   ücreti ne kadar?" (ikisi de aramada "Diğer sorular"da).
 3. **Asansör bakım sözleşmesi: imzalamadan önce kontrol edilecek 10 madde.**
    TSE HYB ve TS 12255, kapsam, parça ve işçilik, acil müdahale süresi, kurtarma eğitimi, kayıtlar.
 4. **Kırmızı etiket alan asansör: süre, mühür riski ve yapılması gerekenler.**
@@ -360,8 +392,14 @@ Uzman anketlerinde (Whitespark 2026) harita sıralamasında en etkili sinyaller 
   eklensin (en fazla 20): Sancaktepe, Sultanbeyli, Çekmeköy, Ümraniye, Ataşehir, Kartal,
   Pendik, Maltepe… Bu yalnızca profil ayarı; site metnindeki kararı etkilemez.
 - **Saatler:** Ofis saatleri ve 7/24 arıza. "Kapalı" görünen işletmelerin sıralaması düşüyor.
-- **Hizmetler listesi:** Sitedeki 6 hizmet, açıklamalarıyla.
-- **Fotoğraflar:** Ayda en az 4–8 yeni gerçek iş fotoğrafı; logo ve kapak.
+  Şu an profil her gün 09:00–17:00 ve akşam "Kapalı" görünüyor; harita liderlerinden ERT, Aksoy ve Ayta
+  "24 saat açık". 7/24 hat gerçekten açıksa profil buna göre ayarlanır.
+- **Web sitesi:** Şu an boş. Yayın günü UTM'li bağlantı eklenir (Bölüm 5.6).
+- **Hizmetler listesi:** Sitedeki 6 hizmet, açıklamalarıyla. Özellikle **montaj**: YK montaj
+  aramalarında hiç görünmüyor.
+- **Fotoğraflar:** Ayda en az 4–8 yeni gerçek iş fotoğrafı; logo ve kapak. Şu an ~6 fotoğraf var, çoğu
+  tasarım afiş; afiş yerine iş fotoğrafı (makine dairesi, kabin, montaj, ekip, araç).
+- **Posta kodu:** Profilde 34000 görünüyor; doğru Sancaktepe posta koduyla düzeltilsin.
 - **Gönderiler:** Haftada 1 (tamamlanan iş, kampanya, etiket dönemi hatırlatması).
 
 ### 7.2 Yorumlar
@@ -370,8 +408,11 @@ Uzman anketlerinde (Whitespark 2026) harita sıralamasında en etkili sinyaller 
   yerine sürekli akış önemli.
 - **Nasıl:** Profilin "yorum iste" kısa bağlantısı. İş bitince WhatsApp'tan gönderilir,
   teknisyen kartında ve bakım föyünde QR kod olarak yer alır.
-- Müşteriden **ne iş yapıldığını** yazmasını rica et ("aylık bakım", "kapı arızası"…).
-  Bu, yorumu hem okuyan için hem Google için daha anlamlı yapar.
+- Müşteriden **ne iş yapıldığını** kendi cümleleriyle yazmasını rica et ("aylık bakım", "kapı
+  arızası", "montaj"…). Bu, yorumu hem okuyan için hem Google için daha anlamlı yapar.
+- **Hazır metin verilmez.** Profilde iki yorumun metni birebir aynı (18 Ekim 2026). Google aynı metinli
+  yorumları spam sayıp kaldırabilir; her müşteri kendi yorumunu yazmalı.
+- **Kıyas:** YK 15 yorum (5,0). Harita liderleri ERT 65, Skyline 70, Teknotek 73. İlk 3 ay hedefi 40+.
 - **Her yoruma yanıt** ver (olumsuzlara sakin ve çözüm odaklı).
 - **Yapılmayacaklar:** Yorum satın almak, indirim karşılığı yorum istemek, çalışanlara yorum
   yazdırmak. Google kurallarına ve ticari reklam mevzuatına aykırı.
@@ -392,6 +433,14 @@ Uzman anketlerinde (Whitespark 2026) harita sıralamasında en etkili sinyaller 
 Foursquare. Ayrıca sektör dernekleri (TASİAD, AYSAD vb. üyelik sayfaları) ve İTO üye rehberi.
 
 **Kural:** Spam dizinlere toplu kayıt yapılmaz. 10–15 kaliteli kayıt yeter.
+
+**Mevcut kayıtlarda düzeltilecekler (18 Ekim 2026'da görülen):**
+
+- `asansorfirmalari.com` YK'yı "Altınordu Cd. 43/2" adresiyle listeliyor; doğrusu 38-40/A.
+- Instagram'da iki hesap (`@ykasansorr`, `yk.asansorr`) ve bir gönderide ikinci numara (0535 721 …)
+  görünüyor. Tek resmî hesap ve tek numara kalmalı.
+- Yandex Haritalar kartları Google organik sonuçlarında çıkıyor (Saysa, "Asansör bakım ve arıza
+  servisi"); Yandex Business kaydının önceliği doğrulandı.
 
 ### 7.4 Bağlantı ve bilinirlik
 
@@ -436,11 +485,11 @@ Search Console'da gösterimi olup tıklaması düşük sayfaların başlık ve a
 | Periyodik kontrol | **Asansör Periyodik Kontrol Yönetmeliği**. Son değişiklik: Resmî Gazete 5 Ağustos 2025, sayı 32977 ("muayene kuruluşu" → "uygunluk değerlendirme kuruluşu", 14. maddeye fıkra, 37. madde). | Doğrulandı. Ayrıntılar resmî metinden okunacak. |
 | Kontrol sıklığı | Yılda en az 1 kez, belediyenin protokol yaptığı akredite A tipi muayene kuruluşu yapar. | Doğrulandı (TSE) |
 | Etiket renkleri | Yeşil: kusursuz · Mavi: hafif kusurlu · Sarı: kusurlu · Kırmızı: güvensiz | Doğrulandı (TSE) |
-| Etiket süreleri | Kaynaklar çelişiyor (kırmızı için 30 mi 60 gün mü; sarı 120 gün; mavi bir sonraki kontrole kadar mı, 1 yıl mı). | **Yazmadan önce yönetmelik metninden doğrulanacak** |
+| Etiket süreleri | Kaynaklar çelişiyor (kırmızı için 30 mi 60 gün mü; sarı 60 mı 120 gün mü; mavi bir sonraki kontrole kadar mı, 1 yıl mı). Google AI Bakışı (18 Ekim 2026) mavi için 12 ay, sarı için 60 gün diyor; kaynağı firma blogları. | **Yazmadan önce yönetmelik metninden doğrulanacak** |
 | Bakım firması belgesi | Yönetmeliğe göre bakım servisi TS 12255 kapsamında **TSE Hizmet Yeterlilik Belgesi** sahibi olmalı. | Doğrulandı (Resmî Gazete metni) |
 | Aylık bakım | Bina sorumlusu ayda en az bir bakım yaptırmakla yükümlü. Bakım firması, bina sorumlusunun belirlediği kişilere kurtarma eğitimi verir. | Kaynaklar uyumlu; madde numarası metinden doğrulanacak |
 | Periyodik kontrol ücreti 2026 | Belediyeye göre değişiyor. Bakanlık taban ve tavan ücreti belirliyor; ör. Bayraklı 2026, 0–5 durak: 4.049,76 TL (KDV dahil). Tescil öncesi ilk kontrol 3 katı. | İstanbul'daki belediyeler için ayrıca bakılacak |
-| Bakım ücreti 2026 | Tek ulusal fiyat yok. Ankara Ticaret Odası 2026 azami tarifesi: 1600 kg ve altı, 2–10 durak, aylık 1.775,31 TL + KDV (yalnız Ankara merkez). İTO tarifesi bulunamadı. | Yazıda "örnek" olarak, kaynakla |
+| Bakım ücreti 2026 | Tek ulusal fiyat yok. **TASİAD 2026 tavsiye tarifesi** (aylık, KDV hariç, 7 durağa kadar; Google'da 1. sonuç ve AI Bakışı'nın kaynağı): Sınıf I insan 3.000 TL, Sınıf II insan-yük 3.500 TL, Sınıf III hastane 5.750 TL, Sınıf IV yük 6.500 TL, Sınıf V servis 2.500 TL, Sınıf VI yüksek hız 15.000 TL; yedek parça dahil değil. Ankara Ticaret Odası 2026 azami tarifesi: 1600 kg ve altı, 2–10 durak, aylık 1.775,31 TL + KDV (yalnız Ankara merkez). EBSO (İzmir) 2026 azami tarifesi de var. İTO tarifesi bulunamadı. | TASİAD rakamları AI Bakışı'ndan alındı; yazmadan önce tasiad.org.tr ve EBSO PDF'inden okunacak. Yazıda "örnek" olarak, kaynakla |
 | Sonradan asansör | Genelde "faydalı yenilik" sayılıp sayı ve arsa payı çoğunluğu yeterli görülüyor; projede asansör yoksa farklı görüşler var (4/5, oybirliği). | Hukuki: "avukata danışın" notuyla genel bilgi |
 | Asansör yaşı | Türkiye'deki 1 milyon asansörün 300 binden fazlası 15 yaşın üzerinde (KONE verisi, Posta). | Modernizasyon yazısında kullanılabilir |
 
@@ -451,9 +500,10 @@ Search Console'da gösterimi olup tıklaması düşük sayfaların başlık ve a
 **Şimdi (koddan bağımsız, sen):**
 
 - Bölüm 1'deki bilgiler ve kararlar: önce marka adı ve alan adı.
-- Google profili: kategori, saatler, hizmetler ve fotoğraflar. Yorum toplamaya başla.
-  Ben adım adım yönlendiririm.
-- Bölüm 2.5'teki harita ekran görüntüleri.
+- Google profili: saatler (7/24 kararı), hizmetler listesi (montaj dahil), gerçek iş fotoğrafları,
+  posta kodu. Yorum toplamaya başla (hazır metin vermeden). Ben adım adım yönlendiririm.
+- NAP temizliği: asansorfirmalari.com adres düzeltmesi, tek Instagram hesabı (Bölüm 7.3).
+- ~~Bölüm 2.5'teki harita ekran görüntüleri~~: 18 Ekim 2026'da Chrome ile yapıldı.
 
 **Şimdi (ben, koddan bağımsız):**
 
@@ -486,6 +536,9 @@ Search Console'da gösterimi olup tıklaması düşük sayfaların başlık ve a
 - Mevzuat, Asansör Periyodik Kontrol Yönetmeliği: https://mevzuat.gov.tr/MevzuatMetin/yonetmelik/7.5.24558.pdf
 - Asansör Vizyon, 2025 değişiklikleri: https://asansorvizyon.com/s-guncel-asansor-periyodik-kontrol-yonetmeligi-yeniden-duzenlendi-2025-degisiklikleri-ve-gecmis-duzenlemeler-1011-detay.html
 - Bayraklı Belediyesi, 2026 periyodik kontrol ücretleri: https://www.bayrakli.bel.tr/duyuru-detay/asansorleri-periyodik-kontrollerine-iliskin-duyuru
+- Rakip ve arama sonucu incelemesi (18 Ekim 2026): [`docs/rakip-inceleme.md`](rakip-inceleme.md)
+- TASİAD, 2026 tavsiye edilen bakım fiyatları: https://tasiad.org.tr/2026-yili-icin-onerilen-asansor-bakim-fiyatlari/
+- EBSO, 2026 asansör bakım azami fiyat tarifesi: https://static.ebso.org.tr/contentfiles/asansor_fiyat_tarife_2026.pdf
 - Ankara Ticaret Odası, 2026 azami bakım tarifesi: https://www.atonet.org.tr/Uploads/Birimler/Internet/Hizmetlerimiz/Azami%20Fiyat%20Tarifleri/2026_azami_fiyat_tarifesi/2026_asansor_yuruyen_merdiven_bakim_hizmetleri_azami_fiyat_tarifesi_2026_01_05.pdf
 - Posta, 15 yaş üstü asansörler: https://www.posta.com.tr/ekonomi/300-bini-15-yasin-ustunde-asansor-yenileme-ile-yukseliyor-2955186
 - Armut, Sancaktepe asansör bakım: https://armut.com/sancaktepe-asansor-bakim
