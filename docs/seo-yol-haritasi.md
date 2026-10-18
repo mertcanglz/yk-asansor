@@ -195,8 +195,8 @@ Kodlamadan önce taslaklar `docs/blog-taslaklari/` altında Markdown olarak yaz�
 
 `CLAUDE.md` kararına göre yerel SEO ayrı ve özgün blog yazılarıyla, aşama aşama ve her aşama onaydan
 sonra yapılır: **(1) Sancaktepe** ana yazısı (taslak: `docs/blog-taslaklari/sancaktepe-asansor.md`)
-→ **(2) semt/mahalle yazıları ertelendi**: Planlayıcı'da hiçbirinde ölçülebilir hacim yok; Search Console'da talep görülen yer için yazılır (`docs/mahalle-talep-analizi.md`) → **(3) çevre ilçeler**, yakından uzağa:
-Sultanbeyli, Çekmeköy, Ümraniye, Ataşehir, Kartal, Maltepe, Pendik, sonra Üsküdar, Kadıköy, Tuzla, Beykoz.
+→ **(2) yakın ilçeler ve bilindik semtler**: Ümraniye, Çekmeköy, Sultanbeyli, Dudullu, Samandıra, Sarıgazi, Taşdelen (sıra ve hacimler: `docs/mahalle-talep-analizi.md` Bölüm 5; mahalle yazıları iptal) → **(3) diğer çevre ilçeler**, yakından uzağa:
+Ataşehir, Kartal, Maltepe, Pendik, sonra Üsküdar, Kadıköy, Tuzla, Beykoz.
 Sınır İstanbul Anadolu Yakası.
 
 **Beklenti:** İlçe yazıları organik aramada (ilk 10 sonuç) yardımcı olur; Haritalar sıralaması ise
@@ -223,10 +223,14 @@ değişen şablon metin yasak). Kullanıcı kararı (18 Ekim 2026): bloglarda i�
 | Yazı (çalışma başlığı) | Odak açısı |
 |---|---|
 | Sancaktepe'de asansör hizmetleri: bakımdan montaja bina yöneticisinin rehberi | **Taslak v2 hazır** (18 Ekim 2026): tüm hizmetleri kapsayan ana yerel yazı; resmî bilgiler doğrulandı. |
-| Samandıra'da asansör: yeni binalar ve bakım | **Ertelendi** (Ads Planlayıcı: hacim yok; otomatik tamamlamada görünüyor). Yeni yapılaşma, montaj ve bakım geçişi. |
-| Sultanbeyli'de eski apartmana asansör ve modernizasyon | Sonradan asansör, revizyon. |
-| Sarıgazi'de asansör arıza ve bakım hizmeti | **Ertelendi** (Ads Planlayıcı: hacim yok; otomatik tamamlamada görünüyor). Arıza belirtileri, hızlı müdahale. |
-| Yenidoğan'da asansör periyodik kontrol hazırlığı | **Bekletildi** (otomatik tamamlamada talep görülmedi); Search Console'da gösterim gelirse yazılır. |
+| Ümraniye'de asansör: iş merkezleri ve yoğun binalar | Sıra 2 (~160 arama/ay). Yüksek hızlı asansör, iş yerlerinde bakım planlaması. |
+| Çekmeköy'de asansör: villa, müstakil ev ve yeni siteler | Sıra 3 (~140/ay). Villa/engelli lifti, makine dairesiz sistemler. |
+| Sultanbeyli'de eski apartmana asansör ve modernizasyon | Sıra 4 (~70/ay). Sonradan asansör, revizyon. |
+| Dudullu'da yük ve sanayi asansörleri | Sıra 5 (~20/ay). Yük asansörü bakımı. |
+| Samandıra'da asansör periyodik kontrol hazırlığı | Sıra 6 (otomatik tamamlamada var). Yeşil etiket süreci. |
+| Sarıgazi'de asansör arıza ve kurtarma | Sıra 7 (otomatik tamamlamada var). Arıza belirtileri, 7/24 müdahale. |
+| Taşdelen'de yeni konutlarda asansör montajı | Sıra 8 (~10/ay). Montaj süreci. |
+| Yenidoğan, Alemdağ, Çakmak, Şerifali, Tepeüstü | Ölçülebilir talep yok; yalnızca istenirse. |
 
 Açılar örnektir. Gerçek işlere göre değiştirilir; her yazı **farklı** bir ana konuya odaklanır.
 

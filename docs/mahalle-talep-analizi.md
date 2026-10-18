@@ -73,9 +73,8 @@ asansör muayene** gibi. Yani ilçe düzeyinde talep açık; mahalle düzeyinde 
 
 Kullanıcının yönettiği "Alfa Spor Kulübü" Ads hesabıyla, kullanıcı izniyle bakıldı. Konum **Türkiye**, tüm
 diller, Google araması, **son 12 ay (Ekim 2025 – Eylül 2026)** ortalaması. Hiçbir ayar, kampanya veya
-fatura değiştirilmedi. Not: Planlayıcı, hacim sorgusunda hesapta otomatik olarak bir taslak anahtar kelime
-planı oluşturur ("Eki 19, 2026, 12 ÖÖ tarihli plan"); maliyeti yok, kampanya değil, istenirse
-Planlayıcı → Kaydedilen planlar'dan silinebilir.
+fatura değiştirilmedi. Not: Planlayıcı her hacim sorgusunda hesapta otomatik bir taslak plan oluşturur; bu incelemede oluşan iki
+taslak plan kullanıcının isteğiyle 19 Ekim 2026'da kaldırıldı.
 
 **Sorgulanan:** 165 kelime: 19 mahalle + Samandıra + Sancaktepe; her biri için "X asansör", "X asansör bakım",
 "X asansör firması", "X asansör servisi", "X asansör tamiri", "X asansör montaj"; ayrıca "X mahallesi
@@ -126,9 +125,58 @@ aramalarda kullanıcının konumuna göre **Haritalar** sonucunu gösteriyor. Ya
 7. **Öncelik:** Bölgedeki asıl talep Haritalar'da. Sıradaki en etkili işler: siteyi yayına almak ve Google
    İşletme Profili'ne bağlamak, profilde "24 saat açık" ve hizmet listesi, yorum akışı (yol haritası 7.1–7.2).
 
+## 5. Karar: mahalleler iptal, yakın ilçeler ve bilindik semtler (19 Ekim 2026)
+
+Kullanıcı kararı: **mahalle yazıları iptal.** Ana bölgemiz Sancaktepe ve çok yakın ilçeler (Çekmeköy, Sultanbeyli,
+Ümraniye) ile bu ilçelerin **bilindik büyük semtleri** için birer yazı açılacak.
+
+### 5.1 Yakın ilçeler ve semtler: Planlayıcı hacimleri
+
+Google Ads Anahtar Kelime Planlayıcı, Türkiye, son 12 ay. "—" = ölçülemeyecek kadar düşük.
+
+| Yer | Hacmi olan aramalar | Toplam (≈ aylık) |
+|---|---|---|
+| **Ümraniye** (ilçe) | ümraniye asansör firmaları 110 · ümraniye asansör 40 · ümraniye asansör servisi 10 | **~160** |
+| **Çekmeköy** (ilçe) | çekmeköy asansör 90 · çekmeköy asansör firmaları 50 | **~140** |
+| **Sancaktepe** (ilçe) | sancaktepe asansör firmaları 90 · sancaktepe asansör 30 | **~120** |
+| **Sultanbeyli** (ilçe) | sultanbeyli asansör firmaları 70 | **~70** |
+| Dudullu (Ümraniye, semt) | dudullu asansör firmaları 20 | ~20 |
+| Taşdelen (Çekmeköy) | taşdelen asansör 10 | ~10 |
+| Çakmak (Ümraniye) | çakmak asansör 50 | Büyük olasılıkla "Çakmak Asansör" firma adı aramaları; semt talebi belirsiz |
+| Samandıra, Sarıgazi, Yenidoğan (Sancaktepe) | — (otomatik tamamlamada Samandıra ve Sarıgazi görünüyor) | <10 |
+| Alemdağ, Ömerli (Çekmeköy) | — | <10 |
+| Tepeüstü, Şerifali, Atakent, Ihlamurkuyu, Esenşehir, Altınşehir, Madenler, Yamanevler (Ümraniye) | — | <10 |
+
+İlçe adlarının resmî dayanakları: Çekmeköy 5747 sayılı Kanun'la (RG 22.3.2008) kuruldu; Alemdağ, Taşdelen ve
+Ömerli dahil edildi, 21 mahalle. Ümraniye 35 mahalle; Dudullu bir semt (Yukarıdudullu ve Aşağıdudullu
+mahalleleri). Sultanbeyli 1992'de (3806 sayılı Kanun) ilçe oldu, 15 mahalle; mahalle dışında bilinen bir semt
+adı yok (Vikipedi). Periyodik kontrol: Royalcert protokol listesinde Sancaktepe (2024–2028) ve Ümraniye
+(2024–2030) var; Çekmeköy ve Sultanbeyli yazı sırası gelince bakılacak.
+
+### 5.2 Önerilen yazı listesi ve sıra (onay bekliyor)
+
+| Sıra | Yazı | Gerekçe | Farklı ana konu (tekrar olmasın diye) |
+|---|---|---|---|
+| 1 | Sancaktepe | Taslak v2 hazır | Tüm hizmetler, bina yöneticisi rehberi |
+| 2 | **Ümraniye** | En yüksek talep (~160) | İş merkezleri ve plazalar: yüksek hızlı asansör, yoğun trafik, iş yerlerinde bakım planlaması |
+| 3 | **Çekmeköy** | ~140 | Villa ve müstakil evler, yeni siteler: villa/engelli lifti, makine dairesiz sistemler |
+| 4 | **Sultanbeyli** | ~70 | Çok katlı apartman stoğu: modernizasyon, eski asansör yenileme, sonradan asansör |
+| 5 | **Dudullu** | ~20; sanayi bölgesi | Yük asansörü, sanayi ve depo asansörlerinin bakımı |
+| 6 | **Samandıra** | Bilindik semt, otomatik tamamlamada var | Periyodik kontrol ve etiket hazırlığı (yeşil etiket süreci) |
+| 7 | **Sarıgazi** | Bilindik semt, otomatik tamamlamada var | 7/24 arıza ve kurtarma, arıza belirtileri |
+| 8 | **Taşdelen** | ~10 | Yeni konut projelerinde montaj süreci |
+| 9 | Yenidoğan, Alemdağ, Çakmak, Şerifali, Tepeüstü | Ölçülebilir talep yok | Yalnızca kullanıcı isterse veya Search Console'da talep görülürse |
+
+Her yazı ilgili ilçenin doğrulanmış yerel bilgisini (kuruluş, muayene kuruluşu, bina dokusu) ve kendi ana
+konusunu taşır; aynı metin yer adı değiştirilerek kullanılmaz. Semt yazıları bağlı oldukları ilçe yazısına
+bağlanır.
+
 ## Kaynaklar
 
 - Sancaktepe mahalleleri (19): https://tr.wikipedia.org/wiki/Sancaktepe
+- Çekmeköy: https://tr.wikipedia.org/wiki/%C3%87ekmek%C3%B6y · Ümraniye: https://tr.wikipedia.org/wiki/%C3%9Cmraniye ·
+  Sultanbeyli: https://tr.wikipedia.org/wiki/Sultanbeyli
+- Royalcert protokol listesi: https://tr.royalcert.com/protokoller/
 - Mahalle nüfusları ADNKS 2025: https://www.nufusune.com/sancaktepe-ilce-nufusu-istanbul
 - Karşılaştırma (farklı yıllar): https://www.i24haber.com/2081-sancaktepe-mahalle-nufusu ·
   https://atlasbig.com.tr/istanbul-sancaktepenin-mahalleleri
