@@ -1,6 +1,6 @@
 # Taslak: Ümraniye asansör hizmetleri (ilçe yazısı)
 
-> **Durum:** taslak, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
+> **Durum:** taslak v2, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
 > **Semt yazıları:** Dudullu, Çakmak, Şerifali, Tepeüstü · **Marka:** yalnızca "YK Asansör"
 
 ## Yayın bilgileri
@@ -23,46 +23,53 @@
 
 # Ümraniye'de asansör hizmetleri: *İş merkezlerinden apartmanlara bakım ve arıza rehberi*
 
-Ümraniye'de asansörünüzün aylık bakımını TSE Hizmet Yeterlilik Belgesi olan bir firmaya yaptırmanız, yıllık
-periyodik kontrolü ise belediyenin protokol yaptığı **Royalcert**'e yaptırmanız gerekir. İş merkezi, hastane ve
-çok asansörlü sitelerde bakımın mesai dışına planlanması, arızaya hızlı müdahale ve asansörlerin sınıfına uygun
-bakım sözleşmesi önemlidir. YK Asansör, Sancaktepe merkezli ekibiyle Ümraniye'de bakım, 7/24 arıza,
-modernizasyon ve montaj hizmeti verir.
+Ümraniye'de plazalar, hastaneler, alışveriş merkezleri, sanayi tesisleri ve çok bloklu siteler aynı ilçede.
+Asansör açısından bu, çok farklı ihtiyaçların yan yana durması demek: bir plazada asansörün beş dakika durması
+bütün binayı etkilerken, bir apartmanda en büyük dert kapı arızası olabiliyor. Ortak nokta şu: her asansör ayda en
+az bir kez TSE Hizmet Yeterlilik Belgesi olan bir firmaca bakılmalı ve yılda bir, Ümraniye'de Royalcert'in yaptığı
+periyodik kontrolden geçmeli. YK Asansör olarak Sancaktepe merkezli ekibimizle Ümraniye'de bakım, 7/24 arıza,
+modernizasyon ve montaj yapıyoruz; bu yazıda özellikle yoğun kullanılan binalarda nelere dikkat etmek gerektiğini
+anlattık.
 
-**Bu yazıda:** Ümraniye'de neler yapıyoruz? · Yoğun binalarda bakım planlama · Asansör sınıfları ve bakım ·
-Yürüyen merdivenler · Periyodik kontrol: Ümraniye'de kim yapar? · Semtlere göre öne çıkan ihtiyaçlar ·
-Bakım ücreti · Sık sorulanlar
+**Bu yazıda**
+
+1. Ümraniye'de neler yapıyoruz?
+2. Yoğun binalarda bakım nasıl planlanır?
+3. Asansörün sınıfı bakımı nasıl değiştirir?
+4. Yürüyen merdivenler
+5. Arıza ve kurtarma
+6. Periyodik kontrol
+7. Modernizasyon ve montaj
+8. Semtlere göre öne çıkan konular
+9. Sık sorulanlar
 
 ## Ümraniye'de neler yapıyoruz?
 
-- **Periyodik bakım** (aylık bakım sözleşmesi, her bakımdan sonra bakım föyü)
-- **7/24 arıza ve kurtarma**
-- **Modernizasyon ve revizyon**
-- **Yeni asansör montajı**
-- **Temizlik ve muayene servisi**, **yeşil etiket hazırlığı**
-- Tüm tipler: dişli, dişlisiz, hidrolik, makine dairesiz, yük, araç, villa ve engelli lifti, yürüyen merdiven
+Aylık bakım, 7/24 arıza ve kurtarma, modernizasyon, yeni montaj, kuyu ve makine dairesi temizliği, periyodik
+kontrol öncesi hazırlık. Dişli, dişlisiz, hidrolik, makine dairesiz, yük, araç, villa ve engelli lifti ile yürüyen
+merdivenlerin hepsine bakıyoruz.
 
-## Yoğun kullanılan binalarda bakım nasıl planlanır?
+## Yoğun binalarda bakım nasıl planlanır?
 
-Ümraniye'de iş merkezleri, plazalar, hastaneler, alışveriş merkezleri ve çok bloklu siteler bir arada bulunur.
-Bu binalarda asansör günün büyük bölümünde dolu çalışır ve bir asansörün durması bile binanın düzenini bozar.
+Bir iş merkezinde ya da hastanede asansör günün büyük bölümünde dolu çalışır. Bakım saatini binanın ritmine göre
+koymak bu yüzden ilk iş: sabah erken, mesai bittikten sonra ya da hafta sonu. Birden fazla asansör varsa hepsini
+aynı gün bakıma almıyor, sırayla gidiyoruz; bir asansör bakımdayken diğerlerinin çağrıları doğru karşılayıp
+karşılamadığına, yani grup kumandasının düzgün çalıştığına da bakıyoruz.
 
-- **Bakım saati:** Bakımı mesai dışına, sabah erken saatlere veya hafta sonuna planlayın.
-- **Sıralı bakım:** Birden fazla asansör varsa aynı gün hepsini değil, sırayla bakıma alın.
-- **Grup kumandası:** Birden fazla asansörün birlikte çalıştığı binalarda, bir asansör bakımdayken diğerlerinin
-  çağrıları doğru karşıladığı kontrol edilmelidir.
-- **Arıza kaydı:** Yoğun binalarda küçük arızalar sık görülür. Arızaları kayıt altına alıp aylık bakımda
-  bakım firmasıyla birlikte değerlendirin; tekrar eden arıza bir parçanın ömrünü doldurduğunu gösterir.
-- **Kurtarma eğitimi:** Bakım firması, bina sorumlusunun belirlediği kişilere yılda en az bir kez kurtarma eğitimi
-  verir (Asansör İşletme ve Bakım Yönetmeliği m. 10/6). İş merkezlerinde güvenlik ve teknik personelin eğitim
-  alması önerilir.
+Yoğun binalarda küçük arızalar sık görülür ve tek tek bakınca önemsiz gibi durur. Bunları kayda alıp aylık bakımda
+birlikte değerlendirmek işe yarıyor: aynı arızanın üç ayda dört kez tekrar etmesi, o parçanın ömrünü doldurduğunu
+gösteriyor.
 
-## Asansör sınıfları ve bakım
+Kurtarma eğitimini de unutmayın. Bakım firması yılda en az bir kez, yönetimin belirlediği kişilere bu eğitimi
+vermek zorunda. İş merkezlerinde güvenlik ve teknik personelin eğitim almasını öneriyoruz; mahsur kalma anında ilk
+müdahaleyi onlar yapacak.
 
-Bakım sözleşmesi asansörün kullanım sınıfına göre değişir. Sektör derneği TASİAD'ın 2026 için tavsiye ettiği
-aylık bakım ücretleri bu farkı gösterir (KDV hariç, 1.600 kg'a kadar, 7 durağa kadar):
+## Asansörün sınıfı bakımı nasıl değiştirir?
 
-| Sınıf | Kullanım | Örnek bina | Aylık (TL) |
+Bir konut asansörüyle hastane asansörünün bakımı aynı değil. Sektör derneği TASİAD'ın 2026 tavsiye fiyatları bu
+farkı iyi gösteriyor (aylık, KDV hariç, 1.600 kg'a ve 7 durağa kadar):
+
+| Sınıf | Kullanım | Örnek | Aylık (TL) |
 |---|---|---|---|
 | I | İnsan taşıma | Konut, ofis | 3.000 |
 | II | İnsan, gerektiğinde yük | Ofis, iş hanı | 3.500 |
@@ -70,37 +77,45 @@ aylık bakım ücretleri bu farkı gösterir (KDV hariç, 1.600 kg'a kadar, 7 du
 | IV | Yük (refakatçili) | Depo, sanayi | 6.500 |
 | VI | Yoğun trafik, 2,5 m/sn ve üzeri | Yüksek plaza | 15.000 |
 
-TASİAD'a göre her ek durak için 500 TL eklenir; yedek parça dahil değildir ve fiyatlar tavsiye niteliğindedir.
-Yüksek katlı binalarda durak sayısı arttığı için bakım ücreti de artar.
+Her ek durak için 500 TL ekleniyor, yedek parça dahil değil ve bunlar bağlayıcı değil tavsiye rakamlar. Yüksek
+binalarda durak sayısı arttıkça bakım ücreti de artıyor.
 
 ## Yürüyen merdivenler
 
-Alışveriş merkezleri ve büyük iş merkezlerindeki yürüyen merdivenler ayrı bir bakım uzmanlığı ister: basamak
-ve tarak plakaları, el bandı, acil durdurma butonları ve fren sistemleri düzenli kontrol edilir. TASİAD'ın 2026
-tavsiyesi ticari alanlardaki yürüyen merdiven ve yürüyen bantlar için aylık 14.000 TL'dir (KDV hariç).
-`[İç bağlantı: Yürüyen merdiven sayfası]`
+Alışveriş merkezlerinde ve büyük iş merkezlerinde yürüyen merdivenler ayrı bir uzmanlık istiyor: basamaklar ve
+tarak plakaları, el bandı, acil durdurma butonları ve frenler düzenli kontrol ediliyor. TASİAD'ın 2026 tavsiyesi
+ticari alanlardaki yürüyen merdiven ve bantlar için aylık 14.000 TL + KDV.
 
-## Periyodik kontrol: Ümraniye'de kim yapar?
+## Arıza ve kurtarma
 
-Periyodik kontrolü bakım firması yapamaz; belediyeyle protokolü olan A tipi muayene kuruluşu yapar (Asansör
-Periyodik Kontrol Yönetmeliği m. 8–9). **Ümraniye'de** bu kuruluş **Royalcert**'tir; kuruluşun protokol
-listesinde Ümraniye Belediyesi ile protokol 1 Ocak 2024'te başlıyor ve 2030'a kadar sürüyor.
+Arıza hattımız 7/24 açık: 0 (543) 542 86 75. İçeride biri kaldıysa kapıyı zorlamadan bizi arayın; sağlık sorunu ya
+da duman varsa önce 112. Hangi belirtide asansörü kapatmanız gerektiğini Sarıgazi yazımızda, kapı arızalarını
+Çakmak yazımızda anlattık.
 
-- Kontrol yılda en az bir defa yapılır (m. 8/1); tarih en az üç gün önce bildirilir (m. 16/9).
-- Ücreti bina sorumlusu öder (m. 23/1); kırmızı veya sarı etiket sonrası ilk takip kontrolü ücretsizdir (m. 9/7).
-- Süreler: sarı etiket 120 gün, kırmızı etiket 60 gün; mavi etiket bir sonraki kontrole kadar (m. 11).
+## Periyodik kontrol
 
-Kontrole hazırlık için `[İç bağlantı: Samandıra yazısı — periyodik kontrol hazırlığı]`.
+Periyodik kontrolü bakım firması değil, belediyeyle protokolü olan A tipi muayene kuruluşu yapıyor. Ümraniye'de bu
+kuruluş Royalcert; kuruluşun listesine göre Ümraniye Belediyesi ile protokol 2024'te başladı, 2030'a kadar sürüyor.
+Kontrol yılda en az bir kez yapılıyor ve tarih en az üç gün önce bildiriliyor. Ücreti yönetim ödüyor; kırmızı ya da
+sarı etiket sonrası ilk takip kontrolü ücretsiz. Sarı etikette eksikler için 120 gün, kırmızı etikette 60 gün var ve
+kırmızı etiketli asansör bu sürede kullanılmıyor. Kontrole hazırlığı Samandıra yazımızda adım adım anlattık.
 
-## Ümraniye'nin semtlerine göre öne çıkan ihtiyaçlar
+## Modernizasyon ve montaj
 
-Ümraniye'nin 35 mahallesinde farklı bina tipleri var. Semt yazılarımızda her birinin öne çıkan konusunu
-ayrıntılı anlattık:
+Eski bir asansörü tamamen değiştirmek her zaman gerekmiyor; kumanda panosu, kapılar, sürücü ya da makine ayrı ayrı
+yenilenebiliyor. Yeni binalarda ise keşif, projelendirme, montaj ve tescil sürecini baştan sona yürütüyoruz.
+Asansörün hizmete girmeden önceki ilk kontrolünün ücreti normal periyodik kontrolün üç katı ve asansörü yaptırandan
+alınıyor.
 
-- **Dudullu:** Sanayi ve depo binalarında **yük asansörleri** → `[Dudullu yazısı]`
-- **Çakmak:** Apartmanlarda en sık arıza olan **kapı arızaları** → `[Çakmak yazısı]`
-- **Şerifali:** Yeni binalardaki **makine dairesiz ve dişlisiz** asansörlerin bakımı → `[Şerifali yazısı]`
-- **Tepeüstü:** **Engelli erişimi** ve asansörün kesintisiz çalışması → `[Tepeüstü yazısı]`
+## Semtlere göre öne çıkan konular
+
+Ümraniye'nin 35 mahallesinde bina tipi değiştikçe öne çıkan konu da değişiyor. Bilinen semtler için ayrı birer
+yazımız var:
+
+- **Dudullu:** sanayi ve depo binalarında yük asansörleri
+- **Çakmak:** apartmanlarda en sık arıza olan kapı arızaları
+- **Şerifali:** yeni binalardaki makine dairesiz ve dişlisiz asansörlerin bakımı
+- **Tepeüstü:** engelli erişimi ve asansörün kesintisiz çalışması
 
 > ### Ümraniye'deki binanız için bakım teklifi alın
 > Ücretsiz keşif; bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz. **[Teklif alın]** ·
@@ -109,23 +124,30 @@ ayrıntılı anlattık:
 ## Sık sorulanlar
 
 **Ümraniye'de asansör bakımı yapıyor musunuz?**
-Evet. YK Asansör, Sancaktepe merkezli ekibiyle Ümraniye'de aylık bakım, 7/24 arıza, modernizasyon ve montaj yapar.
+Evet. Sancaktepe merkezli ekibimizle Ümraniye'de aylık bakım, 7/24 arıza, modernizasyon ve montaj yapıyoruz.
 
-**Ümraniye'de asansör periyodik kontrolünü kim yapar?**
-Ümraniye Belediyesi'yle protokolü olan Royalcert yapar (protokol 2024–2030).
+**Ümraniye'de periyodik kontrolü kim yapıyor?**
+Ümraniye Belediyesi'yle protokolü olan Royalcert (2024–2030).
 
 **İş merkezimizde bakımı mesai dışında yaptırabilir miyiz?**
-Evet. Bakım saatini binanın kullanımına göre birlikte planlıyoruz.
+Evet. Bakım saatini binanın kullanımına göre birlikte belirliyoruz.
 
 **Hastane asansörlerinin bakımı neden daha pahalı?**
-Hastane asansörleri (Sınıf III) sedye taşır, yoğun ve kesintisiz çalışır; daha sık kontrol ve özen ister.
-TASİAD'ın 2026 tavsiyesi bu sınıf için aylık 5.750 TL + KDV'dir.
+Sedye taşıyor, yoğun ve kesintisiz çalışıyor; daha sık kontrol istiyor. TASİAD'ın 2026 tavsiyesi bu sınıf için
+aylık 5.750 TL + KDV.
 
 **Yürüyen merdiven bakımı yapıyor musunuz?**
-Evet. Yürüyen merdiven ve yürüyen bantların bakım ve onarımını yapıyoruz.
+Evet, yürüyen merdiven ve yürüyen bantların bakım ve onarımını yapıyoruz.
+
+**Birden fazla asansörümüz var, aynı gün mü bakılır?**
+Hayır, sırayla bakıyoruz ki bina asansörsüz kalmasın.
 
 **Gece arıza olursa ne yapmalıyız?**
-7/24 arıza hattımızı arayın: 0 (543) 542 86 75. Mahsur kalma çağrıları önceliklidir.
+0 (543) 542 86 75'i arayın. Mahsur kalma çağrıları önceliklidir.
+
+**Eski asansörümüzü tamamen değiştirmemiz gerekir mi?**
+Çoğu zaman gerekmiyor. Kumanda, kapı, sürücü ya da makine ayrı ayrı yenilenebiliyor; keşifte öncelikleri yazılı
+veriyoruz.
 
 ## Kaynaklar
 
@@ -138,6 +160,8 @@ Evet. Yürüyen merdiven ve yürüyen bantların bakım ve onarımını yapıyor
 - Ümraniye mahalleleri (35): https://tr.wikipedia.org/wiki/%C3%9Cmraniye
 
 ## Editör notları (yayınlanmaz)
+
+- v2: dil sadeleştirildi; madde dayanakları: bakım İB m. 4/e, 9; kurtarma eğitimi m. 10/6; PK m. 8/1, 16/9, 23/1, 9/7, 11, 23/2.
 
 - "İş merkezleri, plazalar, hastaneler, AVM'ler bir arada" genel nitelemedir; belirli bina adı verilmedi.
 - Grup kumandası ve yürüyen merdiven bakım kalemleri genel uzman bilgisidir; Ömürcan Bey kontrol etsin.
