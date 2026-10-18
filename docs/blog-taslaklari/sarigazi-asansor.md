@@ -1,8 +1,8 @@
 # Taslak: Sarıgazi asansör hizmetleri (semt yazısı)
 
-> **Durum:** taslak v2, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
+> **Durum:** taslak v3, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
 > **Bağlı olduğu ilçe yazısı:** `sancaktepe-asansor.md` · **Marka:** yalnızca "YK Asansör"
-> **v2:** İlçe yazısı kadar kapsamlı hâle getirildi (tüm hizmetler + arıza ve kurtarma odağı + geniş SSS); dil sadeleştirildi.
+> **v3:** Başlık genişletildi; tüm hizmetler ayrı başlıklarla açıldı; arıza ve kurtarma öne çıkan bölüm olarak kaldı.
 
 ## Yayın bilgileri
 
@@ -10,126 +10,117 @@
 |---|---|
 | URL | `/blog/sarigazi-asansor.html` |
 | Ana sorgu | sarıgazi asansör (firmaları) |
-| Yan sorgular | sarıgazi asansör tamiri, sarıgazi asansör servisi, sarıgazi asansör bakım, asansör arıza belirtileri, asansörde mahsur kalma |
-| `<title>` (56) | `Sarıgazi Asansör Firması: Arıza, Tamir ve Bakım \| YK Asansör` |
-| Meta (≈150) | `Sarıgazi'de 7/24 asansör arıza servisi, tamir ve aylık bakım. Hangi belirtide asansör kapatılır, mahsur kalınca ne yapılır? 0 (543) 542 86 75.` |
-| H1 | Sarıgazi'de asansör: *Arıza anında ne yapılır, bakım nasıl planlanır?* |
-| Ana konu | Arıza belirtileri, asansörü kapatma kararı, mahsur kalma ve kurtarma |
+| Yan sorgular | sarıgazi asansör bakım, sarıgazi asansör tamiri, sarıgazi asansör servisi, sarıgazi asansör montaj, asansörde mahsur kalma |
+| `<title>` (57) | `Sarıgazi Asansör Firması: Bakım, Tamir, Montaj \| YK Asansör` |
+| Meta (≈150) | `Sarıgazi'de asansör bakımı, 7/24 arıza ve tamir, montaj ve modernizasyon. Arıza anında ne yapılır, bakım ücreti ne kadar? 0 (543) 542 86 75.` |
+| H1 | Sarıgazi'de asansör hizmetleri: *Bakım, tamir, montaj ve arıza anında yapılacaklar* |
+| Öne çıkan bölüm | Arıza belirtileri, asansörü kapatma kararı, mahsur kalma ve kurtarma |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
-| İç bağlantılar | Sancaktepe, Samandıra, Yenidoğan, Çakmak yazıları; 7/24 arıza sayfası; modernizasyon sayfası; teklif formu |
+| İç bağlantılar | Sancaktepe, Samandıra, Yenidoğan yazıları; konu yazıları (asansör arızaları, akü ve elektrik kesintisi, asansör kapısı, etiket renkleri, bakım ücreti); 7/24 arıza sayfası; teklif formu |
 
 ---
 
 ## Metin
 
-# Sarıgazi'de asansör: *Arıza anında ne yapılır, bakım nasıl planlanır?*
+# Sarıgazi'de asansör hizmetleri: *Bakım, tamir, montaj ve arıza anında yapılacaklar*
 
-Asansör arızası çoğu zaman en olmadık saatte çıkar: gece yarısı, bayram sabahı, taşınma günü. Sarıgazi'de bir
-binanın yöneticisiyseniz o an ne yapacağınızı önceden bilmek işinizi çok kolaylaştırır. Kısaca: içeride biri
-varsa kapıyı zorlamayın ve 7/24 arıza hattını arayın; asansör garip davranıyorsa kullanıma kapatın. Bu yazıda
-hangi belirtinin ne anlama geldiğini, mahsur kalmada adım adım ne yapılacağını ve Sarıgazi'de verdiğimiz bakım,
-modernizasyon ve montaj hizmetlerini anlattık. Arıza hattımız: **0 (543) 542 86 75**.
+Sarıgazi, Sancaktepe'nin mahallelerinden biri; eski apartmanlarla yeni binaların yan yana durduğu bir yer. Eski
+asansörlerde mekanik ve kapı arızaları, yenilerde elektronik arızalar öne çıkıyor. YK Asansör olarak Sancaktepe merkezli
+ekibimizle Sarıgazi'de aylık bakım, 7/24 arıza ve tamir, modernizasyon ve montaj yapıyoruz. Bu yazıda bütün bu
+hizmetleri ve bir yöneticinin bilmesi gerekenleri anlattık; en çok sorulan konuya, yani arıza anında ne yapılacağına da
+ayrıntılı yer verdik. Arıza hattımız: **0 (543) 542 86 75**.
 
 **Bu yazıda**
 
-1. Asansörde biri mahsur kaldıysa
-2. Belirtiler ve olası sebepleri
-3. Asansörü ne zaman hemen kapatmalısınız?
-4. Kurtarma eğitimi
-5. Arızadan sonra
-6. Sarıgazi'de verdiğimiz hizmetler
+1. Sarıgazi'de neler yapıyoruz?
+2. Asansörde biri mahsur kaldıysa
+3. Arıza belirtileri ve olası sebepleri
+4. Asansörü ne zaman hemen kapatmalı?
+5. Kurtarma eğitimi ve arızadan sonra
+6. Aylık bakım
 7. Periyodik kontrol ve etiketler
-8. Sık sorulanlar
+8. Modernizasyon ve yeni montaj
+9. Bakım ücreti ve firma seçimi
+10. Sık sorulanlar
+
+## Sarıgazi'de neler yapıyoruz?
+
+7/24 arıza ve kurtarma, aylık bakım ve bakım sözleşmesi, modernizasyon ve revizyon, yeni montaj ve sonradan asansör,
+kuyu ve makine dairesi temizliği, yeşil etiket hazırlığı. Dişli, dişlisiz, hidrolik, makine dairesiz, yük, villa ve
+engelli lifti dahil tüm tiplerle çalışıyoruz.
 
 ## Asansörde biri mahsur kaldıysa
 
 İlk iş kabindekiyle konuşmak. Panik, mahsur kalmanın kendisinden daha büyük risk. Kabinin havalandırması içerideki
-kişi için yeterlidir; kapıyı zorlaması ya da tavandan çıkmaya çalışması ise gerçekten tehlikelidir. Ona bunu
-söyleyin ve yardımın yolda olduğunu anlatın.
+kişi için yeterlidir; kapıyı zorlaması ya da tavandan çıkmaya çalışması ise gerçekten tehlikelidir. Ona bunu söyleyin
+ve yardımın yolda olduğunu anlatın.
 
-Sonra bakım firmasının 7/24 hattını arayın. Bizde mahsur kalma çağrıları sıranın en önüne geçer. İçerideki kişinin
-sağlık sorunu varsa ya da duman, yanık kokusu fark ederseniz önce 112'yi arayın.
+Sonra bakım firmasının 7/24 hattını arayın; bizde mahsur kalma çağrıları sıranın en önüne geçer. İçerideki kişinin
+sağlık sorunu varsa ya da duman, yanık kokusu fark ederseniz önce 112'yi arayın. Kurtarma eğitimi almadıysanız kapıyı
+açmaya veya makine dairesindeki düzeneklere dokunmaya çalışmayın; yanlış müdahale, kabin hareket ederken kapının
+açılmasına yol açabilir.
 
-Kurtarma eğitimi almadıysanız kapıyı açmaya veya makine dairesindeki düzeneklere dokunmaya çalışmayın. Yanlış
-müdahale, kabin hareket ederken kapının açılmasına yol açabilir.
-`[[İSTEĞE BAĞLI: Sancaktepe içi ölçülmüş ortalama varış süresi]]`
+## Arıza belirtileri ve olası sebepleri
 
-## Belirtiler ve olası sebepleri
-
-Çoğu arıza birdenbire olmaz; asansör günler, bazen haftalar önce haber verir. Sakinlerden gelen şikâyetleri ciddiye
-alıp bakım firmasına iletmek, asansörün tamamen durmasını çoğu zaman önler.
+Çoğu arıza birdenbire olmaz; asansör günler, bazen haftalar önce haber verir. Sakinlerden gelen şikâyetleri bakım
+firmasına iletmek, asansörün tamamen durmasını çoğu zaman önler.
 
 | Belirti | Genellikle neden olur? |
 |---|---|
-| Kabin katla aynı hizada durmuyor, basamak oluşuyor | Fren, kat seviye algılayıcısı ya da halat ayarı |
+| Kabin katla aynı hizada durmuyor | Fren, kat seviye algılayıcısı ya da halat ayarı |
 | Kalkışta veya duruşta sarsıntı | Fren, sürücü ayarı, kılavuz raylar |
 | Seyirde sürtünme, gıcırtı, vuruntu | Yağlama eksikliği, makara ya da kapı mekanizması |
 | Kapı kapanıp tekrar açılıyor | Kirli fotosel ya da eşikte yabancı cisim |
-| Butonlar geç yanıt veriyor, katlar karışıyor | Kumanda panosu ya da buton |
+| Butonlar geç yanıt veriyor | Kumanda panosu ya da buton |
 | Kabin ışığı veya alarm çalışmıyor | Aydınlatma, akü ya da alarm devresi |
-| Makine dairesinde yanık kokusu, aşırı ısı | Motor, sürücü ya da elektrik bağlantısı |
+| Makine dairesinde yanık kokusu | Motor, sürücü ya da elektrik bağlantısı |
 
-Bu tablo yol gösterir ama kesin sebebi teknisyen söyler. Kapı arızalarını ayrıca Çakmak yazımızda ayrıntılı
-anlattık.
+Bu tablo yol gösterir ama kesin sebebi teknisyen söyler. Daha fazlası "Asansör arızaları" yazımızda, kapı sorunları
+"Asansör kapısı" yazımızda, elektrik kesintisi "Asansör aküsü ve elektrik kesintisi" yazımızda.
 
-## Asansörü ne zaman hemen kapatmalısınız?
+## Asansörü ne zaman hemen kapatmalı?
 
-Bazı durumlar bekletilmez:
+Kabin kapısı açıkken asansör hareket ediyorsa, kabin o katta değilken kat kapısı açılabiliyorsa, duman ya da yanık
+kokusu varsa, kuyuya su girmişse ya da kabin kat hizasının belirgin biçimde altında veya üstünde duruyorsa asansörü
+kapatın, her kattaki kapıya "arızalı" yazısı asın ve firmayı arayın. Yönetmelik de tehlikeli bir durum fark eden
+yöneticinin bakım firmasına haber vermesini ve müdahaleye kadar önlem almasını istiyor.
 
-- Kabin kapısı açıkken asansör hareket ediyorsa
-- Kabin o katta değilken kat kapısı açılabiliyorsa
-- Duman, kıvılcım ya da yanık kokusu varsa
-- Kuyuya su girmişse (yağmur, patlayan tesisat)
-- Kabin belirgin biçimde kat hizasının altında ya da üstünde duruyorsa
+## Kurtarma eğitimi ve arızadan sonra
 
-Bu durumlarda asansörü kapatın, her kattaki kapıya "arızalı" yazısı asın ve firmayı arayın. Yönetmelik de tehlikeli
-bir durum fark eden yöneticinin bakım firmasına haber vermesini ve müdahaleye kadar önlem almasını istiyor.
+Bakım firması, yönetimin belirlediği kişilere yılda en az bir kez kurtarma eğitimi vermek ve bunu tutanağa geçirmek
+zorunda; kurtarma talimatının da binada asılı olması gerekiyor. Pratikte sorun şu: eğitimi alan kişi taşınır ya da
+yönetim değişir, kimse fark etmez. Yönetici değiştiğinde eğitimin yenilenmesini isteyin.
 
-## Kurtarma eğitimi
+Arızadan sonra teknisyenin yaptığı işi bakım föyünde görün; değişen parçalar asansörün kayıt defterine de işlenir. Aynı
+arıza birkaç ay içinde tekrar ediyorsa bir parçanın ya da sistemin ömrünü doldurduğunu gösterir.
 
-Bakım firması, yönetimin belirlediği kişilere yılda en az bir kez kurtarma eğitimi vermek ve bunu tutanağa
-geçirmek zorunda. Kurtarma talimatının da binada uygun bir yerde asılı olması gerekiyor. Eğitimi almış biri, firma
-gelene kadar mahsur kalan kişiyi güvenle en yakın kata indirebilir.
+## Aylık bakım
 
-Pratikte sorun şu: eğitimi alan kişi taşınır ya da yönetim değişir, kimse bunu fark etmez. Yönetici değiştiğinde
-eğitimin yenilenmesini isteyin. Kurtarma çalışmalarının kendisi zaten bakım kapsamında; ayrıca ücret çıkmaz.
-
-## Arızadan sonra
-
-Teknisyenin yaptığı işi bakım föyünde görün; föyün bir nüshası size kalır. Değişen parçalar ve kazalar asansörün
-kayıt defterine de işlenir. Aynı arıza birkaç ay içinde tekrar ediyorsa bunu not edin: tekrar eden arıza, bir
-parçanın ya da sistemin ömrünü doldurduğunu gösterir ve modernizasyonu konuşmanın zamanı gelmiştir.
-
-## Sarıgazi'de verdiğimiz hizmetler
-
-Sarıgazi, Sancaktepe'nin mahallelerinden biri. Eski apartmanlarla yeni binalar burada yan yana; eski asansörlerde
-mekanik ve kapı arızaları, yenilerde elektronik arızalar öne çıkıyor. YK Asansör olarak Sancaktepe merkezli
-ekibimizle Sarıgazi'de şunları yapıyoruz:
-
-**7/24 arıza ve kurtarma.** Yukarıda anlattığımız her durumda bize ulaşabilirsiniz.
-
-**Aylık bakım.** Arızaların çoğu iyi yapılmış bakımla önlenir. Her ay fren, halat, kapılar, güvenlik devreleri ve
-kumanda kontrol edilir; yağlama ve temizlik yapılır; sonunda bakım föyü bırakılır. Bakım sözleşmesinde nelere
-bakmanız gerektiğini Yenidoğan yazımızda anlattık.
-
-**Modernizasyon.** Sık arıza yapan, parçası bulunmayan ya da her kontrolde aynı eksikten etiket alan asansörlerde
-kumanda panosu, kapılar ve makine ayrı ayrı yenilenebilir.
-
-**Yeni montaj ve sonradan asansör.** Asansörü olmayan apartmanlar için keşif, proje, montaj ve tescil.
-
-**Yeşil etiket hazırlığı, temizlik ve muayene servisi.** Kontrol öncesi ön kontrol, kuyu dibi ve makine dairesi
-temizliği. Süreci Samandıra yazımızda adım adım anlattık.
-
-Dişli, dişlisiz, hidrolik, makine dairesiz, yük, villa ve engelli lifti dahil tüm tiplerle çalışıyoruz.
+Arızaların çoğu iyi yapılmış bakımla önlenir. Bakım ayda en az bir kez yapılıyor: fren, halat, kapılar ve kilitler,
+güvenlik devreleri ve kumanda kontrol ediliyor; raylar yağlanıyor, temizlik yapılıyor ve bir föy bırakılıyor. Bakım
+için sözleşme yapmak yöneticinin işi; sözleşmede nelere bakılacağını Yenidoğan yazımızda ve "Asansör bakım sözleşmesi"
+yazımızda anlattık. Kabin, kapı ve motor gibi büyük parçaların değişimi bakım kapsamında değil.
 
 ## Periyodik kontrol ve etiketler
 
 Sarıgazi Sancaktepe'ye bağlı olduğu için yıllık periyodik kontrolü Royalcert yapıyor (protokol 2024–2028). Kontrol
-sonucu sarı etiket çıkarsa eksikleri en geç 120 günde, kırmızı çıkarsa en geç 60 günde gidermeniz gerekiyor;
-kırmızı etiketli asansör bu sürede kullanılmıyor. Mavi etiketteki eksikler bir sonraki kontrole kadar giderilebilir.
+tarihi en az üç gün önce bildiriliyor; ücreti yönetim ödüyor. Sarı etiket çıkarsa eksikleri en geç 120 günde, kırmızı
+çıkarsa en geç 60 günde gidermeniz gerekiyor; kırmızı etiketli asansör bu sürede kullanılmıyor ve bakım da verilemiyor.
+Mavi etiketteki eksikler bir sonraki kontrole kadar giderilebilir. Kontrole hazırlığı Samandıra yazımızda adım adım
+anlattık.
 
-**Bakım ücreti hakkında kısa bir not:** TASİAD'ın 2026 tavsiyesi konut tipi bir asansör için (7 durağa kadar) aylık
-3.000 TL + KDV. Kesin fiyat asansörünüze ve sözleşme kapsamına göre değişir; keşif ücretsiz.
+## Modernizasyon ve yeni montaj
+
+Sık arıza yapan, parçası bulunmayan ya da her kontrolde aynı eksikten etiket alan asansörlerde kumanda panosu, kapılar
+ve makine ayrı ayrı yenilenebiliyor. Asansörü olmayan apartmanlar için keşif, proje, montaj ve tescil; tescil öncesi ilk
+kontrolün ücreti normal periyodik kontrolün üç katı. Yeni asansörün maliyetini "Asansör fiyatları" yazımızda anlattık.
+
+## Bakım ücreti ve firma seçimi
+
+TASİAD'ın 2026 tavsiyesi konut tipi bir asansör için (7 durağa kadar) aylık 3.000 TL + KDV; her ek durak için 500 TL.
+Kesin fiyat asansörünüze göre değişiyor, keşif ücretsiz; bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi
+de ücretsiz. Bakım firması seçerken özellikle arızaya ne kadar sürede geldiğini ve gece kime ulaşacağınızı sorun.
+TSE Hizmet Yeterlilik Belgesi, föy, kurtarma eğitimi ve ücrete dahil olanlar da yazılı olsun.
 
 > ### Arıza mı var?
 > 7/24: **0 (543) 542 86 75** · Bakım sözleşmesi için **[Teklif alın]**
@@ -140,7 +131,7 @@ kırmızı etiketli asansör bu sürede kullanılmıyor. Mavi etiketteki eksikle
 Bakım firmanızın 7/24 hattını. Bizim hattımız her saat açık: 0 (543) 542 86 75.
 
 **Asansörde mahsur kalan biri için 112'yi aramalı mıyım?**
-Sağlık sorunu, duman ya da yangın varsa evet. Diğer durumlarda önce bakım firmasını arayın ve kapıyı zorlamayın.
+Sağlık sorunu, duman ya da yangın varsa evet. Diğer durumlarda önce bakım firmasını arayın; kapıyı zorlamayın.
 
 **Kapısı tam kapanmayan asansörü kullanmaya devam edebilir miyiz?**
 Hayır. Kapı sorunu güvenlik riski; asansörü kapatıp firmaya haber verin.
@@ -148,22 +139,26 @@ Hayır. Kapı sorunu güvenlik riski; asansörü kapatıp firmaya haber verin.
 **Asansör sarsıntılı çalışıyor, tehlikeli mi?**
 Hemen tehlike olmayabilir ama fren ya da ayar sorununun işareti olabilir. Bir sonraki bakımı beklemeden bildirin.
 
+**Kuyuya su girdi, ne yapmalıyım?**
+Asansörü hemen kapatın ve teknisyen kontrol etmeden çalıştırmayın.
+
 **Kurtarma eğitimi zorunlu mu?**
 Evet. Bakım firması yılda en az bir kez, yönetimin belirlediği kişilere vermek zorunda.
 
-**Sürekli arıza yapan asansör için ne yapmalıyız?**
-Arıza kayıtlarına birlikte bakalım. Aynı parçalar tekrar tekrar değişiyorsa kumanda, kapı ya da makine yenilemesi
-daha ekonomik olur.
-
-**Sarıgazi'de aylık bakım yapıyor musunuz?**
+**Sarıgazi'de aylık asansör bakımı yapıyor musunuz?**
 Evet. Aylık bakım, 7/24 arıza, modernizasyon ve montaj yapıyoruz.
 
-**Arıza onarımı bakım ücretine dahil mi?**
-Arızaya müdahale ve kurtarma bakım kapsamında. Büyük parça değişimleri ayrıca teklif edilir; sözleşmede yazılı olarak
-netleştirin.
+**Sarıgazi'de periyodik kontrolü kim yapıyor?**
+Sancaktepe Belediyesi'yle protokolü olan Royalcert (2024–2028).
 
-**Kuyuya su girdi, ne yapmalıyım?**
-Asansörü hemen kapatın ve kullanmayın. Su, elektrik aksamı için ciddi risk; teknisyen kontrol etmeden çalıştırmayın.
+**Arıza onarımı bakım ücretine dahil mi?**
+Arızaya müdahale ve kurtarma bakım kapsamında; büyük parça değişimleri ayrıca teklif edilir.
+
+**Sürekli arıza yapan asansör için ne yapmalıyız?**
+Arıza kayıtlarına birlikte bakalım; aynı parçalar tekrar tekrar değişiyorsa yenileme daha ekonomik olur.
+
+**Aylık bakım ücreti ne kadar?**
+Konut tipi bir asansör için TASİAD'ın 2026 tavsiyesi aylık 3.000 TL + KDV.
 
 ## Kaynaklar
 
@@ -176,7 +171,5 @@ Asansörü hemen kapatın ve kullanmayın. Su, elektrik aksamı için ciddi risk
 
 ## Editör notları (yayınlanmaz)
 
-- Madde dayanakları: tehlike bildirimi İB m. 14/3; kurtarma eğitimi ve talimat İB m. 10/6; kurtarma bakım kapsamında
-  İB m. 9; föy İB m. 10/2; kayıt defteri İB m. 10/5; etiket süreleri PK m. 11.
-- Belirti tablosu, "kabin havalandırması yeterlidir" ve "eğitim alan kişi taşınır" ifadeleri saha bilgisidir;
-  Ömürcan Bey kontrol etsin.
+- Madde dayanakları: İB m. 14/3, 10/6, 9, 10/2, 10/5, 4/e, 14/1, 10/11; PK m. 11, 16/9, 23/1, 23/2.
+- Belirti tablosu ve "kabin havalandırması yeterlidir" saha bilgisidir; Ömürcan Bey kontrol etsin.
