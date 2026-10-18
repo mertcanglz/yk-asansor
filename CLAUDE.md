@@ -26,10 +26,15 @@ index.html            Ana sayfa (tek sayfa: hero, hizmetler, hakkımızda, ileti
 assets/css/style.css  Tüm stiller; renkler/fontlar en üstteki :root değişkenlerinde
 assets/js/main.js     Mobil menü ve küçük etkileşimler
 assets/img/           Görseller (logo, fotoğraflar) — web için sıkıştırılmış .jpg/.webp, < 300 KB
+blog/                 Blog yazıları (ör. blog/asansor-etiket-renkleri.html)
+docs/                 Proje belgeleri (yayınlanmaz): SEO yol haritası, blog taslakları, kurallar
 ```
 
 Yeni sayfa gerekirse kök dizine `hizmetler.html` gibi ekle, aynı header/footer'ı kopyala
-ve tüm sayfalardaki menüyü güncelle.
+ve tüm sayfalardaki menüyü güncelle. **İstisna: blog yazıları `blog/` klasörüne** konur
+(kalıcı adres yapısı, yayından sonra değiştirilmez); bu sayfalarda yollar `../assets/...` olur.
+Kodlamadan önce blog taslakları `docs/blog-taslaklari/` altında Markdown olarak yazılır, onaylanınca
+`blog/` içinde HTML sayfasına çevrilir. SEO kuralları ve sayfa/URL planı: `docs/seo-yol-haritasi.md`.
 
 ## Tasarım kuralları
 

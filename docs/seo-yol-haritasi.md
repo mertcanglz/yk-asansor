@@ -159,9 +159,8 @@ düzeltilecek.
 **URL kuralları:** Türkçe karakter yok (`ş→s`, `ı→i`…), küçük harf, tire ile ayrılmış, kısa.
 URL'ler yayından sonra **değiştirilmez**; değişirse 301 yönlendirme gerekir.
 
-**Karar gerekiyor:** Blog yazıları için `blog/` klasörü öneriyorum
-(`/blog/asansor-etiket-renkleri.html`). `CLAUDE.md` yeni sayfaları kök dizine koymayı söylüyor;
-blog için istisna yapalım mı?
+**Karar (18 Ekim 2026):** Blog yazıları `blog/` klasöründe (`/blog/asansor-etiket-renkleri.html`).
+Kodlamadan önce taslaklar `docs/blog-taslaklari/` altında Markdown olarak yazılır. `CLAUDE.md`'ye işlendi.
 
 ---
 
