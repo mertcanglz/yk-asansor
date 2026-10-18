@@ -130,6 +130,8 @@ hem buraya hem siteye işle:
   Teklif formunda isteğe bağlı, göze batmayan "Sizi yönlendiren müşterimiz" alanı var;
 - Telefon: 0543 542 86 75 (sitede "0 (543) 542 86 75", bağlantı `tel:+905435428675`)
 - WhatsApp: iletişim numarasıyla aynı, 0543 542 86 75 (`https://wa.me/905435428675`)
+- Çalışma saatleri: **7/24 hizmet** (kullanıcı teyit etti). Sitede, yapılandırılmış veride
+  (`openingHoursSpecification` 00:00–23:59, her gün) ve Google İşletme Profili'nde "24 saat açık" olarak aynı.
 - E-posta: TODO — marka adı kesinleşince belirlenecek kurumsal adres; hem sitedeki iletişim
   e-postası hem form gönderimlerinin gideceği adres bu olacak (şimdilik `[E-POSTA ADRESİ]` yer tutucusu).
 - Adres: Abdurrahman Gazi Mah. Altınordu Cad. No: 38-40/A, Sancaktepe / İstanbul
@@ -140,7 +142,8 @@ hem buraya hem siteye işle:
   Mobilde gömülü harita yok: harita görseli üstünde küçük kutu (ad, kısa adres) ve yalnızca
   "Google Haritalar'da açın" bağlantısı.
 - Sosyal medya: Instagram, Facebook, LinkedIn — hesap adresleri TODO (sitede `[INSTAGRAM]`, `[FACEBOOK]`,
-  `[LINKEDIN]` yer tutucusu). İkonlar tüm footer'ların alt şeridinde (masaüstünde telif yazısının sağında,
+  `[LINKEDIN]` yer tutucusu). Instagram şimdilik `@ykasansorr` (resmî hesap bu; `yk.asansorr` değil), ama
+  marka adı değişirse kullanıcı adı da değişebilir, bu yüzden kesinleşene kadar sitede yer tutucu kalır. İkonlar tüm footer'ların alt şeridinde (masaüstünde telif yazısının sağında,
   mobilde üstünde) ve iletişim sayfasında "Bizi takip edin" olarak başlığın karşısında; yeni sekmede açılır.
 - Kuruluş yılı / deneyim: TODO
 - Logo ve marka renkleri: TODO (şu an geçici lacivert + turuncu)
