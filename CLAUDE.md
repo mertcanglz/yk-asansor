@@ -114,7 +114,7 @@ hem buraya hem siteye işle:
   (kullanıcı kararı). İstisna: yerel blog yazıları (aşağıda).
   Yerel SEO ("Sancaktepe asansör bakım" gibi aramalar) yalnızca ayrı, özgün blog yazılarıyla yapılır.
   Sıra (kullanıcı kararı, her aşama onaydan sonra): (1) Sancaktepe ana yazısı → (2) yakın ilçeler ve bilindik büyük
-  semtler: Ümraniye, Çekmeköy, Sultanbeyli ve Dudullu, Samandıra, Sarıgazi, Taşdelen gibi semtler (liste ve sıra
+  semtler: Ümraniye, Çekmeköy, Sultanbeyli, Maltepe ve Dudullu, Samandıra, Sarıgazi, Taşdelen, Maltepe semtleri gibi (liste ve sıra
   `docs/mahalle-talep-analizi.md` Bölüm 5.2). **Mahalle yazıları iptal** (kullanıcı kararı) — bkz. `docs/mahalle-talep-analizi.md`
   → (3) diğer çevre ilçeler yakından uzağa (Ataşehir, Kartal, Maltepe, Pendik…). **En uzak sınır İstanbul Anadolu Yakası**; dışına taşılmaz.
   Bloglarda iş fotoğrafı ve gerçek iş örneği kullanılmaz (kullanıcı kararı); özgünlük doğrulanmış yerel

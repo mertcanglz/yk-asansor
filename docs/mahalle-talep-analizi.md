@@ -153,19 +153,30 @@ mahalleleri). Sultanbeyli 1992'de (3806 sayılı Kanun) ilçe oldu, 15 mahalle; 
 adı yok (Vikipedi). Periyodik kontrol: Royalcert protokol listesinde Sancaktepe (2024–2028) ve Ümraniye
 (2024–2030) var; Çekmeköy ve Sultanbeyli yazı sırası gelince bakılacak.
 
-### 5.2 Önerilen yazı listesi ve sıra (onay bekliyor)
+### 5.2 Yazı listesi: ilçeler ve altındaki semtler (onay bekliyor)
 
-| Sıra | Yazı | Gerekçe | Farklı ana konu (tekrar olmasın diye) |
-|---|---|---|---|
-| 1 | Sancaktepe | Taslak v2 hazır | Tüm hizmetler, bina yöneticisi rehberi |
-| 2 | **Ümraniye** | En yüksek talep (~160) | İş merkezleri ve plazalar: yüksek hızlı asansör, yoğun trafik, iş yerlerinde bakım planlaması |
-| 3 | **Çekmeköy** | ~140 | Villa ve müstakil evler, yeni siteler: villa/engelli lifti, makine dairesiz sistemler |
-| 4 | **Sultanbeyli** | ~70 | Çok katlı apartman stoğu: modernizasyon, eski asansör yenileme, sonradan asansör |
-| 5 | **Dudullu** | ~20; sanayi bölgesi | Yük asansörü, sanayi ve depo asansörlerinin bakımı |
-| 6 | **Samandıra** | Bilindik semt, otomatik tamamlamada var | Periyodik kontrol ve etiket hazırlığı (yeşil etiket süreci) |
-| 7 | **Sarıgazi** | Bilindik semt, otomatik tamamlamada var | 7/24 arıza ve kurtarma, arıza belirtileri |
-| 8 | **Taşdelen** | ~10 | Yeni konut projelerinde montaj süreci |
-| 9 | Yenidoğan, Alemdağ, Çakmak, Şerifali, Tepeüstü | Ölçülebilir talep yok | Yalnızca kullanıcı isterse veya Search Console'da talep görülürse |
+Sayılar: Google Ads Planlayıcı, Türkiye, son 12 ay, ilçe + "asansör" aramalarının toplamı (≈ aylık).
+"Opsiyonel" = ölçülebilir talep yok; yalnızca istenirse.
+
+**1. Sancaktepe** (~120) · taslak v2 hazır · ana konu: tüm hizmetler, bina yöneticisi rehberi
+- Samandıra · otomatik tamamlamada var · ana konu: periyodik kontrol ve yeşil etiket hazırlığı
+- Sarıgazi · otomatik tamamlamada var · ana konu: 7/24 arıza ve kurtarma
+- Yenidoğan · opsiyonel
+
+**2. Ümraniye** (~160) · ana konu: iş merkezleri ve yoğun binalar, yüksek hızlı asansör
+- Dudullu (~20) · ana konu: yük ve sanayi asansörleri
+- Çakmak, Şerifali, Tepeüstü · opsiyonel
+
+**3. Çekmeköy** (~140) · ana konu: villa, müstakil ev ve yeni siteler; villa/engelli lifti, makine dairesiz
+- Taşdelen (~10) · ana konu: yeni konutlarda montaj süreci
+- Alemdağ, Ömerli · opsiyonel
+
+**4. Sultanbeyli** (~70) · ana konu: çok katlı apartmanlarda modernizasyon, sonradan asansör
+- Mahalle dışında bilinen semt yok; yalnızca ilçe yazısı
+
+**5. Maltepe** (hacme henüz bakılmadı) · komşu: Sancaktepe, Ataşehir, Kartal, Kadıköy; 18 mahalle
+- Küçükyalı, İdealtepe, Cevizli, Bağlarbaşı, Altayçeşme, Başıbüyük, Zümrütevler · bilinen semtler (hepsi
+  resmî mahalle adı); hangilerinin yazılacağı hacme göre seçilecek. Başıbüyük Sancaktepe'ye en yakın olanı.
 
 Her yazı ilgili ilçenin doğrulanmış yerel bilgisini (kuruluş, muayene kuruluşu, bina dokusu) ve kendi ana
 konusunu taşır; aynı metin yer adı değiştirilerek kullanılmaz. Semt yazıları bağlı oldukları ilçe yazısına
@@ -176,6 +187,7 @@ bağlanır.
 - Sancaktepe mahalleleri (19): https://tr.wikipedia.org/wiki/Sancaktepe
 - Çekmeköy: https://tr.wikipedia.org/wiki/%C3%87ekmek%C3%B6y · Ümraniye: https://tr.wikipedia.org/wiki/%C3%9Cmraniye ·
   Sultanbeyli: https://tr.wikipedia.org/wiki/Sultanbeyli
+- Maltepe: https://tr.wikipedia.org/wiki/Maltepe,_%C4%B0stanbul
 - Royalcert protokol listesi: https://tr.royalcert.com/protokoller/
 - Mahalle nüfusları ADNKS 2025: https://www.nufusune.com/sancaktepe-ilce-nufusu-istanbul
 - Karşılaştırma (farklı yıllar): https://www.i24haber.com/2081-sancaktepe-mahalle-nufusu ·
