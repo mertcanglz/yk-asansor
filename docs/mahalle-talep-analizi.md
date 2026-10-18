@@ -153,30 +153,44 @@ mahalleleri). Sultanbeyli 1992'de (3806 sayılı Kanun) ilçe oldu, 15 mahalle; 
 adı yok (Vikipedi). Periyodik kontrol: Royalcert protokol listesinde Sancaktepe (2024–2028) ve Ümraniye
 (2024–2030) var; Çekmeköy ve Sultanbeyli yazı sırası gelince bakılacak.
 
-### 5.2 Yazı listesi: ilçeler ve altındaki semtler (onay bekliyor)
+### 5.2 Yazı listesi: ilçeler ve altındaki semtler (kullanıcı onayladı, 19 Ekim 2026)
 
-Sayılar: Google Ads Planlayıcı, Türkiye, son 12 ay, ilçe + "asansör" aramalarının toplamı (≈ aylık).
-"Opsiyonel" = ölçülebilir talep yok; yalnızca istenirse.
+Sayılar: Google Ads Planlayıcı, Türkiye, son 12 ay, ilçe + "asansör" aramalarının toplamı (≈ aylık). Semtlerin
+çoğunda ölçülebilir hacim yok; kullanıcı bilindik semtler için yine de yazı istedi. Taslak dosyaları
+`docs/blog-taslaklari/` altında.
 
-**1. Sancaktepe** (~120) · taslak v2 hazır · ana konu: tüm hizmetler, bina yöneticisi rehberi
-- Samandıra · otomatik tamamlamada var · ana konu: periyodik kontrol ve yeşil etiket hazırlığı
-- Sarıgazi · otomatik tamamlamada var · ana konu: 7/24 arıza ve kurtarma
-- Yenidoğan · opsiyonel
+**1. Sancaktepe** (~120) · `sancaktepe-asansor.md` · tüm hizmetler, bina yöneticisi rehberi
+- Samandıra · `samandira-asansor.md` · periyodik kontrol ve yeşil etiket hazırlığı
+- Sarıgazi · `sarigazi-asansor.md` · 7/24 arıza, arıza belirtileri ve kurtarma
+- Yenidoğan · `yenidogan-asansor.md` · bakım sözleşmesi ve bakım firması değiştirme
 
-**2. Ümraniye** (~160) · ana konu: iş merkezleri ve yoğun binalar, yüksek hızlı asansör
-- Dudullu (~20) · ana konu: yük ve sanayi asansörleri
-- Çakmak, Şerifali, Tepeüstü · opsiyonel
+**2. Ümraniye** (~160) · `umraniye-asansor.md` · iş merkezleri, hastaneler ve yoğun binalar
+- Dudullu (~20) · `dudullu-asansor.md` · yük ve sanayi asansörleri
+- Çakmak · `cakmak-asansor.md` · kapı arızaları (kat kapısı kilidi, fotosel, kapı operatörü)
+- Şerifali · `serifali-asansor.md` · makine dairesiz ve dişlisiz asansörlerin bakımı
+- Tepeüstü · `tepeustu-asansor.md` · engelli erişimi ve asansörün kesintisiz çalışması
 
-**3. Çekmeköy** (~140) · ana konu: villa, müstakil ev ve yeni siteler; villa/engelli lifti, makine dairesiz
-- Taşdelen (~10) · ana konu: yeni konutlarda montaj süreci
-- Alemdağ, Ömerli · opsiyonel
+**3. Çekmeköy** (~140) · `cekmekoy-asansor.md` · villa, müstakil ev ve yeni siteler
+- Taşdelen (~10) · `tasdelen-asansor.md` · yeni konutlarda montaj, teslim alma ve garanti
+- Alemdağ · `alemdag-asansor.md` · hidrolik asansör bakımı
+- Ömerli · `omerli-asansor.md` · elektrik kesintisi ve acil durumda asansör
 
-**4. Sultanbeyli** (~70) · ana konu: çok katlı apartmanlarda modernizasyon, sonradan asansör
-- Mahalle dışında bilinen semt yok; yalnızca ilçe yazısı
+**4. Sultanbeyli** (~70) · `sultanbeyli-asansor.md` · eski asansörlerde modernizasyon ve güvenlik seviyesini artırma
+- Mahalle dışında bilinen semt yok
 
-**5. Maltepe** (hacme henüz bakılmadı) · komşu: Sancaktepe, Ataşehir, Kartal, Kadıköy; 18 mahalle
-- Küçükyalı, İdealtepe, Cevizli, Bağlarbaşı, Altayçeşme, Başıbüyük, Zümrütevler · bilinen semtler (hepsi
-  resmî mahalle adı); hangilerinin yazılacağı hacme göre seçilecek. Başıbüyük Sancaktepe'ye en yakın olanı.
+**5. Maltepe** (~90: maltepe asansör firmaları 50, maltepe asansör 30, servisi 10) · `maltepe-asansor.md` ·
+apartmana sonradan asansör yaptırma
+- Küçükyalı · `kucukyali-asansor.md` · kırmızı etiket ve mühürlenen asansör
+- İdealtepe · `idealtepe-asansor.md` · bakım tekliflerini karşılaştırma
+- Cevizli · `cevizli-asansor.md` · kabin yenileme ve kabin çözümleri
+- Başıbüyük · `basibuyuk-asansor.md` · yenilenen binalarda asansör seçimi (Sancaktepe'ye en yakın Maltepe semti)
+- Seçilmeyenler: Bağlarbaşı, Altayçeşme, Zümrütevler ve diğer mahalleler (hacim yok; "çınar asansör" 170 ve
+  "yalı asansör" 20 aynı adlı firmalara ait)
+
+**Periyodik kontrol kuruluşları:** Sancaktepe Royalcert (2024–2028), Ümraniye Royalcert (2024–2030), Çekmeköy
+Akreditest (20.05.2025–20.05.2029; kuruluşun yayımladığı protokol listesi). Sultanbeyli: bulunamadı. Maltepe:
+belediyenin tarihsiz bir yayınında TMMOB Kontrol Merkezi geçiyor, güncelliği teyit edilmedi. Bu ikisinde yazıda
+kuruluş adı verilmez.
 
 Her yazı ilgili ilçenin doğrulanmış yerel bilgisini (kuruluş, muayene kuruluşu, bina dokusu) ve kendi ana
 konusunu taşır; aynı metin yer adı değiştirilerek kullanılmaz. Semt yazıları bağlı oldukları ilçe yazısına
@@ -188,6 +202,7 @@ bağlanır.
 - Çekmeköy: https://tr.wikipedia.org/wiki/%C3%87ekmek%C3%B6y · Ümraniye: https://tr.wikipedia.org/wiki/%C3%9Cmraniye ·
   Sultanbeyli: https://tr.wikipedia.org/wiki/Sultanbeyli
 - Maltepe: https://tr.wikipedia.org/wiki/Maltepe,_%C4%B0stanbul
+- Akreditest protokol listesi (Çekmeköy 2025–2029): https://www.akreditest.com/tr/akreditest-kurumsal/protokol-imzalanan-belediyeler
 - Royalcert protokol listesi: https://tr.royalcert.com/protokoller/
 - Mahalle nüfusları ADNKS 2025: https://www.nufusune.com/sancaktepe-ilce-nufusu-istanbul
 - Karşılaştırma (farklı yıllar): https://www.i24haber.com/2081-sancaktepe-mahalle-nufusu ·
