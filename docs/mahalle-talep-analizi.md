@@ -65,27 +65,66 @@ asansör muayene** gibi. Yani ilçe düzeyinde talep açık; mahalle düzeyinde 
 |---|---|---|
 | **Ubersuggest** (Türkiye, Türkçe; Google verisi) | "sancaktepe asansör" **30/ay** (SEO zorluğu 22, düşük; tıklama başı reklam maliyeti ₺51,49) · "sancaktepe asansör firmaları" **90/ay** · "sancaktepe asansörlü nakliyat" 10 · "kahvecioğlu asansör sancaktepe" 10 · "sancaktepe asansör kiralama yorumları" 0 | Kayıtsız kullanımda tek arama hakkı; kayıtla günde 3 arama. Hesap açmayı ben yapamam. |
 | **Ahrefs ücretsiz anahtar kelime aracı** (Türkiye) | "sancaktepe asansör firmaları", "sancaktepe asansör tamiri": **<100/ay** | Yalnızca kaba aralık gösteriyor. |
-| **Google Ads Anahtar Kelime Planlayıcı** | Bakılmadı. Chrome'daki hesapta iki Ads hesabı var: biri kapalı, diğeri "Alfa Spor Kulübü". Başka işletmenin hesabına izinsiz girilmedi. | Toplu kontrol için en iyisi (60+ kelime tek seferde), ama hesap izni gerekiyor. |
+| **Google Ads Anahtar Kelime Planlayıcı** | Aşağıda (Bölüm 3c). | – |
 
-**Okuma:** İlçe düzeyindeki en güçlü arama bile ayda ~30–90. Mahalle + asansör aramalarının bunun çok
-altında (çoğu 0–10) olması beklenir; otomatik tamamlama sonucu da bunu destekliyor. Kesin mahalle sayıları
-için Anahtar Kelime Planlayıcı veya kayıtlı Ubersuggest/Semrush gerekir.
+**Okuma:** Ubersuggest ve Ahrefs, Planlayıcı ile aynı sonucu veriyor.
+
+## 3c. Google Ads Anahtar Kelime Planlayıcı (19 Ekim 2026)
+
+Kullanıcının yönettiği "Alfa Spor Kulübü" Ads hesabıyla, kullanıcı izniyle bakıldı. Konum **Türkiye**, tüm
+diller, Google araması, **son 12 ay (Ekim 2025 – Eylül 2026)** ortalaması. Hiçbir ayar, kampanya veya
+fatura değiştirilmedi. Not: Planlayıcı, hacim sorgusunda hesapta otomatik olarak bir taslak anahtar kelime
+planı oluşturur ("Eki 19, 2026, 12 ÖÖ tarihli plan"); maliyeti yok, kampanya değil, istenirse
+Planlayıcı → Kaydedilen planlar'dan silinebilir.
+
+**Sorgulanan:** 165 kelime: 19 mahalle + Samandıra + Sancaktepe; her biri için "X asansör", "X asansör bakım",
+"X asansör firması", "X asansör servisi", "X asansör tamiri", "X asansör montaj"; ayrıca "X mahallesi
+asansör" ve "sancaktepe X asansör"; karşılaştırma için birkaç genel kelime.
+
+**Hacmi olan kelimeler** (geri kalan 157 kelime "—" = ölçülemeyecek kadar düşük, pratikte ayda 0–10):
+
+| Kelime | Ort. aylık arama | Not |
+|---|---|---|
+| sancaktepe asansör firmaları | **90** | Sancaktepe'deki en güçlü sorgu |
+| sancaktepe asansör | **30** | |
+| fatih asansör | 110 | Firma adı ve Fatih ilçesi aramaları; Sancaktepe'nin Fatih Mahallesi'yle ilgisi yok |
+| emek asansör | 90 | "Emek Asansör" adlı firmalar (Samsun, Kayseri, Diyarbakır…) |
+| hilal asansör | 70 | "Hilal Asansör" adlı firmalar |
+| akpınar asansör | 20 | "Akpınar Asansör" (Aksaray) firması |
+| çekmeköy asansör | 90 | Karşılaştırma için (komşu ilçe) |
+| asansör bakım | 135.000 | Karşılaştırma için; Planlayıcı %149.900 artış gösteriyor, veri tutarsız görünüyor, dikkate alınmadı |
+
+**Samandıra, Sarıgazi, Yenidoğan ve 19 mahallenin tüm varyantları: "—".** "sancaktepe asansör bakım",
+"sancaktepe asansör tamiri", "sancaktepe asansör montaj" da "—".
+
+**Anahtar kelime fikirleri** ("sancaktepe asansör", "samandıra asansör", "sarıgazi asansör" tohumlarıyla):
+Google yalnızca 7 sorgu önerdi: sancaktepe asansör firmaları 90, sancaktepe asansör 30, bsb asansör
+sancaktepe 10, gts asansör sancaktepe 10, kahvecioğlu asansör sancaktepe 10 (son üçü firma adı), samandıra
+asansör "—", sarıgazi asansör "—".
+
+**Okuma:** Sancaktepe'de "asansör + yer adı" ile yapılan aramaların toplamı ayda yaklaşık **120–150**.
+Neredeyse tamamı ilçe adıyla yapılıyor; semt ve mahalle adıyla yapılan aramalar ölçülemeyecek kadar az.
+Bölgedeki asıl talep yer adı yazılmadan yapılan "asansör bakım", "asansör servisi" gibi aramalarda; Google bu
+aramalarda kullanıcının konumuna göre **Haritalar** sonucunu gösteriyor. Yani bölgedeki müşteriye en çok
+**Google İşletme Profili** ve sitenin kendisi ulaştırır, mahalle yazıları değil.
 
 ## 4. Sonuç ve öneri
 
-1. **19 mahallenin her birine ayrı yazı açmak mantıklı değil.** 17 mahallede Google'ın fark edeceği kadar
-   arama yok. Yer adı değişen ama içeriği benzeyen 19 yazı blog alanını doldurur ve Google'ın "doorway"
+1. **19 mahallenin her birine ayrı yazı açmak mantıklı değil.** Planlayıcı 19 mahallenin hiçbirinde ölçülebilir
+   arama göstermiyor. Yer adı değişen 19 yazı blog alanını doldurur, trafik getirmez ve Google'ın "doorway"
    (kapı sayfası) kalıbına benzeyip sitenin geneline zarar verebilir.
-2. **Şimdi yazılacak:** **Samandıra** ve **Sarıgazi** semt yazıları (talep görünen iki ad).
-3. **Bekletilecek:** **Yenidoğan** (eski belde adı, 25 bin nüfus, ama öneri çıkmadı). Search Console'da
-   gösterim gelirse yazılır.
-4. **Büyük mahalleler** (Osmangazi, Abdurrahmangazi, Fatih) ayrı yazı yerine Sancaktepe ana yazısında ve
-   semt yazılarında doğal biçimde anılabilir. Osmangazi ve Fatih adları başka ilçelerle çakıştığı için ayrı
-   yazı yanlış kitleyi (Bursa, Fatih ilçesi) çekebilir.
-5. **Karar kuralı (yayından sonra):** Search Console'da bir mahalle adı + asansör araması 3 ayda düzenli
-   gösterim alıyorsa (ör. ayda 20+ gösterim) o mahalle için özgün bir yazı açılır.
-6. **İsteğe bağlı:** Google Ads hesabın varsa Anahtar Kelime Planlayıcı'dan Samandıra, Sarıgazi, Yenidoğan
-   ve en büyük 3 mahallenin hacmine bakıp bu sırayı teyit edebiliriz.
+2. **Sancaktepe ana yazısı yeterli ve doğru hedef:** Ölçülen talebin neredeyse tamamı "sancaktepe asansör
+   (firmaları)" aramasında. Ana yazının title'ı ve H1'i bunu zaten hedefliyor.
+3. **Samandıra ve Sarıgazi semt yazıları ertelensin:** Otomatik tamamlamada görünüyorlar ama Planlayıcı'da
+   hacim yok. Site yayına girip Search Console'da bu adlarla gösterim görülürse yazılır.
+4. **Yenidoğan ve diğer mahalleler:** Yalnızca Search Console'da düzenli gösterim görülürse.
+5. **Büyük mahalleler** (Osmangazi, Abdurrahmangazi, Fatih) Sancaktepe ana yazısında doğal biçimde anılabilir.
+   Osmangazi, Fatih, Emek, Hilal, Akpınar gibi adlarla yapılan aramalar başka ilçelere veya firma adlarına ait;
+   bu adlarla ayrı yazı yanlış kitleyi çeker.
+6. **Karar kuralı (yayından sonra):** Search Console'da bir semt veya mahalle adı + asansör araması 3 ay boyunca
+   ayda 20+ gösterim alıyorsa o yer için özgün bir yazı açılır.
+7. **Öncelik:** Bölgedeki asıl talep Haritalar'da. Sıradaki en etkili işler: siteyi yayına almak ve Google
+   İşletme Profili'ne bağlamak, profilde "24 saat açık" ve hizmet listesi, yorum akışı (yol haritası 7.1–7.2).
 
 ## Kaynaklar
 
