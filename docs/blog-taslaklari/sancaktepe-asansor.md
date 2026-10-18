@@ -231,7 +231,7 @@ Teklif aldığınız her firmaya şunları sorun; cevaplar yazılı olsun:
 - Her bakımdan sonra föy bırakıyor musunuz?
 - Kurtarma eğitimini ne zaman veriyorsunuz?
 - Periyodik kontrol öncesi ön kontrol yapıyor, kontrol günü geliyor musunuz?
-- Asansörümde uzaktan erişim ya da şifre kısıtlaması var mı? (Yönetmelik bu bilginin yöneticiye verilmesini
+- Asansörümde cihazla ya da şifreyle bir kısıtlama var mı? (Yönetmelik bu bilginin yöneticiye verilmesini
   istiyor; firma değiştirirken çok işe yarıyor.)
 
 > ### Asansörünüz için bakım teklifi alın.
@@ -313,8 +313,8 @@ raporunu verin; eski firmadan asansörde şifre kısıtlaması olmadığını ya
 | TS 12255 TSE HYB | Doğrulandı: m. 13/1 (10.2.2023'te değişti); askıya alınan firma bakım veremez m. 10/14 | aynı |
 | Kırmızı etiketliye bakım verilmez | Doğrulandı: m. 10/11 | aynı |
 | Bakım kapsamı dışı işler | Doğrulandı: m. 9 | RG 6.4.2019 metni |
-| Uzaktan kısıtlama bilgisi | Doğrulandı: m. 8/5 | RG 6.4.2019 metni |
-| Güvenlik seviyesini artırma bina sorumlusunda | m. 16/4 (RG 2019 metninden; güncel metinde ayrıca bakılmadı) | RG 6.4.2019 metni |
+| Cihaz veya şifreyle kısıtlama bilgisi | Doğrulandı: m. 8/5 (güncel metinde "uzaktan" ifadesi yok) | mevzuat.gov.tr güncel metin |
+| Güvenlik seviyesini artırma bina sorumlusunda | Doğrulandı: m. 16/4 | mevzuat.gov.tr güncel metin (19 Ekim 2026) |
 | Periyodik kontrol yılda en az bir | Doğrulandı: PK m. 8/1 | mevzuat.gov.tr güncel metin |
 | Etiket süreleri | Doğrulandı: kırmızı 60 gün (m. 11/6), sarı 120 gün (m. 11/8), mavi bir sonraki kontrole kadar (m. 11/10). **Google AI Bakışı'ndaki "sarı 60 gün" yanlış.** | aynı |
 | Takip kontrolü ücretsiz, ücreti bina sorumlusu öder, tescil öncesi 3 kat | Doğrulandı: m. 9/7, 24/5, 23/1, 23/2, 10/1 | aynı |

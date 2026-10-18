@@ -14,7 +14,7 @@
 | `<title>` (58) | `Şerifali Asansör Bakımı ve Makine Dairesiz Sistemler \| YK Asansör` |
 | Meta (≈150) | `Şerifali'de asansör bakımı, 7/24 arıza ve montaj. Makine dairesiz ve dişlisiz asansörlerde elektronik arıza, yedek parça ve şifre konusu: 0 (543) 542 86 75.` |
 | H1 | Şerifali'de asansör: *Yeni binaların makine dairesiz ve dişlisiz asansörlerinde bakım* |
-| Ana konu | Makine dairesiz (MRL) ve dişlisiz sistemlerin bakımı, elektronik arızalar, yedek parça, uzaktan kısıtlama |
+| Ana konu | Makine dairesiz (MRL) ve dişlisiz sistemlerin bakımı, elektronik arızalar, yedek parça, şifre ile kısıtlama |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
 | İç bağlantılar | Ümraniye, Dudullu, Çakmak, Tepeüstü yazıları; makine dairesiz ve dişlisiz sayfaları; teklif formu |
 
@@ -82,8 +82,8 @@ böyle durumlarda tesisatın da kontrol edilmesini öneriyoruz. Kapı arızalar�
 temin etmek zorunda. Üç yıl dolduktan sonra, özellikle az bilinen markalarda, bir kartı bulmak haftalar sürebiliyor.
 Bakım firmanıza sizin markanızın parçalarına nasıl ulaştığını sorun.
 
-**Şifre ve uzaktan erişim.** Bazı sistemlerde servis menüsü şifreyle kilitlenebiliyor, bazıları uzaktan
-izlenebiliyor. Yönetmelik, asansörde uzaktan ya da şifreleme yoluyla bir engelleme veya kısıtlama olup olmadığının
+**Şifre ve kısıtlama.** Bazı sistemlerde servis menüsü şifreyle kilitlenebiliyor. Yönetmelik, asansöre bir
+cihazla ya da şifreleme gibi yöntemlerle engelleme veya kısıtlama yapılıp yapılmadığının
 yöneticiye bildirilmesini istiyor. Bu bilgi sözleşmede yazılı değilse, firmayı değiştirdiğinizde yeni firma
 asansörün ayarlarına ulaşamayabilir. Firma değiştirme sürecini Yenidoğan yazımızda adım adım anlattık.
 
@@ -165,7 +165,7 @@ Evet. Aylık bakım, 7/24 arıza, modernizasyon ve montaj yapıyoruz.
 
 ## Editör notları (yayınlanmaz)
 
-- Madde dayanakları: bakım standardı İB m. 9; yedek parça 3 yıl m. 10/7; uzaktan kısıtlama m. 8/5; kurtarma
+- Madde dayanakları: bakım standardı İB m. 9; yedek parça 3 yıl m. 10/7; cihaz/şifre ile kısıtlama m. 8/5; kurtarma
   eğitimi m. 10/6; etiket süreleri PK m. 11.
 - "Şerifali'de yeni binalar ve iş yerleri" genel nitelemedir; Ömürcan Bey bölge gözlemine göre düzeltebilir.
 - Teknik anlatım saha bilgisidir.

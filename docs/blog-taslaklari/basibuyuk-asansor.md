@@ -26,7 +26,7 @@
 Eski bir bina yıkılıp yerine yenisi yapılırken asansör çoğu zaman listenin sonlarında konuşulur. Oysa yeni binada
 seçilen asansör, o binada yaşayacak herkesin önümüzdeki yirmi otuz yılını etkiliyor: kaç kişinin aynı anda
 taşınacağı, sabah saatlerinde ne kadar bekleneceği, bir sedyenin ya da tekerlekli sandalyenin sığıp sığmayacağı ve
-her ay ödenecek bakım ücreti. Maltepe'nin kuzeyindeki Başıbüyük'te yenilenen binalarda kat malikleriyle ve
+her ay ödenecek bakım ücreti. Maltepe'nin Başıbüyük semtinde yenilenen binalarda kat malikleriyle ve
 müteahhitlerle konuştuğumuz konuları bu yazıda topladık. Başıbüyük'te verdiğimiz bakım, arıza ve modernizasyon
 hizmetleri de yazının sonunda.
 
@@ -171,8 +171,7 @@ Maltepe Belediyesi'nin protokol imzaladığı TMMOB Makina Mühendisleri Odası 
 
 ## Editör notları (yayınlanmaz)
 
-- Madde dayanakları: yedek parça 3 yıl İB m. 10/7; teslim belgeleri m. 5/2, 8/3; uzaktan kısıtlama m. 8/5; tescil
+- Madde dayanakları: yedek parça 3 yıl İB m. 10/7; teslim belgeleri m. 5/2, 8/3; cihaz/şifre ile kısıtlama m. 8/5; tescil
   öncesi 3 kat PK m. 23/2.
 - "Konutlarda 4–8 kişi", "saniyede 1 metre civarı" genel teknik bilgidir; Ömürcan Bey kontrol etsin.
 - Başıbüyük'ün kentsel dönüşüm durumu metinde iddia edilmedi; "yenilenen binalar" genel ifadesi kullanıldı.
-  "Maltepe'nin kuzeyindeki" ifadesi `[[DOĞRULA]]`.

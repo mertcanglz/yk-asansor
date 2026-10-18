@@ -53,8 +53,9 @@ yöneticiyi zor durumda bırakır.
 
 Önce yönetmeliğin istedikleri:
 
-- **Her asansörün kimlik numarası ve açık adresi.** Birden fazla asansör varsa hepsi ayrı ayrı yazılmalı.
-- **Uzaktan erişim veya şifre kısıtlaması olup olmadığı.** Bazı sistemlerde servis menüsü şifreyle kilitlenebiliyor.
+- **Sözleşme birden fazla asansörü kapsıyorsa her birinin kimlik numarası ve açık adresi.**
+- **Asansöre bir cihazla ya da şifreleme gibi yöntemlerle engelleme veya kısıtlama yapılıp yapılmadığı.** Bazı
+  sistemlerde servis menüsü şifreyle kilitlenebiliyor.
   Bu bilgi sözleşmede yoksa, firmayı değiştirdiğinizde asansörün ayarlarına kimse ulaşamayabilir.
 - **Bakımı yapacak teknik personelin bilgileri.**
 
@@ -90,7 +91,7 @@ Firma değiştirmek sanıldığı kadar zor değil, ama sırası önemli:
 **Belgeleri toparlayın.** Bakım föyleri zaten yönetimde durmalı (yönetmelik föylerin kalıcı olarak saklanmasını
 istiyor). Bunlara asansörün kayıt defterini ve son periyodik kontrol raporunu ekleyip yeni firmaya verin.
 
-**Şifre kısıtlamasını sorun.** Eski firmadan, asansörde uzaktan erişim ya da şifre kısıtlaması olmadığını yazılı
+**Şifre kısıtlamasını sorun.** Eski firmadan, asansörde şifre ya da cihazla bir kısıtlama olmadığını yazılı
 olarak isteyin.
 
 **İlk bakımda durum tespiti.** Yeni firma ilk bakımda asansörün durumunu raporlamalı. Bu rapor, devraldığı
@@ -175,8 +176,8 @@ Arızaya müdahale ve kurtarma bakım kapsamındadır. Parça değişimi gerekir
 
 ## Editör notları (yayınlanmaz)
 
-- Madde dayanakları: sözleşme İB m. 14/1; ayda bir m. 4/e; TSE HYB m. 13/1, 10/14; kimlik no ve adres m. 8/2;
-  uzaktan kısıtlama m. 8/5; teknik personel m. 10/12; kapsam dışı işler m. 9; föy saklama m. 10/3; kayıt defteri m. 8/3;
+- Madde dayanakları: sözleşme İB m. 14/1; ayda bir m. 4/e; TSE HYB m. 13/1, 10/14; kimlik no ve adres (birden fazla asansörde) m. 8/2;
+  cihaz/şifre ile kısıtlama m. 8/5; teknik personel m. 10/12; kapsam dışı işler m. 9; föy saklama m. 10/3; kayıt defteri m. 8/3;
   durum tespit raporu m. 10/1; üçüncü kişi müdahalesi m. 10; kırmızı/sarıya bakım m. 10/11.
 - İstanbul geneli "bakım sözleşmesi" yazısı yazılırsa bu yazıyla çakışmaması için o yazı sözleşme maddelerine,
   bu yazı firma değiştirme sürecine ağırlık vermeli.

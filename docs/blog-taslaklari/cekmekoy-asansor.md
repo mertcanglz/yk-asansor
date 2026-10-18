@@ -82,7 +82,8 @@ bırakıyor; bunu Tepeüstü yazımızda anlattık.
 Çekmeköy'deki büyük sitelerde aynı anda on, yirmi asansör olabiliyor. Bu durumda işler biraz değişiyor:
 
 Bakım günlerini bloklara yayıyoruz ki sakinler aynı anda asansörsüz kalmasın. Tek bir sözleşme yapılabiliyor, ama
-yönetmelik her asansörün kimlik numarasının ve adresinin sözleşmede ayrı ayrı yer almasını istiyor. Periyodik
+sözleşme birden fazla asansörü kapsadığında yönetmelik her asansörün kimlik numarasının ve adresinin sözleşmede
+yer almasını istiyor. Periyodik
 kontrol tarihleri bloklara göre farklı düşebiliyor; site yönetiminin her asansörün etiket rengini ve eksik giderme
 süresini bir tabloda takip etmesi, bir bloğun gözden kaçmasını önlüyor. Yeni sitelerin çoğunda makine dairesiz
 asansörler var; bunların bakımındaki farkları Şerifali yazımızda anlattık.

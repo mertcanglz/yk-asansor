@@ -77,7 +77,7 @@ Asansörü teslim alırken şunları isteyin ve kendiniz deneyin:
 - Kullanım ve bakım kılavuzu
 - Garanti belgesi ve garanti şartları
 - Kurtarma talimatı ve kurtarma düzeneğinin size gösterilmesi
-- Uzaktan erişim ya da şifre kısıtlaması olup olmadığının yazılı bildirimi
+- Asansöre cihazla ya da şifreyle bir kısıtlama yapılıp yapılmadığının yazılı bildirimi
 - Her katta kapıların ve butonların, kat hizasının denenmesi
 - Kabin ışığının, alarmın ve kabin içi iletişimin denenmesi
 - Montaj sırasında kabin ve kapılarda oluşan çizik ve hasarların tutanağa yazılması
@@ -162,7 +162,7 @@ Evet. Aylık bakım, modernizasyon ve 7/24 arıza hizmeti veriyoruz.
 
 ## Editör notları (yayınlanmaz)
 
-- Madde dayanakları: kimlik etiketi İB m. 5/2; kayıt defteri m. 8/3; uzaktan kısıtlama m. 8/5; garanti m. 11/5, 11/8,
+- Madde dayanakları: kimlik etiketi İB m. 5/2; kayıt defteri m. 8/3; cihaz/şifre ile kısıtlama m. 8/5; garanti m. 11/5, 11/8,
   12/5; sözleşme m. 14/1; tescil öncesi 3 kat PK m. 23/2.
-- m. 5/2, 11/5, 11/8, 12/5 RG 6.4.2019 metninden; güncel metinde ayrıca bakılmalı. `[[DOĞRULA: m. 11 ve 12 güncel hâli]]`
+- m. 5/2, 11/5, 11/8, 12/5 güncel metinde doğrulandı (19 Ekim 2026).
 - Garanti süresinin kaç yıl olduğu yazılmadı (doğrulanmadı).

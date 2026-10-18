@@ -13,7 +13,7 @@
 | `<title>` (57) | `İdealtepe Asansör Bakımı: Teklif Nasıl Karşılaştırılır? \| YK Asansör` |
 | Meta (≈152) | `Maltepe İdealtepe'de asansör bakımı ve 7/24 arıza. Bakım tekliflerini karşılaştırırken nelere bakılır, TASİAD 2026 fiyatları ne diyor? 0 (543) 542 86 75.` |
 | H1 | İdealtepe'de asansör bakımı: *İki teklif arasında nasıl seçim yapılır?* |
-| Ana konu | Bakım tekliflerini karşılaştırma: kapsam, fiyatı belirleyenler, referans tarifeler, uyarı işaretleri |
+| Ana konu | Bakım tekliflerini karşılaştırma: kapsam, fiyatı belirleyenler, referans fiyatlar, uyarı işaretleri |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
 | İç bağlantılar | Maltepe, Küçükyalı, Cevizli, Başıbüyük, Yenidoğan yazıları; periyodik bakım sayfası; teklif formu |
 
@@ -26,13 +26,13 @@
 Bir apartman yönetimi bakım firması değiştirmek istediğinde genellikle iki üç teklif toplar ve en ucuzunu seçer.
 Sonra ilk arızada "bu ücrete dahil değil", ilk parça değişiminde "bu fiyat ayrı" cümleleri gelir. İki teklifi doğru
 karşılaştırmanın yolu rakama değil kapsama bakmak. Maltepe'nin İdealtepe semtinde yöneticilerle sık yaptığımız bu
-konuşmayı bu yazıda topladık: fiyatı neler belirliyor, referans tarifeler ne diyor, teklifte nelere bakılmalı.
+konuşmayı bu yazıda topladık: fiyatı neler belirliyor, referans fiyatlar ne diyor, teklifte nelere bakılmalı.
 İdealtepe'de verdiğimiz bakım, arıza ve modernizasyon hizmetleri de yazının sonunda.
 
 **Bu yazıda**
 
 1. Fiyatı ne belirler?
-2. Referans tarifeler
+2. Referans fiyatlar
 3. Teklifte mutlaka olması gerekenler
 4. Uyarı işaretleri
 5. Karşılaştırma tablosu
@@ -53,12 +53,10 @@ farklı fiyatlanıyor.
 
 **Uzaklık.** Firmanın merkezinin binaya uzaklığı da fiyatı etkileyebiliyor; TASİAD bunu tarifesinde açıkça belirtiyor.
 
-## Referans tarifeler
+## Referans fiyatlar
 
-İstanbul için resmî ya da bağlayıcı bir bakım fiyatı yok. Ama karşılaştırma yaparken kullanabileceğiniz iki referans
-var.
-
-**TASİAD 2026 tavsiye fiyatları** (aylık, KDV hariç, 1.600 kg'a ve 7 durağa kadar):
+İstanbul için resmî ya da bağlayıcı bir bakım fiyatı yok. Karşılaştırma yaparken kullanabileceğiniz en yaygın referans
+sektör derneği **TASİAD'ın 2026 tavsiye fiyatları** (aylık, KDV hariç, 1.600 kg'a ve 7 durağa kadar):
 
 | Sınıf | Kullanım | Aylık (TL) |
 |---|---|---|
@@ -73,13 +71,6 @@ Her ek durak için 500 TL, panoramik asansörlerde 2.250 TL, 2.000 kg üzerindek
 Yedek parça ve parça değişimi dahil değil. TASİAD bu rakamların altındaki hizmetin can ve mal güvenliği açısından risk
 oluşturabileceği uyarısını da yapıyor; ama fiyatlar tavsiye niteliğinde, bağlayıcı değil.
 
-**Ankara Ticaret Odası 2026 azami tarifesi.** Ankara merkez için geçerli, İstanbul'u bağlamıyor; ama bir oda
-tarifesinin nasıl kurgulandığını görmek için işe yarıyor. 1.600 kg ve altı, 2–10 duraklı asansörler için aylık
-1.775,31 TL + KDV'lik bir üst sınır öngörüyor. İzmir'de de Ege Bölgesi Sanayi Odası'nın 2026 azami tarifesi var.
-
-Bu iki referans aynı şeyi ölçmüyor: biri derneğin tavsiyesi, öbürü bir şehrin oda tarifesindeki üst sınır. Teklifleri
-değerlendirirken ikisini de bir başlangıç noktası olarak görün.
-
 ## Teklifte mutlaka olması gerekenler
 
 - Firmanın **TSE Hizmet Yeterlilik Belgesi**: aslı ve geçerlilik tarihi. Belgesi askıya alınan firma bakım veremiyor.
@@ -89,7 +80,7 @@ değerlendirirken ikisini de bir başlangıç noktası olarak görün.
 - **Arıza çağrısı**: 7/24 numara, hedeflenen müdahale süresi, ayrıca ücret alınıp alınmayacağı.
 - **Kurtarma eğitimi**: yılda en az bir kez (yasal zorunluluk).
 - **Periyodik kontrol hazırlığı**: ön kontrol ve kontrol günü eşlik.
-- **Uzaktan erişim ya da şifre kısıtlaması** olup olmadığı.
+- Asansöre **cihazla ya da şifreyle bir kısıtlama** yapılıp yapılmadığı.
 - **KDV**'nin fiyata dahil olup olmadığı.
 - **Sözleşme süresi ve fesih koşulları.**
 
@@ -97,7 +88,7 @@ Sözleşmenin ayrıntılarını ve firma değiştirme sürecini Yenidoğan yazı
 
 ## Uyarı işaretleri
 
-- Fiyat, referans tarifelerin belirgin biçimde altındaysa ve kapsam belirsizse
+- Fiyat, TASİAD tavsiyesinin belirgin biçimde altındaysa ve kapsam belirsizse
 - "Her şey dahil" deniyor ama yazılı bir kapsam listesi verilmiyorsa
 - TSE belgesi gösterilmiyorsa ya da "başvurduk, yakında gelecek" deniyorsa
 - Bakım föyü bırakılmayacağı söyleniyorsa
@@ -154,7 +145,7 @@ Asansöre ve kapsama göre değişiyor. TASİAD'ın 2026 tavsiyesi konut tipi (7
 3.000 TL + KDV.
 
 **İstanbul için resmî bir bakım fiyatı var mı?**
-Hayır. TASİAD tavsiye fiyatları ve bazı şehirlerin oda tarifeleri referans olarak kullanılabilir.
+Hayır. TASİAD'ın tavsiye fiyatları referans olarak kullanılabilir; bağlayıcı değil.
 
 **En ucuz teklifi seçmek doğru mu?**
 Kapsamı yazılı değilse hayır. Ucuz görünen teklif, arıza ve parça kalemlerinde pahalıya gelebiliyor.
@@ -177,9 +168,6 @@ Maltepe Belediyesi'nin protokol imzaladığı TMMOB Makina Mühendisleri Odası 
 ## Kaynaklar
 
 - TASİAD 2026 tavsiye fiyatları: https://tasiad.org.tr/2026-yili-icin-onerilen-asansor-bakim-fiyatlari/
-- Ankara Ticaret Odası 2026 azami bakım tarifesi:
-  https://www.atonet.org.tr/Uploads/Birimler/Internet/Hizmetlerimiz/Azami%20Fiyat%20Tarifleri/2026_azami_fiyat_tarifesi/2026_asansor_yuruyen_merdiven_bakim_hizmetleri_azami_fiyat_tarifesi_2026_01_05.pdf
-- EBSO 2026 asansör bakım azami fiyat tarifesi: https://static.ebso.org.tr/contentfiles/asansor_fiyat_tarife_2026.pdf
 - Asansör İşletme ve Bakım Yönetmeliği, güncel metin:
   https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=7&MevzuatNo=31394&MevzuatTertip=5
 - MMO İstanbul Şubesi, Maltepe protokol haberi:
@@ -187,9 +175,7 @@ Maltepe Belediyesi'nin protokol imzaladığı TMMOB Makina Mühendisleri Odası 
 
 ## Editör notları (yayınlanmaz)
 
-- ATO 1.775,31 TL rakamı yol haritasındaki araştırmadan (18 Ekim 2026); yayından önce PDF'ten tekrar okunmalı.
-  EBSO rakamları okunmadığı için yazılmadı. `[[DOĞRULA: ATO rakamı]]`
 - Madde dayanakları: TSE HYB İB m. 13/1, 10/14; ayda bir m. 4/e; föy m. 10/2; kurtarma eğitimi m. 10/6;
-  uzaktan kısıtlama m. 8/5; periyodik kontrol ücreti PK m. 23/1.
-- İstanbul geneli "Asansör bakım ücretleri 2026" bilgi yazısı yazılırsa bu yazıyla çakışmaması için o yazı tarifelere,
+  cihaz/şifre ile kısıtlama m. 8/5; periyodik kontrol ücreti PK m. 23/1.
+- İstanbul geneli "Asansör bakım ücretleri 2026" bilgi yazısı yazılırsa bu yazıyla çakışmaması için o yazı fiyatlara,
   bu yazı teklif karşılaştırmaya ağırlık vermeli.

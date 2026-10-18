@@ -188,10 +188,9 @@ Bu bakım değil tadilat sayılıyor: onaylı proje ve tescil başvurusu gerekiy
 
 ## Editör notları (yayınlanmaz)
 
-- Madde dayanakları: güvenlik seviyesini artırma İB m. 16/4 (RG 2019 metni); TS EN 81-80 ve kapasite değişikliği
-  m. 9; yedek parça m. 10/7; sözleşme m. 14/1; TSE HYB m. 13/1; föy m. 10/2, 10/3; kurtarma eğitimi m. 10/6;
+- Madde dayanakları: güvenlik seviyesini artırma İB m. 16/4 (güncel metinde doğrulandı); TS EN 81-80 m. 9/4
+  (2004 öncesi asansörler); kapasite değişikliği ve 60 gün m. 9/7; yedek parça m. 10/7; sözleşme m. 14/1; TSE HYB m. 13/1; föy m. 10/2, 10/3; kurtarma eğitimi m. 10/6;
   kırmızıya bakım verilmez m. 10/11; PK m. 8/1, 16/9, 23/1, 9/7, 11.
-- IQNORM: kuruluşun başvuru formunda Sultanbeyli Belediyesi var (19 Ekim 2026, Chrome ile görüldü). Google AI Bakışı
-  protokol tarihini 14.06.2023–13.06.2027 olarak veriyordu; birincil kaynakta görülmediği için yazılmadı.
-  `[[DOĞRULA: protokol tarihleri]]`
+- IQNORM: kuruluşun başvuru formunda Sultanbeyli Belediyesi var (19 Ekim 2026, Chrome ile görüldü). Protokol tarihleri
+  doğrulanamadığı için yazılmadı.
 - "Yenileme süresi" sorusunda süre verilmedi.
