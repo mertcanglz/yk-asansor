@@ -33,7 +33,7 @@ durumu, merdivenin yapısı ve binada ne kadar yer olduğu belirliyor. Bu yazıd
 1. Çeşitler: merdiven asansörü, platform lift, dikey lift
 2. Kime hangisi uygun?
 3. Binada nelere bakılır?
-4. Mevzuat açısından bilinmesi gereken
+4. Mevzuat ne diyor?
 5. Bakım ve güvenlik
 6. Apartmanda kat malikleri
 7. Sık sorulanlar
@@ -75,7 +75,7 @@ Seçerken bunu da düşünmek iyi oluyor.
 - Apartmanda merdiven ortak alan olduğu için diğer sakinlerin geçişinin engellenmemesi.
 - Dışarıda kurulacaksa yağmur ve güneşe dayanıklı model.
 
-## Mevzuat açısından bilinmesi gereken
+## Mevzuat ne diyor?
 
 Asansör Yönetmeliği (2014/33/AB), hızı saniyede 0,15 metreyi aşmayan kaldırma tertibatlarını kapsamına almıyor. Çok yavaş
 çalışan merdiven asansörleri ve platform liftlerin bir kısmı bu yüzden asansör sayılmıyor ve farklı kurallara tabi

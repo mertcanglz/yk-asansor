@@ -234,6 +234,10 @@ Açılar örnektir. Gerçek işlere göre değiştirilir; her yazı **farklı** 
 
 ### 4.2 Bilgi yazıları (öncelik sırası)
 
+> **Güncelleme (19 Ekim 2026):** Bilgi yazılarının listesi Ads Planlayıcı hacimlerine göre yeniden belirlendi ve
+> 14 yazının taslağı yazıldı: `docs/konu-yazilari-plani.md` (kelime sahipliği tablosu dahil). Aşağıdaki ilk liste
+> tarihsel kayıt olarak duruyor; geçerli liste o belgede.
+
 **Yayında hazır olsun (P1):**
 
 1. **Asansör etiket renkleri: yeşil, mavi, sarı ve kırmızı ne anlama gelir?**

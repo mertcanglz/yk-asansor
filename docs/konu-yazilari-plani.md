@@ -1,6 +1,6 @@
 # Konu yazıları planı (yer adı içermeyen blog yazıları)
 
-Hazırlanma: 19 Ekim 2026. Kaynak: Google Ads Anahtar Kelime Planlayıcı (kullanıcının yönettiği Alfa Spor Kulübü
+Hazırlanma: 19 Ekim 2026. **Durum: 14 yazının hepsinin taslağı hazır (19 Ekim 2026), onay bekliyor.** Kaynak: Google Ads Anahtar Kelime Planlayıcı (kullanıcının yönettiği Alfa Spor Kulübü
 hesabıyla, izinle; konum Türkiye, tüm diller, son 12 ay ortalaması). Sorgudan sonra hesapta oluşan taslak plan kaldırıldı.
 
 ## 1. Neden ayrı konu yazıları?

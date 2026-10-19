@@ -192,7 +192,7 @@ apartmana sonradan asansör yaptırma
 Sultanbeyli Belediyesi var; tarih birincil kaynakta görülmedi), Maltepe TMMOB Makina Mühendisleri Odası İstanbul Şubesi
 (protokol 6 Şubat 2026; MMO haberi).
 
-**Durum (19 Ekim 2026):** 19 taslağın hepsi yazıldı. Semt yazıları ilçe yazıları kadar kapsamlı (tüm hizmetler + kendi
+**Durum (19 Ekim 2026):** 19 yer taslağının hepsi yazıldı ve geniş başlık + tam hizmet kapsamıyla yeniden düzenlendi (semtin özel konusu sayfada bir bölüm). Yer adı içermeyen 14 konu yazısı ayrıca yazıldı (`docs/konu-yazilari-plani.md`). Semt yazıları ilçe yazıları kadar kapsamlı (tüm hizmetler + kendi
 ana konusu + geniş SSS); hepsi yapay zekâ dili açısından elden geçirildi. Kullanıcı onayı bekleniyor.
 
 Her yazı ilgili ilçenin doğrulanmış yerel bilgisini (kuruluş, muayene kuruluşu, bina dokusu) ve kendi ana

@@ -32,7 +32,7 @@
 | Kategori (blog süzgeci) | Bakım |
 | Yazar kutusu | YK Asansör teknik ekibi · Kontrol eden: Ömürcan Altundaş, YK Asansör `[[İSTEĞE BAĞLI: unvan]]` |
 | Şema (JSON-LD) | `BlogPosting` (publisher → `#isletme`, `author`, `reviewedBy` yerine `contributor`: Ömürcan Altundaş, `datePublished`, `dateModified`), `BreadcrumbList`, `FAQPage` |
-| İç bağlantılar | 6 hizmet sayfası, asansör sistemleri sayfası, yeşil etiket sayfası, "Asansör etiket renkleri" ve "Asansör bakım ücretleri 2026" yazıları, teklif formu |
+| İç bağlantılar | 6 hizmet sayfası, asansör sistemleri sayfası, yeşil etiket sayfası, "Asansör etiket renkleri" ve "Asansör bakım ücreti" yazıları, teklif formu |
 | Görseller | İş fotoğrafı yok (kullanıcı kararı). Yalnızca kendi tasarımımız etiket renkleri infografiği; kapak görselsiz ve ortalı (onaylı şablon). |
 
 ### Anahtar kelime haritası (Sancaktepe'deki biri ne arar → yazının hangi bölümü karşılar)
@@ -78,7 +78,8 @@ belediyenin anlaştığı muayene kuruluşu. Biz YK Asansör olarak Sancaktepe m
 8. Hangi sistem hangi binaya?
 9. Bakım ücreti
 10. Firma seçerken sorulacaklar
-11. Sık sorulanlar
+11. İlgili yazılar
+12. Sık sorulanlar
 
 ## Sancaktepe'de neler yapıyoruz?
 
@@ -233,6 +234,18 @@ Teklif aldığınız her firmaya şunları sorun; cevaplar yazılı olsun:
 - Periyodik kontrol öncesi ön kontrol yapıyor, kontrol günü geliyor musunuz?
 - Asansörümde cihazla ya da şifreyle bir kısıtlama var mı? (Yönetmelik bu bilginin yöneticiye verilmesini
   istiyor; firma değiştirirken çok işe yarıyor.)
+
+## İlgili yazılar
+
+Bu yazıda kısaca değindiğimiz konuları ayrı yazılarda ayrıntılı anlattık:
+
+- Bakım ve masraf: "Asansör bakım ücreti", "Asansör bakım sözleşmesi", "Asansör bakımını kim öder?"
+- Kontrol ve etiketler: "Asansör periyodik kontrolü", "Asansör etiket renkleri", "Kırmızı etiket alan asansör"
+- Arıza ve güvenlik: "Asansör arızaları", "Asansör kapısı", "Asansör aküsü ve elektrik kesintisi"
+- Yeni asansör ve yenileme: "Asansör fiyatları", "Hidrolik mi, halatlı mı?", "Asansör kabin modelleri",
+  "Merdiven asansörü ve engelli lifti"
+- Mevzuat: "Asansör yönetmelikleri"
+- Semtler: Samandıra, Sarıgazi, Yenidoğan
 
 > ### Asansörünüz için bakım teklifi alın.
 >
