@@ -46,7 +46,7 @@ verdik.
 ## Tepeüstü'nde neler yapıyoruz?
 
 Aylık bakım, 7/24 arıza ve kurtarma, modernizasyon, yeni montaj ve sonradan asansör, engelli lifti ve platform lift,
-kuyu ve makine dairesi temizliği, yeşil etiket hazırlığı. Dişli, dişlisiz, hidrolik, makine dairesiz, yük ve araç
+kuyu ve makine dairesi temizliği, yeşil etiket hazırlığı. Dişlili, dişlisiz, hidrolik, makine dairesiz, yük ve araç
 asansörleriyle de çalışıyoruz.
 
 ## Yönetmelik yöneticiden ne istiyor?

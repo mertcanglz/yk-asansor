@@ -46,7 +46,7 @@ ayrıntılı yer verdik. Arıza hattımız: **0 (543) 542 86 75**.
 ## Sarıgazi'de neler yapıyoruz?
 
 7/24 arıza ve kurtarma, aylık bakım ve bakım sözleşmesi, modernizasyon ve revizyon, yeni montaj ve sonradan asansör,
-kuyu ve makine dairesi temizliği, yeşil etiket hazırlığı. Dişli, dişlisiz, hidrolik, makine dairesiz, yük, villa ve
+kuyu ve makine dairesi temizliği, yeşil etiket hazırlığı. Dişlili, dişlisiz, hidrolik, makine dairesiz, yük, villa ve
 engelli lifti dahil tüm tiplerle çalışıyoruz.
 
 ## Asansörde biri mahsur kaldıysa

@@ -47,7 +47,7 @@ demek. Dört katlı bir binayla on katlı bir binanın asansörü arasında fark
 binadaki daire sayısı ve kullanım yoğunluğu kapasiteyi belirler; aşırı büyük kapasite gereksiz maliyet, küçük kapasite
 yıllarca sorun demek.
 
-**Sistem tipi.** Makine dairesiz ve dişlisiz sistemler, dişli asansörler ve hidrolik asansörler farklı maliyetlerde. Az
+**Sistem tipi.** Makine dairesiz ve dişlisiz sistemler, dişlili asansörler ve hidrolik asansörler farklı maliyetlerde. Az
 katlı binalarda hidrolik, çok katlı binalarda halatlı sistemler daha mantıklı oluyor; farkları "Hidrolik mi, halatlı mı?"
 yazımızda anlattık.
 

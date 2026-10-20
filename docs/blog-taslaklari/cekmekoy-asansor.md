@@ -50,7 +50,7 @@ montaja, etiketten ücrete kadar bilmeniz gerekenleri anlattık.
 ## Çekmeköy'de neler yapıyoruz?
 
 Aylık bakım, 7/24 arıza ve kurtarma, modernizasyon, yeni montaj ve sonradan asansör, kuyu ve makine dairesi temizliği,
-yeşil etiket hazırlığı. Dişli, dişlisiz, hidrolik, makine dairesiz, yük, araç asansörleri, villa asansörü, engelli
+yeşil etiket hazırlığı. Dişlili, dişlisiz, hidrolik, makine dairesiz, yük, araç asansörleri, villa asansörü, engelli
 lifti ve yürüyen merdivenlerle çalışıyoruz.
 
 ## Çekmeköy'deki binalar

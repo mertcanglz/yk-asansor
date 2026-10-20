@@ -46,7 +46,7 @@ hizmetleri ve yöneticinin bilmesi gerekenleri anlattık; kapı arızalarına ay
 ## Çakmak'ta neler yapıyoruz?
 
 Aylık bakım ve bakım sözleşmesi, 7/24 arıza ve tamir, kapı ve kumanda yenilemesi dahil modernizasyon, yeni montaj ve
-sonradan asansör, kuyu ve makine dairesi temizliği, yeşil etiket hazırlığı. Dişli, dişlisiz, hidrolik, makine dairesiz,
+sonradan asansör, kuyu ve makine dairesi temizliği, yeşil etiket hazırlığı. Dişlili, dişlisiz, hidrolik, makine dairesiz,
 yük, villa ve engelli lifti dahil tüm tiplerle çalışıyoruz.
 
 ## Aylık bakım ve sözleşme

@@ -45,7 +45,7 @@ en çok sorduğu konuya, montaj sürecine, asansörü teslim almaya ve garanti d
 ## Taşdelen'de neler yapıyoruz?
 
 Yeni montaj, aylık bakım, 7/24 arıza ve kurtarma, modernizasyon, kuyu ve makine dairesi temizliği, yeşil etiket
-hazırlığı. Makine dairesiz, dişlisiz, dişli, hidrolik, yük, araç, villa asansörü ve engelli lifti ile çalışıyoruz.
+hazırlığı. Makine dairesiz, dişlisiz, dişlili, hidrolik, yük, araç, villa asansörü ve engelli lifti ile çalışıyoruz.
 
 ## Aylık bakım ve sözleşme
 

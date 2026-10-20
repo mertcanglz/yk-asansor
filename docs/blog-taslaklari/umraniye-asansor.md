@@ -51,7 +51,7 @@ arıza, modernizasyon ve montaj yapıyoruz; bu yazıda bir bina yöneticisinin b
 ## Ümraniye'de neler yapıyoruz?
 
 Aylık bakım ve bakım sözleşmesi, 7/24 arıza ve kurtarma, modernizasyon ve revizyon, yeni asansör montajı, kuyu ve
-makine dairesi temizliği, periyodik kontrol öncesi yeşil etiket hazırlığı. Dişli, dişlisiz, hidrolik, makine
+makine dairesi temizliği, periyodik kontrol öncesi yeşil etiket hazırlığı. Dişlili, dişlisiz, hidrolik, makine
 dairesiz, yük, araç, villa ve engelli lifti ile yürüyen merdivenlerin hepsiyle çalışıyoruz. Dudullu, Çakmak, Şerifali
 ve Tepeüstü için ayrı yazılarımız da var.
 
@@ -65,7 +65,7 @@ merkezlerinde yürüyen merdivenler ve panoramik asansörler öne çıkıyor. Du
 binalarında yük asansörleri ağır kullanılıyor.
 
 Konut tarafında iki ayrı dünya var. Yeni sitelerde makine dairesiz, dişlisiz sistemler çoğunlukta; elektronik kart
-ve sürücü arızaları öne çıkıyor. Daha eski apartmanlarda makine daireli, dişli asansörler, eski kumanda panoları ve
+ve sürücü arızaları öne çıkıyor. Daha eski apartmanlarda makine daireli, dişlili asansörler, eski kumanda panoları ve
 kapı arızaları sık görülüyor.
 
 ## Aylık bakım ve sözleşme
@@ -153,7 +153,7 @@ ve onaylı proje gerekiyor. Gereken çoğunluk binaya göre değişebildiği iç
 | Alışveriş merkezi | Yürüyen merdiven, panoramik asansör |
 | Fabrika, depo | Yük asansörü |
 | Yeni site | Makine dairesiz, dişlisiz |
-| Eski apartman | Dişli ya da dişlisiz (modernizasyonla) |
+| Eski apartman | Dişlili ya da dişlisiz (modernizasyonla) |
 | Otopark | Araç asansörü |
 
 Sistemler arasındaki farkları "Hidrolik mi, halatlı mı?" karşılaştırma yazımızda anlattık.

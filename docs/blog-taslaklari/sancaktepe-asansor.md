@@ -84,7 +84,7 @@ belediyenin anlaştığı muayene kuruluşu. Biz YK Asansör olarak Sancaktepe m
 ## Sancaktepe'de neler yapıyoruz?
 
 Aylık bakım, 7/24 arıza ve kurtarma, modernizasyon ve revizyon, yeni asansör montajı, kuyu ve makine dairesi
-temizliği ve periyodik kontrol öncesi yeşil etiket hazırlığı. Dişli, dişlisiz, hidrolik, makine dairesiz, yük,
+temizliği ve periyodik kontrol öncesi yeşil etiket hazırlığı. Dişlili, dişlisiz, hidrolik, makine dairesiz, yük,
 araç, villa ve engelli lifti ile yürüyen merdivenlerin hepsiyle çalışıyoruz. Samandıra, Sarıgazi ve Yenidoğan da
 bu kapsamın içinde; her biri için ayrı birer yazımız var.
 
@@ -94,7 +94,7 @@ Sancaktepe 2008'de, 5747 sayılı Kanun'la Kartal'a bağlı Samandıra ile Ümra
 beldelerinin birleşmesiyle kuruldu. Bu yüzden aynı sokakta 25 yıllık bir apartmanla geçen yıl biten bir siteyi yan
 yana görmek şaşırtıcı değil. Asansörler de buna göre değişiyor.
 
-Belde döneminden kalan apartmanlarda çoğunlukla makine daireli, dişli asansörler var. Bunlarda sorun genellikle
+Belde döneminden kalan apartmanlarda çoğunlukla makine daireli, dişlili asansörler var. Bunlarda sorun genellikle
 kat kapısı kilitlerinden, eski kumanda panolarından ve bugünün güvenlik donanımının eksik olmasından çıkıyor. Her
 yıl aynı maddelerden sarı ya da mavi etiket alan bir asansörde, parça parça onarmak bir noktadan sonra yenilemekten
 pahalıya geliyor.
@@ -193,7 +193,7 @@ makine dairesiz ya da hidrolik sistemlere bakıyoruz.
 | Bina | Genellikle uygun sistem |
 |---|---|
 | Yeni apartman ve siteler | Makine dairesiz, dişlisiz motorlu |
-| Makine dairesi olan eski apartman | Dişli ya da dişlisiz (modernizasyonla) |
+| Makine dairesi olan eski apartman | Dişlili ya da dişlisiz (modernizasyonla) |
 | Az katlı bina, sonradan asansör | Hidrolik ya da makine dairesiz |
 | Villa, müstakil ev, engelli erişimi | Villa ve engelli lifti |
 | Atölye, depo, iş hanı | Yük asansörü |
@@ -293,7 +293,7 @@ Her zaman değil. Kumanda, kapılar, makine ya da güvenlik donanımı ayrı ayr
 öncelikli olduğunu raporluyoruz.
 
 **Yük asansörü, hidrolik asansör ya da villa asansörüne de bakıyor musunuz?**
-Evet. Dişli, dişlisiz, hidrolik, makine dairesiz, yük, araç, villa ve engelli lifti ile yürüyen merdivenlerin
+Evet. Dişlili, dişlisiz, hidrolik, makine dairesiz, yük, araç, villa ve engelli lifti ile yürüyen merdivenlerin
 bakım ve onarımını yapıyoruz.
 
 **Bakım firmamızı değiştirmek istiyoruz, ne yapmalıyız?**

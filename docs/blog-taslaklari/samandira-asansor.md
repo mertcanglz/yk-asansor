@@ -48,7 +48,7 @@ ayrıca ve ayrıntılı yer verdik.
 ## Samandıra'da neler yapıyoruz?
 
 Aylık bakım ve bakım sözleşmesi, 7/24 arıza ve kurtarma, modernizasyon ve revizyon, yeni asansör montajı ve sonradan
-asansör, kuyu ve makine dairesi temizliği, periyodik kontrol öncesi yeşil etiket hazırlığı. Dişli, dişlisiz,
+asansör, kuyu ve makine dairesi temizliği, periyodik kontrol öncesi yeşil etiket hazırlığı. Dişlili, dişlisiz,
 hidrolik, makine dairesiz, yük, villa ve engelli lifti dahil tüm tiplere bakıyoruz.
 
 ## Aylık bakım ve sözleşme
@@ -138,7 +138,7 @@ yazımızda anlattık.
 
 ## Binalar ve asansör sistemleri
 
-Samandıra'da eski apartmanlarla yeni siteler yan yana. Eski binalarda makine daireli, dişli asansörler; yeni binalarda
+Samandıra'da eski apartmanlarla yeni siteler yan yana. Eski binalarda makine daireli, dişlili asansörler; yeni binalarda
 makine dairesiz ve dişlisiz sistemler daha yaygın. Az katlı binalarda ve sonradan asansör eklenen yapılarda hidrolik
 sistemler, iş yerlerinde yük asansörleri karşımıza çıkıyor. Sistemlerin farkını "Hidrolik mi, halatlı mı?" yazımızda
 anlattık.

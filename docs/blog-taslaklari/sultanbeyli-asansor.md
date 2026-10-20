@@ -48,7 +48,7 @@ arızadan montaja kadar diğer konulara da yer verdik. YK Asansör olarak Sancak
 ## Sultanbeyli'de neler yapıyoruz?
 
 Aylık bakım, 7/24 arıza ve kurtarma, modernizasyon ve revizyon, yeni montaj ve sonradan asansör, kuyu ve makine
-dairesi temizliği, yeşil etiket hazırlığı. Dişli, dişlisiz, hidrolik, makine dairesiz, yük, araç, villa ve engelli
+dairesi temizliği, yeşil etiket hazırlığı. Dişlili, dişlisiz, hidrolik, makine dairesiz, yük, araç, villa ve engelli
 lifti ile yürüyen merdivenlerle çalışıyoruz.
 
 ## Aylık bakım ve sözleşme
@@ -109,7 +109,7 @@ Yönetmelik de mevcut asansörün güvenlik seviyesini artırma sorumluluğunu b
 ## Yenileme hangi parçalarla yapılır?
 
 Kumanda panosu (eski röleli panoların yerine mikroişlemcili pano), kapılar ve kapı operatörü (kabin kapısı olmayan
-asansörlere kapı eklenmesi dahil), makine (eski dişli makinenin yerine dişlisiz motor), güvenlik donanımı (paraşüt
+asansörlere kapı eklenmesi dahil), makine (eski dişlili makinenin yerine dişlisiz motor), güvenlik donanımı (paraşüt
 fren, hız regülatörü, kapı kilitleri) ve kabin ayrı ayrı yenilenebiliyor. Bunların hiçbiri aylık bakım kapsamında değil.
 Yük, hız ya da seyir mesafesini değiştiren işler ise bakım sayılmıyor; onaylı projeyle yapılıp 60 gün içinde tescil
 için başvuruluyor. Keşifte hangi parçanın öncelikli olduğunu yazılı veriyoruz.
@@ -125,7 +125,7 @@ için bir avukata danışmanızı öneririz. Yeni asansörün maliyetini "Asans�
 
 | Bina | Genellikle uygun sistem |
 |---|---|
-| Eski apartman, makine dairesi var | Dişli ya da dişlisiz (modernizasyonla) |
+| Eski apartman, makine dairesi var | Dişlili ya da dişlisiz (modernizasyonla) |
 | Yeni apartman | Makine dairesiz, dişlisiz |
 | Az katlı bina, sonradan asansör | Hidrolik ya da makine dairesiz |
 | İş yeri, depo | Yük asansörü |

@@ -8,23 +8,23 @@
 | Alan | Değer |
 |---|---|
 | URL | `/blog/asansor-sistemleri-karsilastirma.html` |
-| Ana sorgu | hidrolik mi halatlı mı, dişli mi dişlisiz mi (karşılaştırma niyeti) |
-| Yan sorgular | hidrolik asansör ile halatlı asansör farkı, dişli ve dişlisiz asansör farkı, makine dairesiz asansör avantajları |
-| `<title>` (57) | `Hidrolik mi, Halatlı mı? Dişli mi, Dişlisiz mi? \| YK Asansör` |
-| Meta (≈150) | `Hidrolik, dişli, dişlisiz ve makine dairesiz asansörlerin farkları; hangi sistem hangi binaya uygun, bakımı ve işletmesi nasıl? Sade karşılaştırma.` |
-| H1 | Hidrolik mi, halatlı mı? Dişli mi, dişlisiz mi? *Asansör sistemleri karşılaştırması* |
+| Ana sorgu | hidrolik mi halatlı mı, dişlili mi dişlisiz mi (karşılaştırma niyeti) |
+| Yan sorgular | hidrolik asansör ile halatlı asansör farkı, dişlili ve dişlisiz asansör farkı, makine dairesiz asansör avantajları |
+| `<title>` (57) | `Hidrolik mi, Halatlı mı? Dişlili mi, Dişlisiz mi? \| YK Asansör` |
+| Meta (≈150) | `Hidrolik, dişlili, dişlisiz ve makine dairesiz asansörlerin farkları; hangi sistem hangi binaya uygun, bakımı ve işletmesi nasıl? Sade karşılaştırma.` |
+| H1 | Hidrolik mi, halatlı mı? Dişlili mi, dişlisiz mi? *Asansör sistemleri karşılaştırması* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
-| İç bağlantılar | Asansör sistemleri sayfası ve sistem sayfaları (dişli, dişlisiz, hidrolik, makine dairesiz); asansör fiyatları yazısı; Şerifali, Alemdağ, Başıbüyük yer yazıları; teklif formu |
+| İç bağlantılar | Asansör sistemleri sayfası ve sistem sayfaları (dişlili, dişlisiz, hidrolik, makine dairesiz); asansör fiyatları yazısı; Şerifali, Alemdağ, Başıbüyük yer yazıları; teklif formu |
 | Kelime sahipliği notu | "hidrolik asansör", "dişlisiz asansör", "makine dairesiz asansör" sistem sayfalarının; bu yazı yalnızca karşılaştırma niyetini hedefler ve onlara bağlanır |
 
 ---
 
 ## Metin
 
-# Hidrolik mi, halatlı mı? Dişli mi, dişlisiz mi? *Asansör sistemleri karşılaştırması*
+# Hidrolik mi, halatlı mı? Dişlili mi, dişlisiz mi? *Asansör sistemleri karşılaştırması*
 
 Asansörler kabini hareket ettirme şekline göre iki büyük gruba ayrılıyor: kabini halatla ya da kayışla çeken halatlı
-(çekişli) asansörler ve kabini pistonla iten hidrolik asansörler. Halatlı asansörler de motorun yapısına göre dişli ve
+(çekişli) asansörler ve kabini pistonla iten hidrolik asansörler. Halatlı asansörler de motorun yapısına göre dişlili ve
 dişlisiz, makinenin yerine göre makine daireli ve makine dairesiz olarak ayrılıyor. Kısa cevap: az katlı binalarda ve
 çatıda makine dairesi yapılamayan yerlerde hidrolik, çok katlı binalarda halatlı sistemler; yeni binalarda ise çoğunlukla
 makine dairesiz, dişlisiz asansörler tercih ediliyor. Bu yazıda farkları ve hangi sistemin hangi binaya uyduğunu anlattık.
@@ -32,7 +32,7 @@ makine dairesiz, dişlisiz asansörler tercih ediliyor. Bu yazıda farkları ve 
 **Bu yazıda**
 
 1. Halatlı ve hidrolik: temel fark
-2. Dişli ve dişlisiz
+2. Dişlili ve dişlisiz
 3. Makine daireli ve makine dairesiz
 4. Karşılaştırma tablosu
 5. Hangi bina için hangisi?
@@ -51,9 +51,9 @@ dönüyor. Karşı ağırlık yok. Pompa ünitesi genellikle en alt katta duruyo
 fazla boşluk istemiyor. Kısa mesafelerde, az katlı binalarda ve ağır yüklerde avantajlı; mesafe uzadıkça yavaşlıyor ve
 verimsizleşiyor.
 
-## Dişli ve dişlisiz
+## Dişlili ve dişlisiz
 
-**Dişli (redüktörlü) asansör.** Motor ile kasnak arasında bir dişli kutusu var; motorun yüksek devri dişliyle düşürülüyor.
+**Dişlili (redüktörlü) asansör.** Motor ile kasnak arasında bir dişli kutusu var; motorun yüksek devri dişliyle düşürülüyor.
 Eski binalarda en yaygın tip. Dişli kutusunun yağı ve aşınması bakımda takip ediliyor.
 
 **Dişlisiz (gearless) asansör.** Motor kasnağı doğrudan döndürüyor, dişli kutusu yok. Daha sessiz, daha titreşimsiz ve daha
@@ -69,7 +69,7 @@ takibi daha önemli. Makine dairesiz sistemlerin bakımındaki farkları Şerifa
 
 ## Karşılaştırma tablosu
 
-| | Hidrolik | Halatlı, dişli | Halatlı, dişlisiz | Makine dairesiz (dişlisiz) |
+| | Hidrolik | Halatlı, dişlili | Halatlı, dişlisiz | Makine dairesiz (dişlisiz) |
 |---|---|---|---|---|
 | Uygun kat sayısı | Az katlı | Az ve orta | Az, orta ve yüksek | Az, orta ve yüksek |
 | Makine yeri | Alt katta pompa ünitesi | Kuyu üstünde makine dairesi | Makine dairesi | Kuyunun içinde |
@@ -86,7 +86,7 @@ Tablo genel bir karşılaştırma; marka ve modele göre farklar olabilir.
 | Bina | Genellikle uygun sistem |
 |---|---|
 | Yeni apartman ve siteler | Makine dairesiz, dişlisiz |
-| Makine dairesi olan eski apartman | Dişli ya da dişlisiz (modernizasyonla dişlisiz motora geçiş) |
+| Makine dairesi olan eski apartman | Dişlili ya da dişlisiz (modernizasyonla dişlisiz motora geçiş) |
 | Az katlı bina, sonradan asansör | Hidrolik ya da makine dairesiz |
 | Villa ve müstakil ev | Hidrolik ya da makine dairesiz villa asansörü |
 | Yüksek plaza | Dişlisiz, yüksek hızlı sistemler |
@@ -103,7 +103,7 @@ Değişen şey ağırlık noktası:
 
 - **Hidrolik:** yağ seviyesi ve kaçak, piston ve contalar, valfler, pompa ünitesinin ısınması. Ayrıntısı Alemdağ yer
   yazımızda.
-- **Dişli:** dişli kutusunun yağı ve aşınması, fren, halatlar.
+- **Dişlili:** dişli kutusunun yağı ve aşınması, fren, halatlar.
 - **Dişlisiz ve makine dairesiz:** sürücü ve elektronik kartların hata kayıtları, fren, halat ya da kayış, kumanda dolabının
   ısısı ve tozu. Bazı markalarda servis aracı ya da şifre gerekebiliyor; yönetmelik asansöre cihazla ya da şifreyle bir
   kısıtlama yapılıp yapılmadığının bakım sözleşmesinde yer almasını istiyor.
@@ -125,7 +125,7 @@ Daha sessiz, daha az titreşimli ve daha az enerji harcıyor; dişli yağı değ
 **Makine dairesiz asansör nedir?**
 Motoru kuyunun içinde, kumandası en üst kattaki bir dolapta olan asansör; çatıda oda gerektirmiyor.
 
-**Eski dişli asansör dişlisize çevrilebilir mi?**
+**Eski dişlili asansör dişlisize çevrilebilir mi?**
 Çoğu durumda modernizasyonla makine değiştirilebiliyor; keşifte kuyu ve makine dairesi durumuna bakılıyor.
 
 **Hidrolik asansör kaç kata kadar uygun?**

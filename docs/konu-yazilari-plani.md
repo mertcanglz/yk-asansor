@@ -20,7 +20,7 @@ Sitede hizmet ve sistem sayfaları var (yol haritası Bölüm 3). Onların ana k
 | asansör tamiri (390), asansör servisi (590) | 7/24 arıza sayfası |
 | asansör revizyonu (70), modernizasyonu (10), yenileme (10) | Modernizasyon sayfası |
 | yeşil etiket asansör (170), asansör yeşil etiket (170) | Yeşil etiket sayfası |
-| hidrolik asansör (1.000) ve fiyatları (170), yük asansörü (2.900) ve fiyatları (720), engelli asansörü (2.900), villa asansörü (590), ev asansörü (320), araç asansörü (390), makine dairesiz (260), dişlisiz (170), dişli (40) | İlgili sistem sayfaları |
+| hidrolik asansör (1.000) ve fiyatları (170), yük asansörü (2.900) ve fiyatları (720), engelli asansörü (2.900), villa asansörü (590), ev asansörü (320), araç asansörü (390), makine dairesiz (260), dişlisiz (170), dişlili (40) | İlgili sistem sayfaları |
 | asansör firmaları / firması (1.900 / 1.900), istanbul asansör firmaları (320) | Ana sayfa |
 
 \* "asansör bakımı" 135.000 değeri Planlayıcı'da tutarsız görünüyor (yıllık artış %149.900); yüksek ama kesin değil.
@@ -40,7 +40,7 @@ Sitede hizmet ve sistem sayfaları var (yol haritası Bölüm 3). Onların ana k
 | 9 | Asansör arızaları: belirtiler, sebepler ve ne yapılmalı? | asansör arıza (210), asansör arızaları, asansörde mahsur kalma (20) | 230 | `asansor-arizalari.md` |
 | 10 | Asansör aküsü ve elektrik kesintisi | asansör aküsü (210), asansör elektrik kesintisi (10) | 220 | `asansor-akusu-elektrik-kesintisi.md` |
 | 11 | Asansör periyodik kontrolü ve muayene ücreti | asansör muayene ücreti (170), periyodik kontrol (140), muayene (70), periyodik kontrol ücreti (30), yıllık kontrol (10) | 420 | `asansor-periyodik-kontrol.md` |
-| 12 | Hidrolik mi, halatlı mı? Dişli mi, dişlisiz mi? Asansör sistemleri karşılaştırması | karşılaştırma niyeti (sistem sayfalarını destekler, onların kelimelerini hedeflemez) | – | `asansor-sistemleri-karsilastirma.md` |
+| 12 | Hidrolik mi, halatlı mı? Dişlili mi, dişlisiz mi? Asansör sistemleri karşılaştırması | karşılaştırma niyeti (sistem sayfalarını destekler, onların kelimelerini hedeflemez) | – | `asansor-sistemleri-karsilastirma.md` |
 | 13 | Asansör bakım sözleşmesi: imzalamadan önce kontrol edilecekler | asansör bakım sözleşmesi (110) | 110 | `asansor-bakim-sozlesmesi.md` |
 | 14 | Asansör bakımını kim öder? Kat malikleri, kiracı, ev sahibi | asansör bakımını kim öder (90), asansör masrafını kim öder (50) | 140 | `asansor-bakimini-kim-oder.md` |
 

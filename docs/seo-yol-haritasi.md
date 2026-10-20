@@ -170,7 +170,7 @@ düzeltilecek.
 | Temizlik ve muayene `asansor-temizlik-muayene.html` | asansör kuyu temizliği | asansör muayene hazırlığı | `Asansör Temizlik ve Muayene Servisi \| YK Asansör` |
 | Yeşil etiket `yesil-etiket.html` | yeşil etiket asansör | asansör etiket renkleri, kırmızı/mavi/sarı etiket, A tipi muayene | `Asansör Yeşil Etiket: Muayene Hazırlığı \| YK Asansör` |
 | Sistemler `asansor-sistemleri.html` | asansör çeşitleri | asansör sistemleri | `Asansör Sistemleri ve Çeşitleri \| YK Asansör` |
-| Dişli `disli-asansor.html` | dişli asansör | redüktörlü asansör | |
+| Dişlili `disli-asansor.html` | dişlili asansör | redüktörlü asansör | |
 | Dişlisiz `dislisiz-asansor.html` | dişlisiz asansör | gearless asansör | |
 | Hidrolik `hidrolik-asansor.html` | hidrolik asansör | hidrolik asansör fiyatları | |
 | Yük `yuk-asansoru.html` | yük asansörü | yük asansörü fiyatları | |
@@ -274,7 +274,7 @@ Açılar örnektir. Gerçek işlere göre değiştirilir; her yazı **farklı** 
 **Sonra (P3):**
 
 12. Asansör periyodik kontrolü nasıl yapılır, ücreti kim öder? (2026 ücretleri belediyeye göre değişir)
-13. Hidrolik mi, halatlı mı? Dişli mi, dişlisiz mi? Karşılaştırma.
+13. Hidrolik mi, halatlı mı? Dişlili mi, dişlisiz mi? Karşılaştırma.
 14. Makine dairesiz asansör: avantajları ve sınırları.
 15. Villa ve engelli asansörü rehberi.
 16. Asansör bakım ve tamir giderini kim öder? Kiracı mı, ev sahibi mi?

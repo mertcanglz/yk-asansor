@@ -106,7 +106,7 @@ hem buraya hem siteye işle:
   - 7/24 acil arıza ve teknik destek
   - Genel temizlik ve muayene servisi
   - Yeşil etiket / A tipi muayene hazırlığı (sitede ayrı bilgilendirme bölümü olacak)
-- Asansör sistemleri: dişli, dişlisiz, hidrolik, yük, lift (villa/engelli), araç,
+- Asansör sistemleri: dişlili, dişlisiz, hidrolik, yük, lift (villa/engelli), araç,
   yürüyen merdiven, makine dairesiz (monospace)
 - Kabin çözümleri: panoramik cam, rezidans ve yolcu, sedye/medikal, yük ve araç
 - Hizmet bölgesi: Türkiye geneli. Hizmet ve sistem sayfalarının metinlerinde (giriş metinleri, SSS, meta

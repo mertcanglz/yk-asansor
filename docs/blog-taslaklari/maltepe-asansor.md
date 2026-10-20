@@ -48,7 +48,7 @@ Sancaktepe merkezli ekibimizle Maltepe'nin 18 mahallesinde çalışıyoruz.
 ## Maltepe'de neler yapıyoruz?
 
 Aylık bakım, 7/24 arıza ve kurtarma, modernizasyon ve kabin yenileme, yeni montaj ve sonradan asansör, kuyu ve makine
-dairesi temizliği, yeşil etiket hazırlığı. Dişli, dişlisiz, hidrolik, makine dairesiz, yük, araç, villa ve engelli
+dairesi temizliği, yeşil etiket hazırlığı. Dişlili, dişlisiz, hidrolik, makine dairesiz, yük, araç, villa ve engelli
 lifti ile yürüyen merdivenlerle çalışıyoruz.
 
 ## Aylık bakım ve sözleşme

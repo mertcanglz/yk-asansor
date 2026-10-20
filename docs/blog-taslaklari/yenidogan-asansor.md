@@ -45,7 +45,7 @@ verdiğimiz hizmetleri ve bir yöneticinin yükümlülüklerini, sonra bu iki so
 ## Yenidoğan'da neler yapıyoruz?
 
 Aylık bakım, 7/24 arıza ve kurtarma, modernizasyon ve revizyon, yeni montaj ve sonradan asansör, kuyu ve makine dairesi
-temizliği, yeşil etiket hazırlığı. Dişli, dişlisiz, hidrolik, makine dairesiz, yük, villa ve engelli lifti dahil tüm
+temizliği, yeşil etiket hazırlığı. Dişlili, dişlisiz, hidrolik, makine dairesiz, yük, villa ve engelli lifti dahil tüm
 tiplerle çalışıyoruz.
 
 ## Yöneticinin yükümlülükleri

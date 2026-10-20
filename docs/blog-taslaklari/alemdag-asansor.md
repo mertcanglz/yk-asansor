@@ -45,7 +45,7 @@ asansörlere de ayrıca yer verdik.
 ## Alemdağ'da neler yapıyoruz?
 
 Aylık bakım, 7/24 arıza ve kurtarma, modernizasyon, yeni montaj ve sonradan asansör, villa asansörü ve engelli lifti,
-kuyu ve makine dairesi temizliği, yeşil etiket hazırlığı. Hidrolik, dişli, dişlisiz, makine dairesiz, yük ve araç
+kuyu ve makine dairesi temizliği, yeşil etiket hazırlığı. Hidrolik, dişlili, dişlisiz, makine dairesiz, yük ve araç
 asansörleriyle çalışıyoruz.
 
 ## Aylık bakım ve sözleşme

@@ -46,7 +46,7 @@ farklara ayrıca yer verdik.
 ## Şerifali'de neler yapıyoruz?
 
 Aylık bakım, 7/24 arıza ve kurtarma, modernizasyon ve revizyon, yeni montaj, kuyu ve makine dairesi temizliği, yeşil
-etiket hazırlığı. Makine dairesiz, dişlisiz, dişli, hidrolik, yük, araç, villa ve engelli lifti ile yürüyen
+etiket hazırlığı. Makine dairesiz, dişlisiz, dişlili, hidrolik, yük, araç, villa ve engelli lifti ile yürüyen
 merdivenlerle çalışıyoruz.
 
 ## Aylık bakım ve sözleşme
