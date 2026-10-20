@@ -170,7 +170,7 @@ düzeltilecek.
 | Temizlik ve muayene `asansor-temizlik-muayene.html` | asansör kuyu temizliği | asansör muayene hazırlığı | `Asansör Temizlik ve Muayene Servisi \| YK Asansör` |
 | Yeşil etiket `yesil-etiket.html` | yeşil etiket asansör | asansör etiket renkleri, kırmızı/mavi/sarı etiket, A tipi muayene | `Asansör Yeşil Etiket: Muayene Hazırlığı \| YK Asansör` |
 | Sistemler `asansor-sistemleri.html` | asansör çeşitleri | asansör sistemleri | `Asansör Sistemleri ve Çeşitleri \| YK Asansör` |
-| Dişlili `disli-asansor.html` | dişlili asansör | redüktörlü asansör | |
+| Dişlili `dislili-asansor.html` | dişlili asansör | redüktörlü asansör | |
 | Dişlisiz `dislisiz-asansor.html` | dişlisiz asansör | gearless asansör | |
 | Hidrolik `hidrolik-asansor.html` | hidrolik asansör | hidrolik asansör fiyatları | |
 | Yük `yuk-asansoru.html` | yük asansörü | yük asansörü fiyatları | |
