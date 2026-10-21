@@ -199,6 +199,48 @@ Her yazı ilgili ilçenin doğrulanmış yerel bilgisini (kuruluş, muayene kuru
 konusunu taşır; aynı metin yer adı değiştirilerek kullanılmaz. Semt yazıları bağlı oldukları ilçe yazısına
 bağlanır.
 
+### 5.3 Önerilen ek liste: Kartal ve yakın ilçeler (21 Ekim 2026, onay bekliyor)
+
+Planlayıcı (Türkiye, son 12 ay, ≈ aylık; "—" = 10'un altında):
+
+| Yer | Hacmi olan aramalar | Toplam |
+|---|---|---|
+| **Kartal** | kartal asansör firmaları 110 · kartal asansör 70 | **~180** |
+| **Ataşehir** | ataşehir asansör firmaları 110 · ataşehir asansör 50 | **~160** |
+| **Pendik** | pendik asansör firmaları 90 · pendik asansör 50 | **~140** |
+| Yakacık (Kartal) | yakacık asansör 20 | ~20 |
+| Dragos (Kartal) | dragos asansör 10 | ~10 |
+| Soğanlık, Orhantepe, Atalar, Topselvi, Uğur Mumcu, Esentepe (Kartal) | — | <10 |
+| Kurtköy (Pendik) 10 · Kaynarca, Güzelyalı, Çamçeşme, Esenyalı, Velibaba, Yenişehir | — | ≤10 |
+| Barbaros 10, Örnek 10 (genel kelimeler, semt talebi belirsiz) · Kayışdağı, İçerenköy, Küçükbakkalköy, Yenisahra, Ferhatpaşa, Kozyatağı (Ataşehir) | — | ≤10 |
+| Diğer ilçeler (sonraki aşama) | tuzla asansör 30 · kadıköy asansör 20 · üsküdar asansör 20 · beykoz — | |
+
+Kartal'ın komşuları Maltepe, Sancaktepe, Sultanbeyli (yazıldı) ve Pendik. Ataşehir Sancaktepe'ye komşu.
+Kartal 20 mahalle; bilinen semtler Kartal Merkez, Soğanlık, Yakacık, Dragos (Vikipedi). Kartal'da da bir Cevizli
+mahallesi var; Maltepe'deki Cevizli yazısıyla karışmaması için Kartal yazısında "Kartal Cevizli" diye geçer.
+
+**Öneri:**
+
+**6. Kartal** (~180) · `kartal-asansor.md` · apartman yönetimi için yıllık asansör bütçesi (bakım + periyodik kontrol +
+parça; belediyenin 2026 kontrol ücret tablosuyla)
+- Yakacık (~20) · `yakacik-asansor.md` · ses, titreşim ve sarsıntı: konfor şikâyetleri ve nedenleri
+- Soğanlık · `soganlik-asansor.md` · bakımın gerçekten yapıldığını anlamak: föy, kayıt defteri, bakım günü
+- Dragos (~10) · `dragos-asansor.md` · kuyu ve makine dairesi: temizlik, nem ve korozyon (sahil semti)
+
+**7. Pendik** (~140) · `pendik-asansor.md` · büyük siteler ve çok asansörlü yapılarda bakım yönetimi
+
+**8. Ataşehir** (~160) · `atasehir-asansor.md` · yüksek binalar, rezidans ve plazalar; acil durum (itfaiye) asansörü
+
+Pendik ve Ataşehir semtlerinde ölçülebilir hacim yok; şimdilik semt yazısı önerilmiyor (istenirse Kurtköy eklenebilir).
+
+**Periyodik kontrol kuruluşları (doğrulandı, 21 Ekim 2026):**
+- Kartal: TMMOB Makina Mühendisleri Odası (belediyenin asansör tescil sayfası; protokol 2014'te imzalandı, MMO haberi).
+  Belediye sayfasında 1.1.2026–1.1.2027 ücretleri (KDV dahil): 0–5 durak 4.049 TL, 6–10 durak 4.755 TL, 11–15 durak
+  5.707 TL, 16–20 durak 6.660 TL, 21–25 durak 7.613 TL, 26–30 durak 8.564 TL, 31 ve üstü 11.907 TL.
+- Pendik: SDS Muayene, 01.03.2025–01.03.2030 (kuruluşun anlaşmalı belediyeler sayfası; Pendik Belediyesi tescil
+  sayfası da sdsmuayene.com'u gösteriyor). Eski kayıtlar (IQNORM 2017, TSE) güncel değil.
+- Ataşehir: AND Uluslararası Denetim ve Gözetim Hizmetleri A.Ş. (belediyenin asansör denetim sayfası; tarih yok).
+
 ## Kaynaklar
 
 - Sancaktepe mahalleleri (19): https://tr.wikipedia.org/wiki/Sancaktepe
@@ -209,6 +251,12 @@ bağlanır.
 - IQNORM başvuru formu (Sultanbeyli): https://www.iq-norm.com/index.php/asansor-periyodik-kontrol-basvurusu/
 - MMO İstanbul, Maltepe protokolü (6.2.2026): https://gunes.mmo.org.tr/istanbul/haber/subemiz-ile-maltepe-belediyesi-arasinda-asansor-kontrolleri-icin-protokol-imzalandi
 - Royalcert protokol listesi: https://tr.royalcert.com/protokoller/
+- Kartal: https://tr.wikipedia.org/wiki/Kartal,_%C4%B0stanbul · Pendik: https://tr.wikipedia.org/wiki/Pendik ·
+  Ataşehir: https://tr.wikipedia.org/wiki/Ata%C5%9Fehir
+- Kartal Belediyesi asansör tescil hizmeti (MMO, 2026 ücretleri): https://www.kartal.bel.tr/Hizmetlerimiz/AsansorTescilHizmeti
+- MMO İstanbul, Kartal protokolü (5.2.2014): https://mmo.org.tr/istanbul/haber/kartal-belediyesi-ile-asansorlerin-yillik-periyodik-kontrol-protokolu-imzalandi
+- SDS Muayene anlaşmalı belediyeler (Pendik 2025–2030): https://www.sdsmuayene.com/anlasmali-belediyeler/
+- Ataşehir Belediyesi asansör denetim (AND): https://www.atasehir.bel.tr/icerik/hizmetler/asansor-denetim
 - Mahalle nüfusları ADNKS 2025: https://www.nufusune.com/sancaktepe-ilce-nufusu-istanbul
 - Karşılaştırma (farklı yıllar): https://www.i24haber.com/2081-sancaktepe-mahalle-nufusu ·
   https://atlasbig.com.tr/istanbul-sancaktepenin-mahalleleri
