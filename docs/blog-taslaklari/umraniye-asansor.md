@@ -1,9 +1,9 @@
 # Taslak: Ümraniye asansör hizmetleri (ilçe yazısı)
 
-> **Durum:** taslak v3, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
+> **Durum:** taslak v4, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
 > **Semt yazıları:** Dudullu, Çakmak, Şerifali, Tepeüstü · **Marka:** yalnızca "YK Asansör"
-> **v3:** Sancaktepe yazısı kapsamına genişletildi (tüm hizmetler, etiketler, ücret, sistemler, firma seçimi, geniş SSS);
-> konu yazılarına bağlantılar eklendi.
+> **v4 (24 Ekim 2026):** Tüm yer yazılarında ortak 12 başlığa getirildi; "Yoğun binalarda bakım planlama" ayrı bölüm
+> olmaktan çıkıp "Aylık bakım ve sözleşme" içine alındı; ayrı "öne çıkan konu" yok.
 
 ## Yayın bilgileri
 
@@ -15,7 +15,6 @@
 | `<title>` (59) | `Ümraniye Asansör Firması: Bakım, Arıza, Montaj \| YK Asansör` |
 | Meta (≈152) | `Ümraniye'de asansör bakımı, 7/24 arıza, montaj ve modernizasyon. Periyodik kontrolü kim yapar, bakım ücreti ne kadar? Teklif: 0 (543) 542 86 75.` |
 | H1 | Ümraniye'de asansör hizmetleri: *Bakım, arıza, montaj ve periyodik kontrol rehberi* |
-| Öne çıkan bölüm | Yoğun kullanılan binalar (iş merkezi, hastane, AVM, çok asansörlü siteler) |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
 | İç bağlantılar | Sancaktepe yazısı; Dudullu, Çakmak, Şerifali, Tepeüstü yazıları; konu yazıları (etiket renkleri, bakım ücreti, yönetmelikler, arızalar, sistem karşılaştırması); 6 hizmet sayfası; yürüyen merdiven sayfası; teklif formu |
 
@@ -35,18 +34,17 @@ arıza, modernizasyon ve montaj yapıyoruz; bu yazıda bir bina yöneticisinin b
 **Bu yazıda**
 
 1. Ümraniye'de neler yapıyoruz?
-2. İlçedeki binalar ve asansörler
+2. Ümraniye'deki binalar ve asansörler
 3. Aylık bakım ve sözleşme
-4. Yoğun binalarda bakım planlama
-5. Arıza ve kurtarma
-6. Periyodik kontrol ve etiketler
-7. Modernizasyon
-8. Yeni montaj ve sonradan asansör
-9. Hangi sistem hangi binaya?
-10. Bakım ücreti
-11. Firma seçerken sorulacaklar
-12. Semtlere göre
-13. Sık sorulanlar
+4. Arıza ve mahsur kalma
+5. Periyodik kontrol ve etiketler
+6. Modernizasyon
+7. Yeni montaj ve sonradan asansör
+8. Hangi sistem hangi binaya?
+9. Bakım ücreti
+10. Firma seçerken sorulacaklar
+11. İlgili yazılar ve semtler
+12. Sık sorulanlar
 
 ## Ümraniye'de neler yapıyoruz?
 
@@ -55,7 +53,7 @@ makine dairesi temizliği, periyodik kontrol öncesi yeşil etiket hazırlığı
 dairesiz, yük, araç, villa ve engelli lifti ile yürüyen merdivenlerin hepsiyle çalışıyoruz. Dudullu, Çakmak, Şerifali
 ve Tepeüstü için ayrı yazılarımız da var.
 
-## İlçedeki binalar ve asansörler
+## Ümraniye'deki binalar ve asansörler
 
 Ümraniye'nin 35 mahallesinde bina tipi semtten semte değişiyor ve asansör de buna göre.
 
@@ -82,9 +80,7 @@ Kabin, kat kapısı, motor gibi büyük parçaların değişimi ve kabin içi te
 fiyatlanıyor. Sözleşmede nelere bakılacağını "Asansör bakım sözleşmesi" yazımızda ayrıntılı anlattık. YK Asansör
 bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
 
-## Yoğun binalarda bakım planlama
-
-Bir plazada ya da hastanede bakım saatini binanın ritmine göre koymak ilk iş: sabah erken, mesai bittikten sonra
+Plaza, hastane ve AVM gibi yoğun binalarda bakımın zamanlaması da önemli. Bir plazada ya da hastanede bakım saatini binanın ritmine göre koymak ilk iş: sabah erken, mesai bittikten sonra
 ya da hafta sonu. Birden fazla asansör varsa hepsini aynı gün bakıma almıyor, sırayla gidiyoruz; bir asansör
 bakımdayken diğerlerinin çağrıları doğru karşılayıp karşılamadığına da bakıyoruz.
 
@@ -96,7 +92,7 @@ ilk müdahaleyi onlar yapacak.
 Alışveriş merkezlerindeki yürüyen merdivenler ayrı bir uzmanlık istiyor: basamaklar ve tarak plakaları, el bandı,
 acil durdurma butonları ve frenler düzenli kontrol ediliyor.
 
-## Arıza ve kurtarma
+## Arıza ve mahsur kalma
 
 Arıza hattımız gece, hafta sonu ve bayram demeden açık: **0 (543) 542 86 75**. Mahsur kalma çağrıları önce geliyor.
 
@@ -185,12 +181,15 @@ yürüyen merdivenler için tavsiyesi aylık 14.000 TL + KDV. Teklif okumayı "A
 - Asansörde cihazla ya da şifreyle bir kısıtlama var mı?
 - Birden fazla asansörümüz var; bakımı mesai dışına ve sırayla planlayabilir misiniz?
 
-## Semtlere göre
+## İlgili yazılar ve semtler
 
-- **Dudullu:** sanayi ve depo binaları, yük asansörleri
-- **Çakmak:** apartmanlar, kapı arızaları ve aylık bakım
-- **Şerifali:** yeni binalar, makine dairesiz ve dişlisiz asansörler
-- **Tepeüstü:** engelli erişimi, asansörün kesintisiz çalışması
+- Semtler: Dudullu, Çakmak, Şerifali, Tepeüstü
+- Komşu ilçeler: Sancaktepe, Çekmeköy, Ataşehir
+- Bakım ve masraf: "Asansör bakım ücreti", "Asansör bakım sözleşmesi", "Asansör bakımını kim öder?"
+- Kontrol ve etiketler: "Asansör periyodik kontrolü", "Asansör etiket renkleri", "Kırmızı etiket alan asansör"
+- Arıza ve güvenlik: "Asansör arızaları", "Asansör kapısı", "Asansör aküsü ve elektrik kesintisi"
+- Yeni asansör ve yenileme: "Asansör fiyatları", "Hidrolik mi, halatlı mı?", "Asansör kabin modelleri"
+- Mevzuat: "Asansör yönetmelikleri"
 
 > ### Ümraniye'deki binanız için bakım teklifi alın
 > Ücretsiz keşif; bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz. Yeni bir apartmanı bize

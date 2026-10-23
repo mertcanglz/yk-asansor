@@ -1,8 +1,9 @@
 # Taslak: Maltepe asansör hizmetleri (ilçe yazısı)
 
-> **Durum:** taslak v2, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
+> **Durum:** taslak v3, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
 > **Semt yazıları:** Küçükyalı, İdealtepe, Cevizli, Başıbüyük · **Marka:** yalnızca "YK Asansör"
-> **v2:** Başlık genişletildi, Sancaktepe yazısı kapsamına getirildi; konu yazılarına bağlantılar eklendi.
+> **v3 (24 Ekim 2026):** Tüm yer yazılarında ortak 12 başlığa getirildi. "Sonradan asansör" ayrı bölüm olmaktan çıkıp
+> "Yeni montaj ve sonradan asansör" başlığının içine alındı; "binalar" ve "hangi sistem" bölümleri eklendi.
 
 ## Yayın bilgileri
 
@@ -13,67 +14,80 @@
 | Yan sorgular | maltepe asansör servisi (10), maltepe asansör bakım, maltepe asansör tamiri, maltepe asansör montaj, apartmana sonradan asansör |
 | `<title>` (57) | `Maltepe Asansör Firması: Bakım, Arıza, Montaj \| YK Asansör` |
 | Meta (≈152) | `Maltepe'de asansör bakımı, 7/24 arıza, modernizasyon ve apartmana sonradan asansör. Periyodik kontrolü kim yapar? Teklif: 0 (543) 542 86 75.` |
-| H1 | Maltepe'de asansör hizmetleri: *Bakımdan sonradan asansöre bina yöneticisinin rehberi* |
-| Öne çıkan bölüm | Asansörü olmayan apartmana sonradan asansör |
+| H1 | Maltepe'de asansör hizmetleri: *Bakımdan montaja bina yöneticisinin rehberi* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
-| İç bağlantılar | Sancaktepe yazısı; Küçükyalı, İdealtepe, Cevizli, Başıbüyük yazıları; konu yazıları (asansör fiyatları, etiket renkleri, kırmızı etiket, bakım ücreti, yönetmelikler, kabin modelleri); hizmet sayfaları; teklif formu |
+| İç bağlantılar | Sancaktepe ve Kartal yazıları; Küçükyalı, İdealtepe, Cevizli, Başıbüyük yazıları; konu yazıları; hizmet sayfaları; teklif formu |
 
 ---
 
 ## Metin
 
-# Maltepe'de asansör hizmetleri: *Bakımdan sonradan asansöre bina yöneticisinin rehberi*
+# Maltepe'de asansör hizmetleri: *Bakımdan montaja bina yöneticisinin rehberi*
 
 Maltepe'de bir yanda asansörü olan apartmanlar ve yeni binalar, öbür yanda dört beş katlı ama asansörü olmayan çok
 sayıda bina var. Bu yüzden Maltepe'den gelen sorular iki gruba ayrılıyor: "Asansörümüzün bakımını kim, nasıl
-yapmalı?" ve "Asansörü olmayan binamıza asansör yaptırabilir miyiz?" Bu yazıda ikisine de yer verdik: aylık bakım,
-arıza, periyodik kontrol ve etiketler, modernizasyon, bakım ücreti ve sonradan asansör süreci. Maltepe'de periyodik
-kontrolü, belediyenin 2026'da protokol imzaladığı Makina Mühendisleri Odası İstanbul Şubesi yapıyor. YK Asansör olarak
-Sancaktepe merkezli ekibimizle Maltepe'nin 18 mahallesinde çalışıyoruz.
+yapmalı?" ve "Asansörü olmayan binamıza asansör yaptırabilir miyiz?" Maltepe'de periyodik kontrolü, belediyenin
+2026'da protokol imzaladığı Makina Mühendisleri Odası İstanbul Şubesi yapıyor. YK Asansör olarak Sancaktepe merkezli
+ekibimizle Maltepe'nin 18 mahallesinde bakım, 7/24 arıza, modernizasyon ve montaj yapıyoruz. Bu yazıda bir bina
+yöneticisinin bilmesi gerekenleri topladık.
 
 **Bu yazıda**
 
 1. Maltepe'de neler yapıyoruz?
-2. Aylık bakım ve sözleşme
-3. Arıza ve kurtarma
-4. Periyodik kontrol ve etiketler
-5. Modernizasyon ve kabin yenileme
-6. Sonradan asansör: karar, kuyu, sistem, maliyet
-7. Yeni binalarda asansör
-8. Bakım ücreti
-9. Firma seçerken
-10. Semtlere göre
-11. Sık sorulanlar
+2. Maltepe'deki binalar ve asansörler
+3. Aylık bakım ve sözleşme
+4. Arıza ve mahsur kalma
+5. Periyodik kontrol ve etiketler
+6. Modernizasyon
+7. Yeni montaj ve sonradan asansör
+8. Hangi sistem hangi binaya?
+9. Bakım ücreti
+10. Firma seçerken sorulacaklar
+11. İlgili yazılar ve semtler
+12. Sık sorulanlar
 
 ## Maltepe'de neler yapıyoruz?
 
 Aylık bakım, 7/24 arıza ve kurtarma, modernizasyon ve kabin yenileme, yeni montaj ve sonradan asansör, kuyu ve makine
 dairesi temizliği, yeşil etiket hazırlığı. Dişlili, dişlisiz, hidrolik, makine dairesiz, yük, araç, villa ve engelli
-lifti ile yürüyen merdivenlerle çalışıyoruz.
+lifti ile yürüyen merdivenlerle çalışıyoruz. Küçükyalı, İdealtepe, Cevizli ve Başıbüyük için ayrıca birer yazımız var.
+
+## Maltepe'deki binalar ve asansörler
+
+Maltepe 18 mahalleli bir ilçe; sahilden E-5'e ve oradan kuzeye, Başıbüyük'e doğru bina tipi değişiyor. Sahile yakın
+semtlerde eski apartmanlar ile yenilenen binalar yan yana. Eski apartmanların bir kısmında asansör var ve çoğu makine
+daireli, dişlili; bir kısmı ise dört beş katlı olduğu halde hiç asansörsüz yapılmış. Yenilenen ve yeni yapılan
+binalarda makine dairesiz, dişlisiz sistemler çoğunlukta.
+
+Sahada en sık karşılaştığımız iki durum şu: asansörü olan eski binada kumanda, kapı ve kabin yenileme ihtiyacı;
+asansörü olmayan binada ise sonradan asansör isteği. İkisini de aşağıda ilgili başlıklarda anlattık.
 
 ## Aylık bakım ve sözleşme
 
-Bakım ayda en az bir kez yapılıyor ve bakım için sözleşme yapmak, bakımı yaptırmak ve ücretini ödemek bina
-yöneticisinin işi. Bakımı yapan firmanın TSE Hizmet Yeterlilik Belgesi olmalı. Her ay fren, halatlar, kapılar ve
-kilitler, güvenlik devreleri, kumanda, kabin ışığı ve alarm kontrol ediliyor; raylar yağlanıyor. Her bakımdan sonra bir
-föy bırakılıyor ve yönetim föyleri kalıcı olarak saklıyor. Bakım firması yılda en az bir kez kurtarma eğitimi veriyor.
+Bakım ayda en az bir kez, asansörün bakım kılavuzuna ve TS EN 13015 standardına göre yapılıyor; bakım için sözleşme
+yapmak, bakımı yaptırmak ve ücretini ödemek bina yöneticisinin işi. Bakımı yapan firmanın TSE Hizmet Yeterlilik
+Belgesi olmalı. Her ay fren, halatlar, kapılar ve kilitler, güvenlik devreleri, kumanda, kabin ışığı ve alarm kontrol
+ediliyor; raylar yağlanıyor. Her bakımdan sonra föy bırakılıyor ve yönetim föyleri kalıcı olarak saklıyor. Bakım
+firması yılda en az bir kez kurtarma eğitimi veriyor.
 
-Kabin, kapı, motor gibi büyük parçaların değişimi bakım kapsamında değil. Teklifleri nasıl karşılaştıracağınızı
-İdealtepe yazımızda, sözleşmede nelere bakacağınızı "Asansör bakım sözleşmesi" yazımızda anlattık. YK Asansör bakım
-sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
+Kabin, kapı, motor gibi büyük parçaların değişimi bakım kapsamında değil. Sözleşmede nelere bakacağınızı "Asansör
+bakım sözleşmesi" yazımızda, teklifleri nasıl karşılaştıracağınızı "Asansör bakım ücreti" yazımızda anlattık. YK
+Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
 
-## Arıza ve kurtarma
+## Arıza ve mahsur kalma
 
-Arıza hattımız 7/24 açık: **0 (543) 542 86 75**. İçeride biri kaldıysa kapıyı zorlamadan bizi arayın; sağlık sorunu ya
-da duman varsa önce 112. Asansör tuhaf davranıyorsa kapatıp haber verin; belirtileri "Asansör arızaları" yazımızda
-anlattık.
+Arıza hattımız 7/24 açık: **0 (543) 542 86 75**. Mahsur kalma çağrıları önce geliyor.
+
+İçeride biri kaldıysa önce onunla konuşun, kapıyı zorlamamasını söyleyin, sonra bizi arayın; sağlık sorunu ya da duman
+varsa önce 112. Kurtarma eğitimi almadıysanız düzeneklere dokunmayın. Asansör tuhaf davranıyorsa kapatıp haber verin;
+belirtileri "Asansör arızaları" yazımızda anlattık.
 
 ## Periyodik kontrol ve etiketler
 
-Maltepe Belediyesi, ilçedeki asansörlerin yıllık periyodik kontrolleri için 6 Şubat 2026'da TMMOB Makina Mühendisleri
-Odası İstanbul Şubesi ile protokol imzaladı. Kontrol yılda en az bir kez yapılıyor, tarih en az üç gün önce
-yöneticiye ve bakım firmasına bildiriliyor. Ücreti yönetim ödüyor; kırmızı ya da sarı etiket sonrası ilk takip
-kontrolü ücretsiz.
+Periyodik kontrolü bakım firması yapamıyor; bu iş belediyeyle protokolü olan A tipi muayene kuruluşunun. Maltepe
+Belediyesi, ilçedeki asansörlerin yıllık periyodik kontrolleri için 6 Şubat 2026'da TMMOB Makina Mühendisleri Odası
+İstanbul Şubesi ile protokol imzaladı. Kontrol yılda en az bir kez yapılıyor, tarih en az üç gün önce yöneticiye ve
+bakım firmasına bildiriliyor. Ücreti yönetim ödüyor; kırmızı ya da sarı etiket sonrası ilk takip kontrolü ücretsiz.
 
 | Etiket | Anlamı | Süre |
 |---|---|---|
@@ -82,44 +96,49 @@ kontrolü ücretsiz.
 | Sarı | Kusurlu | En geç 120 gün |
 | Kırmızı | Güvensiz, kullanılmaz | En geç 60 gün; giderilmezse mühür |
 
-Kırmızı etiketten sonra neler olduğunu ve mühür sürecini Küçükyalı yazımızda, renklerin ayrıntısını "Asansör etiket
-renkleri" yazımızda anlattık.
+Kırmızı etiketli asansöre, sorunlar giderilene kadar bakım verilemiyor. Kırmızı etiketten sonraki süreci "Kırmızı
+etiket alan asansör", renklerin ayrıntısını "Asansör etiket renkleri" yazımızda anlattık.
 
-## Modernizasyon ve kabin yenileme
+## Modernizasyon
 
 Eski asansörlerde kumanda panosu, kapılar, makine ve güvenlik donanımı ayrı ayrı yenilenebiliyor. Yönetmelik mevcut
 asansörün güvenlik seviyesini artırmayı yöneticinin sorumluluğuna bırakıyor. Asansör teknik olarak sorunsuz ama kabin
-eskimişse kabin yenileme de seçenek; kabin tiplerini ve dikkat edilecekleri Cevizli yazımızda ve "Asansör kabin
-modelleri" yazımızda anlattık.
+eskimişse kabin yenileme de seçenek; kabin tiplerini "Asansör kabin modelleri" yazımızda anlattık. Yük, hız ya da
+seyir mesafesini değiştiren işler onaylı projeyle yapılıp tescil için başvuruluyor.
 
-## Sonradan asansör: karar, kuyu, sistem, maliyet
+## Yeni montaj ve sonradan asansör
 
-**Karar.** Sonradan asansör için kat malikleri kurulu kararı gerekiyor. Gereken çoğunluk binanın projesine ve
-durumuna göre değişebiliyor; bu konuda bir avukata danışmanızı öneririz. Toplantıya keşif sonucuyla, yani asansörün
-nereye ve hangi sistemle yapılabileceği ve kabaca maliyetiyle gitmek tartışmayı kısaltıyor. Zemin kat sakinlerinin
-masrafa katılmak istememesi sık yaşanıyor; masraf paylaşımı da hukuki bir konu.
+Yeni ya da yenilenen binalarda kapasite, asansör sayısı, kabin ölçüsü ve sistem projelendirme aşamasında belirleniyor.
+Süreç: keşif, projelendirme, onay, montaj, testler ve tescil. Hizmete girmeden önceki ilk kontrolün ücreti normal
+periyodik kontrolün üç katı ve asansörü yaptırandan alınıyor.
 
-**Kuyu.** Üç seçenek var. Merdivenin ortasında yeterli boşluk varsa kuyu oraya yapılabiliyor. Yoksa binanın arka ya da
-yan cephesine çelik ya da betonarme bir kuyu ekleniyor; bu durumda asansör genellikle merdiven sahanlıklarına açılıyor
-ve statik hesap ile izin gerekiyor. Bazen eski bir aydınlık boşluğu da kullanılabiliyor.
+Asansörü olmayan apartmana sonradan asansör için şunlara bakılıyor:
 
-**Sistem.** Bu binalarda çatıda makine dairesi yapmak çoğu zaman mümkün olmadığı için makine dairesiz ya da hidrolik
-sistemler öne çıkıyor. Kuyu küçükse kabin de küçük oluyor; tekerlekli sandalye ya da bebek arabası sığmayan bir kabin
-asansörün amacını yarıda bırakır.
+- **Karar:** Kat malikleri kurulu kararı gerekiyor. Gereken çoğunluk binanın projesine ve durumuna göre
+  değişebiliyor; bir avukata danışmanızı öneririz. Toplantıya keşif sonucuyla, yani asansörün nereye ve hangi sistemle
+  yapılabileceği ve kabaca maliyetiyle gitmek tartışmayı kısaltıyor. Masraf paylaşımı da hukuki bir konu.
+- **Kuyu:** Merdivenin ortasında yeterli boşluk varsa kuyu oraya yapılabiliyor. Yoksa binanın arka ya da yan cephesine
+  çelik ya da betonarme bir kuyu ekleniyor; bu durumda asansör genellikle merdiven sahanlıklarına açılıyor ve statik
+  hesap ile izin gerekiyor. Bazen eski bir aydınlık boşluğu da kullanılabiliyor.
+- **Sistem:** Çatıda makine dairesi yapmak çoğu zaman mümkün olmadığı için makine dairesiz ya da hidrolik sistemler öne
+  çıkıyor. Kuyu küçükse kabin de küçük oluyor; tekerlekli sandalye ya da bebek arabası sığmayan bir kabin asansörün
+  amacını yarıda bırakır.
+- **Maliyet:** Kuyunun yeri ve yapımı, kat sayısı, sistem, kabin ölçüsü, elektrik altyapısı ve proje giderleri fiyatı
+  belirliyor. Kalemleri "Asansör fiyatları" yazımızda anlattık; keşiften sonra her kalemi ayrı yazdığımız bir teklif
+  veriyoruz.
 
-**Onay ve tescil.** Uygulama projesi ilgili idareye onaylatılıyor, montaj ve testlerden sonra asansör muayene
-kuruluşunca kontrol ediliyor. Bu ilk kontrolün ücreti normal periyodik kontrolün üç katı ve asansörü yaptırandan
-alınıyor.
+## Hangi sistem hangi binaya?
 
-**Maliyet.** Kuyunun yeri ve yapımı, kat sayısı, sistem, kabin ölçüsü, elektrik altyapısı ve proje giderleri fiyatı
-belirliyor. Kalemleri "Asansör fiyatları" yazımızda anlattık; keşiften sonra her kalemi ayrı yazdığımız bir teklif
-veriyoruz.
+| Bina | Genellikle uygun sistem |
+|---|---|
+| Yeni ve yenilenen apartman | Makine dairesiz, dişlisiz |
+| Makine dairesi olan eski apartman | Dişlili ya da dişlisiz (modernizasyonla) |
+| Asansörsüz apartman, sonradan asansör | Makine dairesiz ya da hidrolik |
+| Villa, engelli erişimi | Villa ve engelli lifti |
+| Dükkân, depo | Yük asansörü |
+| Otopark | Araç asansörü |
 
-## Yeni binalarda asansör
-
-Yenilenen ya da yeni yapılan binalarda kapasite, asansör sayısı, kabin ölçüsü ve sistem projelendirme aşamasında
-belirlenmeli. Bu kararları Başıbüyük yazımızda ayrıntılı anlattık. Sistemlerin farkları için "Hidrolik mi, halatlı
-mı?" yazımıza bakabilirsiniz.
+Farkları "Hidrolik mi, halatlı mı?" yazımızda anlattık.
 
 ## Bakım ücreti
 
@@ -127,21 +146,30 @@ TASİAD'ın 2026 tavsiyesi (aylık, KDV hariç, 1.600 kg'a ve 7 durağa kadar): 
 gerektiğinde yük taşıyan asansör 3.500 TL, hastane asansörü 5.750 TL. Her ek durak için 500 TL, panoramik asansörlerde
 2.250 TL ekleniyor; yedek parça dahil değil. Ayrıntıyı "Asansör bakım ücreti" yazımızda anlattık.
 
-## Firma seçerken
+## Firma seçerken sorulacaklar
 
-TSE Hizmet Yeterlilik Belgesi, arızaya varış süresi ve 7/24 hat, ücrete dahil olanlar ve yedek parça fiyatlaması, föy
-ve kurtarma eğitimi, ön kontrol ve kontrol günü eşlik, asansörde cihazla ya da şifreyle bir kısıtlama olup olmadığı.
+- TSE Hizmet Yeterlilik Belgesi ve geçerlilik tarihi
+- Arızaya varış süresi ve 7/24 hat
+- Ücrete dahil olanlar ve yedek parça fiyatlaması
+- Föy ve kurtarma eğitimi
+- Periyodik kontrol günü teknisyenin gelip gelmeyeceği
+- Asansörde cihazla ya da şifreyle bir kısıtlama olup olmadığı (sözleşmede yazmalı)
+
 Bu soruların cevaplarını yazılı isteyin.
 
-## Semtlere göre
+## İlgili yazılar ve semtler
 
-- **Küçükyalı:** kırmızı etiket ve mühürlenen asansör
-- **İdealtepe:** bakım tekliflerini karşılaştırmak
-- **Cevizli:** kabin yenileme ve kabin seçenekleri
-- **Başıbüyük:** yenilenen binalarda asansör seçimi
+- Semtler: Küçükyalı, İdealtepe, Cevizli, Başıbüyük
+- Komşu ilçeler: Kartal, Ataşehir, Sancaktepe
+- Bakım ve masraf: "Asansör bakım ücreti", "Asansör bakım sözleşmesi", "Asansör bakımını kim öder?"
+- Kontrol ve etiketler: "Asansör periyodik kontrolü", "Asansör etiket renkleri", "Kırmızı etiket alan asansör"
+- Arıza ve güvenlik: "Asansör arızaları", "Asansör kapısı", "Asansör aküsü ve elektrik kesintisi"
+- Yeni asansör ve yenileme: "Asansör fiyatları", "Hidrolik mi, halatlı mı?", "Asansör kabin modelleri"
+- Mevzuat: "Asansör yönetmelikleri"
 
-> ### Apartmanınıza asansör yapılabilir mi?
-> Ücretsiz keşifle kuyu yerini, sistemi ve kalem kalem maliyeti çıkaralım. **[Teklif alın]** · 0 (543) 542 86 75
+> ### Maltepe'deki asansörünüz için teklif alın
+> Bakım, yenileme ya da sonradan asansör: ücretsiz keşifle kalem kalem teklif verelim. **[Teklif alın]** ·
+> 0 (543) 542 86 75
 
 ## Sık sorulanlar
 
@@ -172,6 +200,9 @@ Konut tipi bir asansör için TASİAD'ın 2026 tavsiyesi aylık 3.000 TL + KDV; 
 **Eski asansörü tamamen değiştirmek gerekir mi?**
 Çoğu zaman hayır; kumanda, kapı, makine ya da kabin ayrı ayrı yenilenebiliyor.
 
+**Asansör bakımı ayda kaç kez yapılmalı?**
+En az bir kez, asansörün bakım kılavuzuna göre.
+
 **Gece arıza olursa kimi aramalıyım?**
 0 (543) 542 86 75. Hattımız 7/24 açık.
 
@@ -188,6 +219,7 @@ Konut tipi bir asansör için TASİAD'ın 2026 tavsiyesi aylık 3.000 TL + KDV; 
 
 ## Editör notları (yayınlanmaz)
 
-- Madde dayanakları: İB m. 4/e, 14/1, 13/1, 10/2, 10/3, 10/6, 16/4, 9, 8/5; PK m. 8/1, 16/9, 23/1, 23/2, 9/7, 11.
+- Madde dayanakları: İB m. 4/e, 9, 14/1, 13/1, 10/2, 10/3, 10/6, 10/11, 16/4, 9/7, 8/5; PK m. 8/1, 16/9, 23/1, 23/2,
+  9/7, 11.
 - Sonradan asansörün hukuki yanı için "avukata danışın" notu korunmalı.
-- "Bina dışı kuyuda statik hesap ve izin" genel bilgidir; Ömürcan Bey kontrol etsin.
+- "Bina dışı kuyuda statik hesap ve izin" ve bina dokusu genel bilgidir; Ömürcan Bey kontrol etsin.
