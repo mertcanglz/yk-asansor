@@ -1,8 +1,9 @@
 # Taslak: Samandıra asansör hizmetleri (semt yazısı)
 
-> **Durum:** taslak v3, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
-> **Bağlı olduğu ilçe yazısı:** `sancaktepe-asansor.md` · **Marka:** yalnızca "YK Asansör" (bul-değiştir ile güncellenir)
-> **v3:** Tüm hizmetler ayrı başlıklarla açıldı (montaj, modernizasyon, sistemler, firma seçimi); konu yazılarına bağlantı.
+> **Durum:** taslak v4, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
+> **Bağlı olduğu ilçe yazısı:** `sancaktepe-asansor.md` · **Marka:** yalnızca "YK Asansör"
+> **v4 (24 Ekim 2026):** Tüm yer yazılarında ortak 12 başlığa getirildi; periyodik kontrol hazırlığı ayrı bölümler olmaktan
+> çıkıp "Periyodik kontrol ve etiketler" başlığının içine alındı; ayrı "öne çıkan konu" yok.
 
 ## Yayın bilgileri
 
@@ -10,104 +11,89 @@
 |---|---|
 | URL | `/blog/samandira-asansor.html` |
 | Ana sorgu | samandıra asansör |
-| Yan sorgular | samandıra asansör bakım, samandıra asansör firması, samandıra asansör tamiri, samandıra asansör montaj, samandıra asansör periyodik kontrol, sancaktepe belediyesi asansör muayene |
-| `<title>` (58) | `Samandıra Asansör: Bakım, Arıza, Montaj ve Kontrol \| YK Asansör` |
-| Meta (≈152) | `Samandıra'da asansör bakımı, 7/24 arıza, montaj ve modernizasyon. Periyodik kontrolü kim yapar, yeşil etiket için nasıl hazırlanılır? 0 (543) 542 86 75.` |
-| H1 | Samandıra'da asansör hizmetleri: *Bakım, arıza, montaj ve yeşil etiket rehberi* |
-| Öne çıkan bölüm | Periyodik kontrol süreci ve yeşil etikete hazırlık |
+| Yan sorgular | samandıra asansör bakım, samandıra asansör firması, samandıra asansör tamiri, samandıra asansör montaj, samandıra asansör periyodik kontrol |
+| `<title>` (56) | `Samandıra Asansör: Bakım, Montaj ve 7/24 Arıza \| YK Asansör` |
+| Meta (≈150) | `Sancaktepe Samandıra'da asansör bakımı, 7/24 arıza, montaj ve modernizasyon. Periyodik kontrol, etiketler ve bakım ücreti: 0 (543) 542 86 75.` |
+| H1 | Samandıra'da asansör hizmetleri: *Bakım, arıza, montaj ve periyodik kontrol rehberi* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
-| İç bağlantılar | Sancaktepe, Sarıgazi, Yenidoğan yazıları; konu yazıları (periyodik kontrol, etiket renkleri, kırmızı etiket, bakım ücreti, bakım sözleşmesi); hizmet sayfaları; yeşil etiket sayfası; teklif formu |
+| İç bağlantılar | Sancaktepe, Sarıgazi, Yenidoğan yazıları; konu yazıları; hizmet sayfaları; yeşil etiket sayfası; teklif formu |
 
 ---
 
 ## Metin
 
-# Samandıra'da asansör hizmetleri: *Bakım, arıza, montaj ve yeşil etiket rehberi*
+# Samandıra'da asansör hizmetleri: *Bakım, arıza, montaj ve periyodik kontrol rehberi*
 
-Samandıra Sancaktepe'ye bağlı bir semt. Buradaki bir binanın asansöründen sorumluysanız iki şeyi düzenli
-yaptırmanız gerekiyor: her ay bakım ve yılda bir periyodik kontrol. Bakımı TSE Hizmet Yeterlilik Belgesi olan bir
-firma yapıyor; periyodik kontrolü ise Sancaktepe Belediyesi'nin anlaştığı muayene kuruluşu, yani Royalcert. YK
-Asansör olarak Sancaktepe merkezli ekibimizle Samandıra'da aylık bakım, 7/24 arıza, modernizasyon ve montaj
-yapıyoruz. Bu yazıda bütün bu hizmetleri anlattık; en çok sorulan konuya, yani periyodik kontrol ve yeşil etikete de
-ayrıca ve ayrıntılı yer verdik.
+Samandıra, Sancaktepe'nin en bilinen semtlerinden biri. Buradaki bir binanın asansöründen sorumluysanız düzenli
+yaptırmanız gereken iki şey var: her ay bakım ve yılda bir periyodik kontrol. Bakımı TSE Hizmet Yeterlilik Belgesi olan
+bir firma yapıyor; periyodik kontrolü ise Sancaktepe Belediyesi'nin anlaştığı muayene kuruluşu Royalcert. YK Asansör
+olarak Sancaktepe merkezli ekibimizle Samandıra'da aylık bakım, 7/24 arıza, modernizasyon ve montaj yapıyoruz. Bu
+yazıda bir yöneticinin bilmesi gerekenleri sırayla anlattık.
 
 **Bu yazıda**
 
 1. Samandıra'da neler yapıyoruz?
-2. Aylık bakım ve sözleşme
-3. 7/24 arıza ve kurtarma
-4. Periyodik kontrol: kim yapar, ne zaman?
-5. Kontrolden önceki üç hafta
-6. Kontrol günü, rapor ve etiket
-7. Modernizasyon
-8. Yeni montaj ve sonradan asansör
-9. Binalar ve asansör sistemleri
-10. Bakım ücreti ve firma seçimi
-11. Sık sorulanlar
+2. Samandıra'daki binalar ve asansörler
+3. Aylık bakım ve sözleşme
+4. Arıza ve mahsur kalma
+5. Periyodik kontrol ve etiketler
+6. Modernizasyon
+7. Yeni montaj ve sonradan asansör
+8. Hangi sistem hangi binaya?
+9. Bakım ücreti
+10. Firma seçerken sorulacaklar
+11. İlgili yazılar
+12. Sık sorulanlar
 
 ## Samandıra'da neler yapıyoruz?
 
 Aylık bakım ve bakım sözleşmesi, 7/24 arıza ve kurtarma, modernizasyon ve revizyon, yeni asansör montajı ve sonradan
 asansör, kuyu ve makine dairesi temizliği, periyodik kontrol öncesi yeşil etiket hazırlığı. Dişlili, dişlisiz,
-hidrolik, makine dairesiz, yük, villa ve engelli lifti dahil tüm tiplere bakıyoruz.
+hidrolik, makine dairesiz, yük, araç, villa ve engelli lifti ile yürüyen merdivenlerle çalışıyoruz.
+
+## Samandıra'daki binalar ve asansörler
+
+Samandıra'da eski apartmanlarla yeni siteler yan yana. Eski binalarda makine daireli, dişlili asansörler; yeni
+binalarda makine dairesiz ve dişlisiz sistemler daha yaygın. Az katlı binalarda ve sonradan asansör eklenen yapılarda
+hidrolik sistemler, ana caddelerdeki iş yerlerinde yük asansörleri karşımıza çıkıyor.
+
+Eski apartmanlarda periyodik kontrolde en sık gördüğümüz eksik, makine dairesinin eşya deposuna dönmüş olması. Yeni
+sitelerde ise kontrol tarihleri bloklara göre farklı düşebiliyor; yönetimin her bloğun etiketini ve eksik giderme
+süresini bir yerde takip etmesi işi kolaylaştırıyor.
 
 ## Aylık bakım ve sözleşme
 
-Bakım ayda en az bir kez yapılıyor. Biz her ay fren ve motoru, halatları, kapıları ve kilitlerini, güvenlik
-devrelerini, kumanda panosunu, kabin ışığını ve alarmı kontrol ediyor, rayları yağlıyor, asansörü bir tur deniyoruz.
-Sonunda yapılan işlemleri, değişen parçaları ve fark edilen eksikleri yazdığımız bir bakım föyü bırakıyoruz. Föyleri
-yönetimin kalıcı olarak saklaması gerekiyor; periyodik kontrolde ilk istenen belgelerden biri.
+Bakım ayda en az bir kez, asansörün bakım kılavuzuna ve TS EN 13015 standardına göre yapılıyor. Her ay fren ve motoru,
+halatları, kapıları ve kilitlerini, güvenlik devrelerini, kumanda panosunu, kabin ışığını ve alarmı kontrol ediyor,
+rayları yağlıyor, asansörü bir tur deniyoruz. Sonunda yapılan işlemleri, değişen parçaları ve fark edilen eksikleri
+yazdığımız bir föy bırakıyoruz. Föyleri yönetimin kalıcı olarak saklaması gerekiyor.
 
-Bakım için sözleşme yapmak yöneticinin yükümlülüğü. Sözleşmede ücrete nelerin dahil olduğu, yedek parçanın nasıl
-fiyatlanacağı ve arıza çağrısında kime ulaşılacağı yazılı olmalı. Ayrıntıları "Asansör bakım sözleşmesi" yazımızda,
-firma değiştirme sürecini Yenidoğan yazımızda anlattık.
+Bakım için sözleşme yapmak, bakımı yaptırmak ve ücretini ödemek yöneticinin yükümlülüğü. Sözleşmede ücrete nelerin
+dahil olduğu, yedek parçanın nasıl fiyatlanacağı ve arıza çağrısında kime ulaşılacağı yazılı olmalı. Kabin içi temizliği
+ve büyük parça değişimleri bakım kapsamında değil. Ayrıntılar "Asansör bakım sözleşmesi" yazımızda. YK Asansör bakım
+sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
 
-## 7/24 arıza ve kurtarma
+## Arıza ve mahsur kalma
 
-Gece, hafta sonu ve bayram fark etmez: 0 (543) 542 86 75. Mahsur kalma çağrıları her zaman önce gelir. İçeride biri
-varsa kapıyı zorlamadan bizi arayın; sağlık sorunu ya da duman varsa önce 112. Bakım firması yılda en az bir kez,
-yönetimin belirlediği kişilere kurtarma eğitimi vermek zorunda. Hangi belirtide asansörü kapatmanız gerektiğini
-Sarıgazi yazımızda ve "Asansör arızaları" yazımızda anlattık.
+Gece, hafta sonu ve bayram fark etmez: **0 (543) 542 86 75**. Mahsur kalma çağrıları her zaman önce gelir. İçeride biri
+varsa onunla konuşun, kapıyı zorlamasın; sağlık sorunu ya da duman varsa önce 112. Kurtarma eğitimi almadıysanız
+düzeneklere dokunmayın. Bakım firması yılda en az bir kez, yönetimin belirlediği kişilere kurtarma eğitimi vermek
+zorunda. Hangi belirtide asansörü kapatmanız gerektiğini "Asansör arızaları" yazımızda anlattık.
 
-## Periyodik kontrol: kim yapar, ne zaman?
+## Periyodik kontrol ve etiketler
 
 Bakım firmaları periyodik kontrol yapamaz. Bu işi Bakanlığın yetkilendirdiği ve ilçe belediyesiyle protokol imzalamış
 A tipi muayene kuruluşları yapar. Sancaktepe'de, dolayısıyla Samandıra'da, bu kuruluş Royalcert Belgelendirme ve
-Gözetim Hizmetleri A.Ş. Kuruluşun yayımladığı listeye göre protokol 1 Ocak 2024'te başladı ve 2028'e kadar geçerli.
+Gözetim Hizmetleri A.Ş.; kuruluşun listesine göre protokol 1 Ocak 2024'te başladı ve 2028'e kadar geçerli.
 
-Kontrol yılda en az bir kez yapılır. Ertesi yılın tarihi, bu yılki kontrolün tarihine göre belirlenir; isterseniz öne
-alınabilir. Kuruluş tarihi en az üç gün önce kısa mesaj ya da e-postayla hem size hem bakım firmanıza bildirir.
-Yönetim değiştiyse yeni yöneticinin telefonunun kuruluşa ve bakım firmasına bildirilmesi bu yüzden önemli; yoksa
-kontrol günü kimse binada olmayabilir.
+Kontrol yılda en az bir kez yapılır; isterseniz tarih öne alınabilir. Kuruluş tarihi en az üç gün önce SMS ya da
+e-postayla hem size hem bakım firmanıza bildirir. Yönetim değiştiyse yeni yöneticinin telefonunu kuruluşa bildirin;
+yoksa kontrol günü binada kimse olmayabilir. Ücreti bina yönetimi öder; tutarı belediye meclisi belirler.
 
-Ücreti bina yönetimi öder ve kuruluş KDV dahil tahsil eder. Tutar, Bakanlığın belirlediği alt ve üst sınır arasında
-belediye meclisince belirlenir; güncel tutarı belediyeden veya Royalcert'ten öğrenebilirsiniz.
-
-## Kontrolden önceki üç hafta
-
-Sarı ve mavi etiketlerin büyük kısmı, kontrolden önce birkaç saatte giderilebilecek eksiklerden çıkar. Kontrol tarihi
-belli olduğunda bakım firmanızdan bir ön kontrol isteyin. Biz şu sırayla ilerliyoruz:
-
-**Önce geçen yılın raporu.** Açık kalan maddeler kapatıldı mı, kapatıldıysa föye yazıldı mı?
-
-**Sonra kuyu dibi ve makine dairesi.** Kuyu dibinde çöp, su ya da inşaattan kalma malzeme olmamalı. Makine dairesi
-kilitli olmalı, ışığı yanmalı ve depo gibi kullanılmamalı. Apartmanlarda en sık gördüğümüz eksik, makine dairesinin
-eşya deposuna dönmüş olması.
-
-**Ardından kabin ve kapılar.** Kabin ışığı, alarm butonu ve kabin içi iletişim; kat kapılarının kilitleri, fotosel ve
-kapanma hızı.
-
-**En son belgeler.** Kayıt defteri ve bakım föyleri elinizin altında olmalı; kurtarma talimatı da uygun bir yerde asılı
-olmalı.
-
-## Kontrol günü, rapor ve etiket
-
-Kontrol günü makine dairesinin ve kuyunun anahtarı binada olmalı. Asansör bir süre kullanılamayacağı için sakinlere
-bir gün önceden haber verin. Bakım firmanızın teknisyeninin de orada olmasını isteyin; mühendisin not aldığı bir
-eksiği yerinde görür, çoğu zaman aynı hafta giderir.
-
-Sonra rapor gelir. Raporu bakım firmanızla birlikte okuyun ve her madde için kimin, ne zaman, ne yapacağını yazın.
-Etiket süreleri güncel yönetmeliğe göre (son değişiklik 5 Ağustos 2025):
+Kontrolden önceki haftalarda bakım firmanızdan ön kontrol isteyin: geçen yılın raporunda açık kalan maddeler, kuyu
+dibinde çöp ya da su, kilitli ve ışığı yanan bir makine dairesi, kabin ışığı ve alarm, kat kapısı kilitleri ve
+fotosel, kayıt defteri ve föyler. Kontrol günü makine dairesinin anahtarı binada olsun, bakım teknisyeniniz de orada
+olsun; mühendisin not aldığı bir eksiği yerinde görür.
 
 | Etiket | Ne anlama gelir? | Eksikler ne zamana kadar giderilir? |
 |---|---|---|
@@ -116,44 +102,59 @@ Etiket süreleri güncel yönetmeliğe göre (son değişiklik 5 Ağustos 2025):
 | Sarı | Kusurlu | En geç 120 gün |
 | Kırmızı | Güvensiz, kullanılmaz | En geç 60 gün |
 
-Kırmızı ya da sarı etiket aldıysanız ilk takip kontrolü ücretsiz. Mavi etikette de rapor onayından sonraki 60 gün
-içinde başvurursanız ilk takip kontrolü ücretsiz yapılır; küçük eksikleri hızlıca giderip yeşile geçmek mümkün.
-Kırmızı etiketli asansöre ise, sorunlar giderilene kadar bakım hizmeti verilemiyor. Ayrıntıları "Asansör etiket
-renkleri", "Kırmızı etiket alan asansör" ve "Asansör periyodik kontrolü" yazılarımızda anlattık.
+Kırmızı ya da sarı etikette ilk takip kontrolü ücretsiz. Mavi etikette de rapor onayından sonraki 60 gün içinde
+başvurursanız ilk takip kontrolü ücretsiz yapılıyor. Kırmızı etiketli asansöre sorunlar giderilene kadar bakım
+verilemiyor. Ayrıntılar "Asansör periyodik kontrolü" ve "Asansör etiket renkleri" yazılarımızda.
 
 ## Modernizasyon
 
 Her yıl aynı maddelerden etiket alan eski bir asansörde parça parça onarım bir süre sonra yenilemekten pahalıya gelir.
-Kumanda panosu, kapılar, makine ya da güvenlik donanımı ayrı ayrı yenilenebilir; hepsini birden değiştirmek gerekmez.
-Yönetmelik mevcut asansörün güvenlik seviyesini artırmayı yöneticinin sorumluluğuna bırakıyor. Etikete sebep olan
-maddeleri kalıcı olarak kapatmanın çoğu zaman en ekonomik yolu, ilgili sistemi yenilemek.
+Kumanda panosu, kapılar, makine ya da güvenlik donanımı ayrı ayrı yenilenebilir. Yönetmelik mevcut asansörün güvenlik
+seviyesini artırmayı yöneticinin sorumluluğuna bırakıyor. Yük, hız ya da seyir mesafesi değişirse onaylı proje ve
+tescil gerekiyor.
 
 ## Yeni montaj ve sonradan asansör
 
 Yeni binalarda keşif, projelendirme, onay, montaj, testler ve tescil sürecini yürütüyoruz. Tescilden önceki ilk
 kontrolün ücreti normal periyodik kontrol ücretinin üç katı ve asansörü yaptırandan alınıyor. Asansörü olmayan eski
 apartmanlarda sonradan asansör de çoğu zaman mümkün: kat malikleri kararı, kuyu için uygun yer ve onaylı proje
-gerekiyor; gereken çoğunluk için bir avukata danışmanızı öneririz. Maliyeti belirleyen kalemleri "Asansör fiyatları"
-yazımızda anlattık.
+gerekiyor; gereken çoğunluk için bir avukata danışmanızı öneririz. Ayrıntılı rehber Maltepe yazımızda.
 
-## Binalar ve asansör sistemleri
+## Hangi sistem hangi binaya?
 
-Samandıra'da eski apartmanlarla yeni siteler yan yana. Eski binalarda makine daireli, dişlili asansörler; yeni binalarda
-makine dairesiz ve dişlisiz sistemler daha yaygın. Az katlı binalarda ve sonradan asansör eklenen yapılarda hidrolik
-sistemler, iş yerlerinde yük asansörleri karşımıza çıkıyor. Sistemlerin farkını "Hidrolik mi, halatlı mı?" yazımızda
-anlattık.
+| Bina | Genellikle uygun sistem |
+|---|---|
+| Yeni apartman ve siteler | Makine dairesiz, dişlisiz |
+| Makine dairesi olan eski apartman | Dişlili ya da dişlisiz (modernizasyonla) |
+| Az katlı bina, sonradan asansör | Hidrolik ya da makine dairesiz |
+| Engelli erişimi | Engelli lifti |
+| İş yeri, depo | Yük asansörü |
 
-## Bakım ücreti ve firma seçimi
+Farkları "Hidrolik mi, halatlı mı?" yazımızda anlattık.
 
-TASİAD'ın 2026 tavsiyesi konut tipi bir asansör için (7 durağa kadar) aylık 3.000 TL + KDV; her ek durak için 500 TL
-ekleniyor ve yedek parça dahil değil. Teklif okumayı "Asansör bakım ücreti" yazımızda anlattık.
+## Bakım ücreti
 
-Firma seçerken TSE Hizmet Yeterlilik Belgesi'ni, arızaya varış süresini, ücrete dahil olanları, föy ve kurtarma
-eğitimini, ön kontrolü ve asansörde cihazla ya da şifreyle bir kısıtlama olup olmadığını sorun. Bakım sözleşmelerinde
-ilk keşif ve 3 litre ray yağı değişimi bizde ücretsiz.
+TASİAD'ın 2026 tavsiyesi (aylık, KDV hariç, 7 durağa kadar): konut ve ofis asansörü 3.000 TL, insan ve gerektiğinde
+yük taşıyan asansör 3.500 TL. Her ek durak için 500 TL ekleniyor; yedek parça dahil değil. Tavsiye niteliğinde; kesin
+fiyatı keşiften sonra veriyoruz. Teklif okumayı "Asansör bakım ücreti" yazımızda anlattık.
 
-> ### Kontrol tarihiniz yaklaşıyorsa
-> Ön kontrol için arayın, eksikleri kontrol gününden önce birlikte kapatalım. **[Teklif alın]** · 0 (543) 542 86 75
+## Firma seçerken sorulacaklar
+
+- TSE Hizmet Yeterlilik Belgesi ve geçerlilik tarihi
+- Arızaya varış süresi, gece ulaşılacak numara
+- Ücrete dahil olanlar, yedek parça fiyatlaması
+- Föy ve kurtarma eğitimi
+- Periyodik kontrol öncesi ön kontrol ve kontrol günü eşlik
+- Asansörde cihazla ya da şifreyle kısıtlama olup olmadığı (sözleşmede yazmalı)
+
+## İlgili yazılar
+
+- İlçe ve diğer semtler: Sancaktepe, Sarıgazi, Yenidoğan
+- Konu yazıları: "Asansör periyodik kontrolü", "Asansör etiket renkleri", "Kırmızı etiket alan asansör", "Asansör
+  bakım sözleşmesi", "Asansör bakım ücreti", "Asansör arızaları", "Asansör fiyatları"
+
+> ### Samandıra'daki asansörünüz için teklif alın
+> Kontrol tarihiniz yaklaşıyorsa ön kontrol için de arayabilirsiniz. **[Teklif alın]** · 0 (543) 542 86 75
 
 ## Sık sorulanlar
 
@@ -161,16 +162,13 @@ ilk keşif ve 3 litre ray yağı değişimi bizde ücretsiz.
 Evet. Sancaktepe merkezli ekibimizle Samandıra'da aylık bakım, 7/24 arıza, modernizasyon ve montaj yapıyoruz.
 
 **Samandıra'da asansör periyodik kontrolünü kim yapar?**
-Samandıra Sancaktepe'ye bağlı olduğu için Sancaktepe Belediyesi'nin protokol yaptığı Royalcert yapar (2024–2028).
+Samandıra Sancaktepe'ye bağlı olduğu için Sancaktepe Belediyesi'nin protokol yaptığı Royalcert (2024–2028).
 
 **Kontrol tarihini nereden öğrenirim?**
 Kuruluş en az üç gün önce yöneticiye ve bakım firmasına SMS ya da e-posta gönderir.
 
 **Mavi etiketi yeşile çevirebilir miyiz?**
-Evet. Eksikleri giderip rapor onayından sonraki 60 gün içinde başvurursanız ilk takip kontrolü ücretsiz yapılır.
-
-**Takip kontrolü için ayrıca ücret ödenir mi?**
-Kırmızı ve sarı etikette ilk takip kontrolü ücretsiz; sonrakilerin ücreti protokolle belirlenir.
+Evet. Eksikleri giderip rapor onayından sonraki 60 gün içinde başvurursanız ilk takip kontrolü ücretsiz.
 
 **Kırmızı etiket aldık, asansörü kullanabilir miyiz?**
 Hayır. Eksikler en geç 60 gün içinde giderilmezse belediye asansörü mühürleyebilir.
@@ -204,6 +202,7 @@ Genellikle hayır. Aşınmaya bağlı küçük parçalar bakım kapsamında; bü
 
 ## Editör notları (yayınlanmaz)
 
-- Madde dayanakları: PK m. 8/1, 8/3, 16/9, 10/1, 23/1, 9/7, 24/5, 11/6, 11/8, 11/10, 23/2; İB m. 4/e, 14/1, 10/2,
+- Madde dayanakları: PK m. 8/1, 8/3, 16/9, 10/1, 23/1, 9/7, 24/5, 11/6, 11/8, 11/10, 23/2; İB m. 4/e, 9, 14/1, 10/2,
   10/3, 10/6, 10/11, 16/4, 8/5.
-- "En sık gördüğümüz eksik: makine dairesinin depo olması" saha gözlemi olarak yazıldı; Ömürcan Bey teyit etsin.
+- "En sık gördüğümüz eksik: makine dairesinin depo olması" saha gözlemi; Ömürcan Bey teyit etsin.
+- Samandıra'nın belde geçmişi kullanıcı kararı gereği yazılmadı (yalnızca Sancaktepe ana yazısında).

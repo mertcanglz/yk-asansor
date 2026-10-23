@@ -1,8 +1,9 @@
 # Taslak: Yenidoğan asansör hizmetleri (semt yazısı)
 
-> **Durum:** taslak v3, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
+> **Durum:** taslak v4, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
 > **Bağlı olduğu ilçe yazısı:** `sancaktepe-asansor.md` · **Marka:** yalnızca "YK Asansör"
-> **v3:** Başlık genişletildi; tüm hizmetler ayrı başlıklarla açıldı; bakım sözleşmesi ve firma değiştirme öne çıkan bölüm.
+> **v4 (24 Ekim 2026):** Tüm yer yazılarında ortak 12 başlığa getirildi; sözleşme içeriği ve firma değiştirme ayrı bölümler
+> olmaktan çıkıp "Aylık bakım ve sözleşme" ve "Firma seçerken" başlıklarının içine alındı; ayrı "öne çıkan konu" yok.
 
 ## Yayın bilgileri
 
@@ -10,105 +11,82 @@
 |---|---|
 | URL | `/blog/yenidogan-asansor.html` |
 | Ana sorgu | yenidoğan asansör |
-| Yan sorgular | yenidoğan asansör bakım, yenidoğan asansör firması, yenidoğan asansör tamiri, yenidoğan asansör servisi, asansör bakım firması değiştirme |
-| `<title>` (57) | `Yenidoğan Asansör: Bakım, Arıza, Montaj, Sözleşme \| YK Asansör` |
-| Meta (≈150) | `Yenidoğan'da asansör bakımı, 7/24 arıza, montaj ve modernizasyon. Bakım sözleşmesinde neler olmalı, firma nasıl değiştirilir? 0 (543) 542 86 75.` |
-| H1 | Yenidoğan'da asansör hizmetleri: *Bakım, arıza, montaj ve doğru bakım sözleşmesi* |
-| Öne çıkan bölüm | Bakım sözleşmesinin içeriği ve bakım firması değiştirme |
+| Yan sorgular | yenidoğan asansör bakım, yenidoğan asansör firması, yenidoğan asansör tamiri, yenidoğan asansör servisi |
+| `<title>` (57) | `Yenidoğan Asansör: Bakım, Montaj ve 7/24 Arıza \| YK Asansör` |
+| Meta (≈150) | `Sancaktepe Yenidoğan'da asansör bakımı, 7/24 arıza, montaj ve modernizasyon. Periyodik kontrol, sözleşme ve bakım ücreti: 0 (543) 542 86 75.` |
+| H1 | Yenidoğan'da asansör hizmetleri: *Bakım, arıza, montaj ve periyodik kontrol rehberi* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
-| İç bağlantılar | Sancaktepe, Samandıra, Sarıgazi yazıları; konu yazıları (bakım sözleşmesi, bakımı kim öder, bakım ücreti, etiket renkleri, yönetmelikler); hizmet sayfaları; teklif formu |
+| İç bağlantılar | Sancaktepe, Samandıra, Sarıgazi yazıları; konu yazıları; hizmet sayfaları; teklif formu |
 
 ---
 
 ## Metin
 
-# Yenidoğan'da asansör hizmetleri: *Bakım, arıza, montaj ve doğru bakım sözleşmesi*
+# Yenidoğan'da asansör hizmetleri: *Bakım, arıza, montaj ve periyodik kontrol rehberi*
 
-Yenidoğan, Sancaktepe'nin mahallelerinden biri. YK Asansör olarak Sancaktepe merkezli ekibimizle burada aylık bakım,
-7/24 arıza, modernizasyon ve montaj yapıyoruz. Yenidoğan'daki yöneticilerin bize en sık sorduğu iki şey var: "Bakım
-sözleşmesinde nelere bakmalıyım?" ve "Mevcut firmamızdan memnun değiliz, nasıl değiştiririz?" Bu yazıda önce
-verdiğimiz hizmetleri ve bir yöneticinin yükümlülüklerini, sonra bu iki soruyu ayrıntılı anlattık.
+Yenidoğan, Sancaktepe'nin aynı adlı mahallesi ve çevresiyle bilinen semtlerinden biri. YK Asansör olarak Sancaktepe
+merkezli ekibimizle burada aylık bakım, 7/24 arıza, modernizasyon ve montaj yapıyoruz. Bu yazıda bir yöneticinin
+yükümlülüklerini, bakım sözleşmesinden periyodik kontrole, arızadan ücrete kadar sırayla anlattık.
 
 **Bu yazıda**
 
 1. Yenidoğan'da neler yapıyoruz?
-2. Yöneticinin yükümlülükleri
-3. Aylık bakımda ne yapılır?
-4. Bakım sözleşmesinde olması gerekenler
-5. Bakım firmasını değiştirmek
-6. Arıza ve kurtarma
-7. Periyodik kontrol ve etiketler
-8. Modernizasyon ve yeni montaj
-9. Bakım ücreti nasıl oluşur?
-10. Sık sorulanlar
+2. Yenidoğan'daki binalar ve asansörler
+3. Aylık bakım ve sözleşme
+4. Arıza ve mahsur kalma
+5. Periyodik kontrol ve etiketler
+6. Modernizasyon
+7. Yeni montaj ve sonradan asansör
+8. Hangi sistem hangi binaya?
+9. Bakım ücreti
+10. Firma seçerken sorulacaklar
+11. İlgili yazılar
+12. Sık sorulanlar
 
 ## Yenidoğan'da neler yapıyoruz?
 
-Aylık bakım, 7/24 arıza ve kurtarma, modernizasyon ve revizyon, yeni montaj ve sonradan asansör, kuyu ve makine dairesi
-temizliği, yeşil etiket hazırlığı. Dişlili, dişlisiz, hidrolik, makine dairesiz, yük, villa ve engelli lifti dahil tüm
-tiplerle çalışıyoruz.
+Aylık bakım, 7/24 arıza ve kurtarma, modernizasyon ve revizyon, yeni montaj ve sonradan asansör, kuyu ve makine
+dairesi temizliği, yeşil etiket hazırlığı. Dişlili, dişlisiz, hidrolik, makine dairesiz, yük, araç, villa ve engelli
+lifti ile yürüyen merdivenlerle çalışıyoruz.
 
-## Yöneticinin yükümlülükleri
+## Yenidoğan'daki binalar ve asansörler
 
-Asansör İşletme ve Bakım Yönetmeliği, bina yöneticisine üç iş veriyor: bakım için sözleşme yapmak, bakımı yaptırmak ve
+Yenidoğan'da konutların çoğu apartman; eski binalarda makine daireli, dişlili asansörler, yenilerde makine dairesiz
+ve dişlisiz sistemler var. Yöneticilerin bize en sık sorduğu iki şey de bu binalardan çıkıyor: "Bakım sözleşmesinde
+nelere bakmalıyım?" ve "Mevcut firmamızdan memnun değiliz, nasıl değiştiririz?" İkisinin cevabını aşağıda, ilgili
+başlıklarda verdik.
+
+## Aylık bakım ve sözleşme
+
+Asansör İşletme ve Bakım Yönetmeliği bina yöneticisine üç iş veriyor: bakım için sözleşme yapmak, bakımı yaptırmak ve
 ücretini ödemek. Bakımı yapan servisin TS 12255 kapsamında TSE Hizmet Yeterlilik Belgesi olması gerekiyor; belgesi
-askıya alınmış ya da iptal edilmiş bir firma bakım veremez. Asansörün yılda bir periyodik kontrolden geçmesini sağlamak
-ve tehlikeli bir durumu bakım firmasına bildirmek de yöneticinin işi. Yönetmeliklerin ayrıntısını "Asansör
-yönetmelikleri" yazımızda, masrafın nasıl paylaşıldığını "Asansör bakımını kim öder?" yazımızda anlattık.
-
-## Aylık bakımda ne yapılır?
+askıya alınmış bir firma bakım veremez.
 
 Bakım ayda en az bir kez yapılıyor: yağlama ve temizlik, fren, halatlar, kapılar ve kilitler, güvenlik devreleri,
 kumanda panosu ve hata kayıtları, kabin ışığı ve alarm kontrolü, ayarlar ve aşınmaya bağlı küçük parça değişimi.
-Sonunda bakım föyü bırakılıyor; yönetim föyleri kalıcı olarak saklıyor. Kabin, kat kapısı, tahrik ünitesi ve güvenlik
-aksamının değişimi, kumanda sisteminde değişiklik ve kabin içi temizlik ise bakım kapsamında değil; ayrıca teklif
-ediliyor. Sürpriz faturaların çoğu buradan çıkıyor.
+Sonunda föy bırakılıyor; yönetim föyleri kalıcı olarak saklıyor. Kabin, kat kapısı, tahrik ünitesi ve güvenlik
+aksamının değişimi ve kabin içi temizlik bakım kapsamında değil; sürpriz faturaların çoğu buradan çıkıyor.
 
-## Bakım sözleşmesinde olması gerekenler
+Sözleşmede yönetmeliğin istedikleri: birden fazla asansör varsa her birinin kimlik numarası ve adresi; asansöre bir
+cihazla ya da şifreleme gibi yöntemlerle kısıtlama yapılıp yapılmadığı; bakımı yapacak teknik personelin bilgileri.
+Yönetmelik zorunlu tutmasa da yazılı olmazsa anlaşmazlık çıkaranlar: föyde nelerin yazacağı, ücrete işçilik, yağ ve
+sarfın dahil olup olmadığı, yedek parçanın nasıl fiyatlanacağı, 7/24 arıza numarası, süre ve fesih koşulları
+(yönetmelikte asgari süre yok). Ayrıntılı kontrol listesi "Asansör bakım sözleşmesi" yazımızda.
 
-Yönetmeliğin istedikleri:
+YK Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
 
-- Sözleşme birden fazla asansörü kapsıyorsa her birinin kimlik numarası ve açık adresi.
-- Asansöre bir cihazla ya da şifreleme gibi yöntemlerle engelleme veya kısıtlama yapılıp yapılmadığı. Bazı sistemlerde
-  servis menüsü şifreyle kilitlenebiliyor; bu bilgi yoksa firma değiştirdiğinizde asansörün ayarlarına kimse
-  ulaşamayabilir.
-- Bakımı yapacak teknik personelin bilgileri.
+## Arıza ve mahsur kalma
 
-Sizin için önemli olanlar (yönetmelik zorunlu tutmuyor ama yazılı olmazsa anlaşmazlık çıkıyor):
-
-- Föyde nelerin yazacağı; yılda en az bir kurtarma eğitimi
-- İşçilik, yağ ve sarfın dahil olup olmadığı; yedek parçanın nasıl fiyatlanacağı
-- 7/24 arıza numarası ve hedeflenen müdahale süresi
-- Periyodik kontrol öncesi ön kontrol ve kontrol günü eşlik
-- Süre, yenileme ve fesih koşulları (yönetmelikte asgari süre yok)
-
-Daha ayrıntılı kontrol listesi "Asansör bakım sözleşmesi" yazımızda.
-
-## Bakım firmasını değiştirmek
-
-**Mevcut sözleşmeyi okuyun.** Süre, fesih bildirimi ve varsa cezai şart; bildirimi yazılı yapın.
-
-**Yeni firmanın belgesini görün.** TSE Hizmet Yeterlilik Belgesi'nin aslı ve geçerlilik tarihi.
-
-**Belgeleri toparlayın.** Bakım föyleri, asansörün kayıt defteri ve son periyodik kontrol raporu yeni firmaya verilir.
-
-**Kısıtlamayı sorun.** Eski firmadan, asansörde şifre ya da cihazla bir kısıtlama olmadığını yazılı isteyin.
-
-**İlk bakımda durum tespiti.** Yeni firma devraldığı asansör için bir durum tespit raporu hazırlayıp size iletiyor;
-devralınan eksiklerle sonradan çıkan sorunları ayırmak için ikinizin de işine yarıyor.
-
-Geçiş döneminde iki firmanın aynı anda asansöre müdahale etmemesine dikkat edin; yönetmelik sözleşme dışındaki
-kişilerin müdahalesine izin vermiyor.
-
-## Arıza ve kurtarma
-
-Arıza hattımız 7/24 açık: **0 (543) 542 86 75**. İçeride biri kaldıysa kapıyı zorlamadan bizi arayın; sağlık sorunu ya
-da duman varsa önce 112. Arıza anında adım adım ne yapılacağını Sarıgazi yazımızda anlattık.
+Arıza hattımız 7/24 açık: **0 (543) 542 86 75**. İçeride biri kaldıysa onunla konuşun, kapıyı zorlamasın, sonra bizi
+arayın; sağlık sorunu ya da duman varsa önce 112. Kurtarma eğitimi almadıysanız düzeneklere dokunmayın. Asansör
+tuhaf davranıyorsa kapatın, "arızalı" yazısı asın ve haber verin. Belirtileri "Asansör arızaları" yazımızda
+anlattık.
 
 ## Periyodik kontrol ve etiketler
 
-Yenidoğan Sancaktepe'ye bağlı olduğu için yıllık periyodik kontrolü Royalcert yapıyor (2024–2028). Kontrol yılda en az
-bir kez yapılıyor, tarih en az üç gün önce bildiriliyor, ücreti yönetim ödüyor.
+Yenidoğan Sancaktepe'ye bağlı olduğu için yıllık periyodik kontrolü Sancaktepe Belediyesi'yle protokolü olan Royalcert
+yapıyor (2024–2028). Kontrol yılda en az bir kez yapılıyor, tarih en az üç gün önce bildiriliyor, ücreti yönetim
+ödüyor.
 
 | Etiket | Anlamı | Süre |
 |---|---|---|
@@ -119,23 +97,61 @@ bir kez yapılıyor, tarih en az üç gün önce bildiriliyor, ücreti yönetim 
 
 Kırmızı etiket alan bir asansöre, sorunlar giderilene kadar bakım verilemiyor; sarı etiket alıp 120 gün içinde
 düzeltilmeyen asansör için de aynı kural geçerli. Yani eksik giderme ertelenirse sözleşmeniz olsa bile bakım duruyor.
-Kontrole hazırlığı Samandıra yazımızda anlattık.
+Kırmızı ya da sarı etiket sonrası ilk takip kontrolü ücretsiz. Ayrıntılar "Asansör etiket renkleri" ve "Asansör
+periyodik kontrolü" yazılarımızda.
 
-## Modernizasyon ve yeni montaj
+## Modernizasyon
 
-Eski asansörlerde kumanda panosu, kapılar, makine ve güvenlik donanımı ayrı ayrı yenilenebiliyor. Yeni binalarda
-keşiften tescile kadar montaj yapıyoruz; asansörü olmayan apartmanlarda sonradan asansör de mümkün (kat malikleri
-kararı, uygun kuyu yeri ve onaylı proje gerekiyor). Yeni asansörün maliyetini "Asansör fiyatları" yazımızda anlattık.
+Eski asansörlerde kumanda panosu, kapılar, makine ve güvenlik donanımı ayrı ayrı yenilenebiliyor. Her kontrolde aynı
+maddeden etiket almak ya da aynı parçanın tekrar tekrar değişmesi yenileme zamanının işareti. Güvenlik seviyesini
+artırmak yöneticinin sorumluluğu; yük, hız ya da seyir mesafesi değişirse onaylı proje ve tescil gerekiyor.
 
-## Bakım ücreti nasıl oluşur?
+## Yeni montaj ve sonradan asansör
+
+Yeni binalarda keşiften tescile kadar montaj yapıyoruz; tescil öncesi ilk kontrolün ücreti normal periyodik kontrolün
+üç katı. Asansörü olmayan apartmanlarda sonradan asansör de mümkün: kat malikleri kararı, uygun kuyu yeri ve onaylı
+proje gerekiyor. Ayrıntılı rehber Maltepe yazımızda, maliyet kalemleri "Asansör fiyatları" yazımızda.
+
+## Hangi sistem hangi binaya?
+
+| Bina | Genellikle uygun sistem |
+|---|---|
+| Yeni apartman ve siteler | Makine dairesiz, dişlisiz |
+| Makine dairesi olan eski apartman | Dişlili ya da dişlisiz (modernizasyonla) |
+| Az katlı bina, sonradan asansör | Hidrolik ya da makine dairesiz |
+| Engelli erişimi | Engelli lifti |
+| İş yeri, depo | Yük asansörü |
+
+Farkları "Hidrolik mi, halatlı mı?" yazımızda anlattık.
+
+## Bakım ücreti
 
 Fiyatı asansörün sınıfı, durak sayısı, kapasite ve sözleşmenin kapsamı belirliyor. TASİAD'ın 2026 tavsiyesi konut tipi
 bir asansör için (7 durağa kadar) aylık 3.000 TL + KDV; her ek durak için 500 TL; yedek parça hariç. İki teklifi
 karşılaştırırken rakama değil kapsama bakın: yağ ve sarf dahil mi, arıza çağrısı ücretli mi, ön kontrol var mı?
-Ayrıntısı "Asansör bakım ücreti" yazımızda. Bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi bizde ücretsiz;
-yeni bir apartmanı bize yönlendirenlere bir sonraki bakım faturasında indirim yapıyoruz.
+Ayrıntısı "Asansör bakım ücreti" yazımızda.
 
-> ### Bakım sözleşmesi teklifi
+## Firma seçerken sorulacaklar
+
+- TSE Hizmet Yeterlilik Belgesi'nin aslı ve geçerlilik tarihi
+- Arızaya varış süresi ve gece ulaşılacak numara
+- Ücrete dahil olanlar, yedek parça fiyatlaması
+- Föy ve kurtarma eğitimi
+- Asansörde cihazla ya da şifreyle kısıtlama olup olmadığı
+
+Firmayı değiştirecekseniz: mevcut sözleşmenin süre ve fesih maddesine bakın, bildirimi yazılı yapın; bakım föylerini,
+kayıt defterini ve son kontrol raporunu yeni firmaya verin; eski firmadan şifre ya da cihazla bir kısıtlama olmadığını
+yazılı isteyin. Yeni firma devraldığı asansör için bir durum tespit raporu hazırlıyor; devralınan eksiklerle sonradan
+çıkan sorunları ayırmak için ikinizin de işine yarıyor. Geçişte iki firmanın aynı anda asansöre müdahale etmemesine
+dikkat edin; yönetmelik sözleşme dışındaki kişilerin müdahalesine izin vermiyor.
+
+## İlgili yazılar
+
+- İlçe ve diğer semtler: Sancaktepe, Samandıra, Sarıgazi
+- Konu yazıları: "Asansör bakım sözleşmesi", "Asansör bakımını kim öder?", "Asansör bakım ücreti", "Asansör etiket
+  renkleri", "Asansör yönetmelikleri", "Asansör arızaları"
+
+> ### Yenidoğan'daki asansörünüz için teklif alın
 > Ücretsiz keşif, yazılı ve açık kapsamlı sözleşme. **[Teklif alın]** · 0 (543) 542 86 75
 
 ## Sık sorulanlar
@@ -152,14 +168,8 @@ Sözleşmenizdeki fesih maddesine bağlı. Bildirimi yazılı yapın, belgeleri 
 **Yedek parça bakım ücretine dahil mi?**
 Genellikle hayır. Aşınmaya bağlı küçük parçalar bakımda; büyük değişimler ayrıca teklif edilir.
 
-**Bakım föylerini kim saklar?**
-Yönetim; föyler makine dairesinde ya da yönetim bürosunda kalıcı olarak saklanmalı.
-
 **Asansörümüzde şifre kısıtlaması olup olmadığını nasıl anlarız?**
 Bakım firmanızdan yazılı isteyin; yönetmelik bu bilginin sözleşmede yer almasını istiyor.
-
-**Bakım firmasının belgesini nasıl kontrol ederim?**
-TSE Hizmet Yeterlilik Belgesi'nin aslını ve geçerlilik tarihini isteyin.
 
 **Kırmızı etiketli asansöre bakım yapılır mı?**
 Hayır. Önce eksikler giderilir; asansör en az kusurlu duruma gelince bakım devam eder.
@@ -173,6 +183,12 @@ Sancaktepe Belediyesi'yle protokolü olan Royalcert (2024–2028).
 **Aylık bakım ücreti ne kadar?**
 Konut tipi bir asansör için TASİAD'ın 2026 tavsiyesi aylık 3.000 TL + KDV.
 
+**Eski asansörü tamamen değiştirmek zorunda mıyız?**
+Her zaman değil; kumanda, kapı, makine ya da güvenlik donanımı ayrı ayrı yenilenebiliyor.
+
+**Sonradan asansör yaptırabilir miyiz?**
+Çoğu binada mümkün; kat malikleri kararı, kuyu yeri ve onaylı proje gerekiyor.
+
 ## Kaynaklar
 
 - Asansör İşletme ve Bakım Yönetmeliği, güncel metin:
@@ -184,5 +200,5 @@ Konut tipi bir asansör için TASİAD'ın 2026 tavsiyesi aylık 3.000 TL + KDV.
 
 ## Editör notları (yayınlanmaz)
 
-- Madde dayanakları: İB m. 14/1, 13/1, 10/14, 14/3, 4/e, 9, 10/2, 10/3, 8/2 (birden fazla asansör), 8/5, 10/12, 10/6,
-  8/3, 10/1, 10/13, 10/11; PK m. 8/1, 16/9, 23/1, 11.
+- Madde dayanakları: İB m. 14/1, 13/1, 10/14, 14/3, 4/e, 9, 10/2, 10/3, 8/2, 8/5, 10/12, 10/6, 8/3, 10/1, 10/13,
+  10/11, 16/4; PK m. 8/1, 16/9, 23/1, 23/2, 11.
