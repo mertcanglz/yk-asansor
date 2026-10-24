@@ -14,7 +14,7 @@
 | Meta (≈152) | `Asansör arızaları nasıl anlaşılır, hangi belirtide asansör kapatılmalı, mahsur kalınca ne yapılır? Belirtiler, olası sebepler ve yöneticinin yapacakları.` |
 | H1 | Asansör arızaları: *Belirtiler, sebepler ve ne yapılmalı?* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
-| İç bağlantılar | 7/24 arıza sayfası; asansör kapısı, akü ve elektrik kesintisi, kırmızı etiket yazıları; Sarıgazi yer yazısı; teklif formu |
+| İç bağlantılar | 7/24 arıza sayfası; asansör kapısı, akü ve elektrik kesintisi, kırmızı etiket yazıları; ilçe yer yazıları; teklif formu |
 | Kelime sahipliği notu | "asansör tamiri" ve "arıza servisi" 7/24 arıza sayfasının; bu yazı bilgi niyetini hedefler |
 
 ---
@@ -152,4 +152,3 @@ Evet; bakım firması yılda en az bir kez, yöneticinin belirlediği kişilere 
 ## Editör notları (yayınlanmaz)
 
 - Belirti tablosu ve "kabin havalandırması yeterlidir" ifadesi saha ve genel teknik bilgidir; Ömürcan Bey kontrol etsin.
-- Sarıgazi yer yazısı arıza konusunu yerel bağlamda işliyor; bu yazı genel ve daha geniş belirti listesiyle.

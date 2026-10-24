@@ -1,8 +1,9 @@
 # Taslak: Cevizli asansör hizmetleri (semt yazısı)
 
-> **Durum:** taslak v2, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
+> **Durum:** taslak v3, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
 > **Bağlı olduğu ilçe yazısı:** `maltepe-asansor.md` · **Marka:** yalnızca "YK Asansör"
-> **v2:** Başlık genişletildi; tüm hizmetler ayrı başlıklarla açıldı; kabin yenileme öne çıkan bölüm.
+> **v3 (24 Ekim 2026):** Tüm yer yazılarında ortak 12 başlığa getirildi; kabin yenileme ayrı bölümler olmaktan çıkıp
+> "Modernizasyon" başlığının içine alındı; ayrı "öne çıkan konu" yok.
 
 ## Yayın bilgileri
 
@@ -10,104 +11,132 @@
 |---|---|
 | URL | `/blog/cevizli-asansor.html` |
 | Ana sorgu | cevizli asansör |
-| Yan sorgular | cevizli asansör bakım, cevizli asansör firması, cevizli asansör tamiri, asansör kabin yenileme |
-| `<title>` (58) | `Cevizli Asansör: Bakım, Arıza, Montaj ve Kabin Yenileme \| YK Asansör` |
-| Meta (≈152) | `Maltepe Cevizli'de asansör bakımı, 7/24 arıza, montaj, modernizasyon ve kabin yenileme. Etiketler, bakım ücreti ve kabin seçenekleri: 0 (543) 542 86 75.` |
-| H1 | Cevizli'de asansör hizmetleri: *Bakım, arıza, montaj ve kabin yenileme* |
-| Öne çıkan bölüm | Kabin yenileme ve kabin seçenekleri |
+| Yan sorgular | cevizli asansör bakım, cevizli asansör firması, cevizli asansör tamiri, maltepe cevizli asansör |
+| `<title>` (55) | `Cevizli Asansör: Bakım, Montaj ve 7/24 Arıza \| YK Asansör` |
+| Meta (≈150) | `Maltepe Cevizli'de asansör bakımı, 7/24 arıza, montaj, modernizasyon ve kabin yenileme. Periyodik kontrol ve ücret: 0 (543) 542 86 75.` |
+| H1 | Cevizli'de asansör hizmetleri: *Bakım, arıza, montaj ve periyodik kontrol rehberi* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
-| İç bağlantılar | Maltepe, Küçükyalı, İdealtepe, Başıbüyük yazıları; konu yazıları (kabin modelleri, asansör kapısı, etiket renkleri, bakım ücreti, merdiven asansörü ve engelli lifti); modernizasyon sayfası; teklif formu |
+| İç bağlantılar | Maltepe, Küçükyalı, İdealtepe, Başıbüyük yazıları; Kartal yazısı (Kartal'daki Cevizli için); konu yazıları; modernizasyon sayfası; teklif formu |
 
 ---
 
 ## Metin
 
-# Cevizli'de asansör hizmetleri: *Bakım, arıza, montaj ve kabin yenileme*
+# Cevizli'de asansör hizmetleri: *Bakım, arıza, montaj ve periyodik kontrol rehberi*
 
 Cevizli, Maltepe'nin bilinen semtlerinden biri ve aynı adlı bir mahallesi; eski apartmanlarla yeni yapıların bir arada
-olduğu bir yer. YK Asansör olarak Sancaktepe merkezli ekibimizle Cevizli'de aylık bakım, 7/24 arıza, modernizasyon ve
-montaj yapıyoruz. Bu yazıda bütün hizmetleri anlattık; burada sık konuştuğumuz bir konuya, kabin yenilemeye de ayrıca
-yer verdik. Asansör teknik olarak sorunsuz çalışsa bile eskimiş bir kabin, binanın bakımsız olduğu izlenimini verir.
+olduğu bir yer. (Kartal'da da aynı adlı bir mahalle var; bu yazı Maltepe'deki Cevizli için, Kartal için Kartal yazımıza
+bakın.) YK Asansör olarak Sancaktepe merkezli ekibimizle Cevizli'de aylık bakım, 7/24 arıza, modernizasyon ve montaj
+yapıyoruz. Bu yazıda bir yöneticinin bilmesi gerekenleri sırayla anlattık.
 
 **Bu yazıda**
 
 1. Cevizli'de neler yapıyoruz?
-2. Aylık bakım ve sözleşme
-3. Arıza ve kurtarma
-4. Periyodik kontrol ve etiketler
-5. Kabin yenileme ne zaman gündeme gelir, neler yenilenir?
-6. Kabin tipleri
-7. Teknik açıdan dikkat edilecekler
-8. Modernizasyon ve yeni montaj
-9. Bakım ücreti ve firma seçimi
-10. Sık sorulanlar
+2. Cevizli'deki binalar ve asansörler
+3. Aylık bakım ve sözleşme
+4. Arıza ve mahsur kalma
+5. Periyodik kontrol ve etiketler
+6. Modernizasyon
+7. Yeni montaj ve sonradan asansör
+8. Hangi sistem hangi binaya?
+9. Bakım ücreti
+10. Firma seçerken sorulacaklar
+11. İlgili yazılar
+12. Sık sorulanlar
 
 ## Cevizli'de neler yapıyoruz?
 
-Aylık bakım, 7/24 arıza ve kurtarma, kabin yenileme dahil modernizasyon, yeni montaj ve sonradan asansör, kuyu ve makine
-dairesi temizliği, yeşil etiket hazırlığı. Tüm asansör tipleriyle çalışıyoruz.
+Aylık bakım, 7/24 arıza ve kurtarma, kabin yenileme dahil modernizasyon, yeni montaj ve sonradan asansör, kuyu ve
+makine dairesi temizliği, yeşil etiket hazırlığı. Dişlili, dişlisiz, hidrolik, makine dairesiz, yük, araç, villa ve
+engelli lifti ile yürüyen merdivenlerle çalışıyoruz.
+
+## Cevizli'deki binalar ve asansörler
+
+Cevizli'de eski binalarda makine daireli, dişlili asansörler; yeni yapılarda makine dairesiz, dişlisiz sistemler var.
+Eski asansörlerin bir kısmı teknik olarak sorunsuz çalışsa da kabini eskimiş: çizik, ezik ya da paslı duvarlar,
+aşınmış zemin, yetersiz aydınlatma, okunmayan buton paneli. Bina girişi yenilenmiş ama asansör eski kalmışsa bu, binanın
+bakımsız olduğu izlenimini veriyor.
 
 ## Aylık bakım ve sözleşme
 
-Bakım ayda en az bir kez yapılıyor ve bakımı yapan firmanın TSE Hizmet Yeterlilik Belgesi olmalı. Her ay fren, halatlar,
-kapılar ve kilitler, güvenlik devreleri, kumanda, kabin ışığı ve alarm kontrol ediliyor, raylar yağlanıyor ve föy
-bırakılıyor. Kabin değişimi ve kabin içi temizlik bakım kapsamında değil. Teklif karşılaştırmayı İdealtepe yazımızda,
-sözleşmeyi "Asansör bakım sözleşmesi" yazımızda anlattık.
+Bakım ayda en az bir kez, asansörün bakım kılavuzuna ve TS EN 13015 standardına göre yapılıyor ve bakımı yapan firmanın
+TSE Hizmet Yeterlilik Belgesi olmalı. Bakım için sözleşme yapmak, bakımı yaptırmak ve ödemek yöneticinin işi. Her ay
+fren, halatlar, kapılar ve kilitler, güvenlik devreleri, kumanda, kabin ışığı ve alarm kontrol ediliyor, raylar
+yağlanıyor ve föy bırakılıyor. Kabin değişimi ve kabin içi temizlik bakım kapsamında değil. Sözleşmeyi "Asansör bakım
+sözleşmesi" yazımızda anlattık.
 
-## Arıza ve kurtarma
+YK Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
 
-Hattımız 7/24 açık: 0 (543) 542 86 75. İçeride biri kaldıysa kapıyı zorlamadan bizi arayın; sağlık sorunu ya da duman
-varsa önce 112. Kapı sorunlarını "Asansör kapısı" yazımızda anlattık.
+## Arıza ve mahsur kalma
+
+Hattımız 7/24 açık: **0 (543) 542 86 75**. İçeride biri kaldıysa kapıyı zorlamadan bizi arayın; sağlık sorunu ya da
+duman varsa önce 112. Kurtarma eğitimi almadıysanız düzeneklere dokunmayın. Kapı sorunlarını "Asansör kapısı",
+belirtileri "Asansör arızaları" yazımızda anlattık.
 
 ## Periyodik kontrol ve etiketler
 
 Cevizli Maltepe'ye bağlı olduğu için yıllık periyodik kontrolü, Maltepe Belediyesi'nin 6 Şubat 2026'da protokol
-imzaladığı TMMOB Makina Mühendisleri Odası İstanbul Şubesi yapıyor. Tarih en az üç gün önce bildiriliyor, ücreti yönetim
-ödüyor. Sarı etikette eksikler en geç 120 günde, kırmızı etikette en geç 60 günde giderilmeli. Kabin aydınlatması, alarm
-ve iletişim muayenede bakılan noktalar; kabin yenilemesi bunları da kapsamalı. Kırmızı etiket sürecini Küçükyalı
-yazımızda anlattık.
+imzaladığı TMMOB Makina Mühendisleri Odası İstanbul Şubesi yapıyor. Tarih en az üç gün önce bildiriliyor, ücreti
+yönetim ödüyor. Sarı etikette eksikler en geç 120 günde, kırmızı etikette en geç 60 günde giderilmeli; kırmızı etiketli
+asansör kullanılmıyor, süre dolarsa mühürleniyor. Mavi etiketteki eksikler bir sonraki kontrole kadar giderilebiliyor.
+Kabin aydınlatması, alarm ve iletişim muayenede bakılan noktalar; kabin yenilemesi bunları da kapsamalı. Ayrıntılar
+"Asansör etiket renkleri" ve "Kırmızı etiket alan asansör" yazılarımızda.
 
-## Kabin yenileme ne zaman gündeme gelir, neler yenilenir?
+## Modernizasyon
 
-Kabin duvarları çizik, ezik ya da paslıysa; zemin aşınmış ya da kayganlaşmışsa; aydınlatma yetersizse; buton paneli
-eskimiş ve yazıları okunmuyorsa; ayna ve tutamak gibi temel donanım yoksa; bina girişi yenilenmiş ama asansör eski
-kalmışsa kabin yenileme gündeme geliyor.
+Kumanda, kapı, makine ve güvenlik donanımı ayrı ayrı yenilenebiliyor; yönetmelik mevcut asansörün güvenlik seviyesini
+artırmayı yöneticinin sorumluluğuna bırakıyor. Kabin yenilemesi çoğu zaman kapı ve kumanda yenilemesiyle birlikte
+yapılıyor; böylece asansör hem görünüş hem çalışma açısından toparlanıyor.
 
-Yenilenebilecekler: duvar panelleri (paslanmaz çelik, boyalı sac ya da laminat), zemin (granit, kauçuk ya da vinil;
-kaymaz ve gereksiz ağır olmayan), tavan ve LED aydınlatma, buton paneli ve kat göstergesi (kabartmalı butonlar ve sesli
-kat anonsu eklenebiliyor), ayna ve tutamak, kabin kapısı olmayan eski asansörlerde kabin kapısı. Ayna kabini geniş
-gösterdiği gibi tekerlekli sandalye kullananların geri çıkarken arkayı görmesine de yardım ediyor.
+Kabinde yenilenebilecekler: duvar panelleri (paslanmaz çelik, boyalı sac ya da laminat), zemin (granit, kauçuk ya da
+vinil; kaymaz ve gereksiz ağır olmayan), tavan ve LED aydınlatma, buton paneli ve kat göstergesi (kabartmalı butonlar ve
+sesli kat anonsu eklenebiliyor), ayna ve tutamak, kabin kapısı olmayan eski asansörlerde kabin kapısı. Kabine eklenen her
+kilo asansörün dengesini etkiliyor; ağırlık artarsa karşı ağırlığın ve frenin buna göre ayarlanması gerekiyor. Kabinin
+yük ya da taşıma özelliklerini değiştiren işler bakım değil tadilat sayılıyor ve onaylı projeyle yapılıp tescil için
+başvuruluyor. Kabin tiplerini "Asansör kabin modelleri" yazımızda anlattık.
 
-## Kabin tipleri
+## Yeni montaj ve sonradan asansör
 
-Rezidans ve yolcu kabinleri konutlarda ve iş yerlerinde en yaygın tip; malzeme binanın girişiyle uyumlu seçiliyor.
-Panoramik cam kabinler iş merkezlerinde ve bina dışı kuyularda kullanılıyor; görsel etkisi yüksek, camın temizliği ek iş.
-Sedye ve medikal kabinler hastane ve bakım evlerinde, yük ve araç kabinleri darbelere dayanıklı yüzeylerle. Ayrıntılı
-seçenekleri "Asansör kabin modelleri ve panoramik asansör" yazımızda anlattık.
+Yeni binalarda ve sonradan asansörde keşiften tescile kadar çalışıyoruz; tescil öncesi ilk kontrolün ücreti normal
+periyodik kontrolün üç katı. Sonradan asansör için kat malikleri kararı, kuyu için yer ve onaylı proje gerekiyor;
+süreci Maltepe yazımızda anlattık.
 
-## Teknik açıdan dikkat edilecekler
+## Hangi sistem hangi binaya?
 
-Kabine eklenen her kilo asansörün dengesini etkiliyor. Ağır granit zemin ya da kalın paneller kabin ağırlığını
-artırırsa karşı ağırlığın ve frenin buna göre ayarlanması gerekiyor. Kabinin yük ya da taşıma özelliklerini değiştiren
-işler bakım değil tadilat sayılıyor ve onaylı projeyle yapılıp tescil için başvuruluyor. Kabin malzemesinin yanmaz ya da
-zor alevlenir olması ve acil ışığın çalışması da önemli. Yenileme süresince asansör kullanılamıyor; malzemeler önceden
-hazırlanıp iş planlı bir tarihte yapılıyor.
+| Bina | Genellikle uygun sistem |
+|---|---|
+| Yeni apartman | Makine dairesiz, dişlisiz |
+| Makine dairesi olan eski apartman | Dişlili ya da dişlisiz (modernizasyonla) |
+| İş merkezi, bina dışı kuyu | Panoramik cam kabinli asansör |
+| Asansörsüz apartman | Makine dairesiz ya da hidrolik |
+| Engelli erişimi | Engelli lifti |
 
-## Modernizasyon ve yeni montaj
+Farkları "Hidrolik mi, halatlı mı?" yazımızda anlattık.
 
-Kabin yenilemesi çoğu zaman kapı ve kumanda yenilemesiyle birlikte yapılıyor; böylece asansör hem görünüş hem çalışma
-açısından toparlanıyor. Makine ve güvenlik donanımı da ayrı ayrı yenilenebiliyor; yönetmelik mevcut asansörün güvenlik
-seviyesini artırmayı yöneticinin sorumluluğuna bırakıyor. Yeni binalarda ve sonradan asansörde keşiften tescile kadar
-çalışıyoruz; süreci Maltepe yazımızda anlattık.
+## Bakım ücreti
 
-## Bakım ücreti ve firma seçimi
+TASİAD'ın 2026 tavsiyesi (aylık, KDV hariç, 7 durağa kadar): konut ve ofis asansörü 3.000 TL; panoramik asansörlerde
+2.250 TL ek, her ek durak 500 TL; yedek parça dahil değil. Kabin yenilemenin fiyatı malzemeye ve kabin ölçüsüne göre
+değişiyor; keşiften sonra kalem kalem teklif veriyoruz. Ayrıntılar "Asansör bakım ücreti" yazımızda.
 
-TASİAD'ın 2026 tavsiyesi konut tipi bir asansör için (7 durağa kadar) aylık 3.000 TL + KDV; panoramik asansörlerde 2.250 TL
-ek. Kabin yenilemenin fiyatı malzemeye ve kabin ölçüsüne göre değişiyor; keşiften sonra kalem kalem teklif veriyoruz.
-Firma seçerken TSE belgesini, arızaya varış süresini, ücrete dahil olanları ve föyü sorun.
+## Firma seçerken sorulacaklar
 
-> ### Kabininizi yenilemek mi istiyorsunuz?
-> Malzeme örnekleriyle gelip binanıza uygun seçenekleri gösterelim. **[Teklif alın]** · 0 (543) 542 86 75
+- TSE Hizmet Yeterlilik Belgesi ve geçerlilik tarihi
+- Arızaya varış süresi ve gece ulaşılacak numara
+- Ücrete dahil olanlar, yedek parça fiyatlaması
+- Kabin yenilemede malzeme örnekleri ve yenileme süresince asansörün ne kadar kapalı kalacağı
+- Föy ve kurtarma eğitimi
+- Asansörde cihazla ya da şifreyle kısıtlama olup olmadığı (sözleşmede yazmalı)
+
+## İlgili yazılar
+
+- İlçe ve diğer semtler: Maltepe, Küçükyalı, İdealtepe, Başıbüyük
+- Kartal'daki Cevizli için: Kartal yazısı
+- Konu yazıları: "Asansör kabin modelleri", "Asansör kapısı", "Asansör etiket renkleri", "Asansör bakım ücreti",
+  "Merdiven asansörü ve engelli lifti"
+
+> ### Cevizli'deki asansörünüz için teklif alın
+> Kabin yenileme için malzeme örnekleriyle gelip seçenekleri gösterelim. **[Teklif alın]** · 0 (543) 542 86 75
 
 ## Sık sorulanlar
 
@@ -124,8 +153,8 @@ Yapılacak işe göre değişiyor; süreyi keşiften sonra yazılı veriyoruz.
 Yoğun kullanılan binalarda paslanmaz çelik; temizlenmesi kolay ve darbeye dayanıklı.
 
 **Kabin ağırlaşırsa sorun olur mu?**
-Ağırlık değişirse karşı ağırlığın ve frenin ayarlanması gerekiyor; yük ya da taşıma özelliklerini değiştiren işler tadilat
-sayılıyor.
+Ağırlık değişirse karşı ağırlığın ve frenin ayarlanması gerekiyor; yük ya da taşıma özelliklerini değiştiren işler
+tadilat sayılıyor.
 
 **Engelli erişimi için kabine neler eklenebilir?**
 Uygun yükseklikte ve kabartmalı butonlar, tutamak, ayna ve sesli kat anonsu.
@@ -138,6 +167,9 @@ En geç 120 gün; kırmızı etikette 60 gün.
 
 **Aylık bakım ücreti ne kadar?**
 Konut tipi bir asansör için TASİAD'ın 2026 tavsiyesi aylık 3.000 TL + KDV.
+
+**Sonradan asansör yaptırabilir miyiz?**
+Çoğu binada mümkün; kat malikleri kararı, kuyu yeri ve onaylı proje gerekiyor.
 
 **Gece arıza olursa kimi aramalıyım?**
 0 (543) 542 86 75. Hattımız 7/24 açık.
@@ -154,6 +186,7 @@ Konut tipi bir asansör için TASİAD'ın 2026 tavsiyesi aylık 3.000 TL + KDV.
 
 ## Editör notları (yayınlanmaz)
 
-- Madde dayanakları: İB m. 4/e, 13/1, 9 (kabin değişimi kapsam dışı; yük/taşıma değişikliği tadilat), 16/4; PK m. 16/9,
-  23/1, 11.
-- Malzeme, ağırlık ve yangın notları genel teknik bilgidir; Ömürcan Bey kontrol etsin.
+- Madde dayanakları: İB m. 4/e, 9 (kabin değişimi kapsam dışı; yük/taşıma değişikliği tadilat), 9/7, 14/1, 13/1, 10/2,
+  16/4, 8/5; PK m. 16/9, 23/1, 23/2, 9/7, 11.
+- Malzeme, ağırlık notları genel teknik bilgidir; Ömürcan Bey kontrol etsin.
+- Kartal'da da Cevizli mahallesi var (Vikipedi); karışıklığı önlemek için girişte not edildi.

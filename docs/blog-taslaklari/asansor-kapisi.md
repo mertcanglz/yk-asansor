@@ -14,7 +14,7 @@
 | Meta (≈152) | `Asansör kapısı çeşitleri nelerdir, kapı neden kapanmaz, hangi kapı arızası tehlikelidir? Kat kapısı, kabin kapısı, kilit ve fotosel hakkında bilmeniz gerekenler.` |
 | H1 | Asansör kapısı: *Çeşitleri, sık görülen arızaları ve güvenlik* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
-| İç bağlantılar | 7/24 arıza sayfası; modernizasyon sayfası; asansör arızaları yazısı; Çakmak yer yazısı; teklif formu |
+| İç bağlantılar | 7/24 arıza sayfası; modernizasyon sayfası; asansör arızaları yazısı; ilçe yer yazıları; teklif formu |
 
 ---
 

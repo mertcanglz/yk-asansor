@@ -14,7 +14,7 @@
 | Meta (≈153) | `Asansör fiyatları neye göre değişir? Kat sayısı, kapasite, sistem, kabin, kuyu ve proje giderleri; teklif nasıl okunur? Ücretsiz keşif: 0 (543) 542 86 75.` |
 | H1 | Asansör fiyatları 2026: *Yeni bir asansörün maliyetini neler belirler?* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
-| İç bağlantılar | Yeni montaj sayfası; sistem karşılaştırması yazısı; kabin modelleri yazısı; asansör bakım ücreti yazısı; Maltepe (sonradan asansör), Başıbüyük, Taşdelen yer yazıları; teklif formu |
+| İç bağlantılar | Yeni montaj sayfası; sistem karşılaştırması yazısı; kabin modelleri yazısı; asansör bakım ücreti yazısı; Maltepe (sonradan asansör) ve diğer ilçe yer yazıları; teklif formu |
 | Kelime sahipliği notu | "asansör montajı" yeni montaj sayfasının; bu yazı fiyat araştırması niyetini hedefler |
 
 ---

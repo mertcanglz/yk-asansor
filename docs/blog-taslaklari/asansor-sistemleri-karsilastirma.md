@@ -14,7 +14,7 @@
 | Meta (≈150) | `Hidrolik, dişlili, dişlisiz ve makine dairesiz asansörlerin farkları; hangi sistem hangi binaya uygun, bakımı ve işletmesi nasıl? Sade karşılaştırma.` |
 | H1 | Hidrolik mi, halatlı mı? Dişlili mi, dişlisiz mi? *Asansör sistemleri karşılaştırması* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
-| İç bağlantılar | Asansör sistemleri sayfası ve sistem sayfaları (dişlili, dişlisiz, hidrolik, makine dairesiz); asansör fiyatları yazısı; Şerifali, Alemdağ, Başıbüyük yer yazıları; teklif formu |
+| İç bağlantılar | Asansör sistemleri sayfası ve sistem sayfaları (dişlili, dişlisiz, hidrolik, makine dairesiz); asansör fiyatları yazısı; ilçe yer yazıları; teklif formu |
 | Kelime sahipliği notu | "hidrolik asansör", "dişlisiz asansör", "makine dairesiz asansör" sistem sayfalarının; bu yazı yalnızca karşılaştırma niyetini hedefler ve onlara bağlanır |
 
 ---
@@ -65,7 +65,7 @@ az enerji harcıyor; dişli yağı değişimi gibi bir kalem yok. Bugün yeni bi
 
 **Makine dairesiz (MRL).** Motor kuyunun içinde, kumanda en üst kattaki bir dolapta. Çatıda oda gerektirmediği için yer
 kazandırıyor; yeni binalarda en yaygın tip. Bakımı kabin üstünden ve kumanda dolabından yapılıyor; elektronik ve sürücü
-takibi daha önemli. Makine dairesiz sistemlerin bakımındaki farkları Şerifali yer yazımızda ayrıntılı anlattık.
+takibi daha önemli.
 
 ## Karşılaştırma tablosu
 
@@ -93,16 +93,15 @@ Tablo genel bir karşılaştırma; marka ve modele göre farklar olabilir.
 | Kısa mesafede ağır yük, otopark | Hidrolik yük ya da araç asansörü |
 
 Sonradan asansör eklenen binalarda çatıda makine dairesi yapmak çoğu zaman mümkün olmadığı için seçim hidrolik ile makine
-dairesiz arasında oluyor. Kat sayısı arttıkça makine dairesiz sistemler daha mantıklı hâle geliyor. Yeni binada kapasite
-ve sayının nasıl seçileceğini Başıbüyük yer yazımızda, maliyeti belirleyen kalemleri "Asansör fiyatları" yazımızda anlattık.
+dairesiz arasında oluyor. Kat sayısı arttıkça makine dairesiz sistemler daha mantıklı hâle geliyor. Maliyeti belirleyen kalemleri
+"Asansör fiyatları" yazımızda anlattık.
 
 ## Bakım farkları
 
 Bakım her sistemde ayda en az bir kez, asansörü monte edenin bakım kılavuzuna ve TS EN 13015 standardına göre yapılıyor.
 Değişen şey ağırlık noktası:
 
-- **Hidrolik:** yağ seviyesi ve kaçak, piston ve contalar, valfler, pompa ünitesinin ısınması. Ayrıntısı Alemdağ yer
-  yazımızda.
+- **Hidrolik:** yağ seviyesi ve kaçak, piston ve contalar, valfler, pompa ünitesinin ısınması.
 - **Dişlili:** dişli kutusunun yağı ve aşınması, fren, halatlar.
 - **Dişlisiz ve makine dairesiz:** sürücü ve elektronik kartların hata kayıtları, fren, halat ya da kayış, kumanda dolabının
   ısısı ve tozu. Bazı markalarda servis aracı ya da şifre gerekebiliyor; yönetmelik asansöre cihazla ya da şifreyle bir

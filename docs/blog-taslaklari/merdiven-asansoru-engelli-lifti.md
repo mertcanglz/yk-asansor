@@ -14,7 +14,7 @@
 | Meta (≈150) | `Merdiven asansörü, platform lift ve dikey lift arasındaki farklar; hangi çözüm kime ve hangi binaya uygun, bakımı nasıl yapılır? 0 (543) 542 86 75.` |
 | H1 | Merdiven asansörü ve engelli lifti: *Hangi çözüm kime uygun?* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
-| İç bağlantılar | Villa ve engelli lifti sistem sayfası; Çekmeköy, Tepeüstü, Ömerli yer yazıları; kabin modelleri yazısı; asansör yönetmelikleri yazısı; teklif formu |
+| İç bağlantılar | Villa ve engelli lifti sistem sayfası; ilçe yer yazıları (ör. Çekmeköy); kabin modelleri yazısı; asansör yönetmelikleri yazısı; teklif formu |
 | Kelime sahipliği notu | "engelli asansörü", "villa asansörü", "ev asansörü" sistem sayfasının; bu yazı "merdiven asansörü" ve lift niyetini hedefler |
 
 ---

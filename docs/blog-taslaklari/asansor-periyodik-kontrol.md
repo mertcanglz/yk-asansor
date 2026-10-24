@@ -14,7 +14,7 @@
 | Meta (≈152) | `Asansör periyodik kontrolü kim yapar, ne zaman yapılır, ücreti kim öder ve nasıl belirlenir? Tarih bildirimi, takip kontrolü ve etiketler; güncel yönetmeliğe göre.` |
 | H1 | Asansör periyodik kontrolü: *Kim yapar, ücreti kim öder, nasıl hazırlanılır?* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
-| İç bağlantılar | Yeşil etiket sayfası; etiket renkleri ve kırmızı etiket yazıları; asansör yönetmelikleri yazısı; Samandıra yer yazısı (hazırlık); temizlik ve muayene sayfası; teklif formu |
+| İç bağlantılar | Yeşil etiket sayfası; etiket renkleri ve kırmızı etiket yazıları; asansör yönetmelikleri yazısı; ilçe yer yazıları; temizlik ve muayene sayfası; teklif formu |
 
 ---
 

@@ -116,11 +116,16 @@ hem buraya hem siteye işle:
   Sıra (kullanıcı kararı, her aşama onaydan sonra): (1) Sancaktepe ana yazısı → (2) yakın ilçeler ve bilindik büyük
   semtler: Ümraniye, Çekmeköy, Sultanbeyli, Maltepe ve Dudullu, Samandıra, Sarıgazi, Taşdelen, Maltepe semtleri gibi (liste ve sıra
   `docs/mahalle-talep-analizi.md` Bölüm 5.2). **Mahalle yazıları iptal** (kullanıcı kararı) — bkz. `docs/mahalle-talep-analizi.md`
-  → (3) diğer çevre ilçeler yakından uzağa (Ataşehir, Kartal, Maltepe, Pendik…). **En uzak sınır İstanbul Anadolu Yakası**; dışına taşılmaz.
+  → (3) diğer çevre ilçeler yakından uzağa: Kartal (+ Yakacık, Soğanlık, Dragos), Pendik, Ataşehir taslak hazır (Bölüm 5.3);
+  sonra Tuzla, Kadıköy, Üsküdar, Beykoz. **En uzak sınır İstanbul Anadolu Yakası**; dışına taşılmaz.
+  **Tüm ilçe ve semt yazıları aynı 12 başlığı taşır** (kullanıcı kararı, 24 Ekim 2026): neler yapıyoruz, binalar ve
+  asansörler, aylık bakım ve sözleşme, arıza ve mahsur kalma, periyodik kontrol ve etiketler, modernizasyon, yeni montaj
+  ve sonradan asansör, hangi sistem hangi binaya, bakım ücreti, firma seçerken, ilgili yazılar, SSS. Semtlere ayrı bir
+  "ana konu" ya da "öne çıkan bölüm" verilmez; semtin özel durumu ilgili başlığın içinde anlatılır.
   Bloglarda iş fotoğrafı ve gerçek iş örneği kullanılmaz (kullanıcı kararı); özgünlük doğrulanmış yerel
   bilgiyle (ör. belediyenin protokollü muayene kuruluşu, semtin bağlı olduğu ilçe, bina dokusu; kuruluş
-  yılı ve tarihçe yalnızca Sancaktepe ana yazısında, diğer yazılarda yazılmaz — kullanıcı kararı), her yazının
-  farklı ana konusuyla ve kaynaklı, derin uzman içerikle sağlanır. Yalnızca yer adı değişen şablon yazı
+  yılı ve tarihçe yalnızca Sancaktepe ana yazısında, diğer yazılarda yazılmaz — kullanıcı kararı), özgün yazımla
+  ve kaynaklı, derin uzman içerikle sağlanır. Yalnızca yer adı değişen şablon yazı
   yazılmaz (doorway riski). Yerel blog yazılarında "Sancaktepe merkezli ekibimiz" gibi ifadeler
   kullanılabilir (kullanıcı onayı); hizmet/sistem sayfalarında ve meta açıklamalarda kullanılmaz.
   Blog yazılarını kontrol eden: Ömürcan Altundaş (yazar kutusunda "Kontrol eden").

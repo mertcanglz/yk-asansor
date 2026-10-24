@@ -14,7 +14,7 @@
 | Meta (≈150) | `Elektrik kesilince asansör ne yapar, kabin düşer mi? Asansör aküsü, acil aydınlatma, alarm, otomatik kurtarma ve jeneratör hakkında bilmeniz gerekenler.` |
 | H1 | Asansör aküsü ve elektrik kesintisi: *Elektrik kesilince asansörde ne olur?* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
-| İç bağlantılar | 7/24 arıza sayfası; asansör arızaları yazısı; merdiven asansörü ve engelli lifti yazısı; Ömerli yer yazısı; teklif formu |
+| İç bağlantılar | 7/24 arıza sayfası; asansör arızaları yazısı; merdiven asansörü ve engelli lifti yazısı; ilçe yer yazıları; teklif formu |
 
 ---
 

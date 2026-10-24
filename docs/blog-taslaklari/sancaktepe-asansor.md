@@ -120,7 +120,7 @@ yönetimin belirlediği kişilere kurtarma eğitimi veriyor.
 
 Bir sınırı baştan bilmekte fayda var: kabin içi temizliği, kabin, kat kapısı, motor gibi büyük parçaların
 değişimi bakım kapsamında değil, ayrıca fiyatlanıyor. Sözleşmede nelerin olması gerektiğini ve bakım firmasını
-nasıl değiştireceğinizi Yenidoğan yazımızda ayrıntılı anlattık.
+nasıl değiştireceğinizi "Asansör bakım sözleşmesi" yazımızda ayrıntılı anlattık.
 
 YK Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
 
@@ -136,7 +136,7 @@ düzenekleri açmaya çalışmayın.
 
 Mahsur kalma yoksa ama asansör tuhaf davranıyorsa (kapı kapanmıyor, kat hizası bozuk, ses ya da sarsıntı var)
 asansörü kapatın, kat kapılarına "arızalı" yazısı asın ve haber verin. Hangi belirtinin ne anlama geldiğini
-Sarıgazi yazımızda, kapı arızalarını Çakmak yazımızda anlattık.
+"Asansör arızaları" yazımızda, kapı arızalarını "Asansör kapısı" yazımızda anlattık.
 
 ## Periyodik kontrol ve etiketler
 
@@ -162,8 +162,8 @@ Bir ayrıntı daha: kırmızı etiketli asansöre, sorunlar giderilene kadar bak
 ertelendikçe asansör hem kapalı hem bakımsız kalıyor.
 
 Sarı ve mavi etiketlerin çoğu, kontrolden önce birkaç saatte giderilecek şeylerden çıkıyor: kuyu dibinde çöp,
-depoya dönmüş makine dairesi, yanmayan kabin ışığı. Kontrolden önceki üç haftada ne yapacağınızı Samandıra
-yazımızda adım adım anlattık.
+depoya dönmüş makine dairesi, yanmayan kabin ışığı. Kontrolden önceki üç haftada ne yapacağınızı "Asansör
+periyodik kontrolü" yazımızda adım adım anlattık.
 
 ## Modernizasyon
 
@@ -200,8 +200,7 @@ makine dairesiz ya da hidrolik sistemlere bakıyoruz.
 | Otopark | Araç asansörü |
 | AVM, iş merkezi | Yürüyen merdiven |
 
-Makine dairesiz sistemlerin bakımındaki farkları Şerifali yazımızda, hidrolik asansörleri Alemdağ yazımızda,
-yük asansörlerini Dudullu yazımızda anlattık.
+Sistemlerin farklarını ve bakımlarında öne çıkan kalemleri "Hidrolik mi, halatlı mı?" yazımızda anlattık.
 
 ## Bakım ücreti
 
@@ -345,7 +344,7 @@ raporunu verin; eski firmadan asansörde şifre kısıtlaması olmadığını ya
 - **"Sancaktepe merkezli ekibiyle"** ifadesi kullanıcı onayıyla yerel blog yazılarında kullanılıyor
   (CLAUDE.md'ye işlendi). Hizmet ve sistem sayfalarında kullanılmaz.
 - Tam adres metne yazılmaz (footer'da zaten var).
-- Semt yazıları (Samandıra, Sarıgazi, Yenidoğan) bu yazıyı tekrar etmez; her biri farklı bir ana konuya
-  odaklanır ve buraya bağlanır.
+- Semt yazıları (Samandıra, Sarıgazi, Yenidoğan) bu yazıyla aynı 12 başlığı taşır (kullanıcı kararı, 24 Ekim 2026);
+  farkı semtin yerel bilgisi ve yazım oluşturur. Semt yazıları buraya bağlanır.
 - "Diğer sorular" ve SSS: Google 7 Mayıs 2026'dan beri SSS zengin sonucunu göstermiyor; `FAQPage` yine
   eklenir (Google ve yapay zekâ asistanları okuyor).

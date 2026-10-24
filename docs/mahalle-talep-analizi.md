@@ -159,31 +159,34 @@ Sayılar: Google Ads Planlayıcı, Türkiye, son 12 ay, ilçe + "asansör" arama
 çoğunda ölçülebilir hacim yok; kullanıcı bilindik semtler için yine de yazı istedi. Taslak dosyaları
 `docs/blog-taslaklari/` altında.
 
-**1. Sancaktepe** (~120) · `sancaktepe-asansor.md` · tüm hizmetler, bina yöneticisi rehberi
-- Samandıra · `samandira-asansor.md` · periyodik kontrol ve yeşil etiket hazırlığı
-- Sarıgazi · `sarigazi-asansor.md` · 7/24 arıza, arıza belirtileri ve kurtarma
-- Yenidoğan · `yenidogan-asansor.md` · bakım sözleşmesi ve bakım firması değiştirme
+Tüm ilçe ve semt yazıları aynı 12 başlığı taşır (kullanıcı kararı, 24 Ekim 2026); semtlere ayrı ana konu verilmez.
+Aşağıdaki "yerel not", o yerin "binalar" bölümünde ve ilgili başlıkta öne çıkan doğrulanmış ya da sahaya dayalı bilgidir.
 
-**2. Ümraniye** (~160) · `umraniye-asansor.md` · iş merkezleri, hastaneler ve yoğun binalar
-- Dudullu (~20) · `dudullu-asansor.md` · yük ve sanayi asansörleri
-- Çakmak · `cakmak-asansor.md` · kapı arızaları (kat kapısı kilidi, fotosel, kapı operatörü)
-- Şerifali · `serifali-asansor.md` · makine dairesiz ve dişlisiz asansörlerin bakımı
-- Tepeüstü · `tepeustu-asansor.md` · engelli erişimi ve asansörün kesintisiz çalışması
+**1. Sancaktepe** (~120) · `sancaktepe-asansor.md` · yerel not: ilçenin kuruluşu ve tarihçesi (yalnızca bu yazıda)
+- Samandıra · `samandira-asansor.md` · yerel not: eski apartman ve yeni site; kontrol öncesi hazırlık
+- Sarıgazi · `sarigazi-asansor.md` · yerel not: eski asansörlerde mekanik, yenilerde elektronik arızalar
+- Yenidoğan · `yenidogan-asansor.md` · yerel not: apartman yöneticilerinin sözleşme ve firma değiştirme soruları
 
-**3. Çekmeköy** (~140) · `cekmekoy-asansor.md` · villa, müstakil ev ve yeni siteler
-- Taşdelen (~10) · `tasdelen-asansor.md` · yeni konutlarda montaj, teslim alma ve garanti
-- Alemdağ · `alemdag-asansor.md` · hidrolik asansör bakımı
-- Ömerli · `omerli-asansor.md` · elektrik kesintisi ve acil durumda asansör
+**2. Ümraniye** (~160) · `umraniye-asansor.md` · yerel not: iş merkezleri, hastaneler, AVM'ler, yoğun binalar
+- Dudullu (~20) · `dudullu-asansor.md` · yerel not: Dudullu OSB ve sanayi binalarında yük asansörleri
+- Çakmak · `cakmak-asansor.md` · yerel not: apartman ağırlıklı; kapı şikâyetleri
+- Şerifali · `serifali-asansor.md` · yerel not: yeni binalarda makine dairesiz, dişlisiz sistemler
+- Tepeüstü · `tepeustu-asansor.md` · yerel not: eski binalarda erişim engelleri, uzun süren arızalar
 
-**4. Sultanbeyli** (~70) · `sultanbeyli-asansor.md` · eski asansörlerde modernizasyon ve güvenlik seviyesini artırma
+**3. Çekmeköy** (~140) · `cekmekoy-asansor.md` · yerel not: çok bloklu siteler, villa ve müstakil evler
+- Taşdelen (~10) · `tasdelen-asansor.md` · yerel not: yeni konut projeleri; teslim alma ve garanti
+- Alemdağ · `alemdag-asansor.md` · yerel not: az katlı binalarda ve villalarda hidrolik asansörler
+- Ömerli · `omerli-asansor.md` · yerel not: seyrek yapılaşma, villalar; elektrik kesintisi
+
+**4. Sultanbeyli** (~70) · `sultanbeyli-asansor.md` · yerel not: eski apartmanlar; onarım mı yenileme mi
 - Mahalle dışında bilinen semt yok
 
-**5. Maltepe** (~90: maltepe asansör firmaları 50, maltepe asansör 30, servisi 10) · `maltepe-asansor.md` ·
-apartmana sonradan asansör yaptırma
-- Küçükyalı · `kucukyali-asansor.md` · kırmızı etiket ve mühürlenen asansör
-- İdealtepe · `idealtepe-asansor.md` · bakım tekliflerini karşılaştırma
-- Cevizli · `cevizli-asansor.md` · kabin yenileme ve kabin çözümleri
-- Başıbüyük · `basibuyuk-asansor.md` · yenilenen binalarda asansör seçimi (Sancaktepe'ye en yakın Maltepe semti)
+**5. Maltepe** (~90: maltepe asansör firmaları 50, maltepe asansör 30, servisi 10) · `maltepe-asansor.md` · yerel not:
+asansörsüz 4–5 katlı apartmanlar; sonradan asansör
+- Küçükyalı · `kucukyali-asansor.md` · yerel not: eksikleri biriken eski asansörler; kırmızı etiket süreci
+- İdealtepe · `idealtepe-asansor.md` · yerel not: firma değiştirme ve teklif karşılaştırma
+- Cevizli · `cevizli-asansor.md` · yerel not: eskimiş kabinler; Kartal'daki Cevizli ile karışmaması için not
+- Başıbüyük · `basibuyuk-asansor.md` · yerel not: yeniden yapılan binalarda asansör kararları
 - Seçilmeyenler: Bağlarbaşı, Altayçeşme, Zümrütevler ve diğer mahalleler (hacim yok; "çınar asansör" 170 ve
   "yalı asansör" 20 aynı adlı firmalara ait)
 
@@ -192,16 +195,15 @@ apartmana sonradan asansör yaptırma
 Sultanbeyli Belediyesi var; tarih birincil kaynakta görülmedi), Maltepe TMMOB Makina Mühendisleri Odası İstanbul Şubesi
 (protokol 6 Şubat 2026; MMO haberi).
 
-**Durum (19 Ekim 2026):** 19 yer taslağının hepsi yazıldı ve geniş başlık + tam hizmet kapsamıyla yeniden düzenlendi (semtin özel konusu sayfada bir bölüm). Yer adı içermeyen 14 konu yazısı ayrıca yazıldı (`docs/konu-yazilari-plani.md`). Semt yazıları ilçe yazıları kadar kapsamlı (tüm hizmetler + kendi
-ana konusu + geniş SSS); hepsi yapay zekâ dili açısından elden geçirildi. Kullanıcı onayı bekleniyor.
+**Durum (24 Ekim 2026):** 19 yer taslağı ortak 12 başlığa getirildi (eski "öne çıkan bölüm"ler ilgili başlıkların içine
+alındı). Konu yazılarındaki semt göndermeleri kaldırıldı. Kullanıcı onayı bekleniyor (işletme sahibi toplu okuyacak).
 
-Her yazı ilgili ilçenin doğrulanmış yerel bilgisini (kuruluş, muayene kuruluşu, bina dokusu) ve kendi ana
-konusunu taşır; aynı metin yer adı değiştirilerek kullanılmaz. Semt yazıları bağlı oldukları ilçe yazısına
-bağlanır.
+Aynı metin yer adı değiştirilerek kullanılmaz: her yazı ilgili ilçenin doğrulanmış yerel bilgisini (muayene kuruluşu,
+bina dokusu) taşır ve ayrı yazılır. Semt yazıları bağlı oldukları ilçe yazısına bağlanır.
 
-### 5.3 Önerilen ek liste: Kartal ve yakın ilçeler (21 Ekim 2026, onay bekliyor)
+### 5.3 Kartal ve yakın ilçeler (kullanıcı onayladı, 24 Ekim 2026)
 
-Planlayıcı (Türkiye, son 12 ay, ≈ aylık; "—" = 10'un altında):
+Planlayıcı (Türkiye, son 12 ay, ≈ aylık; "—" = 10'un altında; 21 Ekim 2026'da ölçüldü, taslak plan kaldırıldı):
 
 | Yer | Hacmi olan aramalar | Toplam |
 |---|---|---|
@@ -216,30 +218,34 @@ Planlayıcı (Türkiye, son 12 ay, ≈ aylık; "—" = 10'un altında):
 | Diğer ilçeler (sonraki aşama) | tuzla asansör 30 · kadıköy asansör 20 · üsküdar asansör 20 · beykoz — | |
 
 Kartal'ın komşuları Maltepe, Sancaktepe, Sultanbeyli (yazıldı) ve Pendik. Ataşehir Sancaktepe'ye komşu.
-Kartal 20 mahalle; bilinen semtler Kartal Merkez, Soğanlık, Yakacık, Dragos (Vikipedi). Kartal'da da bir Cevizli
-mahallesi var; Maltepe'deki Cevizli yazısıyla karışmaması için Kartal yazısında "Kartal Cevizli" diye geçer.
+Kartal 20 mahalle; bilinen semtler Kartal Merkez, Soğanlık, Yakacık, Dragos (Vikipedi).
 
-**Öneri:**
+**6. Kartal** (~180) · `kartal-asansor.md` · yerel not: MMO ve belediyenin 2026 kontrol ücret tablosu; Marmaray, M4,
+Anadolu Adliyesi, yeni rezidanslar; Kartal Cevizli notu
+- Yakacık (~20) · `yakacik-asansor.md` · yerel not: tepelik semt, ara kattan girişli binalar, durak sayısı
+- Soğanlık · `soganlik-asansor.md` · yerel not: E-5'in kuzeyi, Gümüşpınar/Soğanlık Yeni/Orta mahalleleri
+- Dragos (~10) · `dragos-asansor.md` · yerel not: Orhantepe'de eski sayfiye semti; villa asansörü, deniz havası
 
-**6. Kartal** (~180) · `kartal-asansor.md` · apartman yönetimi için yıllık asansör bütçesi (bakım + periyodik kontrol +
-parça; belediyenin 2026 kontrol ücret tablosuyla)
-- Yakacık (~20) · `yakacik-asansor.md` · ses, titreşim ve sarsıntı: konfor şikâyetleri ve nedenleri
-- Soğanlık · `soganlik-asansor.md` · bakımın gerçekten yapıldığını anlamak: föy, kayıt defteri, bakım günü
-- Dragos (~10) · `dragos-asansor.md` · kuyu ve makine dairesi: temizlik, nem ve korozyon (sahil semti)
+**7. Pendik** (~140) · `pendik-asansor.md` · yerel not: SDS Muayene ve 2026 ücret tablosu; tersane sonrası
+apartmanlaşma, Kurtköy ve Kaynarca siteleri, Sabiha Gökçen
 
-**7. Pendik** (~140) · `pendik-asansor.md` · büyük siteler ve çok asansörlü yapılarda bakım yönetimi
+**8. Ataşehir** (~160) · `atasehir-asansor.md` · yerel not: AND Denetim; yüksek binalar ve yangın yönetmeliğindeki acil
+durum asansörü (m. 63); mühür açma için belediyenin istediği belgeler
 
-**8. Ataşehir** (~160) · `atasehir-asansor.md` · yüksek binalar, rezidans ve plazalar; acil durum (itfaiye) asansörü
+Pendik ve Ataşehir semtlerinde ölçülebilir hacim yok; semt yazısı yok (istenirse Kurtköy eklenebilir).
 
-Pendik ve Ataşehir semtlerinde ölçülebilir hacim yok; şimdilik semt yazısı önerilmiyor (istenirse Kurtköy eklenebilir).
-
-**Periyodik kontrol kuruluşları (doğrulandı, 21 Ekim 2026):**
+**Periyodik kontrol kuruluşları (doğrulandı, 21–24 Ekim 2026):**
 - Kartal: TMMOB Makina Mühendisleri Odası (belediyenin asansör tescil sayfası; protokol 2014'te imzalandı, MMO haberi).
   Belediye sayfasında 1.1.2026–1.1.2027 ücretleri (KDV dahil): 0–5 durak 4.049 TL, 6–10 durak 4.755 TL, 11–15 durak
   5.707 TL, 16–20 durak 6.660 TL, 21–25 durak 7.613 TL, 26–30 durak 8.564 TL, 31 ve üstü 11.907 TL.
 - Pendik: SDS Muayene, 01.03.2025–01.03.2030 (kuruluşun anlaşmalı belediyeler sayfası; Pendik Belediyesi tescil
-  sayfası da sdsmuayene.com'u gösteriyor). Eski kayıtlar (IQNORM 2017, TSE) güncel değil.
-- Ataşehir: AND Uluslararası Denetim ve Gözetim Hizmetleri A.Ş. (belediyenin asansör denetim sayfası; tarih yok).
+  sayfası da sdsmuayene.com'u gösteriyor). Eski kayıtlar (IQNORM 2017, TSE) güncel değil. 2026 ücretleri (KDV dahil,
+  yıllık / tescil öncesi): 0–5 durak 3.578,52 / 10.735,56 TL; 6–10: 4.049,76 / 12.149,28; 11–15: 4.755,96 / 14.267,88;
+  16–20: 5.707,68 / 17.123,04; 21–25: 6.660,72 / 19.982,16; 26–30: 7.613,76 / 22.841,28; 30'dan fazla: 8.564,16 / 25.692,48.
+- Ataşehir: AND Uluslararası Denetim ve Gözetim Hizmetleri A.Ş. (belediyenin asansör denetim sayfası; tarih ve 2026
+  ücret tablosu bulunamadı).
+
+**Durum (24 Ekim 2026):** 6 taslak yazıldı; kullanıcı onayı bekleniyor.
 
 ## Kaynaklar
 
@@ -256,6 +262,8 @@ Pendik ve Ataşehir semtlerinde ölçülebilir hacim yok; şimdilik semt yazıs�
 - Kartal Belediyesi asansör tescil hizmeti (MMO, 2026 ücretleri): https://www.kartal.bel.tr/Hizmetlerimiz/AsansorTescilHizmeti
 - MMO İstanbul, Kartal protokolü (5.2.2014): https://mmo.org.tr/istanbul/haber/kartal-belediyesi-ile-asansorlerin-yillik-periyodik-kontrol-protokolu-imzalandi
 - SDS Muayene anlaşmalı belediyeler (Pendik 2025–2030): https://www.sdsmuayene.com/anlasmali-belediyeler/
+- SDS Muayene, 2026 Pendik ücret tablosu: https://www.sdsmuayene.com/wp-content/uploads/2026/01/2026-Ucret-Tablosu-Pendik-Belediyesi-YENI-1-1.docx
+- Binaların Yangından Korunması Hakkında Yönetmelik (m. 62–63): https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=21&MevzuatNo=200712937&MevzuatTertip=5
 - Ataşehir Belediyesi asansör denetim (AND): https://www.atasehir.bel.tr/icerik/hizmetler/asansor-denetim
 - Mahalle nüfusları ADNKS 2025: https://www.nufusune.com/sancaktepe-ilce-nufusu-istanbul
 - Karşılaştırma (farklı yıllar): https://www.i24haber.com/2081-sancaktepe-mahalle-nufusu ·

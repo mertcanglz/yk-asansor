@@ -1,8 +1,9 @@
 # Taslak: İdealtepe asansör hizmetleri (semt yazısı)
 
-> **Durum:** taslak v2, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
+> **Durum:** taslak v3, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
 > **Bağlı olduğu ilçe yazısı:** `maltepe-asansor.md` · **Marka:** yalnızca "YK Asansör"
-> **v2:** Başlık genişletildi; tüm hizmetler ayrı başlıklarla açıldı; bakım tekliflerini karşılaştırma öne çıkan bölüm.
+> **v3 (24 Ekim 2026):** Tüm yer yazılarında ortak 12 başlığa getirildi; teklif karşılaştırma ayrı bölümler olmaktan
+> çıkıp "Bakım ücreti" ve "Firma seçerken" başlıklarının içine alındı; ayrı "öne çıkan konu" yok.
 
 ## Yayın bilgileri
 
@@ -10,72 +11,105 @@
 |---|---|
 | URL | `/blog/idealtepe-asansor.html` |
 | Ana sorgu | idealtepe asansör |
-| Yan sorgular | idealtepe asansör bakım, idealtepe asansör firması, idealtepe asansör tamiri, asansör bakım teklifi |
-| `<title>` (58) | `İdealtepe Asansör: Bakım, Arıza, Montaj ve Teklif \| YK Asansör` |
-| Meta (≈152) | `Maltepe İdealtepe'de asansör bakımı, 7/24 arıza, montaj ve modernizasyon. Bakım tekliflerini karşılaştırırken nelere bakılır? 0 (543) 542 86 75.` |
-| H1 | İdealtepe'de asansör hizmetleri: *Bakım, arıza, montaj ve doğru teklifi seçmek* |
-| Öne çıkan bölüm | Bakım tekliflerini karşılaştırma |
+| Yan sorgular | idealtepe asansör bakım, idealtepe asansör firması, idealtepe asansör tamiri, idealtepe asansör montaj |
+| `<title>` (57) | `İdealtepe Asansör: Bakım, Montaj ve 7/24 Arıza \| YK Asansör` |
+| Meta (≈151) | `Maltepe İdealtepe'de asansör bakımı, 7/24 arıza, montaj ve modernizasyon. Periyodik kontrol, etiketler ve bakım ücreti: 0 (543) 542 86 75.` |
+| H1 | İdealtepe'de asansör hizmetleri: *Bakım, arıza, montaj ve periyodik kontrol rehberi* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
-| İç bağlantılar | Maltepe, Küçükyalı, Cevizli, Başıbüyük yazıları; konu yazıları (bakım ücreti, bakım sözleşmesi, bakımı kim öder, etiket renkleri, yönetmelikler); teklif formu |
+| İç bağlantılar | Maltepe, Küçükyalı, Cevizli, Başıbüyük yazıları; konu yazıları; teklif formu |
 
 ---
 
 ## Metin
 
-# İdealtepe'de asansör hizmetleri: *Bakım, arıza, montaj ve doğru teklifi seçmek*
+# İdealtepe'de asansör hizmetleri: *Bakım, arıza, montaj ve periyodik kontrol rehberi*
 
 İdealtepe, Maltepe'nin bilinen semtlerinden biri ve aynı adlı bir mahallesi. YK Asansör olarak Sancaktepe merkezli
-ekibimizle İdealtepe'de aylık bakım, 7/24 arıza, modernizasyon ve montaj yapıyoruz. Bu yazıda bütün hizmetleri anlattık.
-İdealtepe'de yöneticilerle en sık yaptığımız konuşmaya, yani bakım firması değiştirirken toplanan teklifleri nasıl
-karşılaştıracağınıza da ayrıca yer verdik. Kısa cevap: rakama değil kapsama bakın.
+ekibimizle İdealtepe'de aylık bakım, 7/24 arıza, modernizasyon ve montaj yapıyoruz. Bu yazıda bir yöneticinin bilmesi
+gerekenleri sırayla anlattık; bakım firması değiştirirken toplanan teklifleri nasıl karşılaştıracağınız da bakım
+ücreti başlığında.
 
 **Bu yazıda**
 
 1. İdealtepe'de neler yapıyoruz?
-2. Aylık bakım ve sözleşme
-3. Arıza ve kurtarma
-4. Periyodik kontrol ve etiketler
-5. Bakım fiyatını ne belirler?
-6. Referans fiyatlar
-7. Teklifte olması gerekenler ve uyarı işaretleri
-8. Karşılaştırma tablosu
-9. Modernizasyon ve yeni montaj
-10. Sık sorulanlar
+2. İdealtepe'deki binalar ve asansörler
+3. Aylık bakım ve sözleşme
+4. Arıza ve mahsur kalma
+5. Periyodik kontrol ve etiketler
+6. Modernizasyon
+7. Yeni montaj ve sonradan asansör
+8. Hangi sistem hangi binaya?
+9. Bakım ücreti
+10. Firma seçerken sorulacaklar
+11. İlgili yazılar
+12. Sık sorulanlar
 
 ## İdealtepe'de neler yapıyoruz?
 
 Aylık bakım ve bakım sözleşmesi, 7/24 arıza ve kurtarma, modernizasyon ve kabin yenileme, yeni montaj ve sonradan
-asansör, etiket onarımı, kuyu ve makine dairesi temizliği, yeşil etiket hazırlığı. Tüm asansör tipleriyle çalışıyoruz.
+asansör, etiket onarımı, kuyu ve makine dairesi temizliği, yeşil etiket hazırlığı. Dişlili, dişlisiz, hidrolik, makine
+dairesiz, yük, araç, villa ve engelli lifti ile yürüyen merdivenlerle çalışıyoruz.
+
+## İdealtepe'deki binalar ve asansörler
+
+İdealtepe'de konutların çoğu apartman; eski binalarda makine daireli, dişlili asansörler, yenilenen binalarda makine
+dairesiz, dişlisiz sistemler var. Buradaki yöneticilerle en sık yaptığımız konuşma bakım firması değiştirmek ve
+toplanan teklifleri karşılaştırmak üzerine; kısa cevap şu: rakama değil kapsama bakın.
 
 ## Aylık bakım ve sözleşme
 
-Bakım ayda en az bir kez yapılıyor. Bakım için sözleşme yapmak, bakımı yaptırmak ve ücretini ödemek yöneticinin işi;
-bakımı yapan firmanın TSE Hizmet Yeterlilik Belgesi olmalı. Her ay güvenlik noktaları kontrol ediliyor, raylar yağlanıyor
-ve föy bırakılıyor. Masrafın kat malikleri arasında paylaşımını "Asansör bakımını kim öder?" yazımızda, sözleşmede
-nelere bakılacağını "Asansör bakım sözleşmesi" yazımızda anlattık.
+Bakım ayda en az bir kez, asansörün bakım kılavuzuna ve TS EN 13015 standardına göre yapılıyor. Bakım için sözleşme
+yapmak, bakımı yaptırmak ve ücretini ödemek yöneticinin işi; bakımı yapan firmanın TSE Hizmet Yeterlilik Belgesi
+olmalı. Her ay güvenlik noktaları kontrol ediliyor, raylar yağlanıyor ve föy bırakılıyor. Kabin içi temizliği ve büyük
+parça değişimleri bakım ücretine dahil değil. Masrafın kat malikleri arasında paylaşımını "Asansör bakımını kim öder?"
+yazımızda, sözleşmede nelere bakılacağını "Asansör bakım sözleşmesi" yazımızda anlattık.
 
-## Arıza ve kurtarma
+YK Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
 
-Hattımız 7/24 açık: 0 (543) 542 86 75. İçeride biri kaldıysa kapıyı zorlamadan bizi arayın; sağlık sorunu ya da duman
-varsa önce 112. Bakım firması yılda en az bir kez kurtarma eğitimi veriyor.
+## Arıza ve mahsur kalma
+
+Hattımız 7/24 açık: **0 (543) 542 86 75**. İçeride biri kaldıysa kapıyı zorlamadan bizi arayın; sağlık sorunu ya da
+duman varsa önce 112. Kurtarma eğitimi almadıysanız düzeneklere dokunmayın; bakım firması bu eğitimi yılda en az bir
+kez veriyor. Belirtileri "Asansör arızaları" yazımızda anlattık.
 
 ## Periyodik kontrol ve etiketler
 
 İdealtepe Maltepe'ye bağlı olduğu için yıllık periyodik kontrolü, Maltepe Belediyesi'nin 6 Şubat 2026'da protokol
-imzaladığı TMMOB Makina Mühendisleri Odası İstanbul Şubesi yapıyor. Periyodik kontrol ücreti bakım ücretinden ayrı;
-yönetim tarafından muayene kuruluşuna ödeniyor. Sarı etikette eksikler en geç 120 günde, kırmızı etikette en geç 60 günde
-giderilmeli. Ayrıntılar "Asansör etiket renkleri" yazımızda.
+imzaladığı TMMOB Makina Mühendisleri Odası İstanbul Şubesi yapıyor. Tarih en az üç gün önce bildiriliyor. Periyodik
+kontrol ücreti bakım ücretinden ayrı; yönetim tarafından muayene kuruluşuna ödeniyor. Sarı etikette eksikler en geç 120
+günde, kırmızı etikette en geç 60 günde giderilmeli; kırmızı etiketli asansör kullanılmıyor ve süre dolarsa
+mühürleniyor. Mavi etiketteki eksikler bir sonraki kontrole kadar giderilebiliyor. Ayrıntılar "Asansör etiket
+renkleri" yazımızda.
 
-## Bakım fiyatını ne belirler?
+## Modernizasyon
 
-Asansörün sınıfı (konut, iş yeri, hastane, yük), durak sayısı, kapasite ve sistem (panoramik ya da yüksek kapasiteli
-asansörler daha pahalı), sözleşmenin kapsamı (yağ ve sarf, arıza çağrısı, ön kontrol, kurtarma eğitimi) ve firmanın
-binaya uzaklığı. TASİAD da uzaklığın fiyatı etkileyebileceğini tarifesinde belirtiyor.
+Kumanda, kapı, makine ve güvenlik donanımı ayrı ayrı yenilenebiliyor; kabin eskidiyse kabin yenileme de seçenek.
+Güvenlik seviyesini artırmak yöneticinin sorumluluğu; yük, hız ya da seyir mesafesi değişirse onaylı proje ve tescil
+gerekiyor.
 
-## Referans fiyatlar
+## Yeni montaj ve sonradan asansör
 
-İstanbul için resmî ya da bağlayıcı bir bakım fiyatı yok. Karşılaştırmada kullanılabilecek en yaygın referans sektör
-derneği TASİAD'ın 2026 tavsiye fiyatları (aylık, KDV hariç, 1.600 kg'a ve 7 durağa kadar):
+Yeni binalarda ve sonradan asansörde keşiften tescile kadar çalışıyoruz; tescil öncesi ilk kontrolün ücreti normal
+periyodik kontrolün üç katı. Sonradan asansör için kat malikleri kararı, kuyu için yer ve onaylı proje gerekiyor; süreci
+Maltepe yazımızda, maliyeti belirleyen kalemleri "Asansör fiyatları" yazımızda anlattık.
+
+## Hangi sistem hangi binaya?
+
+| Bina | Genellikle uygun sistem |
+|---|---|
+| Yenilenen apartman | Makine dairesiz, dişlisiz |
+| Makine dairesi olan eski apartman | Dişlili ya da dişlisiz (modernizasyonla) |
+| Asansörsüz apartman | Makine dairesiz ya da hidrolik |
+| Engelli erişimi | Engelli lifti |
+| İş yeri, depo | Yük asansörü |
+
+Farkları "Hidrolik mi, halatlı mı?" yazımızda anlattık.
+
+## Bakım ücreti
+
+İstanbul için resmî ya da bağlayıcı bir bakım fiyatı yok. Fiyatı asansörün sınıfı, durak sayısı, kapasite ve sistem,
+sözleşmenin kapsamı (yağ ve sarf, arıza çağrısı, ön kontrol, kurtarma eğitimi) ve firmanın binaya uzaklığı belirliyor.
+En yaygın referans TASİAD'ın 2026 tavsiye fiyatları (aylık, KDV hariç, 1.600 kg'a ve 7 durağa kadar):
 
 | Sınıf | Kullanım | Aylık (TL) |
 |---|---|---|
@@ -86,43 +120,29 @@ derneği TASİAD'ın 2026 tavsiye fiyatları (aylık, KDV hariç, 1.600 kg'a ve 
 | V | Servis (monşarj) | 2.500 |
 | VI | Yoğun trafik, 2,5 m/sn ve üzeri | 15.000 |
 
-Her ek durak için 500 TL, panoramik asansörlerde 2.250 TL ekleniyor; yedek parça dahil değil. TASİAD bu rakamların
-altındaki hizmetin risk oluşturabileceği uyarısını da yapıyor, ama fiyatlar tavsiye niteliğinde. Daha ayrıntılısı
-"Asansör bakım ücreti" yazımızda.
+Her ek durak için 500 TL, panoramik asansörlerde 2.250 TL ekleniyor; yedek parça dahil değil. Fiyatlar tavsiye
+niteliğinde. İki teklifi karşılaştırırken aynı satırları yan yana koyun: aylık ücret ve KDV, TSE belgesi ve geçerlilik
+tarihi, yağ ve sarfın dahil olup olmadığı, yedek parçanın nasıl fiyatlandığı, arıza çağrısının ücretli olup olmadığı ve
+7/24 olup olmadığı, föy ve kurtarma eğitimi, ön kontrol ve kontrol günü eşlik, süre ve fesih. Ayrıntılar "Asansör
+bakım ücreti" yazımızda.
 
-## Teklifte olması gerekenler ve uyarı işaretleri
+## Firma seçerken sorulacaklar
 
-Teklifte şunlar yazılı olmalı: firmanın TSE Hizmet Yeterlilik Belgesi ve geçerlilik tarihi; en az ayda bir bakım; her
-bakımdan sonra föy; işçilik, yağ ve sarfın dahil olup olmadığı ve yedek parçanın nasıl fiyatlanacağı; 7/24 arıza numarası
-ve ayrıca ücret alınıp alınmayacağı; yılda en az bir kurtarma eğitimi; ön kontrol ve kontrol günü eşlik; asansöre cihazla
-ya da şifreyle bir kısıtlama yapılıp yapılmadığı; KDV'nin dahil olup olmadığı; süre ve fesih koşulları.
+Teklifte bunların yazılı olmasını isteyin: TSE Hizmet Yeterlilik Belgesi ve geçerlilik tarihi; en az ayda bir bakım ve
+her bakımdan sonra föy; ücrete dahil olanlar ve yedek parça fiyatlaması; 7/24 arıza numarası; yılda en az bir kurtarma
+eğitimi; asansöre cihazla ya da şifreyle bir kısıtlama yapılıp yapılmadığı; süre ve fesih koşulları.
 
 Dikkat edilecek işaretler: fiyat TASİAD tavsiyesinin belirgin biçimde altındaysa ve kapsam belirsizse; "her şey dahil"
-deniyor ama yazılı kapsam verilmiyorsa; TSE belgesi gösterilmiyorsa; föy bırakılmayacağı söyleniyorsa; arıza hattı yalnızca
-mesai saatlerinde açıksa.
+deniyor ama yazılı kapsam verilmiyorsa; TSE belgesi gösterilmiyorsa; föy bırakılmayacağı söyleniyorsa; arıza hattı
+yalnızca mesai saatlerinde açıksa.
 
-## Karşılaştırma tablosu
+## İlgili yazılar
 
-| Kalem | Firma A | Firma B |
-|---|---|---|
-| Aylık ücret (KDV hariç / dahil?) | | |
-| TSE HYB, geçerlilik tarihi | | |
-| Yağ ve sarf dahil mi | | |
-| Yedek parça nasıl fiyatlanıyor | | |
-| Arıza çağrısı ücretli mi, 7/24 mü | | |
-| Föy, kurtarma eğitimi | | |
-| Ön kontrol ve kontrol günü eşlik | | |
-| Sözleşme süresi, fesih | | |
+- İlçe ve diğer semtler: Maltepe, Küçükyalı, Cevizli, Başıbüyük
+- Konu yazıları: "Asansör bakım ücreti", "Asansör bakım sözleşmesi", "Asansör bakımını kim öder?", "Asansör etiket
+  renkleri", "Asansör yönetmelikleri"
 
-## Modernizasyon ve yeni montaj
-
-Kumanda, kapı, makine ve güvenlik donanımı ayrı ayrı yenilenebiliyor; kabin seçeneklerini Cevizli yazımızda, kırmızı
-etiket sürecini Küçükyalı yazımızda anlattık. Yeni binalarda ve sonradan asansörde keşiften tescile kadar çalışıyoruz;
-süreci Maltepe yazımızda, maliyeti belirleyen kalemleri "Asansör fiyatları" yazımızda anlattık. Bakım sözleşmelerinde
-ilk keşif ve 3 litre ray yağı değişimi bizde ücretsiz; yeni bir apartmanı bize yönlendirenlere bir sonraki bakım
-faturasında indirim yapıyoruz.
-
-> ### Teklifinizi yanımıza getirin
+> ### İdealtepe'deki asansörünüz için teklif alın
 > Elinizdeki teklifle bizimkini aynı tabloda karşılaştıralım. **[Teklif alın]** · 0 (543) 542 86 75
 
 ## Sık sorulanlar
@@ -154,6 +174,9 @@ Hayır; eksikler 60 gün içinde giderilmezse belediye mühürlüyor.
 **Eski asansörümüzü yenilemek zorunda mıyız?**
 Her zaman değil; kumanda, kapı, makine ya da kabin ayrı ayrı yenilenebiliyor.
 
+**Sonradan asansör yaptırabilir miyiz?**
+Çoğu binada mümkün; kat malikleri kararı, kuyu yeri ve onaylı proje gerekiyor.
+
 **Gece arıza olursa kimi aramalıyım?**
 0 (543) 542 86 75. Hattımız 7/24 açık.
 
@@ -169,5 +192,5 @@ Her zaman değil; kumanda, kapı, makine ya da kabin ayrı ayrı yenilenebiliyor
 
 ## Editör notları (yayınlanmaz)
 
-- Madde dayanakları: İB m. 4/e, 14/1, 13/1, 10/14, 10/2, 10/6, 8/5; PK m. 23/1, 11.
-- "Asansör bakım ücreti" konu yazısı fiyatlara, bu yazı teklif karşılaştırmaya ağırlık veriyor.
+- Madde dayanakları: İB m. 4/e, 9, 14/1, 13/1, 10/14, 10/2, 10/6, 16/4, 8/5; PK m. 16/9, 23/1, 23/2, 9/7, 11.
+- "Asansör bakım ücreti" konu yazısıyla çakışmayı önlemek için karşılaştırma kısa tutuldu.

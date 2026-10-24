@@ -14,7 +14,7 @@
 | Meta (≈152) | `Asansör bakım ücreti 2026'da ne kadar? TASİAD tavsiye fiyatları, fiyatı belirleyen kalemler, nelerin dahil olduğu ve teklif nasıl okunur; sade rehber.` |
 | H1 | Asansör bakım ücreti 2026: *Fiyatı neler belirler, teklif nasıl okunur?* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
-| İç bağlantılar | Periyodik bakım sayfası; bakım sözleşmesi ve bakımı kim öder yazıları; İdealtepe yer yazısı (teklif karşılaştırma); teklif formu |
+| İç bağlantılar | Periyodik bakım sayfası; bakım sözleşmesi ve bakımı kim öder yazıları; ilçe yer yazıları; teklif formu |
 
 ---
 
@@ -104,7 +104,7 @@ Teklifte şunların yazılı olduğundan emin olun:
 - Föy, kurtarma eğitimi, ön kontrol ve kontrol günü eşlik
 - Sözleşme süresi, yenileme ve fesih
 
-İki teklifi aynı tabloya koyup karşılaştırın; bunun için hazırladığımız tabloyu İdealtepe yazımızda bulabilirsiniz.
+İki teklifi aynı tabloya koyup satır satır karşılaştırın.
 Sözleşmenin ayrıntısı "Asansör bakım sözleşmesi" yazımızda, masrafın paylaşımı "Asansör bakımını kim öder?" yazımızda.
 
 ## Çok ucuz teklif

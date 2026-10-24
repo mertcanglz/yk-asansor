@@ -14,7 +14,7 @@
 | Meta (≈150) | `Asansör bakım sözleşmesinde neler olmalı? Yönetmeliğin istedikleri, kapsam, yedek parça, arıza çağrısı, süre ve fesih; imzalamadan önce kontrol listesi.` |
 | H1 | Asansör bakım sözleşmesi: *İmzalamadan önce kontrol edilecek 12 madde* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
-| İç bağlantılar | Periyodik bakım sayfası; bakım ücreti ve bakımı kim öder yazıları; Yenidoğan yer yazısı (firma değiştirme); teklif formu |
+| İç bağlantılar | Periyodik bakım sayfası; bakım ücreti ve bakımı kim öder yazıları; ilçe yer yazıları; teklif formu |
 | Kelime sahipliği notu | "asansör bakım sözleşmesi" yol haritasında bakım sayfasının yan sorgusuydu; bu yazı sözleşme içeriği niyetini hedefler, bakım sayfası "asansör bakımı"nı tutar |
 
 ---
@@ -95,7 +95,7 @@ Bir de şu: periyodik kontrolde kırmızı etiket alan asansöre, sorunlar gider
 Yönetmelikte bakım sözleşmesi için asgari bir süre yok; süreyi ve fesih koşullarını taraflar belirliyor. Firma değiştirirken
 fesih bildirimini yazılı yapın, bakım föylerini, kayıt defterini ve son periyodik kontrol raporunu yeni firmaya verin ve eski
 firmadan asansörde şifre ya da cihazla bir kısıtlama olmadığını yazılı isteyin. Yeni firma devraldığı asansör için bir durum
-tespit raporu hazırlıyor. Süreci adım adım Yenidoğan yer yazımızda anlattık. Geçiş döneminde iki firmanın aynı anda asansöre
+tespit raporu hazırlıyor. Geçiş döneminde iki firmanın aynı anda asansöre
 müdahale etmemesine dikkat edin; yönetmelik sözleşme dışındaki kişilerin müdahalesine izin vermiyor.
 
 > ### Açık kapsamlı bir sözleşme
@@ -136,4 +136,3 @@ Yönetim; föyler kalıcı olarak saklanmalı.
 ## Editör notları (yayınlanmaz)
 
 - Tüm maddeler güncel metinden doğrulandı; 5–12 arası maddeler yönetmelik zorunluluğu değil, öneri olarak ayrıldı.
-- Yenidoğan yer yazısı firma değiştirme sürecine, bu yazı sözleşme içeriğine ağırlık veriyor.

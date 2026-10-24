@@ -206,7 +206,8 @@ sonradan asansör…) hedeflenir; bu yazılar her ilçeden ve Türkiye genelinde
 
 **Doorway riskinden kaçınmak için her yerel yazıda en az şunlar olmalı** (yalnızca semt adı
 değişen şablon metin yasak). Kullanıcı kararı (18 Ekim 2026): bloglarda iş fotoğrafı ve gerçek iş
-örneği kullanılmaz; özgünlük aşağıdaki doğrulanmış yerel bilgilerden ve her yazının farklı ana konusundan gelir.
+örneği kullanılmaz; özgünlük aşağıdaki doğrulanmış yerel bilgilerden ve özgün yazımdan gelir. Kullanıcı kararı
+(24 Ekim 2026): tüm ilçe ve semt yazıları aynı 12 başlığı taşır; semtlere ayrı ana konu verilmez (bkz. CLAUDE.md).
 
 - Semtin **bağlı olduğu ilçe** ve buna bağlı pratik bilgi (ör. hangi belediyenin muayene kuruluşu geçerli). Kuruluş yılı ve tarihçe yalnızca Sancaktepe ana yazısında.
 - Bölgenin **bina dokusu** ve ondan doğan ihtiyaç. Örnek: yeni siteler ve kentsel dönüşüm →
@@ -227,10 +228,12 @@ değişen şablon metin yasak). Kullanıcı kararı (18 Ekim 2026): bloglarda i�
 | Çekmeköy (ilçe) + Taşdelen, Alemdağ, Ömerli | **Taslak hazır** |
 | Sultanbeyli (ilçe) | **Taslak hazır** |
 | Maltepe (ilçe) + Küçükyalı, İdealtepe, Cevizli, Başıbüyük | **Taslak hazır** |
+| Kartal (ilçe) + Yakacık, Soğanlık, Dragos | **Taslak hazır** (24 Ekim 2026) |
+| Pendik (ilçe) | **Taslak hazır** (24 Ekim 2026) |
+| Ataşehir (ilçe) | **Taslak hazır** (24 Ekim 2026) |
 
-Ayrıntılı liste, ana konular ve dosya adları: `docs/mahalle-talep-analizi.md` Bölüm 5.2.
+Ayrıntılı liste ve dosya adları: `docs/mahalle-talep-analizi.md` Bölüm 5.2 ve 5.3.
 
-Açılar örnektir. Gerçek işlere göre değiştirilir; her yazı **farklı** bir ana konuya odaklanır.
 
 ### 4.2 Bilgi yazıları (öncelik sırası)
 

@@ -1,8 +1,9 @@
 # Taslak: Küçükyalı asansör hizmetleri (semt yazısı)
 
-> **Durum:** taslak v2, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
+> **Durum:** taslak v3, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
 > **Bağlı olduğu ilçe yazısı:** `maltepe-asansor.md` · **Marka:** yalnızca "YK Asansör"
-> **v2:** Başlık genişletildi; tüm hizmetler ayrı başlıklarla açıldı; kırmızı etiket ve mühür öne çıkan bölüm.
+> **v3 (24 Ekim 2026):** Tüm yer yazılarında ortak 12 başlığa getirildi; kırmızı etiket ve mühür süreci ayrı bölümler
+> olmaktan çıkıp "Periyodik kontrol ve etiketler" başlığının içine alındı; ayrı "öne çıkan konu" yok.
 
 ## Yayın bilgileri
 
@@ -10,116 +11,139 @@
 |---|---|
 | URL | `/blog/kucukyali-asansor.html` |
 | Ana sorgu | küçükyalı asansör |
-| Yan sorgular | küçükyalı asansör bakım, küçükyalı asansör firması, küçükyalı asansör tamiri, küçükyalı asansör montaj, asansör mühürlendi |
-| `<title>` (58) | `Küçükyalı Asansör: Bakım, Arıza, Montaj ve Etiket \| YK Asansör` |
-| Meta (≈152) | `Maltepe Küçükyalı'da asansör bakımı, 7/24 arıza, montaj ve modernizasyon. Kırmızı etiket alan asansörde süre ve mühür süreci: 0 (543) 542 86 75.` |
-| H1 | Küçükyalı'da asansör hizmetleri: *Bakım, arıza, montaj ve kırmızı etiketten sonra yapılacaklar* |
-| Öne çıkan bölüm | Kırmızı etiket sonrası süreç: kullanım yasağı, 60 gün, takip kontrolü, mühür |
+| Yan sorgular | küçükyalı asansör bakım, küçükyalı asansör firması, küçükyalı asansör tamiri, küçükyalı asansör montaj |
+| `<title>` (57) | `Küçükyalı Asansör: Bakım, Montaj ve 7/24 Arıza \| YK Asansör` |
+| Meta (≈150) | `Maltepe Küçükyalı'da asansör bakımı, 7/24 arıza, montaj ve modernizasyon. Periyodik kontrol, etiketler ve bakım ücreti: 0 (543) 542 86 75.` |
+| H1 | Küçükyalı'da asansör hizmetleri: *Bakım, arıza, montaj ve periyodik kontrol rehberi* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
-| İç bağlantılar | Maltepe, İdealtepe, Cevizli, Başıbüyük yazıları; konu yazıları (kırmızı etiket, etiket renkleri, periyodik kontrol, bakım ücreti, yönetmelikler); teklif formu |
+| İç bağlantılar | Maltepe, İdealtepe, Cevizli, Başıbüyük, Dragos yazıları; konu yazıları; teklif formu |
 
 ---
 
 ## Metin
 
-# Küçükyalı'da asansör hizmetleri: *Bakım, arıza, montaj ve kırmızı etiketten sonra yapılacaklar*
+# Küçükyalı'da asansör hizmetleri: *Bakım, arıza, montaj ve periyodik kontrol rehberi*
 
 Küçükyalı, Maltepe'nin bilinen semtlerinden biri ve aynı adlı bir mahallesi. YK Asansör olarak Sancaktepe merkezli
-ekibimizle Küçükyalı'da aylık bakım, 7/24 arıza, modernizasyon ve montaj yapıyoruz; bu yazıda bütün hizmetleri ve bir
-yöneticinin bilmesi gerekenleri anlattık. Küçükyalı'daki yöneticilerden en zor telefonlar ise genellikle periyodik
-kontrolden sonra geliyor: "Kırmızı etiket aldık, şimdi ne olacak?" Bu soruya da ayrıntılı yer verdik.
+ekibimizle Küçükyalı'da aylık bakım, 7/24 arıza, modernizasyon ve montaj yapıyoruz. Bu yazıda bir yöneticinin bilmesi
+gerekenleri sırayla anlattık; periyodik kontrolden sonra en zor soru olan "Kırmızı etiket aldık, şimdi ne olacak?"
+sorusunun cevabı da etiketler başlığında.
 
 **Bu yazıda**
 
 1. Küçükyalı'da neler yapıyoruz?
-2. Aylık bakım ve sözleşme
-3. Arıza ve kurtarma
-4. Periyodik kontrol ve etiketler
-5. Kırmızı etiket: ilk hafta yapılacaklar
-6. 60 gün, takip kontrolü ve mühür
-7. Bir daha kırmızı etiket almamak için
-8. Modernizasyon ve yeni montaj
-9. Bakım ücreti ve firma seçimi
-10. Sık sorulanlar
+2. Küçükyalı'daki binalar ve asansörler
+3. Aylık bakım ve sözleşme
+4. Arıza ve mahsur kalma
+5. Periyodik kontrol ve etiketler
+6. Modernizasyon
+7. Yeni montaj ve sonradan asansör
+8. Hangi sistem hangi binaya?
+9. Bakım ücreti
+10. Firma seçerken sorulacaklar
+11. İlgili yazılar
+12. Sık sorulanlar
 
 ## Küçükyalı'da neler yapıyoruz?
 
 Aylık bakım, 7/24 arıza ve kurtarma, kırmızı ve sarı etiket onarımı, modernizasyon ve kabin yenileme, yeni montaj ve
-sonradan asansör, kuyu ve makine dairesi temizliği, yeşil etiket hazırlığı. Tüm asansör tipleriyle çalışıyoruz.
+sonradan asansör, kuyu ve makine dairesi temizliği, yeşil etiket hazırlığı. Dişlili, dişlisiz, hidrolik, makine
+dairesiz, yük, araç, villa ve engelli lifti ile yürüyen merdivenlerle çalışıyoruz.
+
+## Küçükyalı'daki binalar ve asansörler
+
+Küçükyalı'da eski apartmanlarla yenilenen binalar yan yana. Eski binalarda makine daireli, dişlili asansörler;
+yenilerde makine dairesiz, dişlisiz sistemler var. Yıllar içinde eksikleri biriken eski asansörler periyodik kontrolde
+sarı ya da kırmızı etiket alabiliyor; kırmızı etiketlerin önemli bir kısmı tek seferde değil, ertelenen küçük
+eksiklerin üst üste binmesiyle ortaya çıkıyor. Asansörü hiç olmayan dört beş katlı apartmanlar da var; bunlarda
+sonradan asansör sık konuşulan bir konu.
 
 ## Aylık bakım ve sözleşme
 
-Bakım ayda en az bir kez yapılıyor; bakım için sözleşme yapmak, bakımı yaptırmak ve ücretini ödemek yöneticinin işi ve
-bakımı yapan firmanın TSE Hizmet Yeterlilik Belgesi olmalı. Her ay fren, halatlar, kapılar ve kilitler, güvenlik
-devreleri, kumanda, kabin ışığı ve alarm kontrol ediliyor, raylar yağlanıyor ve föy bırakılıyor. Föyde aynı eksik birkaç
-ay üst üste yazıyorsa, bu bir sonraki kontrolde etiket alacağınızın habercisi. Teklif karşılaştırmayı İdealtepe yazımızda,
-sözleşmeyi "Asansör bakım sözleşmesi" yazımızda anlattık.
+Bakım ayda en az bir kez, asansörün bakım kılavuzuna ve TS EN 13015 standardına göre yapılıyor; bakım için sözleşme
+yapmak, bakımı yaptırmak ve ücretini ödemek yöneticinin işi ve bakımı yapan firmanın TSE Hizmet Yeterlilik Belgesi
+olmalı. Her ay fren, halatlar, kapılar ve kilitler, güvenlik devreleri, kumanda, kabin ışığı ve alarm kontrol ediliyor,
+raylar yağlanıyor ve föy bırakılıyor. Föyde aynı eksik birkaç ay üst üste yazıyorsa, bu bir sonraki kontrolde etiket
+alacağınızın habercisi. Sözleşmeyi "Asansör bakım sözleşmesi" yazımızda anlattık.
 
-## Arıza ve kurtarma
+YK Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
 
-Hattımız 7/24 açık: 0 (543) 542 86 75. İçeride biri kaldıysa kapıyı zorlamadan bizi arayın; sağlık sorunu ya da duman
-varsa önce 112. Bakım firması yılda en az bir kez kurtarma eğitimi veriyor. Belirtileri "Asansör arızaları" yazımızda
-anlattık.
+## Arıza ve mahsur kalma
+
+Hattımız 7/24 açık: **0 (543) 542 86 75**. İçeride biri kaldıysa onunla konuşun, kapıyı zorlamasın, sonra bizi arayın;
+sağlık sorunu ya da duman varsa önce 112. Kurtarma eğitimi almadıysanız düzeneklere dokunmayın; bakım firması bu
+eğitimi yılda en az bir kez veriyor. Belirtileri "Asansör arızaları" yazımızda anlattık.
 
 ## Periyodik kontrol ve etiketler
 
 Küçükyalı Maltepe'ye bağlı olduğu için yıllık periyodik kontrolü, Maltepe Belediyesi'nin 6 Şubat 2026'da protokol
 imzaladığı TMMOB Makina Mühendisleri Odası İstanbul Şubesi yapıyor. Kontrol yılda en az bir kez yapılıyor, tarih en az
-üç gün önce bildiriliyor, ücreti yönetim ödüyor. Dört renk var: yeşil kusursuz, mavi hafif kusurlu (eksikler bir sonraki
-kontrole kadar), sarı kusurlu (en geç 120 gün), kırmızı güvensiz (en geç 60 gün). Renklerin ayrıntısı "Asansör etiket
-renkleri" yazımızda.
+üç gün önce bildiriliyor, ücreti yönetim ödüyor. Dört renk var: yeşil kusursuz, mavi hafif kusurlu (eksikler bir
+sonraki kontrole kadar), sarı kusurlu (en geç 120 gün), kırmızı güvensiz (en geç 60 gün).
 
-## Kırmızı etiket: ilk hafta yapılacaklar
+**Kırmızı etiket aldıysanız** asansörü gerçekten kapatın; yönetmelik kırmızı etiketli asansörün kullanımına izin
+vermiyor ve "bir kişi binerse bir şey olmaz" diye kullanmaya devam etmek, olası bir kazada yöneticiyi doğrudan sorumlu
+yapar. Kat kapılarına kullanım dışı yazısı asın, raporu bakım firmanızla okuyup hangi eksiğin kaç günde ve hangi
+parçayla giderileceğini yazılı bir plana bağlayın, sakinleri bilgilendirin. 60 gün uzun gibi görünse de parça
+siparişi, kat malikleri toplantısı ve montaj derken çabuk geçiyor. Bu sürede bakım da verilemiyor; yapılacak iş
+eksiklerin onarımı.
 
-Kırmızı etiket, muayene mühendisinin asansörde can ve mal güvenliğini tehdit eden bir uygunsuzluk bulduğu anlamına
-geliyor ve yönetmelik kırmızı etiketli asansörün kullanımına izin vermiyor.
+Süre sonunda takip kontrolü yapılıyor; kırmızı ya da sarı etiket sonrası ilk takip kontrolü ücretsiz. Asansör hâlâ
+güvensizse belediye elektriğini ana beslemeden keserek mühürlüyor ve tutanak düzenliyor. Mühürlenen asansörü onarmak
+için belediyeden mühür bozma isteniyor; tutanakta onarım için öngörülen süre en fazla 45 iş günü. Kırmızıdan sarıya
+düşen ve 120 gün içinde iyileştirilmeyen asansör de mühürlenebiliyor. Ayrıntılı anlatım "Kırmızı etiket alan asansör"
+ve "Asansör etiket renkleri" yazılarımızda.
 
-**Asansörü gerçekten kapatın.** "Bir kişi binerse bir şey olmaz" diye kullanmaya devam etmek, olası bir kazada
-yöneticiyi doğrudan sorumlu yapar. Kat kapılarına kullanım dışı olduğunu belirten bir yazı asın.
+## Modernizasyon
 
-**Raporu bakım firmanızla birlikte okuyun.** Kırmızıya sebep olan maddeleri ayırın ve hangi eksiğin kaç günde, hangi
-parçayla giderileceğini yazılı bir plana bağlayın.
+Bir daha kırmızı etiket almamanın en sağlam yolu, eski asansörde planlı yenileme. Kumanda, kapı, makine ve güvenlik
+donanımı ayrı ayrı yenilenebiliyor; yönetmelik mevcut asansörün güvenlik seviyesini artırmayı yöneticinin
+sorumluluğuna bırakıyor. Kabin eskidiyse kabin yenileme de seçenek; tipleri "Asansör kabin modelleri" yazımızda. Yük,
+hız ya da seyir mesafesi değişirse onaylı proje ve tescil gerekiyor.
 
-**Kararı hızlı verin.** 60 gün uzun gibi görünüyor ama parça siparişi, kat malikleri toplantısı ve montaj derken çabuk
-geçiyor.
+## Yeni montaj ve sonradan asansör
 
-**Sakinleri bilgilendirin.** Asansörün ne kadar kapalı kalacağını anlatın; yaşlı ve engelli sakinler için geçici
-çözümler düşünün.
+Yeni binalarda keşif, projelendirme, onay, montaj, testler ve tescil; tescil öncesi ilk kontrolün ücreti normal
+periyodik kontrolün üç katı. Asansörü olmayan apartmanlarda sonradan asansör de çoğu zaman mümkün; kat malikleri
+kararı, kuyu için yer ve onaylı proje gerekiyor. Süreci Maltepe yazımızda ayrıntılı anlattık.
 
-## 60 gün, takip kontrolü ve mühür
+## Hangi sistem hangi binaya?
 
-Bina yöneticisi kırmızı etiketli asansörün eksiklerini en fazla 60 gün içinde gidermek zorunda. Bu süre içinde bakım
-hizmeti de verilemiyor; bakım firmasının yapacağı iş eksiklerin onarımı. Bu yüzden onarım teklifini bakım
-sözleşmesinden ayrı düşünün.
+| Bina | Genellikle uygun sistem |
+|---|---|
+| Yeni ve yenilenen apartman | Makine dairesiz, dişlisiz |
+| Makine dairesi olan eski apartman | Dişlili ya da dişlisiz (modernizasyonla) |
+| Asansörsüz apartman | Makine dairesiz ya da hidrolik |
+| Engelli erişimi | Engelli lifti |
+| Dükkân, depo | Yük asansörü |
 
-Süre bitiminden sonra takip kontrolü yapılıyor; kırmızı ya da sarı etiket sonrası ilk takip kontrolü ücretsiz. Asansör
-güvenli hâle gelmişse etiket değişiyor. Takip kontrolünde hâlâ güvensizse ilgili idare, Maltepe için belediye, asansörün
-elektriğini ana besleme sisteminden keserek mühürlüyor ve bir tutanak düzenliyor. Mühürlenen asansörü onarmak için
-belediyeden mühür bozma isteniyor; bu tutanakta onarım için öngörülen süre en fazla 45 iş günü. Kırmızıdan sarıya düşen
-ve ikinci aşamada 120 gün içinde iyileştirilmeyen asansör de mühürlenebiliyor. Ayrıntılı anlatım "Kırmızı etiket alan
-asansör" yazımızda.
+Farkları "Hidrolik mi, halatlı mı?" yazımızda anlattık.
 
-## Bir daha kırmızı etiket almamak için
+## Bakım ücreti
 
-Aylık bakımı aksatmayın ve föyleri okuyun. Sarı ve mavi etiketlerdeki eksikleri süresi içinde giderin; ertelenen sarı
-etiket bir sonraki kontrolde kırmızıya dönebiliyor. Kontrolden önce ön kontrol yaptırın (Samandıra yazımızda adım adım
-anlattık). Eski asansörde planlı yenileme yapın; kırmızı etiketlerin önemli bir kısmı yıllar içinde biriken eksiklerden
-çıkıyor.
+TASİAD'ın 2026 tavsiyesi (aylık, KDV hariç, 7 durağa kadar): konut ve ofis asansörü 3.000 TL, insan ve gerektiğinde
+yük taşıyan asansör 3.500 TL; her ek durak için 500 TL. Onarım ve parça değişimi dahil değil. Ayrıntılar "Asansör bakım
+ücreti" yazımızda.
 
-## Modernizasyon ve yeni montaj
+## Firma seçerken sorulacaklar
 
-Kumanda, kapı, makine ve güvenlik donanımı ayrı ayrı yenilenebiliyor; yönetmelik mevcut asansörün güvenlik seviyesini
-artırmayı yöneticinin sorumluluğuna bırakıyor. Kabin seçeneklerini Cevizli yazımızda anlattık. Asansörü olmayan
-apartmanlarda sonradan asansör de çoğu zaman mümkün; süreci Maltepe yazımızda anlattık.
+- TSE Hizmet Yeterlilik Belgesi ve geçerlilik tarihi
+- Arızaya varış süresi ve gece ulaşılacak numara
+- Ücrete dahil olanlar, yedek parça fiyatlaması
+- Föy ve kurtarma eğitimi
+- Etiket onarımını nasıl ve ne sürede planladığı
+- Asansörde cihazla ya da şifreyle kısıtlama olup olmadığı (sözleşmede yazmalı)
 
-## Bakım ücreti ve firma seçimi
+## İlgili yazılar
 
-TASİAD'ın 2026 tavsiyesi konut tipi bir asansör için (7 durağa kadar) aylık 3.000 TL + KDV; her ek durak için 500 TL.
-Onarım ve parça değişimi dahil değil. Firma seçerken TSE belgesini, arızaya varış süresini, föyü ve etiket onarımını nasıl
-planladığını sorun.
+- İlçe ve diğer semtler: Maltepe, İdealtepe, Cevizli, Başıbüyük
+- Yakın Kartal semti: Dragos
+- Konu yazıları: "Kırmızı etiket alan asansör", "Asansör etiket renkleri", "Asansör periyodik kontrolü", "Asansör
+  bakım ücreti", "Asansör yönetmelikleri"
 
-> ### Kırmızı etiket mi aldınız?
-> Raporunuzu birlikte okuyup 60 gün içinde bitecek bir onarım planı çıkaralım. **[Teklif alın]** · 0 (543) 542 86 75
+> ### Küçükyalı'daki asansörünüz için teklif alın
+> Kırmızı etiket aldıysanız raporunuzu birlikte okuyup 60 gün içinde bitecek bir onarım planı çıkaralım.
+> **[Teklif alın]** · 0 (543) 542 86 75
 
 ## Sık sorulanlar
 
@@ -150,6 +174,9 @@ En geç 120 gün.
 **Aylık bakım ücreti ne kadar?**
 Konut tipi bir asansör için TASİAD'ın 2026 tavsiyesi aylık 3.000 TL + KDV.
 
+**Apartmanımıza sonradan asansör yaptırabilir miyiz?**
+Çoğu binada mümkün; kat malikleri kararı, kuyu yeri ve onaylı proje gerekiyor.
+
 **Gece arıza olursa kimi aramalıyım?**
 0 (543) 542 86 75. Hattımız 7/24 açık.
 
@@ -165,4 +192,5 @@ Konut tipi bir asansör için TASİAD'ın 2026 tavsiyesi aylık 3.000 TL + KDV.
 
 ## Editör notları (yayınlanmaz)
 
-- Madde dayanakları: PK m. 11/6, 11/9, 11/11, 24/1, 9/7, 24/5, 8/1, 16/9, 23/1; İB m. 10/11, 4/e, 14/1, 13/1, 16/4.
+- Madde dayanakları: PK m. 11/6, 11/9, 11/11, 24/1, 9/7, 24/5, 8/1, 16/9, 23/1, 23/2; İB m. 10/11, 4/e, 9, 14/1, 13/1,
+  10/6, 16/4, 8/5.

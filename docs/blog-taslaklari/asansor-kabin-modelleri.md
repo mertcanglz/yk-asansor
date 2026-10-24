@@ -15,7 +15,7 @@
 | H1 | Asansör kabin modelleri: *Rezidanstan panoramiğe, hangi kabin hangi binaya?* |
 | Görsel | Kabin tiplerini gösteren kendi tasarımımız görseller (ana sayfadaki "Kabin çözümleri" görselleriyle ortak) |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
-| İç bağlantılar | Ana sayfa "Kabin çözümleri" bölümü; modernizasyon sayfası; Cevizli yer yazısı; asansör fiyatları yazısı; merdiven asansörü ve engelli lifti yazısı; teklif formu |
+| İç bağlantılar | Ana sayfa "Kabin çözümleri" bölümü; modernizasyon sayfası; ilçe yer yazıları; asansör fiyatları yazısı; merdiven asansörü ve engelli lifti yazısı; teklif formu |
 
 ---
 
