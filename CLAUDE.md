@@ -15,7 +15,8 @@ Bu repo, **YK Asansör** işletmesinin tanıtım web sitesidir. Site sahibi proj
 - Yayın: GitHub Pages kullanılmaz. Site bitince deneme için Claude geçici bir adreste yayınlar;
   onaylanırsa işletmenin kendi hosting'i (Alastyr) ve alan adıyla yayınlanır.
 - Formlar: Alastyr hosting'de çalışan küçük bir PHP betiğiyle kurumsal e-postaya gönderilir (SMTP).
-  Sunucu tarafı doğrulama (ör. telefon `^05\d{9}$`) bu betikte yapılır. Derleme yok kuralı geçerli;
+  Sunucu tarafı doğrulama (ör. telefon `^05\d{9}$`) bu betikte yapılır. Betik adı `form-gonder.php`
+  (henüz yazılmadı); formlar `fetch` ile gönderir, başarıda JSON `{"ok": true}`, hatada HTTP 422 + `{"hata": "…"}` bekler. Derleme yok kuralı geçerli;
   PHP yalnızca form gönderimi için. Kurumsal e-posta adresi: TODO (marka adı kesinleşince).
 - Yerel önizleme: `python3 -m http.server 8080` → http://localhost:8080
 
@@ -24,8 +25,12 @@ Bu repo, **YK Asansör** işletmesinin tanıtım web sitesidir. Site sahibi proj
 ```
 index.html            Ana sayfa (tek sayfa: hero, hizmetler, hakkımızda, iletişim)
 assets/css/style.css  Tüm stiller; renkler/fontlar en üstteki :root değişkenlerinde
-assets/js/main.js     Mobil menü ve küçük etkileşimler
+assets/js/main.js     Etkileşimler (modül): hero asansörü, menüler, çerez onayı + GA/Meta yükleme
+                      (kimlikler dosyanın başında GA_ID / META_PIXEL_ID: TODO), kampanya, form, animasyonlar
+assets/js/telefon.js  Telefon alanı maskesi (docs/telefon-alani.md ile birebir)
+assets/fonts/         Manrope + Newsreader italik 500 (woff2, latin + latin-ext)
 assets/img/           Görseller (logo, fotoğraflar) — web için sıkıştırılmış .jpg/.webp, < 300 KB
+assets/img/asansor/   Hero asansörü: kuyu + kapı kareleri (kare-692 geniş ekran, kare-400 telefon; 3 kat × 41 kare)
 blog/                 Blog yazıları (ör. blog/asansor-etiket-renkleri.html)
 docs/                 Proje belgeleri (yayınlanmaz): SEO yol haritası, blog taslakları, kurallar
 ```
