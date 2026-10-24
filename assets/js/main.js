@@ -194,20 +194,38 @@ const Asansor = (() => {
     return { pos: 1 - k, door: ssm(Math.min(1, (t - b) / (c - b))) };
   }
 
+  /* Telefonda asansör ölçeği: 1. kattaki başlığın üstünde kalan alanı doldurur, 3. katın yazısına binmez.
+     Çerez/kampanya kutusu kapanıp yazı aşağı inince yeniden hesaplanır ve asansör yumuşakça büyür. */
+  let su = 0, suHedef = 0, yaziSag = 0;
+  function hedefSu() {
+    const ust1 = $('.hx-h', secs[0]).offsetTop;
+    const ust3 = $('.hx-in', secs[2]).firstElementChild.offsetTop;
+    return clamp(Math.min((ust1 - 18 - 30) / 887.6, (ust3 - 14 - 52) / 641.6), 0.2, ekran.W >= 600 ? 0.5 : 0.36);
+  }
   function geometri() {
     genis = h.classList.contains('hw');
+    if (genis) {
+      su = suHedef = (ekran.H / 900) * 0.86;
+      yaziSag = $('.hx-in', secs[0]).getBoundingClientRect().right;
+    } else {
+      su = suHedef = hedefSu();
+    }
+    yerlestir();
+    // düzen değişince satır içi stilleri sıfırla
+    col.style.transform = '';
+    secs.forEach((el) => { el.style.transform = ''; el.style.opacity = ''; el.style.visibility = ''; });
+    box.style.opacity = '';
+    aktifKat = -1;
+  }
+  function yerlestir() {
     const W = ekran.W;
     const H = ekran.H;
-    const boxH = genis ? H : Math.round(box.getBoundingClientRect().height) || Math.round(clamp(H * 0.48, 280, 460));
-    const olcek = genis ? 0.86 : 0.7;
-    const kuyuX = genis ? (W >= 1024 ? 0.73 : 0.72) : 0.5;
-    const s = (boxH / 900) * olcek;
-    let cx = W * kuyuX;
-    if (genis) {
-      // dar masaüstünde kabin yazının üstüne binmesin: yazının sağından en az 40 px uzakta, ekranın içinde kalır
-      const yaziSag = $('.hx-in', secs[0]).getBoundingClientRect().right;
-      cx = Math.min(Math.max(cx, yaziSag + 40 + 249.3 * s), W - 252.4 * s - 16);
-    }
+    const s = su;
+    const boxH = genis ? H : Math.round((s * 900) / 0.7);
+    if (!genis) h.style.setProperty('--lbh', boxH + 'px');
+    let cx = W * (genis ? (W >= 1024 ? 0.73 : 0.72) : 0.5);
+    // dar masaüstünde kabin yazının üstüne binmesin: yazının sağından en az 40 px uzakta, ekranın içinde kalır
+    if (genis) cx = Math.min(Math.max(cx, yaziSag + 40 + 249.3 * s), W - 252.4 * s - 16);
     const X = (u) => cx + (u - 768) * s;
     const U = (px) => 518.7 + px * K;
     const cabW = 692 * K * s;
@@ -221,8 +239,9 @@ const Asansor = (() => {
       r.style.width = Math.max(1.5, 7 * K * s) + 'px';
       r.style.height = '100px';
     });
-    glow.style.cssText = `left:${X(768) - cabW}px;width:${cabW * 2}px;height:${cabH * 1.2}px`;
-    sonGlowTon = '';
+    glow.style.left = X(768) - cabW + 'px';
+    glow.style.width = cabW * 2 + 'px';
+    glow.style.height = cabH * 1.2 + 'px';
     cab.style.left = X(518.7) + 'px';
     cab.style.width = cabW + 'px';
     cab.style.height = cabH + 'px';
@@ -232,12 +251,13 @@ const Asansor = (() => {
       ext.style.width = 776 * s + 'px';
       ext.style.backgroundSize = `${776 * s}px ${g.per}px`;
     }
-    // düzen değişince satır içi stilleri sıfırla
-    col.style.transform = '';
-    secs.forEach((el) => { el.style.transform = ''; el.style.opacity = ''; el.style.visibility = ''; });
-    box.style.opacity = '';
-    aktifKat = -1;
   }
+  // çerez bildirimi ya da kampanya kartı açılıp kapanınca: yazının kayma geçişi (~0,45 sn) bitince yeni ölçek
+  let yerT = 0;
+  d.addEventListener('yk:yerlesim', () => {
+    clearTimeout(yerT);
+    yerT = setTimeout(() => { if (!genis) { suHedef = hedefSu(); uyan(); } }, 480);
+  });
 
   function ciz() {
     const st = faz(p);
@@ -319,6 +339,10 @@ const Asansor = (() => {
     p += (pt - p) * f(masa ? 0.07 : 0.08);
     const st = faz(p);
     cam += (st.pos - cam) * f(genis ? (masa ? 0.05 : 0.06) : 0.1);
+    if (su !== suHedef) {
+      su = Math.abs(suHedef - su) < 0.0004 ? suHedef : su + (suHedef - su) * f(0.12);
+      yerlestir();
+    }
     if (introT0 != null && intro < 1) {
       const t = az ? 1 : Math.min(1, (now - introT0) / 2600);
       intro = t * t * (3 - 2 * t);
@@ -333,7 +357,7 @@ const Asansor = (() => {
     gecis = yolda;
     const jt = now - jT0;
     jolt = !az && jt < 1400 ? jAmp * Math.exp(-jt / 260) * Math.sin((2 * Math.PI * jt) / 240) : 0;
-    const bitti = Math.abs(pt - p) < 0.0015 && Math.abs(st.pos - cam) < 0.002 && (az || jt >= 1400) && (introT0 == null || intro >= 1);
+    const bitti = Math.abs(pt - p) < 0.0015 && Math.abs(st.pos - cam) < 0.002 && (az || jt >= 1400) && (introT0 == null || intro >= 1) && su === suHedef;
     if (bitti) { p = pt; cam = faz(p).pos; jolt = 0; }
     ciz();
     raf = bitti ? 0 : requestAnimationFrame(tik);
@@ -435,6 +459,8 @@ const Asansor = (() => {
 
   // ilk konum, sonra görünür yap (konumlanmadan önce gizli; kısa bir açılış geçişiyle belirir)
   yenidenOlc();
+  // yazı tipi geç gelirse başlık yüksekliği değişir: telefonda asansör boyu yeniden hesaplanır
+  if (d.fonts) d.fonts.ready.then(() => { if (!genis) yenidenOlc(); });
   requestAnimationFrame(() => lift.classList.add('is-hazir'));
 
   // kareler sayfa yüklendikten sonra: önce giriş katı (açılışta kapı bir kez açılır), sonra diğer katlar
@@ -544,7 +570,7 @@ const Cerez = (() => {
   function yerlestir() {
     // telefonda: bildirim açıkken hero yazısının altı bildirim kadar açılır; tercih paneli açıkken WhatsApp üstüne çıkar
     const ck = h.dataset.ck;
-    if (ck === 'yok') h.style.setProperty('--ck-pad', `calc(${bar.offsetHeight + 12 + 24}px + env(safe-area-inset-bottom))`);
+    if (ck === 'yok') h.style.setProperty('--ck-pad', bar.offsetHeight + parseFloat(getComputedStyle(bar).bottom) + 16 + 'px');
     if (wa) wa.style.bottom = ck === 'tercih' && mqKucuk.matches ? panel.offsetHeight + 24 + 'px' : '';
   }
   function durum(yeni) {
@@ -552,6 +578,7 @@ const Cerez = (() => {
     panel.hidden = yeni !== 'tercih';
     yerlestir();
     d.dispatchEvent(new CustomEvent('yk:cerez'));
+    d.dispatchEvent(new CustomEvent('yk:yerlesim'));
   }
   function kaydet(a, m) {
     secim = { a, m, t: Date.now() };
@@ -613,6 +640,13 @@ const Kampanya = (() => {
     }
     kart.hidden = !acik;
     etiket.hidden = kapandi || acik || engel;
+    // telefonda kart açıkken hero yazısının altı kart kadar açılır; kapanınca boşluk kalkar
+    const durum = acik ? 'acik' : 'kapali';
+    if (h.dataset.kampanya !== durum) {
+      h.dataset.kampanya = durum;
+      if (acik) h.style.setProperty('--promo-pad', kart.offsetHeight + parseFloat(getComputedStyle(kart).bottom) + 16 + 'px');
+      d.dispatchEvent(new CustomEvent('yk:yerlesim'));
+    }
     if (wa) wa.classList.toggle('wa--etiket', !etiket.hidden);
   }
   $('#promoKapat').addEventListener('click', () => {

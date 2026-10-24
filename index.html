@@ -21,7 +21,10 @@
       var h = d.documentElement, c = null;
       h.className += ' js' + ((w.innerWidth >= 1024 || (w.innerWidth >= 760 && w.innerWidth > w.innerHeight * 1.1)) ? ' hw' : '');
       try { c = JSON.parse(localStorage.getItem('yk-cerez') || 'null'); } catch (e) {}
-      h.setAttribute('data-ck', c && Date.now() - c.t < 15552e6 ? (c.a && c.m ? 'tam' : 'secildi') : 'yok');
+      var ck = c && Date.now() - c.t < 15552e6 ? (c.a && c.m ? 'tam' : 'secildi') : 'yok', kp = ck !== 'yok';
+      try { if (sessionStorage.getItem('yk-kampanya') === 'kapali') kp = false; } catch (e) {}
+      h.setAttribute('data-ck', ck);
+      h.setAttribute('data-kampanya', kp ? 'acik' : 'kapali'); /* telefonda kampanya kartına yer ayrılır */
     })(document, window);
     /* Google Consent Mode v2: onay verilene kadar her şey reddedilmiş sayılır; GA ve Meta Pixel onaydan sonra yüklenir */
     window.dataLayer = window.dataLayer || [];

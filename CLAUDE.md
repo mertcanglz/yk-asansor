@@ -56,8 +56,10 @@ Kodlamadan önce blog taslakları `docs/blog-taslaklari/` altında Markdown olar
 - **Mobil hero, koda çevirirken** (onaylı tasarım: tuvalde "Onaylanan sayfalar" → "Ana sayfa — mobil"):
   hero metni ekranın altına yaslı; butonların altında şimdilik sabit bir boşluk var (tuvalde 120 px).
   Sitede bu boşluk sabit px olmasın, telefona göre hesaplansın: WhatsApp butonu alanı
-  (alt 16 px + 56 px) + `env(safe-area-inset-bottom)` + küçük pay. Çerez bildirimi açıkken
-  bildirimin gerçek yüksekliği kadar artar. Hero yüksekliği `100vh` değil `100svh`/`100dvh`
+  (alt 16 px + 56 px) + `env(safe-area-inset-bottom)` + küçük pay (16 px). Üç katın yazısı da alta yaslı.
+  Çerez bildirimi ya da kampanya kartı açıkken boşluk onların gerçek yüksekliği kadar artar; kapatılınca kalkar.
+  Telefonda asansörün boyu, 1. kattaki başlığın üstünde kalan alanı dolduracak şekilde JS ile hesaplanır
+  (3. katın yazısına binmez); kutular kapanıp yazı inince asansör yumuşakça büyür. Hero yüksekliği `100vh` değil `100svh`/`100dvh`
   olsun (adres çubuğu butonları örtmesin); 360 px genişlik ve kısa ekranlarda (≤ 720 px) test et.
 - **Başlıklarda anlamsız satır kırılması olmaz:** iki parçalı başlıklarda (ör. blog: "X: Y?") ":" sonrası
   alt satıra geçer, her parça `text-wrap: balance` ile dengeli kırılır; tek kelime alt satırda kalmaz.
