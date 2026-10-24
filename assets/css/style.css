@@ -128,11 +128,13 @@ svg { flex: 0 0 auto; }
 .btn-d--blk { display: flex; width: 100%; height: 52px; font-size: 15px; }
 
 /* Metin bağlantısı: alt çizgi soldan sağa turuncuya döner, ok bir adım ilerler */
-.yk-link { position: relative; display: inline-flex; align-items: center; gap: 10px; min-height: 44px; white-space: nowrap; color: var(--yazi-k); text-decoration: none; font-size: 15px; font-weight: 500; }
-.yk-link::after, .yk-link::before { content: ""; position: absolute; left: 0; right: 0; bottom: 8px; height: 1px; }
-.yk-link::after { background: currentColor; opacity: .3; }
-.yk-link::before { background: var(--turuncu-2); transform: scaleX(0); transform-origin: left; transition: transform .45s cubic-bezier(.7, 0, .2, 1); z-index: 1; }
-.yk-link:hover::before, .yk-link:focus-visible::before { transform: scaleX(1); }
+.yk-link { position: relative; display: inline-flex; align-items: center; gap: 10px; width: max-content; max-width: 100%; min-height: 44px; white-space: nowrap; color: var(--yazi-k); text-decoration: none; font-size: 15px; font-weight: 500; }
+/* alt çizgi yalnızca metin genişliğinde (ok dahil değil) */
+.yk-link > span { position: relative; padding: 6px 0; }
+.yk-link > span::after, .yk-link > span::before { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 1px; }
+.yk-link > span::after { background: currentColor; opacity: .3; }
+.yk-link > span::before { background: var(--turuncu-2); transform: scaleX(0); transform-origin: left; transition: transform .45s cubic-bezier(.7, 0, .2, 1); z-index: 1; }
+.yk-link:hover > span::before, .yk-link:focus-visible > span::before { transform: scaleX(1); }
 .yk-link svg { transition: transform .45s cubic-bezier(.7, 0, .2, 1); }
 .yk-link:hover svg { transform: translateX(3px); }
 .yk-link--dark, .yk-link--dark:hover { color: var(--murekkep); }
@@ -338,7 +340,7 @@ html[data-ck="yok"] .hx-in { --hx-alt: var(--ck-pad, calc(150px + env(safe-area-
 /* Geniş hero (tablet yatay ve masaüstü): asansör sağda tam yükseklikte, yazı solda dikey ortalı */
 .hw .hx-sec { justify-content: center; padding: 0 0 0 48px; transition: opacity .9s cubic-bezier(.4, 0, .2, 1); will-change: opacity; }
 .hw .hx-sec:not(.is-on) { opacity: .18; }
-.hw .hx-in, html.hw[data-ck="yok"] .hx-in { width: min(54%, 560px); margin: 0; padding: 0; gap: 22px; background: none; flex: none; }
+.hw .hx-in { width: min(54%, 560px); margin: 0; padding: 0; gap: 22px; background: none; flex: none; }
 .hw .hx-h { font-size: 42px; }
 .hw .hx-h--2, .hw .hx-h--3 { font-size: 38px; }
 .hw .hx-p--opt { display: block; }
@@ -381,6 +383,11 @@ html[data-ck="yok"] .hx-in { --hx-alt: var(--ck-pad, calc(150px + env(safe-area-
   .hw .svc:hover .svc__chev, .hw .svc:focus-visible .svc__chev { opacity: 1; transform: none; }
   .hw .svc:hover .svc__n { color: var(--vurgu-hizmet); }
   .hw .hx-sec--3 .yk-link, .hw .hx-sec:nth-child(2) .yk-link { font-size: 16px; }
+}
+/* yatayda dar masaüstünde "Etiketler ne anlama gelir?" butonun altına iner; kabine yaklaşmaz */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .hw .hx-act--3 { flex-direction: column; align-items: flex-start; gap: 14px; }
+  .hw .hx-act--3 .yk-link { align-self: flex-start; }
 }
 /* alçak geniş ekranlar (telefon yatay vb.) */
 @media (max-height: 560px) {
@@ -723,8 +730,9 @@ html[data-ck="yok"] .hx-in { --hx-alt: var(--ck-pad, calc(150px + env(safe-area-
 .faq summary:focus-visible { outline: 2px solid var(--turuncu); outline-offset: 2px; }
 .faq h3 { font-size: 16px; line-height: 1.4; font-weight: 500; }
 .faq__ic { transition: transform .35s var(--ease); }
-.faq[open] .faq__ic { transform: rotate(45deg); }
-.faq p { margin: -4px 0 18px; font-size: 15px; line-height: 1.7; color: var(--gri-1); }
+.faq.is-acik .faq__ic, html:not(.js) .faq[open] .faq__ic { transform: rotate(45deg); }
+.faq__a { overflow: hidden; }
+.faq p { margin: -4px 0 0; padding-bottom: 18px; font-size: 15px; line-height: 1.7; color: var(--gri-1); }
 @media (min-width: 1024px) {
   .sec--sss { padding-top: 52px; padding-bottom: 52px; }
   .sss { display: grid; grid-template-columns: 380px minmax(0, 1fr); grid-template-rows: auto 1fr; grid-template-areas: "head list" "cta list"; column-gap: 80px; align-items: start; }
@@ -736,7 +744,7 @@ html[data-ck="yok"] .hx-in { --hx-alt: var(--ck-pad, calc(150px + env(safe-area-
   .faq summary { gap: 24px; padding: 22px 0; }
   .faq summary:hover { color: var(--turuncu-koyu); }
   .faq h3 { font-size: 18px; line-height: 1.4; }
-  .faq p { margin: -6px 0 22px; max-width: 760px; font-size: 16px; }
+  .faq p { margin: -6px 0 0; padding-bottom: 22px; max-width: 760px; font-size: 16px; }
 }
 
 /* ---------- Footer ---------- */

@@ -23,7 +23,7 @@ Bu repo, **YK Asansör** işletmesinin tanıtım web sitesidir. Site sahibi proj
 ## Dosya yapısı
 
 ```
-index.html            Ana sayfa (tek sayfa: hero, hizmetler, hakkımızda, iletişim)
+index.html            Ana sayfa (hero asansörü, bölümler, footer + hızlı teklif formu)
 assets/css/style.css  Tüm stiller; renkler/fontlar en üstteki :root değişkenlerinde
 assets/js/main.js     Etkileşimler (modül): hero asansörü, menüler, çerez onayı + GA/Meta yükleme
                       (kimlikler dosyanın başında GA_ID / META_PIXEL_ID: TODO), kampanya, form, animasyonlar
@@ -31,7 +31,11 @@ assets/js/telefon.js  Telefon alanı maskesi (docs/telefon-alani.md ile birebir)
 assets/fonts/         Manrope + Newsreader italik 500 (woff2, latin + latin-ext)
 assets/img/           Görseller (logo, fotoğraflar) — web için sıkıştırılmış .jpg/.webp, < 300 KB
 assets/img/asansor/   Hero asansörü: kuyu + kapı kareleri (kare-692 geniş ekran, kare-400 telefon; 3 kat × 41 kare)
-blog/                 Blog yazıları (ör. blog/asansor-etiket-renkleri.html)
+assets/img/kabin/, hizmetler/, sistemler/  Fotoğraflar; medya/ klasöründeki asıllarından üretilir
+                      (WebP, ad-<genişlik>.webp, srcset ile; medya/ repoya girmez)
+blog/                 Blog yazıları (ör. blog/asansor-etiket-renkleri.html). Yeni yazı yayınlanınca aynı işte
+                      ana sayfadaki blog şeridi (en yeni 12 yazı) ve blog.html listesi de güncellenir;
+                      kartlar HTML'de yazılı durur (SEO), JS ile sonradan çekilmez
 docs/                 Proje belgeleri (yayınlanmaz): SEO yol haritası, blog taslakları, kurallar
 ```
 

@@ -752,12 +752,35 @@ if ('IntersectionObserver' in window) {
 (() => {
   const sorular = $$('details.faq');
   if (!sorular.length) return;
-  if (!('name' in HTMLDetailsElement.prototype)) {
-    sorular.forEach((s) => s.addEventListener('toggle', () => {
-      if (s.open) sorular.forEach((o) => { if (o !== s) o.open = false; });
-    }));
+  // Yanıt yüksekliği yumuşakça açılıp kapanır. Tek açık soru kuralını burada uygularız
+  // (tarayıcının name="sss" davranışı diğerlerini animasyonsuz anında kapatırdı).
+  sorular.forEach((s) => s.removeAttribute('name'));
+  const SURE = 340;
+  const egri = 'cubic-bezier(.2, .7, .2, 1)';
+  function cevir(s, ac) {
+    const a = $('.faq__a', s);
+    s.classList.toggle('is-acik', ac);
+    if (s._anim) s._anim.cancel();
+    if (mqAz.matches || !a.animate) { s.open = ac; return; }
+    const bas = s.open ? a.getBoundingClientRect().height : 0;
+    s.open = true;
+    const son = ac ? a.scrollHeight : 0;
+    const anim = a.animate([{ height: bas + 'px', opacity: ac ? (bas ? 1 : 0) : 1 }, { height: son + 'px', opacity: ac ? 1 : 0 }], { duration: SURE, easing: egri });
+    s._anim = anim;
+    anim.onfinish = () => { s._anim = null; if (!ac) s.open = false; };
   }
-  if (mqMasa.matches) sorular[0].open = true;
+  sorular.forEach((s) => {
+    $('summary', s).addEventListener('click', (e) => {
+      e.preventDefault();
+      const ac = !s.classList.contains('is-acik');
+      if (ac) sorular.forEach((o) => { if (o !== s && o.classList.contains('is-acik')) cevir(o, false); });
+      cevir(s, ac);
+    });
+  });
+  if (mqMasa.matches) {
+    sorular[0].open = true;
+    sorular[0].classList.add('is-acik');
+  }
 })();
 
 /* ---------- Footer bağlantı grupları: masaüstünde hep açık ---------- */
