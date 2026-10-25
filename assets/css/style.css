@@ -1212,14 +1212,15 @@ html:not([data-ck="yok"]) .ck--bar { display: none; }
 .sp-sys span { font-size: 12.5px; line-height: 1.45; color: var(--gri-3); }
 /* süreç: noktaları bağlayan renkli hat; görünürken üzerinde ışık akar (ana sayfadaki etiket adımları gibi) */
 @keyframes spRun { from { background-position: 0 -30%, 0 0; } to { background-position: 0 130%, 0 0; } }
-.sp-steps { position: relative; list-style: none; padding: 0; display: flex; flex-direction: column; gap: 22px; }
-.sp-steps::before { content: ""; position: absolute; left: 7px; top: 10px; bottom: 10px; width: 2px; border-radius: 2px; background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, .95), rgba(255, 255, 255, 0)) no-repeat, linear-gradient(180deg, var(--turuncu) 0%, #e9a23b 48%, #2f9e5b 86%); background-size: 100% 16%, 100% 100%; background-position: 0 -30%, 0 0; }
+/* nokta ve hat aynı eksende: hat, noktanın tam ortasından geçer; nokta başlığın ilk satırına ortalıdır */
+.sp-steps { --nokta: 16px; --hat: 2px; --nokta-ust: 3px; position: relative; list-style: none; padding: 0; display: flex; flex-direction: column; gap: 22px; }
+.sp-steps::before { content: ""; position: absolute; left: calc((var(--nokta) - var(--hat)) / 2); top: calc(var(--nokta-ust) + var(--nokta) / 2); bottom: 10px; width: var(--hat); border-radius: 2px; background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, .95), rgba(255, 255, 255, 0)) no-repeat, linear-gradient(180deg, var(--turuncu) 0%, #e9a23b 48%, #2f9e5b 86%); background-size: 100% 16%, 100% 100%; background-position: 0 -30%, 0 0; }
 .sp-steps.is-gorunur::before { animation: spRun 3.8s cubic-bezier(.55, 0, .35, 1) infinite; }
 .sp-steps li { position: relative; padding-left: 36px; }
-.sp-steps li::before { content: ""; position: absolute; left: 0; top: 5px; width: 12px; height: 12px; border-radius: 50%; background: var(--acik); border: 2px solid var(--turuncu); }
+.sp-steps li::before { content: ""; position: absolute; left: 0; top: var(--nokta-ust); width: var(--nokta); height: var(--nokta); border-radius: 50%; background: var(--acik); border: 2px solid var(--turuncu); }
 .sp-steps li:last-child::before { z-index: 1; border-color: #2f9e5b; background: #2f9e5b; }
 /* hat son noktada biter: son maddenin altında kalan kısım zeminle örtülür */
-.sp-steps li:last-child::after { content: ""; position: absolute; left: 5px; top: 13px; bottom: -2px; width: 6px; background: var(--acik); }
+.sp-steps li:last-child::after { content: ""; position: absolute; left: calc(var(--nokta) / 2 - 3px); top: calc(var(--nokta-ust) + var(--nokta) / 2); bottom: -2px; width: 6px; background: var(--acik); }
 .sp-fac { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
 .sp-fac li { display: flex; flex-direction: column; gap: 4px; padding: 14px; border-radius: 14px; background: var(--beyaz); box-shadow: inset 0 0 0 1px var(--cizgi); }
 .sp-fac b { font-size: 14px; line-height: 1.35; font-weight: 500; }
@@ -1264,7 +1265,7 @@ html:not([data-ck="yok"]) .ck--bar { display: none; }
   .sp-sys a { padding: 18px 18px 20px; }
   .sp-sys span { font-size: 13px; line-height: 1.5; }
   .sp-sys a:hover { transform: translateY(-2px); box-shadow: inset 0 0 0 1.5px var(--turuncu), 0 16px 30px -24px rgba(226, 102, 28, .7); }
-  .sp-steps { gap: 26px; }
+  .sp-steps { --nokta-ust: 3.5px; gap: 26px; }
   .sp-steps li { padding-left: 44px; }
   .sp-fac li { padding: 18px 20px; }
   .sp-fac b { font-size: 15px; }
