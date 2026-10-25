@@ -935,11 +935,14 @@ telefonBaslat();
       $('.tf-istege', form).hidden = mail;
     }
   });
+  // Alan açılır ama imleç içine konmaz: telefonda klavye kendiliğinden açılıp sayfayı kaydırmasın.
+  // Klavyeyle gezenler için odak, yazı alanına değil alanın kendisine geçer (yer kaybolmaz). Alan isteğe bağlıdır.
   refBtn.addEventListener('click', () => {
     refAlan.hidden = false;
     refBtn.hidden = true;
     refBtn.setAttribute('aria-expanded', 'true');
-    $('input', refAlan).focus();
+    refAlan.tabIndex = -1;
+    refAlan.focus({ preventScroll: true });
   });
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
