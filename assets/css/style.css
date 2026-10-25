@@ -1495,6 +1495,8 @@ html:not([data-ck="yok"]) .ck--bar { display: none; }
 /* referans: göze batmayan, tıklanınca açılan isteğe bağlı alan (JS yoksa alan baştan açık) */
 .tf-ref { display: inline-flex; align-items: center; gap: 6px; min-height: 36px; padding: 0; border: 0; background: none; color: #8a9097; font-family: var(--f-sans); font-size: 12px; text-align: left; cursor: pointer; transition: color .25s; }
 .tf-ref:focus-visible { outline: 2px solid var(--turuncu); outline-offset: 3px; border-radius: 4px; }
+/* telefonda yalnızca soru görünür (tek satır); geniş ekranda açıklaması da */
+.tf-ref__ek { display: none; }
 .tf-ref__plus { position: relative; flex: 0 0 16px; width: 16px; height: 16px; border-radius: 50%; box-shadow: inset 0 0 0 1px #cfd2ce; }
 .tf-ref__plus::before, .tf-ref__plus::after { content: ""; position: absolute; left: 50%; top: 50%; width: 7px; height: 1.5px; margin: -.75px 0 0 -3.5px; border-radius: 2px; background: currentColor; }
 .tf-ref__plus::after { transform: rotate(90deg); }
@@ -1536,6 +1538,7 @@ html:not(.js) .tf-card #tf-ref-alan[hidden] { display: flex !important; }
 /* footer: bu sayfada hızlı teklif formu ve WhatsApp butonu yok */
 .ft--formsuz .ft__bar { padding-bottom: calc(24px + env(safe-area-inset-bottom)); }
 @media (min-width: 600px) {
+  .tf-ref__ek { display: inline; }
   .tf-chips { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .tf-row { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
   .tf-card { padding: 28px 28px 26px; }
