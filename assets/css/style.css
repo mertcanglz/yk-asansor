@@ -991,6 +991,7 @@ html:not([data-ck="yok"]) .ck--bar { display: none; }
 .kp-crumb [aria-current] { color: var(--yazi-k2); }
 .kp-h1 { font-size: min(31px, 8.2vw); line-height: 1.12; font-weight: 300; letter-spacing: -.9px; }
 .kp-h1--s { font-size: min(29px, 7.6vw); }
+.kp-h1--xs { font-size: min(27px, 7vw); }
 .kp-h1 > span, .kp-h1 em, .kp-h1 em span { display: block; white-space: nowrap; }
 .kp-h1 em { font-family: var(--f-serif); font-style: italic; font-weight: 500; letter-spacing: -.4px; color: var(--vurgu-sayfa); }
 .kp-lead { font-size: 15px; line-height: 1.65; color: var(--yazi-k4); }
@@ -1007,6 +1008,8 @@ html:not([data-ck="yok"]) .ck--bar { display: none; }
 .kp-facts > div + div { padding-left: 12px; border-left: 1px solid rgba(255, 255, 255, .1); }
 .kp-facts b { font-size: 17px; line-height: 1.15; font-weight: 300; letter-spacing: -.3px; color: var(--yazi-k); white-space: nowrap; }
 .kp-facts span { font-size: 12px; line-height: 1.4; color: var(--yazi-k3); }
+.kp-facts--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.kp-facts--3 b { white-space: normal; }
 /* açılış: yazılar sırayla yumuşakça belirir, görsel hafifçe yerine oturur (görsel saydam başlamaz: LCP gecikmesin) */
 .js .kp__in > * { animation: kpGir .9s var(--ease) both; }
 .js .kp__in > :nth-child(2) { animation-delay: .07s; }
@@ -1028,7 +1031,7 @@ html:not([data-ck="yok"]) .ck--bar { display: none; }
   .kp__in { max-width: 760px; gap: 22px; padding-top: 0; }
   .kp-crumb { gap: 10px; }
   .kp-crumb a:hover { color: var(--yazi-k); }
-  .kp-h1, .kp-h1--s { font-size: 56px; line-height: 1.08; letter-spacing: -1.5px; }
+  .kp-h1, .kp-h1--s, .kp-h1--xs { font-size: 56px; line-height: 1.08; letter-spacing: -1.5px; }
   .kp-h1 em { letter-spacing: -.8px; }
   .kp-h1 em span { display: inline; }
   .kp-lead { max-width: 620px; font-size: 17px; line-height: 1.7; }
@@ -1046,12 +1049,12 @@ html:not([data-ck="yok"]) .ck--bar { display: none; }
   .kp-facts { display: flex; gap: 0; margin-top: 10px; padding-top: 24px; }
   .kp-facts > div, .kp-facts > div + div { padding: 0 28px; border-left: 1px solid rgba(255, 255, 255, .1); }
   .kp-facts > div:first-child { padding-left: 0; border-left: 0; }
-  .kp-facts b { font-size: 24px; line-height: 1.1; letter-spacing: -.4px; }
+  .kp-facts b { font-size: 24px; line-height: 1.1; letter-spacing: -.4px; white-space: nowrap; }
   .kp-facts span { font-size: 13px; }
 }
 /* dar masaüstünde başlık görselin koyu kısmına taşmasın */
 @media (min-width: 1024px) and (max-width: 1279px) {
-  .kp-h1, .kp-h1--s { font-size: 48px; }
+  .kp-h1, .kp-h1--s, .kp-h1--xs { font-size: 48px; }
   .kp__in { max-width: 640px; }
   .kp-lead { max-width: 470px; font-size: 16px; }
 }
@@ -1277,6 +1280,106 @@ html:not([data-ck="yok"]) .ck--bar { display: none; }
   .sp-rel__t em { display: block; letter-spacing: -.6px; }
   .sp-rel__d { font-size: 15px; line-height: 1.6; }
   .sp-rel__go { margin-top: auto; font-size: 14px; }
+}
+
+/* ---------- Asansör sistemleri: gruplu katalog (telefonda görselli satır, masaüstünde kart) ---------- */
+.hz--kat .grp { scroll-margin-top: 72px; }
+.kc-grid { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.kc { position: relative; display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 14px; padding: 12px; border-radius: 16px; background: var(--beyaz); box-shadow: inset 0 0 0 1px var(--cizgi); }
+.kc:active { box-shadow: inset 0 0 0 1.5px var(--turuncu); }
+.kc__img { position: relative; display: block; min-height: 126px; border-radius: 12px; overflow: hidden; background: #ece9e4; }
+.kc__img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: var(--op-m, 50% 50%); transition: transform .6s var(--ease); }
+.kc__b { display: flex; flex-direction: column; gap: 6px; min-width: 0; padding: 2px 2px 2px 0; }
+.kc__t { font-size: 17px; line-height: 1.25; font-weight: 500; letter-spacing: -.2px; }
+.kc__t a { color: inherit; text-decoration: none; transition: color .3s; }
+.kc__t a::after { content: ""; position: absolute; inset: 0; z-index: 1; border-radius: inherit; }
+.kc__d { font-size: 13px; line-height: 1.5; color: #5b636b; }
+/* uygun yapılar: telefonda "Apartman · İş hanı · Ofis", masaüstünde küçük etiketler */
+.tags { list-style: none; padding: 0; display: flex; flex-wrap: wrap; font-size: 12px; line-height: 1.45; color: #8a9097; }
+.tags li + li::before { content: "·"; margin: 0 .4em; }
+.kc__go { margin-top: auto; display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; color: var(--turuncu-koyu); }
+.kc__go svg { transition: transform .45s var(--ease); }
+/* seçim ölçütleri */
+.secim { position: relative; z-index: 1; display: flex; flex-direction: column; padding: 40px var(--padx) 44px; background: var(--beyaz); color: var(--murekkep); scroll-margin-top: 64px; }
+.secim__h { display: flex; flex-direction: column; gap: 10px; margin-bottom: 18px; }
+.crit { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.crit li { display: flex; flex-direction: column; gap: 4px; padding: 14px; border-radius: 14px; background: var(--kart); box-shadow: inset 0 0 0 1px var(--cizgi); }
+.crit b { font-size: 14px; line-height: 1.35; font-weight: 500; }
+.crit span { font-size: 12.5px; line-height: 1.5; color: #5b636b; }
+.secim__cta { display: flex; width: 100%; height: 54px; margin-top: 22px; padding: 0 22px; font-size: 16px; }
+@media (min-width: 760px) {
+  .kc-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .crit { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .secim { padding-top: 56px; padding-bottom: 60px; }
+  .secim__cta { align-self: flex-start; width: auto; }
+}
+@media (min-width: 1024px) {
+  .hz--kat { padding-top: 72px; padding-bottom: 96px; }
+  .hz--kat .hz__in { gap: 80px; }
+  .hz--kat .grp { scroll-margin-top: 110px; }
+  .hz--kat .grp__h { margin-bottom: 24px; padding-bottom: 18px; }
+  .hz--kat .grp__hl { gap: 14px; }
+  .hz--kat .grp__p { max-width: 420px; line-height: 1.6; }
+  .kc-grid { gap: 20px; }
+  .kc-grid--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .kc { display: flex; flex-direction: column; gap: 0; padding: 0; border-radius: 18px; overflow: hidden; transition: box-shadow .35s, transform .45s var(--ease); }
+  .kc__img { flex: 0 0 auto; height: 210px; min-height: 0; border-radius: 0; }
+  .kc__img img { object-position: var(--op-d, 50% 50%); }
+  .kc__b { flex: 1 1 auto; gap: 10px; padding: 22px 22px 24px; }
+  .kc__t { font-size: 21px; font-weight: 400; letter-spacing: -.3px; }
+  .kc__d { font-size: 14px; line-height: 1.6; color: var(--gri-2); }
+  .tags { gap: 6px; font-size: 12px; font-weight: 500; line-height: 1.2; color: var(--gri-2); }
+  .tags li { padding: 5px 10px; border-radius: 999px; background: var(--acik); }
+  .tags li + li::before { content: none; }
+  .kc__go { padding-top: 6px; gap: 8px; font-size: 14px; }
+  .kc--h { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); }
+  .kc--h .kc__img { height: auto; min-height: 260px; }
+  .kc--h .kc__b { justify-content: center; padding: 28px 30px; }
+  .kc:hover { transform: translateY(-3px); box-shadow: inset 0 0 0 1px #d2d4d0, 0 22px 44px -30px rgba(21, 24, 27, .35); }
+  .kc:hover .kc__img img { transform: scale(1.04); }
+  .kc:hover .kc__t a { color: var(--turuncu-koyu); }
+  .kc:hover .kc__go svg { transform: translateX(4px); }
+  .kc:active { box-shadow: inset 0 0 0 1px var(--cizgi); }
+  .secim { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); grid-template-areas: "bas liste" "cta liste"; grid-template-rows: auto 1fr; column-gap: 72px; align-items: start; padding: 80px max(var(--padx), calc((100% - 1280px) / 2)); scroll-margin-top: 92px; }
+  .secim__h { grid-area: bas; gap: 18px; margin-bottom: 0; }
+  .sp-h2--blok span, .sp-h2--blok em { display: block; }
+  .crit { grid-area: liste; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .crit li { gap: 6px; padding: 22px 24px; border-radius: 16px; }
+  .crit b { font-size: 16px; }
+  .crit span { font-size: 14px; line-height: 1.55; }
+  .secim__cta { grid-area: cta; justify-self: start; height: 48px; margin-top: 26px; padding: 0 22px; gap: 10px; font-size: 15px; }
+}
+
+/* ---------- Sistem şablonu: artı/eksi kartları, teknik özellikler ---------- */
+.sp-sec > .sp-pc, .sp-sec > dl { margin-top: 8px; }
+.sp-pc { display: flex; flex-direction: column; gap: 10px; }
+.sp-pc > div { display: flex; flex-direction: column; gap: 12px; padding: 18px; border-radius: 16px; background: var(--beyaz); box-shadow: inset 0 0 0 1px var(--cizgi); }
+.sp-pc .sp-h3 { margin: 0; }
+.sp-pc ul { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.sp-pc li { position: relative; padding-left: 26px; font-size: 14px; line-height: 1.55; color: var(--gri-1); }
+.sp-pc__arti li::before { content: ""; position: absolute; left: 3px; top: 6px; width: 12px; height: 7px; border-left: 1.6px solid var(--turuncu); border-bottom: 1.6px solid var(--turuncu); transform: rotate(-45deg); }
+.sp-pc__eksi li::before { content: ""; position: absolute; left: 2px; top: 10px; width: 13px; height: 1.6px; border-radius: 2px; background: #8a9097; }
+.sp-spec { margin: 0; padding: 4px 18px; border-radius: 16px; background: var(--beyaz); box-shadow: inset 0 0 0 1px var(--cizgi); }
+.sp-spec > div { display: flex; flex-direction: column; gap: 3px; padding: 13px 0; border-bottom: 1px solid #ecedea; }
+.sp-spec > div:last-child { border-bottom: 0; }
+.sp-spec dt { font-size: 12.5px; color: var(--gri-3); }
+.sp-spec dd { margin: 0; font-size: 15px; line-height: 1.45; font-weight: 500; color: var(--murekkep); }
+.sp-note { font-size: 12.5px; line-height: 1.6; color: #7d848b; }
+@media (min-width: 760px) {
+  .sp-pc { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .sp-spec { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 40px; padding: 6px 28px; }
+  .sp-spec > div { flex-direction: row; justify-content: space-between; align-items: baseline; gap: 20px; padding: 16px 0; }
+  .sp-spec > div:nth-last-child(-n+2) { border-bottom: 0; }
+  .sp-spec dt { flex: 0 0 auto; font-size: 14px; }
+  .sp-spec dd { text-align: right; }
+}
+@media (min-width: 1024px) {
+  .sp-sec > .sp-pc, .sp-sec > dl { margin-top: 6px; }
+  .sp-pc > div { gap: 14px; padding: 24px 26px; }
+  .sp-pc ul { gap: 12px; }
+  .sp-pc li { padding-left: 28px; font-size: 15px; }
+  .sp-pc__eksi li::before { top: 11px; }
+  .sp-note { font-size: 13px; }
 }
 
 /* ---------- Bölüm giriş animasyonları: bir kez, yumuşak; hero ve footer'da yok ---------- */
