@@ -765,10 +765,29 @@ const Neden = (() => {
 
 /* ---------- Kaydırma ---------- */
 let kareIstegi = 0;
+let zeminIstegi = 0;
+/* Masaüstünde header'ın hemen altındaki zemin açık mı? (beyaz/gri bölüm, kart vb.) Header, sabit katmanlar
+   (asansör, WhatsApp) atlanır; ilk dolu arka plan rengine bakılır. Arka planı görsel ya da degrade olanlar koyu sayılır. */
+function zeminAcikMi() {
+  for (const el of d.elementsFromPoint(innerWidth / 2, 46)) {
+    if (el.closest('#hdr') || getComputedStyle(el).position === 'fixed') continue;
+    for (let e = el; e && e !== h; e = e.parentElement) {
+      const m = getComputedStyle(e).backgroundColor.match(/[\d.]+/g);
+      if (m && (m.length < 4 || +m[3] > 0.5)) return 0.2126 * m[0] + 0.7152 * m[1] + 0.0722 * m[2] > 150;
+    }
+    return false;
+  }
+  return false;
+}
 function kaydirma() {
   const y = scrollY;
   if (Asansor) Asansor.kaydir(y);
-  if (hdr) hdr.classList.toggle('is-gecti', y >= ekran.heroSon - (mqMasa.matches ? 92 : 64));
+  if (hdr) {
+    const gecti = y >= ekran.heroSon - (mqMasa.matches ? 92 : 64);
+    hdr.classList.toggle('is-gecti', gecti);
+    if (!gecti || !mqMasa.matches) hdr.classList.remove('is-acik');
+    else if (!zeminIstegi) zeminIstegi = requestAnimationFrame(() => { zeminIstegi = 0; hdr.classList.toggle('is-acik', zeminAcikMi()); });
+  }
   if (Menu.acikMi && Menu.acikMi()) Menu.kapat();
   Cerez.kaydirmada();
   Kampanya.guncelle(clamp(y / ekran.H, 0, 2));

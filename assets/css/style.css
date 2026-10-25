@@ -197,6 +197,22 @@ svg { flex: 0 0 auto; }
   .hdr__tel b { font-size: 16px; font-weight: 600; letter-spacing: .3px; }
 }
 @media (min-width: 1024px) and (max-width: 1279px) { .hdr__tel { display: none; } }
+/* Masaüstü, hero'dan sonra açık zeminli bölümlerin üzerinde (JS: is-acik): header yine zeminsiz; arkadaki siyah gölge
+   beyaz degradeye döner, yazılar koyulaşır, kutular Apple Liquid Glass (kalın sıvı cam). Koyu bölümlerde bugünkü gibi. */
+@property --hd-acik { syntax: "<number>"; inherits: true; initial-value: 0; }
+@media (min-width: 1024px) {
+  .hdr { transition: background .4s ease, box-shadow .4s ease, --hd-acik .5s ease; }
+  .hdr.is-acik { --hd-acik: 1; }
+  .hdr.is-gecti::after { background: linear-gradient(180deg, rgba(14, 16, 18, calc(.62 * (1 - var(--hd-acik)))) 0%, rgba(14, 16, 18, calc(.49 * (1 - var(--hd-acik)))) 30%, rgba(14, 16, 18, calc(.25 * (1 - var(--hd-acik)))) 56%, rgba(14, 16, 18, calc(.07 * (1 - var(--hd-acik)))) 80%, rgba(14, 16, 18, 0) 100%), linear-gradient(180deg, rgba(243, 243, 241, calc(.86 * var(--hd-acik))) 0%, rgba(243, 243, 241, calc(.70 * var(--hd-acik))) 30%, rgba(243, 243, 241, calc(.40 * var(--hd-acik))) 56%, rgba(243, 243, 241, calc(.12 * var(--hd-acik))) 80%, rgba(243, 243, 241, 0) 100%); }
+  .hdr .logo, .hdr__tel span, .hdr__tel b { transition: color .4s ease; }
+  .hdr.is-acik .logo, .hdr.is-acik .logo:hover { color: var(--murekkep); }
+  .hdr.is-acik .hdr__tel span { color: #5b636b; }
+  .hdr.is-acik .hdr__tel b { color: var(--turuncu-koyu); }
+  .hdr.is-acik .pill { position: relative; isolation: isolate; color: #16191c; background: linear-gradient(180deg, rgba(255, 255, 255, .40) 0%, rgba(255, 255, 255, .10) 50%, rgba(255, 255, 255, .22) 100%); -webkit-backdrop-filter: blur(12px) saturate(210%) brightness(1.07) contrast(1.04); backdrop-filter: blur(12px) saturate(210%) brightness(1.07) contrast(1.04); box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, .80), inset 1px 2px 2px rgba(255, 255, 255, 1), inset -1px -2px 2px rgba(255, 255, 255, .55), inset 0 -10px 16px -10px rgba(21, 24, 27, .22), inset 0 10px 14px -12px rgba(255, 255, 255, .9), 0 0 0 .5px rgba(21, 24, 27, .16), 0 12px 26px -12px rgba(21, 24, 27, .34); }
+  .hdr.is-acik .pill::before { content: ""; position: absolute; inset: 0; z-index: -1; border-radius: inherit; pointer-events: none; background: radial-gradient(60% 150% at 18% -20%, rgba(255, 255, 255, .9), rgba(255, 255, 255, 0) 58%), radial-gradient(40% 120% at 90% 120%, rgba(255, 255, 255, .45), rgba(255, 255, 255, 0) 60%); }
+  .hdr.is-acik .pill:hover, .hdr.is-acik .pill:focus-visible, .hdr.is-acik .pill[aria-expanded="true"], .hdr.is-acik .pill--on { color: #0e1012; background: linear-gradient(180deg, rgba(255, 255, 255, .58) 0%, rgba(255, 255, 255, .22) 50%, rgba(255, 255, 255, .34) 100%); }
+  .hdr.is-acik .pill:focus-visible { outline-color: var(--turuncu); }
+}
 
 /* Header menü kutuları (camsı) */
 .pill { display: inline-flex; align-items: center; height: 36px; padding: 0 16px; border-radius: 999px; color: #d5d9dd; font-size: 14px; font-weight: 500; text-decoration: none; white-space: nowrap; background: rgba(255, 255, 255, .055); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .11), inset 0 1px 0 rgba(255, 255, 255, .10); -webkit-backdrop-filter: blur(14px) saturate(140%); backdrop-filter: blur(14px) saturate(140%); transition: background .3s, color .3s, box-shadow .3s; }
