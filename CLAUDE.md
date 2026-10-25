@@ -48,7 +48,9 @@ assets/img/           Görseller (logo, fotoğraflar) — web için sıkıştır
 assets/img/asansor/   Hero asansörü: kuyu + kapı kareleri (kare-692 geniş ekran, kare-400 telefon; 3 kat × 41 kare)
 assets/img/kabin/, hizmetler/, sistemler/  Fotoğraflar; medya/ klasöründeki asıllarından üretilir
                       (WebP, ad-<genişlik>.webp, srcset ile; medya/ repoya girmez)
-blog/                 Blog yazıları (ör. blog/asansor-etiket-renkleri.html). Yeni yazı yayınlanınca aynı işte
+blog/                 Blog yazıları (ör. blog/asansor-etiket-renkleri.html); şablon örneği blog/sancaktepe-asansor.html.
+                      Yazı, taslağın yalnızca "## Metin" bölümünden üretilir (editör notları ve doğrulama yayınlanmaz;
+                      doldurulmamış [[İSTEĞE BAĞLI]] satırları çıkarılır). Yeni yazı yayınlanınca aynı işte
                       ana sayfadaki blog şeridi (en yeni 12 yazı) ve blog.html listesi de güncellenir;
                       kartlar HTML'de yazılı durur (SEO), JS ile sonradan çekilmez
 docs/                 Proje belgeleri (yayınlanmaz): SEO yol haritası, blog taslakları, kurallar
