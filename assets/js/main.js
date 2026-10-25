@@ -34,6 +34,43 @@ function olc() {
 }
 olc();
 
+/* ---------- Kalınan yer: sayfa yenilenince (F5) ya da geri tuşuyla dönülünce kaydırma konumu geri yüklenir ----------
+   Tarayıcının kendi geri yüklemesi (özellikle Safari ve telefonda) sayfa düzeni oturmadan çalışıp konumu kaçırabiliyor;
+   konum oturum depolamasında (yk-konum) sayfa sayfa tutulur, düzen oturdukça yeniden uygulanır. Kullanıcı kaydırmaya
+   başlarsa bırakılır. Başka sayfadan bağlantıyla gelince sayfa her zamanki gibi baştan (ya da #bölümden) açılır. */
+const Konum = (() => {
+  const ANAHTAR = 'yk-konum';
+  const yol = location.pathname;
+  let kayit = {};
+  try { kayit = JSON.parse(sessionStorage.getItem(ANAHTAR) || '{}') || {}; } catch (e) { /* depolama kapalı olabilir */ }
+  const nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+  const durum = nav && (nav.type === 'reload' || nav.type === 'back_forward') ? kayit[yol] : null;
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  const yaz = () => { try { sessionStorage.setItem(ANAHTAR, JSON.stringify(kayit)); } catch (e) { /* yoksay */ } };
+  const ekle = (veri) => { kayit[yol] = Object.assign({}, kayit[yol], veri); yaz(); };
+  let kayT = 0;
+  addEventListener('scroll', () => { clearTimeout(kayT); kayT = setTimeout(() => ekle({ y: Math.round(scrollY) }), 200); }, { passive: true });
+  addEventListener('pagehide', () => ekle({ y: Math.round(scrollY) }));
+  let elle = false;
+  ['wheel', 'touchstart', 'keydown', 'mousedown'].forEach((o) => addEventListener(o, () => { elle = true; }, { passive: true, once: true }));
+  function geriYukle() {
+    if (!durum || durum.y == null || elle) return;
+    const y = Math.min(durum.y, h.scrollHeight - innerHeight);
+    if (Math.abs(scrollY - y) > 1) scrollTo({ top: y, behavior: 'instant' });
+  }
+  return {
+    geriYukle,
+    // sayfaya özel ek durum (ör. blog listesinde açılan kart sayısı): yenilemede geri verilir
+    ek: (ad) => (durum ? durum[ad] : undefined),
+    ekKaydet: (ad, v) => ekle({ [ad]: v }),
+    baslat() {
+      geriYukle();
+      addEventListener('load', geriYukle, { once: true });
+      if (d.fonts) d.fonts.ready.then(geriYukle);
+    }
+  };
+})();
+
 /* ---------- Ölçüm olayları (yalnızca onay verildiyse ve kimlik tanımlıysa gider) ---------- */
 let gaHazir = false;
 let pxHazir = false;
@@ -898,6 +935,8 @@ addEventListener('resize', () => {
     kaydirma();
   }, 120);
 });
+// yenilemede kalınan yer: hero asansörü de ilk çizimde o kata yerleşsin diye açılış ölçüsünden önce
+Konum.baslat();
 kaydirma();
 acilisYerlesim();
 
@@ -1266,8 +1305,10 @@ telefonBaslat();
   const cipler = $$('.bl-chip');
   const adet = () => (mqGenis.matches ? 16 : 8);
   const metin = new Map(kartlar.map((li) => [li, li.textContent.toLocaleLowerCase('tr-TR')]));
-  let kat = 'hepsi';
-  let limit = adet();
+  // yenilemede: seçili kategori ve açılan kart sayısı geri gelir
+  const onceki = Konum.ek('bl') || {};
+  let kat = cipler.some((c) => c.dataset.kat === onceki.kat) ? onceki.kat : 'hepsi';
+  let limit = Math.max(adet(), onceki.limit || 0);
   function uygula(animasyon) {
     const q = ara.value.trim().toLocaleLowerCase('tr-TR');
     const uyan = kartlar.filter((li) => (kat === 'hepsi' || li.dataset.kat === kat) && (!q || metin.get(li).includes(q)));
@@ -1287,6 +1328,7 @@ telefonBaslat();
     bos.hidden = uyan.length > 0;
     daha.hidden = uyan.length <= limit;
     diz();
+    Konum.ekKaydet('bl', { kat, limit });
   }
   // Pinterest ızgarası: görünen her kart, yüksekliği + ara boşluk kadar 1 px'lik satır kaplar
   function diz() {
@@ -1305,8 +1347,10 @@ telefonBaslat();
   ara.addEventListener('input', () => { limit = adet(); uygula(false); });
   daha.addEventListener('click', () => { limit += adet(); uygula(true); });
   kartlar.forEach((li) => { li.hidden = true; });
+  cipler.forEach((x) => x.setAttribute('aria-pressed', String(x.dataset.kat === kat)));
   liste.classList.add('is-hazir');
   uygula(true);
+  Konum.geriYukle();
   // genişlik ya da yazı tipi değişince kart yükseklikleri yeniden ölçülür
   if ('ResizeObserver' in window) new ResizeObserver(() => diz()).observe(liste);
   if (d.fonts) d.fonts.ready.then(diz);

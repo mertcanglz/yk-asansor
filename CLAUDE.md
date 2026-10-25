@@ -108,6 +108,9 @@ Kodlamadan önce blog taslakları `docs/blog-taslaklari/` altında Markdown olar
   kenarı soldaki gibi koyuya geçer; her kapakta ana konunun yeri odak noktası olarak verilir (`--op-d`).
 - **Kapsayıcı genişliği:** masaüstünde bölüm içerikleri header'ın iki kenarı arasında (1280 px kapsayıcı) kalır; zemin
   ekran boyunca uzayabilir ama kartlar taşmaz (ör. ana sayfa blog şeridi: ≥1280 px'te 3, 1024–1279 px'te 2 kart).
+- **Yenilemede kalınan yer:** sayfa yenilenince (F5) ya da geri tuşuyla dönülünce kaydırma konumu geri gelir (main.js
+  `Konum`, oturum depolaması `yk-konum`; blog listesinde açılan kart sayısı ve kategori de). Bağlantıyla gelince sayfa
+  baştan açılır. Kullanıcı kaydırmaya başlarsa geri yükleme bırakılır.
 - **Yumuşak kaydırma:** fare tekerleği/trackpad ile sayfa yumuşakça süzülerek kayar (main.js, kütüphanesiz). Dokunmatik
   ekranda tarayıcının kendi momentumlu kaydırması kalır (parmağın gerisinden gelmesin, adres çubuğu ve hero durakları
   bozulmasın); ana sayfanın hero katlarında da kat oturtma çalıştığı için tarayıcının kendi kaydırması.
