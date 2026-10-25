@@ -206,6 +206,7 @@ const Asansor = (() => {
   const olc12 = { s: 0, h: 0 };
   const olc3 = { s: 0, h: 0 };
   const yer3 = { s: 0, h: 0 }; // 3. katta yazının üstü (kuyu dibi bunun 10 px üstünde)
+  const kay3 = { s: 0, h: 0 }; // 3. kat yazısının yukarı kayması (px)
   const stick = $('.hx__stick', hx);
   function hedefleriOlc(zorla) {
     // Adres çubuğu açılıp kapanınca katlar (100dvh) uzayıp kısalır, yazı kayar. Ölçek buna göre değişmesin diye yazının
@@ -226,6 +227,10 @@ const Asansor = (() => {
     const kabinSigar = (yer3.h - 12 - 52) / 641.6;
     const enAz = Math.max(0.2, Math.min(olc12.h / 1.15, kabinSigar));
     olc3.h = clamp((yer3.h - 10 - 52) / 944, enAz, Math.max(enAz, Math.min(buyuk ? 0.55 : 0.42, olc12.h * 1.15)));
+    // Ölçek sınırda kalıp kabinin üstünde boşluk kalırsa yazı kabinle birlikte yukarı kayar: kabinin üstü 2. kattaki
+    // gibi 78 px'te durur, artan yer yazının altında (koyu zeminde) kalır
+    kay3.h = Math.max(0, Math.round(yer3.h - 10 - 944 * olc3.h - 78));
+    yer3.h -= kay3.h;
   }
   const katSu = () => (cam >= 1 ? olc12.s : olc3.s + (olc12.s - olc3.s) * ssm(clamp(cam, 0, 1)));
 
@@ -253,6 +258,7 @@ const Asansor = (() => {
       olc12.s = olc12.h;
       olc3.s = olc3.h;
       yer3.s = yer3.h;
+      kay3.s = kay3.h;
       su = katSu();
     }
     yerlestir();
@@ -335,7 +341,8 @@ const Asansor = (() => {
       const c1 = 64 + 246 * s - 34 + cabH / 2;
       const c23 = 78 + cabH / 2;
       // 3. kat: kuyunun dibi yazının 10 px üstünde (kabin header'ın altına çıkmaz, kutudan taşmaz)
-      const c3 = clamp(yer3.s - 10 - 944 * s, 52, boxH - 8 - 944 * s) + cabH / 2;
+      // (kabinin üstü 3. kat ölçeğine göre hesaplanır: geçiş sırasında kabin büyürken üstü yerinde kalır)
+      const c3 = clamp(yer3.s - 10 - 944 * olc3.s, 52, boxH - 8 - 944 * s) + cabH / 2;
       const cabC = cam >= 1 ? c23 + (c1 - c23) * Math.min(1, cam - 1) : c3 + (c23 - c3) * ssm(cam);
       merkez = ((cabC + 40 * s) * 900) / boxH;
     }
@@ -389,7 +396,7 @@ const Asansor = (() => {
         const dd = p - i;
         const o = dd >= 0 ? 1 - ssm((dd - 0.08) / 0.37) : ssm((dd + 0.55) / 0.35);
         const el = secs[i];
-        el.style.transform = `translate3d(0,${-dd * H * 0.3}px,0)`; // katlar üst üste durur (CSS), yalnızca kısa kayma
+        el.style.transform = `translate3d(0,${-dd * H * 0.3 - (i === 2 ? kay3.s : 0)}px,0)`; // katlar üst üste durur (CSS), yalnızca kısa kayma
         el.style.opacity = o.toFixed(3);
         el.style.visibility = o > 0.01 ? 'visible' : 'hidden';
       }
@@ -412,6 +419,7 @@ const Asansor = (() => {
       yaklas(olc12, 0.0004);
       yaklas(olc3, 0.0004);
       yaklas(yer3, 0.3);
+      yaklas(kay3, 0.3);
       su = katSu();
     }
     if (introT0 != null && intro < 1) {
@@ -428,7 +436,7 @@ const Asansor = (() => {
     gecis = yolda;
     const jt = now - jT0;
     jolt = !az && jt < 1400 ? jAmp * Math.exp(-jt / 260) * Math.sin((2 * Math.PI * jt) / 240) : 0;
-    const bitti = Math.abs(pt - p) < 0.0015 && Math.abs(st.pos - cam) < 0.002 && (az || jt >= 1400) && (introT0 == null || intro >= 1) && olc12.s === olc12.h && olc3.s === olc3.h && yer3.s === yer3.h;
+    const bitti = Math.abs(pt - p) < 0.0015 && Math.abs(st.pos - cam) < 0.002 && (az || jt >= 1400) && (introT0 == null || intro >= 1) && olc12.s === olc12.h && olc3.s === olc3.h && yer3.s === yer3.h && kay3.s === kay3.h;
     if (bitti) {
       p = pt; cam = faz(p).pos; jolt = 0;
       kabinDurumu(faz(p));

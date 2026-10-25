@@ -78,6 +78,8 @@ Kodlamadan önce blog taslakları `docs/blog-taslaklari/` altında Markdown olar
   Telefonda asansörün boyu kat kat JS ile hesaplanır: 1–2. katta kabinin altı başlığın 18 px üstünde, 3. katta kuyu dibi
   yazının 10 px üstünde (alttan yumuşak koyu geçişle biter); katlar arasında ve kutular kapanınca ölçek yumuşakça değişir.
   3. kattaki boy 1–2. kattakinden en çok %15 farklı (fazlası geçişte göze batar; yer darsa kuyu dibi yazının arkasında kalır).
+  Sınır yüzünden kabinin üstünde boşluk kalırsa 3. katın yazısı kabinle birlikte yukarı kayar: kabinin üstü 2. kattaki
+  gibi 78 px'te durur, artan yer yazının altında koyu zeminde kalır (kullanıcı kararı).
   2.↔3. kat geçişinde kabin kamerayla birlikte süzülür (önce düşüp geri çıkmaz), boyu ile yeri aynı anda değişir.
   Ölçek katta dururken kendiliğinden değişmez: adres çubuğu açılıp kapanınca ya da kampanya kartı kaydırınca etikete dönünce
   yeniden ölçülmez (yazı yeri 1. katta 100svh'ye, 3. katta 100lvh'ye göre okunur).
