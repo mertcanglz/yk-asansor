@@ -608,6 +608,61 @@ const Menu = (() => {
   return { kapat, acikMi: () => !!acik };
 })();
 
+/* ---------- Header kutularında ışık (masaüstü, Liquid Glass) ----------
+   Tek bir ışık kaynağı header'ın üstünde: her kutunun parlaması ışığa göre kendi yerinde ve gücünde (--isik-x, --isik-dx,
+   --isik-g; CSS'te). Fare header'da gezerken ışık imleci yumuşakça izler; imlecin altındaki kutuda parıltı imleçle kayar. */
+(() => {
+  const kutular = hdr ? $$('.hdr__nav .pill', hdr) : [];
+  if (!kutular.length) return;
+  let yer = [], hedef = 0, simdi = 0, raf = 0, sonT = 0;
+  const dinlenme = () => hdr.clientWidth * 0.44; // fare yokken ışık ortanın biraz solunda
+  function boya() {
+    kutular.forEach((k, i) => {
+      const fark = simdi - yer[i];
+      const dx = clamp(fark / 260, -1, 1);
+      k.style.setProperty('--isik-x', `${(50 + dx * 36).toFixed(1)}%`);
+      k.style.setProperty('--isik-dx', dx.toFixed(3));
+      k.style.setProperty('--isik-g', (0.55 + 0.45 / (1 + (fark / 420) ** 2)).toFixed(3));
+    });
+  }
+  function adim(now) {
+    const dt = Math.min(64, sonT ? now - sonT : 16.7);
+    sonT = now;
+    simdi += (hedef - simdi) * (1 - Math.pow(0.86, dt / 16.667));
+    if (Math.abs(hedef - simdi) < 0.5) simdi = hedef;
+    boya();
+    raf = simdi === hedef ? 0 : requestAnimationFrame(adim);
+  }
+  function git(x) {
+    hedef = x;
+    if (mqAz.matches) { simdi = x; boya(); return; }
+    if (!raf) { sonT = 0; raf = requestAnimationFrame(adim); }
+  }
+  function kur() {
+    if (!mqMasa.matches) return;
+    cancelAnimationFrame(raf);
+    raf = 0;
+    yer = kutular.map((k) => { const r = k.getBoundingClientRect(); return r.left + r.width / 2; });
+    simdi = hedef = dinlenme();
+    boya();
+  }
+  kur();
+  if (d.fonts) d.fonts.ready.then(kur);
+  addEventListener('resize', kur);
+  if (mqDokun.matches || !matchMedia('(hover: hover)').matches) return;
+  hdr.addEventListener('pointermove', (e) => {
+    if (!mqMasa.matches || e.pointerType !== 'mouse') return;
+    git(e.clientX);
+    const k = e.target.closest('.pill');
+    if (k && kutular.includes(k)) {
+      const r = k.getBoundingClientRect();
+      k.style.setProperty('--mx', `${e.clientX - r.left}px`);
+      k.style.setProperty('--my', `${e.clientY - r.top}px`);
+    }
+  });
+  hdr.addEventListener('pointerleave', () => { if (mqMasa.matches) git(dinlenme()); });
+})();
+
 /* ---------- Telefon menüsü ---------- */
 (() => {
   const nav = $('#mnav');
