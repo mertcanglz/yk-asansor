@@ -17,7 +17,7 @@ const mqKucuk = matchMedia('(max-width: 599.98px)');
 const mqAz = matchMedia('(prefers-reduced-motion: reduce)');
 
 /* ---------- Ekran ölçüsü: kat yüksekliği 100svh (adres çubuğu açılıp kapanınca değişmez) ---------- */
-const ekran = { W: 0, H: 0 };
+const ekran = { W: 0, H: 0, heroSon: 0 };
 const vhOlc = $('#vhOlc');
 function olc() {
   // arka planda açılan sekmede ölçü 0 gelebilir; o zaman makul bir değerle başlanır, ilk resize'da düzelir
@@ -25,6 +25,9 @@ function olc() {
   ekran.H = Math.round(vhOlc ? vhOlc.getBoundingClientRect().height : innerHeight) || innerHeight || 800;
   // hero düzeni: geniş (asansör sağda) ya da dar (asansör üstte) — <head> içindeki kuralla aynı
   h.classList.toggle('hw', innerWidth >= 1024 || (innerWidth >= 760 && innerWidth > innerHeight * 1.1));
+  // hero'nun bittiği yer (telefonda 2 kat + büyük ekran yüksekliği; adres çubuğu gizlenince alttaki bölüm görünmesin)
+  const hx = d.getElementById('hx');
+  ekran.heroSon = hx ? hx.offsetTop + hx.offsetHeight : 3 * ekran.H;
 }
 olc();
 
@@ -195,22 +198,30 @@ const Asansor = (() => {
     return { pos: 1 - k, door: ssm(Math.min(1, (t - b) / (c - b))) };
   }
 
-  /* Telefonda asansör ölçeği: 1. kattaki başlığın üstünde kalan alanı doldurur, 3. katın yazısına binmez.
-     Çerez/kampanya kutusu kapanıp yazı aşağı inince yeniden hesaplanır ve asansör yumuşakça büyür. */
-  let su = 0, suHedef = 0, yaziSag = 0;
-  function hedefSu() {
+  /* Telefonda asansör ölçeği kat kat hesaplanır: 1–2. katta kabinin altı başlığın 18 px üstünde,
+     3. katta (kuyu dibi) kuyunun dibi yazının hemen üstünde. Katlar arasında ölçek yumuşakça geçer;
+     çerez/kampanya kutusu kapanıp yazı inince yeniden hesaplanır. */
+  let su = 0, yaziSag = 0, ust3 = 0;
+  const olc12 = { s: 0, h: 0 };
+  const olc3 = { s: 0, h: 0 };
+  function hedefleriOlc() {
     const ust1 = $('.hx-h', secs[0]).offsetTop;
-    const ust3 = $('.hx-in', secs[2]).firstElementChild.offsetTop;
-    // 1. kat: kabinin altı başlığın 18 px üstünde; 3. kat (kuyu dibi): kuyunun dibi yazı kutusunun geçişine yumuşakça girer
-    return clamp(Math.min((ust1 - 18 - 30) / 887.6, (ust3 - 10 - 52) / 944), 0.2, ekran.W >= 600 ? 0.5 : 0.36);
+    ust3 = $('.hx-in', secs[2]).firstElementChild.offsetTop;
+    const buyuk = ekran.W >= 600;
+    olc12.h = clamp((ust1 - 18 - 30) / 887.6, 0.2, buyuk ? 0.5 : 0.36);
+    olc3.h = clamp((ust3 - 10 - 52) / 944, 0.2, buyuk ? 0.55 : 0.42);
   }
+  const katSu = () => (cam >= 1 ? olc12.s : olc3.s + (olc12.s - olc3.s) * ssm(clamp(cam, 0, 1)));
   function geometri() {
     genis = h.classList.contains('hw');
     if (genis) {
-      su = suHedef = (ekran.H / 900) * 0.86;
+      su = (ekran.H / 900) * 0.86;
       yaziSag = $('.hx-in', secs[0]).getBoundingClientRect().right;
     } else {
-      su = suHedef = hedefSu();
+      hedefleriOlc();
+      olc12.s = olc12.h;
+      olc3.s = olc3.h;
+      su = katSu();
     }
     yerlestir();
     // düzen değişince satır içi stilleri sıfırla
@@ -260,7 +271,7 @@ const Asansor = (() => {
   let yerT = 0;
   d.addEventListener('yk:yerlesim', () => {
     clearTimeout(yerT);
-    yerT = setTimeout(() => { if (!genis) { suHedef = hedefSu(); uyan(); } }, 480);
+    yerT = setTimeout(() => { if (!genis) { hedefleriOlc(); uyan(); } }, 480);
   });
 
   function ciz() {
@@ -280,7 +291,8 @@ const Asansor = (() => {
     if (!genis) {
       const c1 = 64 + 246 * s - 34 + g.cabH / 2;
       const c23 = 78 + g.cabH / 2;
-      const c3 = 52 + g.cabH / 2;
+      // 3. kat: kuyunun dibi yazının 10 px üstünde (kabin header'ın altına çıkmaz, kutudan taşmaz)
+      const c3 = clamp(ust3 - 10 - 944 * s, 52, boxH - 8 - 944 * s) + g.cabH / 2;
       const cabC = cam >= 1 ? c23 + (c1 - c23) * Math.min(1, cam - 1) : c3 + (c23 - c3) * ssm(cam);
       merkez = ((cabC + 40 * s) * 900) / boxH;
     }
@@ -326,7 +338,7 @@ const Asansor = (() => {
         const dd = p - i;
         const o = dd >= 0 ? 1 - ssm((dd - 0.08) / 0.37) : ssm((dd + 0.55) / 0.35);
         const el = secs[i];
-        el.style.transform = `translate3d(0,${-i * H - dd * H * 0.3}px,0)`;
+        el.style.transform = `translate3d(0,${-dd * H * 0.3}px,0)`; // katlar üst üste durur (CSS), yalnızca kısa kayma
         el.style.opacity = o.toFixed(3);
         el.style.visibility = o > 0.01 ? 'visible' : 'hidden';
       }
@@ -343,9 +355,10 @@ const Asansor = (() => {
     p += (pt - p) * f(masa ? 0.07 : 0.08);
     const st = faz(p);
     cam += (st.pos - cam) * f(genis ? (masa ? 0.05 : 0.06) : 0.1);
-    if (su !== suHedef) {
-      su = Math.abs(suHedef - su) < 0.0004 ? suHedef : su + (suHedef - su) * f(0.12);
-      yerlestir();
+    if (!genis) {
+      [olc12, olc3].forEach((o) => { if (o.s !== o.h) o.s = Math.abs(o.h - o.s) < 0.0004 ? o.h : o.s + (o.h - o.s) * f(0.12); });
+      const yeniSu = katSu();
+      if (Math.abs(yeniSu - su) > 0.0002) { su = yeniSu; yerlestir(); }
     }
     if (introT0 != null && intro < 1) {
       const t = az ? 1 : Math.min(1, (now - introT0) / 2600);
@@ -361,7 +374,7 @@ const Asansor = (() => {
     gecis = yolda;
     const jt = now - jT0;
     jolt = !az && jt < 1400 ? jAmp * Math.exp(-jt / 260) * Math.sin((2 * Math.PI * jt) / 240) : 0;
-    const bitti = Math.abs(pt - p) < 0.0015 && Math.abs(st.pos - cam) < 0.002 && (az || jt >= 1400) && (introT0 == null || intro >= 1) && su === suHedef;
+    const bitti = Math.abs(pt - p) < 0.0015 && Math.abs(st.pos - cam) < 0.002 && (az || jt >= 1400) && (introT0 == null || intro >= 1) && olc12.s === olc12.h && olc3.s === olc3.h;
     if (bitti) { p = pt; cam = faz(p).pos; jolt = 0; }
     ciz();
     raf = bitti ? 0 : requestAnimationFrame(tik);
@@ -423,7 +436,7 @@ const Asansor = (() => {
   function kaydir(y) {
     const H = ekran.H;
     pt = clamp(y / H, 0, 2);
-    const gizle = y > 3 * H + 10;
+    const gizle = y > ekran.heroSon + 10;
     if (gizle !== kapali) {
       kapali = gizle;
       lift.classList.toggle('is-kapali', gizle);
@@ -440,6 +453,7 @@ const Asansor = (() => {
     pt = clamp(scrollY / ekran.H, 0, 2);
     p = pt;
     cam = faz(p).pos;
+    if (!genis) { su = katSu(); yerlestir(); }
     ciz();
   }
 
@@ -673,7 +687,7 @@ let kareIstegi = 0;
 function kaydirma() {
   const y = scrollY;
   if (Asansor) Asansor.kaydir(y);
-  if (hdr) hdr.classList.toggle('is-gecti', y >= 3 * ekran.H - (mqMasa.matches ? 92 : 64));
+  if (hdr) hdr.classList.toggle('is-gecti', y >= ekran.heroSon - (mqMasa.matches ? 92 : 64));
   if (Menu.acikMi && Menu.acikMi()) Menu.kapat();
   Cerez.kaydirmada();
   Kampanya.guncelle(clamp(y / ekran.H, 0, 2));
@@ -689,6 +703,8 @@ addEventListener('resize', () => {
     if (W0 !== ekran.W || H0 !== ekran.H || hw0 !== h.classList.contains('hw')) {
       if (Asansor) Asansor.yenidenOlc();
       if (Neden) Neden.olc();
+    } else {
+      d.dispatchEvent(new CustomEvent('yk:yerlesim')); // ör. adres çubuğu açıldı/kapandı: yazı yeri değişti
     }
     kaydirma();
   }, 120);

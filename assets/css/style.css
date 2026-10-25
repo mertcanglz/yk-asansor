@@ -278,6 +278,13 @@ html:not(.js) .lift { display: none; }
 .hx__stick { position: sticky; top: 0; height: 100vh; height: 100svh; overflow: hidden; }
 .hx__col { will-change: transform; }
 .hx-sec { position: relative; height: 100vh; height: 100svh; display: flex; flex-direction: column; justify-content: flex-end; padding: 0 20px; color: var(--yazi-k); will-change: transform, opacity; }
+/* Telefonda (JS ile): katlar üst üste durur ve görünen ekranı doldurur (100dvh); yazı her zaman gerçek ekran altına yaslıdır.
+   Hero 2 kat + büyük ekran yüksekliği kadar uzun: adres çubuğu gizlenince 3. katta alttaki açık bölüm görünmez. */
+html.js:not(.hw) .hx { height: calc(300vh); height: calc(200svh + 100lvh); }
+html.js:not(.hw) .hx__stick { height: 100svh; height: 100dvh; }
+html.js:not(.hw) .hx__col { height: 100%; }
+html.js:not(.hw) .hx-sec { position: absolute; left: 0; right: 0; top: 0; height: 100%; }
+html.js:not(.hw) .hx-sec:not(.hx-sec--1) { opacity: 0; visibility: hidden; }
 /* Telefonda üç katın yazısı da ekranın altına yaslı. Butonların altındaki boşluk: WhatsApp alanı (16 + 56 px)
    + çentik payı + küçük pay. Çerez bildirimi ya da kampanya kartı açıkken onların gerçek yüksekliği kadar (JS ölçer);
    kapatılınca boşluk kalkar. */
@@ -294,7 +301,7 @@ html:not(.hw) { scroll-snap-type: y mandatory; }
 .hx-durak { position: absolute; left: 0; top: 0; width: 1px; height: 100vh; height: 100svh; pointer-events: none; scroll-snap-align: start; scroll-snap-stop: always; }
 .hx-durak:nth-child(2) { top: 100vh; top: 100svh; }
 .hx-durak:nth-child(3) { top: 200vh; top: 200svh; }
-.snap-serbest { position: absolute; left: 0; top: 300vh; top: 300svh; bottom: 0; width: 1px; pointer-events: none; scroll-snap-align: start; }
+.snap-serbest { position: absolute; left: 0; top: 300vh; top: calc(200svh + 100lvh); bottom: 0; width: 1px; pointer-events: none; scroll-snap-align: start; }
 /* son kat: başlıktan aşağısı düz zemin; sayfa kayarken arkadaki asansör görünmez */
 .hx-sec--3 .hx-in { background: linear-gradient(180deg, rgba(var(--bgc), 0) 0, rgb(var(--bgc)) 40px); }
 .hx-k { display: flex; align-items: center; gap: 12px; font-size: 13px; color: var(--yazi-k3); }

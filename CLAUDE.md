@@ -58,8 +58,9 @@ Kodlamadan önce blog taslakları `docs/blog-taslaklari/` altında Markdown olar
   Sitede bu boşluk sabit px olmasın, telefona göre hesaplansın: WhatsApp butonu alanı
   (alt 16 px + 56 px) + `env(safe-area-inset-bottom)` + küçük pay (16 px). Üç katın yazısı da alta yaslı.
   Çerez bildirimi ya da kampanya kartı açıkken boşluk onların gerçek yüksekliği kadar artar; kapatılınca kalkar.
-  Telefonda asansörün boyu, 1. kattaki başlığın üstünde kalan alanı dolduracak şekilde JS ile hesaplanır
-  (3. katta kuyu dibi görünür, alttan yumuşak koyu geçişle biter); kutular kapanıp yazı inince asansör yumuşakça büyür.
+  Telefonda asansörün boyu kat kat JS ile hesaplanır: 1–2. katta kabinin altı başlığın 18 px üstünde, 3. katta kuyu dibi
+  yazının 10 px üstünde (alttan yumuşak koyu geçişle biter); katlar arasında ve kutular kapanınca ölçek yumuşakça değişir.
+  Telefonda hero 2 kat + 100lvh uzunluğunda, katlar 100dvh: adres çubuğu gizlenince 3. katta alttaki açık bölüm görünmez.
   2. ve 3. katta bağlantı WhatsApp'ın solunda kaldığı için alt boşluk 28 px (kampanya etiketi görünürken 72 px).
   Telefonda her kaydırma bir kat ilerler (CSS scroll-snap, `scroll-snap-stop: always`); hero bitince sayfa serbest kayar. Hero yüksekliği `100vh` değil `100svh`/`100dvh`
   olsun (adres çubuğu butonları örtmesin); 360 px genişlik ve kısa ekranlarda (≤ 720 px) test et.
