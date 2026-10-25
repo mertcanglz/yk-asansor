@@ -27,7 +27,7 @@ function olc() {
   h.classList.toggle('hw', innerWidth >= 1024 || (innerWidth >= 760 && innerWidth > innerHeight * 1.1));
   // hero'nun bittiği yer (telefonda 2 kat + büyük ekran yüksekliği; adres çubuğu gizlenince alttaki bölüm görünmesin).
   // İç sayfalarda koyu sayfa başlığının bittiği yer.
-  const hx = d.getElementById('hx') || $('.kp');
+  const hx = d.getElementById('hx') || $('.kp, .lg-kp');
   ekran.heroSon = hx ? hx.offsetTop + hx.offsetHeight : 3 * ekran.H;
 }
 olc();

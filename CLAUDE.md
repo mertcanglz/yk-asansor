@@ -28,6 +28,9 @@ hizmetler.html        Hizmetler: tüm hizmetler tek sayfada (gruplar + SSS)
 asansor-montaji.html  Hizmet şablonu (Yeni asansör montajı); diğer hizmet sayfaları aynı yapıyla yazılır
 asansor-sistemleri.html  Asansör sistemleri: gruplu katalog (yolcu, yük ve araç, özel çözümler) + seçim ölçütleri + SSS
 dislili-asansor.html  Sistem şablonu (Dişlili asansör); diğer 7 sistem sayfası aynı yapıyla yazılır
+kvkk-aydinlatma.html, cerez-politikasi.html, gizlilik-politikasi.html, kullanim-sartlari.html
+                      Yasal sayfalar: ortalı koyu başlık + sade metin; [KÖŞELİ PARANTEZ] yer tutucular avukat kontrolünde dolar.
+                      Çerez tablosu sitenin gerçekte kullandığı kayıtlarla aynı tutulur (yeni çerez/depolama eklenirse buraya da yaz)
 assets/css/style.css  Tüm stiller; renkler/fontlar en üstteki :root değişkenlerinde
 assets/js/main.js     Etkileşimler (modül): hero asansörü, menüler, çerez onayı + GA/Meta yükleme
                       (kimlikler dosyanın başında GA_ID / META_PIXEL_ID: TODO), kampanya, form, animasyonlar

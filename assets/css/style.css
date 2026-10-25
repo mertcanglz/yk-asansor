@@ -1111,7 +1111,7 @@ html:not([data-ck="yok"]) .ck--bar { display: none; }
 /* SSS */
 .hz-sss { position: relative; z-index: 1; padding: var(--ic-bolum) var(--padx); background: var(--beyaz); color: var(--murekkep); }
 /* sayfa başlığının (kapak) hemen altındaki ilk bölüm biraz daha ferah başlar */
-:is(.kp, .kp + .sp-sub) + :is(.hz, .sp-wrap) { padding-top: var(--ic-ilk); }
+:is(.kp, .lg-kp, .kp + .sp-sub, .lg-kp + .sp-sub) + :is(.hz, .sp-wrap) { padding-top: var(--ic-ilk); }
 .hz-sss .hz__in { gap: 0; } /* gruplar arası boşluk burada yok: başlık ile sorular arasını yalnızca başlığın alt payı belirler */
 .hz-sss__h { display: flex; flex-direction: column; gap: 10px; margin-bottom: 18px; }
 @media (min-width: 1024px) {
@@ -1378,6 +1378,61 @@ html:not([data-ck="yok"]) .ck--bar { display: none; }
   .sp-note { font-size: 13px; }
 }
 
+/* ---------- Yasal sayfalar: ortalı koyu başlık + sade belge düzeni (telefonda KVKK mobil örneğiyle aynı) ---------- */
+.lg-kp { position: relative; z-index: 1; padding: 96px var(--padx) var(--ic-bolum); background: radial-gradient(90% 80% at 50% 0%, #1d2227 0%, var(--koyu) 75%); color: var(--yazi-k); text-align: center; }
+.lg-kp__in { display: flex; flex-direction: column; align-items: center; gap: 14px; max-width: 900px; margin: 0 auto; }
+.lg-kp .kp-crumb { justify-content: center; }
+.lg-h1 { font-size: min(27px, 7vw); line-height: 1.18; font-weight: 300; letter-spacing: -.7px; text-wrap: balance; }
+.js .lg-kp__in > * { animation: kpGir .9s var(--ease) both; }
+.js .lg-kp__in > :nth-child(2) { animation-delay: .07s; }
+.lg-doc { max-width: 848px; min-width: 0; margin: 0 auto; color: var(--murekkep); }
+.lg-doc h2 { margin: 36px 0 10px; font-size: 18px; line-height: 1.35; font-weight: 500; scroll-margin-top: 72px; text-wrap: balance; }
+.lg-doc h3 { margin: 22px 0 8px; font-size: 15px; line-height: 1.4; font-weight: 600; text-wrap: balance; }
+.lg-doc p { margin: 0 0 14px; font-size: 15px; line-height: 1.7; color: var(--gri-1); overflow-wrap: break-word; }
+.lg-doc a { color: var(--turuncu-koyu); }
+.lg-alpha { list-style: none; margin: 0 0 14px; padding: 0; font-size: 15px; line-height: 1.65; color: var(--gri-1); }
+.lg-alpha li { display: flex; gap: 8px; margin-bottom: 6px; }
+.lg-alpha li span:first-child { flex: 0 0 20px; }
+.lg-meta { margin-top: 24px; padding-top: 14px; border-top: 1px solid #dfe0dc; font-size: 13px; color: var(--gri-3); }
+/* çerez tablosu: telefonda her çerez bir kart; masaüstünde tablo */
+.lg-tbl-box { margin: 4px 0 14px; }
+.lg-tbl { width: 100%; border-collapse: collapse; font-size: 13px; line-height: 1.55; color: #5b636b; }
+.lg-tbl thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.lg-tbl tbody, .lg-tbl tr, .lg-tbl td { display: block; }
+.lg-tbl tr { display: grid; grid-template-columns: auto auto minmax(0, 1fr) auto; grid-template-areas: "ad ad ad sure" "tur sag . ." "amac amac amac amac"; padding: 12px 0; border-bottom: 1px solid #e6e7e3; }
+.lg-tbl tr:first-child { border-top: 1px solid #d7d8d4; }
+.lg-tbl td { padding: 0; }
+.lg-tbl td[data-etiket="Çerez"] { grid-area: ad; font-size: 14px; font-weight: 600; color: var(--murekkep); overflow-wrap: anywhere; }
+.lg-tbl td[data-etiket="Süre"] { grid-area: sure; padding-left: 12px; text-align: right; white-space: nowrap; }
+.lg-tbl td[data-etiket="Tür"] { grid-area: tur; }
+.lg-tbl td[data-etiket="Tür"]::after { content: "\00a0·\00a0"; }
+.lg-tbl td[data-etiket="Sağlayıcı"] { grid-area: sag; }
+.lg-tbl td[data-etiket="Amaç"] { grid-area: amac; margin-top: 2px; color: var(--gri-1); }
+@media (min-width: 760px) {
+  .lg-tbl-box { overflow-x: auto; }
+  .lg-tbl thead { position: static; width: auto; height: auto; overflow: visible; clip: auto; white-space: normal; }
+  .lg-tbl thead { display: table-header-group; }
+  .lg-tbl tbody { display: table-row-group; }
+  .lg-tbl tr { display: table-row; padding: 0; border: 0; }
+  .lg-tbl tr:first-child { border-top: 0; }
+  .lg-tbl th, .lg-tbl td, .lg-tbl td[data-etiket] { display: table-cell; padding: 8px 12px 8px 0; border-bottom: 1px solid #e6e7e3; vertical-align: top; text-align: left; font-size: 13px; font-weight: 400; color: #5b636b; margin: 0; }
+  .lg-tbl th { border-bottom-color: #d7d8d4; font-weight: 600; }
+  .lg-tbl td[data-etiket="Çerez"] { white-space: nowrap; overflow-wrap: normal; }
+  .lg-tbl td[data-etiket="Tür"]::after { content: none; }
+}
+@media (min-width: 1024px) {
+  .lg-kp { padding: 156px max(var(--padx), calc((100% - 1280px) / 2)) 80px; background: radial-gradient(70% 120% at 50% 0%, #1d2227 0%, var(--koyu) 70%); }
+  .lg-kp__in { gap: 22px; }
+  .lg-kp .kp-crumb { gap: 10px; }
+  .lg-h1 { font-size: 52px; line-height: 1.12; letter-spacing: -1.4px; }
+  .lg-doc h2 { margin: 44px 0 12px; font-size: 20px; scroll-margin-top: 110px; }
+  .lg-doc h3 { margin: 24px 0 8px; font-size: 16px; }
+  .lg-doc p { line-height: 1.75; }
+  .lg-alpha { line-height: 1.75; }
+  .lg-alpha li { gap: 10px; margin-bottom: 4px; }
+  .lg-meta { margin-top: 28px; padding-top: 16px; }
+}
+
 /* ---------- Bölüm giriş animasyonları: bir kez, yumuşak; hero ve footer'da yok ---------- */
 .js .rv { opacity: 0; transform: translateY(18px); transition: opacity .8s var(--ease), transform .9s var(--ease); }
 .js .rv--soft { transform: translateY(26px); transition-duration: 1s, 1.1s; }
@@ -1411,7 +1466,7 @@ html:not([data-ck="yok"]) .ck--bar { display: none; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .js .rv, .js .rv-st > * { opacity: 1 !important; transform: none !important; transition: none !important; }
-  .wa__ring, .steps.is-gorunur .steps__line::after, .btn-d:hover::after, .sp-steps.is-gorunur::before, .js .kp__in > *, .js .kp__mask { animation: none; }
+  .wa__ring, .steps.is-gorunur .steps__line::after, .btn-d:hover::after, .sp-steps.is-gorunur::before, .js .kp__in > *, .js .lg-kp__in > *, .js .kp__mask { animation: none; }
   .sp-steps::before { background-size: 0 0, 100% 100%; }
   .promo, .promo-pill, .ck, .ck-open, .mega, .m-nav { animation-duration: .01s; animation-delay: 0s !important; }
   .hw .hx-sec { transition: none; }
