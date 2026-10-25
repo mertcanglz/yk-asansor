@@ -84,6 +84,9 @@ Kodlamadan önce blog taslakları `docs/blog-taslaklari/` altında Markdown olar
   Ekrana sığan başlık zorla iki satıra bölünmez: iki parçalı başlıkta (düz + italik) parçalar
   `inline-block` + `nowrap`; sığarsa tek satır, sığmazsa yalnızca iki parçanın arasından kırılır.
   Blog yazı başlığının genişliği yazı sütununu (848 px) geçmez; yazı kapağı görselsiz ve ortalıdır.
+- **Açılır grup başlıkları** (footer bağlantı grupları, hamburger menü): başlık metni kendi genel sayfasına gider
+  (Hizmetler → `hizmetler.html`, Asansör sistemleri → `asansor-sistemleri.html`); sağdaki boşluk ve ok alt başlıkları
+  açar/kapatır (kullanıcı kararı). Footer grupları masaüstünde hep açık.
 - **"Bu sayfada" bağlantı şeridi yalnızca masaüstünde:** mobilde hiçbir sayfada gösterilmez (kullanıcı kararı).
 - **Genel bağlantı hover rengi kartları ezmez:** `a:hover` yerine `a:where(:hover)` kullan; açık zemindeki
   kart/bağlantılar (kabin kartları, blog kartları, koyu metin bağlantıları) hover ve dokunmada beyaza dönmesin.

@@ -281,9 +281,9 @@
       <button type="button" class="ib" id="navKapat" aria-label="Menüyü kapat"><svg width="18" height="18" stroke-width="2" aria-hidden="true"><use href="#i-x"/></svg></button>
     </div>
     <nav class="m-nav__body" aria-label="Ana menü (telefon)">
-      <details>
-        <summary class="m-nav__row">Hizmetler<svg class="m-chev" width="18" height="18" stroke-width="2.2" aria-hidden="true"><use href="#i-down"/></svg></summary>
-        <div class="m-nav__grid">
+      <div class="m-nav__grp">
+        <div class="m-nav__row m-nav__row--ac"><a href="hizmetler.html">Hizmetler</a><button type="button" class="m-nav__ac" aria-expanded="false" aria-controls="mnav-hizmet" aria-label="Hizmetler alt başlıklarını göster"><svg class="m-chev" width="18" height="18" stroke-width="2.2" aria-hidden="true"><use href="#i-down"/></svg></button></div>
+        <div class="m-nav__grid" id="mnav-hizmet" hidden>
           <a class="m-nav__it" href="asansor-montaji.html"><svg width="34" height="34" stroke-width="1.5" aria-hidden="true"><use href="#h-montaj"/></svg><span>Yeni asansör montajı</span></a>
           <a class="m-nav__it" href="asansor-bakimi.html"><svg width="34" height="34" stroke-width="1.5" aria-hidden="true"><use href="#h-bakim"/></svg><span>Periyodik bakım</span></a>
           <a class="m-nav__it" href="asansor-modernizasyonu.html"><svg width="34" height="34" stroke-width="1.5" aria-hidden="true"><use href="#h-modern"/></svg><span>Modernizasyon ve revizyon</span></a>
@@ -291,10 +291,10 @@
           <a class="m-nav__it" href="asansor-temizlik-muayene.html"><svg width="34" height="34" stroke-width="1.5" aria-hidden="true"><use href="#h-temizlik"/></svg><span>Temizlik ve muayene</span></a>
           <a class="m-nav__it" href="yesil-etiket.html"><svg width="34" height="34" stroke-width="1.5" aria-hidden="true"><use href="#h-etiket"/></svg><span>Yeşil etiket hazırlığı</span></a>
         </div>
-      </details>
-      <details>
-        <summary class="m-nav__row">Asansör sistemleri<svg class="m-chev" width="18" height="18" stroke-width="2.2" aria-hidden="true"><use href="#i-down"/></svg></summary>
-        <div class="m-nav__grid">
+      </div>
+      <div class="m-nav__grp">
+        <div class="m-nav__row m-nav__row--ac"><a href="asansor-sistemleri.html">Asansör sistemleri</a><button type="button" class="m-nav__ac" aria-expanded="false" aria-controls="mnav-sistem" aria-label="Asansör sistemleri alt başlıklarını göster"><svg class="m-chev" width="18" height="18" stroke-width="2.2" aria-hidden="true"><use href="#i-down"/></svg></button></div>
+        <div class="m-nav__grid" id="mnav-sistem" hidden>
           <a class="m-nav__it" href="dislili-asansor.html"><svg width="34" height="34" stroke-width="1.5" aria-hidden="true"><use href="#s-dislili"/></svg><span>Dişlili asansör</span></a>
           <a class="m-nav__it" href="dislisiz-asansor.html"><svg width="34" height="34" stroke-width="1.5" aria-hidden="true"><use href="#s-dislisiz"/></svg><span>Dişlisiz asansör</span></a>
           <a class="m-nav__it" href="hidrolik-asansor.html"><svg width="34" height="34" stroke-width="1.5" aria-hidden="true"><use href="#s-hidrolik"/></svg><span>Hidrolik asansör</span></a>
@@ -304,7 +304,7 @@
           <a class="m-nav__it" href="villa-engelli-asansoru.html"><svg width="34" height="34" stroke-width="1.5" aria-hidden="true"><use href="#s-villa"/></svg><span>Villa ve engelli lifti</span></a>
           <a class="m-nav__it" href="yuruyen-merdiven.html"><svg width="34" height="34" stroke-width="1.5" aria-hidden="true"><use href="#s-yuruyen"/></svg><span>Yürüyen merdiven</span></a>
         </div>
-      </details>
+      </div>
       <a class="m-nav__row" href="yesil-etiket.html">Yeşil etiket<svg width="18" height="18" stroke-width="2.2" aria-hidden="true"><use href="#i-chev"/></svg></a>
       <a class="m-nav__row" href="iletisim.html">İletişim<svg width="18" height="18" stroke-width="2.2" aria-hidden="true"><use href="#i-chev"/></svg></a>
       <div class="m-nav__cta">
@@ -526,18 +526,18 @@
           <button type="submit" class="btn-d qf__btn">Teklif isteyin<svg width="14" height="14" stroke-width="2.8" aria-hidden="true"><use href="#i-chev"/></svg></button>
         </form>
         <div class="ft__navs">
-          <details class="fgrp">
-            <summary class="ft__h">Hizmetlerimiz<svg class="m-chev" width="16" height="16" stroke-width="2.2" aria-hidden="true"><use href="#i-down"/></svg></summary>
-            <nav class="fgrp__l" aria-label="Hizmetlerimiz"><a href="asansor-montaji.html">Yeni asansör montajı</a><a href="asansor-bakimi.html">Periyodik bakım</a><a href="asansor-modernizasyonu.html">Modernizasyon ve revizyon</a><a href="asansor-ariza-servisi.html">7/24 arıza servisi</a><a href="asansor-temizlik-muayene.html">Temizlik ve muayene</a><a href="yesil-etiket.html">Yeşil etiket hazırlığı</a></nav>
-          </details>
-          <details class="fgrp">
-            <summary class="ft__h">Asansör sistemleri<svg class="m-chev" width="16" height="16" stroke-width="2.2" aria-hidden="true"><use href="#i-down"/></svg></summary>
-            <nav class="fgrp__l" aria-label="Asansör sistemleri"><a href="dislili-asansor.html">Dişlili asansör</a><a href="dislisiz-asansor.html">Dişlisiz asansör</a><a href="hidrolik-asansor.html">Hidrolik asansör</a><a href="makine-dairesiz-asansor.html">Makine dairesiz</a><a href="yuk-asansoru.html">Yük asansörü</a><a href="arac-asansoru.html">Araç asansörü</a><a href="villa-engelli-asansoru.html">Villa ve engelli lifti</a><a href="yuruyen-merdiven.html">Yürüyen merdiven</a></nav>
-          </details>
-          <details class="fgrp">
-            <summary class="ft__h">Hızlı erişim<svg class="m-chev" width="16" height="16" stroke-width="2.2" aria-hidden="true"><use href="#i-down"/></svg></summary>
-            <nav class="fgrp__l" aria-label="Hızlı erişim"><a href="teklif-formu.html">Teklif formu</a><a href="iletisim.html">İletişim</a><a href="yesil-etiket.html">Yeşil etiket</a><a href="blog.html">Blog</a></nav>
-          </details>
+          <div class="fgrp">
+            <div class="fgrp__h"><a class="ft__h" href="hizmetler.html">Hizmetlerimiz</a><button type="button" class="fgrp__ac" aria-expanded="false" aria-controls="fgrp-hizmet" aria-label="Hizmetlerimiz alt başlıklarını göster"><svg class="m-chev" width="16" height="16" stroke-width="2.2" aria-hidden="true"><use href="#i-down"/></svg></button></div>
+            <nav class="fgrp__l" id="fgrp-hizmet" hidden aria-label="Hizmetlerimiz"><a href="asansor-montaji.html">Yeni asansör montajı</a><a href="asansor-bakimi.html">Periyodik bakım</a><a href="asansor-modernizasyonu.html">Modernizasyon ve revizyon</a><a href="asansor-ariza-servisi.html">7/24 arıza servisi</a><a href="asansor-temizlik-muayene.html">Temizlik ve muayene</a><a href="yesil-etiket.html">Yeşil etiket hazırlığı</a></nav>
+          </div>
+          <div class="fgrp">
+            <div class="fgrp__h"><a class="ft__h" href="asansor-sistemleri.html">Asansör sistemleri</a><button type="button" class="fgrp__ac" aria-expanded="false" aria-controls="fgrp-sistem" aria-label="Asansör sistemleri alt başlıklarını göster"><svg class="m-chev" width="16" height="16" stroke-width="2.2" aria-hidden="true"><use href="#i-down"/></svg></button></div>
+            <nav class="fgrp__l" id="fgrp-sistem" hidden aria-label="Asansör sistemleri"><a href="dislili-asansor.html">Dişlili asansör</a><a href="dislisiz-asansor.html">Dişlisiz asansör</a><a href="hidrolik-asansor.html">Hidrolik asansör</a><a href="makine-dairesiz-asansor.html">Makine dairesiz</a><a href="yuk-asansoru.html">Yük asansörü</a><a href="arac-asansoru.html">Araç asansörü</a><a href="villa-engelli-asansoru.html">Villa ve engelli lifti</a><a href="yuruyen-merdiven.html">Yürüyen merdiven</a></nav>
+          </div>
+          <div class="fgrp">
+            <div class="fgrp__h"><button type="button" class="ft__h fgrp__ac fgrp__ac--tam" aria-expanded="false" aria-controls="fgrp-hizli">Hızlı erişim<svg class="m-chev" width="16" height="16" stroke-width="2.2" aria-hidden="true"><use href="#i-down"/></svg></button></div>
+            <nav class="fgrp__l" id="fgrp-hizli" hidden aria-label="Hızlı erişim"><a href="teklif-formu.html">Teklif formu</a><a href="iletisim.html">İletişim</a><a href="yesil-etiket.html">Yeşil etiket</a><a href="blog.html">Blog</a></nav>
+          </div>
         </div>
       </div>
       <nav class="ft__legal" aria-label="Yasal bilgiler">

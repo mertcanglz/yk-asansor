@@ -237,7 +237,13 @@ svg { flex: 0 0 auto; }
 .m-nav__row::-webkit-details-marker { display: none; }
 .m-nav__row svg { color: var(--yazi-k3); }
 .m-chev { transition: transform .3s var(--ease); }
-details[open] > summary .m-chev { transform: rotate(180deg); }
+/* başlık kendi sayfasına gider; sağdaki boşluk ve ok alt başlıkları açar */
+.m-nav__row--ac { gap: 0; cursor: default; }
+.m-nav__row--ac > a { flex: 0 0 auto; display: flex; align-items: center; align-self: stretch; padding-right: 16px; color: inherit; text-decoration: none; }
+.m-nav__ac { flex: 1 1 auto; align-self: stretch; display: flex; align-items: center; justify-content: flex-end; padding: 0; border: 0; background: none; color: var(--yazi-k3); cursor: pointer; }
+.m-nav__ac[aria-expanded="true"] .m-chev { transform: rotate(180deg); }
+.m-nav__row--ac > a:focus-visible, .m-nav__ac:focus-visible { outline: 2px solid #f6f3ee; outline-offset: -2px; border-radius: 6px; }
+.m-nav__grid[hidden] { display: none; }
 .m-nav__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; padding: 12px 0 16px; border-bottom: 1px solid rgba(255, 255, 255, .08); }
 @media (min-width: 600px) { .m-nav__grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 .m-nav__it { display: flex; flex-direction: column; justify-content: space-between; gap: 12px; min-height: 96px; padding: 14px; border-radius: 14px; color: var(--yazi-k2); text-decoration: none; background: rgba(255, 255, 255, .03); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .06); }
@@ -819,9 +825,19 @@ a.fci:hover .fci__v { color: #fff; }
 /* Bağlantı grupları: telefonda açılır, masaüstünde sütun */
 .ft__navs { margin-top: 4px; border-top: 1px solid rgba(255, 255, 255, .08); }
 .fgrp { border-bottom: 1px solid rgba(255, 255, 255, .08); }
-.fgrp > summary { display: flex; align-items: center; justify-content: space-between; min-height: 54px; list-style: none; cursor: pointer; font-size: 14px; letter-spacing: .4px; }
-.fgrp > summary::-webkit-details-marker { display: none; }
-.fgrp > summary svg { color: var(--yazi-k3); }
+/* başlık kendi sayfasına gider; sağdaki boşluk ve ok alt başlıkları açar (bağlantısı olmayan grupta satırın tamamı) */
+.fgrp__h { display: flex; align-items: stretch; }
+.fgrp__h > a, .fgrp__ac { display: flex; align-items: center; min-height: 54px; font-size: 14px; letter-spacing: .4px; }
+.fgrp__h > a { flex: 0 0 auto; padding-right: 16px; text-decoration: none; }
+.fgrp__ac { flex: 1 1 auto; justify-content: flex-end; gap: 16px; padding: 0; border: 0; background: none; color: var(--yazi-k); font-family: var(--f-sans); font-weight: 600; text-align: left; cursor: pointer; }
+.fgrp__ac--tam { justify-content: space-between; }
+.fgrp__ac svg { color: var(--yazi-k3); transition: transform .3s var(--ease); }
+.fgrp__ac[aria-expanded="true"] svg { transform: rotate(180deg); }
+.fgrp__h > a:focus-visible, .fgrp__ac:focus-visible { outline: 2px solid #f6f3ee; outline-offset: -2px; border-radius: 6px; }
+.fgrp__l[hidden] { display: none; }
+/* JS yoksa gruplar açık */
+html:not(.js) .fgrp__l[hidden] { display: flex; }
+html:not(.js) .fgrp__ac svg { display: none; }
 .fgrp__l { display: flex; flex-direction: column; padding: 0 0 12px; }
 .fgrp__l a { display: flex; align-items: center; min-height: 40px; font-size: 15px; color: var(--yazi-k3); text-decoration: none; transition: color .25s; }
 .fgrp__l a:hover, .fgrp__l a:active { color: var(--yazi-k); }
@@ -843,11 +859,16 @@ a.fci:hover .fci__v { color: #fff; }
   .fgrp:nth-child(1) { grid-column: 1; }
   .fgrp:nth-child(2) { grid-column: 2; }
   .fgrp:nth-child(3) { grid-column: 3; }
-  .fgrp > summary { min-height: 0; margin-bottom: 16px; cursor: default; pointer-events: none; }
-  .fgrp > summary svg { display: none; }
+  .fgrp__h { margin-bottom: 16px; }
+  .fgrp__h > a, .fgrp__ac { min-height: 0; }
+  .fgrp__h > a { transition: color .25s; }
+  .fgrp__h > a:hover { color: var(--turuncu-acik); }
+  /* masaüstünde gruplar hep açık: ok gizli, düğme tıklanmaz */
+  .fgrp__ac { cursor: default; pointer-events: none; }
+  .fgrp__ac svg { display: none; }
+  .fgrp__l[hidden] { display: flex; }
   .fgrp__l { gap: 11px; padding: 0; }
   .fgrp__l a { min-height: 0; font-size: 14px; line-height: 1.35; }
-  .fgrp::details-content { content-visibility: visible; display: block; }
   .ft__contact { grid-row: 1; grid-column: 4; gap: 18px; padding: 26px 0 0 32px; border-left: 1px solid rgba(255, 255, 255, .08); }
   .fci { min-height: 0; gap: 12px; }
   .fci__l { display: inline-flex; }

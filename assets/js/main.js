@@ -873,10 +873,25 @@ if ('IntersectionObserver' in window) {
   });
 })();
 
-/* ---------- Footer bağlantı grupları: masaüstünde hep açık ---------- */
+/* ---------- Açılır gruplar (footer bağlantı grupları, telefon menüsü) ----------
+   Başlık kendi sayfasına giden bağlantıdır; sağdaki boşluk ve ok alt başlıkları açıp kapatır.
+   Footer grupları masaüstünde hep açık, telefonda kapalı başlar. */
 (() => {
-  const gruplar = $$('details.fgrp');
-  const uygula = () => gruplar.forEach((g) => { g.open = mqMasa.matches; });
+  const dugmeler = $$('.fgrp__ac, .m-nav__ac');
+  if (!dugmeler.length) return;
+  const ac = (b, v) => {
+    b.setAttribute('aria-expanded', String(v));
+    d.getElementById(b.getAttribute('aria-controls')).hidden = !v;
+  };
+  const footer = dugmeler.filter((b) => b.classList.contains('fgrp__ac'));
+  dugmeler.forEach((b) => b.addEventListener('click', () => {
+    if (footer.includes(b) && mqMasa.matches) return;
+    ac(b, b.getAttribute('aria-expanded') !== 'true');
+  }));
+  const uygula = () => footer.forEach((b) => {
+    ac(b, mqMasa.matches);
+    b.tabIndex = mqMasa.matches ? -1 : 0;
+  });
   uygula();
   mqMasa.addEventListener('change', uygula);
 })();
