@@ -26,8 +26,8 @@ function olc() {
   // hero düzeni: geniş (asansör sağda) ya da dar (asansör üstte) — <head> içindeki kuralla aynı
   h.classList.toggle('hw', innerWidth >= 1024 || (innerWidth >= 760 && innerWidth > innerHeight * 1.1));
   // hero'nun bittiği yer (telefonda 2 kat + büyük ekran yüksekliği; adres çubuğu gizlenince alttaki bölüm görünmesin).
-  // İç sayfalarda koyu sayfa başlığının bittiği yer.
-  const hx = d.getElementById('hx') || $('.kp, .lg-kp');
+  // İç sayfalarda koyu sayfa başlığının bittiği yer (teklif formunda giriş metninin altı).
+  const hx = d.getElementById('hx') || $('.kp, .lg-kp, .tf-intro');
   ekran.heroSon = hx ? hx.offsetTop + hx.offsetHeight : 3 * ekran.H;
 }
 olc();
@@ -909,6 +909,68 @@ telefonBaslat();
     } finally {
       btn.disabled = false;
       msg.hidden = false;
+    }
+  });
+})();
+
+/* ---------- Teklif formu sayfası: hizmet seçimi, dönüş tercihi, referans alanı, gönderim ---------- */
+(() => {
+  const form = $('#tf');
+  if (!form) return;
+  // hizmet seçilmediyse kendi uyarımızı gösteririz; diğer alanlar tarayıcının uyarısıyla (JS yoksa yalnızca tarayıcı denetler)
+  form.noValidate = true;
+  const hata = $('#tf-hizmet-hata');
+  const eposta = $('#tf-eposta');
+  const msg = $('#tf-durum');
+  const btn = $('.tf-submit', form);
+  const refBtn = $('.tf-ref', form);
+  const refAlan = $('#tf-ref-alan');
+  const secili = (ad) => { const r = form.querySelector(`input[name="${ad}"]:checked`); return r ? r.value : ''; };
+  form.addEventListener('change', (e) => {
+    if (e.target.name === 'hizmet') hata.hidden = true;
+    if (e.target.name === 'donus') {
+      const mail = secili('donus') === 'E-postayla';
+      eposta.required = mail;
+      $('.tf-zor', form).hidden = !mail;
+      $('.tf-istege', form).hidden = mail;
+    }
+  });
+  refBtn.addEventListener('click', () => {
+    refAlan.hidden = false;
+    refBtn.hidden = true;
+    refBtn.setAttribute('aria-expanded', 'true');
+    $('input', refAlan).focus();
+  });
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if (!secili('hizmet')) {
+      hata.hidden = false;
+      form.querySelector('input[name="hizmet"]').focus();
+      return;
+    }
+    if (!form.reportValidity()) return;
+    if (form.elements.website && form.elements.website.value) return; // otomatik gönderim
+    btn.disabled = true;
+    msg.hidden = true;
+    msg.classList.remove('is-hata');
+    try {
+      const r = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } });
+      const j = await r.json().catch(() => ({}));
+      if (!r.ok || j.ok === false) throw new Error(r.status === 422 && j.hata ? j.hata : '');
+      $('#tf-ok-hizmet').textContent = secili('hizmet');
+      $('#tf-ok-donus').textContent = secili('donus') === 'E-postayla' ? 'E-postayla dönüş' : 'Telefonla dönüş';
+      const ok = $('#tf-ok');
+      form.hidden = true;
+      ok.hidden = false;
+      ok.focus();
+      olay('teklif_formu_gonderildi', { hizmet: secili('hizmet') });
+      if (pxHazir && window.fbq) window.fbq('track', 'Lead');
+    } catch (err) {
+      msg.textContent = (err && err.message) || 'Şu anda gönderilemedi. Lütfen 0 (543) 542 86 75 numarasını arayın ya da WhatsApp’tan yazın.';
+      msg.classList.add('is-hata');
+      msg.hidden = false;
+    } finally {
+      btn.disabled = false;
     }
   });
 })();

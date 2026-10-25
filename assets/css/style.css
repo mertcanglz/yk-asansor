@@ -1433,6 +1433,151 @@ html:not([data-ck="yok"]) .ck--bar { display: none; }
   .lg-meta { margin-top: 28px; padding-top: 16px; }
 }
 
+/* ---------- Teklif formu (reklam açılış sayfası): telefonda form başlığın hemen altında; bu sayfada WhatsApp butonu yok ---------- */
+.tf-ust { position: relative; z-index: 1; padding: 92px var(--padx) var(--ic-bolum); background: radial-gradient(110% 60% at 20% 10%, #1f2429 0%, var(--koyu) 72%); color: var(--yazi-k); }
+.tf-intro { display: flex; flex-direction: column; gap: 14px; margin-bottom: 20px; }
+.tf-h1 { font-size: min(29px, 7.6vw); line-height: 1.12; font-weight: 300; letter-spacing: -.9px; }
+.tf-h1 span, .tf-h1 em { display: block; white-space: nowrap; }
+.tf-h1 em { font-family: var(--f-serif); font-style: italic; font-weight: 500; letter-spacing: -.4px; color: var(--vurgu-sayfa); }
+.tf-lead { font-size: 15px; line-height: 1.65; color: var(--yazi-k4); }
+.tf-list { list-style: none; margin: 2px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 16px; }
+.tf-list li { display: flex; align-items: center; gap: 8px; font-size: 14px; color: #e3e6e9; }
+.tf-list__ic { flex: 0 0 24px; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--turuncu-acik); background: rgba(242, 106, 27, .12); box-shadow: inset 0 0 0 1px rgba(242, 106, 27, .28); }
+.tf-promo { margin: 0 0 14px; display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 14px; color: #ffd9bd; font-size: 13.5px; line-height: 1.45; background: linear-gradient(120deg, rgba(242, 106, 27, .18), rgba(242, 106, 27, .06)); box-shadow: inset 0 0 0 1px rgba(242, 106, 27, .32); }
+.tf-promo svg { flex: 0 0 20px; }
+.tf-promo b { color: #fff; font-weight: 600; }
+/* açılış: yazılar ve form kartı sırayla yumuşakça belirir */
+.js .tf-intro > *, .js .tf-promo, .js .tf-card { animation: kpGir .9s var(--ease) both; }
+.js .tf-intro > :nth-child(2) { animation-delay: .07s; }
+.js .tf-intro > :nth-child(3) { animation-delay: .14s; }
+.js .tf-promo { animation-delay: .2s; }
+.js .tf-card { animation-delay: .12s; }
+/* form kartı */
+.tf-card { position: relative; padding: 20px 18px 18px; border-radius: 16px; background: var(--beyaz); color: var(--murekkep); box-shadow: 0 50px 90px -40px rgba(0, 0, 0, .75), 0 0 0 1px rgba(255, 255, 255, .06); scroll-margin-top: 76px; }
+.tf-card [hidden] { display: none !important; }
+.tf-card__t { margin-bottom: 4px; font-size: 22px; line-height: 1.2; font-weight: 400; letter-spacing: -.5px; }
+.tf-step { min-width: 0; margin: 0; padding: 18px 0; border: 0; border-top: 1px solid #ecedea; }
+.tf-form > .tf-step:first-of-type { border-top: 0; padding-top: 16px; }
+/* başlık (legend) normal akışta: fieldset çizgisinin üstüne binmez */
+.tf-step__h { float: left; width: 100%; display: flex; align-items: center; gap: 10px; margin: 0 0 12px; padding: 0; font-size: 15px; line-height: 1.35; font-weight: 600; color: var(--murekkep); }
+.tf-step__h + * { clear: both; }
+.tf-step > :not(legend) + :not(legend) { margin-top: 12px; }
+.tf-n { flex: 0 0 24px; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; color: #d9560f; background: #fff1e7; }
+/* hizmet seçimi: tek seçimli düğmeler (radyo) */
+.tf-chips { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.tf-chip { position: relative; display: flex; align-items: center; gap: 10px; min-height: 52px; padding: 8px 12px; border-radius: 12px; background: #f6f6f4; box-shadow: inset 0 0 0 1px var(--cizgi); color: var(--murekkep-2); font-size: 14px; line-height: 1.25; font-weight: 500; cursor: pointer; transition: background .25s, box-shadow .25s, color .25s; }
+.tf-chip input, .tf-seg input { position: absolute; width: 1px; height: 1px; margin: 0; opacity: 0; pointer-events: none; }
+.tf-chip::before { content: ""; flex: 0 0 16px; width: 16px; height: 16px; border-radius: 50%; background: #fff; box-shadow: inset 0 0 0 1.5px #c3c6c2; transition: box-shadow .25s; }
+@media (hover: hover) { .tf-chip:hover { background: #fff; box-shadow: inset 0 0 0 1px #c9ccc8; } }
+.tf-chip:has(input:checked) { background: var(--krem); color: #8f3406; box-shadow: inset 0 0 0 1.5px var(--turuncu); }
+.tf-chip:has(input:checked)::before { box-shadow: inset 0 0 0 5px var(--turuncu); }
+.tf-chip:has(input:focus-visible) { outline: 2px solid var(--turuncu); outline-offset: 2px; }
+.tf-err { display: block; font-size: 13px; color: #b3261e; }
+.tf-row { display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; }
+.tf-f { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.tf-l { font-size: 13px; font-weight: 500; color: var(--gri-2); }
+.tf-l small { font-size: 12px; font-weight: 400; color: #8a9097; }
+.tf-l.tel-l .tel-uyari { color: #d93a3f; }
+.tf-i { display: block; width: 100%; min-width: 0; height: 48px; margin: 0; padding: 0 14px; border: 0; border-radius: 10px; background: #fff; box-shadow: inset 0 0 0 1px #d6d8d4; color: var(--murekkep); font-family: var(--f-sans); font-size: 16px; -webkit-appearance: none; appearance: none; transition: box-shadow .2s; }
+.tf-i::placeholder { color: #a3a8ad; }
+@media (hover: hover) { .tf-i:hover { box-shadow: inset 0 0 0 1px #b9bcb8; } }
+.tf-i:focus { outline: none; box-shadow: inset 0 0 0 1.5px var(--turuncu), 0 0 0 4px rgba(226, 102, 28, .14); }
+.tf-i[aria-invalid="true"] { box-shadow: inset 0 0 0 1.5px #d93a3f; }
+.tf-ta { height: auto; min-height: 72px; padding: 12px 14px; line-height: 1.5; resize: vertical; }
+/* dönüş tercihi: iki seçenekli düğme */
+.tf-donus { margin: 0; padding: 0; border: 0; }
+.tf-donus > legend { float: left; width: 100%; margin-bottom: 6px; padding: 0; }
+.tf-seg { clear: both; display: grid; grid-template-columns: 1fr 1fr; gap: 4px; height: 48px; padding: 4px; border-radius: 12px; background: #f1f1ef; }
+.tf-seg label { position: relative; display: flex; }
+.tf-seg span { flex: 1 1 auto; display: flex; align-items: center; justify-content: center; gap: 8px; border-radius: 9px; color: #5b636b; font-size: 14px; font-weight: 500; cursor: pointer; transition: background .25s, color .25s, box-shadow .25s; }
+.tf-seg input:checked + span { background: #fff; color: var(--murekkep); box-shadow: 0 1px 3px rgba(21, 24, 27, .14), 0 0 0 1px rgba(21, 24, 27, .04); }
+.tf-seg input:focus-visible + span { outline: 2px solid var(--turuncu); outline-offset: 2px; }
+/* referans: göze batmayan, tıklanınca açılan isteğe bağlı alan (JS yoksa alan baştan açık) */
+.tf-ref { display: inline-flex; align-items: center; gap: 6px; min-height: 36px; padding: 0; border: 0; background: none; color: #8a9097; font-family: var(--f-sans); font-size: 12px; text-align: left; cursor: pointer; transition: color .25s; }
+.tf-ref:focus-visible { outline: 2px solid var(--turuncu); outline-offset: 3px; border-radius: 4px; }
+.tf-ref__plus { position: relative; flex: 0 0 16px; width: 16px; height: 16px; border-radius: 50%; box-shadow: inset 0 0 0 1px #cfd2ce; }
+.tf-ref__plus::before, .tf-ref__plus::after { content: ""; position: absolute; left: 50%; top: 50%; width: 7px; height: 1.5px; margin: -.75px 0 0 -3.5px; border-radius: 2px; background: currentColor; }
+.tf-ref__plus::after { transform: rotate(90deg); }
+html:not(.js) .tf-ref { display: none; }
+html:not(.js) .tf-card #tf-ref-alan[hidden] { display: flex !important; }
+/* gönder */
+.tf-gonder { display: flex; flex-direction: column; gap: 10px; }
+.tf-submit { width: 100%; height: 56px; margin-top: 4px; border: 0; font-size: 16px; cursor: pointer; }
+.tf-submit[disabled] { opacity: .7; cursor: progress; }
+.tf-msg { font-size: 14px; line-height: 1.5; color: #1f7a43; }
+.tf-msg.is-hata { color: #b3261e; }
+.tf-legal { font-size: 12px; line-height: 1.55; color: #7d848b; }
+.tf-legal a { color: var(--turuncu-koyu); }
+/* gönderim başarılı */
+.tf-ok { display: flex; flex-direction: column; align-items: center; gap: 14px; padding: 28px 4px 8px; text-align: center; outline: none; }
+.tf-ok__ic { width: 64px; height: 64px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; background: #2f9e5b; box-shadow: 0 14px 30px -14px rgba(47, 158, 91, .8); }
+.tf-ok__t { margin-top: 6px; font-size: 24px; line-height: 1.2; font-weight: 400; letter-spacing: -.5px; }
+.tf-ok__d { max-width: 400px; font-size: 15px; line-height: 1.65; color: var(--gri-2); }
+.tf-ok__sum { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin: 6px 0 4px; }
+.tf-ok__sum span { padding: 6px 12px; border-radius: 999px; font-size: 13px; color: var(--gri-2); background: var(--acik); }
+.tf-ok__acts { display: flex; flex-direction: column; align-items: center; gap: 10px; margin-top: 8px; }
+/* form altı: referans notu ve hızlı iletişim */
+.tf-after { display: flex; flex-direction: column; gap: 22px; margin-top: 22px; }
+.tf-ref-note { display: flex; align-items: flex-start; gap: 12px; font-size: 14px; line-height: 1.6; color: var(--yazi-k3); }
+.tf-ref-note svg { flex: 0 0 18px; margin-top: 2px; }
+.tf-ref-note b { color: #e3e6e9; font-weight: 600; }
+.tf-alt { display: flex; flex-direction: column; gap: 12px; padding-top: 20px; border-top: 1px solid rgba(255, 255, 255, .08); }
+.tf-alt__t { font-size: 14px; color: var(--gri-4); }
+.tf-alt__r { display: flex; flex-direction: column; gap: 6px; }
+/* formu gönderdikten sonra ne olur? */
+.tf-nasil { position: relative; z-index: 1; padding: var(--ic-ilk) var(--padx) var(--ic-bolum); background: var(--acik); color: var(--murekkep); }
+.tf-nasil__in { display: flex; flex-direction: column; gap: 18px; max-width: 1280px; margin: 0 auto; }
+.tf-adim { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; counter-reset: adim; }
+.tf-adim li { display: flex; flex-direction: column; gap: 6px; padding: 18px 18px 20px; border-radius: 16px; background: var(--beyaz); box-shadow: inset 0 0 0 1px var(--cizgi); counter-increment: adim; }
+.tf-adim li::before { content: "0" counter(adim); font-size: 13px; font-weight: 600; letter-spacing: .6px; color: #d9560f; }
+.tf-adim b { font-size: 17px; font-weight: 500; }
+.tf-adim span { font-size: 14px; line-height: 1.6; color: #5b636b; }
+/* footer: bu sayfada hızlı teklif formu ve WhatsApp butonu yok */
+.ft--formsuz .ft__bar { padding-bottom: calc(24px + env(safe-area-inset-bottom)); }
+@media (min-width: 600px) {
+  .tf-chips { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .tf-row { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .tf-card { padding: 28px 28px 26px; }
+}
+@media (min-width: 760px) {
+  .ft--formsuz .ft__grid { grid-template-columns: minmax(0, 1fr); }
+  .tf-adim { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+}
+@media (min-width: 1024px) {
+  .tf-ust { display: grid; grid-template-columns: 560px minmax(0, 1fr); grid-template-areas: "intro kart" "promo kart" "sonra kart"; grid-template-rows: auto auto 1fr; column-gap: 80px; align-items: start; padding: 120px max(var(--padx), calc((100% - 1280px) / 2)) 72px; background: radial-gradient(60% 80% at 22% 30%, #1f2429 0%, var(--koyu) 70%); }
+  .tf-intro { grid-area: intro; gap: 24px; margin: 0; padding-top: 28px; }
+  .tf-h1 { font-size: 54px; line-height: 1.08; letter-spacing: -1.5px; }
+  .tf-h1 em { letter-spacing: -.8px; }
+  .tf-lead { max-width: 560px; font-size: 17px; line-height: 1.7; }
+  .tf-list { flex-direction: column; flex-wrap: nowrap; gap: 14px; margin-top: 4px; }
+  .tf-list li { gap: 14px; font-size: 16px; }
+  .tf-list__ic { flex-basis: 30px; width: 30px; height: 30px; }
+  .tf-promo { grid-area: promo; justify-self: start; margin: 24px 0 0; padding: 12px 18px 12px 14px; font-size: 14px; line-height: 1.4; }
+  .tf-card { grid-area: kart; padding: 32px 36px 30px; scroll-margin-top: 110px; }
+  .tf-card__t { font-size: 26px; }
+  .tf-step { padding: 20px 0; }
+  .tf-chip { min-height: 50px; }
+  .tf-i { font-size: 15px; }
+  .tf-ref { gap: 8px; min-height: 32px; font-size: 13px; font-weight: 500; color: #5b636b; }
+  .tf-ref:hover { color: var(--turuncu-koyu); }
+  .tf-ref__plus { flex-basis: 18px; width: 18px; height: 18px; box-shadow: inset 0 0 0 1px #c3c6c2; }
+  .tf-ref__plus::before, .tf-ref__plus::after { width: 8px; margin-left: -4px; }
+  .tf-submit { height: 60px; font-size: 17px; }
+  .tf-ok { padding: 40px 12px 16px; }
+  .tf-ok__t { font-size: 28px; }
+  .tf-ok__acts { flex-direction: row; gap: 16px; }
+  .tf-after { grid-area: sonra; gap: 16px; margin-top: 16px; }
+  .tf-alt { gap: 14px; margin-top: 14px; padding-top: 26px; }
+  .tf-alt__r { flex-direction: row; gap: 32px; }
+  .tf-nasil { padding-left: max(var(--padx), calc((100% - 1280px) / 2)); padding-right: max(var(--padx), calc((100% - 1280px) / 2)); }
+  .tf-nasil__in { display: grid; grid-template-columns: 300px minmax(0, 1fr); align-items: center; gap: 80px; }
+  .tf-adim { gap: 20px; }
+  .tf-adim li { gap: 8px; padding: 24px 24px 26px; }
+  .tf-adim b { font-size: 18px; }
+  .ft--formsuz .ft__grid { grid-template-columns: 220px 190px 150px auto; justify-content: space-between; gap: 48px; }
+  .ft--formsuz .ft__bar { padding-bottom: 24px; }
+}
+
 /* ---------- Bölüm giriş animasyonları: bir kez, yumuşak; hero ve footer'da yok ---------- */
 .js .rv { opacity: 0; transform: translateY(18px); transition: opacity .8s var(--ease), transform .9s var(--ease); }
 .js .rv--soft { transform: translateY(26px); transition-duration: 1s, 1.1s; }
@@ -1466,7 +1611,7 @@ html:not([data-ck="yok"]) .ck--bar { display: none; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .js .rv, .js .rv-st > * { opacity: 1 !important; transform: none !important; transition: none !important; }
-  .wa__ring, .steps.is-gorunur .steps__line::after, .btn-d:hover::after, .sp-steps.is-gorunur::before, .js .kp__in > *, .js .lg-kp__in > *, .js .kp__mask { animation: none; }
+  .wa__ring, .steps.is-gorunur .steps__line::after, .btn-d:hover::after, .sp-steps.is-gorunur::before, .js .kp__in > *, .js .lg-kp__in > *, .js .kp__mask, .js .tf-intro > *, .js .tf-promo, .js .tf-card { animation: none; }
   .sp-steps::before { background-size: 0 0, 100% 100%; }
   .promo, .promo-pill, .ck, .ck-open, .mega, .m-nav { animation-duration: .01s; animation-delay: 0s !important; }
   .hw .hx-sec { transition: none; }
