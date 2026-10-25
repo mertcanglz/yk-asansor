@@ -1005,6 +1005,12 @@ html:not([data-ck="yok"]) .ck--bar { display: none; }
 .kp-act .btn-a { flex: 1 1 auto; min-width: 0; height: 54px; padding: 0 20px; font-size: 16px; }
 .kp-act .hx-call { display: flex; }
 .kp-tel { display: none; }
+/* uzun buton metni (ör. yeşil etiket): telefonda buton tam genişlik, numara altında ortalı metin bağlantısı */
+@media (max-width: 599.98px) {
+  .kp-act--dikey { flex-direction: column; align-items: stretch; gap: 4px; }
+  .kp-act--dikey .hx-call { display: none; }
+  .kp-act--dikey .kp-tel { display: inline-flex; align-self: center; font-size: 15px; }
+}
 .kp-facts { display: grid; grid-template-columns: auto auto minmax(0, 1fr); gap: 12px; margin-top: 6px; padding-top: 20px; border-top: 1px solid rgba(255, 255, 255, .08); }
 .kp-facts > div { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
 .kp-facts > div + div { padding-left: 12px; border-left: 1px solid rgba(255, 255, 255, .1); }
