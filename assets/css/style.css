@@ -1005,11 +1005,14 @@ html:not([data-ck="yok"]) .ck--bar { display: none; }
 .kp-act .btn-a { flex: 1 1 auto; min-width: 0; height: 54px; padding: 0 20px; font-size: 16px; }
 .kp-act .hx-call { display: flex; }
 .kp-tel { display: none; }
-/* uzun buton metni (ör. yeşil etiket): telefonda buton tam genişlik, numara altında ortalı metin bağlantısı */
+/* uzun buton metni (ör. yeşil etiket): telefonda iki buton alt alta; ana buton turuncu, arama çerçeveli (ikincil) */
+.kp-ara { display: none; }
 @media (max-width: 599.98px) {
-  .kp-act--dikey { flex-direction: column; align-items: stretch; gap: 4px; }
+  .kp-act--dikey { flex-direction: column; align-items: stretch; gap: 10px; }
   .kp-act--dikey .hx-call { display: none; }
-  .kp-act--dikey .kp-tel { display: inline-flex; align-self: center; font-size: 15px; }
+  .kp-act--dikey .kp-ara { display: flex; align-items: center; justify-content: center; gap: 10px; height: 54px; border-radius: 999px; color: var(--yazi-k); font-size: 16px; font-weight: 500; letter-spacing: .2px; text-decoration: none; background: rgba(255, 255, 255, .04); box-shadow: inset 0 0 0 1.5px rgba(242, 243, 244, .30); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); transition: background .25s; }
+  .kp-act--dikey .kp-ara:active { background: rgba(255, 255, 255, .12); }
+  .kp-act--dikey .kp-ara:focus-visible { outline: 2px solid #f6f3ee; outline-offset: 4px; }
 }
 .kp-facts { display: grid; grid-template-columns: auto auto minmax(0, 1fr); gap: 12px; margin-top: 6px; padding-top: 20px; border-top: 1px solid rgba(255, 255, 255, .08); }
 .kp-facts > div { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
