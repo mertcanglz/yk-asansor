@@ -315,6 +315,9 @@ html.sayfa-ana:not(.hw) { scroll-snap-type: y mandatory; }
 .snap-serbest { position: absolute; left: 0; top: 300vh; top: calc(200svh + 100lvh); bottom: 0; width: 1px; pointer-events: none; scroll-snap-align: start; }
 /* son kat: başlıktan aşağısı düz zemin; sayfa kayarken arkadaki asansör görünmez */
 .hx-sec--3 .hx-in { background: linear-gradient(180deg, rgba(var(--bgc), 0) 0, rgb(var(--bgc)) 40px); }
+/* telefonda 3. kat yazısı kabinle birlikte yukarı kayınca (JS) altında açılan koyu alan da zeminle dolu:
+   hero yukarı kayarken sabit asansör yazının altından görünmez */
+html.js:not(.hw) .hx-sec--3::after { content: ""; position: absolute; left: 0; right: 0; top: 100%; height: 50vh; background: rgb(var(--bgc)); pointer-events: none; }
 .hx-k { display: flex; align-items: center; gap: 12px; font-size: 13px; color: var(--yazi-k3); }
 .hx-k::before { content: ""; width: 28px; height: 1px; background: #5d646b; }
 .hx-k--d { display: none; }
