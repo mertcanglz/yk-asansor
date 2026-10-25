@@ -15,6 +15,7 @@ const mqMasa = matchMedia('(min-width: 1024px)');
 const mqGenis = matchMedia('(min-width: 760px)');
 const mqKucuk = matchMedia('(max-width: 599.98px)');
 const mqAz = matchMedia('(prefers-reduced-motion: reduce)');
+const mqDokun = matchMedia('(pointer: coarse)');
 
 /* ---------- Ekran ölçüsü: kat yüksekliği 100svh (adres çubuğu açılıp kapanınca değişmez) ---------- */
 const ekran = { W: 0, H: 0, heroSon: 0 };
@@ -24,7 +25,8 @@ function olc() {
   ekran.W = h.clientWidth || innerWidth || 390;
   ekran.H = Math.round(vhOlc ? vhOlc.getBoundingClientRect().height : innerHeight) || innerHeight || 800;
   // hero düzeni: geniş (asansör sağda) ya da dar (asansör üstte) — <head> içindeki kuralla aynı
-  h.classList.toggle('hw', innerWidth >= 1024 || (innerWidth >= 760 && innerWidth > innerHeight * 1.1));
+  // dikey tablette (ör. 1024×1366) de asansör yazının üstünde: yan yana düzene yer yok
+  h.classList.toggle('hw', innerWidth >= 1024 ? innerWidth > innerHeight : innerWidth >= 760 && innerWidth > innerHeight * 1.1);
   // hero'nun bittiği yer (telefonda 2 kat + büyük ekran yüksekliği; adres çubuğu gizlenince alttaki bölüm görünmesin).
   // İç sayfalarda koyu sayfa başlığının bittiği yer (teklif formu ve iletişimde giriş başlığının altı).
   const hx = d.getElementById('hx') || $('.kp, .lg-kp, .tf-intro, .il-side, .bl-hero, .by-hero');
@@ -207,6 +209,7 @@ const Asansor = (() => {
   const olc3 = { s: 0, h: 0 };
   const yer3 = { s: 0, h: 0 }; // 3. katta yazının üstü (kuyu dibi bunun 10 px üstünde)
   const kay3 = { s: 0, h: 0 }; // 3. kat yazısının yukarı kayması (px)
+  let ustPay = 0; // header telefondakinden (64 px) yüksekse (dikey büyük tablette 92 px) asansör o kadar aşağıda
   const stick = $('.hx__stick', hx);
   function hedefleriOlc(zorla) {
     // Adres çubuğu açılıp kapanınca katlar (100dvh) uzayıp kısalır, yazı kayar. Ölçek buna göre değişmesin diye yazının
@@ -214,22 +217,24 @@ const Asansor = (() => {
     // gelindiği için çubuk gizliyken (100lvh; hero 200svh + 100lvh uzunluğunda).
     const dvh = stick.offsetHeight;
     const lvh = hx.offsetHeight - 2 * ekran.H;
-    const buyuk = ekran.W >= 600;
+    // en büyük ölçek: telefon / büyük telefon / dikey tablet (tablette asansör boşluğu doldurur)
+    const enCok12 = ekran.W >= 760 ? 0.85 : ekran.W >= 600 ? 0.5 : 0.36;
+    const enCok3 = ekran.W >= 760 ? 0.9 : ekran.W >= 600 ? 0.55 : 0.42;
     // kampanya kartı kaydırınca etikete döner, 1. kata dönülünce yine açılır: etiket hâlindeyken 1. katın ölçüsü alınmaz
     if (zorla || !olc12.h || h.dataset.kampanya !== 'etiket') {
       const ust1 = $('.hx-h', secs[0]).offsetTop - (dvh - ekran.H);
-      olc12.h = clamp((ust1 - 18 - 30) / 887.6, 0.2, buyuk ? 0.5 : 0.36);
+      olc12.h = clamp((ust1 - 18 - 30 - ustPay) / 887.6, 0.2, enCok12);
     }
     yer3.h = $('.hx-in', secs[2]).firstElementChild.offsetTop + (lvh - dvh);
     // 3. katta asansör boşluğa göre büyür ya da küçülür (kuyu dibi yazının 10 px üstünde), ama 1–2. kattakinden en çok
     // %15 farklı: fazlası kat geçişinde göze batar. Yer darsa kuyunun koyu dibi yazının arkasında kalır; kabinin altı
     // yine yazının 12 px üstündedir.
-    const kabinSigar = (yer3.h - 12 - 52) / 641.6;
+    const kabinSigar = (yer3.h - 12 - 52 - ustPay) / 641.6;
     const enAz = Math.max(0.2, Math.min(olc12.h / 1.15, kabinSigar));
-    olc3.h = clamp((yer3.h - 10 - 52) / 944, enAz, Math.max(enAz, Math.min(buyuk ? 0.55 : 0.42, olc12.h * 1.15)));
+    olc3.h = clamp((yer3.h - 10 - 52 - ustPay) / 944, enAz, Math.max(enAz, Math.min(enCok3, olc12.h * 1.15)));
     // Ölçek sınırda kalıp kabinin üstünde boşluk kalırsa yazı kabinle birlikte yukarı kayar: kabinin üstü 2. kattaki
     // gibi 78 px'te durur, artan yer yazının altında (koyu zeminde) kalır
-    kay3.h = Math.max(0, Math.round(yer3.h - 10 - 944 * olc3.h - 78));
+    kay3.h = Math.max(0, Math.round(yer3.h - 10 - 944 * olc3.h - 78 - ustPay));
     yer3.h -= kay3.h;
   }
   const katSu = () => (cam >= 1 ? olc12.s : olc3.s + (olc12.s - olc3.s) * ssm(clamp(cam, 0, 1)));
@@ -249,11 +254,13 @@ const Asansor = (() => {
   function geometri() {
     genis = h.classList.contains('hw');
     if (genis) {
-      su = (ekran.H / 900) * 0.86;
-      yaziSag = $('.hx-in', secs[0]).getBoundingClientRect().right;
+      yaziSag = Math.max(...secs.map((el) => $('.hx-in', el).getBoundingClientRect().right));
+      // kabin yazının sağı ile ekranın sağ kenarı arasına sığacak kadar küçülür (tablette yazıya binmez, kırpılmaz)
+      su = Math.max(0.3, Math.min((ekran.H / 900) * 0.86, (ekran.W - yaziSag - 56) / 501.7));
       box.style.height = '';
       ext.style.top = '';
     } else {
+      ustPay = ($('#hdr') ? $('#hdr').offsetHeight : 64) - 64;
       hedefleriOlc(true);
       olc12.s = olc12.h;
       olc3.s = olc3.h;
@@ -338,11 +345,11 @@ const Asansor = (() => {
     // kamera: telefonda kabin header'ın altında, katlara göre biraz kayar
     let merkez = 450;
     if (!genis) {
-      const c1 = 64 + 246 * s - 34 + cabH / 2;
-      const c23 = 78 + cabH / 2;
+      const c1 = 64 + ustPay + 246 * s - 34 + cabH / 2;
+      const c23 = 78 + ustPay + cabH / 2;
       // 3. kat: kuyunun dibi yazının 10 px üstünde (kabin header'ın altına çıkmaz, kutudan taşmaz)
       // (kabinin üstü 3. kat ölçeğine göre hesaplanır: geçiş sırasında kabin büyürken üstü yerinde kalır)
-      const c3 = clamp(yer3.s - 10 - 944 * olc3.s, 52, boxH - 8 - 944 * s) + cabH / 2;
+      const c3 = clamp(yer3.s - 10 - 944 * olc3.s, 52 + ustPay, boxH - 8 - 944 * s) + cabH / 2;
       const cabC = cam >= 1 ? c23 + (c1 - c23) * Math.min(1, cam - 1) : c3 + (c23 - c3) * ssm(cam);
       merkez = ((cabC + 40 * s) * 900) / boxH;
     }
@@ -461,8 +468,9 @@ const Asansor = (() => {
   }
 
   /* Kat oturtma. Geniş ekran: durunca ~0,4 sn sonra yakın kata oturur (müdahaleyle iptal olmaz; iki kat arası dar bant serbest).
-     Telefonda bunu tarayıcının kendi kat durakları yapar (CSS scroll-snap, .hx-durak): her kaydırma bir kat ilerler,
-     hızlı kaydırmada bile katlar atlanmaz. */
+     Dokunmatik ekranda bunu tarayıcının kendi kat durakları yapar (CSS scroll-snap, .hx-durak): her kaydırma bir kat ilerler,
+     hızlı kaydırmada bile katlar atlanmaz. Fare/trackpad ile dar pencerede de JS oturtur (CSS durakları orada yok). */
+  const jsOtur = () => genis || !mqDokun.matches;
   let oturT = 0, oturuyor = false;
   const engelle = (e) => e.preventDefault();
   const TUSLAR = ['ArrowDown', 'ArrowUp', 'PageDown', 'PageUp', ' ', 'Home', 'End'];
@@ -474,7 +482,7 @@ const Asansor = (() => {
     fn('keydown', tusEngelle);
   }
   function otur() {
-    if (oturuyor || !genis || mqAz.matches || h.classList.contains('nav-acik')) return;
+    if (oturuyor || !jsOtur() || mqAz.matches || h.classList.contains('nav-acik')) return;
     const H = ekran.H;
     const y0 = scrollY;
     if (y0 >= 2 * H - 2) return;
@@ -509,7 +517,7 @@ const Asansor = (() => {
       lift.classList.toggle('is-kapali', gizle);
     }
     uyan();
-    if (genis && !oturuyor) {
+    if (jsOtur() && !oturuyor) {
       clearTimeout(oturT);
       oturT = setTimeout(otur, 380);
     }
@@ -870,7 +878,8 @@ if ('IntersectionObserver' in window) {
 
 /* ---------- SSS: aynı anda tek soru açık; telefonda hepsi kapalı başlar ----------
    Masaüstünde: ana sayfa ve hizmet şablonunda ilk soru açık (data-sss="ilk"),
-   hizmetler sayfasında iki sütunlu düz liste, yanıtlar açık (data-sss="hepsi"). */
+   hizmetler sayfasında iki sütunlu düz liste, yanıtlar açık (data-sss="hepsi").
+   Blog yazısındaki kaynaklar da aynı açılır-kapanır yapıda, her ekranda kapalı başlar (data-sss="kapali"). */
 (() => {
   const gruplar = $$('.faqs, [data-sss]');
   if (!gruplar.length) return;
@@ -879,7 +888,7 @@ if ('IntersectionObserver' in window) {
   // Yanıt yüksekliği yumuşakça açılıp kapanır. Tek açık soru kuralını burada uygularız
   // (tarayıcının name="sss" davranışı diğerlerini animasyonsuz anında kapatırdı).
   function cevir(s, ac) {
-    const a = $('.faq__a, .soru__a', s);
+    const a = $('.faq__a, .soru__a, .by-kaynak__ic', s);
     s.classList.toggle('is-acik', ac);
     if (s._anim) s._anim.cancel();
     if (mqAz.matches || !a.animate) { s.open = ac; return; }
@@ -908,7 +917,7 @@ if ('IntersectionObserver' in window) {
     const uygula = () => {
       sorular.forEach((s, i) => {
         if (s._anim) { s._anim.cancel(); s._anim = null; }
-        const ac = mqMasa.matches && (mod === 'hepsi' || i === 0);
+        const ac = mod !== 'kapali' && mqMasa.matches && (mod === 'hepsi' || i === 0);
         s.open = ac;
         s.classList.toggle('is-acik', ac);
         // düz listede sorular tıklanmaz; klavyede de atlanır

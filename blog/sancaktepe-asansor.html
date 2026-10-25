@@ -19,7 +19,7 @@
     /* İlk boyamadan önce: JS sınıfı, hero düzeni (geniş/dar) ve kayıtlı çerez tercihi; sonradan kayma olmasın */
     (function (d, w) {
       var h = d.documentElement, c = null;
-      h.className += ' js' + ((w.innerWidth >= 1024 || (w.innerWidth >= 760 && w.innerWidth > w.innerHeight * 1.1)) ? ' hw' : '');
+      h.className += ' js' + ((w.innerWidth >= 1024 ? w.innerWidth > w.innerHeight : w.innerWidth >= 760 && w.innerWidth > w.innerHeight * 1.1) ? ' hw' : '');
       try { c = JSON.parse(localStorage.getItem('yk-cerez') || 'null'); } catch (e) {}
       var ck = c && Date.now() - c.t < 15552e6 ? (c.a && c.m ? 'tam' : 'secildi') : 'yok', kp = ck !== 'yok';
       try { if (sessionStorage.getItem('yk-kampanya') === 'kapali') kp = false; } catch (e) {}
@@ -456,9 +456,12 @@
           <span class="by-yazar__tx"><b>YK Asansör teknik ekibi</b><span>Kontrol eden: Ömürcan Altundaş, YK Asansör · 18 Ekim 2026</span></span>
         </aside>
 
-        <section class="by-kaynak" aria-labelledby="h-kaynak">
-          <h2 id="h-kaynak">Kaynaklar</h2>
-          <ul><li><a href="https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=7&MevzuatNo=31394&MevzuatTertip=5" target="_blank" rel="noopener">Asansör İşletme ve Bakım Yönetmeliği (RG 6.4.2019, sayı 30737; son değişiklik RG 10.2.2023, sayı 32100), güncel metin</a></li><li><a href="https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=7&MevzuatNo=24558&MevzuatTertip=5" target="_blank" rel="noopener">Asansör Periyodik Kontrol Yönetmeliği (RG 4.5.2018, sayı 30411; son değişiklik RG 5.8.2025, sayı 32977), güncel metin</a></li><li><a href="https://tr.royalcert.com/protokoller/" target="_blank" rel="noopener">Royalcert, protokol listesi (Sancaktepe Belediyesi 1.1.2024–2028)</a></li><li><a href="https://www.sancaktepe.bel.tr/icerik/hizmet-standartlari-tablosu" target="_blank" rel="noopener">Sancaktepe Belediyesi, hizmet standartları tablosu</a></li><li><a href="https://tasiad.org.tr/2026-yili-icin-onerilen-asansor-bakim-fiyatlari/" target="_blank" rel="noopener">TASİAD, 2026 tavsiye bakım fiyatları</a></li><li><a href="https://kureansiklopedi.com/tr/detay/sancaktepe-ilce-2bfbe" target="_blank" rel="noopener">Sancaktepe'nin kuruluşu (5747 sayılı Kanun)</a></li></ul>
+        <!-- Kaynaklar: kapalı başlar, "Kaynaklar"a basınca liste yumuşakça açılır (HTML'de yazılı, SEO) -->
+        <section class="by-kaynak" data-sss="kapali" aria-labelledby="h-kaynak">
+          <details>
+            <summary><h2 id="h-kaynak">Kaynaklar</h2><svg class="by-kaynak__ok" width="12" height="12" stroke-width="2.2" aria-hidden="true"><use href="#i-down"/></svg></summary>
+            <div class="by-kaynak__ic"><ul><li><a href="https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=7&MevzuatNo=31394&MevzuatTertip=5" target="_blank" rel="noopener">Asansör İşletme ve Bakım Yönetmeliği (RG 6.4.2019, sayı 30737; son değişiklik RG 10.2.2023, sayı 32100), güncel metin</a></li><li><a href="https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=7&MevzuatNo=24558&MevzuatTertip=5" target="_blank" rel="noopener">Asansör Periyodik Kontrol Yönetmeliği (RG 4.5.2018, sayı 30411; son değişiklik RG 5.8.2025, sayı 32977), güncel metin</a></li><li><a href="https://tr.royalcert.com/protokoller/" target="_blank" rel="noopener">Royalcert, protokol listesi (Sancaktepe Belediyesi 1.1.2024–2028)</a></li><li><a href="https://www.sancaktepe.bel.tr/icerik/hizmet-standartlari-tablosu" target="_blank" rel="noopener">Sancaktepe Belediyesi, hizmet standartları tablosu</a></li><li><a href="https://tasiad.org.tr/2026-yili-icin-onerilen-asansor-bakim-fiyatlari/" target="_blank" rel="noopener">TASİAD, 2026 tavsiye bakım fiyatları</a></li><li><a href="https://kureansiklopedi.com/tr/detay/sancaktepe-ilce-2bfbe" target="_blank" rel="noopener">Sancaktepe'nin kuruluşu (5747 sayılı Kanun)</a></li></ul></div>
+          </details>
         </section>
       </article>
     </div>

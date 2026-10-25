@@ -85,16 +85,25 @@ Kodlamadan önce blog taslakları `docs/blog-taslaklari/` altında Markdown olar
   yeniden ölçülmez (yazı yeri 1. katta 100svh'ye, 3. katta 100lvh'ye göre okunur).
   Telefonda hero 2 kat + 100lvh uzunluğunda, katlar 100dvh: adres çubuğu gizlenince 3. katta alttaki açık bölüm görünmez.
   2. ve 3. katta bağlantı WhatsApp'ın solunda kaldığı için alt boşluk 28 px (kampanya etiketi görünürken 72 px).
-  Telefonda her kaydırma bir kat ilerler (CSS scroll-snap, `scroll-snap-stop: always`); hero bitince sayfa serbest kayar. Hero yüksekliği `100vh` değil `100svh`/`100dvh`
+  Telefonda her kaydırma bir kat ilerler (CSS scroll-snap, `scroll-snap-stop: always`; yalnızca dokunmatik ekranda —
+  fare/trackpad ile dar pencerede sayfa sonundaki esnemeyle çakışıp titretiyordu, orada katlara JS oturtur); hero bitince
+  sayfa serbest kayar ve ilk bölüm header'ın (64 px) altına oturur. Hero yüksekliği `100vh` değil `100svh`/`100dvh`
   olsun (adres çubuğu butonları örtmesin); 360 px genişlik ve kısa ekranlarda (≤ 720 px) test et.
 - **Başlıklarda anlamsız satır kırılması olmaz:** iki parçalı başlıklarda (ör. blog: "X: Y?") ":" sonrası
   alt satıra geçer, her parça `text-wrap: balance` ile dengeli kırılır; tek kelime alt satırda kalmaz.
   Ekrana sığan başlık zorla iki satıra bölünmez: iki parçalı başlıkta (düz + italik) parçalar
   `inline-block` + `nowrap`; sığarsa tek satır, sığmazsa yalnızca iki parçanın arasından kırılır.
   Blog yazı başlığının genişliği yazı sütununu (848 px) geçmez; yazı kapağı görselsiz ve ortalıdır.
+  Blog yazısında kaynaklar kapalı başlar: sade "Kaynaklar" düğmesi (ince alt çizgi), basınca liste küçük puntoyla
+  yumuşakça açılır (kullanıcı kararı; HTML'de yazılı durur).
 - **Açılır grup başlıkları** (footer bağlantı grupları, hamburger menü): başlık metni kendi genel sayfasına gider
   (Hizmetler → `hizmetler.html`, Asansör sistemleri → `asansor-sistemleri.html`); sağdaki boşluk ve ok alt başlıkları
   açar/kapatır (kullanıcı kararı). Footer grupları masaüstünde hep açık.
+- **Tablet ve çok geniş ekran:** hero yan yana düzeni (asansör sağda) ≥1024 px'te yatay ekranda, 760–1023 px'te
+  genişlik > yükseklik × 1,1 olunca; dikey tabletlerde (1024×1366 dahil) asansör yazının üstünde (alt alta düzen,
+  kabin boşluğu doldurur). Yan yana düzende kabin, yazının sağı ile ekran kenarı arasına sığacak kadar küçülür
+  (yazıya binmez, kırpılmaz). İç sayfa kapak görselleri 1920 px'ten geniş ekranda sağa uzamaz, ortada kalır ve sağ
+  kenarı soldaki gibi koyuya geçer; her kapakta ana konunun yeri odak noktası olarak verilir (`--op-d`).
 - **"Bu sayfada" bağlantı şeridi yalnızca masaüstünde:** mobilde hiçbir sayfada gösterilmez (kullanıcı kararı).
 - **Genel bağlantı hover rengi kartları ezmez:** `a:hover` yerine `a:where(:hover)` kullan; açık zemindeki
   kart/bağlantılar (kabin kartları, blog kartları, koyu metin bağlantıları) hover ve dokunmada beyaza dönmesin.

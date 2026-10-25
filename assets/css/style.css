@@ -307,12 +307,15 @@ html[data-kampanya="etiket"] .hx-sec:not(.hx-sec--1) .hx-in, html[data-kampanya=
 html:not(.hw)[data-kampanya="acik"] .hx-sec--1 .hx-in { --hx-alt: var(--promo-pad, calc(146px + env(safe-area-inset-bottom))); }
 @media (min-width: 760px) { html:not(.hw)[data-kampanya="acik"] .hx-sec--1 .hx-in { --hx-alt: var(--promo-pad, 220px); } }
 html[data-ck="yok"] .hx .hx-sec .hx-in { --hx-alt: var(--ck-pad, calc(140px + env(safe-area-inset-bottom))); }
-/* telefonda kat durakları: her kaydırma bir kat ilerler, hızlı kaydırmada katlar atlanmaz; hero bitince sayfa serbest kayar */
-html.sayfa-ana:not(.hw) { scroll-snap-type: y mandatory; }
+/* telefonda kat durakları: her kaydırma bir kat ilerler, hızlı kaydırmada katlar atlanmaz; hero bitince sayfa serbest kayar.
+   Yalnızca dokunmatik ekranda: fare/trackpad ile dar pencerede sayfa sonundaki esnemeyle çakışıp sayfayı titretir
+   (orada katlara oturtmayı geniş ekrandaki gibi JS yapar) */
+@media (pointer: coarse) { html.sayfa-ana:not(.hw) { scroll-snap-type: y mandatory; } }
 .hx-durak { position: absolute; left: 0; top: 0; width: 1px; height: 100vh; height: 100svh; pointer-events: none; scroll-snap-align: start; scroll-snap-stop: always; }
 .hx-durak:nth-child(2) { top: 100vh; top: 100svh; }
 .hx-durak:nth-child(3) { top: 200vh; top: 200svh; }
-.snap-serbest { position: absolute; left: 0; top: 300vh; top: calc(200svh + 100lvh); bottom: 0; width: 1px; pointer-events: none; scroll-snap-align: start; }
+/* hero bitince ilk bölüm header'ın (64 px) altında başlar: "Asansör sistemleri" başlığı header altında kalmaz */
+.snap-serbest { position: absolute; left: 0; top: 300vh; top: calc(200svh + 100lvh); bottom: 0; width: 1px; pointer-events: none; scroll-snap-align: start; scroll-margin-top: 64px; }
 /* son kat: başlıktan aşağısı düz zemin; sayfa kayarken arkadaki asansör görünmez */
 .hx-sec--3 .hx-in { background: linear-gradient(180deg, rgba(var(--bgc), 0) 0, rgb(var(--bgc)) 40px); }
 /* telefonda 3. kat yazısı kabinle birlikte yukarı kayınca (JS) altında açılan koyu alan da zeminle dolu:
@@ -378,8 +381,9 @@ html.js:not(.hw) .hx-sec--3::after { content: ""; position: absolute; left: 0; r
 .hw .hx-sec { justify-content: center; padding: 0 0 0 48px; transition: opacity .9s cubic-bezier(.4, 0, .2, 1); will-change: opacity; }
 .hw .hx-sec:not(.is-on) { opacity: .18; }
 .hw .hx-in { width: min(54%, 560px); margin: 0; padding: 0; gap: 22px; background: none; flex: none; }
-.hw .hx-h { font-size: 42px; }
-.hw .hx-h--2, .hw .hx-h--3 { font-size: 38px; }
+/* dar yatay ekranda (tablet, dar pencere) başlık satırları yazı sütununa sığar, asansöre taşmaz */
+.hw .hx-h { font-size: clamp(30px, 4.5vw, 42px); }
+.hw .hx-h--2, .hw .hx-h--3 { font-size: clamp(28px, 4.1vw, 38px); }
 .hw .hx-p--opt { display: block; }
 .hw .hx-act { align-self: flex-start; }
 .hw .hx-act .btn-a { flex: none; padding: 0 28px; }
@@ -399,7 +403,8 @@ html.js:not(.hw) .hx-sec--3::after { content: ""; position: absolute; left: 0; r
   .hw .hx-h--2 { font-size: clamp(36px, 3.2vw, 46px); line-height: 1.12; letter-spacing: -1.2px; }
   .hw .hx-h--3 { font-size: clamp(36px, 3.34vw, 48px); line-height: 1.12; letter-spacing: -1.2px; }
   .hw .hx-p { font-size: 18px; line-height: 1.7; max-width: 580px; }
-  .hw .hx-act { gap: 36px; margin-top: 8px; align-items: center; }
+  /* sütun dar kalırsa (≈1024 px) telefon satırı butonun altına iner, asansöre taşmaz */
+  .hw .hx-act { flex-wrap: wrap; gap: 14px clamp(24px, 2.8vw, 36px); margin-top: 8px; align-items: center; }
   .hw .hx-act .btn-a, .hw .btn-a--blk { height: 60px; padding: 0 30px; font-size: 17px; }
   .hw .hx-act .btn-a svg { width: 22px; height: 22px; }
   .hw .hx-call { display: none; }
@@ -1095,6 +1100,27 @@ html:not([data-ck="yok"]) .ck--bar { display: none; }
   .kp-h1, .kp-h1--s, .kp-h1--xs { font-size: 48px; }
   .kp__in { max-width: 640px; }
   .kp-lead { max-width: 470px; font-size: 16px; }
+}
+/* Çok geniş ekranda (21:9 gibi) kapak görseli sağa doğru uzamaz: 1920 px'teki kompozisyonda ortada kalır, sağ kenarı da
+   soldaki gibi koyu zemine yumuşakça geçer. Görsel, ana konunun olduğu odak noktasına (--op-d) göre kırpılır. */
+@media (min-width: 1024px) {
+  .kp__img { right: max(0px, calc((100% - 1920px) / 2)); width: min(66%, 1267px); }
+  .kp--hizmet .kp__img { right: max(-110px, calc((100% - 1920px) / 2 - 110px)); width: min(76%, 1460px); }
+}
+/* görselin sağ kenarı ekranın içine girince (kenar artık ekran kenarı değil) koyuya geçiş */
+@media (min-width: 1921px) {
+  .kp__img {
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, .35) 14%, #000 36%), linear-gradient(to left, transparent 0%, rgba(0, 0, 0, .35) 9%, #000 24%);
+    mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, .35) 14%, #000 36%), linear-gradient(to left, transparent 0%, rgba(0, 0, 0, .35) 9%, #000 24%);
+    -webkit-mask-composite: source-in; mask-composite: intersect;
+  }
+}
+@media (min-width: 2141px) {
+  .kp--hizmet .kp__img {
+    -webkit-mask-image: linear-gradient(104deg, transparent 0%, transparent 12%, rgba(0, 0, 0, .1) 17%, rgba(0, 0, 0, .25) 21.5%, rgba(0, 0, 0, .6) 28%, #000 36%), linear-gradient(to left, transparent 0%, rgba(0, 0, 0, .35) 9%, #000 24%);
+    mask-image: linear-gradient(104deg, transparent 0%, transparent 12%, rgba(0, 0, 0, .1) 17%, rgba(0, 0, 0, .25) 21.5%, rgba(0, 0, 0, .6) 28%, #000 36%), linear-gradient(to left, transparent 0%, rgba(0, 0, 0, .35) 9%, #000 24%);
+    -webkit-mask-composite: source-in; mask-composite: intersect;
+  }
 }
 
 /* ---------- Hizmetler sayfası: ihtiyaca göre gruplar ---------- */
@@ -1854,7 +1880,7 @@ html:not(.js) .bl-tools, html:not(.js) .bl-more { display: none; }
 .by-hero { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; gap: 16px; padding: 96px var(--padx) var(--ic-bolum); background: radial-gradient(100% 80% at 50% 25%, #1f2429 0%, var(--koyu) 72%); color: var(--yazi-k); text-align: center; }
 .by-hero .kp-crumb { justify-content: center; }
 /* başlık ":" sonrası alt satıra geçer, her parça dengeli kırılır; genişliği yazı sütununu geçmez */
-.by-h1 { max-width: 848px; font-size: min(24px, 6.2vw); line-height: 1.18; font-weight: 300; letter-spacing: -.7px; }
+.by-h1 { max-width: 848px; font-size: min(30px, 7.8vw); line-height: 1.16; font-weight: 300; letter-spacing: -.8px; }
 .by-h1 span, .by-h1 em { display: block; text-wrap: balance; }
 .by-h1 em { font-family: var(--f-serif); font-style: italic; font-weight: 500; letter-spacing: -.4px; color: var(--vurgu-sayfa); }
 .js .by-hero > * { animation: kpGir .9s var(--ease) both; }
@@ -1895,9 +1921,17 @@ html:not(.js) .bl-tools, html:not(.js) .bl-more { display: none; }
 .by-yazar__ic { flex: 0 0 42px; width: 42px; height: 42px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 600; letter-spacing: .5px; color: #d9560f; background: #fff1e7; }
 .by-yazar__tx { display: flex; flex-direction: column; gap: 2px; min-width: 0; font-size: 13px; line-height: 1.5; color: var(--gri-3); }
 .by-yazar__tx b { font-size: 15px; font-weight: 600; color: var(--murekkep); }
-.by-kaynak h2 { margin-bottom: 8px; font-size: 13px; font-weight: 600; letter-spacing: .4px; color: var(--gri-3); }
-.by-kaynak ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; font-size: 13px; line-height: 1.55; color: var(--gri-3); }
+/* kaynaklar: sade "Kaynaklar" düğmesi (ince alt çizgi), basınca liste altında küçük puntoyla açılır */
+.by-kaynak summary { display: inline-flex; align-items: center; gap: 6px; padding: 4px 0 5px; border-bottom: 1px solid #cfd2ce; color: var(--gri-3); list-style: none; cursor: pointer; -webkit-tap-highlight-color: transparent; transition: color .25s, border-color .25s; }
+.by-kaynak summary::-webkit-details-marker { display: none; }
+.by-kaynak summary:focus-visible { outline: 2px solid var(--turuncu); outline-offset: 3px; }
+.by-kaynak h2 { font-size: 13px; font-weight: 600; letter-spacing: .4px; color: inherit; }
+.by-kaynak__ok { flex: none; transition: transform .3s var(--ease); }
+.by-kaynak .is-acik .by-kaynak__ok { transform: rotate(180deg); }
+.by-kaynak__ic { overflow: hidden; }
+.by-kaynak ul { margin: 0; padding: 12px 0 2px 18px; display: flex; flex-direction: column; gap: 6px; font-size: 13px; line-height: 1.55; color: var(--gri-3); }
 .by-kaynak a { color: var(--gri-2); overflow-wrap: anywhere; }
+@media (hover: hover) { .by-kaynak summary:hover { color: var(--murekkep); border-color: #9aa0a6; } }
 @media (min-width: 760px) {
   .by-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
 }
@@ -1963,4 +1997,38 @@ html:not(.js) .bl-tools, html:not(.js) .bl-more { display: none; }
   .sp-steps::before { background-size: 0 0, 100% 100%; }
   .promo, .promo-pill, .ck, .ck-open, .mega, .m-nav { animation-duration: .01s; animation-delay: 0s !important; }
   .hw .hx-sec { transition: none; }
+}
+
+/* ---------- Yatay tablet ve dar masaüstü (1024–1279 px): iki sütunlu düzenler sıkışmasın ---------- */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  /* teklif formu: sol sütun sabit 560 px kalınca form kartı ~250 px'e sıkışıyordu */
+  .tf-ust { grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); column-gap: 48px; }
+  .tf-h1 { font-size: 46px; }
+  .tf-row { grid-template-columns: minmax(0, 1fr); }
+  /* footer: iletişim sütunu telefon ve adrese yetecek genişlikte */
+  .ft--formsuz .ft__grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, .8fr) 280px; justify-content: normal; gap: 32px; }
+  .fci__v--lg { font-size: 18px; }
+  /* başlık satırları sütuna sığsın */
+  .ref-band__t { font-size: clamp(20px, 1.9vw, 24px); }
+  .secim .sp-h2 { font-size: 28px; }
+  .secim { column-gap: 56px; }
+}
+
+/* ---------- Dikey tablet (760–1023 px) ---------- */
+@media (min-width: 760px) and (max-width: 1023px) {
+  /* bakım paketleri: üç paket yana kayan şerit yerine yan yana */
+  .plans { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin: 0; padding: 0; overflow: visible; scroll-snap-type: none; align-items: stretch; }
+  .plan { max-width: none; padding: 24px 20px; }
+  .plan__n { font-size: 22px; }
+  .plan__l { font-size: 14px; }
+  #planNokta { display: none; }
+  /* başlıklar telefon puntosunda kalmasın: ana sayfanın tablet ölçeğiyle aynı */
+  .kp-h1, .kp-h1--s, .kp-h1--xs { font-size: 40px; letter-spacing: -1.1px; }
+  .kp-lead { max-width: 600px; font-size: 17px; }
+  .tf-h1 { font-size: 40px; }
+  .lg-h1 { font-size: 36px; }
+  .by-h1 { font-size: 38px; }
+  .grp__t, .hz-sss__t, .sp-h2 { font-size: 32px; letter-spacing: -.8px; }
+  .by-art .sp-h2 { font-size: 28px; }
+  .il-h1 { font-size: 44px; }
 }
