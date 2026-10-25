@@ -250,7 +250,7 @@
             <span class="tf-err" id="tf-hizmet-hata" role="alert" hidden>Lütfen bir hizmet seçin.</span>
           </fieldset>
 
-          <fieldset class="tf-step">
+          <fieldset class="tf-step tf-step--son">
             <legend class="tf-step__h"><span class="tf-n" aria-hidden="true">2</span>Size nasıl ulaşalım?</legend>
             <div class="tf-row">
               <label class="tf-f" for="tf-ad"><span class="tf-l">Ad soyad *</span><input class="tf-i" id="tf-ad" type="text" name="adsoyad" autocomplete="name" required></label>
@@ -266,10 +266,10 @@
               </fieldset>
               <label class="tf-f" for="tf-eposta"><span class="tf-l">E-posta <span class="tf-zor" hidden>*</span><small class="tf-istege">(isteğe bağlı)</small></span><input class="tf-i" id="tf-eposta" type="email" name="eposta" autocomplete="email"></label>
             </div>
+            <label class="tf-f" for="tf-not"><span class="tf-l">Eklemek istedikleriniz <small>(isteğe bağlı)</small></span><textarea class="tf-i tf-ta" id="tf-not" name="not" rows="2" placeholder="Örn. kat sayısı, mevcut asansörün durumu, size uygun saatler"></textarea></label>
             <!-- Referans: göze batmayan, tıklanınca açılan isteğe bağlı alan -->
             <button type="button" class="tf-ref" aria-expanded="false" aria-controls="tf-ref-alan"><span class="tf-ref__plus" aria-hidden="true"></span>Bir müşterimiz mi önerdi?<span class="tf-ref__ek"> Referans bilgisi ekleyin</span></button>
             <label class="tf-f" id="tf-ref-alan" for="tf-ref" hidden><span class="tf-l">Sizi yönlendiren müşterimiz <small>(isteğe bağlı)</small></span><input class="tf-i" id="tf-ref" type="text" name="referans" placeholder="Ad soyad veya telefon numarası"></label>
-            <label class="tf-f" for="tf-not"><span class="tf-l">Eklemek istedikleriniz <small>(isteğe bağlı)</small></span><textarea class="tf-i tf-ta" id="tf-not" name="not" rows="2" placeholder="Örn. kat sayısı, mevcut asansörün durumu, size uygun saatler"></textarea></label>
           </fieldset>
 
           <div class="tf-gonder">
