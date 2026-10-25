@@ -1108,6 +1108,7 @@ html:not([data-ck="yok"]) .ck--bar { display: none; }
 .gc__pulse { width: 6px; height: 6px; border-radius: 50%; background: #3ccf7a; animation: gcPulse 2.4s ease-out infinite; }
 /* SSS */
 .hz-sss { position: relative; z-index: 1; padding: 40px var(--padx) 44px; background: var(--beyaz); color: var(--murekkep); }
+.hz-sss .hz__in { gap: 0; } /* gruplar arası boşluk burada yok: başlık ile sorular arasını yalnızca başlığın alt payı belirler */
 .hz-sss__h { display: flex; flex-direction: column; gap: 10px; margin-bottom: 18px; }
 @media (min-width: 760px) {
   .hz, .hz-sss { padding-top: 56px; padding-bottom: 60px; }
