@@ -27,7 +27,7 @@ function olc() {
   h.classList.toggle('hw', innerWidth >= 1024 || (innerWidth >= 760 && innerWidth > innerHeight * 1.1));
   // hero'nun bittiği yer (telefonda 2 kat + büyük ekran yüksekliği; adres çubuğu gizlenince alttaki bölüm görünmesin).
   // İç sayfalarda koyu sayfa başlığının bittiği yer (teklif formu ve iletişimde giriş başlığının altı).
-  const hx = d.getElementById('hx') || $('.kp, .lg-kp, .tf-intro, .il-side');
+  const hx = d.getElementById('hx') || $('.kp, .lg-kp, .tf-intro, .il-side, .bl-hero');
   ekran.heroSon = hx ? hx.offsetTop + hx.offsetHeight : 3 * ekran.H;
 }
 olc();
@@ -1023,6 +1023,64 @@ telefonBaslat();
       bant.classList.add('is-acik');
     });
   }
+})();
+
+/* ---------- Blog sayfası: kategori süzgeci, arama, "daha fazla yazı" (kartlar HTML'de yazılı) ---------- */
+(() => {
+  const liste = $('#bl-liste');
+  if (!liste) return;
+  const kartlar = $$(':scope > li', liste);
+  const ara = $('#bl-ara');
+  const sayi = $('#bl-sayi');
+  const bos = $('#bl-bos');
+  const daha = $('#bl-daha');
+  const cipler = $$('.bl-chip');
+  const adet = () => (mqGenis.matches ? 16 : 8);
+  const metin = new Map(kartlar.map((li) => [li, li.textContent.toLocaleLowerCase('tr-TR')]));
+  let kat = 'hepsi';
+  let limit = adet();
+  function uygula(animasyon) {
+    const q = ara.value.trim().toLocaleLowerCase('tr-TR');
+    const uyan = kartlar.filter((li) => (kat === 'hepsi' || li.dataset.kat === kat) && (!q || metin.get(li).includes(q)));
+    const onceki = new Set(kartlar.filter((li) => !li.hidden));
+    let k = 0;
+    kartlar.forEach((li) => { li.hidden = true; li.classList.remove('bl-yeni'); });
+    uyan.slice(0, limit).forEach((li) => {
+      li.hidden = false;
+      // yeni görünen kartlar sırayla, yumuşakça belirir
+      if (animasyon && !onceki.has(li) && !mqAz.matches) {
+        li.style.animationDelay = Math.min(k, 8) * 40 + 'ms';
+        li.classList.add('bl-yeni');
+        k += 1;
+      }
+    });
+    sayi.textContent = uyan.length + ' yazı';
+    bos.hidden = uyan.length > 0;
+    daha.hidden = uyan.length <= limit;
+    diz();
+  }
+  // Pinterest ızgarası: görünen her kart, yüksekliği + ara boşluk kadar 1 px'lik satır kaplar
+  function diz() {
+    if (!liste.classList.contains('is-hazir')) return;
+    const ara = parseFloat(getComputedStyle(liste).getPropertyValue('--bl-ara')) || 0;
+    kartlar.forEach((li) => {
+      if (!li.hidden) li.style.setProperty('--s', Math.ceil(li.firstElementChild.getBoundingClientRect().height + ara));
+    });
+  }
+  cipler.forEach((c) => c.addEventListener('click', () => {
+    kat = c.dataset.kat;
+    limit = adet();
+    cipler.forEach((x) => x.setAttribute('aria-pressed', String(x === c)));
+    uygula(true);
+  }));
+  ara.addEventListener('input', () => { limit = adet(); uygula(false); });
+  daha.addEventListener('click', () => { limit += adet(); uygula(true); });
+  kartlar.forEach((li) => { li.hidden = true; });
+  liste.classList.add('is-hazir');
+  uygula(true);
+  // genişlik ya da yazı tipi değişince kart yükseklikleri yeniden ölçülür
+  if ('ResizeObserver' in window) new ResizeObserver(() => diz()).observe(liste);
+  if (d.fonts) d.fonts.ready.then(diz);
 })();
 
 const yil = $('#yil');

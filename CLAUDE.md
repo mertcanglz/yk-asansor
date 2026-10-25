@@ -34,6 +34,8 @@ iletisim.html         İletişim: kartlar, sosyal medya, mesaj formu (adsoyad, t
 teklif-formu.html     Reklam açılış sayfası (noindex): detaylı teklif formu; WhatsApp butonu ve footer'daki hızlı form yok.
                       Alanlar: hizmet, adsoyad, telefon, donus (Telefonla/E-postayla), eposta (e-postayla dönüşte zorunlu),
                       referans, not, kaynak, website (bal tuzağı, doluysa gönderme) → form-gonder.php
+blog.html             Blog listesi: kartlar HTML'de yazılı (SEO); JS ile kategori süzgeci, arama, "daha fazla" (telefonda 8, geniş
+                      ekranda 16) ve sıra sıra dizilen Pinterest ızgarası. Yeni yazı yayınlanınca kartı buraya da eklenir
 kvkk-aydinlatma.html, cerez-politikasi.html, gizlilik-politikasi.html, kullanim-sartlari.html
                       Yasal sayfalar: ortalı koyu başlık + sade metin; [KÖŞELİ PARANTEZ] yer tutucular avukat kontrolünde dolar.
                       Çerez tablosu sitenin gerçekte kullandığı kayıtlarla aynı tutulur (yeni çerez/depolama eklenirse buraya da yaz)
