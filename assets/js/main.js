@@ -204,12 +204,19 @@ const Asansor = (() => {
   let su = 0, yaziSag = 0, ust3 = 0;
   const olc12 = { s: 0, h: 0 };
   const olc3 = { s: 0, h: 0 };
-  function hedefleriOlc() {
+  // Yeni ölçek, ancak o ölçeğin kullanıldığı kat ekranda değilken (ya da kullanıcı o katta dururken) uygulanır:
+  // örneğin kampanya kartı 2. kata geçerken küçülünce asansör 2. katta boyut değiştirmez.
+  let bek12 = null, bek3 = null, ust3Bek = null;
+  const guvenli12 = () => cam >= 1.8 || cam <= 0.05;
+  const guvenli3 = () => cam >= 1 || cam <= 0.2;
+  function hedefleriOlc(hemen) {
     const ust1 = $('.hx-h', secs[0]).offsetTop;
-    ust3 = $('.hx-in', secs[2]).firstElementChild.offsetTop;
+    const yeniUst3 = $('.hx-in', secs[2]).firstElementChild.offsetTop;
     const buyuk = ekran.W >= 600;
-    olc12.h = clamp((ust1 - 18 - 30) / 887.6, 0.2, buyuk ? 0.5 : 0.36);
-    olc3.h = clamp((ust3 - 10 - 52) / 944, 0.2, buyuk ? 0.55 : 0.42);
+    const h12 = clamp((ust1 - 18 - 30) / 887.6, 0.2, buyuk ? 0.5 : 0.36);
+    const h3 = clamp((yeniUst3 - 10 - 52) / 944, 0.2, buyuk ? 0.55 : 0.42);
+    if (hemen || guvenli12()) { olc12.h = h12; bek12 = null; } else bek12 = h12;
+    if (hemen || guvenli3()) { olc3.h = h3; ust3 = yeniUst3; bek3 = null; } else { bek3 = h3; ust3Bek = yeniUst3; }
   }
   const katSu = () => (cam >= 1 ? olc12.s : olc3.s + (olc12.s - olc3.s) * ssm(clamp(cam, 0, 1)));
   function geometri() {
@@ -217,8 +224,10 @@ const Asansor = (() => {
     if (genis) {
       su = (ekran.H / 900) * 0.86;
       yaziSag = $('.hx-in', secs[0]).getBoundingClientRect().right;
+      box.style.height = '';
+      ext.style.top = '';
     } else {
-      hedefleriOlc();
+      hedefleriOlc(true);
       olc12.s = olc12.h;
       olc3.s = olc3.h;
       su = katSu();
@@ -230,12 +239,14 @@ const Asansor = (() => {
     box.style.opacity = '';
     aktifKat = -1;
   }
+  /* Yerleşim bu ölçekte (s0) kurulur. Ölçek değişirken her karede yeniden yerleşim yapılmaz;
+     kuyu ve kabin katmanına yalnızca transform: scale() uygulanır (ekran kartıyla, takılmadan).
+     Ölçek oturunca yerleşim bir kez yeni ölçekte yenilenir ki görüntü keskin kalsın. */
+  let sonKutu = -1, sonExtS = -1;
   function yerlestir() {
     const W = ekran.W;
     const H = ekran.H;
     const s = su;
-    const boxH = genis ? H : Math.round((s * 900) / 0.7);
-    if (!genis) h.style.setProperty('--lbh', boxH + 'px');
     let cx = W * (genis ? (W >= 1024 ? 0.73 : 0.72) : 0.5);
     // dar masaüstünde kabin yazının üstüne binmesin: yazının sağından en az 40 px uzakta, ekranın içinde kalır
     if (genis) cx = Math.min(Math.max(cx, yaziSag + 40 + 249.3 * s), W - 252.4 * s - 16);
@@ -243,8 +254,9 @@ const Asansor = (() => {
     const U = (px) => 518.7 + px * K;
     const cabW = 692 * K * s;
     const cabH = 885 * K * s;
-    g = { W, H, boxH, s, cabW, cabH, worldH: 2700 * s, taban: genis ? 0 : boxH, per: 514.67 * s };
-    world.style.height = g.worldH + 'px';
+    g = { W, H, s0: s, cx, cabH0: cabH };
+    world.style.height = 2700 * s + 'px';
+    world.style.transformOrigin = `${cx}px 0px`;
     shaft.style.cssText = `left:${X(380)}px;top:${60 * s}px;width:${776 * s}px;height:${2640 * s}px`;
     // kuyu dibindeki yumuşak geçiş: görselin en alt ~330 biriminde, biraz da altına taşar
     dip.style.cssText = `left:${X(370)}px;top:${(2700 - 330) * s}px;width:${796 * s}px;height:${346 * s}px`;
@@ -261,11 +273,8 @@ const Asansor = (() => {
     cab.style.width = cabW + 'px';
     cab.style.height = cabH + 'px';
     cab.style.setProperty('--mk', (cabH * 14) / 885 + 'px');
-    if (!genis) {
-      ext.style.left = X(380) + 'px';
-      ext.style.width = 776 * s + 'px';
-      ext.style.backgroundSize = `${776 * s}px ${g.per}px`;
-    }
+    sonKutu = -1;
+    sonExtS = -1;
   }
   // çerez bildirimi ya da kampanya kartı açılıp kapanınca: yazının kayma geçişi (~0,45 sn) bitince yeni ölçek
   let yerT = 0;
@@ -280,7 +289,16 @@ const Asansor = (() => {
     const pos = st.pos;
     const akt = Math.round(pos);
     const kat = KAT[akt];
-    const { s, boxH, H } = g;
+    const { H } = g;
+    const s = su;
+    const k = s / g.s0;
+    const cabH = 885 * K * s;
+    const boxH = genis ? H : Math.round((s * 900) / 0.7);
+    if (!genis && boxH !== sonKutu) {
+      box.style.height = boxH + 'px';
+      ext.style.top = boxH - 60 + 'px';
+      sonKutu = boxH;
+    }
 
     // kat rengi kapıdan dolar, zemine çok hafif yansır
     const bg = [14, 16, 18].map((v, i) => Math.round(v + (kat.amb[i] - v) * 0.025 * door)).join(', ');
@@ -289,10 +307,10 @@ const Asansor = (() => {
     // kamera: telefonda kabin header'ın altında, katlara göre biraz kayar
     let merkez = 450;
     if (!genis) {
-      const c1 = 64 + 246 * s - 34 + g.cabH / 2;
-      const c23 = 78 + g.cabH / 2;
+      const c1 = 64 + 246 * s - 34 + cabH / 2;
+      const c23 = 78 + cabH / 2;
       // 3. kat: kuyunun dibi yazının 10 px üstünde (kabin header'ın altına çıkmaz, kutudan taşmaz)
-      const c3 = clamp(ust3 - 10 - 944 * s, 52, boxH - 8 - 944 * s) + g.cabH / 2;
+      const c3 = clamp(ust3 - 10 - 944 * s, 52, boxH - 8 - 944 * s) + cabH / 2;
       const cabC = cam >= 1 ? c23 + (c1 - c23) * Math.min(1, cam - 1) : c3 + (c23 - c3) * ssm(cam);
       merkez = ((cabC + 40 * s) * 900) / boxH;
     }
@@ -301,19 +319,21 @@ const Asansor = (() => {
     const camHitch = at(clamp(cam, 0, 2));
     const hedef = (boxH / 900) * merkez;
     const cabTopU = hitch - 88.6;
-    const top = clamp(hedef - (camHitch - 88.6 + (885 * K) / 2 + 40) * s, boxH - g.worldH - g.taban, 0);
-    world.style.transform = `translate3d(0,${top}px,0)`;
-    const ropeH = Math.max(0, (cabTopU + 20 - 497) * s + jolt);
+    const top = clamp(hedef - (camHitch - 88.6 + (885 * K) / 2 + 40) * s, boxH - 2700 * s - (genis ? 0 : boxH), 0);
+    world.style.transform = k === 1 ? `translate3d(0,${top}px,0)` : `translate3d(0,${top}px,0) scale(${k})`;
+    // dünyanın içindeki konumlar yerleşim ölçeğinde (s0); sarsıntı ölçek oranına bölünür
+    const s0 = g.s0;
+    const ropeH = Math.max(0, (cabTopU + 20 - 497) * s0 + jolt / k);
     const ropeT = `scaleY(${ropeH / 100})`;
     for (let i = 0; i < ropes.length; i++) ropes[i].style.transform = ropeT;
-    cab.style.transform = `translate3d(0,${cabTopU * s + jolt}px,0)`;
+    cab.style.transform = `translate3d(0,${cabTopU * s0 + jolt / k}px,0)`;
     const light = clamp((door - 0.15) / 0.75, 0, 1);
     if (kat.ton !== sonGlowTon) {
       const a = kat.amb.join(', ');
       glow.style.background = `radial-gradient(ellipse at center, rgba(${a}, 1) 0%, rgba(${a}, .375) 45%, rgba(${a}, 0) 70%)`;
       sonGlowTon = kat.ton;
     }
-    glow.style.transform = `translate3d(0,${cabTopU * s - g.cabH * 0.1}px,0)`;
+    glow.style.transform = `translate3d(0,${cabTopU * s0 - g.cabH0 * 0.1}px,0)`;
     glow.style.opacity = (0.04 + 0.16 * light).toFixed(3);
     kareGoster(kat.ton, Math.round(door * (KARE - 1)));
 
@@ -329,8 +349,15 @@ const Asansor = (() => {
       box.style.opacity = elOp.toFixed(3);
       const kc = clamp(cam, 0, 1);
       fade.style.opacity = kc.toFixed(3);
+      const per = 514.67 * s;
+      if (s !== sonExtS) {
+        ext.style.left = g.cx + (380 - 768) * s + 'px';
+        ext.style.width = 776 * s + 'px';
+        ext.style.backgroundSize = `${776 * s}px ${per}px`;
+        sonExtS = s;
+      }
       const extTop = boxH - 60;
-      const extY = (((top + 1380 * s - extTop) % g.per) + g.per) % g.per;
+      const extY = (((top + 1380 * s - extTop) % per) + per) % per;
       ext.style.backgroundPosition = `0 ${extY}px`;
       ext.style.opacity = (0.22 * kc * elOp).toFixed(3);
       // her kat kısa mesafe kayarak solar, sıradaki aşağıdan gelir
@@ -356,9 +383,10 @@ const Asansor = (() => {
     const st = faz(p);
     cam += (st.pos - cam) * f(genis ? (masa ? 0.05 : 0.06) : 0.1);
     if (!genis) {
-      [olc12, olc3].forEach((o) => { if (o.s !== o.h) o.s = Math.abs(o.h - o.s) < 0.0004 ? o.h : o.s + (o.h - o.s) * f(0.12); });
-      const yeniSu = katSu();
-      if (Math.abs(yeniSu - su) > 0.0002) { su = yeniSu; yerlestir(); }
+      if (bek12 != null && guvenli12()) { olc12.h = bek12; bek12 = null; }
+      if (bek3 != null && guvenli3()) { olc3.h = bek3; ust3 = ust3Bek; bek3 = null; }
+      [olc12, olc3].forEach((o) => { if (o.s !== o.h) o.s = Math.abs(o.h - o.s) < 0.0004 ? o.h : o.s + (o.h - o.s) * f(0.08); });
+      su = katSu();
     }
     if (introT0 != null && intro < 1) {
       const t = az ? 1 : Math.min(1, (now - introT0) / 2600);
@@ -375,7 +403,11 @@ const Asansor = (() => {
     const jt = now - jT0;
     jolt = !az && jt < 1400 ? jAmp * Math.exp(-jt / 260) * Math.sin((2 * Math.PI * jt) / 240) : 0;
     const bitti = Math.abs(pt - p) < 0.0015 && Math.abs(st.pos - cam) < 0.002 && (az || jt >= 1400) && (introT0 == null || intro >= 1) && olc12.s === olc12.h && olc3.s === olc3.h;
-    if (bitti) { p = pt; cam = faz(p).pos; jolt = 0; }
+    if (bitti) {
+      p = pt; cam = faz(p).pos; jolt = 0;
+      if (!genis) su = katSu();
+      if (Math.abs(su - g.s0) > 0.0001) yerlestir(); // ölçek oturdu: keskin görüntü için bir kez yeniden yerleşim
+    }
     ciz();
     raf = bitti ? 0 : requestAnimationFrame(tik);
   }
