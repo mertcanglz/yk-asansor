@@ -25,8 +25,9 @@ function olc() {
   ekran.H = Math.round(vhOlc ? vhOlc.getBoundingClientRect().height : innerHeight) || innerHeight || 800;
   // hero düzeni: geniş (asansör sağda) ya da dar (asansör üstte) — <head> içindeki kuralla aynı
   h.classList.toggle('hw', innerWidth >= 1024 || (innerWidth >= 760 && innerWidth > innerHeight * 1.1));
-  // hero'nun bittiği yer (telefonda 2 kat + büyük ekran yüksekliği; adres çubuğu gizlenince alttaki bölüm görünmesin)
-  const hx = d.getElementById('hx');
+  // hero'nun bittiği yer (telefonda 2 kat + büyük ekran yüksekliği; adres çubuğu gizlenince alttaki bölüm görünmesin).
+  // İç sayfalarda koyu sayfa başlığının bittiği yer.
+  const hx = d.getElementById('hx') || $('.kp');
   ekran.heroSon = hx ? hx.offsetTop + hx.offsetHeight : 3 * ekran.H;
 }
 olc();
@@ -769,9 +770,12 @@ if ('IntersectionObserver' in window) {
     });
   }, { rootMargin: '0px 0px -12% 0px' });
   $$('.rv, .rv-st').forEach((el) => io.observe(el));
-  // etiket adımlarındaki ışık yalnızca görünürken akar
-  const adimlar = $('#adimlar');
-  if (adimlar) new IntersectionObserver((e) => adimlar.classList.toggle('is-gorunur', e[0].isIntersecting)).observe(adimlar);
+  // etiket adımlarındaki ve süreç hattındaki ışık yalnızca görünürken akar
+  const akanlar = $$('#adimlar, [data-gorunur]');
+  if (akanlar.length) {
+    const gio = new IntersectionObserver((e) => e.forEach((g) => g.target.classList.toggle('is-gorunur', g.isIntersecting)));
+    akanlar.forEach((el) => gio.observe(el));
+  }
 } else {
   $$('.rv, .rv-st').forEach((el) => el.classList.add('rv--in'));
 }
@@ -817,17 +821,18 @@ if ('IntersectionObserver' in window) {
   }, { passive: true });
 })();
 
-/* ---------- SSS: aynı anda tek soru açık; masaüstünde ilk soru açık, telefonda hepsi kapalı ---------- */
+/* ---------- SSS: aynı anda tek soru açık; telefonda hepsi kapalı başlar ----------
+   Masaüstünde: ana sayfa ve hizmet şablonunda ilk soru açık (data-sss="ilk"),
+   hizmetler sayfasında iki sütunlu düz liste, yanıtlar açık (data-sss="hepsi"). */
 (() => {
-  const sorular = $$('details.faq');
-  if (!sorular.length) return;
-  // Yanıt yüksekliği yumuşakça açılıp kapanır. Tek açık soru kuralını burada uygularız
-  // (tarayıcının name="sss" davranışı diğerlerini animasyonsuz anında kapatırdı).
-  sorular.forEach((s) => s.removeAttribute('name'));
+  const gruplar = $$('.faqs, [data-sss]');
+  if (!gruplar.length) return;
   const SURE = 340;
   const egri = 'cubic-bezier(.2, .7, .2, 1)';
+  // Yanıt yüksekliği yumuşakça açılıp kapanır. Tek açık soru kuralını burada uygularız
+  // (tarayıcının name="sss" davranışı diğerlerini animasyonsuz anında kapatırdı).
   function cevir(s, ac) {
-    const a = $('.faq__a', s);
+    const a = $('.faq__a, .soru__a', s);
     s.classList.toggle('is-acik', ac);
     if (s._anim) s._anim.cancel();
     if (mqAz.matches || !a.animate) { s.open = ac; return; }
@@ -838,18 +843,34 @@ if ('IntersectionObserver' in window) {
     s._anim = anim;
     anim.onfinish = () => { s._anim = null; if (!ac) s.open = false; };
   }
-  sorular.forEach((s) => {
-    $('summary', s).addEventListener('click', (e) => {
-      e.preventDefault();
-      const ac = !s.classList.contains('is-acik');
-      if (ac) sorular.forEach((o) => { if (o !== s && o.classList.contains('is-acik')) cevir(o, false); });
-      cevir(s, ac);
+  gruplar.forEach((g) => {
+    const sorular = $$('details', g);
+    if (!sorular.length) return;
+    const mod = g.dataset.sss || 'ilk';
+    const liste = () => mod === 'hepsi' && mqMasa.matches;
+    sorular.forEach((s) => {
+      s.removeAttribute('name');
+      $('summary', s).addEventListener('click', (e) => {
+        e.preventDefault();
+        if (liste()) return;
+        const ac = !s.classList.contains('is-acik');
+        if (ac) sorular.forEach((o) => { if (o !== s && o.classList.contains('is-acik')) cevir(o, false); });
+        cevir(s, ac);
+      });
     });
+    const uygula = () => {
+      sorular.forEach((s, i) => {
+        if (s._anim) { s._anim.cancel(); s._anim = null; }
+        const ac = mqMasa.matches && (mod === 'hepsi' || i === 0);
+        s.open = ac;
+        s.classList.toggle('is-acik', ac);
+        // düz listede sorular tıklanmaz; klavyede de atlanır
+        $('summary', s).tabIndex = liste() ? -1 : 0;
+      });
+    };
+    uygula();
+    if (mod === 'hepsi') mqMasa.addEventListener('change', uygula);
   });
-  if (mqMasa.matches) {
-    sorular[0].open = true;
-    sorular[0].classList.add('is-acik');
-  }
 })();
 
 /* ---------- Footer bağlantı grupları: masaüstünde hep açık ---------- */

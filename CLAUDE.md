@@ -24,6 +24,8 @@ Bu repo, **YK Asansör** işletmesinin tanıtım web sitesidir. Site sahibi proj
 
 ```
 index.html            Ana sayfa (hero asansörü, bölümler, footer + hızlı teklif formu)
+hizmetler.html        Hizmetler: tüm hizmetler tek sayfada (gruplar + SSS)
+asansor-montaji.html  Hizmet şablonu (Yeni asansör montajı); diğer hizmet sayfaları aynı yapıyla yazılır
 assets/css/style.css  Tüm stiller; renkler/fontlar en üstteki :root değişkenlerinde
 assets/js/main.js     Etkileşimler (modül): hero asansörü, menüler, çerez onayı + GA/Meta yükleme
                       (kimlikler dosyanın başında GA_ID / META_PIXEL_ID: TODO), kampanya, form, animasyonlar
