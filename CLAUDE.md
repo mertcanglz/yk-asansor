@@ -104,6 +104,9 @@ Kodlamadan önce blog taslakları `docs/blog-taslaklari/` altında Markdown olar
   kabin boşluğu doldurur). Yan yana düzende kabin, yazının sağı ile ekran kenarı arasına sığacak kadar küçülür
   (yazıya binmez, kırpılmaz). İç sayfa kapak görselleri 1920 px'ten geniş ekranda sağa uzamaz, ortada kalır ve sağ
   kenarı soldaki gibi koyuya geçer; her kapakta ana konunun yeri odak noktası olarak verilir (`--op-d`).
+- **Yumuşak kaydırma:** fare tekerleği/trackpad ile sayfa yumuşakça süzülerek kayar (main.js, kütüphanesiz). Dokunmatik
+  ekranda tarayıcının kendi momentumlu kaydırması kalır (parmağın gerisinden gelmesin, adres çubuğu ve hero durakları
+  bozulmasın); ana sayfanın hero katlarında da kat oturtma çalıştığı için tarayıcının kendi kaydırması.
 - **"Bu sayfada" bağlantı şeridi yalnızca masaüstünde:** mobilde hiçbir sayfada gösterilmez (kullanıcı kararı).
 - **Genel bağlantı hover rengi kartları ezmez:** `a:hover` yerine `a:where(:hover)` kullan; açık zemindeki
   kart/bağlantılar (kabin kartları, blog kartları, koyu metin bağlantıları) hover ve dokunmada beyaza dönmesin.

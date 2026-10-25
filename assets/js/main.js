@@ -799,6 +799,61 @@ addEventListener('resize', () => {
 kaydirma();
 acilisYerlesim();
 
+/* ---------- Yumuşak kaydırma (fare tekerleği): sayfa tekerle zıplamaz, yumuşakça süzülerek durur ----------
+   Yalnızca fare/trackpad'de; dokunmatik ekranda tarayıcının kendi momentumlu kaydırması kalır.
+   Ana sayfanın hero katlarında kat oturtma çalıştığı için orada da tarayıcının kendi kaydırması. */
+(() => {
+  if (mqDokun.matches || !matchMedia('(hover: hover)').matches) return;
+  const anaHero = d.getElementById('hx');
+  let hedef = scrollY, simdi = scrollY, raf = 0, sonT = 0, beklenen = -1;
+  const enFazla = () => h.scrollHeight - innerHeight;
+  function adim(now) {
+    const dt = Math.min(64, sonT ? now - sonT : 16.7);
+    sonT = now;
+    simdi += (hedef - simdi) * (1 - Math.pow(0.9, dt / 16.667));
+    if (Math.abs(hedef - simdi) < 0.5) simdi = hedef;
+    beklenen = simdi;
+    scrollTo({ top: simdi, behavior: 'instant' });
+    raf = simdi === hedef ? 0 : requestAnimationFrame(adim);
+  }
+  function durdur() {
+    cancelAnimationFrame(raf);
+    raf = 0;
+    hedef = simdi = scrollY;
+  }
+  // tekerin altındaki öğe kendisi o yönde kayabiliyorsa (açık menü, metin kutusu) kaydırma ona kalır
+  const icKaydirma = (el, dy) => {
+    for (; el && el !== d.body && el !== h; el = el.parentElement) {
+      if (el.scrollHeight <= el.clientHeight + 1) continue;
+      const oy = getComputedStyle(el).overflowY;
+      if ((oy === 'auto' || oy === 'scroll') && (dy > 0 ? el.scrollTop + el.clientHeight < el.scrollHeight - 1 : el.scrollTop > 0)) return true;
+    }
+    return false;
+  };
+  addEventListener('wheel', (e) => {
+    if (mqAz.matches || e.defaultPrevented || e.ctrlKey || h.classList.contains('nav-acik')) return;
+    const dy = e.deltaY * (e.deltaMode === 1 ? 40 : e.deltaMode === 2 ? innerHeight : 1);
+    if (!dy || Math.abs(e.deltaX) > Math.abs(dy) || icKaydirma(e.target, dy)) return;
+    if (!raf) hedef = simdi = scrollY;
+    // ana sayfa: hero içindeyken ya da hero sonundan yukarı dönerken kaydırma tarayıcının (kat oturtma çalışır)
+    if (anaHero && (simdi < ekran.heroSon - 1 || (dy < 0 && simdi <= ekran.heroSon + 1))) {
+      if (raf) durdur();
+      return;
+    }
+    e.preventDefault();
+    hedef = clamp(hedef + dy, anaHero ? ekran.heroSon : 0, enFazla());
+    if (!raf) {
+      sonT = 0;
+      raf = requestAnimationFrame(adim);
+    }
+  }, { passive: false });
+  // klavye, kaydırma çubuğu ya da bağlantıyla gelen kaydırmada yumuşak kaydırma kenara çekilir
+  addEventListener('scroll', () => {
+    if (!raf) hedef = simdi = scrollY;
+    else if (Math.abs(scrollY - beklenen) > 2) durdur();
+  }, { passive: true });
+})();
+
 /* ---------- Bölüm giriş animasyonları: görünür alana girerken bir kez ---------- */
 function sayac(liste) {
   if (mqAz.matches) return;
