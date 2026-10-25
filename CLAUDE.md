@@ -29,6 +29,8 @@ asansor-montaji.html  Hizmet şablonu (Yeni asansör montajı); diğer hizmet sa
 asansor-sistemleri.html  Asansör sistemleri: gruplu katalog (yolcu, yük ve araç, özel çözümler) + seçim ölçütleri + SSS
 dislili-asansor.html  Sistem şablonu (Dişlili asansör); diğer 7 sistem sayfası aynı yapıyla yazılır
 yesil-etiket.html     Yeşil etiket bilgi sayfası: etiket renkleri, süreler (telefonda kart), yeşil etikete geçiş, yönetmelik, SSS
+iletisim.html         İletişim: kartlar, sosyal medya, mesaj formu (adsoyad, telefon, eposta, konu, mesaj → form-gonder.php);
+                      harita masaüstünde "Haritayı göster"e basınca gömülür (KVKK), telefonda yalnızca Google Haritalar bağlantısı
 teklif-formu.html     Reklam açılış sayfası (noindex): detaylı teklif formu; WhatsApp butonu ve footer'daki hızlı form yok.
                       Alanlar: hizmet, adsoyad, telefon, donus (Telefonla/E-postayla), eposta (e-postayla dönüşte zorunlu),
                       referans, not, kaynak, website (bal tuzağı, doluysa gönderme) → form-gonder.php

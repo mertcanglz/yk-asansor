@@ -26,8 +26,8 @@ function olc() {
   // hero düzeni: geniş (asansör sağda) ya da dar (asansör üstte) — <head> içindeki kuralla aynı
   h.classList.toggle('hw', innerWidth >= 1024 || (innerWidth >= 760 && innerWidth > innerHeight * 1.1));
   // hero'nun bittiği yer (telefonda 2 kat + büyük ekran yüksekliği; adres çubuğu gizlenince alttaki bölüm görünmesin).
-  // İç sayfalarda koyu sayfa başlığının bittiği yer (teklif formunda giriş metninin altı).
-  const hx = d.getElementById('hx') || $('.kp, .lg-kp, .tf-intro');
+  // İç sayfalarda koyu sayfa başlığının bittiği yer (teklif formu ve iletişimde giriş başlığının altı).
+  const hx = d.getElementById('hx') || $('.kp, .lg-kp, .tf-intro, .il-side');
   ekran.heroSon = hx ? hx.offsetTop + hx.offsetHeight : 3 * ekran.H;
 }
 olc();
@@ -976,6 +976,53 @@ telefonBaslat();
       btn.disabled = false;
     }
   });
+})();
+
+/* ---------- İletişim sayfası: mesaj formu; harita yalnızca "Haritayı göster"e basınca yüklenir (KVKK) ---------- */
+(() => {
+  const form = $('#il');
+  if (form) {
+    const msg = $('#il-durum');
+    const btn = $('.il-send .btn-a', form);
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (!form.reportValidity()) return;
+      if (form.elements.website && form.elements.website.value) return; // otomatik gönderim
+      btn.disabled = true;
+      msg.hidden = true;
+      msg.classList.remove('is-hata');
+      try {
+        const r = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } });
+        const j = await r.json().catch(() => ({}));
+        if (!r.ok || j.ok === false) throw new Error(r.status === 422 && j.hata ? j.hata : '');
+        const ok = $('#il-ok');
+        form.hidden = true;
+        ok.hidden = false;
+        ok.focus();
+        olay('iletisim_formu_gonderildi', { konu: form.elements.konu.value });
+        if (pxHazir && window.fbq) window.fbq('track', 'Contact');
+      } catch (err) {
+        msg.textContent = (err && err.message) || 'Şu anda gönderilemedi. Lütfen 0 (543) 542 86 75 numarasını arayın ya da WhatsApp’tan yazın.';
+        msg.classList.add('is-hata');
+        msg.hidden = false;
+      } finally {
+        btn.disabled = false;
+      }
+    });
+  }
+  const goster = $('.il-harita__goster');
+  if (goster) {
+    goster.addEventListener('click', () => {
+      const bant = goster.closest('.il-harita');
+      const f = d.createElement('iframe');
+      f.src = 'https://www.google.com/maps?q=' + encodeURIComponent(goster.dataset.harita) + '&output=embed';
+      f.title = 'YK Asansör konumu (Google Haritalar)';
+      f.referrerPolicy = 'no-referrer-when-downgrade';
+      f.allowFullscreen = true;
+      bant.appendChild(f);
+      bant.classList.add('is-acik');
+    });
+  }
 })();
 
 const yil = $('#yil');
