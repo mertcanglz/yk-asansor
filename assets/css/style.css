@@ -1043,7 +1043,7 @@ html:not([data-ck="yok"]) .ck--bar { display: none; }
   .kp--hizmet { min-height: 620px; padding-top: 124px; padding-bottom: 72px; }
   .kp--hizmet .kp__img { top: 0; right: -110px; width: 76%; -webkit-mask-image: linear-gradient(104deg, transparent 0%, transparent 12%, rgba(0, 0, 0, .1) 17%, rgba(0, 0, 0, .25) 21.5%, rgba(0, 0, 0, .6) 28%, #000 36%); mask-image: linear-gradient(104deg, transparent 0%, transparent 12%, rgba(0, 0, 0, .1) 17%, rgba(0, 0, 0, .25) 21.5%, rgba(0, 0, 0, .6) 28%, #000 36%); }
   .kp--hizmet .kp__mask { -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 80%, transparent 100%); mask-image: linear-gradient(to bottom, #000 0%, #000 80%, transparent 100%); }
-  .kp--hizmet .kp__img img { filter: brightness(.85); }
+  .kp--hizmet .kp__img img { filter: brightness(var(--kp-parlak, .85)); }
   .kp-act { align-items: center; gap: 28px; margin-top: 6px; }
   .kp-act .btn-a { flex: 0 0 auto; height: 48px; padding: 0 22px; gap: 10px; font-size: 15px; }
   .kp-act .hx-call { display: none; }
@@ -1580,6 +1580,48 @@ html:not(.js) .tf-card #tf-ref-alan[hidden] { display: flex !important; }
   .tf-adim b { font-size: 18px; }
   .ft--formsuz .ft__grid { grid-template-columns: 220px 190px 150px auto; justify-content: space-between; gap: 48px; }
   .ft--formsuz .ft__bar { padding-bottom: 24px; }
+}
+
+/* ---------- Yeşil etiket sayfası: etiket kartları, süre tablosu (telefonda kartlar) ---------- */
+.kp-h1--yesil em { color: var(--vurgu-kontrol); }
+.sp-p strong { font-weight: 600; }
+.sp-sec > .ye-table { margin-top: 8px; }
+.ye-grid { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.ye-card { display: flex; align-items: center; gap: 16px; padding: 16px; border-radius: 16px; background: var(--beyaz); box-shadow: inset 0 0 0 1px var(--cizgi); }
+.ye-card--on { box-shadow: inset 0 0 0 1.5px #2e9a57, 0 18px 36px -26px rgba(46, 154, 87, .6); }
+.ye-tag { flex: 0 0 84px; width: 84px; height: 110px; padding: 10px 9px; border-radius: 10px; display: flex; flex-direction: column; justify-content: space-between; background: var(--c); color: var(--ink); box-shadow: 0 10px 24px rgba(20, 24, 28, .16), inset 0 0 0 1px rgba(0, 0, 0, .06); }
+.ye-tag__k { font-size: 7.5px; font-weight: 700; letter-spacing: 1px; line-height: 1.3; }
+.ye-tag__s { font-weight: 700; line-height: 1.1; }
+.ye-body { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.ye-body .sp-h3 { margin: 0; }
+.ye-dl { display: inline-flex; align-items: center; gap: 8px; margin-top: 6px; font-size: 13px; font-weight: 600; }
+.ye-dl::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
+.ye-table, .ye-table tr, .ye-table td { display: block; }
+.ye-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.ye-table tbody { display: flex; flex-direction: column; gap: 10px; }
+.ye-table tr { display: flex; flex-direction: column; gap: 6px; padding: 16px 18px; border-radius: 16px; background: var(--beyaz); box-shadow: inset 0 0 0 1px var(--cizgi); }
+.ye-table td[data-etiket="Etiket"] { display: flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 600; }
+.ye-dot { flex: 0 0 10px; width: 10px; height: 10px; border-radius: 50%; }
+.ye-table td[data-etiket="Eksik giderme süresi"] { font-size: 16px; font-weight: 500; }
+.ye-table td[data-etiket="Süre dolarsa"] { font-size: 14px; line-height: 1.55; color: #5b636b; }
+.ye-table td[data-etiket="Süre dolarsa"]::before { content: attr(data-etiket) ": "; font-weight: 600; color: var(--gri-1); }
+@media (min-width: 760px) {
+  .ye-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 1fr; gap: 12px; }
+  .ye-table { display: table; width: 100%; border-collapse: separate; border-spacing: 0; border-radius: 16px; overflow: hidden; background: var(--beyaz); box-shadow: inset 0 0 0 1px var(--cizgi); font-size: 15px; }
+  .ye-table thead { position: static; width: auto; height: auto; overflow: visible; clip: auto; white-space: normal; display: table-header-group; }
+  .ye-table tbody { display: table-row-group; }
+  .ye-table tr { display: table-row; padding: 0; border-radius: 0; background: none; box-shadow: none; }
+  .ye-table th, .ye-table td, .ye-table td[data-etiket] { display: table-cell; padding: 16px 22px; text-align: left; vertical-align: top; border-bottom: 1px solid #ecedea; font-size: 15px; font-weight: 400; line-height: 1.5; color: var(--murekkep); }
+  .ye-table tbody tr:last-child td { border-bottom: 0; }
+  .ye-table th { font-size: 12px; font-weight: 600; letter-spacing: .4px; color: var(--gri-3); background: #fafaf8; }
+  .ye-table td[data-etiket="Etiket"] { white-space: nowrap; font-weight: 500; }
+  .ye-table td[data-etiket="Süre dolarsa"]::before { content: none; }
+  .ye-m { display: none; }
+  .ye-dot { display: inline-block; width: 9px; height: 9px; margin-right: 10px; vertical-align: 1px; }
+}
+@media (min-width: 1024px) {
+  .sp-sec > .ye-table { margin-top: 6px; }
+  .ye-card { gap: 22px; min-height: 168px; padding: 24px 26px; }
 }
 
 /* ---------- Bölüm giriş animasyonları: bir kez, yumuşak; hero ve footer'da yok ---------- */
