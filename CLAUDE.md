@@ -59,7 +59,9 @@ Kodlamadan önce blog taslakları `docs/blog-taslaklari/` altında Markdown olar
   (alt 16 px + 56 px) + `env(safe-area-inset-bottom)` + küçük pay (16 px). Üç katın yazısı da alta yaslı.
   Çerez bildirimi ya da kampanya kartı açıkken boşluk onların gerçek yüksekliği kadar artar; kapatılınca kalkar.
   Telefonda asansörün boyu, 1. kattaki başlığın üstünde kalan alanı dolduracak şekilde JS ile hesaplanır
-  (3. katın yazısına binmez); kutular kapanıp yazı inince asansör yumuşakça büyür. Hero yüksekliği `100vh` değil `100svh`/`100dvh`
+  (3. katta kuyu dibi görünür, alttan yumuşak koyu geçişle biter); kutular kapanıp yazı inince asansör yumuşakça büyür.
+  2. ve 3. katta bağlantı WhatsApp'ın solunda kaldığı için alt boşluk 28 px (kampanya etiketi görünürken 72 px).
+  Telefonda her kaydırma bir kat ilerler (CSS scroll-snap, `scroll-snap-stop: always`); hero bitince sayfa serbest kayar. Hero yüksekliği `100vh` değil `100svh`/`100dvh`
   olsun (adres çubuğu butonları örtmesin); 360 px genişlik ve kısa ekranlarda (≤ 720 px) test et.
 - **Başlıklarda anlamsız satır kırılması olmaz:** iki parçalı başlıklarda (ör. blog: "X: Y?") ":" sonrası
   alt satıra geçer, her parça `text-wrap: balance` ile dengeli kırılır; tek kelime alt satırda kalmaz.

@@ -88,6 +88,7 @@ const Asansor = (() => {
   const box = $('.lift__box', lift);
   const world = $('.lift__world', lift);
   const shaft = $('.lift__shaft', lift);
+  const dip = $('.lift__dip', lift);
   const ropes = $$('.lift__ropes i', lift);
   const glow = $('.lift__glow', lift);
   const cab = $('.lift__cab', lift);
@@ -200,7 +201,8 @@ const Asansor = (() => {
   function hedefSu() {
     const ust1 = $('.hx-h', secs[0]).offsetTop;
     const ust3 = $('.hx-in', secs[2]).firstElementChild.offsetTop;
-    return clamp(Math.min((ust1 - 18 - 30) / 887.6, (ust3 - 14 - 52) / 641.6), 0.2, ekran.W >= 600 ? 0.5 : 0.36);
+    // 1. kat: kabinin altı başlığın 18 px üstünde; 3. kat (kuyu dibi): kuyunun dibi yazı kutusunun geçişine yumuşakça girer
+    return clamp(Math.min((ust1 - 18 - 30) / 887.6, (ust3 - 10 - 52) / 944), 0.2, ekran.W >= 600 ? 0.5 : 0.36);
   }
   function geometri() {
     genis = h.classList.contains('hw');
@@ -233,6 +235,8 @@ const Asansor = (() => {
     g = { W, H, boxH, s, cabW, cabH, worldH: 2700 * s, taban: genis ? 0 : boxH, per: 514.67 * s };
     world.style.height = g.worldH + 'px';
     shaft.style.cssText = `left:${X(380)}px;top:${60 * s}px;width:${776 * s}px;height:${2640 * s}px`;
+    // kuyu dibindeki yumuşak geçiş: görselin en alt ~330 biriminde, biraz da altına taşar
+    dip.style.cssText = `left:${X(370)}px;top:${(2700 - 330) * s}px;width:${796 * s}px;height:${346 * s}px`;
     ropes.forEach((r, i) => {
       r.style.left = X(U(HALAT[i])) + 'px';
       r.style.top = 497 * s + 'px';
@@ -377,8 +381,9 @@ const Asansor = (() => {
   }
 
   /* Kat oturtma. Geniş ekran: durunca ~0,4 sn sonra yakın kata oturur (müdahaleyle iptal olmaz; iki kat arası dar bant serbest).
-     Telefon: parmak kalkınca hareket yönüne göre bir kata oturur. */
-  let oturT = 0, oturuyor = false, dokunuyor = false, sonY = scrollY, kYon = 1;
+     Telefonda bunu tarayıcının kendi kat durakları yapar (CSS scroll-snap, .hx-durak): her kaydırma bir kat ilerler,
+     hızlı kaydırmada bile katlar atlanmaz. */
+  let oturT = 0, oturuyor = false;
   const engelle = (e) => e.preventDefault();
   const TUSLAR = ['ArrowDown', 'ArrowUp', 'PageDown', 'PageUp', ' ', 'Home', 'End'];
   const tusEngelle = (e) => { if (TUSLAR.includes(e.key)) e.preventDefault(); };
@@ -389,63 +394,44 @@ const Asansor = (() => {
     fn('keydown', tusEngelle);
   }
   function otur() {
-    if (oturuyor || mqAz.matches || h.classList.contains('nav-acik')) return;
+    if (oturuyor || !genis || mqAz.matches || h.classList.contains('nav-acik')) return;
     const H = ekran.H;
     const y0 = scrollY;
-    if (genis) {
-      if (y0 >= 2 * H - 2) return;
-      const y1 = Math.round(y0 / H) * H;
-      const fark = y1 - y0;
-      if (Math.abs(fark) < 2 || Math.abs(fark) > H * 0.4667) return;
-      const sure = 800 + (Math.abs(fark) / H) * 900 * 1.4;
-      const t0 = performance.now();
-      const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
-      oturuyor = true;
-      kilit(true);
-      h.style.scrollBehavior = 'auto'; // CSS'teki yumuşak kaydırma kare kare oturtmayı bozmasın
-      const adim = (now) => {
-        const k = Math.min(1, (now - t0) / sure);
-        scrollTo(0, y0 + fark * ease(k));
-        if (k < 1) requestAnimationFrame(adim);
-        else { oturuyor = false; kilit(false); h.style.scrollBehavior = ''; }
-      };
-      requestAnimationFrame(adim);
-    } else {
-      if (dokunuyor || y0 <= 0 || y0 >= 2 * H) return;
-      const k = Math.floor(y0 / H);
-      const t = y0 / H - k;
-      if (t < 0.004 || t > 0.996) return;
-      const ileri = kYon > 0 ? t >= 0.2 : t > 0.8;
-      scrollTo({ top: (ileri ? k + 1 : k) * H, behavior: 'smooth' });
-    }
+    if (y0 >= 2 * H - 2) return;
+    const y1 = Math.round(y0 / H) * H;
+    const fark = y1 - y0;
+    if (Math.abs(fark) < 2 || Math.abs(fark) > H * 0.4667) return;
+    const sure = 800 + (Math.abs(fark) / H) * 900 * 1.4;
+    const t0 = performance.now();
+    const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+    oturuyor = true;
+    kilit(true);
+    h.style.scrollBehavior = 'auto'; // CSS'teki yumuşak kaydırma kare kare oturtmayı bozmasın
+    const adim = (now) => {
+      const k = Math.min(1, (now - t0) / sure);
+      scrollTo(0, y0 + fark * ease(k));
+      if (k < 1) requestAnimationFrame(adim);
+      else { oturuyor = false; kilit(false); h.style.scrollBehavior = ''; }
+    };
+    requestAnimationFrame(adim);
   }
   addEventListener('wheel', (e) => { if (scrollY <= 0 && e.deltaY < 0) sars(-3.2); }, { passive: true });
   let ty = null;
-  addEventListener('touchstart', (e) => { dokunuyor = true; clearTimeout(oturT); ty = e.touches[0] ? e.touches[0].clientY : null; }, { passive: true });
+  addEventListener('touchstart', (e) => { ty = e.touches[0] ? e.touches[0].clientY : null; }, { passive: true });
   addEventListener('touchmove', (e) => { if (ty != null && e.touches[0] && scrollY <= 0 && e.touches[0].clientY - ty > 14) sars(-3.2); }, { passive: true });
-  const dokunmaBitti = () => {
-    dokunuyor = false;
-    clearTimeout(oturT);
-    if (!genis) oturT = setTimeout(otur, 160);
-  };
-  addEventListener('touchend', dokunmaBitti, { passive: true });
-  addEventListener('touchcancel', dokunmaBitti, { passive: true });
 
   function kaydir(y) {
     const H = ekran.H;
     pt = clamp(y / H, 0, 2);
-    if (y !== sonY) kYon = y > sonY ? 1 : -1;
-    sonY = y;
     const gizle = y > 3 * H + 10;
     if (gizle !== kapali) {
       kapali = gizle;
       lift.classList.toggle('is-kapali', gizle);
     }
     uyan();
-    if (!oturuyor) {
+    if (genis && !oturuyor) {
       clearTimeout(oturT);
-      if (genis) oturT = setTimeout(otur, 380);
-      else if (!dokunuyor) oturT = setTimeout(otur, 160);
+      oturT = setTimeout(otur, 380);
     }
   }
 
@@ -640,8 +626,9 @@ const Kampanya = (() => {
     }
     kart.hidden = !acik;
     etiket.hidden = kapandi || acik || engel;
-    // telefonda kart açıkken hero yazısının altı kart kadar açılır; kapanınca boşluk kalkar
-    const durum = acik ? 'acik' : 'kapali';
+    // telefonda kart açıkken hero yazısının altı kart kadar açılır; kapanınca boşluk kalkar.
+    // 2. ve 3. katta kampanya etiketi görünürken bağlantılar onun üstünde durur.
+    const durum = acik ? 'acik' : !etiket.hidden ? 'etiket' : 'kapali';
     if (h.dataset.kampanya !== durum) {
       h.dataset.kampanya = durum;
       if (acik) h.style.setProperty('--promo-pad', kart.offsetHeight + parseFloat(getComputedStyle(kart).bottom) + 16 + 'px');

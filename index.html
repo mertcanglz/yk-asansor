@@ -224,6 +224,7 @@
     <div class="lift__box">
       <div class="lift__world">
         <img class="lift__shaft" src="assets/img/asansor/kuyu.webp" width="582" height="1980" alt="" fetchpriority="high">
+        <div class="lift__dip"></div>
         <div class="lift__ropes"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
         <div class="lift__glow"></div>
         <div class="lift__cab">
@@ -243,6 +244,8 @@
   <main id="icerik">
     <!-- Hero: 3 kat; yazılar asansörle aynı yumuşak hareketle kayar -->
     <div class="hx" id="hx">
+      <!-- telefonda kat durakları: her kaydırma bir kat ilerler (CSS scroll-snap) -->
+      <i class="hx-durak" aria-hidden="true"></i><i class="hx-durak" aria-hidden="true"></i><i class="hx-durak" aria-hidden="true"></i>
       <div class="hx__stick">
         <div class="hx__col">
           <section class="hx-sec hx-sec--1 is-on" aria-labelledby="hx-h1">
@@ -600,6 +603,8 @@
       </div>
     </div>
   </footer>
+  <!-- hero bittikten sonra sayfa serbest kayar (kat duraklarından sonraki tek büyük kaydırma alanı) -->
+  <i class="snap-serbest" aria-hidden="true"></i>
 
   <!-- Kampanya: girişte açık; kaydırınca küçük etikete döner. Telefonda çerez bildirimi açıkken gösterilmez. Yalnızca ana sayfada. -->
   <aside class="promo" id="promo" aria-label="Kampanya" hidden>

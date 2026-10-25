@@ -83,7 +83,7 @@
 /* ---------- Temel ---------- */
 *, *::before, *::after { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; scroll-behavior: smooth; }
-body { margin: 0; background: var(--koyu); color: var(--yazi-k); font-family: var(--f-sans); font-size: 16px; line-height: 1.5; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; overflow-x: hidden; }
+body { position: relative; margin: 0; background: var(--koyu); color: var(--yazi-k); font-family: var(--f-sans); font-size: 16px; line-height: 1.5; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; overflow-x: hidden; }
 img { max-width: 100%; height: auto; display: block; }
 a { color: inherit; }
 a:where(:hover) { color: #ffffff; }
@@ -256,6 +256,9 @@ html.nav-acik, html.nav-acik body { overflow: hidden; }
 /* konumlanana kadar gizli; hazır olunca kısa bir geçişle belirir */
 .js .lift:not(.is-hazir) .lift__world { opacity: 0; }
 .lift__shaft { position: absolute; left: 0; top: 0; max-width: none; filter: saturate(.35) brightness(.97); }
+/* telefonda son katta kuyu dibi sert bitmesin: alttan yukarı yumuşak koyu geçiş */
+.lift__dip { position: absolute; left: 0; top: 0; pointer-events: none; background: linear-gradient(180deg, rgba(var(--bgc), 0) 0%, rgba(var(--bgc), .18) 25%, rgba(var(--bgc), .5) 55%, rgba(var(--bgc), .82) 80%, rgb(var(--bgc)) 100%); }
+.hw .lift__dip { display: none; }
 .lift__ropes i { position: absolute; left: 0; top: 0; transform-origin: 50% 0; background: linear-gradient(90deg, #5f646a 0%, #cfd3d6 45%, #8d9298 70%, #55595e 100%); }
 .lift__glow { position: absolute; left: 0; top: 0; will-change: transform, opacity; }
 .lift__cab { position: absolute; left: 0; top: 0; will-change: transform; filter: drop-shadow(0 28px 36px rgba(0, 0, 0, .5)); -webkit-mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0, #000 var(--mk, 10px)); mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0, #000 var(--mk, 10px)); }
@@ -279,9 +282,19 @@ html:not(.js) .lift { display: none; }
    + çentik payı + küçük pay. Çerez bildirimi ya da kampanya kartı açıkken onların gerçek yüksekliği kadar (JS ölçer);
    kapatılınca boşluk kalkar. */
 .hx-in { --hx-alt: calc(72px + 16px + env(safe-area-inset-bottom)); display: flex; flex-direction: column; gap: 16px; margin: 0 -20px; padding: 40px 20px var(--hx-alt); background: linear-gradient(180deg, rgba(var(--bgc), 0) 0, rgba(var(--bgc), .5) 40px); transition: padding-bottom .45s var(--ease); }
-html[data-ck="yok"] .hx-in { --hx-alt: var(--ck-pad, calc(140px + env(safe-area-inset-bottom))); }
+/* 2. ve 3. katta son öğe metin bağlantısı ve WhatsApp'ın solunda kalır: altı daha yakın.
+   Kampanya etiketi görünürken bağlantı onun üstünde durur. */
+.hx-sec:not(.hx-sec--1) .hx-in { --hx-alt: calc(28px + env(safe-area-inset-bottom)); }
+html[data-kampanya="etiket"] .hx-sec:not(.hx-sec--1) .hx-in, html[data-kampanya="acik"] .hx-sec:not(.hx-sec--1) .hx-in { --hx-alt: calc(72px + env(safe-area-inset-bottom)); }
 html:not(.hw)[data-kampanya="acik"] .hx-sec--1 .hx-in { --hx-alt: var(--promo-pad, calc(146px + env(safe-area-inset-bottom))); }
 @media (min-width: 760px) { html:not(.hw)[data-kampanya="acik"] .hx-sec--1 .hx-in { --hx-alt: var(--promo-pad, 220px); } }
+html[data-ck="yok"] .hx .hx-sec .hx-in { --hx-alt: var(--ck-pad, calc(140px + env(safe-area-inset-bottom))); }
+/* telefonda kat durakları: her kaydırma bir kat ilerler, hızlı kaydırmada katlar atlanmaz; hero bitince sayfa serbest kayar */
+html:not(.hw) { scroll-snap-type: y mandatory; }
+.hx-durak { position: absolute; left: 0; top: 0; width: 1px; height: 100vh; height: 100svh; pointer-events: none; scroll-snap-align: start; scroll-snap-stop: always; }
+.hx-durak:nth-child(2) { top: 100vh; top: 100svh; }
+.hx-durak:nth-child(3) { top: 200vh; top: 200svh; }
+.snap-serbest { position: absolute; left: 0; top: 300vh; top: 300svh; bottom: 0; width: 1px; pointer-events: none; scroll-snap-align: start; }
 /* son kat: başlıktan aşağısı düz zemin; sayfa kayarken arkadaki asansör görünmez */
 .hx-sec--3 .hx-in { background: linear-gradient(180deg, rgba(var(--bgc), 0) 0, rgb(var(--bgc)) 40px); }
 .hx-k { display: flex; align-items: center; gap: 12px; font-size: 13px; color: var(--yazi-k3); }
@@ -319,8 +332,9 @@ html:not(.hw)[data-kampanya="acik"] .hx-sec--1 .hx-in { --hx-alt: var(--promo-pa
 .svc__d { display: none; font-size: 14px; color: var(--gri-4); }
 .svc__chev { color: var(--gri-4); }
 .svc:active .svc__n { color: var(--vurgu-hizmet); }
+/* 3. katta (kuyu dibi) paragraf yalnızca uzun ekranlarda; kuyunun dibi ve tamponlar görünsün */
+@media (max-height: 859.98px) { html:not(.hw) .hx-sec--3 .hx-p--opt { display: none; } }
 @media (max-height: 720px) {
-  .hx-sec--3 .hx-p--opt { display: none; }
   .hx-h { font-size: min(27px, 7.4vw); }
   .hx-h--2, .hx-h--3 { font-size: min(26px, 7.2vw); }
   .hx-in { gap: 12px; }
