@@ -77,6 +77,10 @@ Kodlamadan önce blog taslakları `docs/blog-taslaklari/` altında Markdown olar
   Çerez bildirimi ya da kampanya kartı açıkken boşluk onların gerçek yüksekliği kadar artar; kapatılınca kalkar.
   Telefonda asansörün boyu kat kat JS ile hesaplanır: 1–2. katta kabinin altı başlığın 18 px üstünde, 3. katta kuyu dibi
   yazının 10 px üstünde (alttan yumuşak koyu geçişle biter); katlar arasında ve kutular kapanınca ölçek yumuşakça değişir.
+  3. kattaki boy 1–2. kattakinden en çok %15 farklı (fazlası geçişte göze batar; yer darsa kuyu dibi yazının arkasında kalır).
+  2.↔3. kat geçişinde kabin kamerayla birlikte süzülür (önce düşüp geri çıkmaz), boyu ile yeri aynı anda değişir.
+  Ölçek katta dururken kendiliğinden değişmez: adres çubuğu açılıp kapanınca ya da kampanya kartı kaydırınca etikete dönünce
+  yeniden ölçülmez (yazı yeri 1. katta 100svh'ye, 3. katta 100lvh'ye göre okunur).
   Telefonda hero 2 kat + 100lvh uzunluğunda, katlar 100dvh: adres çubuğu gizlenince 3. katta alttaki açık bölüm görünmez.
   2. ve 3. katta bağlantı WhatsApp'ın solunda kaldığı için alt boşluk 28 px (kampanya etiketi görünürken 72 px).
   Telefonda her kaydırma bir kat ilerler (CSS scroll-snap, `scroll-snap-stop: always`); hero bitince sayfa serbest kayar. Hero yüksekliği `100vh` değil `100svh`/`100dvh`

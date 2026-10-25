@@ -200,26 +200,47 @@ const Asansor = (() => {
   }
 
   /* Telefonda asansör ölçeği kat kat hesaplanır: 1–2. katta kabinin altı başlığın 18 px üstünde,
-     3. katta (kuyu dibi) kuyunun dibi yazının hemen üstünde. Katlar arasında ölçek yumuşakça geçer;
-     çerez/kampanya kutusu kapanıp yazı inince yeniden hesaplanır. */
-  let su = 0, yaziSag = 0, ust3 = 0;
+     3. katta (kuyu dibi) kuyunun dibi yazının hemen üstünde. Ölçek yalnızca kat değişirken (kabinle aynı anda)
+     ve çerez/kampanya kutusu kapanıp yazı inince yumuşakça değişir; katta dururken kendiliğinden değişmez. */
+  let su = 0, yaziSag = 0;
   const olc12 = { s: 0, h: 0 };
   const olc3 = { s: 0, h: 0 };
-  // Yeni ölçek, ancak o ölçeğin kullanıldığı kat ekranda değilken (ya da kullanıcı o katta dururken) uygulanır:
-  // örneğin kampanya kartı 2. kata geçerken küçülünce asansör 2. katta boyut değiştirmez.
-  let bek12 = null, bek3 = null, ust3Bek = null;
-  const guvenli12 = () => cam >= 1.8 || cam <= 0.05;
-  const guvenli3 = () => cam >= 1 || cam <= 0.2;
-  function hedefleriOlc(hemen) {
-    const ust1 = $('.hx-h', secs[0]).offsetTop;
-    const yeniUst3 = $('.hx-in', secs[2]).firstElementChild.offsetTop;
+  const yer3 = { s: 0, h: 0 }; // 3. katta yazının üstü (kuyu dibi bunun 10 px üstünde)
+  const stick = $('.hx__stick', hx);
+  function hedefleriOlc(zorla) {
+    // Adres çubuğu açılıp kapanınca katlar (100dvh) uzayıp kısalır, yazı kayar. Ölçek buna göre değişmesin diye yazının
+    // yeri sabit ekran boyuna göre okunur: 1. kat açılıştaki gibi çubuk açıkken (100svh), 3. kata aşağı kaydırarak
+    // gelindiği için çubuk gizliyken (100lvh; hero 200svh + 100lvh uzunluğunda).
+    const dvh = stick.offsetHeight;
+    const lvh = hx.offsetHeight - 2 * ekran.H;
     const buyuk = ekran.W >= 600;
-    const h12 = clamp((ust1 - 18 - 30) / 887.6, 0.2, buyuk ? 0.5 : 0.36);
-    const h3 = clamp((yeniUst3 - 10 - 52) / 944, 0.2, buyuk ? 0.55 : 0.42);
-    if (hemen || guvenli12()) { olc12.h = h12; bek12 = null; } else bek12 = h12;
-    if (hemen || guvenli3()) { olc3.h = h3; ust3 = yeniUst3; bek3 = null; } else { bek3 = h3; ust3Bek = yeniUst3; }
+    // kampanya kartı kaydırınca etikete döner, 1. kata dönülünce yine açılır: etiket hâlindeyken 1. katın ölçüsü alınmaz
+    if (zorla || !olc12.h || h.dataset.kampanya !== 'etiket') {
+      const ust1 = $('.hx-h', secs[0]).offsetTop - (dvh - ekran.H);
+      olc12.h = clamp((ust1 - 18 - 30) / 887.6, 0.2, buyuk ? 0.5 : 0.36);
+    }
+    yer3.h = $('.hx-in', secs[2]).firstElementChild.offsetTop + (lvh - dvh);
+    // 3. katta asansör boşluğa göre büyür ya da küçülür (kuyu dibi yazının 10 px üstünde), ama 1–2. kattakinden en çok
+    // %15 farklı: fazlası kat geçişinde göze batar. Yer darsa kuyunun koyu dibi yazının arkasında kalır; kabinin altı
+    // yine yazının 12 px üstündedir.
+    const kabinSigar = (yer3.h - 12 - 52) / 641.6;
+    const enAz = Math.max(0.2, Math.min(olc12.h / 1.15, kabinSigar));
+    olc3.h = clamp((yer3.h - 10 - 52) / 944, enAz, Math.max(enAz, Math.min(buyuk ? 0.55 : 0.42, olc12.h * 1.15)));
   }
   const katSu = () => (cam >= 1 ? olc12.s : olc3.s + (olc12.s - olc3.s) * ssm(clamp(cam, 0, 1)));
+
+  /* Çizilen kabin konumu (kat) ve kapı. Telefonda kuyu dibine iniş ve çıkışta kabin kamerayla birlikte süzülür:
+     önce düşüp sonra geri çıkmaz, boyu ile yeri aynı anda değişir; kapı kabin durunca açılır.
+     1. ve 2. kat arasında kabin kameranın önünden gider. */
+  let kab = 2, kapi = 1;
+  function kabinDurumu(st) {
+    kab = st.pos;
+    kapi = st.door;
+    if (!genis) {
+      kab = st.pos + (cam - st.pos) * (1 - ssm((cam - 1) / 0.12));
+      if (kab < 1) kapi *= 1 - ssm(Math.abs(st.pos - kab) / 0.2);
+    }
+  }
   function geometri() {
     genis = h.classList.contains('hw');
     if (genis) {
@@ -231,6 +252,7 @@ const Asansor = (() => {
       hedefleriOlc(true);
       olc12.s = olc12.h;
       olc3.s = olc3.h;
+      yer3.s = yer3.h;
       su = katSu();
     }
     yerlestir();
@@ -285,16 +307,18 @@ const Asansor = (() => {
   });
 
   function ciz() {
-    const st = faz(p);
-    const door = p < 0.2 ? st.door * intro : st.door;
-    const pos = st.pos;
+    const door = p < 0.2 ? kapi * intro : kapi;
+    const pos = kab;
     const akt = Math.round(pos);
     const kat = KAT[akt];
     const { H } = g;
     const s = su;
     const k = s / g.s0;
     const cabH = 885 * K * s;
-    const boxH = genis ? H : Math.round((s * 900) / 0.7);
+    const kc = clamp(cam, 0, 1);
+    let boxH = genis ? H : (s * 900) / 0.7;
+    // 3. katta kuyu dibi yazının 10 px üstüne inebilsin diye kutu gerekirse uzar (orada alttaki ray ve geçiş görünmez)
+    if (!genis) boxH = Math.round(boxH + Math.max(0, yer3.s - 2 - boxH) * (1 - ssm(kc)));
     if (!genis && boxH !== sonKutu) {
       box.style.height = boxH + 'px';
       ext.style.top = boxH - 60 + 'px';
@@ -311,7 +335,7 @@ const Asansor = (() => {
       const c1 = 64 + 246 * s - 34 + cabH / 2;
       const c23 = 78 + cabH / 2;
       // 3. kat: kuyunun dibi yazının 10 px üstünde (kabin header'ın altına çıkmaz, kutudan taşmaz)
-      const c3 = clamp(ust3 - 10 - 944 * s, 52, boxH - 8 - 944 * s) + cabH / 2;
+      const c3 = clamp(yer3.s - 10 - 944 * s, 52, boxH - 8 - 944 * s) + cabH / 2;
       const cabC = cam >= 1 ? c23 + (c1 - c23) * Math.min(1, cam - 1) : c3 + (c23 - c3) * ssm(cam);
       merkez = ((cabC + 40 * s) * 900) / boxH;
     }
@@ -348,7 +372,6 @@ const Asansor = (() => {
       // telefonda 2. katta kabin yazının arkasında: asansör yumuşakça yarı saydam olur
       const elOp = 1 - 0.5 * ssm(1 - Math.abs(pos - 1) / 0.6);
       box.style.opacity = elOp.toFixed(3);
-      const kc = clamp(cam, 0, 1);
       fade.style.opacity = kc.toFixed(3);
       const per = 514.67 * s;
       if (s !== sonExtS) {
@@ -379,14 +402,16 @@ const Asansor = (() => {
     const az = mqAz.matches;
     const f = (k) => (az ? 1 : 1 - Math.pow(1 - k, dt / 16.667));
     const masa = mqMasa.matches;
-    const oncekiPos = faz(p).pos;
+    const oncekiKab = kab;
     p += (pt - p) * f(masa ? 0.07 : 0.08);
     const st = faz(p);
     cam += (st.pos - cam) * f(genis ? (masa ? 0.05 : 0.06) : 0.1);
+    kabinDurumu(st);
     if (!genis) {
-      if (bek12 != null && guvenli12()) { olc12.h = bek12; bek12 = null; }
-      if (bek3 != null && guvenli3()) { olc3.h = bek3; ust3 = ust3Bek; bek3 = null; }
-      [olc12, olc3].forEach((o) => { if (o.s !== o.h) o.s = Math.abs(o.h - o.s) < 0.0004 ? o.h : o.s + (o.h - o.s) * f(0.08); });
+      const yaklas = (o, e) => { if (o.s !== o.h) o.s = Math.abs(o.h - o.s) < e ? o.h : o.s + (o.h - o.s) * f(0.08); };
+      yaklas(olc12, 0.0004);
+      yaklas(olc3, 0.0004);
+      yaklas(yer3, 0.3);
       su = katSu();
     }
     if (introT0 != null && intro < 1) {
@@ -394,8 +419,8 @@ const Asansor = (() => {
       intro = t * t * (3 - 2 * t);
     }
     // duruş ve kalkış: halat esnemesiyle çok hafif salınım
-    const yolda = st.door === 0 && Math.abs(st.pos - Math.round(st.pos)) > 0.002;
-    if (yolda) yon = st.pos < oncekiPos ? 1 : -1;
+    const yolda = kapi === 0 && Math.abs(kab - Math.round(kab)) > (genis ? 0.002 : 0.02);
+    if (yolda) yon = kab < oncekiKab ? 1 : -1;
     if (gecis != null && yolda !== gecis && now - jT0 > 450) {
       jT0 = now;
       jAmp = yon * (yolda ? -1.4 : 3.2);
@@ -403,9 +428,10 @@ const Asansor = (() => {
     gecis = yolda;
     const jt = now - jT0;
     jolt = !az && jt < 1400 ? jAmp * Math.exp(-jt / 260) * Math.sin((2 * Math.PI * jt) / 240) : 0;
-    const bitti = Math.abs(pt - p) < 0.0015 && Math.abs(st.pos - cam) < 0.002 && (az || jt >= 1400) && (introT0 == null || intro >= 1) && olc12.s === olc12.h && olc3.s === olc3.h;
+    const bitti = Math.abs(pt - p) < 0.0015 && Math.abs(st.pos - cam) < 0.002 && (az || jt >= 1400) && (introT0 == null || intro >= 1) && olc12.s === olc12.h && olc3.s === olc3.h && yer3.s === yer3.h;
     if (bitti) {
       p = pt; cam = faz(p).pos; jolt = 0;
+      kabinDurumu(faz(p));
       if (!genis) su = katSu();
       if (Math.abs(su - g.s0) > 0.0001) yerlestir(); // ölçek oturdu: keskin görüntü için bir kez yeniden yerleşim
     }
@@ -486,6 +512,7 @@ const Asansor = (() => {
     pt = clamp(scrollY / ekran.H, 0, 2);
     p = pt;
     cam = faz(p).pos;
+    kabinDurumu(faz(p));
     if (!genis) { su = katSu(); yerlestir(); }
     ciz();
   }
@@ -659,7 +686,7 @@ const Kampanya = (() => {
   if (!kart || !etiket) return { guncelle() {} };
   let kapandi = false;
   try { kapandi = sessionStorage.getItem('yk-kampanya') === 'kapali'; } catch (e) { /* yoksay */ }
-  let sabit = false, sabitP = 0, sonP = 0, ilk = true;
+  let sabit = false, sabitP = 0, sonP = 0, ilk = true, olculdu = false;
   function guncelle(q = sonP) {
     sonP = q;
     const ckAcik = h.dataset.ck === 'yok' || h.dataset.ck === 'tercih';
@@ -676,9 +703,14 @@ const Kampanya = (() => {
     // telefonda kart açıkken hero yazısının altı kart kadar açılır; kapanınca boşluk kalkar.
     // 2. ve 3. katta kampanya etiketi görünürken bağlantılar onun üstünde durur.
     const durum = acik ? 'acik' : !etiket.hidden ? 'etiket' : 'kapali';
-    if (h.dataset.kampanya !== durum) {
+    const degisti = h.dataset.kampanya !== durum;
+    // kart yüksekliği her açılışta ölçülür; sayfa kart açıkken yüklendiyse de ilk seferde (yer tahmini değil gerçek ölçü)
+    if (acik && (degisti || !olculdu)) {
+      h.style.setProperty('--promo-pad', kart.offsetHeight + parseFloat(getComputedStyle(kart).bottom) + 16 + 'px');
+      olculdu = true;
+    }
+    if (degisti) {
       h.dataset.kampanya = durum;
-      if (acik) h.style.setProperty('--promo-pad', kart.offsetHeight + parseFloat(getComputedStyle(kart).bottom) + 16 + 'px');
       d.dispatchEvent(new CustomEvent('yk:yerlesim'));
     }
     if (wa) wa.classList.toggle('wa--etiket', !etiket.hidden);
@@ -727,6 +759,12 @@ function kaydirma() {
   if (Neden && !kareIstegi) kareIstegi = requestAnimationFrame(() => { kareIstegi = 0; Neden.guncelle(scrollY); });
 }
 addEventListener('scroll', kaydirma, { passive: true });
+// açılış: çerez bildirimi ve kampanya kartının gerçek ölçüleri yerleşti; asansör buna göre ilk boyamadan önce ölçülür,
+// hero yazısının kayma geçişi bundan sonra açılır
+function acilisYerlesim() {
+  if (Asansor) Asansor.yenidenOlc();
+  requestAnimationFrame(() => h.classList.add('gecisli'));
+}
 let boyutT = 0;
 addEventListener('resize', () => {
   clearTimeout(boyutT);
@@ -743,6 +781,7 @@ addEventListener('resize', () => {
   }, 120);
 });
 kaydirma();
+acilisYerlesim();
 
 /* ---------- Bölüm giriş animasyonları: görünür alana girerken bir kez ---------- */
 function sayac(liste) {
