@@ -570,23 +570,41 @@ const Asansor = (() => {
   return { kaydir, yenidenOlc };
 })();
 
+/* ---------- Açılır paneller (header menüleri, telefon menüsü): açılırken süzülür, kapanırken de hafifçe silinerek
+   gizlenir (CSS: .is-kapan). Hareket azaltma tercihinde hemen kapanır. ---------- */
+const solma = new WeakMap();
+function panelAc(el) {
+  clearTimeout(solma.get(el));
+  el.classList.remove('is-kapan');
+  el.hidden = false;
+}
+function panelKapat(el, hemen = false) {
+  clearTimeout(solma.get(el));
+  if (el.hidden) return;
+  if (hemen || mqAz.matches) { el.classList.remove('is-kapan'); el.hidden = true; return; }
+  el.classList.add('is-kapan');
+  solma.set(el, setTimeout(() => { el.classList.remove('is-kapan'); el.hidden = true; }, 260));
+}
+
 /* ---------- Header: açılır menüler (masaüstü) ---------- */
 const hdr = $('#hdr');
 const Menu = (() => {
   if (!hdr) return { kapat() {} };
   let acik = null;
-  const kapat = () => {
+  const kapat = (hemen = false) => {
     if (!acik) return;
     $('.pill', acik).setAttribute('aria-expanded', 'false');
-    $('.mega', acik).hidden = true;
+    panelKapat($('.mega', acik), hemen);
     acik = null;
   };
   const ac = (it) => {
     if (acik === it || !mqMasa.matches) return;
-    kapat();
+    // başka menüye geçerken eskisi beklemeden kapanır
+    kapat(true);
+    $$('.mega.is-kapan', hdr).forEach((m) => panelKapat(m, true));
     acik = it;
     $('.pill', it).setAttribute('aria-expanded', 'true');
-    $('.mega', it).hidden = false;
+    panelAc($('.mega', it));
   };
   $$('.hdr__item', hdr).forEach((it) => {
     const a = $('.pill', it);
@@ -594,10 +612,10 @@ const Menu = (() => {
     a.addEventListener('focus', () => ac(it));
   });
   $$('.hdr__nav > .pill', hdr).forEach((a) => {
-    a.addEventListener('mouseenter', kapat);
-    a.addEventListener('focus', kapat);
+    a.addEventListener('mouseenter', () => kapat());
+    a.addEventListener('focus', () => kapat());
   });
-  hdr.addEventListener('mouseleave', kapat);
+  hdr.addEventListener('mouseleave', () => kapat());
   hdr.addEventListener('focusout', (e) => { if (!hdr.contains(e.relatedTarget)) kapat(); });
   d.addEventListener('keydown', (e) => {
     if (e.key !== 'Escape' || !acik) return;
@@ -605,7 +623,7 @@ const Menu = (() => {
     kapat();
     a.focus();
   });
-  return { kapat, acikMi: () => !!acik };
+  return { kapat: () => kapat(), acikMi: () => !!acik };
 })();
 
 /* ---------- Header kutularında ışık (masaüstü, Liquid Glass) ----------
@@ -670,7 +688,8 @@ const Menu = (() => {
   const kap = $('#navKapat');
   if (!nav || !ac) return;
   const goster = (v, odak = true) => {
-    nav.hidden = !v;
+    if (v) panelAc(nav);
+    else panelKapat(nav);
     ac.setAttribute('aria-expanded', String(v));
     h.classList.toggle('nav-acik', v);
     if (v) kap.focus();
