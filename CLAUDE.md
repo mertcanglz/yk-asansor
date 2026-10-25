@@ -77,7 +77,9 @@ Kodlamadan önce blog taslakları `docs/blog-taslaklari/` altında Markdown olar
   Çerez bildirimi ya da kampanya kartı açıkken boşluk onların gerçek yüksekliği kadar artar; kapatılınca kalkar.
   Telefonda asansörün boyu kat kat JS ile hesaplanır: 1–2. katta kabinin altı başlığın 18 px üstünde, 3. katta kuyu dibi
   yazının 10 px üstünde (alttan yumuşak koyu geçişle biter); katlar arasında ve kutular kapanınca ölçek yumuşakça değişir.
-  3. kattaki boy 1–2. kattakinden en çok %15 farklı (fazlası geçişte göze batar; yer darsa kuyu dibi yazının arkasında kalır).
+  Kampanya kartı yalnızca 1. katta yer kaplar: 2. ve 3. kat kart yokmuş gibi ölçeklenir, kart açıkken 1.→2. kata inerken
+  kart etikete dönerken kabin açılan yere doğru büyür (yoksa 3. katta etiketli hâlde altta büyük boşluk kalıyordu).
+  3. kattaki boy 2. kattakinden en çok %15 farklı (fazlası geçişte göze batar; yer darsa kuyu dibi yazının arkasında kalır).
   Sınır yüzünden kabinin üstünde boşluk kalırsa 3. katın yazısı kabinle birlikte yukarı kayar: kabinin üstü 2. kattaki
   gibi 78 px'te durur, artan yer yazının altında koyu zeminde kalır (kullanıcı kararı).
   2.↔3. kat geçişinde kabin kamerayla birlikte süzülür (önce düşüp geri çıkmaz), boyu ile yeri aynı anda değişir.
@@ -101,9 +103,11 @@ Kodlamadan önce blog taslakları `docs/blog-taslaklari/` altında Markdown olar
   açar/kapatır (kullanıcı kararı). Footer grupları masaüstünde hep açık.
 - **Tablet ve çok geniş ekran:** hero yan yana düzeni (asansör sağda) ≥1024 px'te yatay ekranda, 760–1023 px'te
   genişlik > yükseklik × 1,1 olunca; dikey tabletlerde (1024×1366 dahil) asansör yazının üstünde (alt alta düzen,
-  kabin boşluğu doldurur). Yan yana düzende kabin, yazının sağı ile ekran kenarı arasına sığacak kadar küçülür
-  (yazıya binmez, kırpılmaz). İç sayfa kapak görselleri 1920 px'ten geniş ekranda sağa uzamaz, ortada kalır ve sağ
+  kabin boşluğu doldurur). Yan yana düzende asansör, kuyunun rayları dahil yazının sağı ile ekran kenarı arasına sığacak
+  kadar küçülür (kuyunun sol kenarı yazı sütununun 24 px sağında; yazıya binmez, kabin kırpılmaz). İç sayfa kapak görselleri 1920 px'ten geniş ekranda sağa uzamaz, ortada kalır ve sağ
   kenarı soldaki gibi koyuya geçer; her kapakta ana konunun yeri odak noktası olarak verilir (`--op-d`).
+- **Kapsayıcı genişliği:** masaüstünde bölüm içerikleri header'ın iki kenarı arasında (1280 px kapsayıcı) kalır; zemin
+  ekran boyunca uzayabilir ama kartlar taşmaz (ör. ana sayfa blog şeridi: ≥1280 px'te 3, 1024–1279 px'te 2 kart).
 - **Yumuşak kaydırma:** fare tekerleği/trackpad ile sayfa yumuşakça süzülerek kayar (main.js, kütüphanesiz). Dokunmatik
   ekranda tarayıcının kendi momentumlu kaydırması kalır (parmağın gerisinden gelmesin, adres çubuğu ve hero durakları
   bozulmasın); ana sayfanın hero katlarında da kat oturtma çalıştığı için tarayıcının kendi kaydırması.

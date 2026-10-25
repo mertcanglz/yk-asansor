@@ -205,7 +205,8 @@ const Asansor = (() => {
      3. katta (kuyu dibi) kuyunun dibi yazının hemen üstünde. Ölçek yalnızca kat değişirken (kabinle aynı anda)
      ve çerez/kampanya kutusu kapanıp yazı inince yumuşakça değişir; katta dururken kendiliğinden değişmez. */
   let su = 0, yaziSag = 0;
-  const olc12 = { s: 0, h: 0 };
+  const olc1 = { s: 0, h: 0 }; // 1. kat (kampanya kartı açıkken kart kadar küçük)
+  const olc2 = { s: 0, h: 0 }; // 2. kat: kart yokmuş gibi (kart 1. kattan inerken etikete döner)
   const olc3 = { s: 0, h: 0 };
   const yer3 = { s: 0, h: 0 }; // 3. katta yazının üstü (kuyu dibi bunun 10 px üstünde)
   const kay3 = { s: 0, h: 0 }; // 3. kat yazısının yukarı kayması (px)
@@ -220,24 +221,29 @@ const Asansor = (() => {
     // en büyük ölçek: telefon / büyük telefon / dikey tablet (tablette asansör boşluğu doldurur)
     const enCok12 = ekran.W >= 760 ? 0.85 : ekran.W >= 600 ? 0.5 : 0.36;
     const enCok3 = ekran.W >= 760 ? 0.9 : ekran.W >= 600 ? 0.55 : 0.42;
-    // kampanya kartı kaydırınca etikete döner, 1. kata dönülünce yine açılır: etiket hâlindeyken 1. katın ölçüsü alınmaz
-    if (zorla || !olc12.h || h.dataset.kampanya !== 'etiket') {
-      const ust1 = $('.hx-h', secs[0]).offsetTop - (dvh - ekran.H);
-      olc12.h = clamp((ust1 - 18 - 30 - ustPay) / 887.6, 0.2, enCok12);
-    }
+    const kmp = h.dataset.kampanya;
+    const ust1 = $('.hx-h', secs[0]).offsetTop - (dvh - ekran.H);
+    const sigar = (u) => clamp((u - 18 - 30 - ustPay) / 887.6, 0.2, enCok12);
+    // Kampanya kartı yalnızca 1. katta yer kaplar (yazıyı kart kadar yukarı iter). 2. ve 3. kat kart yokmuş gibi
+    // ölçeklenir: kart açıksa 1. kat yazısının kartsız yeri, 2. katın alt boşluğu + 16 px (1. katın normal boşluğu).
+    const pad = (i) => parseFloat(getComputedStyle($('.hx-in', secs[i])).paddingBottom) || 0;
+    olc2.h = sigar(ust1 + (kmp === 'acik' ? Math.max(0, pad(0) - pad(1) - 16) : 0));
+    // kart kaydırınca etikete döner, 1. kata dönülünce yine açılır: etiket hâlindeyken 1. katın (kartlı) ölçüsü alınmaz
+    if (kmp !== 'etiket') olc1.h = sigar(ust1);
+    else if (zorla || !olc1.h) olc1.h = olc2.h;
     yer3.h = $('.hx-in', secs[2]).firstElementChild.offsetTop + (lvh - dvh);
     // 3. katta asansör boşluğa göre büyür ya da küçülür (kuyu dibi yazının 10 px üstünde), ama 1–2. kattakinden en çok
-    // %15 farklı: fazlası kat geçişinde göze batar. Yer darsa kuyunun koyu dibi yazının arkasında kalır; kabinin altı
+    // %15 farklı (2. kata göre): fazlası kat geçişinde göze batar. Yer darsa kuyunun koyu dibi yazının arkasında kalır; kabinin altı
     // yine yazının 12 px üstündedir.
     const kabinSigar = (yer3.h - 12 - 52 - ustPay) / 641.6;
-    const enAz = Math.max(0.2, Math.min(olc12.h / 1.15, kabinSigar));
-    olc3.h = clamp((yer3.h - 10 - 52 - ustPay) / 944, enAz, Math.max(enAz, Math.min(enCok3, olc12.h * 1.15)));
+    const enAz = Math.max(0.2, Math.min(olc2.h / 1.15, kabinSigar));
+    olc3.h = clamp((yer3.h - 10 - 52 - ustPay) / 944, enAz, Math.max(enAz, Math.min(enCok3, olc2.h * 1.15)));
     // Ölçek sınırda kalıp kabinin üstünde boşluk kalırsa yazı kabinle birlikte yukarı kayar: kabinin üstü 2. kattaki
     // gibi 78 px'te durur, artan yer yazının altında (koyu zeminde) kalır
     kay3.h = Math.max(0, Math.round(yer3.h - 10 - 944 * olc3.h - 78 - ustPay));
     yer3.h -= kay3.h;
   }
-  const katSu = () => (cam >= 1 ? olc12.s : olc3.s + (olc12.s - olc3.s) * ssm(clamp(cam, 0, 1)));
+  const katSu = () => (cam >= 1 ? olc2.s + (olc1.s - olc2.s) * ssm(clamp(cam - 1, 0, 1)) : olc3.s + (olc2.s - olc3.s) * ssm(clamp(cam, 0, 1)));
 
   /* Çizilen kabin konumu (kat) ve kapı. Telefonda kuyu dibine iniş ve çıkışta kabin kamerayla birlikte süzülür:
      önce düşüp sonra geri çıkmaz, boyu ile yeri aynı anda değişir; kapı kabin durunca açılır.
@@ -255,14 +261,16 @@ const Asansor = (() => {
     genis = h.classList.contains('hw');
     if (genis) {
       yaziSag = Math.max(...secs.map((el) => $('.hx-in', el).getBoundingClientRect().right));
-      // kabin yazının sağı ile ekranın sağ kenarı arasına sığacak kadar küçülür (tablette yazıya binmez, kırpılmaz)
-      su = Math.max(0.3, Math.min((ekran.H / 900) * 0.86, (ekran.W - yaziSag - 56) / 501.7));
+      // asansör (kuyunun rayları dahil) yazının sağı ile ekranın sağ kenarı arasına sığacak kadar küçülür:
+      // tablette yazıya binmez, kabin kırpılmaz (kuyu solda kabinden 388 − 249 birim geniş)
+      su = Math.max(0.3, Math.min((ekran.H / 900) * 0.86, (ekran.W - yaziSag - 40) / 640.4));
       box.style.height = '';
       ext.style.top = '';
     } else {
       ustPay = ($('#hdr') ? $('#hdr').offsetHeight : 64) - 64;
       hedefleriOlc(true);
-      olc12.s = olc12.h;
+      olc1.s = olc1.h;
+      olc2.s = olc2.h;
       olc3.s = olc3.h;
       yer3.s = yer3.h;
       kay3.s = kay3.h;
@@ -284,8 +292,8 @@ const Asansor = (() => {
     const H = ekran.H;
     const s = su;
     let cx = W * (genis ? (W >= 1024 ? 0.73 : 0.72) : 0.5);
-    // dar masaüstünde kabin yazının üstüne binmesin: yazının sağından en az 40 px uzakta, ekranın içinde kalır
-    if (genis) cx = Math.min(Math.max(cx, yaziSag + 40 + 249.3 * s), W - 252.4 * s - 16);
+    // dar masaüstünde ve tablette asansör yazının üstüne binmesin: kuyunun sol kenarı yazının 24 px sağında, kabin ekranın içinde
+    if (genis) cx = Math.min(Math.max(cx, yaziSag + 24 + 388 * s), W - 252.4 * s - 16);
     const X = (u) => cx + (u - 768) * s;
     const U = (px) => 518.7 + px * K;
     const cabW = 692 * K * s;
@@ -423,7 +431,8 @@ const Asansor = (() => {
     kabinDurumu(st);
     if (!genis) {
       const yaklas = (o, e) => { if (o.s !== o.h) o.s = Math.abs(o.h - o.s) < e ? o.h : o.s + (o.h - o.s) * f(0.08); };
-      yaklas(olc12, 0.0004);
+      yaklas(olc1, 0.0004);
+      yaklas(olc2, 0.0004);
       yaklas(olc3, 0.0004);
       yaklas(yer3, 0.3);
       yaklas(kay3, 0.3);
@@ -443,7 +452,7 @@ const Asansor = (() => {
     gecis = yolda;
     const jt = now - jT0;
     jolt = !az && jt < 1400 ? jAmp * Math.exp(-jt / 260) * Math.sin((2 * Math.PI * jt) / 240) : 0;
-    const bitti = Math.abs(pt - p) < 0.0015 && Math.abs(st.pos - cam) < 0.002 && (az || jt >= 1400) && (introT0 == null || intro >= 1) && olc12.s === olc12.h && olc3.s === olc3.h && yer3.s === yer3.h && kay3.s === kay3.h;
+    const bitti = Math.abs(pt - p) < 0.0015 && Math.abs(st.pos - cam) < 0.002 && (az || jt >= 1400) && (introT0 == null || intro >= 1) && olc1.s === olc1.h && olc2.s === olc2.h && olc3.s === olc3.h && yer3.s === yer3.h && kay3.s === kay3.h;
     if (bitti) {
       p = pt; cam = faz(p).pos; jolt = 0;
       kabinDurumu(faz(p));
@@ -919,13 +928,14 @@ if ('IntersectionObserver' in window) {
   }));
 })();
 
-/* ---------- Blog şeridi: oklarla iki kart kayar ---------- */
+/* ---------- Blog şeridi: oklarla bir sayfa (görünen kart sayısı kadar) kayar ---------- */
 (() => {
   const ray = $('#blogRay');
   if (!ray) return;
   $$('.blog__nav .rail-btn').forEach((b) => b.addEventListener('click', () => {
     const li = ray.firstElementChild;
-    const adim = li ? (li.offsetWidth + 16) * 2 : 816;
+    const kart = li ? li.offsetWidth + 16 : 408;
+    const adim = Math.max(1, Math.round((ray.clientWidth + 16) / kart)) * kart;
     ray.scrollBy({ left: Number(b.dataset.yon) * adim, behavior: mqAz.matches ? 'auto' : 'smooth' });
   }));
 })();

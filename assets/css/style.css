@@ -765,14 +765,15 @@ html.js:not(.hw) .hx-sec--3::after { content: ""; position: absolute; left: 0; r
 .post--all .post__t { font-size: 17px; }
 .post--all .rail-btn { margin-top: auto; }
 @media (min-width: 1024px) {
-  .sec--blog { padding: 44px 0 48px max(var(--padx), calc((100% - 1280px) / 2)); }
-  .sec--blog .in { max-width: none; margin: 0; display: flex; flex-direction: column; gap: 24px; }
-  .head--blog { align-items: flex-end; gap: 48px; margin: 0; padding-right: var(--padx); }
+  /* zemin ekran boyunca, kartlar header'ın iki kenarı arasında (1280 px kapsayıcı): taşmaz */
+  .sec--blog { padding: 44px max(var(--padx), calc((100% - 1280px) / 2)) 48px; }
+  .sec--blog .in { max-width: 1280px; margin: 0 auto; display: flex; flex-direction: column; gap: 24px; }
+  .head--blog { align-items: flex-end; gap: 48px; margin: 0; }
   .blog__h { font-size: 36px; letter-spacing: -.9px; }
   .blog__nav .rail-btn { display: inline-flex; }
   .blog__nav .yk-link { margin-left: 14px; }
-  .posts { margin: 0; padding: 4px 120px 6px 0; gap: 16px; scroll-padding-left: 0; -webkit-mask-image: linear-gradient(90deg, #000 88%, transparent); mask-image: linear-gradient(90deg, #000 88%, transparent); }
-  .posts > li { flex: 0 0 392px; max-width: none; }
+  .posts { margin: 0; padding: 4px 0 6px; gap: 16px; scroll-padding-left: 0; }
+  .posts > li { flex: 0 0 calc((100% - 16px) / 2); max-width: none; }
   .post { gap: 16px; height: 140px; padding: 14px; }
   .post:hover { transform: translateY(-3px); }
   .post__img { flex-basis: 112px; width: 112px; }
@@ -781,6 +782,8 @@ html.js:not(.hw) .hx-sec--3::after { content: ""; position: absolute; left: 0; r
   .post--all { padding: 20px; }
   .post--all .post__t { font-size: 18px; }
 }
+
+@media (min-width: 1280px) { .posts > li { flex-basis: calc((100% - 32px) / 3); } }
 
 /* ---------- SSS ---------- */
 .sec--sss { background: var(--beyaz); }
