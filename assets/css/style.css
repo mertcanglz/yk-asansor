@@ -844,7 +844,8 @@ html:not(.js) .fgrp__ac svg { display: none; }
 .ft__legal { display: flex; flex-wrap: wrap; gap: 4px 18px; padding: 20px 0 12px; }
 .ft__legal a, .ft__legal button { display: inline-flex; align-items: center; min-height: 36px; padding: 0; border: 0; background: none; font-family: var(--f-sans); font-size: 13px; color: #7d848b; text-decoration: none; cursor: pointer; transition: color .25s; }
 .ft__legal a:hover, .ft__legal button:hover { color: var(--yazi-k3); }
-.ft__bar { display: flex; flex-direction: column-reverse; gap: 20px; padding: 18px 0 calc(100px + env(safe-area-inset-bottom)); border-top: 1px solid rgba(255, 255, 255, .08); font-size: 13px; color: #6f767d; }
+/* altta yalnızca kısa pay: sabit WhatsApp butonu sağda, telif yazısıyla çakışmıyor */
+.ft__bar { display: flex; flex-direction: column-reverse; gap: 20px; padding: 18px 0 calc(24px + env(safe-area-inset-bottom)); border-top: 1px solid rgba(255, 255, 255, .08); font-size: 13px; color: #6f767d; }
 .ft__copy { display: flex; align-items: baseline; gap: 12px; }
 .soc { display: flex; align-items: center; gap: 10px; }
 .soc a { width: 44px; height: 44px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: var(--yazi-k2); text-decoration: none; background: rgba(255, 255, 255, .05); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .12); transition: color .25s, background .25s, box-shadow .25s; }
@@ -1568,8 +1569,7 @@ html:not(.js) .tf-card #tf-ref-alan[hidden] { display: flex !important; }
 .tf-adim li::before { content: "0" counter(adim); font-size: 13px; font-weight: 600; letter-spacing: .6px; color: #d9560f; }
 .tf-adim b { font-size: 17px; font-weight: 500; }
 .tf-adim span { font-size: 14px; line-height: 1.6; color: #5b636b; }
-/* footer: sayfanın kendi formu varken hızlı teklif formu yok (ft--formsuz); WhatsApp butonu yoksa alt pay kısa (ft--wasiz) */
-.ft--wasiz .ft__bar { padding-bottom: calc(24px + env(safe-area-inset-bottom)); }
+/* footer: sayfanın kendi formu varken hızlı teklif formu yok (ft--formsuz) */
 @media (min-width: 600px) {
   .tf-ref__ek { display: inline; }
   .tf-chips { grid-template-columns: repeat(3, minmax(0, 1fr)); }
@@ -1612,7 +1612,6 @@ html:not(.js) .tf-card #tf-ref-alan[hidden] { display: flex !important; }
   .tf-adim li { gap: 8px; padding: 24px 24px 26px; }
   .tf-adim b { font-size: 18px; }
   .ft--formsuz .ft__grid { grid-template-columns: 220px 190px 150px auto; justify-content: space-between; gap: 48px; }
-  .ft--wasiz .ft__bar { padding-bottom: 24px; }
 }
 
 /* ---------- Yeşil etiket sayfası: etiket kartları, süre tablosu (telefonda kartlar) ---------- */
