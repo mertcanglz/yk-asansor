@@ -116,6 +116,9 @@ Kodlamadan önce blog taslakları `docs/blog-taslaklari/` altında Markdown olar
   ekranda tarayıcının kendi momentumlu kaydırması kalır (parmağın gerisinden gelmesin, adres çubuğu ve hero durakları
   bozulmasın); ana sayfanın hero katlarında da kat oturtma çalıştığı için tarayıcının kendi kaydırması.
 - **"Bu sayfada" bağlantı şeridi yalnızca masaüstünde:** mobilde hiçbir sayfada gösterilmez (kullanıcı kararı).
+- **Blog tabloları telefonda kart:** telefona sığmayan geniş tablolar (`by-tablo--kart`, şimdilik etiket renkleri ve sistemler
+  karşılaştırması yazıları) 760 px altında kart olur: satır = kart, sütun başlığı satır içi etiket (`data-l`), "–" olan hücre
+  gizlenir. Masaüstü ve tablette tablo kalır (kullanıcı kararı: yalnızca mobilde). 3 sütunlu tablolar sığdığı için tablo kalır.
 - **Genel bağlantı hover rengi kartları ezmez:** `a:hover` yerine `a:where(:hover)` kullan; açık zemindeki
   kart/bağlantılar (kabin kartları, blog kartları, koyu metin bağlantıları) hover ve dokunmada beyaza dönmesin.
 - Görsellere anlamlı `alt` metni yaz; başlık hiyerarşisini (h1 → h2 → h3) koru.
