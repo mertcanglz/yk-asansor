@@ -11,7 +11,7 @@
 | Ana sorgu | asansör aküsü (210/ay) |
 | Yan sorgular | asansör elektrik kesintisi (10), elektrik kesilince asansör, asansör otomatik kurtarma, asansör acil aydınlatma |
 | `<title>` (57) | `Asansör Aküsü ve Elektrik Kesintisi: Ne Olur? \| YK Asansör` |
-| Meta (≈150) | `Elektrik kesilince asansör ne yapar, kabin düşer mi? Asansör aküsü, acil aydınlatma, alarm, otomatik kurtarma ve jeneratör hakkında bilmeniz gerekenler.` |
+| Meta (140) | `Elektrik kesilince asansör ne yapar, kabin düşer mi? Akü, acil aydınlatma, alarm, otomatik kurtarma ve jeneratör rehberi: 0 (543) 542 86 75.` |
 | H1 | Asansör aküsü ve elektrik kesintisi: *Elektrik kesilince asansörde ne olur?* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
 | İç bağlantılar | 7/24 arıza sayfası; asansör arızaları yazısı; merdiven asansörü ve engelli lifti yazısı; ilçe yer yazıları; teklif formu |

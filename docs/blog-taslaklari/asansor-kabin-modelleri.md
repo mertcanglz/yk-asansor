@@ -11,7 +11,7 @@
 | Ana sorgu | panoramik asansör (480/ay), asansör kabini (390/ay) |
 | Yan sorgular | asansör kabin modelleri (320), asansör kabin yenileme, cam asansör, asansör kabin kaplama |
 | `<title>` (58) | `Asansör Kabin Modelleri ve Panoramik Asansör \| YK Asansör` |
-| Meta (≈150) | `Asansör kabin modelleri: rezidans, panoramik cam, sedye ve yük kabinleri; malzeme seçenekleri, kabin yenileme ve panoramik asansörde dikkat edilecekler.` |
+| Meta (138) | `Asansör kabin modelleri: rezidans, panoramik cam, sedye ve yük kabinleri; malzeme seçenekleri ve kabin yenileme. Bilgi: 0 (543) 542 86 75.` |
 | H1 | Asansör kabin modelleri: *Rezidanstan panoramiğe, hangi kabin hangi binaya?* |
 | Görsel | Kabin tiplerini gösteren kendi tasarımımız görseller (ana sayfadaki "Kabin çözümleri" görselleriyle ortak) |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |

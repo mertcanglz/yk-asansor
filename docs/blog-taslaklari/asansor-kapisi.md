@@ -11,7 +11,7 @@
 | Ana sorgu | asansör kapısı (1.000/ay) |
 | Yan sorgular | asansör kapısı kapanmıyor (110), asansör kapı arızası, asansör kapısı açılmıyor, otomatik asansör kapısı, asansör kabin kapısı |
 | `<title>` (59) | `Asansör Kapısı: Çeşitleri, Arızaları, Güvenlik \| YK Asansör` |
-| Meta (141) | `Asansör kapısı çeşitleri nelerdir, kapı neden kapanmaz, hangi arıza tehlikelidir? Kat kapısı, kabin kapısı, kilit ve fotosel hakkında rehber.` |
+| Meta (128) | `Asansör kapısı çeşitleri, kapı neden kapanmaz, hangi arıza tehlikelidir? Kat ve kabin kapısı, kilit, fotosel: 0 (543) 542 86 75.` |
 | H1 | Asansör kapısı: *Çeşitleri, sık görülen arızaları ve güvenlik* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
 | İç bağlantılar | 7/24 arıza sayfası; modernizasyon sayfası; asansör arızaları yazısı; ilçe yer yazıları; teklif formu |

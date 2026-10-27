@@ -11,7 +11,7 @@
 | Ana sorgu | kırmızı etiket asansör (480/ay) |
 | Yan sorgular | kırmızı etiketli asansör kullanılır mı, kırmızı etiket süresi, asansör mühürlendi, mühür bozma, asansör takip kontrolü |
 | `<title>` (55) | `Kırmızı Etiket Alan Asansör: Süre ve Mühür \| YK Asansör` |
-| Meta (≈152) | `Asansör kırmızı etiket aldıysa ne olur? Kullanım yasağı, 60 günlük süre, takip kontrolü, mühür ve mühür bozma süreci; güncel yönetmeliğe göre adım adım.` |
+| Meta (131) | `Asansör kırmızı etiket aldıysa ne olur? Kullanım yasağı, 60 günlük süre, takip kontrolü ve mühür süreci. Yardım: 0 (543) 542 86 75.` |
 | H1 | Kırmızı etiket alan asansör: *Süre, mühür ve yapılması gerekenler* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
 | İç bağlantılar | Etiket renkleri ve periyodik kontrol yazıları; ilçe yer yazıları; modernizasyon sayfası; yeşil etiket sayfası; teklif formu |

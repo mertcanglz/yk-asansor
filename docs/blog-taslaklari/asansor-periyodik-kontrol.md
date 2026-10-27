@@ -11,7 +11,7 @@
 | Ana sorgu | asansör muayene ücreti (170/ay), asansör periyodik kontrol (140/ay) |
 | Yan sorgular | asansör muayene (70), asansör periyodik kontrol ücreti (30), asansör yıllık kontrol, periyodik kontrolü kim yapar |
 | `<title>` (58) | `Asansör Periyodik Kontrolü ve Muayene Ücreti \| YK Asansör` |
-| Meta (143) | `Asansör periyodik kontrolü kim yapar, ne zaman yapılır, ücreti kim öder? Tarih bildirimi, takip kontrolü ve etiketler; güncel yönetmeliğe göre.` |
+| Meta (135) | `Asansör periyodik kontrolü kim yapar, ne zaman yapılır, ücreti kim öder? Tarih bildirimi, takip kontrolü, etiketler: 0 (543) 542 86 75.` |
 | H1 | Asansör periyodik kontrolü: *Kim yapar, ücreti kim öder, nasıl hazırlanılır?* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
 | İç bağlantılar | Yeşil etiket sayfası; etiket renkleri ve kırmızı etiket yazıları; asansör yönetmelikleri yazısı; ilçe yer yazıları; temizlik ve muayene sayfası; teklif formu |

@@ -11,7 +11,7 @@
 | Ana sorgu | hidrolik mi halatlı mı, dişlili mi dişlisiz mi (karşılaştırma niyeti) |
 | Yan sorgular | hidrolik asansör ile halatlı asansör farkı, dişlili ve dişlisiz asansör farkı, makine dairesiz asansör avantajları |
 | `<title>` (56) | `Hidrolik mi, Halatlı mı? Asansör Sistemleri \| YK Asansör` |
-| Meta (≈150) | `Hidrolik, dişlili, dişlisiz ve makine dairesiz asansörlerin farkları; hangi sistem hangi binaya uygun, bakımı ve işletmesi nasıl? Sade karşılaştırma.` |
+| Meta (130) | `Hidrolik, dişlili, dişlisiz ve makine dairesiz asansörlerin farkları; hangi sistem hangi binaya uygun? Danışın: 0 (543) 542 86 75.` |
 | H1 | Hidrolik mi, halatlı mı? Dişlili mi, dişlisiz mi? *Asansör sistemleri karşılaştırması* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
 | İç bağlantılar | Asansör sistemleri sayfası ve sistem sayfaları (dişlili, dişlisiz, hidrolik, makine dairesiz); asansör fiyatları yazısı; ilçe yer yazıları; teklif formu |

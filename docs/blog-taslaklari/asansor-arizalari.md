@@ -11,7 +11,7 @@
 | Ana sorgu | asansör arıza (210/ay), asansör arızaları |
 | Yan sorgular | asansörde mahsur kalma (20), asansörde mahsur kalınca ne yapılır, asansör sarsıntılı çalışıyor, asansör kat hizasında durmuyor |
 | `<title>` (58) | `Asansör Arızaları: Belirtiler ve Yapılacaklar \| YK Asansör` |
-| Meta (≈152) | `Asansör arızaları nasıl anlaşılır, hangi belirtide asansör kapatılmalı, mahsur kalınca ne yapılır? Belirtiler, olası sebepler ve yöneticinin yapacakları.` |
+| Meta (133) | `Asansör arızaları nasıl anlaşılır, hangi belirtide asansör kapatılır, mahsur kalınca ne yapılır? 7/24 arıza hattı: 0 (543) 542 86 75.` |
 | H1 | Asansör arızaları: *Belirtiler, sebepler ve ne yapılmalı?* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
 | İç bağlantılar | 7/24 arıza sayfası; asansör kapısı, akü ve elektrik kesintisi, kırmızı etiket yazıları; ilçe yer yazıları; teklif formu |

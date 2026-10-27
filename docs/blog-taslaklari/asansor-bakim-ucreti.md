@@ -11,7 +11,7 @@
 | Ana sorgu | asansör bakım ücreti (880/ay) |
 | Yan sorgular | asansör bakım fiyatları (110), asansör bakım ücretleri 2026, aylık asansör bakım ücreti, yürüyen merdiven bakım ücreti |
 | `<title>` (59) | `Asansör Bakım Ücreti 2026: Fiyatı Ne Belirler? \| YK Asansör` |
-| Meta (≈152) | `Asansör bakım ücreti 2026'da ne kadar? TASİAD tavsiye fiyatları, fiyatı belirleyen kalemler, nelerin dahil olduğu ve teklif nasıl okunur; sade rehber.` |
+| Meta (136) | `Asansör bakım ücreti 2026'da ne kadar? TASİAD tavsiye fiyatları, fiyatı belirleyenler ve teklif nasıl okunur. Teklif: 0 (543) 542 86 75.` |
 | H1 | Asansör bakım ücreti 2026: *Fiyatı neler belirler, teklif nasıl okunur?* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
 | İç bağlantılar | Periyodik bakım sayfası; bakım sözleşmesi ve bakımı kim öder yazıları; ilçe yer yazıları; teklif formu |
