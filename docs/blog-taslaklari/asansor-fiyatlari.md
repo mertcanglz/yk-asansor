@@ -10,7 +10,7 @@
 | URL | `/blog/asansor-fiyatlari.html` |
 | Ana sorgu | asansör fiyatları (4.400/ay) |
 | Yan sorgular | asansör yaptırma fiyatları, 4 katlı binaya asansör fiyatı, yeni asansör maliyeti, asansör ne kadar |
-| `<title>` (58) | `Asansör Fiyatları 2026: Maliyeti Neler Belirler? \| YK Asansör` |
+| `<title>` (58) | `Asansör Fiyatları 2026: Maliyeti Ne Belirler? \| YK Asansör` |
 | Meta (≈153) | `Asansör fiyatları neye göre değişir? Kat sayısı, kapasite, sistem, kabin, kuyu ve proje giderleri; teklif nasıl okunur? Ücretsiz keşif: 0 (543) 542 86 75.` |
 | H1 | Asansör fiyatları 2026: *Yeni bir asansörün maliyetini neler belirler?* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |

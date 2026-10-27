@@ -10,7 +10,7 @@
 | URL | `/blog/asansor-yonetmelikleri.html` |
 | Ana sorgu | asansör yönetmeliği (1.600/ay) |
 | Yan sorgular | asansör bakım yönetmeliği (210), asansör işletme ve bakım yönetmeliği, asansör periyodik kontrol yönetmeliği, apartman yöneticisi asansör sorumluluğu |
-| `<title>` (59) | `Asansör Yönetmelikleri: Yöneticinin Bilmesi Gerekenler \| YK Asansör` |
+| `<title>` (58) | `Asansör Yönetmelikleri: Yöneticinin Görevleri \| YK Asansör` |
 | Meta (≈153) | `Asansör yönetmelikleri neler söylüyor? Bakım, periyodik kontrol, etiketler, yöneticinin sorumlulukları ve Kat Mülkiyeti Kanunu; maddeleriyle sade özet.` |
 | H1 | Asansör yönetmelikleri: *Bina yöneticisinin bilmesi gerekenler* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |

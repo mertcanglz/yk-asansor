@@ -12,7 +12,7 @@
 | URL | `/blog/sultanbeyli-asansor.html` |
 | Ana sorgu | sultanbeyli asansör firmaları (70/ay) |
 | Yan sorgular | sultanbeyli asansör, sultanbeyli asansör bakım, sultanbeyli asansör servisi, sultanbeyli asansör tamiri, sultanbeyli asansör montaj |
-| `<title>` (59) | `Sultanbeyli Asansör Firması: Bakım, Arıza, Montaj \| YK Asansör` |
+| `<title>` (56) | `Sultanbeyli Asansör Firması: Bakım ve Arıza \| YK Asansör` |
 | Meta (≈150) | `Sultanbeyli'de asansör bakımı, 7/24 arıza, modernizasyon ve montaj. Periyodik kontrol, etiketler ve bakım ücreti rehberi: 0 (543) 542 86 75.` |
 | H1 | Sultanbeyli'de asansör hizmetleri: *Bakımdan montaja bina yöneticisinin rehberi* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |

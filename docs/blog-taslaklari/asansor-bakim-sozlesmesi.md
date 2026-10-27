@@ -10,7 +10,7 @@
 | URL | `/blog/asansor-bakim-sozlesmesi.html` |
 | Ana sorgu | asansör bakım sözleşmesi (110/ay) |
 | Yan sorgular | asansör bakım sözleşmesi örneği, asansör bakım sözleşmesi nasıl olmalı, asansör bakım sözleşmesi feshi |
-| `<title>` (58) | `Asansör Bakım Sözleşmesi: İmzalamadan Önce 12 Madde \| YK Asansör` |
+| `<title>` (60) | `Asansör Bakım Sözleşmesi Nasıl Olmalı? 12 Madde \| YK Asansör` |
 | Meta (≈150) | `Asansör bakım sözleşmesinde neler olmalı? Yönetmeliğin istedikleri, kapsam, yedek parça, arıza çağrısı, süre ve fesih; imzalamadan önce kontrol listesi.` |
 | H1 | Asansör bakım sözleşmesi: *İmzalamadan önce kontrol edilecek 12 madde* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |

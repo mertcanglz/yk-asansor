@@ -10,7 +10,7 @@
 | URL | `/blog/merdiven-asansoru-engelli-lifti.html` |
 | Ana sorgu | merdiven asansörü (2.900/ay) |
 | Yan sorgular | engelli lifti, merdiven lifti, platform lift, tekerlekli sandalye asansörü |
-| `<title>` (58) | `Merdiven Asansörü ve Engelli Lifti: Hangisi Kime Uygun? \| YK Asansör` |
+| `<title>` (55) | `Merdiven Asansörü ve Engelli Lifti Rehberi \| YK Asansör` |
 | Meta (≈150) | `Merdiven asansörü, platform lift ve dikey lift arasındaki farklar; hangi çözüm kime ve hangi binaya uygun, bakımı nasıl yapılır? 0 (543) 542 86 75.` |
 | H1 | Merdiven asansörü ve engelli lifti: *Hangi çözüm kime uygun?* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |

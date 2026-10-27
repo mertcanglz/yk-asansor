@@ -12,7 +12,7 @@
 | URL | `/blog/dudullu-asansor.html` |
 | Ana sorgu | dudullu asansör firmaları (20/ay), dudullu asansör |
 | Yan sorgular | dudullu asansör bakım, dudullu asansör tamiri, dudullu asansör montaj, dudullu yük asansörü |
-| `<title>` (59) | `Dudullu Asansör Firması: Bakım, Montaj, 7/24 Arıza \| YK Asansör` |
+| `<title>` (57) | `Dudullu Asansör Firması: Bakım ve 7/24 Arıza \| YK Asansör` |
 | Meta (≈152) | `Ümraniye Dudullu'da apartman, iş yeri ve yük asansörleri için bakım, 7/24 arıza, montaj ve modernizasyon. Teklif: 0 (543) 542 86 75.` |
 | H1 | Dudullu'da asansör hizmetleri: *Bakım, arıza, montaj ve periyodik kontrol rehberi* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |

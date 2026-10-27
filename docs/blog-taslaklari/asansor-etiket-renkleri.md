@@ -10,7 +10,7 @@
 | URL | `/blog/asansor-etiket-renkleri.html` |
 | Ana sorgu | asansör etiket renkleri (590/ay) |
 | Yan sorgular | mavi etiket asansör (320), sarı etiket asansör (110), asansör etiketi hangi renk olmalı, sarı etiketli asansöre binilir mi |
-| `<title>` (57) | `Asansör Etiket Renkleri: Yeşil, Mavi, Sarı, Kırmızı \| YK Asansör` |
+| `<title>` (49) | `Asansör Etiket Renkleri ve Anlamları \| YK Asansör` |
 | Meta (≈152) | `Asansör etiket renkleri ne anlama gelir? Yeşil, mavi, sarı ve kırmızı etiketin anlamı, eksik giderme süreleri ve takip kontrolü; güncel yönetmeliğe göre.` |
 | H1 | Asansör etiket renkleri: *Yeşil, mavi, sarı ve kırmızı ne anlama gelir?* |
 | Görsel | Kendi tasarımımız etiket renkleri infografiği (`asansor-etiket-renkleri.webp`, alt: "Asansör periyodik kontrol etiket renkleri: yeşil, mavi, sarı, kırmızı") |

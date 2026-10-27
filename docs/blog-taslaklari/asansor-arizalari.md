@@ -10,7 +10,7 @@
 | URL | `/blog/asansor-arizalari.html` |
 | Ana sorgu | asansör arıza (210/ay), asansör arızaları |
 | Yan sorgular | asansörde mahsur kalma (20), asansörde mahsur kalınca ne yapılır, asansör sarsıntılı çalışıyor, asansör kat hizasında durmuyor |
-| `<title>` (56) | `Asansör Arızaları: Belirtiler, Sebepler, Yapılacaklar \| YK Asansör` |
+| `<title>` (58) | `Asansör Arızaları: Belirtiler ve Yapılacaklar \| YK Asansör` |
 | Meta (≈152) | `Asansör arızaları nasıl anlaşılır, hangi belirtide asansör kapatılmalı, mahsur kalınca ne yapılır? Belirtiler, olası sebepler ve yöneticinin yapacakları.` |
 | H1 | Asansör arızaları: *Belirtiler, sebepler ve ne yapılmalı?* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |

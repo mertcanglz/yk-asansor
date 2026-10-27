@@ -52,7 +52,8 @@ blog/                 Blog yazıları (ör. blog/asansor-etiket-renkleri.html); 
                       Yazı, taslağın yalnızca "## Metin" bölümünden üretilir (editör notları ve doğrulama yayınlanmaz;
                       doldurulmamış [[İSTEĞE BAĞLI]] satırları çıkarılır). Yeni yazı yayınlanınca aynı işte
                       ana sayfadaki blog şeridi (en yeni 12 yazı) ve blog.html listesi de güncellenir;
-                      kartlar HTML'de yazılı durur (SEO), JS ile sonradan çekilmez
+                      kartlar HTML'de yazılı durur (SEO), JS ile sonradan çekilmez. `<title>` en çok 60, meta açıklama
+                      en çok 160 karakter olmalı (taslaktaki sayılar elle yazıldığı için yayından önce sayılarak denetlenir)
 docs/                 Proje belgeleri (yayınlanmaz): SEO yol haritası, blog taslakları, kurallar
 ```
 

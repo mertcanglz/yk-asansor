@@ -10,8 +10,8 @@
 | URL | `/blog/asansor-kapisi.html` |
 | Ana sorgu | asansör kapısı (1.000/ay) |
 | Yan sorgular | asansör kapısı kapanmıyor (110), asansör kapı arızası, asansör kapısı açılmıyor, otomatik asansör kapısı, asansör kabin kapısı |
-| `<title>` (57) | `Asansör Kapısı: Çeşitleri, Arızaları ve Güvenlik \| YK Asansör` |
-| Meta (≈152) | `Asansör kapısı çeşitleri nelerdir, kapı neden kapanmaz, hangi kapı arızası tehlikelidir? Kat kapısı, kabin kapısı, kilit ve fotosel hakkında bilmeniz gerekenler.` |
+| `<title>` (59) | `Asansör Kapısı: Çeşitleri, Arızaları, Güvenlik \| YK Asansör` |
+| Meta (141) | `Asansör kapısı çeşitleri nelerdir, kapı neden kapanmaz, hangi arıza tehlikelidir? Kat kapısı, kabin kapısı, kilit ve fotosel hakkında rehber.` |
 | H1 | Asansör kapısı: *Çeşitleri, sık görülen arızaları ve güvenlik* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
 | İç bağlantılar | 7/24 arıza sayfası; modernizasyon sayfası; asansör arızaları yazısı; ilçe yer yazıları; teklif formu |
