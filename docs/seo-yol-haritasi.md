@@ -543,6 +543,15 @@ Search Console'da gösterimi olup tıklaması düşük sayfaların başlık ve a
 10. **Yayın:** Bölüm 6 kontrol listesi.
 11. **İlk 90 gün:** Bölüm 7. Ayda 2–4 yazı, haftalık profil gönderisi, aylık ölçüm.
 
+**Konuşulacak (kullanıcı notu, 27 Ekim 2026):**
+
+- **Arama sonuçlarında görselle çıkma.** Ana sayfa ve seçili site sayfalarının Google aramasında görselle
+  görünmesi istendi; hangi sayfalar ve hangi görseller, en son konuşulacak. Konuşmadan önce bilinmesi gerekenler:
+  alan adı kesinleşmeden `og:image`, `canonical` ve `sitemap.xml` yazılamaz (Bölüm 5.1); görsel en az
+  1200 px geniş olmalı, sayfada gerçekten görünmeli ve yapılandırılmış veride (`image`) bağlanmalı;
+  blog yazılarında iş fotoğrafı kullanılmıyor (Bölüm 4.3), bu yüzden yazılar için kendi tasarımımız bir
+  kapak görseli gerekir. Hizmet, sistem ve kabin sayfalarının fotoğrafları (`assets/img/`) hazır.
+
 ---
 
 ## Kaynaklar
