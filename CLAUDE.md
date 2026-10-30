@@ -25,9 +25,13 @@ Bu repo, **YK Asansör** işletmesinin tanıtım web sitesidir. Site sahibi proj
 ```
 index.html            Ana sayfa (hero asansörü, bölümler, footer + hızlı teklif formu)
 hizmetler.html        Hizmetler: tüm hizmetler tek sayfada (gruplar + SSS)
-asansor-montaji.html  Hizmet şablonu (Yeni asansör montajı); diğer hizmet sayfaları aynı yapıyla yazılır
+asansor-montaji.html  Hizmet şablonu (Yeni asansör montajı). Aynı yapıda: asansor-bakimi.html (paketler ve kampanyalar),
+                      asansor-modernizasyonu.html, asansor-ariza-servisi.html (ana buton arama; mahsur kalma adımları),
+                      asansor-temizlik-muayene.html
 asansor-sistemleri.html  Asansör sistemleri: gruplu katalog (yolcu, yük ve araç, özel çözümler) + seçim ölçütleri + SSS
-dislili-asansor.html  Sistem şablonu (Dişlili asansör); diğer 7 sistem sayfası aynı yapıyla yazılır
+dislili-asansor.html  Sistem şablonu (Dişlili asansör). Aynı yapıda: dislisiz-asansor.html, hidrolik-asansor.html,
+                      makine-dairesiz-asansor.html, yuk-asansoru.html (kapakta şimdilik dikey yük-araç kabini fotoğrafı),
+                      arac-asansoru.html, villa-engelli-asansoru.html, yuruyen-merdiven.html. Teknik değerler "tipik" notuyla
 yesil-etiket.html     Yeşil etiket bilgi sayfası: etiket renkleri, süreler (telefonda kart), yeşil etikete geçiş, yönetmelik, SSS
 iletisim.html         İletişim: kartlar, sosyal medya, mesaj formu (adsoyad, telefon, eposta, konu, mesaj → form-gonder.php);
                       harita masaüstünde "Haritayı göster"e basınca gömülür (KVKK), telefonda yalnızca Google Haritalar bağlantısı
