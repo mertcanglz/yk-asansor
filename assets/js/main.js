@@ -37,7 +37,10 @@ olc();
 /* ---------- Kalınan yer: sayfa yenilenince (F5) ya da geri tuşuyla dönülünce kaydırma konumu geri yüklenir ----------
    Tarayıcının kendi geri yüklemesi (özellikle Safari ve telefonda) sayfa düzeni oturmadan çalışıp konumu kaçırabiliyor;
    konum oturum depolamasında (yk-konum) sayfa sayfa tutulur, düzen oturdukça yeniden uygulanır. Kullanıcı kaydırmaya
-   başlarsa bırakılır. Başka sayfadan bağlantıyla gelince sayfa her zamanki gibi baştan (ya da #bölümden) açılır. */
+   başlarsa bırakılır. Başka sayfadan bağlantıyla gelince sayfa her zamanki gibi baştan (ya da #bölümden) açılır.
+   Telefonda ana sayfanın kat durakları (CSS scroll-snap) açıkken iPhone Safari, koddan yapılan kaydırmayı açılıştaki durağa
+   (hero'nun başına) geri sektiriyor (WebKit hatası); geri yüklerken duraklar kapatılır (durak-yok), kullanıcı sayfaya
+   dokununca yeniden açılır. O an bulunulan yer geçerli bir konum olduğu için sayfa kaymaz. */
 const Konum = (() => {
   const ANAHTAR = 'yk-konum';
   const yol = location.pathname;
@@ -52,11 +55,13 @@ const Konum = (() => {
   addEventListener('scroll', () => { clearTimeout(kayT); kayT = setTimeout(() => ekle({ y: Math.round(scrollY) }), 200); }, { passive: true });
   addEventListener('pagehide', () => ekle({ y: Math.round(scrollY) }));
   let elle = false;
-  ['wheel', 'touchstart', 'keydown', 'mousedown'].forEach((o) => addEventListener(o, () => { elle = true; }, { passive: true, once: true }));
+  ['wheel', 'touchstart', 'keydown', 'mousedown'].forEach((o) => addEventListener(o, () => { elle = true; h.classList.remove('durak-yok'); }, { passive: true, once: true }));
   function geriYukle() {
     if (!durum || durum.y == null || elle) return;
     const y = Math.min(durum.y, h.scrollHeight - innerHeight);
-    if (Math.abs(scrollY - y) > 1) scrollTo({ top: y, behavior: 'instant' });
+    if (Math.abs(scrollY - y) <= 1) return;
+    h.classList.add('durak-yok');
+    scrollTo({ top: y, behavior: 'instant' });
   }
   return {
     geriYukle,

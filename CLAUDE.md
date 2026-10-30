@@ -115,7 +115,9 @@ Kodlamadan önce blog taslakları `docs/blog-taslaklari/` altında Markdown olar
   ekran boyunca uzayabilir ama kartlar taşmaz (ör. ana sayfa blog şeridi: ≥1280 px'te 3, 1024–1279 px'te 2 kart).
 - **Yenilemede kalınan yer:** sayfa yenilenince (F5) ya da geri tuşuyla dönülünce kaydırma konumu geri gelir (main.js
   `Konum`, oturum depolaması `yk-konum`; blog listesinde açılan kart sayısı ve kategori de). Bağlantıyla gelince sayfa
-  baştan açılır. Kullanıcı kaydırmaya başlarsa geri yükleme bırakılır.
+  baştan açılır. Kullanıcı kaydırmaya başlarsa geri yükleme bırakılır. Geri yüklerken ana sayfanın telefondaki kat durakları
+  (scroll-snap) kapatılır (`durak-yok`), kullanıcı dokununca açılır: açıkken iPhone Safari koddan kaydırmayı hero'nun başına
+  geri sektiriyordu (WebKit hatası).
 - **Yumuşak kaydırma:** fare tekerleği/trackpad ile sayfa yumuşakça süzülerek kayar (main.js, kütüphanesiz). Dokunmatik
   ekranda tarayıcının kendi momentumlu kaydırması kalır (parmağın gerisinden gelmesin, adres çubuğu ve hero durakları
   bozulmasın); ana sayfanın hero katlarında da kat oturtma çalıştığı için tarayıcının kendi kaydırması.
