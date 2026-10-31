@@ -38,6 +38,9 @@ iletisim.html         İletişim: kartlar, sosyal medya, mesaj formu (adsoyad, t
 teklif-formu.html     Reklam açılış sayfası (noindex): detaylı teklif formu; WhatsApp butonu ve footer'daki hızlı form yok.
                       Alanlar: hizmet, adsoyad, telefon, donus (Telefonla/E-postayla), eposta (e-postayla dönüşte zorunlu),
                       referans, not, kaynak, website (bal tuzağı, doluysa gönderme) → form-gonder.php
+404.html              Sayfa bulunamadı (noindex): kat göstergesinde "404", ana sayfa + arıza hattı, 6 öneri kartı, footer.
+                      Her adreste sunulabildiği için tüm yollar köke göre (/assets/..., /hizmetler.html); yayında
+                      .htaccess'e `ErrorDocument 404 /404.html` eklenir. Blog yazılarındaki form `../form-gonder.php`'ye gönderir
 blog.html             Blog listesi: kartlar HTML'de yazılı (SEO); JS ile kategori süzgeci, arama, "daha fazla" (telefonda 8, geniş
                       ekranda 16) ve sıra sıra dizilen Pinterest ızgarası. Yeni yazı yayınlanınca kartı buraya da eklenir
 kvkk-aydinlatma.html, cerez-politikasi.html, gizlilik-politikasi.html, kullanim-sartlari.html
@@ -188,7 +191,8 @@ hem buraya hem siteye işle:
   semtler: Ümraniye, Çekmeköy, Sultanbeyli, Maltepe ve Dudullu, Samandıra, Sarıgazi, Taşdelen, Maltepe semtleri gibi (liste ve sıra
   `docs/mahalle-talep-analizi.md` Bölüm 5.2). **Mahalle yazıları iptal** (kullanıcı kararı) — bkz. `docs/mahalle-talep-analizi.md`
   → (3) diğer çevre ilçeler yakından uzağa: Kartal (+ Yakacık, Soğanlık, Dragos), Pendik, Ataşehir taslak hazır (Bölüm 5.3);
-  sonra Tuzla, Kadıköy, Üsküdar, Beykoz. **En uzak sınır İstanbul Anadolu Yakası**; dışına taşılmaz.
+  sonra Tuzla, Kadıköy, Üsküdar, Beykoz (yazıldı, 1 Kasım 2026; Kadıköy ve Beykoz protokolleri 2026 sonunda bitiyor,
+  Ocak 2027'de kontrol et). **En uzak sınır İstanbul Anadolu Yakası**; dışına taşılmaz.
   **Tüm ilçe ve semt yazıları aynı 12 başlığı taşır** (kullanıcı kararı, 24 Ekim 2026): neler yapıyoruz, binalar ve
   asansörler, aylık bakım ve sözleşme, arıza ve mahsur kalma, periyodik kontrol ve etiketler, modernizasyon, yeni montaj
   ve sonradan asansör, hangi sistem hangi binaya, bakım ücreti, firma seçerken, ilgili yazılar, SSS. Semtlere ayrı bir

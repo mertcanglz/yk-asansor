@@ -247,6 +247,26 @@ Pendik ve Ataşehir semtlerinde ölçülebilir hacim yok; semt yazısı yok (ist
 
 **Durum (24 Ekim 2026):** 6 taslak yazıldı; kullanıcı onayı bekleniyor.
 
+### 5.4 Tuzla, Kadıköy, Üsküdar, Beykoz (kullanıcı onayladı, 1 Kasım 2026)
+
+Hacimler düşük (tuzla asansör 30 · kadıköy asansör 20 · üsküdar asansör 20 · beykoz 10'un altında); semt yazısı yok.
+Dosyalar: `tuzla-asansor.md`, `kadikoy-asansor.md`, `uskudar-asansor.md`, `beykoz-asansor.md` (aynı 12 başlık).
+
+**Periyodik kontrol kuruluşları (doğrulandı, 1 Kasım 2026):**
+- Tuzla: AND Uluslararası Denetim ve Gözetim Hizmetleri A.Ş. Tuzla Belediyesi'nin sitesindeki PDF'te AND'nin başvuru
+  formu ve "Tuzla Belediyesi 2026 Asansör Ücret Tablosu" (KDV dahil; tutarlar Pendik'le aynı: 0–5 durak 3.578,52 /
+  10.735,56 TL). Protokol tarihi birincil kaynakta yok (üçüncü taraf derleme: 10.01.2025–10.01.2029).
+- Kadıköy: TMMOB MMO İstanbul Şubesi, Asansör Kontrol Merkezi (akmistanbul.org). Hesaplayıcıya göre asansör başına
+  yıllık / tescil öncesi: 0–5 durak 3.932 / 11.796 TL … 31 ve üstü 11.072 / 33.216 TL. Protokol tarihi birincil
+  kaynakta yok (üçüncü taraf: 01.01.2023–31.12.2026; Ocak 2027'de kontrol edilmeli).
+- Üsküdar: TMMOB MMO İstanbul Şubesi (AKM). Hesaplayıcı: 0–5 durak 3.579 / 10.737 TL … 31 ve üstü 8.565 / 25.695 TL.
+  (Üçüncü taraf: 01.01.2025–31.12.2029.)
+- Beykoz: Royalcert, protokol 1.01.2023–31.12.2026 (Royalcert'in protokol listesi). 2026 ücret tablosu bulunamadı.
+  Ocak 2027'de yeni protokol kontrol edilip yazı güncellenmeli.
+- Not: AKM'nin belediye listesinde Maltepe de var (Maltepe yazısıyla uyumlu).
+
+**Durum (1 Kasım 2026):** 4 taslak yazıldı ve HTML olarak yayına eklendi; işletme sahibinin toplu okumasını bekliyor.
+
 ## Kaynaklar
 
 - Sancaktepe mahalleleri (19): https://tr.wikipedia.org/wiki/Sancaktepe
