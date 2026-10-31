@@ -341,8 +341,8 @@ html:not(.hw)[data-kampanya="acik"] .hx-sec--1 .hx-in { --hx-alt: var(--promo-pa
 html[data-ck="yok"] .hx .hx-sec .hx-in { --hx-alt: var(--ck-pad, calc(140px + env(safe-area-inset-bottom))); }
 /* telefonda kat durakları: her kaydırma bir kat ilerler, hızlı kaydırmada katlar atlanmaz; hero bitince sayfa serbest kayar.
    Yalnızca dokunmatik ekranda: fare/trackpad ile dar pencerede sayfa sonundaki esnemeyle çakışıp sayfayı titretir
-   (orada katlara oturtmayı geniş ekrandaki gibi JS yapar) */
-@media (pointer: coarse) { html.sayfa-ana:not(.hw) { scroll-snap-type: y mandatory; } }
+   (orada katlara oturtmayı geniş ekrandaki gibi JS yapar). Kalınan yer geri yüklenirken kapalı (durak-yok, main.js Konum) */
+@media (pointer: coarse) { html.sayfa-ana:not(.hw):not(.durak-yok) { scroll-snap-type: y mandatory; } }
 .hx-durak { position: absolute; left: 0; top: 0; width: 1px; height: 100vh; height: 100svh; pointer-events: none; scroll-snap-align: start; scroll-snap-stop: always; }
 .hx-durak:nth-child(2) { top: 100vh; top: 100svh; }
 .hx-durak:nth-child(3) { top: 200vh; top: 200svh; }
