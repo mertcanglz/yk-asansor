@@ -191,7 +191,8 @@ hem buraya hem siteye işle:
   semtler: Ümraniye, Çekmeköy, Sultanbeyli, Maltepe ve Dudullu, Samandıra, Sarıgazi, Taşdelen, Maltepe semtleri gibi (liste ve sıra
   `docs/mahalle-talep-analizi.md` Bölüm 5.2). **Mahalle yazıları iptal** (kullanıcı kararı) — bkz. `docs/mahalle-talep-analizi.md`
   → (3) diğer çevre ilçeler yakından uzağa: Kartal (+ Yakacık, Soğanlık, Dragos), Pendik, Ataşehir taslak hazır (Bölüm 5.3);
-  sonra Tuzla, Kadıköy, Üsküdar, Beykoz. **En uzak sınır İstanbul Anadolu Yakası**; dışına taşılmaz.
+  sonra Tuzla, Kadıköy, Üsküdar, Beykoz (yazıldı, 1 Kasım 2026; Kadıköy ve Beykoz protokolleri 2026 sonunda bitiyor,
+  Ocak 2027'de kontrol et). **En uzak sınır İstanbul Anadolu Yakası**; dışına taşılmaz.
   **Tüm ilçe ve semt yazıları aynı 12 başlığı taşır** (kullanıcı kararı, 24 Ekim 2026): neler yapıyoruz, binalar ve
   asansörler, aylık bakım ve sözleşme, arıza ve mahsur kalma, periyodik kontrol ve etiketler, modernizasyon, yeni montaj
   ve sonradan asansör, hangi sistem hangi binaya, bakım ücreti, firma seçerken, ilgili yazılar, SSS. Semtlere ayrı bir

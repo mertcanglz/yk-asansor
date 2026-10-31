@@ -184,7 +184,7 @@ yürüyen merdivenler için tavsiyesi aylık 14.000 TL + KDV. Teklif okumayı "A
 ## İlgili yazılar ve semtler
 
 - Semtler: Dudullu, Çakmak, Şerifali, Tepeüstü
-- Komşu ilçeler: Sancaktepe, Çekmeköy, Ataşehir
+- Komşu ilçeler: Sancaktepe, Çekmeköy, Ataşehir, Üsküdar, Beykoz
 - Bakım ve masraf: "Asansör bakım ücreti", "Asansör bakım sözleşmesi", "Asansör bakımını kim öder?"
 - Kontrol ve etiketler: "Asansör periyodik kontrolü", "Asansör etiket renkleri", "Kırmızı etiket alan asansör"
 - Arıza ve güvenlik: "Asansör arızaları", "Asansör kapısı", "Asansör aküsü ve elektrik kesintisi"

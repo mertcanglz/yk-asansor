@@ -231,6 +231,7 @@ değişen şablon metin yasak). Kullanıcı kararı (18 Ekim 2026): bloglarda i�
 | Kartal (ilçe) + Yakacık, Soğanlık, Dragos | **Taslak hazır** (24 Ekim 2026) |
 | Pendik (ilçe) | **Taslak hazır** (24 Ekim 2026) |
 | Ataşehir (ilçe) | **Taslak hazır** (24 Ekim 2026) |
+| Tuzla, Kadıköy, Üsküdar, Beykoz (ilçe; semt yazısı yok) | **Taslak hazır, yayında** (1 Kasım 2026) |
 
 Ayrıntılı liste ve dosya adları: `docs/mahalle-talep-analizi.md` Bölüm 5.2 ve 5.3.
 
