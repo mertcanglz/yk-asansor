@@ -37,14 +37,19 @@ olc();
 /* ---------- Kalınan yer: sayfa yenilenince (F5) ya da geri tuşuyla dönülünce kaydırma konumu geri yüklenir ----------
    Tarayıcının kendi geri yüklemesi (özellikle Safari ve telefonda) sayfa düzeni oturmadan çalışıp konumu kaçırabiliyor;
    konum oturum depolamasında (yk-konum) sayfa sayfa tutulur, düzen oturdukça yeniden uygulanır. Kullanıcı kaydırmaya
-   başlarsa bırakılır. Başka sayfadan bağlantıyla gelince sayfa her zamanki gibi baştan (ya da #bölümden) açılır. */
+   başlarsa bırakılır. Başka sayfadan bağlantıyla gelince sayfa her zamanki gibi baştan (ya da #bölümden) açılır.
+   Geri tuşunda tarayıcı sayfayı çoğu zaman bellekten (bfcache) olduğu gibi getirir, kod yeniden çalışmaz; Safari bu durumda
+   scrollRestoration 'manual' olduğu için sayfayı en başa alıyor. Bu yüzden pageshow (persisted) ile de geri yüklenir.
+   Telefonda ana sayfanın kat durakları (CSS scroll-snap) açıkken iPhone Safari, koddan yapılan kaydırmayı açılıştaki durağa
+   (hero'nun başına) geri sektiriyor (WebKit hatası); geri yüklerken duraklar kapatılır (durak-yok), kullanıcı sayfaya
+   dokununca yeniden açılır. O an bulunulan yer geçerli bir konum olduğu için sayfa kaymaz. */
 const Konum = (() => {
   const ANAHTAR = 'yk-konum';
   const yol = location.pathname;
   let kayit = {};
   try { kayit = JSON.parse(sessionStorage.getItem(ANAHTAR) || '{}') || {}; } catch (e) { /* depolama kapalı olabilir */ }
   const nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
-  const durum = nav && (nav.type === 'reload' || nav.type === 'back_forward') ? kayit[yol] : null;
+  let durum = nav && (nav.type === 'reload' || nav.type === 'back_forward') ? kayit[yol] : null;
   if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
   const yaz = () => { try { sessionStorage.setItem(ANAHTAR, JSON.stringify(kayit)); } catch (e) { /* yoksay */ } };
   const ekle = (veri) => { kayit[yol] = Object.assign({}, kayit[yol], veri); yaz(); };
@@ -52,12 +57,24 @@ const Konum = (() => {
   addEventListener('scroll', () => { clearTimeout(kayT); kayT = setTimeout(() => ekle({ y: Math.round(scrollY) }), 200); }, { passive: true });
   addEventListener('pagehide', () => ekle({ y: Math.round(scrollY) }));
   let elle = false;
-  ['wheel', 'touchstart', 'keydown', 'mousedown'].forEach((o) => addEventListener(o, () => { elle = true; }, { passive: true, once: true }));
+  const elleKaydirdi = () => { elle = true; h.classList.remove('durak-yok'); };
+  const elleDinle = () => ['wheel', 'touchstart', 'keydown', 'mousedown'].forEach((o) => addEventListener(o, elleKaydirdi, { passive: true, once: true }));
+  elleDinle();
   function geriYukle() {
     if (!durum || durum.y == null || elle) return;
     const y = Math.min(durum.y, h.scrollHeight - innerHeight);
-    if (Math.abs(scrollY - y) > 1) scrollTo({ top: y, behavior: 'instant' });
+    if (Math.abs(scrollY - y) <= 1) return;
+    h.classList.add('durak-yok');
+    scrollTo({ top: y, behavior: 'instant' });
   }
+  // bellekten dönüş: ayrılırken pagehide'da yazılan son konum (çıkarken bağlantıya tıklandığı için "elle" sıfırlanır)
+  addEventListener('pageshow', (e) => {
+    if (!e.persisted) return;
+    durum = kayit[yol];
+    elle = false;
+    elleDinle();
+    geriYukle();
+  });
   return {
     geriYukle,
     // sayfaya özel ek durum (ör. blog listesinde açılan kart sayısı): yenilemede geri verilir
