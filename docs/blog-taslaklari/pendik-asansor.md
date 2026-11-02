@@ -180,7 +180,7 @@ yazımızda anlattık.
 
 ## İlgili yazılar
 
-- Komşu ilçeler: Kartal, Sultanbeyli, Sancaktepe, Çekmeköy
+- Komşu ilçeler: Kartal, Sultanbeyli, Sancaktepe, Çekmeköy, Tuzla
 - Bakım ve masraf: "Asansör bakım ücreti", "Asansör bakım sözleşmesi", "Asansör bakımını kim öder?"
 - Kontrol ve etiketler: "Asansör periyodik kontrolü", "Asansör etiket renkleri", "Kırmızı etiket alan asansör"
 - Arıza ve güvenlik: "Asansör arızaları", "Asansör kapısı", "Asansör aküsü ve elektrik kesintisi"

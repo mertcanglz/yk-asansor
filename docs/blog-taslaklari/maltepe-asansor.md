@@ -160,7 +160,7 @@ Bu soruların cevaplarını yazılı isteyin.
 ## İlgili yazılar ve semtler
 
 - Semtler: Küçükyalı, İdealtepe, Cevizli, Başıbüyük
-- Komşu ilçeler: Kartal, Ataşehir, Sancaktepe
+- Komşu ilçeler: Kartal, Ataşehir, Sancaktepe, Kadıköy
 - Bakım ve masraf: "Asansör bakım ücreti", "Asansör bakım sözleşmesi", "Asansör bakımını kim öder?"
 - Kontrol ve etiketler: "Asansör periyodik kontrolü", "Asansör etiket renkleri", "Kırmızı etiket alan asansör"
 - Arıza ve güvenlik: "Asansör arızaları", "Asansör kapısı", "Asansör aküsü ve elektrik kesintisi"
