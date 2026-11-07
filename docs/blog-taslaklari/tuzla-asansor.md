@@ -1,7 +1,7 @@
 # Taslak: Tuzla asansör hizmetleri (ilçe yazısı)
 
 > **Durum:** taslak, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 1 Kasım 2026
-> **Semt yazıları:** yok (ilçe araması ~30/ay; semtlerde ölçülebilir arama yok) · **Marka:** yalnızca "YK Asansör"
+> **Semt yazıları:** yok (ilçe araması ~30/ay; semtlerde ölçülebilir arama yok) · **Marka:** yalnızca "YKA Asansör"
 > **Yapı:** tüm yer yazılarında ortak 12 başlık; ayrı "öne çıkan konu" yok.
 
 ## Yayın bilgileri
@@ -11,7 +11,7 @@
 | URL | `/blog/tuzla-asansor.html` |
 | Ana sorgu | tuzla asansör (30/ay) |
 | Yan sorgular | tuzla asansör firmaları, tuzla asansör bakım, tuzla asansör servisi, tuzla yük asansörü, aydınlı asansör |
-| `<title>` (55) | `Tuzla Asansör: Bakım, Montaj ve 7/24 Arıza \| YK Asansör` |
+| `<title>` (56) | `Tuzla Asansör: Bakım, Montaj ve 7/24 Arıza \| YKA Asansör` |
 | Meta (160) | `Tuzla'da apartman, site ve fabrikalarda asansör bakımı, 7/24 arıza ve montaj. Periyodik kontrolü kim yapar, 2026 ücreti ne? Rehber ve teklif: 0 (543) 542 86 75.` |
 | H1 | Tuzla'da asansör hizmetleri: *Bakımdan montaja bina yöneticisinin rehberi* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
@@ -26,7 +26,7 @@
 Tuzla'da asansörden sorumlu olanlar yalnızca apartman yöneticileri değil; organize sanayi bölgelerindeki fabrikalar,
 tersane çevresindeki iş yerleri ve Aydınlı'dan Akfırat'a uzanan sitelerin yönetimleri de aynı kurallara bağlı. Her
 asansörün ayda bir bakımı, yılda bir periyodik kontrolü var. Bakımı TSE Hizmet Yeterlilik Belgesi olan bir firma,
-kontrolü belediyenin anlaştığı muayene kuruluşu yapıyor; Tuzla'da bu kuruluş AND Uluslararası Denetim. YK Asansör
+kontrolü belediyenin anlaştığı muayene kuruluşu yapıyor; Tuzla'da bu kuruluş AND Uluslararası Denetim. YKA Asansör
 olarak Sancaktepe merkezli ekibimizle Tuzla'nın her yerinde bakım, arıza, modernizasyon ve montaj yapıyoruz. Aşağıda
 ilçenin 2026 kontrol ücretleriyle birlikte bilmeniz gerekenleri topladık.
 
@@ -86,7 +86,7 @@ asansörü en çok kullanan personelin bu eğitime katılmasını öneriyoruz. K
 değişimleri bakım ücretinin dışında kalıyor. Sözleşmede dikkat edilecek maddeleri "Asansör bakım sözleşmesi"
 yazımızda topladık.
 
-YK Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
+YKA Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
 
 ## Arıza ve mahsur kalma
 

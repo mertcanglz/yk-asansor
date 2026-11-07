@@ -1,7 +1,7 @@
 # Taslak: Asansör bakımını kim öder? (konu yazısı)
 
 > **Durum:** taslak, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
-> **Tür:** yer adı içermeyen konu yazısı · **Marka:** yalnızca "YK Asansör"
+> **Tür:** yer adı içermeyen konu yazısı · **Marka:** yalnızca "YKA Asansör"
 
 ## Yayın bilgileri
 
@@ -10,7 +10,7 @@
 | URL | `/blog/asansor-bakimini-kim-oder.html` |
 | Ana sorgu | asansör bakımını kim öder (90/ay) |
 | Yan sorgular | asansör masrafını kim öder (50), asansör aidatı kiracı mı ev sahibi mi, zemin kat asansör parası öder mi, asansör onarımını kim öder |
-| `<title>` (57) | `Asansör Bakımını Kim Öder? Kiracı, Ev Sahibi \| YK Asansör` |
+| `<title>` (58) | `Asansör Bakımını Kim Öder? Kiracı, Ev Sahibi \| YKA Asansör` |
 | Meta (124) | `Asansör bakım masrafını kim öder? Kat Mülkiyeti ve Borçlar Kanunu'na göre kiracı, ev sahibi ve zemin kat: 0 (543) 542 86 75.` |
 | H1 | Asansör bakımını kim öder? *Kat malikleri, kiracı ve ev sahibi* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |

@@ -1,7 +1,7 @@
 # Taslak: Ömerli asansör hizmetleri (semt yazısı)
 
 > **Durum:** taslak v3, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
-> **Bağlı olduğu ilçe yazısı:** `cekmekoy-asansor.md` · **Marka:** yalnızca "YK Asansör"
+> **Bağlı olduğu ilçe yazısı:** `cekmekoy-asansor.md` · **Marka:** yalnızca "YKA Asansör"
 > **v3 (24 Ekim 2026):** Tüm yer yazılarında ortak 12 başlığa getirildi; elektrik kesintisi ve villa asansörü ayrı bölümler
 > olmaktan çıkıp "binalar", "arıza" ve "modernizasyon" başlıklarının içine alındı; ayrı "öne çıkan konu" yok.
 
@@ -12,7 +12,7 @@
 | URL | `/blog/omerli-asansor.html` |
 | Ana sorgu | ömerli asansör |
 | Yan sorgular | ömerli asansör bakım, ömerli villa asansörü, ömerli asansör tamiri, ömerli asansör montaj |
-| `<title>` (55) | `Ömerli Asansör: Bakım, Montaj ve 7/24 Arıza \| YK Asansör` |
+| `<title>` (56) | `Ömerli Asansör: Bakım, Montaj ve 7/24 Arıza \| YKA Asansör` |
 | Meta (≈152) | `Çekmeköy Ömerli'de apartman ve villa asansörü bakımı, 7/24 arıza, montaj ve modernizasyon. Periyodik kontrol ve ücret: 0 (543) 542 86 75.` |
 | H1 | Ömerli'de asansör hizmetleri: *Bakım, arıza, montaj ve periyodik kontrol rehberi* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
@@ -25,7 +25,7 @@
 # Ömerli'de asansör hizmetleri: *Bakım, arıza, montaj ve periyodik kontrol rehberi*
 
 Ömerli, Çekmeköy'ün bilinen semtlerinden biri ve aynı adlı bir mahallesi; kentin geri kalanına göre daha seyrek
-yapılaşmış, müstakil evlerin ve villaların da bulunduğu bir yer. YK Asansör olarak Sancaktepe merkezli ekibimizle
+yapılaşmış, müstakil evlerin ve villaların da bulunduğu bir yer. YKA Asansör olarak Sancaktepe merkezli ekibimizle
 Ömerli'de apartman, iş yeri ve villa asansörlerinin bakımını, 7/24 arıza hizmetini, modernizasyonunu ve montajını
 yapıyoruz. Bu yazıda bir yöneticinin ya da ev sahibinin bilmesi gerekenleri sırayla anlattık.
 
@@ -71,7 +71,7 @@ ve alarm akülerini, kurtarma düzeneğini ve varsa otomatik kurtarmayı da deni
 yapmak yöneticinin, villalarda çoğu zaman ev sahibinin işi; bakımı yapan firmanın TSE Hizmet Yeterlilik Belgesi olmalı.
 Sözleşmede nelere bakılacağını "Asansör bakım sözleşmesi" yazımızda anlattık.
 
-YK Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
+YKA Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
 
 ## Arıza ve mahsur kalma
 

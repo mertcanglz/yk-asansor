@@ -1,4 +1,4 @@
-// YK Asansör — sayfa etkileşimleri (derleme yok, saf JS modülü)
+// YKA Asansör — sayfa etkileşimleri (derleme yok, saf JS modülü)
 import { baslat as telefonBaslat } from './telefon.js';
 
 /* Analiz kimlikleri: boşken GA ve Meta Pixel hiç yüklenmez (onay verilse bile) */
@@ -36,7 +36,7 @@ olc();
 
 /* ---------- Kalınan yer: sayfa yenilenince (F5) ya da geri tuşuyla dönülünce kaydırma konumu geri yüklenir ----------
    Tarayıcının kendi geri yüklemesi (özellikle Safari ve telefonda) sayfa düzeni oturmadan çalışıp konumu kaçırabiliyor;
-   konum oturum depolamasında (yk-konum) sayfa sayfa tutulur, düzen oturdukça yeniden uygulanır. Kullanıcı kaydırmaya
+   konum oturum depolamasında (yka-konum) sayfa sayfa tutulur, düzen oturdukça yeniden uygulanır. Kullanıcı kaydırmaya
    başlarsa bırakılır. Başka sayfadan bağlantıyla gelince sayfa her zamanki gibi baştan (ya da #bölümden) açılır.
    Geri tuşunda tarayıcı sayfayı çoğu zaman bellekten (bfcache) olduğu gibi getirir, kod yeniden çalışmaz; Safari bu durumda
    scrollRestoration 'manual' olduğu için sayfayı en başa alıyor. Bu yüzden pageshow (persisted) ile de geri yüklenir.
@@ -44,7 +44,7 @@ olc();
    (hero'nun başına) geri sektiriyor (WebKit hatası); geri yüklerken duraklar kapatılır (durak-yok), kullanıcı sayfaya
    dokununca yeniden açılır. O an bulunulan yer geçerli bir konum olduğu için sayfa kaymaz. */
 const Konum = (() => {
-  const ANAHTAR = 'yk-konum';
+  const ANAHTAR = 'yka-konum';
   const yol = location.pathname;
   let kayit = {};
   try { kayit = JSON.parse(sessionStorage.getItem(ANAHTAR) || '{}') || {}; } catch (e) { /* depolama kapalı olabilir */ }
@@ -376,7 +376,7 @@ const Asansor = (() => {
   }
   // çerez bildirimi ya da kampanya kartı açılıp kapanınca: yazının kayma geçişi (~0,45 sn) bitince yeni ölçek
   let yerT = 0;
-  d.addEventListener('yk:yerlesim', () => {
+  d.addEventListener('yka:yerlesim', () => {
     clearTimeout(yerT);
     yerT = setTimeout(() => { if (!genis) { hedefleriOlc(); uyan(); } }, 480);
   });
@@ -775,7 +775,7 @@ const Cerez = (() => {
   const SURE = 180 * 864e5;
   let secim = null;
   try {
-    const c = JSON.parse(localStorage.getItem('yk-cerez') || 'null');
+    const c = JSON.parse(localStorage.getItem('yka-cerez') || 'null');
     if (c && Date.now() - c.t < SURE) secim = c;
   } catch (e) { /* depolama kapalı olabilir */ }
   let geri = null;
@@ -790,12 +790,12 @@ const Cerez = (() => {
     h.dataset.ck = yeni;
     panel.hidden = yeni !== 'tercih';
     yerlestir();
-    d.dispatchEvent(new CustomEvent('yk:cerez'));
-    d.dispatchEvent(new CustomEvent('yk:yerlesim'));
+    d.dispatchEvent(new CustomEvent('yka:cerez'));
+    d.dispatchEvent(new CustomEvent('yka:yerlesim'));
   }
   function kaydet(a, m) {
     secim = { a, m, t: Date.now() };
-    try { localStorage.setItem('yk-cerez', JSON.stringify(secim)); } catch (e) { /* yoksay */ }
+    try { localStorage.setItem('yka-cerez', JSON.stringify(secim)); } catch (e) { /* yoksay */ }
     onayUygula(a, m);
     durum(kapaliDurum());
   }
@@ -838,7 +838,7 @@ const Kampanya = (() => {
   const wa = $('#wa');
   if (!kart || !etiket) return { guncelle() {} };
   let kapandi = false;
-  try { kapandi = sessionStorage.getItem('yk-kampanya') === 'kapali'; } catch (e) { /* yoksay */ }
+  try { kapandi = sessionStorage.getItem('yka-kampanya') === 'kapali'; } catch (e) { /* yoksay */ }
   let sabit = false, sabitP = 0, sonP = 0, ilk = true, olculdu = false;
   function guncelle(q = sonP) {
     sonP = q;
@@ -864,21 +864,21 @@ const Kampanya = (() => {
     }
     if (degisti) {
       h.dataset.kampanya = durum;
-      d.dispatchEvent(new CustomEvent('yk:yerlesim'));
+      d.dispatchEvent(new CustomEvent('yka:yerlesim'));
     }
     if (wa) wa.classList.toggle('wa--etiket', !etiket.hidden);
   }
   $('#promoKapat').addEventListener('click', () => {
     kapandi = true;
-    try { sessionStorage.setItem('yk-kampanya', 'kapali'); } catch (e) { /* yoksay */ }
+    try { sessionStorage.setItem('yka-kampanya', 'kapali'); } catch (e) { /* yoksay */ }
     guncelle();
   });
   etiket.addEventListener('click', () => { sabit = true; sabitP = sonP; guncelle(); });
-  d.addEventListener('yk:cerez', () => guncelle());
+  d.addEventListener('yka:cerez', () => guncelle());
   return { guncelle };
 })();
 
-/* ---------- "Neden YK Asansör": görünür oldukça zemin hafifçe kurumsal turuncuya ısınır ---------- */
+/* ---------- "Neden YKA Asansör": görünür oldukça zemin hafifçe kurumsal turuncuya ısınır ---------- */
 const Neden = (() => {
   const sec = $('#neden');
   if (!sec) return null;
@@ -947,7 +947,7 @@ addEventListener('resize', () => {
       if (Asansor) Asansor.yenidenOlc();
       if (Neden) Neden.olc();
     } else {
-      d.dispatchEvent(new CustomEvent('yk:yerlesim')); // ör. adres çubuğu açıldı/kapandı: yazı yeri değişti
+      d.dispatchEvent(new CustomEvent('yka:yerlesim')); // ör. adres çubuğu açıldı/kapandı: yazı yeri değişti
     }
     kaydirma();
   }, 120);
@@ -1301,7 +1301,7 @@ telefonBaslat();
       const bant = goster.closest('.il-harita');
       const f = d.createElement('iframe');
       f.src = 'https://www.google.com/maps?q=' + encodeURIComponent(goster.dataset.harita) + '&output=embed';
-      f.title = 'YK Asansör konumu (Google Haritalar)';
+      f.title = 'YKA Asansör konumu (Google Haritalar)';
       f.referrerPolicy = 'no-referrer-when-downgrade';
       f.allowFullscreen = true;
       bant.appendChild(f);

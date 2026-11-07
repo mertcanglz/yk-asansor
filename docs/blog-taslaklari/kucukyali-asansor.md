@@ -1,7 +1,7 @@
 # Taslak: Küçükyalı asansör hizmetleri (semt yazısı)
 
 > **Durum:** taslak v3, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
-> **Bağlı olduğu ilçe yazısı:** `maltepe-asansor.md` · **Marka:** yalnızca "YK Asansör"
+> **Bağlı olduğu ilçe yazısı:** `maltepe-asansor.md` · **Marka:** yalnızca "YKA Asansör"
 > **v3 (24 Ekim 2026):** Tüm yer yazılarında ortak 12 başlığa getirildi; kırmızı etiket ve mühür süreci ayrı bölümler
 > olmaktan çıkıp "Periyodik kontrol ve etiketler" başlığının içine alındı; ayrı "öne çıkan konu" yok.
 
@@ -12,7 +12,7 @@
 | URL | `/blog/kucukyali-asansor.html` |
 | Ana sorgu | küçükyalı asansör |
 | Yan sorgular | küçükyalı asansör bakım, küçükyalı asansör firması, küçükyalı asansör tamiri, küçükyalı asansör montaj |
-| `<title>` (57) | `Küçükyalı Asansör: Bakım, Montaj ve 7/24 Arıza \| YK Asansör` |
+| `<title>` (58) | `Küçükyalı Asansör: Bakım, Montaj ve 7/24 Arıza \| YKA Asansör` |
 | Meta (≈150) | `Maltepe Küçükyalı'da asansör bakımı, 7/24 arıza, montaj ve modernizasyon. Periyodik kontrol, etiketler ve bakım ücreti: 0 (543) 542 86 75.` |
 | H1 | Küçükyalı'da asansör hizmetleri: *Bakım, arıza, montaj ve periyodik kontrol rehberi* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
@@ -24,7 +24,7 @@
 
 # Küçükyalı'da asansör hizmetleri: *Bakım, arıza, montaj ve periyodik kontrol rehberi*
 
-Küçükyalı, Maltepe'nin bilinen semtlerinden biri ve aynı adlı bir mahallesi. YK Asansör olarak Sancaktepe merkezli
+Küçükyalı, Maltepe'nin bilinen semtlerinden biri ve aynı adlı bir mahallesi. YKA Asansör olarak Sancaktepe merkezli
 ekibimizle Küçükyalı'da aylık bakım, 7/24 arıza, modernizasyon ve montaj yapıyoruz. Bu yazıda bir yöneticinin bilmesi
 gerekenleri sırayla anlattık; periyodik kontrolden sonra en zor soru olan "Kırmızı etiket aldık, şimdi ne olacak?"
 sorusunun cevabı da etiketler başlığında.
@@ -66,7 +66,7 @@ olmalı. Her ay fren, halatlar, kapılar ve kilitler, güvenlik devreleri, kuman
 raylar yağlanıyor ve föy bırakılıyor. Föyde aynı eksik birkaç ay üst üste yazıyorsa, bu bir sonraki kontrolde etiket
 alacağınızın habercisi. Sözleşmeyi "Asansör bakım sözleşmesi" yazımızda anlattık.
 
-YK Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
+YKA Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
 
 ## Arıza ve mahsur kalma
 

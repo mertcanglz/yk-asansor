@@ -1,7 +1,7 @@
 # Taslak: Asansör kapısı (konu yazısı)
 
 > **Durum:** taslak, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
-> **Tür:** yer adı içermeyen konu yazısı · **Marka:** yalnızca "YK Asansör"
+> **Tür:** yer adı içermeyen konu yazısı · **Marka:** yalnızca "YKA Asansör"
 
 ## Yayın bilgileri
 
@@ -10,7 +10,7 @@
 | URL | `/blog/asansor-kapisi.html` |
 | Ana sorgu | asansör kapısı (1.000/ay) |
 | Yan sorgular | asansör kapısı kapanmıyor (110), asansör kapı arızası, asansör kapısı açılmıyor, otomatik asansör kapısı, asansör kabin kapısı |
-| `<title>` (59) | `Asansör Kapısı: Çeşitleri, Arızaları, Güvenlik \| YK Asansör` |
+| `<title>` (60) | `Asansör Kapısı: Çeşitleri, Arızaları, Güvenlik \| YKA Asansör` |
 | Meta (128) | `Asansör kapısı çeşitleri, kapı neden kapanmaz, hangi arıza tehlikelidir? Kat ve kabin kapısı, kilit, fotosel: 0 (543) 542 86 75.` |
 | H1 | Asansör kapısı: *Çeşitleri, sık görülen arızaları ve güvenlik* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |

@@ -1,7 +1,7 @@
 # Taslak: Kartal asansör hizmetleri (ilçe yazısı)
 
 > **Durum:** taslak, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 24 Ekim 2026
-> **Semt yazıları:** `yakacik-asansor.md`, `soganlik-asansor.md`, `dragos-asansor.md` · **Marka:** yalnızca "YK Asansör"
+> **Semt yazıları:** `yakacik-asansor.md`, `soganlik-asansor.md`, `dragos-asansor.md` · **Marka:** yalnızca "YKA Asansör"
 > **Yapı:** tüm yer yazılarında ortak 12 başlık (kullanıcı kararı, 24 Ekim 2026); ayrı "öne çıkan konu" yok.
 
 ## Yayın bilgileri
@@ -11,7 +11,7 @@
 | URL | `/blog/kartal-asansor.html` |
 | Ana sorgu | kartal asansör firmaları (110/ay), kartal asansör (70/ay) |
 | Yan sorgular | kartal asansör bakım, kartal asansör servisi, kartal asansör tamiri, kartal asansör montaj, kartal asansör periyodik kontrol |
-| `<title>` (55) | `Kartal Asansör: Bakım, Montaj ve 7/24 Arıza \| YK Asansör` |
+| `<title>` (56) | `Kartal Asansör: Bakım, Montaj ve 7/24 Arıza \| YKA Asansör` |
 | Meta (≈153) | `Kartal'da asansör bakımı, 7/24 arıza, montaj ve modernizasyon. Periyodik kontrolü kim yapar, 2026 ücreti ne kadar? Rehber ve teklif: 0 (543) 542 86 75.` |
 | H1 | Kartal'da asansör hizmetleri: *Bakımdan montaja bina yöneticisinin rehberi* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
@@ -26,7 +26,7 @@
 Kartal'da bir apartmanın ya da sitenin asansöründen sorumlu olan kişinin işi üç başlıkta toplanıyor: her ay bakım,
 yılda bir periyodik kontrol ve kontrolde çıkan eksiklerin süresinde giderilmesi. Bakımı TSE Hizmet Yeterlilik
 Belgesi olan bir firma yapıyor; kontrolü ise belediyenin anlaştığı muayene kuruluşu, Kartal'da Makina Mühendisleri
-Odası. YK Asansör olarak Sancaktepe merkezli ekibimizle Kartal'ın her yerinde bakım, arıza, modernizasyon ve montaj
+Odası. YKA Asansör olarak Sancaktepe merkezli ekibimizle Kartal'ın her yerinde bakım, arıza, modernizasyon ve montaj
 yapıyoruz. Bu yazıda yöneticinin bilmesi gerekenleri, Kartal Belediyesi'nin 2026 kontrol ücretleriyle birlikte
 topladık.
 
@@ -82,7 +82,7 @@ yazar; yönetim de bu föyleri kalıcı olarak saklar. Bakım firması yılda en
 kurtarma eğitimi verir. Kabin içi temizliği ve kabin, kat kapısı, motor gibi büyük parçaların değişimi bakım ücretine
 dahil değil; ayrıca fiyatlanır. Sözleşmede nelere bakılacağını "Asansör bakım sözleşmesi" yazımızda anlattık.
 
-YK Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
+YKA Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
 
 ## Arıza ve mahsur kalma
 

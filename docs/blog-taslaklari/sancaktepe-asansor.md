@@ -7,15 +7,14 @@
 > ifadeler ve gereksiz tablolar azaltıldı); semt yazılarıyla tekrar etmemek için ayrıntılar ilgili semt yazısına
 > bağlandı.
 >
-> **v2'de değişenler:** Yazı yalnızca bakımı değil, YK Asansör'ün Sancaktepe'de verdiği **tüm hizmetleri**
+> **v2'de değişenler:** Yazı yalnızca bakımı değil, YKA Asansör'ün Sancaktepe'de verdiği **tüm hizmetleri**
 > kapsayan ana yerel yazıya genişletildi (bakım, montaj, arıza, modernizasyon, periyodik kontrol ve yeşil
 > etiket, temizlik ve muayene, asansör sistemleri). Gerçek iş ve fotoğraf yer tutucuları kaldırıldı
 > (kullanıcı kararı: bloglarda iş görseli yok). Resmî bilgiler kaynağından doğrulandı (Bölüm "Doğrulama").
 >
 > **Kalan yer tutucu:** `[[İSTEĞE BAĞLI: …]]` → doldurulmazsa o cümle çıkarılır, metin yine tamamdır.
 >
-> **Marka adı:** Metinde marka yalnızca "YK Asansör" biçiminde geçiyor ve URL'de yok. Marka kesinleşince
-> tek bir bul-değiştir yeterli.
+> **Marka adı:** Metinde marka yalnızca "YKA Asansör" biçiminde geçiyor ve URL'de yok.
 
 ---
 
@@ -26,11 +25,11 @@
 | URL | `/blog/sancaktepe-asansor.html` |
 | Ana sorgu | sancaktepe asansör (firması / servisi) |
 | Yan sorgular | Aşağıdaki anahtar kelime haritasına bakın |
-| `<title>` (59 karakter) | `Sancaktepe Asansör Bakım, Montaj ve 7/24 Arıza \| YK Asansör` |
+| `<title>` (60 karakter) | `Sancaktepe Asansör Bakım, Montaj ve 7/24 Arıza \| YKA Asansör` |
 | Meta açıklama (≈152 karakter) | `Sancaktepe'de asansör bakımı, montajı, revizyonu ve 7/24 arıza servisi. Periyodik kontrol ve yeşil etiket hazırlığı için rehber: 0 (543) 542 86 75.` |
 | H1 | Sancaktepe'de asansör hizmetleri: *Bakımdan montaja bina yöneticisinin rehberi* |
 | Kategori (blog süzgeci) | Bakım |
-| Yazar kutusu | YK Asansör teknik ekibi · Kontrol eden: Ömürcan Altundaş, YK Asansör `[[İSTEĞE BAĞLI: unvan]]` |
+| Yazar kutusu | YKA Asansör teknik ekibi · Kontrol eden: Ömürcan Altundaş, YKA Asansör `[[İSTEĞE BAĞLI: unvan]]` |
 | Şema (JSON-LD) | `BlogPosting` (publisher → `#isletme`, `author`, `reviewedBy` yerine `contributor`: Ömürcan Altundaş, `datePublished`, `dateModified`), `BreadcrumbList`, `FAQPage` |
 | İç bağlantılar | 6 hizmet sayfası, asansör sistemleri sayfası, yeşil etiket sayfası, "Asansör etiket renkleri" ve "Asansör bakım ücreti" yazıları, teklif formu |
 | Görseller | İş fotoğrafı yok (kullanıcı kararı). Yalnızca kendi tasarımımız etiket renkleri infografiği; kapak görselsiz ve ortalı (onaylı şablon). |
@@ -63,7 +62,7 @@ hazırlandı. Yayından sonra Search Console verisiyle düzeltilir. Yer adı var
 Sancaktepe'de bir apartmanın, sitenin ya da iş yerinin asansöründen sorumluysanız yükünüz aslında üç işte
 toplanıyor: asansörün her ay bakımını yaptırmak, yılda bir periyodik kontrolden geçirmek ve kontrolde çıkan
 eksikleri zamanında gidermek. Bakımı TSE Hizmet Yeterlilik Belgesi olan bir firma yapıyor, kontrolü ise
-belediyenin anlaştığı muayene kuruluşu. Biz YK Asansör olarak Sancaktepe merkezli ekibimizle ilçenin her yerinde
+belediyenin anlaştığı muayene kuruluşu. Biz YKA Asansör olarak Sancaktepe merkezli ekibimizle ilçenin her yerinde
 çalışıyoruz; bu yazıda bir yöneticinin bilmesi gerekenleri, kendi sahamızda gördüklerimizle birlikte topladık.
 
 **Bu yazıda**
@@ -122,7 +121,7 @@ Bir sınırı baştan bilmekte fayda var: kabin içi temizliği, kabin, kat kap�
 değişimi bakım kapsamında değil, ayrıca fiyatlanıyor. Sözleşmede nelerin olması gerektiğini ve bakım firmasını
 nasıl değiştireceğinizi "Asansör bakım sözleşmesi" yazımızda ayrıntılı anlattık.
 
-YK Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
+YKA Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
 
 ## Arıza ve mahsur kalma
 

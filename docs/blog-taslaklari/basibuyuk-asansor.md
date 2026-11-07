@@ -1,7 +1,7 @@
 # Taslak: Başıbüyük asansör hizmetleri (semt yazısı)
 
 > **Durum:** taslak v3, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
-> **Bağlı olduğu ilçe yazısı:** `maltepe-asansor.md` · **Marka:** yalnızca "YK Asansör"
+> **Bağlı olduğu ilçe yazısı:** `maltepe-asansor.md` · **Marka:** yalnızca "YKA Asansör"
 > **v3 (24 Ekim 2026):** Tüm yer yazılarında ortak 12 başlığa getirildi; yeni binada asansör seçimi ayrı bölümler olmaktan
 > çıkıp "Yeni montaj" ve "Hangi sistem" başlıklarının içine alındı; ayrı "öne çıkan konu" yok.
 
@@ -12,7 +12,7 @@
 | URL | `/blog/basibuyuk-asansor.html` |
 | Ana sorgu | başıbüyük asansör |
 | Yan sorgular | başıbüyük asansör bakım, başıbüyük asansör firması, başıbüyük asansör montaj, başıbüyük asansör tamiri |
-| `<title>` (57) | `Başıbüyük Asansör: Bakım, Montaj ve 7/24 Arıza \| YK Asansör` |
+| `<title>` (58) | `Başıbüyük Asansör: Bakım, Montaj ve 7/24 Arıza \| YKA Asansör` |
 | Meta (≈150) | `Maltepe Başıbüyük'te asansör bakımı, 7/24 arıza, montaj ve modernizasyon. Periyodik kontrol, etiketler ve bakım ücreti: 0 (543) 542 86 75.` |
 | H1 | Başıbüyük'te asansör hizmetleri: *Bakım, arıza, montaj ve periyodik kontrol rehberi* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
@@ -24,7 +24,7 @@
 
 # Başıbüyük'te asansör hizmetleri: *Bakım, arıza, montaj ve periyodik kontrol rehberi*
 
-Başıbüyük, Maltepe'nin bilinen semtlerinden biri ve aynı adlı bir mahallesi. YK Asansör olarak Sancaktepe merkezli
+Başıbüyük, Maltepe'nin bilinen semtlerinden biri ve aynı adlı bir mahallesi. YKA Asansör olarak Sancaktepe merkezli
 ekibimizle Başıbüyük'te mevcut binaların asansörlerine aylık bakım, 7/24 arıza ve modernizasyon; yeni ve yenilenen
 binalara montaj hizmeti veriyoruz. Bu yazıda bir yöneticinin ya da kat malikinin bilmesi gerekenleri sırayla anlattık.
 
@@ -63,7 +63,7 @@ yapmak, bakımı yaptırmak ve ücretini ödemek yöneticinin işi ve bakımı y
 olmalı. Her ay güvenlik noktaları kontrol ediliyor, raylar yağlanıyor ve föy bırakılıyor. Yeni binada asansör hizmete
 girdiği gün bakım yükümlülüğü de başlıyor. Sözleşmeyi "Asansör bakım sözleşmesi" yazımızda anlattık.
 
-YK Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
+YKA Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
 
 ## Arıza ve mahsur kalma
 

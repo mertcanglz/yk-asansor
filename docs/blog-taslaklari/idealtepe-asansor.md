@@ -1,7 +1,7 @@
 # Taslak: İdealtepe asansör hizmetleri (semt yazısı)
 
 > **Durum:** taslak v3, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
-> **Bağlı olduğu ilçe yazısı:** `maltepe-asansor.md` · **Marka:** yalnızca "YK Asansör"
+> **Bağlı olduğu ilçe yazısı:** `maltepe-asansor.md` · **Marka:** yalnızca "YKA Asansör"
 > **v3 (24 Ekim 2026):** Tüm yer yazılarında ortak 12 başlığa getirildi; teklif karşılaştırma ayrı bölümler olmaktan
 > çıkıp "Bakım ücreti" ve "Firma seçerken" başlıklarının içine alındı; ayrı "öne çıkan konu" yok.
 
@@ -12,7 +12,7 @@
 | URL | `/blog/idealtepe-asansor.html` |
 | Ana sorgu | idealtepe asansör |
 | Yan sorgular | idealtepe asansör bakım, idealtepe asansör firması, idealtepe asansör tamiri, idealtepe asansör montaj |
-| `<title>` (57) | `İdealtepe Asansör: Bakım, Montaj ve 7/24 Arıza \| YK Asansör` |
+| `<title>` (58) | `İdealtepe Asansör: Bakım, Montaj ve 7/24 Arıza \| YKA Asansör` |
 | Meta (≈151) | `Maltepe İdealtepe'de asansör bakımı, 7/24 arıza, montaj ve modernizasyon. Periyodik kontrol, etiketler ve bakım ücreti: 0 (543) 542 86 75.` |
 | H1 | İdealtepe'de asansör hizmetleri: *Bakım, arıza, montaj ve periyodik kontrol rehberi* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
@@ -24,7 +24,7 @@
 
 # İdealtepe'de asansör hizmetleri: *Bakım, arıza, montaj ve periyodik kontrol rehberi*
 
-İdealtepe, Maltepe'nin bilinen semtlerinden biri ve aynı adlı bir mahallesi. YK Asansör olarak Sancaktepe merkezli
+İdealtepe, Maltepe'nin bilinen semtlerinden biri ve aynı adlı bir mahallesi. YKA Asansör olarak Sancaktepe merkezli
 ekibimizle İdealtepe'de aylık bakım, 7/24 arıza, modernizasyon ve montaj yapıyoruz. Bu yazıda bir yöneticinin bilmesi
 gerekenleri sırayla anlattık; bakım firması değiştirirken toplanan teklifleri nasıl karşılaştıracağınız da bakım
 ücreti başlığında.
@@ -64,7 +64,7 @@ olmalı. Her ay güvenlik noktaları kontrol ediliyor, raylar yağlanıyor ve f�
 parça değişimleri bakım ücretine dahil değil. Masrafın kat malikleri arasında paylaşımını "Asansör bakımını kim öder?"
 yazımızda, sözleşmede nelere bakılacağını "Asansör bakım sözleşmesi" yazımızda anlattık.
 
-YK Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
+YKA Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
 
 ## Arıza ve mahsur kalma
 

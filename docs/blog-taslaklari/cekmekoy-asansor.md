@@ -1,7 +1,7 @@
 # Taslak: Çekmeköy asansör hizmetleri (ilçe yazısı)
 
 > **Durum:** taslak v3, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
-> **Semt yazıları:** Taşdelen, Alemdağ, Ömerli · **Marka:** yalnızca "YK Asansör"
+> **Semt yazıları:** Taşdelen, Alemdağ, Ömerli · **Marka:** yalnızca "YKA Asansör"
 > **v3 (24 Ekim 2026):** Tüm yer yazılarında ortak 12 başlığa getirildi. Villa, engelli lifti ve çok bloklu site
 > bölümleri ayrı başlık olmaktan çıkıp "binalar", "aylık bakım" ve "hangi sistem" başlıklarının içine alındı.
 
@@ -12,7 +12,7 @@
 | URL | `/blog/cekmekoy-asansor.html` |
 | Ana sorgu | çekmeköy asansör (90/ay), çekmeköy asansör firmaları (50/ay) |
 | Yan sorgular | çekmeköy asansör bakım, çekmeköy asansör tamiri, çekmeköy asansör servisi, çekmeköy asansör montaj, villa asansörü |
-| `<title>` (58) | `Çekmeköy Asansör Firması: Bakım, Arıza, Montaj \| YK Asansör` |
+| `<title>` (59) | `Çekmeköy Asansör Firması: Bakım, Arıza, Montaj \| YKA Asansör` |
 | Meta (≈152) | `Çekmeköy'de apartman, site ve villa asansörleri için bakım, 7/24 arıza, montaj ve modernizasyon. Periyodik kontrol ve teklif: 0 (543) 542 86 75.` |
 | H1 | Çekmeköy'de asansör hizmetleri: *Bakımdan montaja bina yöneticisinin rehberi* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
@@ -27,7 +27,7 @@
 Çekmeköy'de bir sokakta on bloklu bir site, bir sonrakinde bahçeli müstakil evler görebilirsiniz. Asansörler de bu
 çeşitliliği yansıtıyor: sitelerde çok sayıda makine dairesiz asansör, apartmanlarda klasik asansörler, villalarda iki
 üç duraklı küçük asansörler ve liftler. Hangisi olursa olsun asansör ayda en az bir kez TSE Hizmet Yeterlilik Belgesi
-olan bir firmaca bakılmalı ve yılda bir periyodik kontrolden geçmeli; Çekmeköy'de bu kontrolü Akreditest yapıyor. YK
+olan bir firmaca bakılmalı ve yılda bir periyodik kontrolden geçmeli; Çekmeköy'de bu kontrolü Akreditest yapıyor. YKA
 Asansör olarak Sancaktepe merkezli ekibimizle Çekmeköy'ün her yerinde çalışıyoruz. Bu yazıda bakımdan montaja,
 etiketten ücrete kadar bilmeniz gerekenleri anlattık.
 
@@ -86,7 +86,7 @@ asansörsüz kalmasın. Tek bir sözleşme yapılabiliyor; sözleşme birden faz
 asansörün kimlik numarasının ve adresinin sözleşmede yer almasını istiyor.
 
 Sözleşmede nelere bakacağınızı "Asansör bakım sözleşmesi" yazımızda, masrafın kat malikleri arasında nasıl
-paylaşıldığını "Asansör bakımını kim öder?" yazımızda anlattık. YK Asansör bakım sözleşmelerinde ilk keşif ve 3 litre
+paylaşıldığını "Asansör bakımını kim öder?" yazımızda anlattık. YKA Asansör bakım sözleşmelerinde ilk keşif ve 3 litre
 ray yağı değişimi ücretsiz.
 
 ## Arıza ve mahsur kalma

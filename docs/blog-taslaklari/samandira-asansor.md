@@ -1,7 +1,7 @@
 # Taslak: Samandıra asansör hizmetleri (semt yazısı)
 
 > **Durum:** taslak v4, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
-> **Bağlı olduğu ilçe yazısı:** `sancaktepe-asansor.md` · **Marka:** yalnızca "YK Asansör"
+> **Bağlı olduğu ilçe yazısı:** `sancaktepe-asansor.md` · **Marka:** yalnızca "YKA Asansör"
 > **v4 (24 Ekim 2026):** Tüm yer yazılarında ortak 12 başlığa getirildi; periyodik kontrol hazırlığı ayrı bölümler olmaktan
 > çıkıp "Periyodik kontrol ve etiketler" başlığının içine alındı; ayrı "öne çıkan konu" yok.
 
@@ -12,7 +12,7 @@
 | URL | `/blog/samandira-asansor.html` |
 | Ana sorgu | samandıra asansör |
 | Yan sorgular | samandıra asansör bakım, samandıra asansör firması, samandıra asansör tamiri, samandıra asansör montaj, samandıra asansör periyodik kontrol |
-| `<title>` (56) | `Samandıra Asansör: Bakım, Montaj ve 7/24 Arıza \| YK Asansör` |
+| `<title>` (57) | `Samandıra Asansör: Bakım, Montaj ve 7/24 Arıza \| YKA Asansör` |
 | Meta (≈150) | `Sancaktepe Samandıra'da asansör bakımı, 7/24 arıza, montaj ve modernizasyon. Periyodik kontrol, etiketler ve bakım ücreti: 0 (543) 542 86 75.` |
 | H1 | Samandıra'da asansör hizmetleri: *Bakım, arıza, montaj ve periyodik kontrol rehberi* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
@@ -26,7 +26,7 @@
 
 Samandıra, Sancaktepe'nin en bilinen semtlerinden biri. Buradaki bir binanın asansöründen sorumluysanız düzenli
 yaptırmanız gereken iki şey var: her ay bakım ve yılda bir periyodik kontrol. Bakımı TSE Hizmet Yeterlilik Belgesi olan
-bir firma yapıyor; periyodik kontrolü ise Sancaktepe Belediyesi'nin anlaştığı muayene kuruluşu Royalcert. YK Asansör
+bir firma yapıyor; periyodik kontrolü ise Sancaktepe Belediyesi'nin anlaştığı muayene kuruluşu Royalcert. YKA Asansör
 olarak Sancaktepe merkezli ekibimizle Samandıra'da aylık bakım, 7/24 arıza, modernizasyon ve montaj yapıyoruz. Bu
 yazıda bir yöneticinin bilmesi gerekenleri sırayla anlattık.
 
@@ -70,7 +70,7 @@ yazdığımız bir föy bırakıyoruz. Föyleri yönetimin kalıcı olarak sakla
 
 Bakım için sözleşme yapmak, bakımı yaptırmak ve ücretini ödemek yöneticinin yükümlülüğü. Sözleşmede ücrete nelerin
 dahil olduğu, yedek parçanın nasıl fiyatlanacağı ve arıza çağrısında kime ulaşılacağı yazılı olmalı. Kabin içi temizliği
-ve büyük parça değişimleri bakım kapsamında değil. Ayrıntılar "Asansör bakım sözleşmesi" yazımızda. YK Asansör bakım
+ve büyük parça değişimleri bakım kapsamında değil. Ayrıntılar "Asansör bakım sözleşmesi" yazımızda. YKA Asansör bakım
 sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
 
 ## Arıza ve mahsur kalma

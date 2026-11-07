@@ -1,7 +1,7 @@
 # Taslak: Dragos asansör hizmetleri (semt yazısı)
 
 > **Durum:** taslak, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 24 Ekim 2026
-> **Bağlı olduğu ilçe yazısı:** `kartal-asansor.md` · **Marka:** yalnızca "YK Asansör"
+> **Bağlı olduğu ilçe yazısı:** `kartal-asansor.md` · **Marka:** yalnızca "YKA Asansör"
 > **Yapı:** tüm yer yazılarında ortak 12 başlık; ayrı "öne çıkan konu" yok.
 
 ## Yayın bilgileri
@@ -11,7 +11,7 @@
 | URL | `/blog/dragos-asansor.html` |
 | Ana sorgu | dragos asansör (10/ay) |
 | Yan sorgular | dragos asansör bakım, orhantepe asansör, kartal dragos asansör servisi, dragos villa asansörü |
-| `<title>` (55) | `Dragos Asansör: Bakım, Montaj ve 7/24 Arıza \| YK Asansör` |
+| `<title>` (56) | `Dragos Asansör: Bakım, Montaj ve 7/24 Arıza \| YKA Asansör` |
 | Meta (≈152) | `Kartal Dragos ve Orhantepe'de asansör bakımı, 7/24 arıza, montaj ve modernizasyon. Periyodik kontrol ve bakım ücreti rehberi: 0 (543) 542 86 75.` |
 | H1 | Dragos'ta asansör hizmetleri: *Bakım, arıza, montaj ve periyodik kontrol rehberi* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
@@ -25,7 +25,7 @@
 
 Dragos, Kartal'ın Orhantepe Mahallesi'nde, Marmara kıyısındaki eski sayfiye semtlerinden biri. Bugün müstakil
 evler, apartmanlar ve yeni konut projeleri bir arada. Hangisinde oturursanız oturun, asansörün aylık bakımı, yıllık
-periyodik kontrolü ve arızası aynı kurallara bağlı. YK Asansör olarak Sancaktepe merkezli ekibimizle Dragos'ta
+periyodik kontrolü ve arızası aynı kurallara bağlı. YKA Asansör olarak Sancaktepe merkezli ekibimizle Dragos'ta
 bakım, 7/24 arıza, modernizasyon ve montaj yapıyoruz. Bu yazıda bilmeniz gerekenleri topladık.
 
 **Bu yazıda**
@@ -74,7 +74,7 @@ bu kişi ev sahibi. Bakım firmasının TSE Hizmet Yeterlilik Belgesi olmalı. H
 Kurtarma eğitimi yılda en az bir kez veriliyor; villada bu eğitimi ev halkının alması önemli. Sözleşme ayrıntıları
 "Asansör bakım sözleşmesi" yazımızda.
 
-YK Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
+YKA Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
 
 ## Arıza ve mahsur kalma
 

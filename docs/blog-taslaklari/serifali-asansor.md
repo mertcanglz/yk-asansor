@@ -1,7 +1,7 @@
 # Taslak: Şerifali asansör hizmetleri (semt yazısı)
 
 > **Durum:** taslak v4, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
-> **Bağlı olduğu ilçe yazısı:** `umraniye-asansor.md` · **Marka:** yalnızca "YK Asansör"
+> **Bağlı olduğu ilçe yazısı:** `umraniye-asansor.md` · **Marka:** yalnızca "YKA Asansör"
 > **v4 (24 Ekim 2026):** Tüm yer yazılarında ortak 12 başlığa getirildi; makine dairesiz ve dişlisiz sistemler ayrı
 > bölümler olmaktan çıkıp "binalar", "aylık bakım" ve "hangi sistem" başlıklarının içine alındı; ayrı "öne çıkan konu" yok.
 
@@ -12,7 +12,7 @@
 | URL | `/blog/serifali-asansor.html` |
 | Ana sorgu | şerifali asansör |
 | Yan sorgular | şerifali asansör bakım, şerifali asansör firması, şerifali asansör tamiri, şerifali asansör montaj |
-| `<title>` (57) | `Şerifali Asansör: Bakım, Montaj ve 7/24 Arıza \| YK Asansör` |
+| `<title>` (58) | `Şerifali Asansör: Bakım, Montaj ve 7/24 Arıza \| YKA Asansör` |
 | Meta (≈150) | `Ümraniye Şerifali'de asansör bakımı, 7/24 arıza, montaj ve modernizasyon. Periyodik kontrol, etiketler ve bakım ücreti: 0 (543) 542 86 75.` |
 | H1 | Şerifali'de asansör hizmetleri: *Bakım, arıza, montaj ve periyodik kontrol rehberi* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
@@ -25,7 +25,7 @@
 # Şerifali'de asansör hizmetleri: *Bakım, arıza, montaj ve periyodik kontrol rehberi*
 
 Ümraniye'nin Şerifali Mahallesi'nde iş yerleriyle konutlar bir arada. Buradaki bir binanın asansöründen sorumluysanız
-yapmanız gerekenler belli: her ay bakım, yılda bir periyodik kontrol ve eksiklerin süresinde giderilmesi. YK Asansör
+yapmanız gerekenler belli: her ay bakım, yılda bir periyodik kontrol ve eksiklerin süresinde giderilmesi. YKA Asansör
 olarak Sancaktepe merkezli ekibimizle Şerifali'de aylık bakım, 7/24 arıza, modernizasyon ve montaj yapıyoruz. Bu
 yazıda bir yöneticinin bilmesi gerekenleri sırayla anlattık.
 
@@ -78,7 +78,7 @@ ulaşılabiliyor; yönetmelik, asansöre cihazla ya da şifreleme gibi yöntemle
 sözleşmede yer almasını istiyor. Bu bilgi yoksa firmayı değiştirdiğinizde yeni firma asansörün ayarlarına
 ulaşamayabilir. Ayrıntılar "Asansör bakım sözleşmesi" yazımızda.
 
-YK Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
+YKA Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
 
 ## Arıza ve mahsur kalma
 

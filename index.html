@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>YK Asansör: Asansör Montaj, Bakım ve Modernizasyon</title>
-  <meta name="description" content="YK Asansör; asansör montajı, aylık bakım sözleşmesi, modernizasyon ve 7/24 arıza servisi veren asansör firmasıdır. Ücretsiz keşif için hemen arayın.">
+  <title>YKA Asansör: Asansör Montaj, Bakım ve Modernizasyon</title>
+  <meta name="description" content="YKA Asansör; asansör montajı, aylık bakım sözleşmesi, modernizasyon ve 7/24 arıza servisi veren asansör firmasıdır. Ücretsiz keşif için hemen arayın.">
   <meta name="theme-color" content="#0e1012">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="tr_TR">
-  <meta property="og:site_name" content="YK Asansör">
-  <meta property="og:title" content="YK Asansör: Asansör Montaj, Bakım ve Modernizasyon">
+  <meta property="og:site_name" content="YKA Asansör">
+  <meta property="og:title" content="YKA Asansör: Asansör Montaj, Bakım ve Modernizasyon">
   <meta property="og:description" content="Asansör montajı, aylık bakım sözleşmesi, modernizasyon ve 7/24 arıza servisi. Ücretsiz keşif için hemen arayın.">
   <!-- TODO (alan adı kesinleşince): <link rel="canonical" href="https://ALANADI/">, og:url ve og:image (1200×630, mutlak adres) -->
   <link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -20,9 +20,9 @@
     (function (d, w) {
       var h = d.documentElement, c = null;
       h.className += ' js' + ((w.innerWidth >= 1024 ? w.innerWidth > w.innerHeight : w.innerWidth >= 760 && w.innerWidth > w.innerHeight * 1.1) ? ' hw' : '');
-      try { c = JSON.parse(localStorage.getItem('yk-cerez') || 'null'); } catch (e) {}
+      try { c = JSON.parse(localStorage.getItem('yka-cerez') || 'null'); } catch (e) {}
       var ck = c && Date.now() - c.t < 15552e6 ? (c.a && c.m ? 'tam' : 'secildi') : 'yok', kp = ck !== 'yok';
-      try { if (sessionStorage.getItem('yk-kampanya') === 'kapali') kp = false; } catch (e) {}
+      try { if (sessionStorage.getItem('yka-kampanya') === 'kapali') kp = false; } catch (e) {}
       h.setAttribute('data-ck', ck);
       h.setAttribute('data-kampanya', kp ? 'acik' : 'kapali'); /* telefonda kampanya kartına yer ayrılır */
     })(document, window);
@@ -39,7 +39,7 @@
       {
         "@type": "LocalBusiness",
         "@id": "#isletme",
-        "name": "YK Asansör",
+        "name": "YKA Asansör",
         "description": "Asansör montajı, aylık periyodik bakım, modernizasyon ve revizyon, 7/24 arıza servisi, temizlik ve muayene, yeşil etiket hazırlığı.",
         "telephone": "+90 543 542 86 75",
         "address": {
@@ -61,7 +61,7 @@
       {
         "@type": "WebSite",
         "@id": "#site",
-        "name": "YK Asansör",
+        "name": "YKA Asansör",
         "inLanguage": "tr-TR",
         "publisher": { "@id": "#isletme" }
       },
@@ -69,13 +69,13 @@
         "@type": "FAQPage",
         "@id": "#sss",
         "mainEntity": [
-          { "@type": "Question", "name": "YK Asansör hangi bölgelerde hizmet veriyor?", "acceptedAnswer": { "@type": "Answer", "text": "YK Asansör, Türkiye genelinde asansör montajı, bakımı, modernizasyonu ve arıza servisi hizmeti verir. Keşif ve arıza müdahalesini kendi ekibimizle yapıyoruz." } },
-          { "@type": "Question", "name": "Asansör bakımı ne sıklıkla yapılmalı?", "acceptedAnswer": { "@type": "Answer", "text": "Yönetmeliğe göre asansörlerin bakımı en az ayda bir kez yapılmalıdır. YK Asansör, sözleşmeli binalarda aylık periyodik bakım yapar ve her bakımın yazılı raporunu bina yönetimine iletir." } },
-          { "@type": "Question", "name": "Asansörüm sarı veya kırmızı etiket aldı, ne yapmalıyım?", "acceptedAnswer": { "@type": "Answer", "text": "Sarı etikette eksiklerin en fazla 120 gün, kırmızı etikette en fazla 60 gün içinde giderilmesi gerekir; süre dolarsa asansör mühürlenir. YK Asansör muayene raporunu inceler, eksikleri süre dolmadan giderir ve asansörü takip kontrolüne hazırlar." } },
-          { "@type": "Question", "name": "Asansör arızasında ne kadar sürede geliyorsunuz?", "acceptedAnswer": { "@type": "Answer", "text": "YK Asansör'ün arıza hattı 7/24 açıktır. Ortalama müdahale süremiz 30 dakikadır; asansörde mahsur kalma durumlarına öncelik verilir." } },
-          { "@type": "Question", "name": "Keşif ücretli mi?", "acceptedAnswer": { "@type": "Answer", "text": "Hayır. YK Asansör bakım sözleşmelerinde ilk keşfi ücretsiz yapar; sözleşmenin ilk ayında 3 litre ray yağı değişimi de ücretsizdir." } },
-          { "@type": "Question", "name": "Hangi asansör sistemlerini kuruyorsunuz?", "acceptedAnswer": { "@type": "Answer", "text": "YK Asansör dişlili, dişlisiz, hidrolik ve makine dairesiz asansörlerin yanı sıra yük ve araç asansörü, villa ve engelli lifti ile yürüyen merdiven montajı yapar; projelendirmeden tescile kadar süreci yürütür." } },
-          { "@type": "Question", "name": "Eski asansörüm modernize edilebilir mi?", "acceptedAnswer": { "@type": "Answer", "text": "Evet. Kumanda panosu, motor, kapı ve kabin yenilenerek eski asansörler güncel yönetmeliğe uygun hâle getirilebilir. YK Asansör ücretsiz keşifle hangi parçaların yenilenmesi gerektiğini raporlar." } }
+          { "@type": "Question", "name": "YKA Asansör hangi bölgelerde hizmet veriyor?", "acceptedAnswer": { "@type": "Answer", "text": "YKA Asansör, Türkiye genelinde asansör montajı, bakımı, modernizasyonu ve arıza servisi hizmeti verir. Keşif ve arıza müdahalesini kendi ekibimizle yapıyoruz." } },
+          { "@type": "Question", "name": "Asansör bakımı ne sıklıkla yapılmalı?", "acceptedAnswer": { "@type": "Answer", "text": "Yönetmeliğe göre asansörlerin bakımı en az ayda bir kez yapılmalıdır. YKA Asansör, sözleşmeli binalarda aylık periyodik bakım yapar ve her bakımın yazılı raporunu bina yönetimine iletir." } },
+          { "@type": "Question", "name": "Asansörüm sarı veya kırmızı etiket aldı, ne yapmalıyım?", "acceptedAnswer": { "@type": "Answer", "text": "Sarı etikette eksiklerin en fazla 120 gün, kırmızı etikette en fazla 60 gün içinde giderilmesi gerekir; süre dolarsa asansör mühürlenir. YKA Asansör muayene raporunu inceler, eksikleri süre dolmadan giderir ve asansörü takip kontrolüne hazırlar." } },
+          { "@type": "Question", "name": "Asansör arızasında ne kadar sürede geliyorsunuz?", "acceptedAnswer": { "@type": "Answer", "text": "YKA Asansör'ün arıza hattı 7/24 açıktır. Ortalama müdahale süremiz 30 dakikadır; asansörde mahsur kalma durumlarına öncelik verilir." } },
+          { "@type": "Question", "name": "Keşif ücretli mi?", "acceptedAnswer": { "@type": "Answer", "text": "Hayır. YKA Asansör bakım sözleşmelerinde ilk keşfi ücretsiz yapar; sözleşmenin ilk ayında 3 litre ray yağı değişimi de ücretsizdir." } },
+          { "@type": "Question", "name": "Hangi asansör sistemlerini kuruyorsunuz?", "acceptedAnswer": { "@type": "Answer", "text": "YKA Asansör dişlili, dişlisiz, hidrolik ve makine dairesiz asansörlerin yanı sıra yük ve araç asansörü, villa ve engelli lifti ile yürüyen merdiven montajı yapar; projelendirmeden tescile kadar süreci yürütür." } },
+          { "@type": "Question", "name": "Eski asansörüm modernize edilebilir mi?", "acceptedAnswer": { "@type": "Answer", "text": "Evet. Kumanda panosu, motor, kapı ve kabin yenilenerek eski asansörler güncel yönetmeliğe uygun hâle getirilebilir. YKA Asansör ücretsiz keşifle hangi parçaların yenilenmesi gerektiğini raporlar." } }
         ]
       }
     ]
@@ -125,7 +125,7 @@
 
   <!-- Header: masaüstünde logo + menü + telefon + teklif; telefonda logo + arama + menü düğmesi -->
   <header class="hdr" id="hdr">
-    <a class="logo" href="./" aria-label="YK Asansör ana sayfa"><b>YK</b><span>Asansör</span></a>
+    <a class="logo" href="./" aria-label="YKA Asansör ana sayfa"><b>YKA</b><span>Asansör</span></a>
     <nav class="hdr__nav" aria-label="Ana menü">
       <div class="hdr__item" data-menu="hiz">
         <a class="pill" href="hizmetler.html" aria-haspopup="true" aria-expanded="false" aria-controls="mega-hiz">Hizmetler<svg class="pill__chev" width="12" height="12" stroke-width="2.6" aria-hidden="true"><use href="#i-down"/></svg></a>
@@ -181,7 +181,7 @@
   <!-- Telefon menüsü: tam ekran, gruplar açılır -->
   <div class="m-nav" id="mnav" role="dialog" aria-modal="true" aria-label="Menü" hidden>
     <div class="m-nav__top">
-      <a class="logo" href="./" aria-label="YK Asansör ana sayfa"><b>YK</b><span>Asansör</span></a>
+      <a class="logo" href="./" aria-label="YKA Asansör ana sayfa"><b>YKA</b><span>Asansör</span></a>
       <button type="button" class="ib" id="navKapat" aria-label="Menüyü kapat"><svg width="18" height="18" stroke-width="2" aria-hidden="true"><use href="#i-x"/></svg></button>
     </div>
     <nav class="m-nav__body" aria-label="Ana menü (telefon)">
@@ -214,7 +214,7 @@
       <div class="m-nav__cta">
         <span class="m-nav__t"><span>Doğru hizmeti</span><em>birlikte planlayalım.</em></span>
         <a class="btn-d btn-d--blk" href="#teklif">Ücretsiz keşif isteyin<svg width="14" height="14" stroke-width="2.8" aria-hidden="true"><use href="#i-chev"/></svg></a>
-        <a class="yk-line" href="tel:+905435428675"><span class="yk-line__ic"><svg width="18" height="18" stroke-width="1.8" aria-hidden="true"><use href="#i-tel"/></svg></span><span class="yk-line__tx"><span>7/24 arıza hattı</span><b>0 (543) 542 86 75</b></span></a>
+        <a class="yka-line" href="tel:+905435428675"><span class="yka-line__ic"><svg width="18" height="18" stroke-width="1.8" aria-hidden="true"><use href="#i-tel"/></svg></span><span class="yka-line__tx"><span>7/24 arıza hattı</span><b>0 (543) 542 86 75</b></span></a>
       </div>
     </nav>
   </div>
@@ -250,13 +250,13 @@
         <div class="hx__col">
           <section class="hx-sec hx-sec--1 is-on" aria-labelledby="hx-h1">
             <div class="hx-in">
-              <span class="hx-k hx-k--d">YK Asansör</span>
+              <span class="hx-k hx-k--d">YKA Asansör</span>
               <h1 class="hx-h" id="hx-h1"><span>Montajdan bakıma,</span><span>asansörünüz için</span><em class="t-or">güvenilir çözüm ortağınız.</em></h1>
               <p class="hx-p hx-p--opt">Yeni asansör projelerinden mevcut asansörlerin bakım, revizyon ve arıza süreçlerine kadar tüm hizmetleri yönetmeliklere uygun ve şeffaf biçimde yürütüyoruz.</p>
               <div class="hx-act">
                 <a class="btn-a" href="#teklif">Ücretsiz keşif isteyin<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.25"/><path d="M8.25 13.25L12 9.5l3.75 3.75"/></svg></a>
                 <a class="hx-call" href="tel:+905435428675" aria-label="7/24 arıza hattını arayın: 0 (543) 542 86 75"><svg width="22" height="22" stroke-width="1.8" aria-hidden="true"><use href="#i-tel"/></svg></a>
-                <a class="yk-line yk-line--hero" href="tel:+905435428675"><span class="yk-line__ic"><svg width="20" height="20" stroke-width="1.8" aria-hidden="true"><use href="#i-tel"/></svg></span><span class="yk-line__tx"><span>7/24 arıza hattı</span><b>0 (543) 542 86 75</b></span></a>
+                <a class="yka-line yka-line--hero" href="tel:+905435428675"><span class="yka-line__ic"><svg width="20" height="20" stroke-width="1.8" aria-hidden="true"><use href="#i-tel"/></svg></span><span class="yka-line__tx"><span>7/24 arıza hattı</span><b>0 (543) 542 86 75</b></span></a>
               </div>
             </div>
           </section>
@@ -272,7 +272,7 @@
                 <li><a class="svc" href="asansor-ariza-servisi.html"><span class="svc__no">04</span><span class="svc__t"><span class="svc__n">7/24 arıza servisi</span><span class="svc__d">Asansörde kalma ve acil müdahale</span></span><svg class="svc__chev" width="16" height="16" stroke-width="2" aria-hidden="true"><use href="#i-chev"/></svg></a></li>
                 <li><a class="svc" href="asansor-temizlik-muayene.html"><span class="svc__no">05</span><span class="svc__t"><span class="svc__n">Temizlik ve muayene</span><span class="svc__d">Kuyu, kabin ve makine dairesi</span></span><svg class="svc__chev" width="16" height="16" stroke-width="2" aria-hidden="true"><use href="#i-chev"/></svg></a></li>
               </ol>
-              <a class="yk-link" href="hizmetler.html"><span>Tüm hizmetleri inceleyin</span><svg width="16" height="16" stroke-width="1.6" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <a class="yka-link" href="hizmetler.html"><span>Tüm hizmetleri inceleyin</span><svg width="16" height="16" stroke-width="1.6" aria-hidden="true"><use href="#i-arrow"/></svg></a>
             </div>
           </section>
 
@@ -289,7 +289,7 @@
               </ul>
               <div class="hx-act hx-act--3">
                 <a class="btn-a btn-a--blk" href="https://wa.me/905435428675" target="_blank" rel="noopener">Muayene raporunu gönderin<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.25"/><path d="M8.25 13.25L12 9.5l3.75 3.75"/></svg></a>
-                <a class="yk-link" href="#etiket"><span>Etiketler ne anlama gelir?</span><svg width="14" height="14" stroke-width="2.8" aria-hidden="true"><use href="#i-chev"/></svg></a>
+                <a class="yka-link" href="#etiket"><span>Etiketler ne anlama gelir?</span><svg width="14" height="14" stroke-width="2.8" aria-hidden="true"><use href="#i-chev"/></svg></a>
               </div>
             </div>
           </section>
@@ -342,11 +342,11 @@
       </div>
     </section>
 
-    <!-- Neden YK Asansör: kaydırdıkça zemin hafifçe kurumsal turuncuya ısınır -->
+    <!-- Neden YKA Asansör: kaydırdıkça zemin hafifçe kurumsal turuncuya ısınır -->
     <section class="sec sec--neden" id="neden" aria-labelledby="neden-baslik">
       <div class="in neden">
         <div class="head rv">
-          <span class="kick">Neden YK Asansör</span>
+          <span class="kick">Neden YKA Asansör</span>
           <h2 class="h2 neden__h" id="neden-baslik"><span>Güvenle çalışan</span><em>asansörün dört şartı.</em></h2>
         </div>
         <ul class="whyg rv-st">
@@ -386,7 +386,7 @@
                 <div class="lp__f"><dt><svg width="20" height="20" viewBox="0 0 24 24" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Eksik giderme süresi</dt><dd class="lp__dl">Eksik yok</dd></div>
                 <div class="lp__f"><dt><svg width="20" height="20" viewBox="0 0 24 24" stroke-width="1.7" aria-hidden="true"><path d="M12 3.5l9.5 16.5h-19z"/><path d="M12 10v4.5M12 17.2v.1"/></svg>Korumak için</dt><dd><span class="d">Etiketin korunması için aylık bakımın düzenli yapılması gerekir.</span><span class="m">Aylık bakım düzenli sürmeli</span></dd></div>
               </dl>
-              <div class="lp__yk"><span class="lp__yk-ic"><svg width="18" height="18" viewBox="0 0 24 24" stroke-width="1.8" aria-hidden="true"><path d="M12 3l7 3v5.5c0 4.6-3 8.1-7 9.5-4-1.4-7-4.9-7-9.5V6z"/><path d="M9 12l2.2 2.2L15.2 10"/></svg></span><span class="lp__yk-k">YK Asansör ne yapar?</span><span class="lp__yk-t">Aylık periyodik bakımla asansörünüzü bir sonraki yıllık kontrole hazır tutarız.</span><a class="lp__cta" href="#teklif">Bakım teklifi alın<svg width="12" height="12" stroke-width="2.6" aria-hidden="true"><use href="#i-chev"/></svg></a></div>
+              <div class="lp__yka"><span class="lp__yka-ic"><svg width="18" height="18" viewBox="0 0 24 24" stroke-width="1.8" aria-hidden="true"><path d="M12 3l7 3v5.5c0 4.6-3 8.1-7 9.5-4-1.4-7-4.9-7-9.5V6z"/><path d="M9 12l2.2 2.2L15.2 10"/></svg></span><span class="lp__yka-k">YKA Asansör ne yapar?</span><span class="lp__yka-t">Aylık periyodik bakımla asansörünüzü bir sonraki yıllık kontrole hazır tutarız.</span><a class="lp__cta" href="#teklif">Bakım teklifi alın<svg width="12" height="12" stroke-width="2.6" aria-hidden="true"><use href="#i-chev"/></svg></a></div>
             </div>
             <div class="lp" id="lp-mavi" data-etiket="mavi" style="--c:#2c6db3;--ink:#fff;--tone:#2c6db3;--tint:#e8f0f9;--rule:rgba(255,255,255,.45)" hidden>
               <div class="lp__tag" aria-hidden="true"><span class="lp__tag-k"><span><span class="d">ASANSÖR </span>PERİYODİK KONTROL</span><span class="d">BİLGİ ETİKETİ</span></span><span class="lp__tag-st">HAFİF KUSURLU</span><span class="lp__tag-rows"><span>Kontrol tarihi <span>__ / __ / ____</span></span><span>Sonraki kontrol <span>__ / __ / ____</span></span><span>Muayene kuruluşu<i></i></span></span></div>
@@ -396,7 +396,7 @@
                 <div class="lp__f"><dt><svg width="20" height="20" viewBox="0 0 24 24" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Eksik giderme süresi</dt><dd class="lp__dl"><span class="d">Bir sonraki periyodik kontrole kadar</span><span class="m">Sonraki yıllık kontrole kadar</span></dd></div>
                 <div class="lp__f"><dt><svg width="20" height="20" viewBox="0 0 24 24" stroke-width="1.7" aria-hidden="true"><path d="M12 3.5l9.5 16.5h-19z"/><path d="M12 10v4.5M12 17.2v.1"/></svg>Giderilmezse</dt><dd><span class="d">Giderilmeyen uygunsuzluklar bir sonraki kontrolde yeniden raporlanır.</span><span class="m">Sonraki kontrolde yeniden yazılır</span></dd></div>
               </dl>
-              <div class="lp__yk"><span class="lp__yk-ic"><svg width="18" height="18" viewBox="0 0 24 24" stroke-width="1.8" aria-hidden="true"><path d="M12 3l7 3v5.5c0 4.6-3 8.1-7 9.5-4-1.4-7-4.9-7-9.5V6z"/><path d="M9 12l2.2 2.2L15.2 10"/></svg></span><span class="lp__yk-k">YK Asansör ne yapar?</span><span class="lp__yk-t">Rapordaki maddeleri inceleyip eksikleri bir sonraki kontrolden önce gideririz.</span><a class="lp__cta" href="https://wa.me/905435428675" target="_blank" rel="noopener">Raporu WhatsApp’tan gönderin<svg width="12" height="12" stroke-width="2.6" aria-hidden="true"><use href="#i-chev"/></svg></a></div>
+              <div class="lp__yka"><span class="lp__yka-ic"><svg width="18" height="18" viewBox="0 0 24 24" stroke-width="1.8" aria-hidden="true"><path d="M12 3l7 3v5.5c0 4.6-3 8.1-7 9.5-4-1.4-7-4.9-7-9.5V6z"/><path d="M9 12l2.2 2.2L15.2 10"/></svg></span><span class="lp__yka-k">YKA Asansör ne yapar?</span><span class="lp__yka-t">Rapordaki maddeleri inceleyip eksikleri bir sonraki kontrolden önce gideririz.</span><a class="lp__cta" href="https://wa.me/905435428675" target="_blank" rel="noopener">Raporu WhatsApp’tan gönderin<svg width="12" height="12" stroke-width="2.6" aria-hidden="true"><use href="#i-chev"/></svg></a></div>
             </div>
             <div class="lp" id="lp-sari" data-etiket="sari" style="--c:#f0c22e;--ink:#14181c;--tone:#8a6800;--tint:#fdf4d6;--rule:rgba(20,24,28,.35)">
               <div class="lp__tag" aria-hidden="true"><span class="lp__tag-k"><span><span class="d">ASANSÖR </span>PERİYODİK KONTROL</span><span class="d">BİLGİ ETİKETİ</span></span><span class="lp__tag-st">KUSURLU</span><span class="lp__tag-rows"><span>Kontrol tarihi <span>__ / __ / ____</span></span><span>Sonraki kontrol <span>__ / __ / ____</span></span><span>Muayene kuruluşu<i></i></span></span></div>
@@ -406,7 +406,7 @@
                 <div class="lp__f"><dt><svg width="20" height="20" viewBox="0 0 24 24" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Eksik giderme süresi</dt><dd class="lp__dl">En fazla 120 gün</dd></div>
                 <div class="lp__f"><dt><svg width="20" height="20" viewBox="0 0 24 24" stroke-width="1.7" aria-hidden="true"><path d="M12 3.5l9.5 16.5h-19z"/><path d="M12 10v4.5M12 17.2v.1"/></svg>Süre dolarsa</dt><dd><span class="d">Süre içinde giderilmezse asansörün elektriği kesilip mühürlenerek hizmetten men edilir.</span><span class="m">Asansör mühürlenir</span></dd></div>
               </dl>
-              <div class="lp__yk"><span class="lp__yk-ic"><svg width="18" height="18" viewBox="0 0 24 24" stroke-width="1.8" aria-hidden="true"><path d="M12 3l7 3v5.5c0 4.6-3 8.1-7 9.5-4-1.4-7-4.9-7-9.5V6z"/><path d="M9 12l2.2 2.2L15.2 10"/></svg></span><span class="lp__yk-k">YK Asansör ne yapar?</span><span class="lp__yk-t">Eksik listesini çıkarır, revizyonu süre dolmadan tamamlar ve asansörü takip kontrolüne hazırlarız.</span><a class="lp__cta" href="https://wa.me/905435428675" target="_blank" rel="noopener">Raporu WhatsApp’tan gönderin<svg width="12" height="12" stroke-width="2.6" aria-hidden="true"><use href="#i-chev"/></svg></a></div>
+              <div class="lp__yka"><span class="lp__yka-ic"><svg width="18" height="18" viewBox="0 0 24 24" stroke-width="1.8" aria-hidden="true"><path d="M12 3l7 3v5.5c0 4.6-3 8.1-7 9.5-4-1.4-7-4.9-7-9.5V6z"/><path d="M9 12l2.2 2.2L15.2 10"/></svg></span><span class="lp__yka-k">YKA Asansör ne yapar?</span><span class="lp__yka-t">Eksik listesini çıkarır, revizyonu süre dolmadan tamamlar ve asansörü takip kontrolüne hazırlarız.</span><a class="lp__cta" href="https://wa.me/905435428675" target="_blank" rel="noopener">Raporu WhatsApp’tan gönderin<svg width="12" height="12" stroke-width="2.6" aria-hidden="true"><use href="#i-chev"/></svg></a></div>
             </div>
             <div class="lp" id="lp-kirmizi" data-etiket="kirmizi" style="--c:#cf3a30;--ink:#fff;--tone:#b3261e;--tint:#fbe8e6;--rule:rgba(255,255,255,.45)" hidden>
               <div class="lp__tag" aria-hidden="true"><span class="lp__tag-k"><span><span class="d">ASANSÖR </span>PERİYODİK KONTROL</span><span class="d">BİLGİ ETİKETİ</span></span><span class="lp__tag-st lp__tag-st--sm">GÜVENSİZ</span><span class="lp__tag-rows"><span>Kontrol tarihi <span>__ / __ / ____</span></span><span>Sonraki kontrol <span>__ / __ / ____</span></span><span>Muayene kuruluşu<i></i></span></span></div>
@@ -416,7 +416,7 @@
                 <div class="lp__f"><dt><svg width="20" height="20" viewBox="0 0 24 24" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Eksik giderme süresi</dt><dd class="lp__dl">En fazla 60 gün</dd></div>
                 <div class="lp__f"><dt><svg width="20" height="20" viewBox="0 0 24 24" stroke-width="1.7" aria-hidden="true"><path d="M12 3.5l9.5 16.5h-19z"/><path d="M12 10v4.5M12 17.2v.1"/></svg>Süre dolarsa</dt><dd><span class="d">Süre içinde güvenli hale getirilmezse idare asansörün elektriğini keserek mühürler.</span><span class="m">Asansör mühürlenir</span></dd></div>
               </dl>
-              <div class="lp__yk"><span class="lp__yk-ic"><svg width="18" height="18" viewBox="0 0 24 24" stroke-width="1.8" aria-hidden="true"><path d="M12 3l7 3v5.5c0 4.6-3 8.1-7 9.5-4-1.4-7-4.9-7-9.5V6z"/><path d="M9 12l2.2 2.2L15.2 10"/></svg></span><span class="lp__yk-k">YK Asansör ne yapar?</span><span class="lp__yk-t">Acil keşifle güvenlik eksiklerini önceliklendirir, asansörü en kısa sürede güvenli hale getiririz.</span><a class="lp__cta" href="https://wa.me/905435428675" target="_blank" rel="noopener">Acil keşif için yazın<svg width="12" height="12" stroke-width="2.6" aria-hidden="true"><use href="#i-chev"/></svg></a></div>
+              <div class="lp__yka"><span class="lp__yka-ic"><svg width="18" height="18" viewBox="0 0 24 24" stroke-width="1.8" aria-hidden="true"><path d="M12 3l7 3v5.5c0 4.6-3 8.1-7 9.5-4-1.4-7-4.9-7-9.5V6z"/><path d="M9 12l2.2 2.2L15.2 10"/></svg></span><span class="lp__yka-k">YKA Asansör ne yapar?</span><span class="lp__yka-t">Acil keşifle güvenlik eksiklerini önceliklendirir, asansörü en kısa sürede güvenli hale getiririz.</span><a class="lp__cta" href="https://wa.me/905435428675" target="_blank" rel="noopener">Acil keşif için yazın<svg width="12" height="12" stroke-width="2.6" aria-hidden="true"><use href="#i-chev"/></svg></a></div>
             </div>
           </div>
         </div>
@@ -433,7 +433,7 @@
     </section>
 
     <!-- Rakamlar: ince koyu şerit -->
-    <section class="sec sec--rakam" aria-label="YK Asansör rakamlarla">
+    <section class="sec sec--rakam" aria-label="YKA Asansör rakamlarla">
       <ul class="stats rv-st">
         <li class="stat"><span class="stat__n"><span class="stat__v" data-n="10">10</span><span class="stat__u"><span class="stat__p">+</span> yıl</span></span><span class="stat__t">Ekibimizin sektör tecrübesi</span></li>
         <li class="stat stat--mid"><span class="stat__n"><span class="stat__v" data-n="30">30</span><span class="stat__u"> dk</span></span><span class="stat__t">Ortalama arıza müdahale süresi</span></li>
@@ -504,7 +504,7 @@
           <div class="blog__nav">
             <button type="button" class="rail-btn" data-yon="-1" aria-label="Önceki yazılar" aria-controls="blogRay"><svg width="16" height="16" stroke-width="2.4" aria-hidden="true"><use href="#i-chev-l"/></svg></button>
             <button type="button" class="rail-btn" data-yon="1" aria-label="Sonraki yazılar" aria-controls="blogRay"><svg width="16" height="16" stroke-width="2.4" aria-hidden="true"><use href="#i-chev"/></svg></button>
-            <a class="yk-link yk-link--dark" href="blog.html"><span>Tüm yazılar</span><svg width="14" height="14" stroke-width="2.8" aria-hidden="true"><use href="#i-chev"/></svg></a>
+            <a class="yka-link yka-link--dark" href="blog.html"><span>Tüm yazılar</span><svg width="14" height="14" stroke-width="2.8" aria-hidden="true"><use href="#i-chev"/></svg></a>
           </div>
         </div>
         <ul class="rail posts rv rv--side" id="blogRay" aria-label="Blog yazıları">
@@ -535,13 +535,13 @@
         </div>
         <a class="btn-d sss__cta" href="https://wa.me/905435428675" target="_blank" rel="noopener">WhatsApp'tan sorun<svg width="14" height="14" stroke-width="2.8" aria-hidden="true"><use href="#i-chev"/></svg></a>
         <div class="faqs rv rv--d2">
-          <details class="faq" name="sss"><summary><h3>YK Asansör hangi bölgelerde hizmet veriyor?</h3><svg class="faq__ic" width="18" height="18" stroke-width="2" aria-hidden="true"><use href="#i-plus"/></svg></summary><div class="faq__a"><p>YK Asansör, Türkiye genelinde asansör montajı, bakımı, modernizasyonu ve arıza servisi hizmeti verir. Keşif ve arıza müdahalesini kendi ekibimizle yapıyoruz.</p></div></details>
-          <details class="faq" name="sss"><summary><h3>Asansör bakımı ne sıklıkla yapılmalı?</h3><svg class="faq__ic" width="18" height="18" stroke-width="2" aria-hidden="true"><use href="#i-plus"/></svg></summary><div class="faq__a"><p>Yönetmeliğe göre asansörlerin bakımı en az ayda bir kez yapılmalıdır. YK Asansör, sözleşmeli binalarda aylık periyodik bakım yapar ve her bakımın yazılı raporunu bina yönetimine iletir.</p></div></details>
-          <details class="faq" name="sss"><summary><h3>Asansörüm sarı veya kırmızı etiket aldı, ne yapmalıyım?</h3><svg class="faq__ic" width="18" height="18" stroke-width="2" aria-hidden="true"><use href="#i-plus"/></svg></summary><div class="faq__a"><p>Sarı etikette eksiklerin en fazla 120 gün, kırmızı etikette en fazla 60 gün içinde giderilmesi gerekir; süre dolarsa asansör mühürlenir. YK Asansör muayene raporunu inceler, eksikleri süre dolmadan giderir ve asansörü takip kontrolüne hazırlar.</p></div></details>
-          <details class="faq" name="sss"><summary><h3>Asansör arızasında ne kadar sürede geliyorsunuz?</h3><svg class="faq__ic" width="18" height="18" stroke-width="2" aria-hidden="true"><use href="#i-plus"/></svg></summary><div class="faq__a"><p>YK Asansör'ün arıza hattı 7/24 açıktır. Ortalama müdahale süremiz 30 dakikadır; asansörde mahsur kalma durumlarına öncelik verilir.</p></div></details>
-          <details class="faq" name="sss"><summary><h3>Keşif ücretli mi?</h3><svg class="faq__ic" width="18" height="18" stroke-width="2" aria-hidden="true"><use href="#i-plus"/></svg></summary><div class="faq__a"><p>Hayır. YK Asansör bakım sözleşmelerinde ilk keşfi ücretsiz yapar; sözleşmenin ilk ayında 3 litre ray yağı değişimi de ücretsizdir.</p></div></details>
-          <details class="faq" name="sss"><summary><h3>Hangi asansör sistemlerini kuruyorsunuz?</h3><svg class="faq__ic" width="18" height="18" stroke-width="2" aria-hidden="true"><use href="#i-plus"/></svg></summary><div class="faq__a"><p>YK Asansör dişlili, dişlisiz, hidrolik ve makine dairesiz asansörlerin yanı sıra yük ve araç asansörü, villa ve engelli lifti ile yürüyen merdiven montajı yapar; projelendirmeden tescile kadar süreci yürütür.</p></div></details>
-          <details class="faq" name="sss"><summary><h3>Eski asansörüm modernize edilebilir mi?</h3><svg class="faq__ic" width="18" height="18" stroke-width="2" aria-hidden="true"><use href="#i-plus"/></svg></summary><div class="faq__a"><p>Evet. Kumanda panosu, motor, kapı ve kabin yenilenerek eski asansörler güncel yönetmeliğe uygun hâle getirilebilir. YK Asansör ücretsiz keşifle hangi parçaların yenilenmesi gerektiğini raporlar.</p></div></details>
+          <details class="faq" name="sss"><summary><h3>YKA Asansör hangi bölgelerde hizmet veriyor?</h3><svg class="faq__ic" width="18" height="18" stroke-width="2" aria-hidden="true"><use href="#i-plus"/></svg></summary><div class="faq__a"><p>YKA Asansör, Türkiye genelinde asansör montajı, bakımı, modernizasyonu ve arıza servisi hizmeti verir. Keşif ve arıza müdahalesini kendi ekibimizle yapıyoruz.</p></div></details>
+          <details class="faq" name="sss"><summary><h3>Asansör bakımı ne sıklıkla yapılmalı?</h3><svg class="faq__ic" width="18" height="18" stroke-width="2" aria-hidden="true"><use href="#i-plus"/></svg></summary><div class="faq__a"><p>Yönetmeliğe göre asansörlerin bakımı en az ayda bir kez yapılmalıdır. YKA Asansör, sözleşmeli binalarda aylık periyodik bakım yapar ve her bakımın yazılı raporunu bina yönetimine iletir.</p></div></details>
+          <details class="faq" name="sss"><summary><h3>Asansörüm sarı veya kırmızı etiket aldı, ne yapmalıyım?</h3><svg class="faq__ic" width="18" height="18" stroke-width="2" aria-hidden="true"><use href="#i-plus"/></svg></summary><div class="faq__a"><p>Sarı etikette eksiklerin en fazla 120 gün, kırmızı etikette en fazla 60 gün içinde giderilmesi gerekir; süre dolarsa asansör mühürlenir. YKA Asansör muayene raporunu inceler, eksikleri süre dolmadan giderir ve asansörü takip kontrolüne hazırlar.</p></div></details>
+          <details class="faq" name="sss"><summary><h3>Asansör arızasında ne kadar sürede geliyorsunuz?</h3><svg class="faq__ic" width="18" height="18" stroke-width="2" aria-hidden="true"><use href="#i-plus"/></svg></summary><div class="faq__a"><p>YKA Asansör'ün arıza hattı 7/24 açıktır. Ortalama müdahale süremiz 30 dakikadır; asansörde mahsur kalma durumlarına öncelik verilir.</p></div></details>
+          <details class="faq" name="sss"><summary><h3>Keşif ücretli mi?</h3><svg class="faq__ic" width="18" height="18" stroke-width="2" aria-hidden="true"><use href="#i-plus"/></svg></summary><div class="faq__a"><p>Hayır. YKA Asansör bakım sözleşmelerinde ilk keşfi ücretsiz yapar; sözleşmenin ilk ayında 3 litre ray yağı değişimi de ücretsizdir.</p></div></details>
+          <details class="faq" name="sss"><summary><h3>Hangi asansör sistemlerini kuruyorsunuz?</h3><svg class="faq__ic" width="18" height="18" stroke-width="2" aria-hidden="true"><use href="#i-plus"/></svg></summary><div class="faq__a"><p>YKA Asansör dişlili, dişlisiz, hidrolik ve makine dairesiz asansörlerin yanı sıra yük ve araç asansörü, villa ve engelli lifti ile yürüyen merdiven montajı yapar; projelendirmeden tescile kadar süreci yürütür.</p></div></details>
+          <details class="faq" name="sss"><summary><h3>Eski asansörüm modernize edilebilir mi?</h3><svg class="faq__ic" width="18" height="18" stroke-width="2" aria-hidden="true"><use href="#i-plus"/></svg></summary><div class="faq__a"><p>Evet. Kumanda panosu, motor, kapı ve kabin yenilenerek eski asansörler güncel yönetmeliğe uygun hâle getirilebilir. YKA Asansör ücretsiz keşifle hangi parçaların yenilenmesi gerektiğini raporlar.</p></div></details>
         </div>
       </div>
     </section>
@@ -594,11 +594,11 @@
         <button type="button" data-cerez-ac>Çerez tercihleri</button>
       </nav>
       <div class="ft__bar">
-        <span class="ft__copy"><span class="logo logo--sm"><b>YK</b><span>Asansör</span></span><span>© <span id="yil">2026</span> Tüm hakları saklıdır.</span></span>
+        <span class="ft__copy"><span class="logo logo--sm"><b>YKA</b><span>Asansör</span></span><span>© <span id="yil">2026</span> Tüm hakları saklıdır.</span></span>
         <nav class="soc" aria-label="Sosyal medya hesaplarımız">
-          <a href="[INSTAGRAM]" target="_blank" rel="noopener" aria-label="YK Asansör Instagram hesabı (yeni sekmede açılır)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg></a>
-          <a href="[FACEBOOK]" target="_blank" rel="noopener" aria-label="YK Asansör Facebook hesabı (yeni sekmede açılır)"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H7.9v3h2.6V21z"/></svg></a>
-          <a href="[LINKEDIN]" target="_blank" rel="noopener" aria-label="YK Asansör LinkedIn hesabı (yeni sekmede açılır)"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.9 8.9H3.6V20h3.3zM5.25 3.5a1.9 1.9 0 1 0 0 3.8 1.9 1.9 0 0 0 0-3.8zM20.4 13.6c0-3-1.6-4.9-4.2-4.9-1.6 0-2.6.8-3.1 1.6V8.9H9.9V20h3.3v-5.7c0-1.5.6-2.6 2-2.6s1.9 1 1.9 2.6V20h3.3z"/></svg></a>
+          <a href="[INSTAGRAM]" target="_blank" rel="noopener" aria-label="YKA Asansör Instagram hesabı (yeni sekmede açılır)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="[FACEBOOK]" target="_blank" rel="noopener" aria-label="YKA Asansör Facebook hesabı (yeni sekmede açılır)"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H7.9v3h2.6V21z"/></svg></a>
+          <a href="[LINKEDIN]" target="_blank" rel="noopener" aria-label="YKA Asansör LinkedIn hesabı (yeni sekmede açılır)"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.9 8.9H3.6V20h3.3zM5.25 3.5a1.9 1.9 0 1 0 0 3.8 1.9 1.9 0 0 0 0-3.8zM20.4 13.6c0-3-1.6-4.9-4.2-4.9-1.6 0-2.6.8-3.1 1.6V8.9H9.9V20h3.3v-5.7c0-1.5.6-2.6 2-2.6s1.9 1 1.9 2.6V20h3.3z"/></svg></a>
         </nav>
       </div>
     </div>

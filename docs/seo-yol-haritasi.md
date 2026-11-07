@@ -1,4 +1,4 @@
-# YK Asansör: SEO ve yerel görünürlük yol haritası
+# YKA Asansör: SEO ve yerel görünürlük yol haritası
 
 Hazırlanma: 18 Ekim 2026. Güncelleme: 18 Ekim 2026 (Chrome ile rakip incelemesi).
 Durum: **taslak, kullanıcı onayı bekliyor.**
@@ -9,7 +9,7 @@ yapay zekâ asistanlarında üst sıralara çıkması için yapılacak işleri �
 
 > **Yöntem notu:** İlk taslak bulut oturumundan, yalnızca web aramasıyla hazırlandı. 18 Ekim 2026'da
 > masaüstü oturumundan Chrome ile Google Haritalar (20 arama), Google arama sonuçları, 17 rakip site
-> ve YK Asansör'ün Google profili doğrudan incelendi. Ayrıntılar ve tablolar:
+> ve YKA Asansör'ün Google profili doğrudan incelendi. Ayrıntılar ve tablolar:
 > [`docs/rakip-inceleme.md`](rakip-inceleme.md). Bu belgedeki rakip ve harita bilgileri ona göre güncellendi.
 
 ---
@@ -20,7 +20,7 @@ yapay zekâ asistanlarında üst sıralara çıkması için yapılacak işleri �
    İşletme Profili (birincil kategori, eksiksiz bilgi, açık/kapalı saatleri) ve **yorumlar**
    belirliyor. Web sitesi bunu destekler ama tek başına yetmez. Profil ve yorum işi siteyi
    beklemeden **bugün** başlayabilir.
-   **Mevcut durum (18 Ekim 2026):** YK Asansör Sancaktepe ve Samandıra harita aramalarının 10'unun
+   **Mevcut durum (18 Ekim 2026):** YKA Asansör Sancaktepe ve Samandıra harita aramalarının 10'unun
    7'sinde ilk 5'te; Google'da "sancaktepe asansör bakım/firması" yerel 3'lü paketinde 3. sırada.
    Montaj aramalarında, Sultanbeyli'de ve ilçesiz genel aramalarda görünmüyor. Profilde web sitesi
    yok, saatler her gün 09:00–17:00, 15 yorum (rakip liderlerde 65–73).
@@ -31,7 +31,7 @@ yapay zekâ asistanlarında üst sıralara çıkması için yapılacak işleri �
 3. **Bilgi aramalarında** (etiket renkleri, bakım ücretleri, kırmızı etiket, sonradan asansör)
    rehber siteleri ve firma blogları var ama derinlik ve güncellik eksik. Doğru, kaynaklı ve
    yönetmeliğe dayalı yazılar hem trafik hem güven getirir.
-4. **Marka adı ve alan adı kesinleşmeden** dizin kayıtları açılmamalı. Ad, adres ve telefon
+4. **Alan adı kesinleşmeden** dizin kayıtları açılmamalı (marka adı 7 Kasım 2026'da YKA Asansör oldu). Ad, adres ve telefon
    (NAP) her yerde birebir aynı olmalı; sonradan değiştirmek emek ister ve sıralamayı bozar.
 5. Teknik SEO (hız, yapılandırılmış veri, site haritası, temiz başlıklar) kodlama sırasında
    baştan doğru kurulursa sonradan düzeltme gerekmez. Bunun için Bölüm 5'teki kontrol
@@ -46,7 +46,7 @@ yapay zekâ asistanlarında üst sıralara çıkması için yapılacak işleri �
 | # | Gereken | Neden |
 |---|---------|-------|
 | 1 | **Kesin marka adı ve alan adı** (ör. `markaadi.com.tr`, ek olarak `.com` yönlendirme) | Başlıklar, yapılandırılmış veri, Google profili ve tüm dizin kayıtları buna bağlı. Alan adı anahtar kelime içermek zorunda değil; marka adı daha iyi. `.com.tr` 2022'den beri belgesiz alınabiliyor. |
-| 2 | **Google İşletme Profili'ne yönetici erişimi.** Kararlar verildi (18 Ekim 2026): hizmet 7/24, profil "24 saat açık" yapılacak; resmî Instagram `@ykasansorr` (marka adı kesinleşince değişebilir). | Profilin durumu görüldü (rakip-inceleme.md, Bölüm 5): kategori doğru, adres ve telefon doğru; web sitesi yok, saatler 09–17 ve Instagram'daki "7/24" ile çelişiyor. Ben düzenleyemem ama adım adım tarif ederim. |
+| 2 | **Google İşletme Profili'ne yönetici erişimi.** Kararlar verildi (18 Ekim 2026): hizmet 7/24, profil "24 saat açık" yapılacak; profil adı "YKA Asansör" yapılacak; resmî Instagram `@ykasansorr` (marka değiştiği için kullanıcı adı da değişebilir). | Profilin durumu görüldü (rakip-inceleme.md, Bölüm 5): kategori doğru, adres ve telefon doğru; web sitesi yok, saatler 09–17 ve Instagram'daki "7/24" ile çelişiyor. Ben düzenleyemem ama adım adım tarif ederim. |
 | 3 | **Belgeler:** TSE Hizmet Yeterlilik Belgesi (TS 12255), varsa ISO 9001 ve CE belgeleri, ticaret unvanı, kuruluş yılı | Yönetmelik bakım firmasında TS 12255 kapsamında TSE HYB arıyor. Sitede belge numarasıyla göstermek en güçlü güven sinyali (E-E-A-T). Yasal metinlerde de unvan gerekli. |
 | 4 | **Gerçek fotoğraflar:** bitmiş montajlar, öncesi/sonrası modernizasyonlar, ekip, servis aracı, ofis | Hizmet, sistem ve yerel blog sayfalarının "özgün" sayılması bunlara dayanıyor. Telefonla çekilmiş net fotoğraflar yeter. Mümkünse hangi semtte çekildiğini not et. |
 | 5 | **Referans işler:** 5–10 proje (semt, bina tipi, yapılan iş, yıl). Müşteri izin verirse kısa yorum | Yerel blog yazıları ve olası bir "Projeler" sayfası için. |
@@ -91,7 +91,7 @@ Tam tablo (title, meta, H1, şema, fotoğraf, belge, hız, mobil): rakip-incelem
 | Ayta Asansör | 5,0 (2) | Açılmıyor | 10 | Az yorumla 1. sıralar: yakınlık etkisi. |
 | Lineer Asansör | 5,0 (10) | Var | 9 | |
 | Vega Asansör | 4,4 (14) | Yok | 8 | |
-| **YK Asansör** | **5,0 (15)** | **Yok** | **7** | Sancaktepe ve Samandıra'da; montaj, Sultanbeyli ve ilçesiz aramalarda yok. |
+| **YKA Asansör** | **5,0 (15)** | **Yok** | **7** | Sancaktepe ve Samandıra'da; montaj, Sultanbeyli ve ilçesiz aramalarda yok. |
 | Güneş Asansör | 5,0 (5) | Var | 5 | Montaj ve Samandıra'da güçlü. Doğrudan rakip. |
 | "Asansör bakım ve arıza servisi", Özkoçsan, Teknotek | 5,0 (31) · 5,0 (35) · 5,0 (73) | Yalnız Teknotek | Sultanbeyli'de | Sultanbeyli haritasını yerel firmalar tutuyor. |
 | Enes Asansör Mühendislik | 4,3 (24) | Var | Reklam | 20 aramanın 20'sinde reklam. |
@@ -161,15 +161,15 @@ düzeltilecek.
 
 | Sayfa (öneri URL) | Ana sorgu | Yan sorgular | Öneri `<title>` (≤ 60 karakter) |
 |---|---|---|---|
-| Ana sayfa `/` | asansör firması | asansör bakım ve montaj, asansör servisi | `YK Asansör: Asansör Montaj, Bakım ve Modernizasyon` |
-| Hizmetler `hizmetler.html` | asansör hizmetleri | asansör bakım onarım montaj | `Asansör Hizmetleri: Montaj, Bakım, Arıza \| YK Asansör` |
-| Yeni montaj `asansor-montaji.html` | asansör montajı | asansör yaptırmak, yeni asansör fiyatları, asansör projelendirme | `Asansör Montajı ve Projelendirme \| YK Asansör` |
-| Periyodik bakım `asansor-bakimi.html` | asansör bakımı | asansör bakım sözleşmesi, aylık asansör bakımı, asansör bakım firması | `Asansör Bakımı ve Aylık Bakım Sözleşmesi \| YK Asansör` |
-| Modernizasyon `asansor-modernizasyonu.html` | asansör modernizasyonu | asansör revizyonu, eski asansör yenileme | `Asansör Modernizasyonu ve Revizyon \| YK Asansör` |
-| 7/24 arıza `asansor-ariza-servisi.html` | asansör arıza servisi | asansör tamiri, acil asansör servisi, 7/24 asansör | `7/24 Asansör Arıza Servisi ve Tamir \| YK Asansör` |
-| Temizlik ve muayene `asansor-temizlik-muayene.html` | asansör kuyu temizliği | asansör muayene hazırlığı | `Asansör Temizlik ve Muayene Servisi \| YK Asansör` |
-| Yeşil etiket `yesil-etiket.html` | yeşil etiket asansör | asansör etiket renkleri, kırmızı/mavi/sarı etiket, A tipi muayene | `Asansör Yeşil Etiket: Muayene Hazırlığı \| YK Asansör` |
-| Sistemler `asansor-sistemleri.html` | asansör çeşitleri | asansör sistemleri | `Asansör Sistemleri ve Çeşitleri \| YK Asansör` |
+| Ana sayfa `/` | asansör firması | asansör bakım ve montaj, asansör servisi | `YKA Asansör: Asansör Montaj, Bakım ve Modernizasyon` |
+| Hizmetler `hizmetler.html` | asansör hizmetleri | asansör bakım onarım montaj | `Asansör Hizmetleri: Montaj, Bakım, Arıza \| YKA Asansör` |
+| Yeni montaj `asansor-montaji.html` | asansör montajı | asansör yaptırmak, yeni asansör fiyatları, asansör projelendirme | `Asansör Montajı ve Projelendirme \| YKA Asansör` |
+| Periyodik bakım `asansor-bakimi.html` | asansör bakımı | asansör bakım sözleşmesi, aylık asansör bakımı, asansör bakım firması | `Asansör Bakımı ve Aylık Bakım Sözleşmesi \| YKA Asansör` |
+| Modernizasyon `asansor-modernizasyonu.html` | asansör modernizasyonu | asansör revizyonu, eski asansör yenileme | `Asansör Modernizasyonu ve Revizyon \| YKA Asansör` |
+| 7/24 arıza `asansor-ariza-servisi.html` | asansör arıza servisi | asansör tamiri, acil asansör servisi, 7/24 asansör | `7/24 Asansör Arıza Servisi ve Tamir \| YKA Asansör` |
+| Temizlik ve muayene `asansor-temizlik-muayene.html` | asansör kuyu temizliği | asansör muayene hazırlığı | `Asansör Temizlik ve Muayene Servisi \| YKA Asansör` |
+| Yeşil etiket `yesil-etiket.html` | yeşil etiket asansör | asansör etiket renkleri, kırmızı/mavi/sarı etiket, A tipi muayene | `Asansör Yeşil Etiket: Muayene Hazırlığı \| YKA Asansör` |
+| Sistemler `asansor-sistemleri.html` | asansör çeşitleri | asansör sistemleri | `Asansör Sistemleri ve Çeşitleri \| YKA Asansör` |
 | Dişlili `dislili-asansor.html` | dişlili asansör | redüktörlü asansör | |
 | Dişlisiz `dislisiz-asansor.html` | dişlisiz asansör | gearless asansör | |
 | Hidrolik `hidrolik-asansor.html` | hidrolik asansör | hidrolik asansör fiyatları | |
@@ -179,7 +179,7 @@ düzeltilecek.
 | Yürüyen merdiven `yuruyen-merdiven.html` | yürüyen merdiven bakımı | yürüyen merdiven servisi | |
 | Makine dairesiz `makine-dairesiz-asansor.html` | makine dairesiz asansör | MRL asansör | |
 | Teklif formu `teklif-formu.html` | (reklam açılış sayfası, `noindex` önerilir) | | |
-| İletişim `iletisim.html` | YK Asansör iletişim | (marka araması) | |
+| İletişim `iletisim.html` | YKA Asansör iletişim | (marka araması) | |
 
 **URL kuralları:** Türkçe karakter yok (`ş→s`, `ı→i`…), küçük harf, tire ile ayrılmış, kısa.
 URL'ler yayından sonra **değiştirilmez**; değişirse 301 yönlendirme gerekir.
@@ -291,7 +291,7 @@ geçirilir (fiyat ve yönetmelik değişiklikleri). Başlıktaki yıl güncellen
 ### 4.3 Her blog yazısının kalite kuralları
 
 - **İlk paragraf soruyu doğrudan yanıtlar** (2–3 cümle). Yapay zekâ özetleri ve Google bu kısmı alıntılar.
-- **Yazar kutusu:** "YK Asansör teknik ekibi" · Kontrol eden: Ömürcan Altundaş.
+- **Yazar kutusu:** "YKA Asansör teknik ekibi" · Kontrol eden: Ömürcan Altundaş.
 - **Yayın ve güncelleme tarihi** görünür. `BlogPosting` verisinde `datePublished` ve `dateModified`.
 - **Kaynak:** Yönetmelik ve belediye duyurularına bağlantı (mevzuat.gov.tr, Resmî Gazete).
 - **Görsel:** İş fotoğrafı kullanılmaz (kullanıcı kararı). Gerekirse kendi tasarımımız infografik veya şema (ör. etiket renkleri); stok fotoğraf tek başına kullanılmaz.
@@ -405,7 +405,7 @@ Uzman anketlerinde (Whitespark 2026) harita sıralamasında en etkili sinyaller 
 
 - **Birincil kategori:** Asansör servisi (İngilizce panelde "Elevator service"). Paneldeki
   Türkçe adı kontrol et. Ek kategoriler yalnızca gerçekten yapılan işler için seçilir.
-- **İşletme adı:** Gerçek marka adı. Anahtar kelime eklemek ("YK Asansör Sancaktepe Bakım")
+- **İşletme adı:** Gerçek marka adı. Anahtar kelime eklemek ("YKA Asansör Sancaktepe Bakım")
   Google kurallarına aykırı ve profil askıya alınabilir.
 - **Adres:** Müşteri ofise gelebiliyorsa adres görünür kalsın. Ayrıca **hizmet bölgeleri**
   eklensin (en fazla 20): Sancaktepe, Sultanbeyli, Çekmeköy, Ümraniye, Ataşehir, Kartal,
@@ -414,7 +414,7 @@ Uzman anketlerinde (Whitespark 2026) harita sıralamasında en etkili sinyaller 
   Şu an profil her gün 09:00–17:00 ve akşam "Kapalı" görünüyor; harita liderlerinden ERT, Aksoy ve Ayta
   "24 saat açık". 7/24 hat gerçekten açıksa profil buna göre ayarlanır.
 - **Web sitesi:** Şu an boş. Yayın günü UTM'li bağlantı eklenir (Bölüm 5.6).
-- **Hizmetler listesi:** Sitedeki 6 hizmet, açıklamalarıyla. Özellikle **montaj**: YK montaj
+- **Hizmetler listesi:** Sitedeki 6 hizmet, açıklamalarıyla. Özellikle **montaj**: YKA montaj
   aramalarında hiç görünmüyor.
 - **Fotoğraflar:** Ayda en az 4–8 yeni gerçek iş fotoğrafı; logo ve kapak. Şu an ~6 fotoğraf var, çoğu
   tasarım afiş; afiş yerine iş fotoğrafı (makine dairesi, kabin, montaj, ekip, araç).
@@ -431,14 +431,14 @@ Uzman anketlerinde (Whitespark 2026) harita sıralamasında en etkili sinyaller 
   arızası", "montaj"…). Bu, yorumu hem okuyan için hem Google için daha anlamlı yapar.
 - **Hazır metin verilmez.** Profilde iki yorumun metni birebir aynı (18 Ekim 2026). Google aynı metinli
   yorumları spam sayıp kaldırabilir; her müşteri kendi yorumunu yazmalı.
-- **Kıyas:** YK 15 yorum (5,0). Harita liderleri ERT 65, Skyline 70, Teknotek 73. İlk 3 ay hedefi 40+.
+- **Kıyas:** YKA 15 yorum (5,0). Harita liderleri ERT 65, Skyline 70, Teknotek 73. İlk 3 ay hedefi 40+.
 - **Her yoruma yanıt** ver (olumsuzlara sakin ve çözüm odaklı).
 - **Yapılmayacaklar:** Yorum satın almak, indirim karşılığı yorum istemek, çalışanlara yorum
   yazdırmak. Google kurallarına ve ticari reklam mevzuatına aykırı.
 - **Kabin içi bakım etiketi:** Bakım firmasının bilgisi zaten kabinde yer alır. Buna marka adı,
   web adresi ve 7/24 hat ile QR eklemek her gün yüzlerce kişiye görünen bir yerel tanıtımdır.
 
-### 7.3 Dizin kayıtları (marka adı kesinleşince, NAP birebir aynı)
+### 7.3 Dizin kayıtları (alan adı kesinleşince, NAP birebir aynı)
 
 **Önce:**
 
@@ -455,7 +455,8 @@ Foursquare. Ayrıca sektör dernekleri (TASİAD, AYSAD vb. üyelik sayfaları) v
 
 **Mevcut kayıtlarda düzeltilecekler (18 Ekim 2026'da görülen):**
 
-- `asansorfirmalari.com` YK'yı "Altınordu Cd. 43/2" adresiyle listeliyor; doğrusu 38-40/A.
+- Eski ad: Google İşletme Profili ("YK ASANSÖR"), LinkedIn ("Yk Asansör") ve dizin kayıtları "YKA Asansör" olacak.
+- `asansorfirmalari.com` YKA'yı "Altınordu Cd. 43/2" adresiyle listeliyor; doğrusu 38-40/A.
 - Instagram'da iki hesap (`@ykasansorr`, `yk.asansorr`) ve bir gönderide ikinci numara (0535 721 …)
   görünüyor. Tek resmî hesap ve tek numara kalmalı.
 - Yandex Haritalar kartları Google organik sonuçlarında çıkıyor (Saysa, "Asansör bakım ve arıza

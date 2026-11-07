@@ -1,7 +1,7 @@
 # Taslak: Soğanlık asansör hizmetleri (semt yazısı)
 
 > **Durum:** taslak, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 24 Ekim 2026
-> **Bağlı olduğu ilçe yazısı:** `kartal-asansor.md` · **Marka:** yalnızca "YK Asansör"
+> **Bağlı olduğu ilçe yazısı:** `kartal-asansor.md` · **Marka:** yalnızca "YKA Asansör"
 > **Yapı:** tüm yer yazılarında ortak 12 başlık; ayrı "öne çıkan konu" yok.
 
 ## Yayın bilgileri
@@ -11,7 +11,7 @@
 | URL | `/blog/soganlik-asansor.html` |
 | Ana sorgu | soğanlık asansör (<10/ay) |
 | Yan sorgular | soğanlık asansör bakım, soğanlık asansör firması, kartal soğanlık asansör servisi, gümüşpınar asansör |
-| `<title>` (57) | `Soğanlık Asansör: Bakım, Montaj ve 7/24 Arıza \| YK Asansör` |
+| `<title>` (58) | `Soğanlık Asansör: Bakım, Montaj ve 7/24 Arıza \| YKA Asansör` |
 | Meta (≈151) | `Kartal Soğanlık'ta asansör bakımı, 7/24 arıza, montaj ve modernizasyon. Periyodik kontrol, etiketler ve bakım ücreti rehberi: 0 (543) 542 86 75.` |
 | H1 | Soğanlık'ta asansör hizmetleri: *Bakım, arıza, montaj ve periyodik kontrol rehberi* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
@@ -25,7 +25,7 @@
 
 Soğanlık, Kartal'da E-5'in kuzeyinde kalan ve Gümüşpınar, Soğanlık Yeni ve Orta mahallelerini kapsayan büyük bir
 semt; nüfusu 70 binin üzerinde. Bu kadar konutun olduğu bir yerde asansörlerin bakımı, kontrolü ve arızası
-yöneticilerin en sık uğraştığı işlerden. YK Asansör olarak Sancaktepe merkezli ekibimizle Soğanlık'ta aylık bakım,
+yöneticilerin en sık uğraştığı işlerden. YKA Asansör olarak Sancaktepe merkezli ekibimizle Soğanlık'ta aylık bakım,
 7/24 arıza, modernizasyon ve montaj yapıyoruz. Aşağıda bir yöneticinin bilmesi gerekenleri sırayla anlattık.
 
 **Bu yazıda**
@@ -70,7 +70,7 @@ yağlanıyor, föy bırakılıyor. Yönetim föyleri saklıyor; föyde tarih, ya
 "Bakım yapıldı" diye tek satır yazan bir föy, bakımın gerçekten yapılıp yapılmadığını anlamanıza yardım etmez.
 Kurtarma eğitimi yılda en az bir kez veriliyor. Sözleşme ayrıntıları "Asansör bakım sözleşmesi" yazımızda.
 
-YK Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
+YKA Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
 
 ## Arıza ve mahsur kalma
 

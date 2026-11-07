@@ -1,7 +1,7 @@
 # Taslak: Sarıgazi asansör hizmetleri (semt yazısı)
 
 > **Durum:** taslak v4, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
-> **Bağlı olduğu ilçe yazısı:** `sancaktepe-asansor.md` · **Marka:** yalnızca "YK Asansör"
+> **Bağlı olduğu ilçe yazısı:** `sancaktepe-asansor.md` · **Marka:** yalnızca "YKA Asansör"
 > **v4 (24 Ekim 2026):** Tüm yer yazılarında ortak 12 başlığa getirildi; arıza belirtileri ve kurtarma ayrı bölümler olmaktan
 > çıkıp "Arıza ve mahsur kalma" başlığının içine alındı; ayrı "öne çıkan konu" yok.
 
@@ -12,7 +12,7 @@
 | URL | `/blog/sarigazi-asansor.html` |
 | Ana sorgu | sarıgazi asansör (firmaları) |
 | Yan sorgular | sarıgazi asansör bakım, sarıgazi asansör tamiri, sarıgazi asansör servisi, sarıgazi asansör montaj |
-| `<title>` (56) | `Sarıgazi Asansör: Bakım, Montaj ve 7/24 Arıza \| YK Asansör` |
+| `<title>` (57) | `Sarıgazi Asansör: Bakım, Montaj ve 7/24 Arıza \| YKA Asansör` |
 | Meta (≈150) | `Sancaktepe Sarıgazi'de asansör bakımı, 7/24 arıza ve tamir, montaj ve modernizasyon. Periyodik kontrol ve bakım ücreti: 0 (543) 542 86 75.` |
 | H1 | Sarıgazi'de asansör hizmetleri: *Bakım, arıza, montaj ve periyodik kontrol rehberi* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
@@ -25,7 +25,7 @@
 # Sarıgazi'de asansör hizmetleri: *Bakım, arıza, montaj ve periyodik kontrol rehberi*
 
 Sarıgazi, Sancaktepe'nin aynı adlı mahallesi ve çevresiyle bilinen semtlerinden biri; eski apartmanlarla yeni
-binaların yan yana durduğu bir yer. YK Asansör olarak Sancaktepe merkezli ekibimizle Sarıgazi'de aylık bakım, 7/24
+binaların yan yana durduğu bir yer. YKA Asansör olarak Sancaktepe merkezli ekibimizle Sarıgazi'de aylık bakım, 7/24
 arıza ve tamir, modernizasyon ve montaj yapıyoruz. Bu yazıda bir yöneticinin bilmesi gerekenleri, bakımdan periyodik
 kontrole, arızadan ücrete kadar sırayla anlattık. Arıza hattımız: **0 (543) 542 86 75**.
 
@@ -66,7 +66,7 @@ yapmak, bakımı yaptırmak ve ödemek yöneticinin işi; bakım firmasının TS
 ve motor gibi büyük parçaların değişimi bakım kapsamında değil. Sözleşmede nelere bakılacağını "Asansör bakım
 sözleşmesi" yazımızda anlattık.
 
-YK Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
+YKA Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
 
 ## Arıza ve mahsur kalma
 

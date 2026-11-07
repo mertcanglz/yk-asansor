@@ -1,7 +1,7 @@
 # Taslak: Merdiven asansörü ve engelli lifti (konu yazısı)
 
 > **Durum:** taslak, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
-> **Tür:** yer adı içermeyen konu yazısı · **Marka:** yalnızca "YK Asansör"
+> **Tür:** yer adı içermeyen konu yazısı · **Marka:** yalnızca "YKA Asansör"
 
 ## Yayın bilgileri
 
@@ -10,7 +10,7 @@
 | URL | `/blog/merdiven-asansoru-engelli-lifti.html` |
 | Ana sorgu | merdiven asansörü (2.900/ay) |
 | Yan sorgular | engelli lifti, merdiven lifti, platform lift, tekerlekli sandalye asansörü |
-| `<title>` (55) | `Merdiven Asansörü ve Engelli Lifti Rehberi \| YK Asansör` |
+| `<title>` (56) | `Merdiven Asansörü ve Engelli Lifti Rehberi \| YKA Asansör` |
 | Meta (≈150) | `Merdiven asansörü, platform lift ve dikey lift arasındaki farklar; hangi çözüm kime ve hangi binaya uygun, bakımı nasıl yapılır? 0 (543) 542 86 75.` |
 | H1 | Merdiven asansörü ve engelli lifti: *Hangi çözüm kime uygun?* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
@@ -135,6 +135,6 @@ Evet. Ray, akü, sensörler ve emniyet donanımı düzenli kontrol edilmeli.
 
 ## Editör notları (yayınlanmaz)
 
-- Ürün çeşitleri ve bakım kalemleri genel sektör bilgisidir; YK Asansör'ün hangi lift tiplerini kurduğunu Ömürcan Bey
+- Ürün çeşitleri ve bakım kalemleri genel sektör bilgisidir; YKA Asansör'ün hangi lift tiplerini kurduğunu Ömürcan Bey
   netleştirsin (kurulmayan tip varsa metinden çıkarılır).
 - KMK m. 42'deki "engelli yaşamı için zorunlu tadilatlar üç ay içinde görüşülür" hükmü güncel metinden doğrulandı.

@@ -1,4 +1,4 @@
-# YK Asansör Web Sitesi
+# YKA Asansör Web Sitesi
 
 Saf HTML/CSS/JS tanıtım sitesi. Derleme gerekmez; `main` dalına her push GitHub Pages'e otomatik yayınlanır.
 

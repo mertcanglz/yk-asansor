@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Asansör Hizmetleri: Montaj, Bakım, Arıza | YK Asansör</title>
+  <title>Asansör Hizmetleri: Montaj, Bakım, Arıza | YKA Asansör</title>
   <meta name="description" content="Yeni asansör montajı, aylık bakım, modernizasyon, 7/24 arıza servisi, temizlik ve yeşil etiket hazırlığı tek ekipten. Ücretsiz keşif için arayın.">
   <meta name="theme-color" content="#0e1012">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="tr_TR">
-  <meta property="og:site_name" content="YK Asansör">
-  <meta property="og:title" content="Asansör Hizmetleri: Montaj, Bakım, Arıza | YK Asansör">
+  <meta property="og:site_name" content="YKA Asansör">
+  <meta property="og:title" content="Asansör Hizmetleri: Montaj, Bakım, Arıza | YKA Asansör">
   <meta property="og:description" content="Yeni asansör montajı, aylık bakım, modernizasyon, 7/24 arıza servisi, temizlik ve yeşil etiket hazırlığı tek ekipten. Ücretsiz keşif için arayın.">
   <!-- TODO (alan adı kesinleşince): canonical, og:url ve og:image (1200×630, mutlak adres) -->
   <link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -20,9 +20,9 @@
     (function (d, w) {
       var h = d.documentElement, c = null;
       h.className += ' js' + ((w.innerWidth >= 1024 ? w.innerWidth > w.innerHeight : w.innerWidth >= 760 && w.innerWidth > w.innerHeight * 1.1) ? ' hw' : '');
-      try { c = JSON.parse(localStorage.getItem('yk-cerez') || 'null'); } catch (e) {}
+      try { c = JSON.parse(localStorage.getItem('yka-cerez') || 'null'); } catch (e) {}
       var ck = c && Date.now() - c.t < 15552e6 ? (c.a && c.m ? 'tam' : 'secildi') : 'yok', kp = ck !== 'yok';
-      try { if (sessionStorage.getItem('yk-kampanya') === 'kapali') kp = false; } catch (e) {}
+      try { if (sessionStorage.getItem('yka-kampanya') === 'kapali') kp = false; } catch (e) {}
       h.setAttribute('data-ck', ck);
       h.setAttribute('data-kampanya', kp ? 'acik' : 'kapali'); /* telefonda kampanya kartına yer ayrılır */
     })(document, window);
@@ -39,7 +39,7 @@
     {
         "@type": "LocalBusiness",
         "@id": "#isletme",
-        "name": "YK Asansör",
+        "name": "YKA Asansör",
         "description": "Asansör montajı, aylık periyodik bakım, modernizasyon ve revizyon, 7/24 arıza servisi, temizlik ve muayene, yeşil etiket hazırlığı.",
         "telephone": "+90 543 542 86 75",
         "address": {
@@ -83,7 +83,7 @@
           "name": "Asansör bakım sözleşmesi neleri kapsar?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "YK Asansör bakım sözleşmesi aylık periyodik bakımı, yağlama ve ayarları, güvenlik kontrollerini ve her bakımın yazılı raporunu kapsar. Paketlere göre 7/24 arıza müdahalesi ve yıllık kontrole hazırlık da eklenir."
+            "text": "YKA Asansör bakım sözleşmesi aylık periyodik bakımı, yağlama ve ayarları, güvenlik kontrollerini ve her bakımın yazılı raporunu kapsar. Paketlere göre 7/24 arıza müdahalesi ve yıllık kontrole hazırlık da eklenir."
           }
         },
         {
@@ -91,7 +91,7 @@
           "name": "Yeni asansör montajı ne kadar sürer?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Süre; asansör sistemine, durak sayısına ve binanın hazırlık durumuna göre değişir. YK Asansör ücretsiz keşiften sonra projeye özel net bir montaj takvimi paylaşır."
+            "text": "Süre; asansör sistemine, durak sayısına ve binanın hazırlık durumuna göre değişir. YKA Asansör ücretsiz keşiften sonra projeye özel net bir montaj takvimi paylaşır."
           }
         },
         {
@@ -99,7 +99,7 @@
           "name": "Eski asansörü yenilemek mi, modernize etmek mi daha mantıklı?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Kuyu ve taşıyıcı sistem uygunsa modernizasyon genellikle daha ekonomiktir. YK Asansör keşifte hangi parçaların yenilenmesi gerektiğini raporlar ve iki seçeneği birlikte değerlendirir."
+            "text": "Kuyu ve taşıyıcı sistem uygunsa modernizasyon genellikle daha ekonomiktir. YKA Asansör keşifte hangi parçaların yenilenmesi gerektiğini raporlar ve iki seçeneği birlikte değerlendirir."
           }
         },
         {
@@ -107,7 +107,7 @@
           "name": "Hangi bölgelerde hizmet veriyorsunuz?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "YK Asansör Türkiye genelinde hizmet verir. Keşif ve arıza müdahalesini kendi ekibimizle yapıyoruz."
+            "text": "YKA Asansör Türkiye genelinde hizmet verir. Keşif ve arıza müdahalesini kendi ekibimizle yapıyoruz."
           }
         }
       ]
@@ -159,7 +159,7 @@
 
   <!-- Header: masaüstünde logo + menü + telefon + teklif; telefonda logo + arama + menü düğmesi -->
   <header class="hdr" id="hdr">
-    <a class="logo" href="./" aria-label="YK Asansör ana sayfa"><b>YK</b><span>Asansör</span></a>
+    <a class="logo" href="./" aria-label="YKA Asansör ana sayfa"><b>YKA</b><span>Asansör</span></a>
     <nav class="hdr__nav" aria-label="Ana menü">
       <div class="hdr__item" data-menu="hiz">
         <a class="pill pill--on" href="hizmetler.html" aria-current="page" aria-haspopup="true" aria-expanded="false" aria-controls="mega-hiz">Hizmetler<svg class="pill__chev" width="12" height="12" stroke-width="2.6" aria-hidden="true"><use href="#i-down"/></svg></a>
@@ -215,7 +215,7 @@
   <!-- Telefon menüsü: tam ekran, gruplar açılır -->
   <div class="m-nav" id="mnav" role="dialog" aria-modal="true" aria-label="Menü" hidden>
     <div class="m-nav__top">
-      <a class="logo" href="./" aria-label="YK Asansör ana sayfa"><b>YK</b><span>Asansör</span></a>
+      <a class="logo" href="./" aria-label="YKA Asansör ana sayfa"><b>YKA</b><span>Asansör</span></a>
       <button type="button" class="ib" id="navKapat" aria-label="Menüyü kapat"><svg width="18" height="18" stroke-width="2" aria-hidden="true"><use href="#i-x"/></svg></button>
     </div>
     <nav class="m-nav__body" aria-label="Ana menü (telefon)">
@@ -248,7 +248,7 @@
       <div class="m-nav__cta">
         <span class="m-nav__t"><span>Doğru hizmeti</span><em>birlikte planlayalım.</em></span>
         <a class="btn-d btn-d--blk" href="#teklif">Ücretsiz keşif isteyin<svg width="14" height="14" stroke-width="2.8" aria-hidden="true"><use href="#i-chev"/></svg></a>
-        <a class="yk-line" href="tel:+905435428675"><span class="yk-line__ic"><svg width="18" height="18" stroke-width="1.8" aria-hidden="true"><use href="#i-tel"/></svg></span><span class="yk-line__tx"><span>7/24 arıza hattı</span><b>0 (543) 542 86 75</b></span></a>
+        <a class="yka-line" href="tel:+905435428675"><span class="yka-line__ic"><svg width="18" height="18" stroke-width="1.8" aria-hidden="true"><use href="#i-tel"/></svg></span><span class="yka-line__tx"><span>7/24 arıza hattı</span><b>0 (543) 542 86 75</b></span></a>
       </div>
     </nav>
   </div>
@@ -260,7 +260,7 @@
       <div class="kp__in">
         <nav class="kp-crumb" aria-label="Konumunuz"><a href="./">Ana sayfa</a><span aria-hidden="true">/</span><span aria-current="page">Hizmetler</span></nav>
         <h1 class="kp-h1" id="hz-baslik"><span>Asansör hizmetleri,</span><em><span>montajdan bakıma</span> <span>tek elden.</span></em></h1>
-        <p class="kp-lead">YK Asansör; yeni asansör montajı, aylık periyodik bakım, modernizasyon, 7/24 arıza servisi, temizlik ve yeşil etiket hazırlığını tek bir ekiple yürütür. Keşiften düzenli bakıma kadar binanızın asansörünü aynı ekip takip eder; Türkiye genelinde hizmet veriyoruz.</p>
+        <p class="kp-lead">YKA Asansör; yeni asansör montajı, aylık periyodik bakım, modernizasyon, 7/24 arıza servisi, temizlik ve yeşil etiket hazırlığını tek bir ekiple yürütür. Keşiften düzenli bakıma kadar binanızın asansörünü aynı ekip takip eder; Türkiye genelinde hizmet veriyoruz.</p>
         <ul class="kp-chips" aria-label="Hizmetlere git">
           <li><a class="pill" href="#montaj">Yeni asansör montajı</a></li>
           <li><a class="pill" href="#bakim">Periyodik bakım</a></li>
@@ -286,7 +286,7 @@
             <h3 class="gc__t gc__t--lg" id="t-montaj"><a href="asansor-montaji.html">Yeni asansör montajı</a></h3>
             <p class="gc__d">Yapınızın kat sayısına, kullanım yoğunluğuna ve kuyu ölçüsüne göre en uygun asansör sistemini birlikte seçiyor; montajı yönetmeliğe uygun şekilde, anahtar teslim tamamlıyoruz.</p>
             <ol class="feat__steps" aria-label="Montaj süreci"><li>Keşif ve proje</li><li>Ekipman tedariki</li><li>Montaj ve test</li><li>Tescil ve teslim</li></ol>
-            <div class="feat__acts"><a class="btn-d" href="asansor-montaji.html">Hizmet sayfasına git<svg width="14" height="14" stroke-width="2.8" aria-hidden="true"><use href="#i-chev"/></svg></a><a class="yk-link yk-link--dark" href="asansor-sistemleri.html"><span>Asansör sistemlerini inceleyin</span><svg width="14" height="14" stroke-width="2.8" aria-hidden="true"><use href="#i-chev"/></svg></a></div>
+            <div class="feat__acts"><a class="btn-d" href="asansor-montaji.html">Hizmet sayfasına git<svg width="14" height="14" stroke-width="2.8" aria-hidden="true"><use href="#i-chev"/></svg></a><a class="yka-link yka-link--dark" href="asansor-sistemleri.html"><span>Asansör sistemlerini inceleyin</span><svg width="14" height="14" stroke-width="2.8" aria-hidden="true"><use href="#i-chev"/></svg></a></div>
           </div>
         </article>
       </div>
@@ -361,10 +361,10 @@
       <div class="hz__in">
         <div class="hz-sss__h rv"><span class="grp__k">Sık sorulanlar</span><h2 class="hz-sss__t" id="hz-sss"><span>Hizmetlerimiz hakkında</span> <em>sık sorulanlar</em></h2></div>
         <div class="sorular sorular--izgara rv rv--d2" data-sss="hepsi">
-          <details class="soru" name="sss"><summary><h3>Asansör bakım sözleşmesi neleri kapsar?</h3><span class="soru__ic" aria-hidden="true"></span></summary><div class="soru__a"><p>YK Asansör bakım sözleşmesi aylık periyodik bakımı, yağlama ve ayarları, güvenlik kontrollerini ve her bakımın yazılı raporunu kapsar. Paketlere göre 7/24 arıza müdahalesi ve yıllık kontrole hazırlık da eklenir.</p></div></details>
-          <details class="soru" name="sss"><summary><h3>Yeni asansör montajı ne kadar sürer?</h3><span class="soru__ic" aria-hidden="true"></span></summary><div class="soru__a"><p>Süre; asansör sistemine, durak sayısına ve binanın hazırlık durumuna göre değişir. YK Asansör ücretsiz keşiften sonra projeye özel net bir montaj takvimi paylaşır.</p></div></details>
-          <details class="soru" name="sss"><summary><h3>Eski asansörü yenilemek mi, modernize etmek mi daha mantıklı?</h3><span class="soru__ic" aria-hidden="true"></span></summary><div class="soru__a"><p>Kuyu ve taşıyıcı sistem uygunsa modernizasyon genellikle daha ekonomiktir. YK Asansör keşifte hangi parçaların yenilenmesi gerektiğini raporlar ve iki seçeneği birlikte değerlendirir.</p></div></details>
-          <details class="soru" name="sss"><summary><h3>Hangi bölgelerde hizmet veriyorsunuz?</h3><span class="soru__ic" aria-hidden="true"></span></summary><div class="soru__a"><p>YK Asansör Türkiye genelinde hizmet verir. Keşif ve arıza müdahalesini kendi ekibimizle yapıyoruz.</p></div></details>
+          <details class="soru" name="sss"><summary><h3>Asansör bakım sözleşmesi neleri kapsar?</h3><span class="soru__ic" aria-hidden="true"></span></summary><div class="soru__a"><p>YKA Asansör bakım sözleşmesi aylık periyodik bakımı, yağlama ve ayarları, güvenlik kontrollerini ve her bakımın yazılı raporunu kapsar. Paketlere göre 7/24 arıza müdahalesi ve yıllık kontrole hazırlık da eklenir.</p></div></details>
+          <details class="soru" name="sss"><summary><h3>Yeni asansör montajı ne kadar sürer?</h3><span class="soru__ic" aria-hidden="true"></span></summary><div class="soru__a"><p>Süre; asansör sistemine, durak sayısına ve binanın hazırlık durumuna göre değişir. YKA Asansör ücretsiz keşiften sonra projeye özel net bir montaj takvimi paylaşır.</p></div></details>
+          <details class="soru" name="sss"><summary><h3>Eski asansörü yenilemek mi, modernize etmek mi daha mantıklı?</h3><span class="soru__ic" aria-hidden="true"></span></summary><div class="soru__a"><p>Kuyu ve taşıyıcı sistem uygunsa modernizasyon genellikle daha ekonomiktir. YKA Asansör keşifte hangi parçaların yenilenmesi gerektiğini raporlar ve iki seçeneği birlikte değerlendirir.</p></div></details>
+          <details class="soru" name="sss"><summary><h3>Hangi bölgelerde hizmet veriyorsunuz?</h3><span class="soru__ic" aria-hidden="true"></span></summary><div class="soru__a"><p>YKA Asansör Türkiye genelinde hizmet verir. Keşif ve arıza müdahalesini kendi ekibimizle yapıyoruz.</p></div></details>
         </div>
       </div>
     </section>
@@ -417,11 +417,11 @@
         <button type="button" data-cerez-ac>Çerez tercihleri</button>
       </nav>
       <div class="ft__bar">
-        <span class="ft__copy"><span class="logo logo--sm"><b>YK</b><span>Asansör</span></span><span>© <span id="yil">2026</span> Tüm hakları saklıdır.</span></span>
+        <span class="ft__copy"><span class="logo logo--sm"><b>YKA</b><span>Asansör</span></span><span>© <span id="yil">2026</span> Tüm hakları saklıdır.</span></span>
         <nav class="soc" aria-label="Sosyal medya hesaplarımız">
-          <a href="[INSTAGRAM]" target="_blank" rel="noopener" aria-label="YK Asansör Instagram hesabı (yeni sekmede açılır)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg></a>
-          <a href="[FACEBOOK]" target="_blank" rel="noopener" aria-label="YK Asansör Facebook hesabı (yeni sekmede açılır)"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H7.9v3h2.6V21z"/></svg></a>
-          <a href="[LINKEDIN]" target="_blank" rel="noopener" aria-label="YK Asansör LinkedIn hesabı (yeni sekmede açılır)"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.9 8.9H3.6V20h3.3zM5.25 3.5a1.9 1.9 0 1 0 0 3.8 1.9 1.9 0 0 0 0-3.8zM20.4 13.6c0-3-1.6-4.9-4.2-4.9-1.6 0-2.6.8-3.1 1.6V8.9H9.9V20h3.3v-5.7c0-1.5.6-2.6 2-2.6s1.9 1 1.9 2.6V20h3.3z"/></svg></a>
+          <a href="[INSTAGRAM]" target="_blank" rel="noopener" aria-label="YKA Asansör Instagram hesabı (yeni sekmede açılır)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="[FACEBOOK]" target="_blank" rel="noopener" aria-label="YKA Asansör Facebook hesabı (yeni sekmede açılır)"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H7.9v3h2.6V21z"/></svg></a>
+          <a href="[LINKEDIN]" target="_blank" rel="noopener" aria-label="YKA Asansör LinkedIn hesabı (yeni sekmede açılır)"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.9 8.9H3.6V20h3.3zM5.25 3.5a1.9 1.9 0 1 0 0 3.8 1.9 1.9 0 0 0 0-3.8zM20.4 13.6c0-3-1.6-4.9-4.2-4.9-1.6 0-2.6.8-3.1 1.6V8.9H9.9V20h3.3v-5.7c0-1.5.6-2.6 2-2.6s1.9 1 1.9 2.6V20h3.3z"/></svg></a>
         </nav>
       </div>
     </div>

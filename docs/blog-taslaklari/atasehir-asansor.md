@@ -1,7 +1,7 @@
 # Taslak: Ataşehir asansör hizmetleri (ilçe yazısı)
 
 > **Durum:** taslak, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 24 Ekim 2026
-> **Semt yazıları:** yok (semtlerde ölçülebilir arama yok) · **Marka:** yalnızca "YK Asansör"
+> **Semt yazıları:** yok (semtlerde ölçülebilir arama yok) · **Marka:** yalnızca "YKA Asansör"
 > **Yapı:** tüm yer yazılarında ortak 12 başlık; ayrı "öne çıkan konu" yok.
 
 ## Yayın bilgileri
@@ -11,7 +11,7 @@
 | URL | `/blog/atasehir-asansor.html` |
 | Ana sorgu | ataşehir asansör firmaları (110/ay), ataşehir asansör (50/ay) |
 | Yan sorgular | ataşehir asansör bakım, ataşehir asansör servisi, ataşehir asansör tamiri, kayışdağı asansör, içerenköy asansör |
-| `<title>` (57) | `Ataşehir Asansör: Bakım, Montaj ve 7/24 Arıza \| YK Asansör` |
+| `<title>` (58) | `Ataşehir Asansör: Bakım, Montaj ve 7/24 Arıza \| YKA Asansör` |
 | Meta (≈152) | `Ataşehir'de asansör bakımı, 7/24 arıza, montaj ve modernizasyon. Periyodik kontrol, etiketler, yüksek binalarda asansör: 0 (543) 542 86 75.` |
 | H1 | Ataşehir'de asansör hizmetleri: *Bakımdan montaja bina yöneticisinin rehberi* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
@@ -26,7 +26,7 @@
 Ataşehir'de bir apartmanın, sitenin, rezidansın ya da ofis binasının asansöründen sorumluysanız temel işler belli:
 her ay bakım, yılda bir periyodik kontrol ve kontrolde çıkan eksikleri süresinde gidermek. Bakımı TSE Hizmet
 Yeterlilik Belgesi olan bir firma, kontrolü belediyenin anlaştığı muayene kuruluşu yapıyor; Ataşehir'de bu kuruluş
-AND Denetim. YK Asansör olarak Sancaktepe merkezli ekibimizle, komşu ilçemiz Ataşehir'in her yerinde bakım, arıza,
+AND Denetim. YKA Asansör olarak Sancaktepe merkezli ekibimizle, komşu ilçemiz Ataşehir'in her yerinde bakım, arıza,
 modernizasyon ve montaj yapıyoruz. Bu yazıda yöneticinin bilmesi gerekenleri topladık.
 
 **Bu yazıda**
@@ -85,7 +85,7 @@ eğitimi veriyor; rezidans ve plazalarda bu eğitimi teknik personelin ve güven
 içi temizliği ve büyük parça değişimleri bakım ücretine dahil değil. Ayrıntılar "Asansör bakım sözleşmesi"
 yazımızda.
 
-YK Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
+YKA Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
 
 ## Arıza ve mahsur kalma
 

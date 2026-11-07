@@ -1,7 +1,7 @@
 # Taslak: Taşdelen asansör hizmetleri (semt yazısı)
 
 > **Durum:** taslak v3, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
-> **Bağlı olduğu ilçe yazısı:** `cekmekoy-asansor.md` · **Marka:** yalnızca "YK Asansör"
+> **Bağlı olduğu ilçe yazısı:** `cekmekoy-asansor.md` · **Marka:** yalnızca "YKA Asansör"
 > **v3 (24 Ekim 2026):** Tüm yer yazılarında ortak 12 başlığa getirildi; montaj, teslim alma ve garanti ayrı bölümler
 > olmaktan çıkıp "Yeni montaj ve sonradan asansör" başlığının içine alındı; ayrı "öne çıkan konu" yok.
 
@@ -12,7 +12,7 @@
 | URL | `/blog/tasdelen-asansor.html` |
 | Ana sorgu | taşdelen asansör (10/ay) |
 | Yan sorgular | taşdelen asansör bakım, taşdelen asansör firması, taşdelen asansör tamiri, taşdelen asansör montaj |
-| `<title>` (56) | `Taşdelen Asansör: Bakım, Montaj ve 7/24 Arıza \| YK Asansör` |
+| `<title>` (57) | `Taşdelen Asansör: Bakım, Montaj ve 7/24 Arıza \| YKA Asansör` |
 | Meta (≈150) | `Çekmeköy Taşdelen'de asansör bakımı, 7/24 arıza, montaj ve modernizasyon. Periyodik kontrol, etiketler ve bakım ücreti: 0 (543) 542 86 75.` |
 | H1 | Taşdelen'de asansör hizmetleri: *Bakım, arıza, montaj ve periyodik kontrol rehberi* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
@@ -25,7 +25,7 @@
 # Taşdelen'de asansör hizmetleri: *Bakım, arıza, montaj ve periyodik kontrol rehberi*
 
 Taşdelen, Çekmeköy'ün bilinen semtlerinden biri ve aynı adlı bir mahallesi; mevcut apartmanların yanında yeni konut
-projeleriyle de sık anılan bir yer. YK Asansör olarak Sancaktepe merkezli ekibimizle Taşdelen'de aylık bakım, 7/24
+projeleriyle de sık anılan bir yer. YKA Asansör olarak Sancaktepe merkezli ekibimizle Taşdelen'de aylık bakım, 7/24
 arıza, modernizasyon ve montaj yapıyoruz. Bu yazıda bir yöneticinin ya da müteahhidin bilmesi gerekenleri sırayla
 anlattık.
 
@@ -65,7 +65,7 @@ kabin ışığı ve alarm kontrol ediliyor, raylar yağlanıyor ve föy bırakı
 yapmak, garanti döneminde bir arıza çıktığında "montaj hatası mı, bakım hatası mı" tartışmasını ortadan kaldırıyor.
 Sözleşmede nelere bakılacağını "Asansör bakım sözleşmesi" yazımızda anlattık.
 
-YK Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
+YKA Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
 
 ## Arıza ve mahsur kalma
 

@@ -1,7 +1,7 @@
 # Taslak: Asansör arızaları (konu yazısı)
 
 > **Durum:** taslak, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
-> **Tür:** yer adı içermeyen konu yazısı · **Marka:** yalnızca "YK Asansör"
+> **Tür:** yer adı içermeyen konu yazısı · **Marka:** yalnızca "YKA Asansör"
 
 ## Yayın bilgileri
 
@@ -10,7 +10,7 @@
 | URL | `/blog/asansor-arizalari.html` |
 | Ana sorgu | asansör arıza (210/ay), asansör arızaları |
 | Yan sorgular | asansörde mahsur kalma (20), asansörde mahsur kalınca ne yapılır, asansör sarsıntılı çalışıyor, asansör kat hizasında durmuyor |
-| `<title>` (58) | `Asansör Arızaları: Belirtiler ve Yapılacaklar \| YK Asansör` |
+| `<title>` (59) | `Asansör Arızaları: Belirtiler ve Yapılacaklar \| YKA Asansör` |
 | Meta (133) | `Asansör arızaları nasıl anlaşılır, hangi belirtide asansör kapatılır, mahsur kalınca ne yapılır? 7/24 arıza hattı: 0 (543) 542 86 75.` |
 | H1 | Asansör arızaları: *Belirtiler, sebepler ve ne yapılmalı?* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |

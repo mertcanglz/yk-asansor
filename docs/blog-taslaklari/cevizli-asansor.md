@@ -1,7 +1,7 @@
 # Taslak: Cevizli asansör hizmetleri (semt yazısı)
 
 > **Durum:** taslak v3, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
-> **Bağlı olduğu ilçe yazısı:** `maltepe-asansor.md` · **Marka:** yalnızca "YK Asansör"
+> **Bağlı olduğu ilçe yazısı:** `maltepe-asansor.md` · **Marka:** yalnızca "YKA Asansör"
 > **v3 (24 Ekim 2026):** Tüm yer yazılarında ortak 12 başlığa getirildi; kabin yenileme ayrı bölümler olmaktan çıkıp
 > "Modernizasyon" başlığının içine alındı; ayrı "öne çıkan konu" yok.
 
@@ -12,7 +12,7 @@
 | URL | `/blog/cevizli-asansor.html` |
 | Ana sorgu | cevizli asansör |
 | Yan sorgular | cevizli asansör bakım, cevizli asansör firması, cevizli asansör tamiri, maltepe cevizli asansör |
-| `<title>` (55) | `Cevizli Asansör: Bakım, Montaj ve 7/24 Arıza \| YK Asansör` |
+| `<title>` (56) | `Cevizli Asansör: Bakım, Montaj ve 7/24 Arıza \| YKA Asansör` |
 | Meta (≈150) | `Maltepe Cevizli'de asansör bakımı, 7/24 arıza, montaj, modernizasyon ve kabin yenileme. Periyodik kontrol ve ücret: 0 (543) 542 86 75.` |
 | H1 | Cevizli'de asansör hizmetleri: *Bakım, arıza, montaj ve periyodik kontrol rehberi* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
@@ -26,7 +26,7 @@
 
 Cevizli, Maltepe'nin bilinen semtlerinden biri ve aynı adlı bir mahallesi; eski apartmanlarla yeni yapıların bir arada
 olduğu bir yer. (Kartal'da da aynı adlı bir mahalle var; bu yazı Maltepe'deki Cevizli için, Kartal için Kartal yazımıza
-bakın.) YK Asansör olarak Sancaktepe merkezli ekibimizle Cevizli'de aylık bakım, 7/24 arıza, modernizasyon ve montaj
+bakın.) YKA Asansör olarak Sancaktepe merkezli ekibimizle Cevizli'de aylık bakım, 7/24 arıza, modernizasyon ve montaj
 yapıyoruz. Bu yazıda bir yöneticinin bilmesi gerekenleri sırayla anlattık.
 
 **Bu yazıda**
@@ -65,7 +65,7 @@ fren, halatlar, kapılar ve kilitler, güvenlik devreleri, kumanda, kabin ışı
 yağlanıyor ve föy bırakılıyor. Kabin değişimi ve kabin içi temizlik bakım kapsamında değil. Sözleşmeyi "Asansör bakım
 sözleşmesi" yazımızda anlattık.
 
-YK Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
+YKA Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
 
 ## Arıza ve mahsur kalma
 

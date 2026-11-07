@@ -1,7 +1,7 @@
 # Taslak: Kadıköy asansör hizmetleri (ilçe yazısı)
 
 > **Durum:** taslak, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 1 Kasım 2026
-> **Semt yazıları:** yok (ilçe araması ~20/ay; semtlerde ölçülebilir arama yok) · **Marka:** yalnızca "YK Asansör"
+> **Semt yazıları:** yok (ilçe araması ~20/ay; semtlerde ölçülebilir arama yok) · **Marka:** yalnızca "YKA Asansör"
 > **Yapı:** tüm yer yazılarında ortak 12 başlık; ayrı "öne çıkan konu" yok.
 
 ## Yayın bilgileri
@@ -11,7 +11,7 @@
 | URL | `/blog/kadikoy-asansor.html` |
 | Ana sorgu | kadıköy asansör (20/ay) |
 | Yan sorgular | kadıköy asansör firmaları, kadıköy asansör bakım, kadıköy asansör servisi, göztepe asansör, bostancı asansör, fikirtepe asansör |
-| `<title>` (57) | `Kadıköy Asansör: Bakım, Montaj ve 7/24 Arıza \| YK Asansör` |
+| `<title>` (58) | `Kadıköy Asansör: Bakım, Montaj ve 7/24 Arıza \| YKA Asansör` |
 | Meta (156) | `Kadıköy'de asansör bakımı, 7/24 arıza, modernizasyon ve sonradan asansör. Periyodik kontrolü kim yapar, 2026 ücreti ne? Rehber ve teklif: 0 (543) 542 86 75.` |
 | H1 | Kadıköy'de asansör hizmetleri: *Bakımdan montaja bina yöneticisinin rehberi* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
@@ -26,7 +26,7 @@
 Kadıköy'de asansör gündemi çoğu binada iki uçta toplanıyor: bir yanda 1970'lerden kalma apartmanlarda yaşlanan
 asansörler, öbür yanda kentsel dönüşümle yükselen yeni binalar. Hangisinde olursanız olun ayda bir bakım ve yılda bir
 periyodik kontrol zorunlu. Bakımı TSE Hizmet Yeterlilik Belgesi olan bir firma, kontrolü belediyenin anlaştığı kuruluş
-yapıyor; Kadıköy'de bu kuruluş Makina Mühendisleri Odası İstanbul Şubesi. YK Asansör olarak Sancaktepe merkezli
+yapıyor; Kadıköy'de bu kuruluş Makina Mühendisleri Odası İstanbul Şubesi. YKA Asansör olarak Sancaktepe merkezli
 ekibimizle Moda'dan Bostancı'ya bakım, arıza, modernizasyon ve montaj yapıyoruz. Bu yazıda Kadıköy'deki bir bina
 yöneticisinin bilmesi gerekenleri, ilçenin 2026 kontrol ücretleriyle birlikte anlattık.
 
@@ -84,7 +84,7 @@ bakım firmasını rahatlatıyor. Yılda en az bir kez kurtarma eğitimi veriliy
 eğitimi almasını öneriyoruz. Kabin içi temizliği ve büyük parça değişimleri bakım ücretine dahil değil. Sözleşmede
 nelere bakılacağını "Asansör bakım sözleşmesi" yazımızda anlattık.
 
-YK Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
+YKA Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
 
 ## Arıza ve mahsur kalma
 

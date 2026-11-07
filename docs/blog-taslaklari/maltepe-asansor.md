@@ -1,7 +1,7 @@
 # Taslak: Maltepe asansör hizmetleri (ilçe yazısı)
 
 > **Durum:** taslak v3, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
-> **Semt yazıları:** Küçükyalı, İdealtepe, Cevizli, Başıbüyük · **Marka:** yalnızca "YK Asansör"
+> **Semt yazıları:** Küçükyalı, İdealtepe, Cevizli, Başıbüyük · **Marka:** yalnızca "YKA Asansör"
 > **v3 (24 Ekim 2026):** Tüm yer yazılarında ortak 12 başlığa getirildi. "Sonradan asansör" ayrı bölüm olmaktan çıkıp
 > "Yeni montaj ve sonradan asansör" başlığının içine alındı; "binalar" ve "hangi sistem" bölümleri eklendi.
 
@@ -12,7 +12,7 @@
 | URL | `/blog/maltepe-asansor.html` |
 | Ana sorgu | maltepe asansör firmaları (50/ay), maltepe asansör (30/ay) |
 | Yan sorgular | maltepe asansör servisi (10), maltepe asansör bakım, maltepe asansör tamiri, maltepe asansör montaj, apartmana sonradan asansör |
-| `<title>` (57) | `Maltepe Asansör Firması: Bakım, Arıza, Montaj \| YK Asansör` |
+| `<title>` (58) | `Maltepe Asansör Firması: Bakım, Arıza, Montaj \| YKA Asansör` |
 | Meta (≈152) | `Maltepe'de asansör bakımı, 7/24 arıza, modernizasyon ve apartmana sonradan asansör. Periyodik kontrolü kim yapar? Teklif: 0 (543) 542 86 75.` |
 | H1 | Maltepe'de asansör hizmetleri: *Bakımdan montaja bina yöneticisinin rehberi* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
@@ -27,7 +27,7 @@
 Maltepe'de bir yanda asansörü olan apartmanlar ve yeni binalar, öbür yanda dört beş katlı ama asansörü olmayan çok
 sayıda bina var. Bu yüzden Maltepe'den gelen sorular iki gruba ayrılıyor: "Asansörümüzün bakımını kim, nasıl
 yapmalı?" ve "Asansörü olmayan binamıza asansör yaptırabilir miyiz?" Maltepe'de periyodik kontrolü, belediyenin
-2026'da protokol imzaladığı Makina Mühendisleri Odası İstanbul Şubesi yapıyor. YK Asansör olarak Sancaktepe merkezli
+2026'da protokol imzaladığı Makina Mühendisleri Odası İstanbul Şubesi yapıyor. YKA Asansör olarak Sancaktepe merkezli
 ekibimizle Maltepe'nin 18 mahallesinde bakım, 7/24 arıza, modernizasyon ve montaj yapıyoruz. Bu yazıda bir bina
 yöneticisinin bilmesi gerekenleri topladık.
 
@@ -71,7 +71,7 @@ ediliyor; raylar yağlanıyor. Her bakımdan sonra föy bırakılıyor ve yönet
 firması yılda en az bir kez kurtarma eğitimi veriyor.
 
 Kabin, kapı, motor gibi büyük parçaların değişimi bakım kapsamında değil. Sözleşmede nelere bakacağınızı "Asansör
-bakım sözleşmesi" yazımızda, teklifleri nasıl karşılaştıracağınızı "Asansör bakım ücreti" yazımızda anlattık. YK
+bakım sözleşmesi" yazımızda, teklifleri nasıl karşılaştıracağınızı "Asansör bakım ücreti" yazımızda anlattık. YKA
 Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
 
 ## Arıza ve mahsur kalma

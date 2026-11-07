@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Yakacık Asansör: Bakım, Montaj ve 7/24 Arıza | YK Asansör</title>
+  <title>Yakacık Asansör: Bakım, Montaj ve 7/24 Arıza | YKA Asansör</title>
   <meta name="description" content="Kartal Yakacık&#x27;ta asansör bakımı, 7/24 arıza, montaj ve modernizasyon. Periyodik kontrol, etiketler ve bakım ücreti rehberi: 0 (543) 542 86 75.">
   <meta name="theme-color" content="#0e1012">
   <meta property="og:type" content="article">
   <meta property="og:locale" content="tr_TR">
-  <meta property="og:site_name" content="YK Asansör">
-  <meta property="og:title" content="Yakacık Asansör: Bakım, Montaj ve 7/24 Arıza | YK Asansör">
+  <meta property="og:site_name" content="YKA Asansör">
+  <meta property="og:title" content="Yakacık Asansör: Bakım, Montaj ve 7/24 Arıza | YKA Asansör">
   <meta property="og:description" content="Kartal Yakacık&#x27;ta asansör bakımı, 7/24 arıza, montaj ve modernizasyon. Periyodik kontrol, etiketler ve bakım ücreti rehberi: 0 (543) 542 86 75.">
   <!-- TODO (alan adı kesinleşince): canonical, og:url ve og:image (1200×630, mutlak adres) -->
   <link rel="preload" href="../assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -20,9 +20,9 @@
     (function (d, w) {
       var h = d.documentElement, c = null;
       h.className += ' js' + ((w.innerWidth >= 1024 ? w.innerWidth > w.innerHeight : w.innerWidth >= 760 && w.innerWidth > w.innerHeight * 1.1) ? ' hw' : '');
-      try { c = JSON.parse(localStorage.getItem('yk-cerez') || 'null'); } catch (e) {}
+      try { c = JSON.parse(localStorage.getItem('yka-cerez') || 'null'); } catch (e) {}
       var ck = c && Date.now() - c.t < 15552e6 ? (c.a && c.m ? 'tam' : 'secildi') : 'yok', kp = ck !== 'yok';
-      try { if (sessionStorage.getItem('yk-kampanya') === 'kapali') kp = false; } catch (e) {}
+      try { if (sessionStorage.getItem('yka-kampanya') === 'kapali') kp = false; } catch (e) {}
       h.setAttribute('data-ck', ck);
       h.setAttribute('data-kampanya', kp ? 'acik' : 'kapali'); /* telefonda kampanya kartına yer ayrılır */
     })(document, window);
@@ -39,7 +39,7 @@
     {
       "@type": "LocalBusiness",
       "@id": "#isletme",
-      "name": "YK Asansör",
+      "name": "YKA Asansör",
       "description": "Asansör montajı, aylık periyodik bakım, modernizasyon ve revizyon, 7/24 arıza servisi, temizlik ve muayene, yeşil etiket hazırlığı.",
       "telephone": "+90 543 542 86 75",
       "address": {
@@ -81,7 +81,7 @@
       "dateModified": "2026-10-24",
       "author": {
         "@type": "Organization",
-        "name": "YK Asansör teknik ekibi",
+        "name": "YKA Asansör teknik ekibi",
         "parentOrganization": {
           "@id": "#isletme"
         }
@@ -250,7 +250,7 @@
 
   <!-- Header: masaüstünde logo + menü + telefon + teklif; telefonda logo + arama + menü düğmesi -->
   <header class="hdr" id="hdr">
-    <a class="logo" href="../" aria-label="YK Asansör ana sayfa"><b>YK</b><span>Asansör</span></a>
+    <a class="logo" href="../" aria-label="YKA Asansör ana sayfa"><b>YKA</b><span>Asansör</span></a>
     <nav class="hdr__nav" aria-label="Ana menü">
       <div class="hdr__item" data-menu="hiz">
         <a class="pill" href="../hizmetler.html" aria-haspopup="true" aria-expanded="false" aria-controls="mega-hiz">Hizmetler<svg class="pill__chev" width="12" height="12" stroke-width="2.6" aria-hidden="true"><use href="#i-down"/></svg></a>
@@ -306,7 +306,7 @@
   <!-- Telefon menüsü: tam ekran, gruplar açılır -->
   <div class="m-nav" id="mnav" role="dialog" aria-modal="true" aria-label="Menü" hidden>
     <div class="m-nav__top">
-      <a class="logo" href="../" aria-label="YK Asansör ana sayfa"><b>YK</b><span>Asansör</span></a>
+      <a class="logo" href="../" aria-label="YKA Asansör ana sayfa"><b>YKA</b><span>Asansör</span></a>
       <button type="button" class="ib" id="navKapat" aria-label="Menüyü kapat"><svg width="18" height="18" stroke-width="2" aria-hidden="true"><use href="#i-x"/></svg></button>
     </div>
     <nav class="m-nav__body" aria-label="Ana menü (telefon)">
@@ -339,7 +339,7 @@
       <div class="m-nav__cta">
         <span class="m-nav__t"><span>Doğru hizmeti</span><em>birlikte planlayalım.</em></span>
         <a class="btn-d btn-d--blk" href="#teklif">Ücretsiz keşif isteyin<svg width="14" height="14" stroke-width="2.8" aria-hidden="true"><use href="#i-chev"/></svg></a>
-        <a class="yk-line" href="tel:+905435428675"><span class="yk-line__ic"><svg width="18" height="18" stroke-width="1.8" aria-hidden="true"><use href="#i-tel"/></svg></span><span class="yk-line__tx"><span>7/24 arıza hattı</span><b>0 (543) 542 86 75</b></span></a>
+        <a class="yka-line" href="tel:+905435428675"><span class="yka-line__ic"><svg width="18" height="18" stroke-width="1.8" aria-hidden="true"><use href="#i-tel"/></svg></span><span class="yka-line__tx"><span>7/24 arıza hattı</span><b>0 (543) 542 86 75</b></span></a>
       </div>
     </nav>
   </div>
@@ -353,7 +353,7 @@
 
     <div class="sp-wrap">
       <article class="sp-art by-art">
-        <p class="by-lead">Yakacık, Kartal'ın kuzeyinde, Yakacık Çarşı ve Yakacık Yeni mahallelerini kapsayan bilinen bir semt. Apartman yöneticisi için buradaki sorumluluk Kartal'ın genelindekiyle aynı: aylık bakım, yıllık periyodik kontrol ve eksiklerin zamanında giderilmesi. YK Asansör olarak Sancaktepe merkezli ekibimizle Yakacık'ta bakım, 7/24 arıza, modernizasyon ve montaj yapıyoruz. Bu yazıda bir yöneticinin bilmesi gereken her şeyi Yakacık'a göre anlattık.</p>
+        <p class="by-lead">Yakacık, Kartal'ın kuzeyinde, Yakacık Çarşı ve Yakacık Yeni mahallelerini kapsayan bilinen bir semt. Apartman yöneticisi için buradaki sorumluluk Kartal'ın genelindekiyle aynı: aylık bakım, yıllık periyodik kontrol ve eksiklerin zamanında giderilmesi. YKA Asansör olarak Sancaktepe merkezli ekibimizle Yakacık'ta bakım, 7/24 arıza, modernizasyon ve montaj yapıyoruz. Bu yazıda bir yöneticinin bilmesi gereken her şeyi Yakacık'a göre anlattık.</p>
 
         <nav class="by-toc" aria-label="Bu yazıda">
           <b>BU YAZIDA</b>
@@ -372,7 +372,7 @@
         <section class="sp-sec rv" id="aylik-bakim-ve-sozlesme" aria-labelledby="h-aylik-bakim-ve-sozlesme">
           <h2 class="sp-h2" id="h-aylik-bakim-ve-sozlesme"><span>Aylık bakım</span> <em>ve sözleşme</em></h2>
           <p class="sp-p">Bakım ayda en az bir kez yapılıyor; asansörü monte edenin bakım kılavuzu ve TS EN 13015 standardı esas. Sözleşme yapmak, bakımı yaptırmak ve ücretini ödemek yöneticinin işi; bakım firmasının TSE Hizmet Yeterlilik Belgesi olmalı. Her bakımda fren, halatlar, kapılar ve kilitler, güvenlik devreleri, kumanda, kabin ışığı ve alarm kontrol ediliyor, raylar yağlanıyor. Bakımdan sonra föy bırakılıyor, yönetim de föyleri saklıyor. Kurtarma eğitimi yılda en az bir kez veriliyor. Kabin içi temizliği ve büyük parça değişimleri bakım ücretine dahil değil. Sözleşme ayrıntıları “<a href="asansor-bakim-sozlesmesi.html">Asansör bakım sözleşmesi</a>” yazımızda.</p>
-          <p class="sp-p">YK Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.</p>
+          <p class="sp-p">YKA Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.</p>
         </section>
         <section class="sp-sec rv" id="ariza-ve-mahsur-kalma" aria-labelledby="h-ariza-ve-mahsur-kalma">
           <h2 class="sp-h2" id="h-ariza-ve-mahsur-kalma"><span>Arıza</span> <em>ve mahsur kalma</em></h2>
@@ -410,7 +410,7 @@
         </section>
         <div class="by-cta rv">
           <div><h2 class="sp-h2"><span>Yakacık'taki</span> <span>asansörünüz için</span> <em>teklif alın</em></h2><p>Ücretsiz keşifle asansörünüzü inceleyip binanıza uygun bakım sözleşmesini sunalım.</p></div>
-          <div class="by-cta__acts"><a class="btn-a" href="../teklif-formu.html">Teklif alın<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.25"/><path d="M8.25 13.25L12 9.5l3.75 3.75"/></svg></a><a class="yk-link" href="tel:+905435428675"><span>0 (543) 542 86 75</span></a></div>
+          <div class="by-cta__acts"><a class="btn-a" href="../teklif-formu.html">Teklif alın<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.25"/><path d="M8.25 13.25L12 9.5l3.75 3.75"/></svg></a><a class="yka-link" href="tel:+905435428675"><span>0 (543) 542 86 75</span></a></div>
         </div>
         <!-- SSS: yanıtlar düz metin; masaüstünde ilk soru açık, telefonda hepsi kapalı; aynı anda tek soru açık -->
         <section class="sp-sec rv" id="sss" aria-labelledby="h-sss">
@@ -430,8 +430,8 @@
         </section>
 
         <aside class="by-yazar" aria-label="Yazı hakkında">
-          <span class="by-yazar__ic" aria-hidden="true">YK</span>
-          <span class="by-yazar__tx"><b>YK Asansör teknik ekibi</b><span>Kontrol eden: Ömürcan Altundaş, YK Asansör · 24 Ekim 2026</span></span>
+          <span class="by-yazar__ic" aria-hidden="true">YKA</span>
+          <span class="by-yazar__tx"><b>YKA Asansör teknik ekibi</b><span>Kontrol eden: Ömürcan Altundaş, YKA Asansör · 24 Ekim 2026</span></span>
         </aside>
 
 
@@ -493,11 +493,11 @@
         <button type="button" data-cerez-ac>Çerez tercihleri</button>
       </nav>
       <div class="ft__bar">
-        <span class="ft__copy"><span class="logo logo--sm"><b>YK</b><span>Asansör</span></span><span>© <span id="yil">2026</span> Tüm hakları saklıdır.</span></span>
+        <span class="ft__copy"><span class="logo logo--sm"><b>YKA</b><span>Asansör</span></span><span>© <span id="yil">2026</span> Tüm hakları saklıdır.</span></span>
         <nav class="soc" aria-label="Sosyal medya hesaplarımız">
-          <a href="[INSTAGRAM]" target="_blank" rel="noopener" aria-label="YK Asansör Instagram hesabı (yeni sekmede açılır)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg></a>
-          <a href="[FACEBOOK]" target="_blank" rel="noopener" aria-label="YK Asansör Facebook hesabı (yeni sekmede açılır)"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H7.9v3h2.6V21z"/></svg></a>
-          <a href="[LINKEDIN]" target="_blank" rel="noopener" aria-label="YK Asansör LinkedIn hesabı (yeni sekmede açılır)"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.9 8.9H3.6V20h3.3zM5.25 3.5a1.9 1.9 0 1 0 0 3.8 1.9 1.9 0 0 0 0-3.8zM20.4 13.6c0-3-1.6-4.9-4.2-4.9-1.6 0-2.6.8-3.1 1.6V8.9H9.9V20h3.3v-5.7c0-1.5.6-2.6 2-2.6s1.9 1 1.9 2.6V20h3.3z"/></svg></a>
+          <a href="[INSTAGRAM]" target="_blank" rel="noopener" aria-label="YKA Asansör Instagram hesabı (yeni sekmede açılır)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="[FACEBOOK]" target="_blank" rel="noopener" aria-label="YKA Asansör Facebook hesabı (yeni sekmede açılır)"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H7.9v3h2.6V21z"/></svg></a>
+          <a href="[LINKEDIN]" target="_blank" rel="noopener" aria-label="YKA Asansör LinkedIn hesabı (yeni sekmede açılır)"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.9 8.9H3.6V20h3.3zM5.25 3.5a1.9 1.9 0 1 0 0 3.8 1.9 1.9 0 0 0 0-3.8zM20.4 13.6c0-3-1.6-4.9-4.2-4.9-1.6 0-2.6.8-3.1 1.6V8.9H9.9V20h3.3v-5.7c0-1.5.6-2.6 2-2.6s1.9 1 1.9 2.6V20h3.3z"/></svg></a>
         </nav>
       </div>
     </div>

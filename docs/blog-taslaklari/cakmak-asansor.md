@@ -1,7 +1,7 @@
 # Taslak: Çakmak asansör hizmetleri (semt yazısı)
 
 > **Durum:** taslak v4, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
-> **Bağlı olduğu ilçe yazısı:** `umraniye-asansor.md` · **Marka:** yalnızca "YK Asansör"
+> **Bağlı olduğu ilçe yazısı:** `umraniye-asansor.md` · **Marka:** yalnızca "YKA Asansör"
 > **v4 (24 Ekim 2026):** Tüm yer yazılarında ortak 12 başlığa getirildi; kapı arızaları ayrı bölümler olmaktan çıkıp
 > "Arıza ve mahsur kalma" başlığının içine alındı; ayrı "öne çıkan konu" yok.
 
@@ -12,7 +12,7 @@
 | URL | `/blog/cakmak-asansor.html` |
 | Ana sorgu | çakmak asansör bakım / tamiri (Ümraniye) |
 | Yan sorgular | ümraniye çakmak asansör, çakmak asansör firması, çakmak asansör montaj |
-| `<title>` (58) | `Çakmak Asansör Bakım, Tamir ve Montaj, Ümraniye \| YK Asansör` |
+| `<title>` (59) | `Çakmak Asansör Bakım, Tamir, Montaj, Ümraniye \| YKA Asansör` |
 | Meta (≈150) | `Ümraniye Çakmak'ta asansör bakımı, 7/24 arıza ve tamir, montaj ve modernizasyon. Periyodik kontrol, etiketler ve bakım ücreti: 0 (543) 542 86 75.` |
 | H1 | Çakmak'ta asansör hizmetleri: *Bakım, arıza, montaj ve periyodik kontrol rehberi* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
@@ -28,7 +28,7 @@
 
 Ümraniye'nin Çakmak Mahallesi çoğunlukla apartmanlardan oluşan bir yer. Buradaki bir apartmanın asansöründen
 sorumluysanız işiniz her ay bakım, yılda bir periyodik kontrol ve kontrolde çıkan eksikleri süresinde gidermekten
-oluşuyor. YK Asansör olarak Sancaktepe merkezli ekibimizle Çakmak'ta aylık bakım, 7/24 arıza ve tamir, modernizasyon
+oluşuyor. YKA Asansör olarak Sancaktepe merkezli ekibimizle Çakmak'ta aylık bakım, 7/24 arıza ve tamir, modernizasyon
 ve montaj yapıyoruz. Bu yazıda bir yöneticinin bilmesi gerekenleri sırayla anlattık.
 
 **Bu yazıda**
@@ -69,7 +69,7 @@ Yeterlilik Belgesi olmalı. Kapı ayarı ve temizliği bakımın içinde; kapı 
 ayrıca fiyatlanıyor. Sözleşmede nelere bakılacağını "Asansör bakım sözleşmesi" yazımızda, masrafın paylaşımını
 "Asansör bakımını kim öder?" yazımızda anlattık.
 
-YK Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
+YKA Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
 
 ## Arıza ve mahsur kalma
 

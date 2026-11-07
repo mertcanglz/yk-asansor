@@ -1,7 +1,7 @@
 # Taslak: Yakacık asansör hizmetleri (semt yazısı)
 
 > **Durum:** taslak, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 24 Ekim 2026
-> **Bağlı olduğu ilçe yazısı:** `kartal-asansor.md` · **Marka:** yalnızca "YK Asansör"
+> **Bağlı olduğu ilçe yazısı:** `kartal-asansor.md` · **Marka:** yalnızca "YKA Asansör"
 > **Yapı:** tüm yer yazılarında ortak 12 başlık; ayrı "öne çıkan konu" yok.
 
 ## Yayın bilgileri
@@ -11,7 +11,7 @@
 | URL | `/blog/yakacik-asansor.html` |
 | Ana sorgu | yakacık asansör (20/ay) |
 | Yan sorgular | yakacık asansör bakım, yakacık asansör firması, yakacık asansör servisi, kartal yakacık asansör tamiri |
-| `<title>` (56) | `Yakacık Asansör: Bakım, Montaj ve 7/24 Arıza \| YK Asansör` |
+| `<title>` (57) | `Yakacık Asansör: Bakım, Montaj ve 7/24 Arıza \| YKA Asansör` |
 | Meta (≈150) | `Kartal Yakacık'ta asansör bakımı, 7/24 arıza, montaj ve modernizasyon. Periyodik kontrol, etiketler ve bakım ücreti rehberi: 0 (543) 542 86 75.` |
 | H1 | Yakacık'ta asansör hizmetleri: *Bakım, arıza, montaj ve periyodik kontrol rehberi* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
@@ -25,7 +25,7 @@
 
 Yakacık, Kartal'ın kuzeyinde, Yakacık Çarşı ve Yakacık Yeni mahallelerini kapsayan bilinen bir semt. Apartman
 yöneticisi için buradaki sorumluluk Kartal'ın genelindekiyle aynı: aylık bakım, yıllık periyodik kontrol ve
-eksiklerin zamanında giderilmesi. YK Asansör olarak Sancaktepe merkezli ekibimizle Yakacık'ta bakım, 7/24 arıza,
+eksiklerin zamanında giderilmesi. YKA Asansör olarak Sancaktepe merkezli ekibimizle Yakacık'ta bakım, 7/24 arıza,
 modernizasyon ve montaj yapıyoruz. Bu yazıda bir yöneticinin bilmesi gereken her şeyi Yakacık'a göre anlattık.
 
 **Bu yazıda**
@@ -70,7 +70,7 @@ raylar yağlanıyor. Bakımdan sonra föy bırakılıyor, yönetim de föyleri s
 veriliyor. Kabin içi temizliği ve büyük parça değişimleri bakım ücretine dahil değil. Sözleşme ayrıntıları "Asansör
 bakım sözleşmesi" yazımızda.
 
-YK Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
+YKA Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
 
 ## Arıza ve mahsur kalma
 

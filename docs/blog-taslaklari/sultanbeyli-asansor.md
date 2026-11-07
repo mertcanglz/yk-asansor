@@ -1,7 +1,7 @@
 # Taslak: Sultanbeyli asansör hizmetleri (ilçe yazısı)
 
 > **Durum:** taslak v3, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
-> **Semt yazısı:** yok (mahalle dışında bilinen semt yok) · **Marka:** yalnızca "YK Asansör"
+> **Semt yazısı:** yok (mahalle dışında bilinen semt yok) · **Marka:** yalnızca "YKA Asansör"
 > **v3 (24 Ekim 2026):** Tüm yer yazılarında ortak 12 başlığa getirildi. "Onarım mı, yenileme mi?" ayrı bölüm olmaktan
 > çıkıp "Modernizasyon" başlığının içine alındı; "binalar" bölümü eklendi.
 
@@ -12,7 +12,7 @@
 | URL | `/blog/sultanbeyli-asansor.html` |
 | Ana sorgu | sultanbeyli asansör firmaları (70/ay) |
 | Yan sorgular | sultanbeyli asansör, sultanbeyli asansör bakım, sultanbeyli asansör servisi, sultanbeyli asansör tamiri, sultanbeyli asansör montaj |
-| `<title>` (56) | `Sultanbeyli Asansör Firması: Bakım ve Arıza \| YK Asansör` |
+| `<title>` (57) | `Sultanbeyli Asansör Firması: Bakım ve Arıza \| YKA Asansör` |
 | Meta (≈150) | `Sultanbeyli'de asansör bakımı, 7/24 arıza, modernizasyon ve montaj. Periyodik kontrol, etiketler ve bakım ücreti rehberi: 0 (543) 542 86 75.` |
 | H1 | Sultanbeyli'de asansör hizmetleri: *Bakımdan montaja bina yöneticisinin rehberi* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
@@ -26,7 +26,7 @@
 
 Sultanbeyli'de bir binanın asansöründen sorumluysanız işiniz üç başlıkta toplanıyor: asansörün her ay bakımını
 yaptırmak, yılda bir periyodik kontrolden geçirmek ve kontrolde çıkan eksikleri süresi içinde gidermek. Sultanbeyli'de
-periyodik kontrolü belediyenin anlaştığı IQNORM yapıyor. YK Asansör olarak Sancaktepe merkezli ekibimizle
+periyodik kontrolü belediyenin anlaştığı IQNORM yapıyor. YKA Asansör olarak Sancaktepe merkezli ekibimizle
 Sultanbeyli'nin 15 mahallesinin hepsinde bakım, 7/24 arıza, modernizasyon ve montaj yapıyoruz. Bu yazıda bir bina
 yöneticisinin bilmesi gerekenleri topladık.
 
@@ -72,7 +72,7 @@ Her ay fren, halatlar, kapılar ve kilitler, güvenlik devreleri, kumanda panosu
 raylar yağlanıyor. Her bakımdan sonra föy bırakılıyor ve yönetim föyleri kalıcı olarak saklıyor; föyler onarım mı
 yenileme mi kararında da en önemli kaynak. Bakım firması yılda en az bir kez kurtarma eğitimi veriyor. Kabin içi
 temizliği ve büyük parça değişimleri bakım ücretine dahil değil. Sözleşmede nelere bakacağınızı "Asansör bakım
-sözleşmesi" yazımızda, masrafın paylaşımını "Asansör bakımını kim öder?" yazımızda anlattık. YK Asansör bakım
+sözleşmesi" yazımızda, masrafın paylaşımını "Asansör bakımını kim öder?" yazımızda anlattık. YKA Asansör bakım
 sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
 
 ## Arıza ve mahsur kalma

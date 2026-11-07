@@ -1,6 +1,6 @@
-# YK Asansör — Web Sitesi
+# YKA Asansör — Web Sitesi
 
-Bu repo, **YK Asansör** işletmesinin tanıtım web sitesidir. Site sahibi projeyi çoğunlukla
+Bu repo, **YKA Asansör** işletmesinin tanıtım web sitesidir. Site sahibi projeyi çoğunlukla
 **telefondan, Claude Code bulut oturumu (claude.ai/code)** üzerinden yönetir. Bu yüzden:
 
 - Kullanıcıyla **Türkçe** konuş. Site içeriği de Türkçe.
@@ -17,7 +17,7 @@ Bu repo, **YK Asansör** işletmesinin tanıtım web sitesidir. Site sahibi proj
 - Formlar: Alastyr hosting'de çalışan küçük bir PHP betiğiyle kurumsal e-postaya gönderilir (SMTP).
   Sunucu tarafı doğrulama (ör. telefon `^05\d{9}$`) bu betikte yapılır. Betik adı `form-gonder.php`
   (henüz yazılmadı); formlar `fetch` ile gönderir, başarıda JSON `{"ok": true}`, hatada HTTP 422 + `{"hata": "…"}` bekler. Derleme yok kuralı geçerli;
-  PHP yalnızca form gönderimi için. Kurumsal e-posta adresi: TODO (marka adı kesinleşince).
+  PHP yalnızca form gönderimi için. Kurumsal e-posta adresi: TODO (kullanıcı verince).
 - Yerel önizleme: `python3 -m http.server 8080` → http://localhost:8080
 
 ## Dosya yapısı
@@ -117,7 +117,7 @@ Kodlamadan önce blog taslakları `docs/blog-taslaklari/` altında Markdown olar
 - **Kapsayıcı genişliği:** masaüstünde bölüm içerikleri header'ın iki kenarı arasında (1280 px kapsayıcı) kalır; zemin
   ekran boyunca uzayabilir ama kartlar taşmaz (ör. ana sayfa blog şeridi: ≥1280 px'te 3, 1024–1279 px'te 2 kart).
 - **Yenilemede kalınan yer:** sayfa yenilenince (F5) ya da geri tuşuyla dönülünce kaydırma konumu geri gelir (main.js
-  `Konum`, oturum depolaması `yk-konum`; blog listesinde açılan kart sayısı ve kategori de). Bağlantıyla gelince sayfa
+  `Konum`, oturum depolaması `yka-konum`; blog listesinde açılan kart sayısı ve kategori de). Bağlantıyla gelince sayfa
   baştan açılır. Kullanıcı kaydırmaya başlarsa geri yükleme bırakılır. Geri tuşunda sayfa çoğu zaman bellekten (bfcache) gelir
   ve kod yeniden çalışmaz; Safari o zaman `scrollRestoration: manual` yüzünden sayfayı en başa alıyordu, bu yüzden geri yükleme
   `pageshow` (`persisted`) ile de yapılır (Safari'de test edildi). Geri yüklerken ana sayfanın telefondaki kat durakları
@@ -171,8 +171,9 @@ Sitede **iletişim/teklif formu** (ad soyad, e-posta, telefon), **Google Analyti
 Aşağıdaki `TODO` alanları sitede yer tutucu olarak duruyor. Kullanıcı bilgi verdikçe
 hem buraya hem siteye işle:
 
-- Firma adı: YK Asansör (çalışma adı; marka adı henüz kesinleşmedi — kesinleşince sitedeki
-  tüm geçişleri, `<title>`/meta açıklamaları ve yasal metinleri güncelle)
+- Firma adı: YKA Asansör (eski adı YK Asansör; 7 Kasım 2026'da değişti, kullanıcı kararı). Google İşletme Profili,
+  Instagram ve dizin kayıtları gibi dış kayıtlarda eski ad kalmış olabilir; GitHub deposu ve klasör adı da şimdilik
+  `yk-asansor`. `docs/rakip-inceleme.md` eski adla yapılmış tarihli bir incelemedir, metni değiştirilmez.
 - Hizmetler (kullanıcı onayladı; referans: gunesasansor.com.tr ile aynı kapsam):
   - Yeni asansör montajı (projelendirme dahil)
   - Periyodik bakım sözleşmesi (aylık bakım)
@@ -211,7 +212,7 @@ hem buraya hem siteye işle:
 - SSS: yanıtlar düz metin olarak sayfada (mobilde tüm sayfalarda açılışta hepsi kapalı akordeon, aynı anda tek soru açık — biri açılınca önceki kapanır, `<details name="sss">`; kapalıyken de
   HTML'de dursun, `<details>`/`<summary>` ile — JS ile sonradan eklenmesin), marka adı doğal geçer (bölge adı yok); `FAQPage`
   yapılandırılmış verisi (JSON-LD) eklenir ki arama motorları ve yapay zekâ asistanları alıntılasın.
-- Ana sayfa sırası: hero (3 kat) → asansör sistemleri → neden YK Asansör → etiket bölümü →
+- Ana sayfa sırası: hero (3 kat) → asansör sistemleri → neden YKA Asansör → etiket bölümü →
   rakamlar → kabin çözümleri → bakım paketleri → blog → SSS → footer (hızlı teklif formu:
   ad soyad, telefon, hizmet zorunlu). "Teklif alın" butonları detaylı form açar.
   Header'daki "Yeşil etiket" → `yesil-etiket.html`; "Etiketler ne anlama gelir?" → ana sayfadaki `#etiket`.
@@ -224,7 +225,7 @@ hem buraya hem siteye işle:
 - WhatsApp: iletişim numarasıyla aynı, 0543 542 86 75 (`https://wa.me/905435428675`)
 - Çalışma saatleri: **7/24 hizmet** (kullanıcı teyit etti). Sitede, yapılandırılmış veride
   (`openingHoursSpecification` 00:00–23:59, her gün) ve Google İşletme Profili'nde "24 saat açık" olarak aynı.
-- E-posta: TODO — marka adı kesinleşince belirlenecek kurumsal adres; hem sitedeki iletişim
+- E-posta: TODO — belirlenecek kurumsal adres; hem sitedeki iletişim
   e-postası hem form gönderimlerinin gideceği adres bu olacak (şimdilik `[E-POSTA ADRESİ]` yer tutucusu).
 - Adres: Abdurrahman Gazi Mah. Altınordu Cad. No: 38-40/A, Sancaktepe / İstanbul
   (Google İşletme Profili ve Instagram'daki adresle aynı). Google İşletme Profili bağlantısı:
@@ -235,7 +236,7 @@ hem buraya hem siteye işle:
   "Google Haritalar'da açın" bağlantısı.
 - Sosyal medya: Instagram, Facebook, LinkedIn — hesap adresleri TODO (sitede `[INSTAGRAM]`, `[FACEBOOK]`,
   `[LINKEDIN]` yer tutucusu). Instagram şimdilik `@ykasansorr` (resmî hesap bu; `yk.asansorr` değil), ama
-  marka adı değişirse kullanıcı adı da değişebilir, bu yüzden kesinleşene kadar sitede yer tutucu kalır. İkonlar tüm footer'ların alt şeridinde (masaüstünde telif yazısının sağında,
+  marka adı YKA Asansör olduğu için kullanıcı adı da değişebilir, bu yüzden kullanıcı teyit edene kadar sitede yer tutucu kalır. İkonlar tüm footer'ların alt şeridinde (masaüstünde telif yazısının sağında,
   mobilde üstünde) ve iletişim sayfasında "Bizi takip edin" olarak başlığın karşısında; yeni sekmede açılır.
 - Kuruluş yılı / deneyim: TODO
 - Logo ve marka renkleri: TODO (şu an geçici lacivert + turuncu)

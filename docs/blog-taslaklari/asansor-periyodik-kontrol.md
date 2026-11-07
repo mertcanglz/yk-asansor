@@ -1,7 +1,7 @@
 # Taslak: Asansör periyodik kontrolü (konu yazısı)
 
 > **Durum:** taslak, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
-> **Tür:** yer adı içermeyen konu yazısı · **Marka:** yalnızca "YK Asansör"
+> **Tür:** yer adı içermeyen konu yazısı · **Marka:** yalnızca "YKA Asansör"
 
 ## Yayın bilgileri
 
@@ -10,7 +10,7 @@
 | URL | `/blog/asansor-periyodik-kontrol.html` |
 | Ana sorgu | asansör muayene ücreti (170/ay), asansör periyodik kontrol (140/ay) |
 | Yan sorgular | asansör muayene (70), asansör periyodik kontrol ücreti (30), asansör yıllık kontrol, periyodik kontrolü kim yapar |
-| `<title>` (58) | `Asansör Periyodik Kontrolü ve Muayene Ücreti \| YK Asansör` |
+| `<title>` (59) | `Asansör Periyodik Kontrolü ve Muayene Ücreti \| YKA Asansör` |
 | Meta (135) | `Asansör periyodik kontrolü kim yapar, ne zaman yapılır, ücreti kim öder? Tarih bildirimi, takip kontrolü, etiketler: 0 (543) 542 86 75.` |
 | H1 | Asansör periyodik kontrolü: *Kim yapar, ücreti kim öder, nasıl hazırlanılır?* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |

@@ -1,7 +1,7 @@
 # Taslak: Ümraniye asansör hizmetleri (ilçe yazısı)
 
 > **Durum:** taslak v4, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
-> **Semt yazıları:** Dudullu, Çakmak, Şerifali, Tepeüstü · **Marka:** yalnızca "YK Asansör"
+> **Semt yazıları:** Dudullu, Çakmak, Şerifali, Tepeüstü · **Marka:** yalnızca "YKA Asansör"
 > **v4 (24 Ekim 2026):** Tüm yer yazılarında ortak 12 başlığa getirildi; "Yoğun binalarda bakım planlama" ayrı bölüm
 > olmaktan çıkıp "Aylık bakım ve sözleşme" içine alındı; ayrı "öne çıkan konu" yok.
 
@@ -12,7 +12,7 @@
 | URL | `/blog/umraniye-asansor.html` |
 | Ana sorgu | ümraniye asansör firmaları (110/ay), ümraniye asansör (40/ay) |
 | Yan sorgular | ümraniye asansör servisi (10), ümraniye asansör bakım, ümraniye asansör tamiri, ümraniye asansör montaj, ümraniye asansör periyodik kontrol |
-| `<title>` (59) | `Ümraniye Asansör Firması: Bakım, Arıza, Montaj \| YK Asansör` |
+| `<title>` (60) | `Ümraniye Asansör Firması: Bakım, Arıza, Montaj \| YKA Asansör` |
 | Meta (≈152) | `Ümraniye'de asansör bakımı, 7/24 arıza, montaj ve modernizasyon. Periyodik kontrolü kim yapar, bakım ücreti ne kadar? Teklif: 0 (543) 542 86 75.` |
 | H1 | Ümraniye'de asansör hizmetleri: *Bakım, arıza, montaj ve periyodik kontrol rehberi* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
@@ -28,7 +28,7 @@
 ilçede. Asansör açısından bu, çok farklı ihtiyaçların yan yana durması demek. Ama her binada değişmeyen üç kural var:
 asansörün ayda en az bir kez TSE Hizmet Yeterlilik Belgesi olan bir firmaca bakılması, yılda bir periyodik kontrolden
 geçmesi ve kontrolde çıkan eksiklerin süresi içinde giderilmesi. Ümraniye'de periyodik kontrolü belediyenin
-anlaştığı Royalcert yapıyor. YK Asansör olarak Sancaktepe merkezli ekibimizle Ümraniye'nin her yerinde bakım, 7/24
+anlaştığı Royalcert yapıyor. YKA Asansör olarak Sancaktepe merkezli ekibimizle Ümraniye'nin her yerinde bakım, 7/24
 arıza, modernizasyon ve montaj yapıyoruz; bu yazıda bir bina yöneticisinin bilmesi gerekenleri topladık.
 
 **Bu yazıda**
@@ -77,7 +77,7 @@ gerekiyor. Yönetim de bu föyleri makine dairesinde ya da yönetim bürosunda k
 ayrıca yılda en az bir kez, yönetimin belirlediği kişilere kurtarma eğitimi veriyor.
 
 Kabin, kat kapısı, motor gibi büyük parçaların değişimi ve kabin içi temizlik bakım kapsamında değil, ayrıca
-fiyatlanıyor. Sözleşmede nelere bakılacağını "Asansör bakım sözleşmesi" yazımızda ayrıntılı anlattık. YK Asansör
+fiyatlanıyor. Sözleşmede nelere bakılacağını "Asansör bakım sözleşmesi" yazımızda ayrıntılı anlattık. YKA Asansör
 bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
 
 Plaza, hastane ve AVM gibi yoğun binalarda bakımın zamanlaması da önemli. Bir plazada ya da hastanede bakım saatini binanın ritmine göre koymak ilk iş: sabah erken, mesai bittikten sonra

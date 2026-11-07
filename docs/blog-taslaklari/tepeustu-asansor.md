@@ -1,7 +1,7 @@
 # Taslak: Tepeüstü asansör hizmetleri (semt yazısı)
 
 > **Durum:** taslak v4, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
-> **Bağlı olduğu ilçe yazısı:** `umraniye-asansor.md` · **Marka:** yalnızca "YK Asansör"
+> **Bağlı olduğu ilçe yazısı:** `umraniye-asansor.md` · **Marka:** yalnızca "YKA Asansör"
 > **v4 (24 Ekim 2026):** Tüm yer yazılarında ortak 12 başlığa getirildi; erişilebilirlik, uzun arıza ve şikâyet yolu ayrı
 > bölümler olmaktan çıkıp "aylık bakım", "arıza" ve "modernizasyon" başlıklarının içine alındı; ayrı "öne çıkan konu" yok.
 
@@ -12,7 +12,7 @@
 | URL | `/blog/tepeustu-asansor.html` |
 | Ana sorgu | tepeüstü asansör |
 | Yan sorgular | tepeüstü asansör bakım, tepeüstü asansör firması, tepeüstü asansör tamiri, engelli lifti |
-| `<title>` (57) | `Tepeüstü Asansör: Bakım, Montaj ve 7/24 Arıza \| YK Asansör` |
+| `<title>` (58) | `Tepeüstü Asansör: Bakım, Montaj ve 7/24 Arıza \| YKA Asansör` |
 | Meta (≈150) | `Ümraniye Tepeüstü'nde asansör bakımı, 7/24 arıza, montaj, modernizasyon ve engelli lifti. Periyodik kontrol ve ücret: 0 (543) 542 86 75.` |
 | H1 | Tepeüstü'nde asansör hizmetleri: *Bakım, arıza, montaj ve periyodik kontrol rehberi* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
@@ -26,7 +26,7 @@
 
 Ümraniye'nin Tepeüstü Mahallesi'nde bir binanın asansöründen sorumluysanız işiniz her ay bakım, yılda bir periyodik
 kontrol ve kontrolde çıkan eksikleri süresinde gidermek. Bir de şunu unutmamak gerekiyor: çoğumuz için bozuk asansör
-bir zahmet; tekerlekli sandalye kullanan, yaşlı ya da yeni ameliyat olmuş biri için ise evden çıkamamak demek. YK
+bir zahmet; tekerlekli sandalye kullanan, yaşlı ya da yeni ameliyat olmuş biri için ise evden çıkamamak demek. YKA
 Asansör olarak Sancaktepe merkezli ekibimizle Tepeüstü'nde aylık bakım, 7/24 arıza, modernizasyon, montaj ve engelli
 lifti hizmeti veriyoruz. Bu yazıda bir yöneticinin bilmesi gerekenleri topladık.
 
@@ -70,7 +70,7 @@ sözleşme yapmak, bakımı yaptırmak ve ücretini ödemek; engelli erişilebil
 sürekli çalışmasını sağlamak; tehlikeli bir durum fark edildiğinde bakım firmasına bildirmek ve müdahaleye kadar önlem
 almak. Sözleşme ayrıntıları "Asansör bakım sözleşmesi", masrafın paylaşımı "Asansör bakımını kim öder?" yazımızda.
 
-YK Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
+YKA Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
 
 ## Arıza ve mahsur kalma
 

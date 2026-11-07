@@ -1,7 +1,7 @@
 # Taslak: Kırmızı etiket alan asansör (konu yazısı)
 
 > **Durum:** taslak, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
-> **Tür:** yer adı içermeyen konu yazısı · **Marka:** yalnızca "YK Asansör"
+> **Tür:** yer adı içermeyen konu yazısı · **Marka:** yalnızca "YKA Asansör"
 
 ## Yayın bilgileri
 
@@ -10,7 +10,7 @@
 | URL | `/blog/kirmizi-etiket-asansor.html` |
 | Ana sorgu | kırmızı etiket asansör (480/ay) |
 | Yan sorgular | kırmızı etiketli asansör kullanılır mı, kırmızı etiket süresi, asansör mühürlendi, mühür bozma, asansör takip kontrolü |
-| `<title>` (55) | `Kırmızı Etiket Alan Asansör: Süre ve Mühür \| YK Asansör` |
+| `<title>` (56) | `Kırmızı Etiket Alan Asansör: Süre ve Mühür \| YKA Asansör` |
 | Meta (131) | `Asansör kırmızı etiket aldıysa ne olur? Kullanım yasağı, 60 günlük süre, takip kontrolü ve mühür süreci. Yardım: 0 (543) 542 86 75.` |
 | H1 | Kırmızı etiket alan asansör: *Süre, mühür ve yapılması gerekenler* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |

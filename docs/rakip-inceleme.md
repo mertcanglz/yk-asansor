@@ -1,4 +1,7 @@
-# YK Asansör: Rakip ve arama sonucu incelemesi
+# YKA Asansör: Rakip ve arama sonucu incelemesi
+
+> **Ad notu:** Bu inceleme işletmenin eski adıyla yapıldı; aşağıda geçen "YK", bugünkü YKA Asansör'dür (ad 7 Kasım 2026'da
+> değişti). O tarihte görülen kayıtları anlattığı için metin eski adıyla bırakıldı.
 
 İnceleme: 18 Ekim 2026 (Pazar akşamı). Yöntem: Claude in Chrome ile kullanıcının kendi Chrome'unda,
 oturum açmadan hiçbir işlem yapılmadan (form, mesaj, giriş yok).
@@ -259,7 +262,7 @@ ISO geçiyor mu; **hiçbirinde belge numarası yok**.
 
 | Alan | Durum (18 Ekim 2026) | Not |
 |---|---|---|
-| Ad | YK ASANSÖR | Büyük harf. Marka adı kesinleşince güncellenecek. |
+| Ad | YK ASANSÖR | Büyük harf ve eski ad. "YKA Asansör" olarak güncellenecek. |
 | Kategori | Asansör Servisi | Doğru birincil kategori (rakiplerin hepsi aynı). |
 | Puan / yorum | 5,0 · 15 yorum | Son yorumlar: 1 hafta, 3 hafta, 2 ay önce. Konu: aylık bakım. **Kaan Kaya (2 ay önce) ve Mahir Mamay (1 hafta önce) yorumlarının metni birebir aynı.** |
 | Adres | Abdurrahmangazi, Altınordu Cd. 38-40A, 34000 Sancaktepe/İstanbul | Site NAP'ıyla uyumlu. Posta kodu 34000 görünüyor (Sancaktepe için doğrusu muhtemelen 3488x); kontrol et. |

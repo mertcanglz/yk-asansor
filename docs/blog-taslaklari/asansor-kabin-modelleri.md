@@ -1,7 +1,7 @@
 # Taslak: Asansör kabin modelleri ve panoramik asansör (konu yazısı)
 
 > **Durum:** taslak, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
-> **Tür:** yer adı içermeyen konu yazısı · **Marka:** yalnızca "YK Asansör"
+> **Tür:** yer adı içermeyen konu yazısı · **Marka:** yalnızca "YKA Asansör"
 
 ## Yayın bilgileri
 
@@ -10,7 +10,7 @@
 | URL | `/blog/asansor-kabin-modelleri.html` |
 | Ana sorgu | panoramik asansör (480/ay), asansör kabini (390/ay) |
 | Yan sorgular | asansör kabin modelleri (320), asansör kabin yenileme, cam asansör, asansör kabin kaplama |
-| `<title>` (58) | `Asansör Kabin Modelleri ve Panoramik Asansör \| YK Asansör` |
+| `<title>` (59) | `Asansör Kabin Modelleri ve Panoramik Asansör \| YKA Asansör` |
 | Meta (138) | `Asansör kabin modelleri: rezidans, panoramik cam, sedye ve yük kabinleri; malzeme seçenekleri ve kabin yenileme. Bilgi: 0 (543) 542 86 75.` |
 | H1 | Asansör kabin modelleri: *Rezidanstan panoramiğe, hangi kabin hangi binaya?* |
 | Görsel | Kabin tiplerini gösteren kendi tasarımımız görseller (ana sayfadaki "Kabin çözümleri" görselleriyle ortak) |

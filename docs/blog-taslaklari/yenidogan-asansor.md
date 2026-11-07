@@ -1,7 +1,7 @@
 # Taslak: Yenidoğan asansör hizmetleri (semt yazısı)
 
 > **Durum:** taslak v4, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
-> **Bağlı olduğu ilçe yazısı:** `sancaktepe-asansor.md` · **Marka:** yalnızca "YK Asansör"
+> **Bağlı olduğu ilçe yazısı:** `sancaktepe-asansor.md` · **Marka:** yalnızca "YKA Asansör"
 > **v4 (24 Ekim 2026):** Tüm yer yazılarında ortak 12 başlığa getirildi; sözleşme içeriği ve firma değiştirme ayrı bölümler
 > olmaktan çıkıp "Aylık bakım ve sözleşme" ve "Firma seçerken" başlıklarının içine alındı; ayrı "öne çıkan konu" yok.
 
@@ -12,7 +12,7 @@
 | URL | `/blog/yenidogan-asansor.html` |
 | Ana sorgu | yenidoğan asansör |
 | Yan sorgular | yenidoğan asansör bakım, yenidoğan asansör firması, yenidoğan asansör tamiri, yenidoğan asansör servisi |
-| `<title>` (57) | `Yenidoğan Asansör: Bakım, Montaj ve 7/24 Arıza \| YK Asansör` |
+| `<title>` (58) | `Yenidoğan Asansör: Bakım, Montaj ve 7/24 Arıza \| YKA Asansör` |
 | Meta (≈150) | `Sancaktepe Yenidoğan'da asansör bakımı, 7/24 arıza, montaj ve modernizasyon. Periyodik kontrol, sözleşme ve bakım ücreti: 0 (543) 542 86 75.` |
 | H1 | Yenidoğan'da asansör hizmetleri: *Bakım, arıza, montaj ve periyodik kontrol rehberi* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
@@ -24,7 +24,7 @@
 
 # Yenidoğan'da asansör hizmetleri: *Bakım, arıza, montaj ve periyodik kontrol rehberi*
 
-Yenidoğan, Sancaktepe'nin aynı adlı mahallesi ve çevresiyle bilinen semtlerinden biri. YK Asansör olarak Sancaktepe
+Yenidoğan, Sancaktepe'nin aynı adlı mahallesi ve çevresiyle bilinen semtlerinden biri. YKA Asansör olarak Sancaktepe
 merkezli ekibimizle burada aylık bakım, 7/24 arıza, modernizasyon ve montaj yapıyoruz. Bu yazıda bir yöneticinin
 yükümlülüklerini, bakım sözleşmesinden periyodik kontrole, arızadan ücrete kadar sırayla anlattık.
 
@@ -73,7 +73,7 @@ Yönetmelik zorunlu tutmasa da yazılı olmazsa anlaşmazlık çıkaranlar: föy
 sarfın dahil olup olmadığı, yedek parçanın nasıl fiyatlanacağı, 7/24 arıza numarası, süre ve fesih koşulları
 (yönetmelikte asgari süre yok). Ayrıntılı kontrol listesi "Asansör bakım sözleşmesi" yazımızda.
 
-YK Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
+YKA Asansör bakım sözleşmelerinde ilk keşif ve 3 litre ray yağı değişimi ücretsiz.
 
 ## Arıza ve mahsur kalma
 

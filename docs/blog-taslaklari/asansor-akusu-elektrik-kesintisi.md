@@ -1,7 +1,7 @@
 # Taslak: Asansör aküsü ve elektrik kesintisi (konu yazısı)
 
 > **Durum:** taslak, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
-> **Tür:** yer adı içermeyen konu yazısı · **Marka:** yalnızca "YK Asansör"
+> **Tür:** yer adı içermeyen konu yazısı · **Marka:** yalnızca "YKA Asansör"
 
 ## Yayın bilgileri
 
@@ -10,7 +10,7 @@
 | URL | `/blog/asansor-akusu-elektrik-kesintisi.html` |
 | Ana sorgu | asansör aküsü (210/ay) |
 | Yan sorgular | asansör elektrik kesintisi (10), elektrik kesilince asansör, asansör otomatik kurtarma, asansör acil aydınlatma |
-| `<title>` (57) | `Asansör Aküsü ve Elektrik Kesintisi: Ne Olur? \| YK Asansör` |
+| `<title>` (58) | `Asansör Aküsü ve Elektrik Kesintisi: Ne Olur? \| YKA Asansör` |
 | Meta (140) | `Elektrik kesilince asansör ne yapar, kabin düşer mi? Akü, acil aydınlatma, alarm, otomatik kurtarma ve jeneratör rehberi: 0 (543) 542 86 75.` |
 | H1 | Asansör aküsü ve elektrik kesintisi: *Elektrik kesilince asansörde ne olur?* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |

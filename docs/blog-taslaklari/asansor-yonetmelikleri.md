@@ -1,7 +1,7 @@
 # Taslak: Asansör yönetmelikleri (konu yazısı)
 
 > **Durum:** taslak, onay bekliyor · **Hazırlayan:** Claude · **Kontrol eden:** Ömürcan Altundaş · **Tarih:** 19 Ekim 2026
-> **Tür:** yer adı içermeyen konu yazısı · **Marka:** yalnızca "YK Asansör"
+> **Tür:** yer adı içermeyen konu yazısı · **Marka:** yalnızca "YKA Asansör"
 
 ## Yayın bilgileri
 
@@ -10,7 +10,7 @@
 | URL | `/blog/asansor-yonetmelikleri.html` |
 | Ana sorgu | asansör yönetmeliği (1.600/ay) |
 | Yan sorgular | asansör bakım yönetmeliği (210), asansör işletme ve bakım yönetmeliği, asansör periyodik kontrol yönetmeliği, apartman yöneticisi asansör sorumluluğu |
-| `<title>` (58) | `Asansör Yönetmelikleri: Yöneticinin Görevleri \| YK Asansör` |
+| `<title>` (59) | `Asansör Yönetmelikleri: Yöneticinin Görevleri \| YKA Asansör` |
 | Meta (133) | `Asansör yönetmelikleri neler söylüyor? Bakım, periyodik kontrol, etiketler ve yöneticinin sorumlulukları. Danışın: 0 (543) 542 86 75.` |
 | H1 | Asansör yönetmelikleri: *Bina yöneticisinin bilmesi gerekenler* |
 | Şema | `BlogPosting`, `BreadcrumbList`, `FAQPage` |
