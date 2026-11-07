@@ -175,6 +175,7 @@ const Asansor = (() => {
   let intro = 0, introT0 = null;
   let raf = 0, sonT = 0, kapali = false;
   let aktifKat = -1, sonBg = '', sonGlowTon = '';
+  let sesKapi = -1, sesKat = -1; // hero sesine (ses.js) son bildirilen kapı ve kat
 
   /* Kare setleri: turuncu-00 sayfada hazır; diğerleri sayfa yüklendikten sonra gelir */
   const setler = {};
@@ -437,6 +438,13 @@ const Asansor = (() => {
     glow.style.transform = `translate3d(0,${cabTopU * s0 - g.cabH0 * 0.1}px,0)`;
     glow.style.opacity = (0.04 + 0.16 * light).toFixed(3);
     kareGoster(kat.ton, Math.round(door * (KARE - 1)));
+    // hero sesi (ses.js, deneme) kapının açıklığını ve katı buradan dinler; ses.js yoksa olayı dinleyen olmaz
+    if (door !== sesKapi || akt !== sesKat) {
+      sesKapi = door;
+      sesKat = akt;
+      lift.kapiDurumu = { kapi: door, kat: akt };
+      d.dispatchEvent(new CustomEvent('yka:kapi', { detail: lift.kapiDurumu }));
+    }
 
     if (genis) {
       col.style.transform = `translate3d(0,${-p * H}px,0)`;
