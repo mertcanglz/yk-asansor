@@ -1326,7 +1326,8 @@ html:not([data-ck="yok"]) .ck--bar { display: none; }
 /* ilgili hizmetler */
 .sp-ilgili { position: relative; z-index: 1; padding: var(--ic-bolum) var(--padx); background: var(--beyaz); color: var(--murekkep); }
 .sp-ilgili__in { max-width: 1280px; margin: 0 auto; }
-.sp-ilgili__h { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 16px; }
+.sp-ilgili__h { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0 16px; margin-bottom: 16px; }
+.sp-ilgili__h .sp-h2 { flex: 1 1 0; } /* taban 0: bağlantı, başlık kırılınca bile sığıyorsa yanda kalır; kırılmaz parça sığmazsa alta iner */
 .sp-ilgili__h .yka-link { flex: none; }
 .sp-rel { display: flex; flex-direction: column; gap: 10px; }
 .sp-rel a { display: flex; flex-direction: column; gap: 8px; padding: 22px 20px 20px; border-radius: 16px; background: var(--acik); color: var(--murekkep); text-decoration: none; transition: box-shadow .35s, transform .45s var(--ease), background .35s; }
