@@ -903,10 +903,20 @@ const Neden = (() => {
 /* ---------- Kaydırma ---------- */
 let kareIstegi = 0;
 let zeminIstegi = 0;
-/* Masaüstünde header'ın hemen altındaki zemin açık mı? (beyaz/gri bölüm, kart vb.) Header, sabit katmanlar
-   (asansör, WhatsApp) atlanır; ilk dolu arka plan rengine bakılır. Arka planı görsel ya da degrade olanlar koyu sayılır. */
+/* Masaüstünde header'ın hemen altındaki zemin açık mı? (beyaz/gri bölüm, kart vb.) Header'ın degradesi ekranın
+   tamamını kapladığı için tek noktaya değil, genişlik boyunca 9 noktaya bakılır; çoğunluk açıksa açık sayılır.
+   Eskiden yalnızca ekranın ortasına bakılıyordu: geniş ekranda ortaya denk gelen tek bir beyaz kart (iletişim ve teklif
+   formu) koyu sayfada header'ın arkasını beyaza, açık sayfadaki koyu kutu (blog yazısı çağrı kutusu) siyaha çeviriyordu.
+   Her noktada header ve sabit katmanlar (asansör, WhatsApp) atlanır; ilk dolu arka plan rengine bakılır.
+   Arka planı görsel ya da degrade olanlar koyu sayılır. */
 function zeminAcikMi() {
-  for (const el of d.elementsFromPoint(innerWidth / 2, 46)) {
+  const N = 9;
+  let acik = 0;
+  for (let i = 0; i < N; i++) if (noktaAcikMi((i + 0.5) * innerWidth / N)) acik++;
+  return acik * 2 > N;
+}
+function noktaAcikMi(x) {
+  for (const el of d.elementsFromPoint(x, 46)) {
     if (el.closest('#hdr') || getComputedStyle(el).position === 'fixed') continue;
     for (let e = el; e && e !== h; e = e.parentElement) {
       const m = getComputedStyle(e).backgroundColor.match(/[\d.]+/g);
