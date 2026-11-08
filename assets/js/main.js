@@ -367,7 +367,9 @@ const Asansor = (() => {
     });
     glow.style.left = X(768) - cabW + 'px';
     glow.style.width = cabW * 2 + 'px';
-    glow.style.height = cabH * 1.2 + 'px';
+    // ışık kabinin altına ve üstüne de yanlar kadar yumuşak yayılır (eskiden yalnızca %10 taşıyordu: kabinin altı
+    // yanlara göre keskin bir çizgiyle kararıyordu)
+    glow.style.height = cabH * 2 + 'px';
     cab.style.left = X(518.7) + 'px';
     cab.style.width = cabW + 'px';
     cab.style.height = cabH + 'px';
@@ -435,7 +437,7 @@ const Asansor = (() => {
       glow.style.background = `radial-gradient(ellipse at center, rgba(${a}, 1) 0%, rgba(${a}, .375) 45%, rgba(${a}, 0) 70%)`;
       sonGlowTon = kat.ton;
     }
-    glow.style.transform = `translate3d(0,${cabTopU * s0 - g.cabH0 * 0.1}px,0)`;
+    glow.style.transform = `translate3d(0,${cabTopU * s0 - g.cabH0 * 0.5}px,0)`;
     glow.style.opacity = (0.04 + 0.16 * light).toFixed(3);
     kareGoster(kat.ton, Math.round(door * (KARE - 1)));
     // hero sesi (ses.js, deneme) kapının açıklığını ve katı buradan dinler; ses.js yoksa olayı dinleyen olmaz
@@ -1076,15 +1078,46 @@ if ('IntersectionObserver' in window) {
   }));
 })();
 
-/* ---------- Blog şeridi: oklarla bir sayfa (görünen kart sayısı kadar) kayar ---------- */
+/* ---------- Blog şeridi: oklarla bir sayfa (görünen kart sayısı kadar) kayar ----------
+   Tarayıcının kendi yumuşak kaydırması kısa ve sert duruyordu: kayma JS ile, yavaş başlayıp yavaş biten ~0,8 sn'lik
+   eğriyle yapılır. Kayarken kart durakları (scroll-snap) kapalı, yoksa her karede en yakın karta çekiyordu.
+   Kayma sürerken yeniden basılırsa sıradaki sayfa, o anki hedeften hesaplanır (tıklamalar birikir). */
 (() => {
   const ray = $('#blogRay');
   if (!ray) return;
+  let hedef = null, istek = 0;
+  const egri = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  function kay(yeni) {
+    cancelAnimationFrame(istek);
+    const bas = ray.scrollLeft;
+    const fark = yeni - bas;
+    if (Math.abs(fark) < 1) { hedef = null; return; }
+    hedef = yeni;
+    const sure = clamp(520 + Math.abs(fark) * 0.3, 650, 950);
+    const t0 = performance.now();
+    ray.style.scrollSnapType = 'none';
+    const adim = (now) => {
+      const k = Math.min(1, (now - t0) / sure);
+      ray.scrollLeft = bas + fark * egri(k);
+      if (k < 1) istek = requestAnimationFrame(adim);
+      else { hedef = null; ray.style.scrollSnapType = ''; }
+    };
+    istek = requestAnimationFrame(adim);
+  }
+  // parmakla ya da trackpad'le kaydırılırsa animasyon bırakılır
+  const birak = () => { if (hedef == null) return; cancelAnimationFrame(istek); hedef = null; ray.style.scrollSnapType = ''; };
+  ray.addEventListener('touchstart', birak, { passive: true });
+  ray.addEventListener('wheel', birak, { passive: true });
   $$('.blog__nav .rail-btn').forEach((b) => b.addEventListener('click', () => {
     const li = ray.firstElementChild;
     const kart = li ? li.offsetWidth + 16 : 408;
-    const adim = Math.max(1, Math.round((ray.clientWidth + 16) / kart)) * kart;
-    ray.scrollBy({ left: Number(b.dataset.yon) * adim, behavior: mqAz.matches ? 'auto' : 'smooth' });
+    const sayfa = Math.max(1, Math.round((ray.clientWidth + 16) / kart)) * kart;
+    const enCok = ray.scrollWidth - ray.clientWidth;
+    const simdi = hedef != null ? hedef : ray.scrollLeft;
+    // kart başına hizalı: önce en yakın karta yuvarla, sonra bir sayfa ilerle
+    const yeni = clamp(Math.round(simdi / kart) * kart + Number(b.dataset.yon) * sayfa, 0, enCok);
+    if (mqAz.matches) { ray.scrollLeft = yeni; return; }
+    kay(yeni);
   }));
 })();
 

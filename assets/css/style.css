@@ -302,8 +302,9 @@ html.nav-acik, html.nav-acik body { overflow: hidden; }
 .hw .lift__dip { display: none; }
 .lift__ropes i { position: absolute; left: 0; top: 0; transform-origin: 50% 0; background: linear-gradient(90deg, #5f646a 0%, #cfd3d6 45%, #8d9298 70%, #55595e 100%); }
 .lift__glow { position: absolute; left: 0; top: 0; will-change: transform, opacity; }
-.lift__cab { position: absolute; left: 0; top: 0; will-change: transform; filter: drop-shadow(0 28px 36px rgba(0, 0, 0, .5)); -webkit-mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0, #000 var(--mk, 10px)); mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0, #000 var(--mk, 10px)); }
-.lift__set { position: absolute; inset: 0; display: none; }
+/* üst kenar yumuşatması kare setlerinde: maske kabinin kendisinde olunca alttaki gölgeyi kutunun kenarında keskince kesiyordu */
+.lift__cab { position: absolute; left: 0; top: 0; will-change: transform; filter: drop-shadow(0 28px 36px rgba(0, 0, 0, .5)); }
+.lift__set { position: absolute; inset: 0; display: none; -webkit-mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0, #000 var(--mk, 10px)); mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0, #000 var(--mk, 10px)); }
 .lift__set.is-on { display: block; }
 .lift__f, .lift__f img { position: absolute; inset: 0; width: 100%; height: 100%; }
 .lift__f { opacity: 0; }
