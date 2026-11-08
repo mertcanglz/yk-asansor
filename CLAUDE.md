@@ -50,11 +50,14 @@ assets/css/style.css  Tüm stiller; renkler/fontlar en üstteki :root değişken
 assets/js/main.js     Etkileşimler (modül): hero asansörü, menüler, çerez onayı + GA/Meta yükleme
                       (kimlikler dosyanın başında GA_ID / META_PIXEL_ID: TODO), kampanya, form, animasyonlar
 assets/js/telefon.js  Telefon alanı maskesi (docs/telefon-alani.md ile birebir)
-assets/js/ses.js      Hero sesi (deneme, yalnızca ana sayfa): sağ üstte "Ses" düğmesi (varsayılan kapalı, hiçbir şey
-                      saklanmaz); sürekli lounge müzik, kapı kapalıyken kısık ve boğuk, açıldıkça yükselir; kata varışta
-                      zil (aşağı iki ton, yukarı tek ton). Kapı durumu main.js'ten ('yka:kapi' olayı). Kaldırma adımları
-                      dosyanın başında
-assets/ses/           Hero sesleri (Pixabay, kaynaklar ses.js'in başında); müzik (~1,7 MB) yalnızca ses açılınca yüklenir
+assets/js/ses.js      Hero sesi (deneme, yalnızca ana sayfa): sağ üstte "Ses" düğmesi, kenarında dönen ince ışık; açıkken
+                      hafif turuncu cam (dolu turuncu butonlar kadar öne çıkmaz). Varsayılan açık: tarayıcılar sesi
+                      dokunuş olmadan başlatmadığı için müzik ilk dokunuşta/tıklamada başlar (kaydırma sayılmaz).
+                      Kapatılırsa oturum boyunca hatırlanır (sessionStorage `yka-ses`, çerez politikasında). Kısık lounge
+                      müzik: kapı kapalıyken daha kısık ve boğuk, açıldıkça biraz yükselir; kata varışta zil (aşağı iki
+                      ton, yukarı tek ton). Kapı durumu main.js'ten ('yka:kapi' olayı). Kaldırma adımları dosyanın başında
+assets/ses/           Hero sesleri (Pixabay, kaynaklar ses.js'in başında). Müzik Opus .webm (~1,2 MB; MP3 V6 ile ölçülen
+                      kalite aynı), Opus çözemeyen tarayıcıya .mp3 (~1,7 MB); sayfa yüklendikten sonra arka planda iner
 assets/fonts/         Manrope + Newsreader italik 500 (woff2, latin + latin-ext)
 assets/img/           Görseller (logo, fotoğraflar) — web için sıkıştırılmış .jpg/.webp, < 300 KB
 assets/img/asansor/   Hero asansörü: kuyu + kapı kareleri (kare-692 geniş ekran, kare-400 telefon; 3 kat × 41 kare)
