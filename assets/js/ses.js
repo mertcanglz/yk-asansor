@@ -2,7 +2,8 @@
    Asansör bölümünde arka planda kısık, sözsüz lounge müziği ve kata varış zili.
    - Varsayılan açık. Tarayıcılar sesi ziyaretçi sayfaya dokunmadan / tıklamadan / bir tuşa basmadan başlatmaz:
      düğme açık görünür, müzik ilk dokunuşta (ör. çerez bildirimi, kampanya kartı, herhangi bir yer) yumuşakça başlar.
-     Kaydırma tarayıcılarda "dokunuş" sayılmaz.
+     Kaydırma tarayıcılarda "dokunuş" sayılmaz. Tarayıcı izin veriyorsa (ör. Chrome'da sitede daha önce tıklanmışsa,
+     yenileme ya da site içi geçişten sonra) açılışta dokunuş beklemeden başlar.
    - Sağ üstteki "Ses" düğmesi açar/kapatır. Ziyaretçi kapatırsa tercih oturum boyunca hatırlanır (sessionStorage
      'yka-ses', çerez politikasında yazılı): sayfaya dönünce yeniden çalmaz. Yeniden açınca kayıt silinir.
    - Müzik sürekli döner (sonu başına 3 sn çapraz geçişle bağlanır). Kapı kapalıyken daha kısık ve boğuktur (kapının
@@ -55,6 +56,8 @@ function kur() {
   let acik = kayitOku() !== 'kapali', caliyor = false, uyutT = 0, planT = 0, sonraki = 0, ilkParca = 0;
   let kapi = 0, kat = 2, sonAcikKat = null, sonZil = 0;
   let gorunur = 1, dugmeDenedi = false;
+  // düğmede is-caliyor: ses gerçekten çalıyor (açık ama ilk dokunuşu bekliyorsa yok)
+  const caliyorYap = (v) => { caliyor = v; btn.classList.toggle('is-caliyor', v); };
   btn.setAttribute('aria-pressed', String(acik));
 
   /* ---- dosyalar: sayfa yüklendikten sonra arka planda indirilir, ses motoru açılınca çözülür ---- */
@@ -197,7 +200,7 @@ function kur() {
     if (s) { kapi = s.kapi; kat = s.kat; if (kapi > 0.001 && sonAcikKat === null) sonAcikKat = kat; }
     const devam = () => {
       if (!acik || ctx.state !== 'running') return;
-      caliyor = true;
+      caliyorYap(true);
       dokunusuBirak();
       ana.gain.cancelScheduledValues(ctx.currentTime);
       ana.gain.setTargetAtTime(1, ctx.currentTime, 0.25);
@@ -207,7 +210,7 @@ function kur() {
     else ctx.resume().then(devam, () => {});
   }
   function durdur() {
-    caliyor = false;
+    caliyorYap(false);
     clearTimeout(planT);
     if (!ctx) return;
     ana.gain.cancelScheduledValues(ctx.currentTime);
@@ -227,6 +230,16 @@ function kur() {
   function dokunusuBirak() { OLAYLAR.forEach((o) => removeEventListener(o, dokunus, { capture: true })); }
   if (acik) dokunusuBekle();
 
+  /* Açılışta dene: tarayıcı izin veriyorsa müzik dokunuş beklemeden başlar (ör. Chrome'da sitede daha önce tıklanmışsa,
+     yenileme ya da site içi geçişten sonra). İzin yoksa ses motoru askıda kalır, ilk dokunuşta başlar. İlk kez gelen
+     ziyaretçide tarayıcılar izin vermez. */
+  if (acik) {
+    grafik();
+    const bak = () => { if (ctx.state === 'running' && acik && !caliyor) baslat(); };
+    ctx.onstatechange = bak;
+    bak();
+  }
+
   btn.addEventListener('click', () => {
     // açık görünüp henüz çalmıyorsa (ilk dokunuş bekleniyordu) düğme sesi başlatır, kapatmaz
     // (bir kez: tarayıcı yine de başlatamazsa sonraki basış kapatabilsin)
@@ -244,7 +257,7 @@ function kur() {
     if (d.hidden) { ctx.suspend(); return; }
     ctx.resume().then(() => {
       if (ctx.state === 'running') planla();
-      else { caliyor = false; dokunusuBekle(); } // tarayıcı izin vermediyse ilk dokunuşta yeniden başlar
-    }, () => { caliyor = false; dokunusuBekle(); });
+      else { caliyorYap(false); dokunusuBekle(); } // tarayıcı izin vermediyse ilk dokunuşta yeniden başlar
+    }, () => { caliyorYap(false); dokunusuBekle(); });
   });
 }

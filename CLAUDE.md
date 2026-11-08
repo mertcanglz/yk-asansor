@@ -50,9 +50,11 @@ assets/css/style.css  Tüm stiller; renkler/fontlar en üstteki :root değişken
 assets/js/main.js     Etkileşimler (modül): hero asansörü, menüler, çerez onayı + GA/Meta yükleme
                       (kimlikler dosyanın başında GA_ID / META_PIXEL_ID: TODO), kampanya, form, animasyonlar
 assets/js/telefon.js  Telefon alanı maskesi (docs/telefon-alani.md ile birebir)
-assets/js/ses.js      Hero sesi (deneme, yalnızca ana sayfa): sağ üstte "Ses" düğmesi, kenarında dönen ince ışık; açıkken
-                      hafif turuncu cam (dolu turuncu butonlar kadar öne çıkmaz). Varsayılan açık: tarayıcılar sesi
-                      dokunuş olmadan başlatmadığı için müzik ilk dokunuşta/tıklamada başlar (kaydırma sayılmaz).
+assets/js/ses.js      Hero sesi (deneme, yalnızca ana sayfa): sağ üstte "Ses" düğmesi; açılışta kenarında ~10 sn dönen ince
+                      ışık (ziyaretçi sesi nereden kapatacağını görsün), sonra söner. Açıkken hafif turuncu cam, yazı ve
+                      ikon beyaz (dolu turuncu butonlar kadar öne çıkmaz). Varsayılan açık: tarayıcılar sesi dokunuş
+                      olmadan başlatmadığı için müzik ilk dokunuşta/tıklamada başlar (kaydırma sayılmaz); Chrome site
+                      içi geçişte izin verirse açılışta hemen başlar (yenile düğmesi/Cmd+R'de izin vermez).
                       Kapatılırsa oturum boyunca hatırlanır (sessionStorage `yka-ses`, çerez politikasında). Kısık lounge
                       müzik: kapı kapalıyken daha kısık ve boğuk, açıldıkça biraz yükselir; kata varışta zil (aşağı iki
                       ton, yukarı tek ton). Kapı durumu main.js'ten ('yka:kapi' olayı). Kaldırma adımları dosyanın başında

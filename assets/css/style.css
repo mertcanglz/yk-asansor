@@ -1031,15 +1031,17 @@ html:not([data-ck="yok"]) .ck--bar { display: none; }
 /* ---------- Hero sesi (deneme, assets/js/ses.js): sağ üstte ses düğmesi, yalnızca ana sayfa hero'su görünürken.
    Telefonda yalnızca ikon (header'ın altında, sağda), masaüstünde ikon + "Ses" (header'ın sağ kenarıyla hizalı). ---------- */
 .ses-btn { position: fixed; right: 12px; top: 76px; z-index: 25; min-width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center; gap: 7px; padding: 0 10px; border: 0; border-radius: 999px; color: var(--yazi-k2); background: rgba(18, 20, 23, .55); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .12); font-family: var(--f-sans); font-size: 13px; font-weight: 600; cursor: pointer; animation: ckIn .5s ease both; transition: opacity .35s, visibility .35s, color .25s, background .25s, box-shadow .25s; }
-/* düğme fark edilsin diye kenarında sürekli dönen ince ışık (hareket azaltma tercihinde durur) */
+/* açılışta düğme fark edilsin (ziyaretçi sesi nereden kapatacağını görsün) diye kenarında dönen ince ışık:
+   ~10 sn (4 tur) döner, sonra solar. Hareket azaltma tercihinde dönmeden durur, aynı anda solar. */
 @property --ses-a { syntax: "<angle>"; inherits: false; initial-value: 0deg; }
-.ses-btn::before { content: ""; position: absolute; inset: 0; border-radius: inherit; padding: 1.5px; pointer-events: none; background: conic-gradient(from var(--ses-a), rgba(255, 178, 122, 0) 0deg, rgba(255, 178, 122, 0) 190deg, rgba(255, 178, 122, .9) 320deg, rgba(255, 178, 122, 0) 360deg); -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0); animation: sesDon 2.8s linear infinite; }
+.ses-btn::before { content: ""; position: absolute; inset: 0; border-radius: inherit; padding: 1.5px; pointer-events: none; background: conic-gradient(from var(--ses-a), rgba(255, 178, 122, 0) 0deg, rgba(255, 178, 122, 0) 190deg, rgba(255, 178, 122, .9) 320deg, rgba(255, 178, 122, 0) 360deg); -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0); animation: sesDon 2.5s linear 4, sesSol .9s ease 9.1s forwards; }
 @keyframes sesDon { to { --ses-a: 360deg; } }
+@keyframes sesSol { to { opacity: 0; } }
 .ses-btn svg { flex: none; width: 18px; height: 18px; }
 .ses-btn__t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .ses-btn .ses-on { display: none; }
-/* açıkken hafif turuncu cam: dolu turuncu butonlar (Teklif alın, WhatsApp) kadar öne çıkmaz */
-.ses-btn[aria-pressed="true"] { color: var(--turuncu-acik); background: rgba(226, 102, 28, .16); box-shadow: inset 0 0 0 1px rgba(255, 178, 122, .22); }
+/* açıkken hafif turuncu cam: dolu turuncu butonlar (Teklif alın, WhatsApp) kadar öne çıkmaz; yazı ve ikon beyaz (okunsun) */
+.ses-btn[aria-pressed="true"] { color: #fff; background: rgba(226, 102, 28, .2); box-shadow: inset 0 0 0 1px rgba(255, 178, 122, .26); }
 .ses-btn[aria-pressed="true"] .ses-on { display: inline; }
 .ses-btn[aria-pressed="true"] .ses-off { display: none; }
 .ses-btn.is-yukleniyor svg { animation: sesNabiz 1s ease-in-out infinite; }
@@ -1048,9 +1050,9 @@ html:not([data-ck="yok"]) .ck--bar { display: none; }
 @keyframes sesNabiz { 50% { opacity: .35; } }
 @media (hover: hover) {
   .ses-btn:hover { color: #fff; background: rgba(30, 33, 37, .8); }
-  .ses-btn[aria-pressed="true"]:hover { color: #ffc79c; background: rgba(226, 102, 28, .24); }
+  .ses-btn[aria-pressed="true"]:hover { color: #fff; background: rgba(226, 102, 28, .3); }
 }
-@media (prefers-reduced-motion: reduce) { .ses-btn::before { animation: none; } }
+@media (prefers-reduced-motion: reduce) { .ses-btn::before { animation: sesSol .9s ease 9.1s forwards; } }
 @media (min-width: 1024px) {
   .ses-btn { top: 108px; right: max(var(--padx), calc((100% - 1280px) / 2)); padding: 0 15px 0 12px; }
   .ses-btn__t { position: static; width: auto; height: auto; overflow: visible; clip: auto; }
