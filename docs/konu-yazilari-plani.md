@@ -50,8 +50,8 @@ Başıbüyük sayfasında).
 
 ## 3b. Ek konu yazıları (22 Kasım 2026)
 
-İlçe ve semt yazıları Hizmet bölgeleri sayfasına ayrıldıktan sonra blog için yeni konu yazıları. **Durum: onaylandı ve blog/ altında yayına hazırlandı (22 Kasım 2026); onay
-bekliyor.** Hacimler bu turda Planlayıcı'yla ölçülmedi (yalnızca halat 19 Ekim ölçümünden). Mevzuat bilgileri Asansör
+İlçe ve semt yazıları Hizmet bölgeleri sayfasına ayrıldıktan sonra blog için yeni konu yazıları. **Durum: onaylandı ve blog/ altında yayına hazırlandı (22 Kasım 2026).**
+ Hacimler bu turda Planlayıcı'yla ölçülmedi (yalnızca halat 19 Ekim ölçümünden). Mevzuat bilgileri Asansör
 İşletme ve Bakım Yönetmeliği'nin güncel metninden madde madde okundu; ücretli standartlardan doğrulanamayan rakamlar
 yazılmadı (her taslağın editör notunda listeli).
 
