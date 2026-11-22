@@ -1816,16 +1816,16 @@ html:not(.js) .tf-card #tf-ref-alan[hidden] { display: flex !important; }
 .js .il-kart { animation-delay: .18s; }
 .js .il-soc { animation-delay: .22s; }
 .il-cards { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
-.il-c { display: flex; align-items: center; gap: 14px; padding: 14px 16px; border-radius: 16px; background: rgba(255, 255, 255, .035); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .09); color: var(--yazi-k); text-decoration: none; transition: background .3s, box-shadow .3s, transform .4s var(--ease); }
+.il-c { display: flex; align-items: center; gap: 14px; min-height: 76px; padding: 14px 16px; border-radius: 16px; background: rgba(255, 255, 255, .035); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .09); color: var(--yazi-k); text-decoration: none; transition: background .3s, box-shadow .3s, transform .4s var(--ease); }
 .il-c:active { background: rgba(255, 255, 255, .07); box-shadow: inset 0 0 0 1px rgba(33, 82, 246, .45); }
 .il-c__ic { flex: 0 0 42px; width: 42px; height: 42px; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--mavi-acik); background: rgba(33, 82, 246, .12); box-shadow: inset 0 0 0 1px rgba(33, 82, 246, .24); }
 .il-c__ic svg { width: 19px; height: 19px; }
 .il-c--main .il-c__ic { color: #fff; background: linear-gradient(180deg, #2966fa, #1a3ad8); box-shadow: none; }
-.il-c__tx { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.il-c__tx { display: flex; flex-direction: column; justify-content: center; gap: 4px; min-width: 0; }
 .il-c__l { font-size: 11px; font-weight: 600; letter-spacing: .5px; color: var(--gri-4); }
 .il-c__v { font-size: 16px; line-height: 1.3; font-weight: 500; color: var(--yazi-k); }
 .il-c--main .il-c__v { font-size: 22px; font-weight: 600; letter-spacing: .2px; white-space: nowrap; }
-.il-c__d { font-size: 12.5px; line-height: 1.45; color: var(--yazi-k3); }
+.il-c__nw { white-space: nowrap; } /* adres "38-" ile "40/A" arasından bölünmesin */
 .il-c__go { margin-left: auto; flex: 0 0 auto; color: var(--mavi-acik); }
 .il-soc { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 18px; }
 .il-soc__l { font-size: 13px; font-weight: 500; color: var(--yazi-k3); }
@@ -1875,10 +1875,8 @@ html:not(.js) .tf-card #tf-ref-alan[hidden] { display: flex !important; }
   .il-c { gap: 14px; padding: 12px 18px; border-radius: 14px; }
   a.il-c:hover { transform: translateY(-2px); background: rgba(255, 255, 255, .06); box-shadow: inset 0 0 0 1px rgba(33, 82, 246, .45); }
   .il-c__ic { flex-basis: 38px; width: 38px; height: 38px; border-radius: 11px; }
-  .il-c__tx { gap: 1px; }
   .il-c--main .il-c__v { font-size: 21px; }
-  .il-c__d { font-size: 12px; }
-  .il-kart { grid-column: 2; grid-row: 2; display: flex; flex-direction: column; height: 0; min-height: 100%; margin: 0; padding: 18px 24px; scroll-margin-top: 110px; }
+  .il-kart { grid-column: 2; grid-row: 2; display: flex; flex-direction: column; margin: 0; padding: 18px 24px; scroll-margin-top: 110px; }
   .il-form { flex: 1 1 auto; display: flex; flex-direction: column; min-height: 0; }
   .il-kart .tf-card__t { font-size: 20px; }
   .il-fbody { flex: 1 1 auto; gap: 8px; padding-top: 10px; min-height: 0; }
@@ -1900,6 +1898,9 @@ html:not(.js) .tf-card #tf-ref-alan[hidden] { display: flex !important; }
   .il-mapcard__acts { align-items: center; gap: 22px; margin-top: 4px; white-space: nowrap; }
   .il-harita__goster { display: inline-flex; }
   .il-mapgo { min-height: 0; font-size: 14px; }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .il-top { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 40px; }
 }
 
 /* ---------- Blog sayfası: kısa koyu başlık, arama + kategori süzgeci, iki/dört sütunlu kart ızgarası ---------- */
