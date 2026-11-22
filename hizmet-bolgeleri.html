@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Asansör Hizmet Bölgeleri: Anadolu Yakası | YKA Asansör</title>
-  <meta name="description" content="YKA Asansör'ün hizmet bölgeleri: Anadolu Yakası'nda 12 ilçe ve 17 semt için asansör bakımı, 7/24 arıza, montaj ve periyodik kontrol bilgileri.">
+  <title>Asansör Hizmet Bölgeleri: İl ve İlçeler | YKA Asansör</title>
+  <meta name="description" content="YKA Asansör'ün hizmet verdiği il ve ilçeler: asansör bakımı, 7/24 arıza, montaj ve periyodik kontrol için ilçenize özel bilgiler ve iletişim.">
   <meta name="theme-color" content="#0e1012">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="tr_TR">
   <meta property="og:site_name" content="YKA Asansör">
-  <meta property="og:title" content="Asansör Hizmet Bölgeleri: Anadolu Yakası | YKA Asansör">
-  <meta property="og:description" content="YKA Asansör'ün hizmet bölgeleri: Anadolu Yakası'nda 12 ilçe ve 17 semt için asansör bakımı, 7/24 arıza, montaj ve periyodik kontrol bilgileri.">
+  <meta property="og:title" content="Asansör Hizmet Bölgeleri: İl ve İlçeler | YKA Asansör">
+  <meta property="og:description" content="YKA Asansör'ün hizmet verdiği il ve ilçeler: asansör bakımı, 7/24 arıza, montaj ve periyodik kontrol için ilçenize özel bilgiler ve iletişim.">
   <!-- TODO (alan adı kesinleşince): canonical, og:url ve og:image (1200×630, mutlak adres) -->
   <link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/manrope-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
@@ -64,14 +64,14 @@
       "@id": "#sayfa",
       "name": "Hizmet bölgeleri",
       "url": "hizmet-bolgeleri.html",
-      "description": "YKA Asansör'ün hizmet bölgeleri: Anadolu Yakası'nda 12 ilçe ve 17 semt için asansör bakımı, 7/24 arıza, montaj ve periyodik kontrol bilgileri.",
+      "description": "YKA Asansör'ün hizmet verdiği il ve ilçeler: asansör bakımı, 7/24 arıza, montaj ve periyodik kontrol için ilçenize özel bilgiler ve iletişim.",
       "about": {
         "@id": "#isletme"
       },
       "inLanguage": "tr-TR",
       "mainEntity": {
         "@type": "ItemList",
-        "name": "İstanbul Anadolu Yakası hizmet bölgeleri",
+        "name": "İstanbul hizmet bölgeleri",
         "itemListElement": [
           {
             "@type": "ListItem",
@@ -212,7 +212,7 @@
 
   <!-- Header: masaüstünde logo + menü + telefon + teklif; telefonda logo + arama + menü düğmesi -->
   <header class="hdr" id="hdr">
-    <a class="logo" href="./" aria-label="YKA Asansör ana sayfa"><img src="assets/img/logo/yka-logo-yatay.svg" width="167" height="28" alt=""></a>
+    <a class="logo" href="./" aria-label="YKA Asansör ana sayfa"><img class="logo__k" src="assets/img/logo/yka-logo-yatay-beyaz.svg" width="167" height="28" alt=""><img class="logo__a" src="assets/img/logo/yka-logo-yatay.svg" width="167" height="28" alt=""></a>
     <nav class="hdr__nav" aria-label="Ana menü">
       <div class="hdr__item" data-menu="hiz">
         <a class="pill" href="hizmetler.html" aria-haspopup="true" aria-expanded="false" aria-controls="mega-hiz">Hizmetler<svg class="pill__chev" width="12" height="12" stroke-width="2.6" aria-hidden="true"><use href="#i-down"/></svg></a>
@@ -269,7 +269,7 @@
   <!-- Telefon menüsü: tam ekran, gruplar açılır -->
   <div class="m-nav" id="mnav" role="dialog" aria-modal="true" aria-label="Menü" hidden>
     <div class="m-nav__top">
-      <a class="logo" href="./" aria-label="YKA Asansör ana sayfa"><img src="assets/img/logo/yka-logo-yatay.svg" width="167" height="28" alt=""></a>
+      <a class="logo" href="./" aria-label="YKA Asansör ana sayfa"><img src="assets/img/logo/yka-logo-yatay-beyaz.svg" width="167" height="28" alt=""></a>
       <button type="button" class="ib" id="navKapat" aria-label="Menüyü kapat"><svg width="18" height="18" stroke-width="2" aria-hidden="true"><use href="#i-x"/></svg></button>
     </div>
     <nav class="m-nav__body" aria-label="Ana menü (telefon)">
@@ -314,7 +314,7 @@
       <div class="bl-hero__in">
         <nav class="kp-crumb" aria-label="Konumunuz"><a href="./">Ana sayfa</a><span aria-hidden="true">/</span><span aria-current="page">Hizmet bölgeleri</span></nav>
         <h1 class="bl-h1" id="hb-baslik">Hizmet bölgeleri</h1>
-        <p class="bl-lead">İstanbul Anadolu Yakası'nda hizmet verdiğimiz ilçe ve semtler. Her birinin sayfasında o yere özel bilgiler var: periyodik kontrolü yapan kuruluş, bina dokusu, aylık bakım, arıza, montaj ve modernizasyon.</p>
+        <p class="bl-lead">Hizmet verdiğimiz il, ilçe ve semtler. Sayfası hazır olan ilçelerde o yere özel bilgiler var: periyodik kontrolü yapan kuruluş, bina dokusu, aylık bakım, arıza, montaj ve modernizasyon.</p>
       </div>
     </section>
 
@@ -322,9 +322,10 @@
     <div class="hb-wrap">
       <div class="hb-in">
         <div class="hb-head">
-          <h2 class="hb-h2"><span>İstanbul Anadolu Yakası'nda</span> <em>ilçe ilçe yanınızdayız.</em></h2>
+          <h2 class="hb-h2"><span>İlçe ilçe</span> <em>yanınızdayız.</em></h2>
           <p class="hb-not">İlçenize dokunun: aylık bakım ve sözleşme, arıza ve mahsur kalma, periyodik kontrol ve etiketler, modernizasyon, yeni montaj ve bakım ücreti aynı sayfada. Semtlerin kendi sayfaları kutucuğun altında.</p>
         </div>
+        <div class="hb-il"><h2 class="hb-il__t">İstanbul</h2><span class="hb-il__n">39 ilçe</span></div>
         <ul class="hb-grid">
           <li class="hb-card">
             <a class="hb-card__a" href="blog/sancaktepe-asansor.html"><span class="hb-card__k">İLÇE · 3 SEMT</span><h3 class="hb-card__t">Sancaktepe</h3><span class="hb-card__d">Ekibimizin bulunduğu ilçe. Apartman, site ve iş yerlerinde aylık bakım, periyodik kontrol hazırlığı ve 7/24 arıza.</span><span class="hb-card__go">Sancaktepe hizmet bilgileri<svg width="13" height="13" stroke-width="2.6" aria-hidden="true"><use href="#i-chev"/></svg></span></a>
@@ -368,10 +369,16 @@
             <a class="hb-card__a" href="blog/beykoz-asansor.html"><span class="hb-card__k">İLÇE</span><h3 class="hb-card__t">Beykoz</h3><span class="hb-card__d">Az katlı binalar, orman kenarındaki villa siteleri ve Kavacık'taki ofisler; ilçenin büyük kısmı orman.</span><span class="hb-card__go">Beykoz hizmet bilgileri<svg width="13" height="13" stroke-width="2.6" aria-hidden="true"><use href="#i-chev"/></svg></span></a>
           </li>
         </ul>
+        <!-- Sayfası henüz olmayan ilçeler: sayfası yazılınca buradan çıkarılıp yukarıya kutucuk olarak eklenir -->
+        <div class="hb-diger">
+          <h3 class="hb-diger__t">İstanbul'un diğer ilçeleri</h3>
+          <p class="hb-diger__d">Bu ilçelerde de aylık bakım, arıza, montaj ve modernizasyon için yanınızdayız; ilçe sayfaları sırayla ekleniyor.</p>
+          <ul class="hb-diger__l"><li>Adalar</li><li>Arnavutköy</li><li>Avcılar</li><li>Bağcılar</li><li>Bahçelievler</li><li>Bakırköy</li><li>Başakşehir</li><li>Bayrampaşa</li><li>Beşiktaş</li><li>Beylikdüzü</li><li>Beyoğlu</li><li>Büyükçekmece</li><li>Çatalca</li><li>Esenler</li><li>Esenyurt</li><li>Eyüpsultan</li><li>Fatih</li><li>Gaziosmanpaşa</li><li>Güngören</li><li>Kağıthane</li><li>Küçükçekmece</li><li>Sarıyer</li><li>Silivri</li><li>Sultangazi</li><li>Şile</li><li>Şişli</li><li>Zeytinburnu</li></ul>
+        </div>
         <div class="hb-cta">
           <div class="hb-cta__tx">
             <span class="hb-cta__t">Adresiniz listede yok mu?</span>
-            <p class="hb-cta__d">Listede olmayan ilçe ve semtlerde de çalışıyoruz; yeni montaj ve modernizasyonda Türkiye geneline hizmet veriyoruz. Arayın, adresinize göre planlayalım.</p>
+            <p class="hb-cta__d">Listede olmayan il ve ilçelerde de çalışıyoruz; yeni montaj ve modernizasyonda Türkiye geneline hizmet veriyoruz. Arayın, adresinize göre planlayalım.</p>
           </div>
           <div class="hb-cta__b">
             <a class="btn-d" href="teklif-formu.html">Teklif alın<svg width="14" height="14" stroke-width="2.8" aria-hidden="true"><use href="#i-chev"/></svg></a>
@@ -437,7 +444,7 @@
         <button type="button" data-cerez-ac>Çerez tercihleri</button>
       </nav>
       <div class="ft__bar">
-        <span class="ft__copy"><span class="logo logo--ft"><img src="assets/img/logo/yka-logo-dikey-beyaz.png" width="76" height="48" alt="YKA Asansör"></span><span>© <span id="yil">2026</span> Tüm hakları saklıdır.</span></span>
+        <span class="ft__copy"><span class="logo logo--ft"><img src="assets/img/logo/yka-logo-yatay-beyaz.svg" width="143" height="24" alt="YKA Asansör"></span><span>© <span id="yil">2026</span> Tüm hakları saklıdır.</span></span>
       </div>
     </div>
   </footer>

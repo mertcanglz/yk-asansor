@@ -172,7 +172,13 @@ svg { flex: 0 0 auto; }
 .logo img { display: block; width: auto; height: 28px; }
 .logo:focus-visible { outline: 2px solid var(--mavi-acik); outline-offset: 4px; }
 .logo--sm img { height: 22px; }
-.logo--ft img { height: 48px; } /* footer: dikey logo, beyaz YKA kutusu (logolar/1-beyaz.png) */
+.logo--ft img { height: 24px; } /* footer: beyaz YKA kutulu yatay logo (logolar/4-beyaz) */
+/* header: koyu zeminde beyaz YKA kutulu logo (logolar/4-beyaz), açık zeminde (is-acik) siyah kutulu logo (logolar/4) */
+.logo { position: relative; }
+.logo__a { position: absolute; left: 0; top: 0; opacity: 0; }
+.logo__k, .logo__a { transition: opacity .4s ease; }
+.hdr.is-acik .logo__k { opacity: 0; }
+.hdr.is-acik .logo__a { opacity: 1; }
 
 /* ---------- Header ---------- */
 .hdr { position: fixed; left: 0; right: 0; top: 0; z-index: 30; height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 0 12px 0 20px; transition: background .4s ease, box-shadow .4s ease; }
@@ -2188,6 +2194,14 @@ html:not(.js) .bl-tools, html:not(.js) .bl-more { display: none; }
 .hb-semt a:where(:hover), .hb-semt a:active { color: var(--mavi-koyu); background: var(--buz); box-shadow: inset 0 0 0 1px var(--buz-cizgi); }
 .hb-card__a:focus-visible, .hb-semt a:focus-visible { outline: 2px solid var(--mavi); outline-offset: 2px; }
 .hb-card__a:active { box-shadow: inset 0 0 0 1.5px var(--mavi); }
+.hb-il { display: flex; align-items: baseline; gap: 12px; margin-top: 4px; padding-bottom: 12px; border-bottom: 1px solid var(--cizgi); }
+.hb-il__t { font-size: 22px; line-height: 1.2; font-weight: 500; letter-spacing: -.4px; }
+.hb-il__n { font-size: 12px; font-weight: 600; letter-spacing: .6px; color: var(--gri-3); text-transform: uppercase; }
+.hb-diger { display: flex; flex-direction: column; gap: 8px; padding: 20px; border-radius: 16px; background: var(--beyaz); box-shadow: inset 0 0 0 1px var(--cizgi); }
+.hb-diger__t { font-size: 18px; line-height: 1.25; font-weight: 500; letter-spacing: -.3px; }
+.hb-diger__d { max-width: 680px; font-size: 14px; line-height: 1.55; color: var(--gri-2); }
+.hb-diger__l { list-style: none; margin: 6px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.hb-diger__l li { display: inline-flex; align-items: center; min-height: 32px; padding: 0 12px; border-radius: 999px; font-size: 13px; color: var(--murekkep-2); background: var(--kart); box-shadow: inset 0 0 0 1px var(--cizgi); }
 .hb-cta { display: flex; flex-direction: column; gap: 16px; margin-top: 8px; padding: 24px 20px; border-radius: 16px; background: radial-gradient(90% 120% at 15% 0%, #1f2429 0%, var(--koyu) 70%); color: var(--yazi-k); }
 .hb-cta__tx { display: flex; flex-direction: column; gap: 8px; }
 .hb-cta__t { font-size: 20px; line-height: 1.25; font-weight: 400; letter-spacing: -.3px; }
@@ -2202,6 +2216,9 @@ html:not(.js) .bl-tools, html:not(.js) .bl-more { display: none; }
   .hb-card:hover { transform: translateY(-3px); box-shadow: inset 0 0 0 1.5px var(--mavi), 0 18px 34px -26px rgba(25, 72, 221, .55); }
   .hb-card__a:hover .hb-card__go svg { transform: translateX(3px); }
   .hb-card__t { font-size: 24px; }
+  .hb-il__t { font-size: 26px; }
+  .hb-diger { padding: 26px 28px; }
+  .hb-diger__t { font-size: 20px; }
   .hb-cta { flex-direction: row; align-items: center; justify-content: space-between; gap: 32px; padding: 32px 36px; }
   .hb-cta__tx { max-width: 640px; }
   .hb-cta__t { font-size: 24px; }

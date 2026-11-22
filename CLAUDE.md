@@ -69,8 +69,9 @@ assets/ses/           Hero sesleri (Pixabay, kaynaklar ses.js'in başında). Mü
 assets/fonts/         Manrope + Newsreader italik 500 (woff2, latin + latin-ext)
 assets/img/           Görseller (fotoğraflar) — web için sıkıştırılmış .jpg/.webp, < 300 KB
 assets/img/logo/      Logo, dört biçim (SVG, "ASANSÖR" yazısı vektöre çevrili; asılları ../logo/deneme): yatay (header), dikey,
-                      kademeli, rozet (sekme simgesi, her sayfada `<link rel="icon">`); footer'da dikey beyaz
-                      logo `yka-logo-dikey-beyaz.png` (asıl: ../logo/logolar/1-beyaz.png, kullanıcı kararı 22 Kasım 2026)
+                      kademeli, rozet (sekme simgesi, her sayfada `<link rel="icon">`). `yka-logo-yatay-beyaz.svg` (beyaz YKA
+                      kutusu, asıl ../logo/logolar/4-beyaz.png): header'da koyu zeminde ve telefon menüsünde, footer'da;
+                      header açık zemine geçince (`is-acik`) siyah kutulu `yka-logo-yatay.svg`'ye yumuşakça döner (kullanıcı kararı)
 assets/img/asansor/   Hero asansörü: kuyu + kapı kareleri (kare-692 geniş ekran, kare-400 telefon; 3 kat × 41 kare):
                       1. kat (giriş, ilk sahne) `marka-NN` logo mavisi ışık, 2. kat (hizmetler) `turuncu-NN` sıcak ışık,
                       3. kat (periyodik kontrol) `yesil-NN` (kullanıcı kararı)
@@ -230,7 +231,9 @@ hem buraya hem siteye işle:
   `docs/mahalle-talep-analizi.md` Bölüm 5.2). **Mahalle yazıları iptal** (kullanıcı kararı) — bkz. `docs/mahalle-talep-analizi.md`
   → (3) diğer çevre ilçeler yakından uzağa: Kartal (+ Yakacık, Soğanlık, Dragos), Pendik, Ataşehir taslak hazır (Bölüm 5.3);
   sonra Tuzla, Kadıköy, Üsküdar, Beykoz (yazıldı, 1 Kasım 2026; Kadıköy ve Beykoz protokolleri 2026 sonunda bitiyor,
-  Ocak 2027'de kontrol et). **En uzak sınır İstanbul Anadolu Yakası**; dışına taşılmaz.
+  Ocak 2027'de kontrol et). Yazılar Anadolu Yakası'ndan başladı; 22 Kasım 2026'dan beri Hizmet bölgeleri sayfası Anadolu Yakası ile sınırlı değil:
+  İstanbul'un 39 ilçesi listede (sayfası olmayanlar bağlantısız "İstanbul'un diğer ilçeleri" listesinde; sayfası yazılınca
+  oradan çıkıp kutucuk olur), ileride diğer iller de eklenecek. Sayfada "Anadolu Yakası" ifadesi kullanılmaz (kullanıcı kararı).
   **Tüm ilçe ve semt yazıları aynı 12 başlığı taşır** (kullanıcı kararı, 24 Ekim 2026): neler yapıyoruz, binalar ve
   asansörler, aylık bakım ve sözleşme, arıza ve mahsur kalma, periyodik kontrol ve etiketler, modernizasyon, yeni montaj
   ve sonradan asansör, hangi sistem hangi binaya, bakım ücreti, firma seçerken, ilgili yazılar, SSS. Semtlere ayrı bir
