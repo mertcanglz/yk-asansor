@@ -39,8 +39,8 @@ dislili-asansor.html  Sistem şablonu (Dişlili asansör). Aynı yapıda: dislis
 yesil-etiket.html     Yeşil etiket bilgi sayfası: etiket renkleri, süreler (telefonda kart), yeşil etikete geçiş, yönetmelik, SSS
 iletisim.html         İletişim: dört eşit boy kart (alt metin yok, sade ikonlar; WhatsApp ikonu sağ alttaki butondan; ikon
                       animasyonu yok; ikon kutusu başta yalnızca telefonda mavi, fare hangi kartın üzerindeyse o mavi, diğerleri
-                      gri), sosyal medya, cam parlaklıklı açık buz mavisi form kutusu (yalnızca fare üzerindeyken kenarında ses
-                      düğmesindeki gibi dönen ışık), mesaj formu (adsoyad, telefon, eposta, konu, mesaj → form-gonder.php);
+                      gri), sosyal medya, cam parlaklıklı açık buz mavisi form kutusu (yalnızca fare üzerindeyken kenarında sabit hızla
+                      dolaşan, kuyruğu solan ince mavi ışık; SVG çizgisi, `.il-isik`), mesaj formu (adsoyad, telefon, eposta, konu, mesaj → form-gonder.php);
                       harita masaüstünde "Haritayı göster"e basınca gömülür (KVKK), telefonda yalnızca Google Haritalar bağlantısı
 teklif-formu.html     Reklam açılış sayfası (noindex): detaylı teklif formu; WhatsApp butonu ve footer'daki hızlı form yok.
                       Alanlar: hizmet, adsoyad, telefon, donus (Telefonla/E-postayla), eposta (e-postayla dönüşte zorunlu),
@@ -218,7 +218,7 @@ hem buraya hem siteye işle:
 
 - Firma adı: YKA Asansör (eski adı YK Asansör; 7 Kasım 2026'da değişti, kullanıcı kararı). Google İşletme Profili,
   Instagram ve dizin kayıtları gibi dış kayıtlarda eski ad kalmış olabilir; GitHub deposu 22 Kasım 2026'da
-  `yka-asansor` oldu; yerel klasör adı şimdilik `yk-asansör`. `docs/rakip-inceleme.md` eski adla yapılmış tarihli bir incelemedir, metni değiştirilmez.
+  `yka-asansor` oldu; yerel klasör `yka-asansör`. `docs/rakip-inceleme.md` eski adla yapılmış tarihli bir incelemedir, metni değiştirilmez.
 - Hizmetler (kullanıcı onayladı; referans: gunesasansor.com.tr ile aynı kapsam):
   - Yeni asansör montajı (projelendirme dahil)
   - Periyodik bakım sözleşmesi (aylık bakım)
