@@ -159,8 +159,8 @@ const Asansor = (() => {
 
   const KAT = [
     { ton: 'yesil', amb: [70, 205, 125] },   // periyodik kontrol: etiket yeşili
-    { ton: 'mavi', amb: [110, 160, 255] },   // hizmetler: mavi
-    { ton: 'turuncu', amb: [255, 178, 120] } // giriş: sıcak turuncu
+    { ton: 'turuncu', amb: [255, 178, 120] }, // hizmetler: sıcak turuncu ışık (eski giriş katının ışığı)
+    { ton: 'marka', amb: [60, 110, 255] }    // giriş: logo mavisi (ilk sahne)
   ];
   const KARE = 41;
   const DURAK = [1845, 1167.5, 600]; // kabin halat bağlantısı (kuyu görseli birimi)
@@ -177,14 +177,14 @@ const Asansor = (() => {
   let aktifKat = -1, sonBg = '', sonGlowTon = '';
   let sesKapi = -1, sesKat = -1; // hero sesine (ses.js) son bildirilen kapı ve kat
 
-  /* Kare setleri: turuncu-00 sayfada hazır; diğerleri sayfa yüklendikten sonra gelir */
+  /* Kare setleri: marka-00 sayfada hazır; diğerleri sayfa yüklendikten sonra gelir */
   const setler = {};
   const ilkSet = $('.lift__set', cab);
   const ilkKare = $('.lift__f', ilkSet);
   let gorunenSet = ilkSet, gorunenKare = ilkKare;
   function setAl(ton) {
     if (setler[ton]) return setler[ton];
-    let el = ton === 'turuncu' ? ilkSet : null;
+    let el = ton === 'marka' ? ilkSet : null;
     if (!el) {
       el = d.createElement('div');
       el.className = 'lift__set';
@@ -192,7 +192,7 @@ const Asansor = (() => {
       cab.appendChild(el);
     }
     const o = { el, kare: new Array(KARE).fill(null), hazir: new Array(KARE).fill(false) };
-    if (ton === 'turuncu') {
+    if (ton === 'marka') {
       o.kare[0] = ilkKare;
       const im = $('img', ilkKare);
       if (im.complete && im.naturalWidth) o.hazir[0] = true;
@@ -229,7 +229,7 @@ const Asansor = (() => {
     let o = setler[ton];
     let i = idx;
     while (i > 0 && !o.hazir[i]) i--;
-    if (!o.hazir[i]) { o = setler.turuncu; i = 0; } // set gelmediyse kapalı kapı (üç sette aynı)
+    if (!o.hazir[i]) { o = setler.marka; i = 0; } // set gelmediyse kapalı kapı (üç sette aynı)
     if (o.el !== gorunenSet) {
       gorunenSet.classList.remove('is-on');
       o.el.classList.add('is-on');
@@ -614,7 +614,7 @@ const Asansor = (() => {
 
   // kareler sayfa yüklendikten sonra: önce giriş katı (açılışta kapı bir kez açılır), sonra diğer katlar
   function kareleriYukle() {
-    setYukle('turuncu', 'low').then(() => {
+    setYukle('marka', 'low').then(() => {
       introT0 = performance.now();
       uyan();
       let basladi = false;
@@ -622,7 +622,7 @@ const Asansor = (() => {
         if (basladi) return;
         basladi = true;
         removeEventListener('scroll', digerleri);
-        setYukle('mavi', 'low').then(() => setYukle('yesil', 'low'));
+        setYukle('turuncu', 'low').then(() => setYukle('yesil', 'low'));
       };
       addEventListener('scroll', digerleri, { passive: true, once: true });
       setTimeout(digerleri, 2500);
@@ -888,7 +888,7 @@ const Kampanya = (() => {
   return { guncelle };
 })();
 
-/* ---------- "Neden YKA Asansör": görünür oldukça zemin hafifçe kurumsal turuncuya ısınır ---------- */
+/* ---------- "Neden YKA Asansör": görünür oldukça zemin hafifçe marka mavisine döner ---------- */
 const Neden = (() => {
   const sec = $('#neden');
   if (!sec) return null;
@@ -901,10 +901,10 @@ const Neden = (() => {
     const t = Math.round(clamp((y + ekran.H - ust - k[0]) / (boy + k[1]), 0, 1) * 50) / 50;
     if (t === son) return;
     son = t;
-    sec.style.setProperty('--nb', `rgb(${karis([243, 243, 241], [252, 232, 216], t)})`);
-    sec.style.setProperty('--nl', `rgba(${karis([21, 24, 27], [226, 102, 28], t)}, .14)`);
-    sec.style.setProperty('--na', `rgb(${karis([154, 160, 166], [226, 102, 28], t)})`);
-    sec.style.setProperty('--ni', `rgb(${karis([21, 24, 27], [214, 92, 22], t)})`);
+    sec.style.setProperty('--nb', `rgb(${karis([243, 243, 241], [232, 239, 255], t)})`);
+    sec.style.setProperty('--nl', `rgba(${karis([21, 24, 27], [25, 72, 221], t)}, .14)`);
+    sec.style.setProperty('--na', `rgb(${karis([154, 160, 166], [25, 72, 221], t)})`);
+    sec.style.setProperty('--ni', `rgb(${karis([21, 24, 27], [24, 64, 211], t)})`);
   }
   new IntersectionObserver((e) => { gorunur = e[0].isIntersecting; if (gorunur) { olcNeden(); guncelle(scrollY); } }, { rootMargin: '200px 0px' }).observe(sec);
   return { guncelle, olc: olcNeden };
@@ -1078,10 +1078,10 @@ if ('IntersectionObserver' in window) {
   }));
 })();
 
-/* ---------- Blog şeridi: oklarla bir sayfa (görünen kart sayısı kadar) kayar ----------
+/* ---------- Blog şeridi: oklara her basışta bir kart kayar (kullanıcı kararı; önceden görünen kart sayısı kadardı) ----------
    Tarayıcının kendi yumuşak kaydırması kısa ve sert duruyordu: kayma JS ile, yavaş başlayıp yavaş biten ~0,8 sn'lik
    eğriyle yapılır. Kayarken kart durakları (scroll-snap) kapalı, yoksa her karede en yakın karta çekiyordu.
-   Kayma sürerken yeniden basılırsa sıradaki sayfa, o anki hedeften hesaplanır (tıklamalar birikir). */
+   Kayma sürerken yeniden basılırsa sıradaki kart, o anki hedeften hesaplanır (tıklamalar birikir). */
 (() => {
   const ray = $('#blogRay');
   if (!ray) return;
@@ -1111,11 +1111,10 @@ if ('IntersectionObserver' in window) {
   $$('.blog__nav .rail-btn').forEach((b) => b.addEventListener('click', () => {
     const li = ray.firstElementChild;
     const kart = li ? li.offsetWidth + 16 : 408;
-    const sayfa = Math.max(1, Math.round((ray.clientWidth + 16) / kart)) * kart;
     const enCok = ray.scrollWidth - ray.clientWidth;
     const simdi = hedef != null ? hedef : ray.scrollLeft;
-    // kart başına hizalı: önce en yakın karta yuvarla, sonra bir sayfa ilerle
-    const yeni = clamp(Math.round(simdi / kart) * kart + Number(b.dataset.yon) * sayfa, 0, enCok);
+    // kart başına hizalı: önce en yakın karta yuvarla, sonra bir kart ilerle
+    const yeni = clamp(Math.round(simdi / kart) * kart + Number(b.dataset.yon) * kart, 0, enCok);
     if (mqAz.matches) { ray.scrollLeft = yeni; return; }
     kay(yeni);
   }));

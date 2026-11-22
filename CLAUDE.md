@@ -17,7 +17,7 @@ Bu repo, **YKA Asansör** işletmesinin tanıtım web sitesidir. Site sahibi pro
 - Formlar: Alastyr hosting'de çalışan küçük bir PHP betiğiyle kurumsal e-postaya gönderilir (SMTP).
   Sunucu tarafı doğrulama (ör. telefon `^05\d{9}$`) bu betikte yapılır. Betik adı `form-gonder.php`
   (henüz yazılmadı); formlar `fetch` ile gönderir, başarıda JSON `{"ok": true}`, hatada HTTP 422 + `{"hata": "…"}` bekler. Derleme yok kuralı geçerli;
-  PHP yalnızca form gönderimi için. Kurumsal e-posta adresi: TODO (kullanıcı verince).
+  PHP yalnızca form gönderimi için. Kurumsal e-posta adresi: `info@ykaasansor.com` (alan adı henüz alınmadı, bkz. İşletme bilgileri).
 - Yerel önizleme: `python3 -m http.server 8080` → http://localhost:8080
 
 ## Dosya yapısı
@@ -51,8 +51,8 @@ assets/js/main.js     Etkileşimler (modül): hero asansörü, menüler, çerez 
                       (kimlikler dosyanın başında GA_ID / META_PIXEL_ID: TODO), kampanya, form, animasyonlar
 assets/js/telefon.js  Telefon alanı maskesi (docs/telefon-alani.md ile birebir)
 assets/js/ses.js      Hero sesi (deneme, yalnızca ana sayfa): sağ üstte "Ses" düğmesi; açılışta kenarında ~10 sn dönen ince
-                      ışık (ziyaretçi sesi nereden kapatacağını görsün), sonra söner. Açıkken hafif turuncu cam, yazı ve
-                      ikon beyaz (dolu turuncu butonlar kadar öne çıkmaz). Varsayılan açık: tarayıcılar sesi dokunuş
+                      ışık (ziyaretçi sesi nereden kapatacağını görsün), sonra söner. Açıkken hafif mavi cam, yazı ve
+                      ikon beyaz (dolu mavi butonlar kadar öne çıkmaz). Varsayılan açık: tarayıcılar sesi dokunuş
                       olmadan başlatmadığı için müzik ilk dokunuşta/tıklamada başlar (kaydırma sayılmaz); Chrome site
                       içi geçişte izin verirse açılışta hemen başlar (yenile düğmesi/Cmd+R'de izin vermez).
                       Kapatılırsa oturum boyunca hatırlanır (sessionStorage `yka-ses`, çerez politikasında). Kısık lounge
@@ -61,8 +61,12 @@ assets/js/ses.js      Hero sesi (deneme, yalnızca ana sayfa): sağ üstte "Ses"
 assets/ses/           Hero sesleri (Pixabay, kaynaklar ses.js'in başında). Müzik Opus .webm (~1,2 MB; MP3 V6 ile ölçülen
                       kalite aynı), Opus çözemeyen tarayıcıya .mp3 (~1,7 MB); sayfa yüklendikten sonra arka planda iner
 assets/fonts/         Manrope + Newsreader italik 500 (woff2, latin + latin-ext)
-assets/img/           Görseller (logo, fotoğraflar) — web için sıkıştırılmış .jpg/.webp, < 300 KB
-assets/img/asansor/   Hero asansörü: kuyu + kapı kareleri (kare-692 geniş ekran, kare-400 telefon; 3 kat × 41 kare)
+assets/img/           Görseller (fotoğraflar) — web için sıkıştırılmış .jpg/.webp, < 300 KB
+assets/img/logo/      Logo, dört biçim (SVG, "ASANSÖR" yazısı vektöre çevrili; asılları ../logo/deneme): yatay (header,
+                      footer), dikey, kademeli, rozet (sekme simgesi, her sayfada `<link rel="icon">`)
+assets/img/asansor/   Hero asansörü: kuyu + kapı kareleri (kare-692 geniş ekran, kare-400 telefon; 3 kat × 41 kare):
+                      1. kat (giriş, ilk sahne) `marka-NN` logo mavisi ışık, 2. kat (hizmetler) `turuncu-NN` sıcak ışık,
+                      3. kat (periyodik kontrol) `yesil-NN` (kullanıcı kararı)
 assets/img/kabin/, hizmetler/, sistemler/  Fotoğraflar; medya/ klasöründeki asıllarından üretilir
                       (WebP, ad-<genişlik>.webp, srcset ile; medya/ repoya girmez)
 blog/                 Blog yazıları (ör. blog/asansor-etiket-renkleri.html); şablon örneği blog/sancaktepe-asansor.html.
@@ -83,11 +87,18 @@ Kodlamadan önce blog taslakları `docs/blog-taslaklari/` altında Markdown olar
 ## Tasarım kuralları
 
 - **Önce mobil**: site önce telefonda iyi görünmeli (360px genişlikte test et), sonra masaüstü.
-- Renk ve font değişiklikleri yalnızca `style.css` içindeki `:root` değişkenlerinden yapılır.
+- Renk ve font değişiklikleri yalnızca `style.css` içindeki `:root` değişkenlerinden yapılır. Ana renk logo mavisi
+  `#1948dd` (`--mavi`; tonları `--mavi-2`, `--mavi-koyu`, `--mavi-acik`, `--buz`, `--buz-cizgi`). 22 Kasım 2026'da mavi
+  tasarım asıl tasarım oldu; turuncu tasarım yedekte: dal `turuncu-yedek`, etiket `turuncu-tasarim-son`, yerel klasör
+  `../yk-asansor-turuncu-yedek`. Periyodik kontrol etiket renkleri (yeşil, mavi, sarı, kırmızı) ve hata kırmızıları
+  anlamlı renkler olduğu için marka rengine çevrilmez.
 - Telefon numarası tıklanınca arama yapmalı (`tel:`), WhatsApp butonu `https://wa.me/905435428675` (iletişim numarasıyla aynı).
-- Sağ alttaki turuncu WhatsApp butonu **tüm sayfalarda** aynı görünümde ve sabit (`position: fixed`);
+- Sağ alttaki mavi WhatsApp butonu **tüm sayfalarda** aynı görünümde ve sabit (`position: fixed`);
   tek istisna teklif formu sayfası (`teklif-formu.html`), orada WhatsApp butonu yok.
-  Kampanya kutusu yalnızca ana sayfada.
+  Kampanya kutusu yalnızca ana sayfada; kutu ve küçük etiketi grafit cam (`--promo-zemin`), mavi değil: ilk açılışta
+  mavi fazla geliyordu (kullanıcı kararı).
+- Header'daki telefon numarası koyu zeminde beyaz, açık zeminli bölümlere geçince sitenin siyahı (`--murekkep`).
+- Ana sayfa blog şeridinde oklara her basışta bir kart kayar (kullanıcı kararı).
 - **Mobil hero, koda çevirirken** (onaylı tasarım: tuvalde "Onaylanan sayfalar" → "Ana sayfa — mobil"):
   hero metni ekranın altına yaslı; butonların altında şimdilik sabit bir boşluk var (tuvalde 120 px).
   Sitede bu boşluk sabit px olmasın, telefona göre hesaplansın: WhatsApp butonu alanı
@@ -235,8 +246,9 @@ hem buraya hem siteye işle:
 - WhatsApp: iletişim numarasıyla aynı, 0543 542 86 75 (`https://wa.me/905435428675`)
 - Çalışma saatleri: **7/24 hizmet** (kullanıcı teyit etti). Sitede, yapılandırılmış veride
   (`openingHoursSpecification` 00:00–23:59, her gün) ve Google İşletme Profili'nde "24 saat açık" olarak aynı.
-- E-posta: TODO — belirlenecek kurumsal adres; hem sitedeki iletişim
-  e-postası hem form gönderimlerinin gideceği adres bu olacak (şimdilik `[E-POSTA ADRESİ]` yer tutucusu).
+- E-posta: `info@ykaasansor.com` (kullanıcı kararı, 22 Kasım 2026; alan adı `ykaasansor.com` henüz alınmadı, büyük
+  ihtimalle bu olacak). Hem sitedeki iletişim e-postası hem form gönderimlerinin gideceği adres; sitede her yerde yazılı.
+  Alan adı farklı alınırsa tüm sayfalarda değiştir.
 - Adres: Abdurrahman Gazi Mah. Altınordu Cad. No: 38-40/A, Sancaktepe / İstanbul
   (Google İşletme Profili ve Instagram'daki adresle aynı). Google İşletme Profili bağlantısı:
   https://share.google/k3h68ZxTo8hSalAoL (tek doğru konum bağlantısı) — footer'daki adres ve
@@ -246,7 +258,7 @@ hem buraya hem siteye işle:
   "Google Haritalar'da açın" bağlantısı.
 - Sosyal medya: Instagram, Facebook, LinkedIn — hesap adresleri TODO (sitede `[INSTAGRAM]`, `[FACEBOOK]`,
   `[LINKEDIN]` yer tutucusu). Instagram şimdilik `@ykasansorr` (resmî hesap bu; `yk.asansorr` değil), ama
-  marka adı YKA Asansör olduğu için kullanıcı adı da değişebilir, bu yüzden kullanıcı teyit edene kadar sitede yer tutucu kalır. İkonlar tüm footer'ların alt şeridinde (masaüstünde telif yazısının sağında,
-  mobilde üstünde) ve iletişim sayfasında "Bizi takip edin" olarak başlığın karşısında; yeni sekmede açılır.
+  marka adı YKA Asansör olduğu için kullanıcı adı da değişebilir, bu yüzden kullanıcı teyit edene kadar sitede yer tutucu kalır. İkonlar tüm footer'larda "Bize ulaşın" sütununun altında
+  kendi "Bizi takip edin" başlığıyla (`.ft__soc`, kullanıcı kararı) ve iletişim sayfasında "Bizi takip edin" olarak başlığın karşısında; yeni sekmede açılır.
 - Kuruluş yılı / deneyim: TODO
-- Logo ve marka renkleri: TODO (şu an geçici lacivert + turuncu)
+- Logo ve marka renkleri: logo `assets/img/logo/` (siyah YKA + mavi ASANSÖR kutusu), ana renk `#1948dd`, logo siyahı `#1d1d1b`.
