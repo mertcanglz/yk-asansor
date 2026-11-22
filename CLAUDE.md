@@ -33,8 +33,10 @@ dislili-asansor.html  Sistem şablonu (Dişlili asansör). Aynı yapıda: dislis
                       makine-dairesiz-asansor.html, yuk-asansoru.html (kapakta şimdilik dikey yük-araç kabini fotoğrafı),
                       arac-asansoru.html, villa-engelli-asansoru.html, yuruyen-merdiven.html. Teknik değerler "tipik" notuyla
 yesil-etiket.html     Yeşil etiket bilgi sayfası: etiket renkleri, süreler (telefonda kart), yeşil etikete geçiş, yönetmelik, SSS
-iletisim.html         İletişim: dört eşit boy kart (alt metin yok, dolu mavi ikonlar sırayla halka atar, üzerine gelince
-                      ikon kıpırdar), sosyal medya, çok açık buz mavisi form kutusu (fare üzerindeyken çevresinde dönen ışık), mesaj formu (adsoyad, telefon, eposta, konu, mesaj → form-gonder.php);
+iletisim.html         İletişim: dört eşit boy kart (alt metin yok, sade ikonlar; WhatsApp ikonu sağ alttaki butondan; ikon
+                      animasyonu yok; ikon kutusu başta yalnızca telefonda mavi, fare hangi kartın üzerindeyse o mavi, diğerleri
+                      gri), sosyal medya, cam parlaklıklı açık buz mavisi form kutusu (yalnızca fare üzerindeyken kenarında ses
+                      düğmesindeki gibi dönen ışık), mesaj formu (adsoyad, telefon, eposta, konu, mesaj → form-gonder.php);
                       harita masaüstünde "Haritayı göster"e basınca gömülür (KVKK), telefonda yalnızca Google Haritalar bağlantısı
 teklif-formu.html     Reklam açılış sayfası (noindex): detaylı teklif formu; WhatsApp butonu ve footer'daki hızlı form yok.
                       Alanlar: hizmet, adsoyad, telefon, donus (Telefonla/E-postayla), eposta (e-postayla dönüşte zorunlu),

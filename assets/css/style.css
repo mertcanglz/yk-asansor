@@ -1826,15 +1826,12 @@ html:not(.js) .tf-card #tf-ref-alan[hidden] { display: flex !important; }
 .il-cards .il-c { flex: 1 1 auto; }
 .il-c { display: flex; align-items: center; gap: 14px; min-height: 76px; padding: 14px 16px; border-radius: 16px; background: rgba(255, 255, 255, .035); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .09); color: var(--yazi-k); text-decoration: none; transition: background .3s, box-shadow .3s, transform .4s var(--ease); }
 .il-c:active { background: rgba(255, 255, 255, .07); box-shadow: inset 0 0 0 1px rgba(33, 82, 246, .45); }
-.il-c__ic { position: relative; flex: 0 0 42px; width: 42px; height: 42px; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #fff; background: linear-gradient(180deg, #2966fa, #1a3ad8); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .28); }
-/* ikon animasyonu: kutunun çevresinde sırayla genişleyip sönen halka (WhatsApp butonundaki gibi); üzerine gelince ikon kıpırdar */
-.il-c__ic::after { content: ""; position: absolute; inset: 0; border-radius: inherit; border: 1px solid rgba(121, 170, 253, .75); opacity: 0; pointer-events: none; animation: ilHalka 6s cubic-bezier(.2, .6, .3, 1) infinite; }
-.il-cards > li:nth-child(2) .il-c__ic::after { animation-delay: 1.5s; }
-.il-cards > li:nth-child(3) .il-c__ic::after { animation-delay: 3s; }
-.il-cards > li:nth-child(4) .il-c__ic::after { animation-delay: 4.5s; }
-@keyframes ilHalka { 0% { transform: scale(1); opacity: .7; } 30% { transform: scale(1.45); opacity: 0; } 100% { transform: scale(1.45); opacity: 0; } }
-@keyframes ilSalla { 0%, 100% { transform: none; } 20% { transform: rotate(-12deg); } 40% { transform: rotate(10deg); } 60% { transform: rotate(-6deg); } 80% { transform: rotate(3deg); } }
-.il-c__ic svg { width: 19px; height: 19px; }
+.il-c__ic { flex: 0 0 46px; width: 46px; height: 46px; border-radius: 13px; display: flex; align-items: center; justify-content: center; color: #d5d9dd; background: rgba(255, 255, 255, .06); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .10); transition: background .3s, color .3s, box-shadow .3s; }
+.il-c__ic svg { width: 22px; height: 22px; }
+.il-c__ic .il-c__wa { width: 21px; height: 21px; }
+/* ikon kutusu: başta yalnızca telefon mavi; fare hangi kartın üzerindeyse o mavi, diğerleri gri (kullanıcı kararı) */
+.il-c--main .il-c__ic, a.il-c:hover .il-c__ic, a.il-c:focus-visible .il-c__ic { color: #fff; background: linear-gradient(180deg, #2966fa, #1a3ad8); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .28); }
+.il-cards:has(a.il-c:hover) .il-c--main:not(:hover) .il-c__ic { color: #d5d9dd; background: rgba(255, 255, 255, .06); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .10); }
 .il-c__tx { display: flex; flex-direction: column; justify-content: center; gap: 4px; min-width: 0; }
 .il-c__l { font-size: 11px; font-weight: 600; letter-spacing: .5px; color: var(--gri-4); }
 .il-c__v { font-size: 16px; line-height: 1.3; font-weight: 500; color: var(--yazi-k); }
@@ -1849,15 +1846,15 @@ html:not(.js) .tf-card #tf-ref-alan[hidden] { display: flex !important; }
 .il-soc a:active { color: #fff; background: var(--mavi); box-shadow: none; }
 .il-soc a:focus-visible { outline: 2px solid #f6f3ee; outline-offset: 2px; }
 /* mesaj formu (teklif formu kartının stilleriyle) */
-.il-kart { margin-top: 26px; background: #f6f9ff; } /* çok açık buz mavisi (kullanıcı kararı) */
+.il-kart { margin-top: 26px; background: radial-gradient(70% 55% at 18% 0%, #fff 0%, rgba(255, 255, 255, 0) 70%), linear-gradient(180deg, #fdfeff 0%, #f6f9ff 45%, #ecf2fd 100%); box-shadow: inset 0 1px 0 #fff, inset 0 0 0 1px rgba(255, 255, 255, .95), inset 0 -1px 0 rgba(25, 72, 221, .16), 0 0 0 1px rgba(255, 255, 255, .16), 0 50px 90px -40px rgba(0, 0, 0, .75); } /* açık buz mavisi + cam parlaklığı (header kutucukları gibi, kullanıcı kararı) */
 .il-kart .tf-i { background: #fff; box-shadow: inset 0 0 0 1px #d8dfeb; }
 .il-kart .tf-i:focus { box-shadow: inset 0 0 0 1.5px var(--mavi), 0 0 0 4px rgba(25, 72, 222, .14); }
 /* form: fare üzerine gelince çevresinde dönen ışık (ana sayfadaki ses düğmesindeki gibi) */
 @property --il-a { syntax: "<angle>"; inherits: false; initial-value: 0deg; }
-.il-kart::before { content: ""; position: absolute; inset: -2px; border-radius: 18px; padding: 2px; pointer-events: none; opacity: 0; background: conic-gradient(from var(--il-a), rgba(121, 170, 253, 0) 0deg, rgba(121, 170, 253, 0) 190deg, rgba(121, 170, 253, .95) 320deg, rgba(121, 170, 253, 0) 360deg); -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0); transition: opacity .5s ease; animation: ilDon 3s linear infinite paused; }
+.il-kart::before { content: ""; position: absolute; inset: 0; z-index: 1; border-radius: inherit; padding: 2px; pointer-events: none; opacity: 0; background: conic-gradient(from var(--il-a), rgba(41, 102, 250, 0) 0deg, rgba(41, 102, 250, 0) 200deg, rgba(41, 102, 250, .85) 310deg, #79aafd 345deg, rgba(121, 170, 253, 0) 360deg); -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0); transition: opacity .4s ease; animation: ilDon 2.5s linear infinite paused; }
 @keyframes ilDon { to { --il-a: 360deg; } }
 @media (hover: hover) { .il-kart:hover::before { opacity: 1; animation-play-state: running; } }
-@media (prefers-reduced-motion: reduce) { .il-c__ic::after, .il-kart::before, a.il-c:hover .il-c__ic svg { animation: none; } }
+@media (prefers-reduced-motion: reduce) { .il-kart::before { animation: none; } }
 .il-fbody { display: flex; flex-direction: column; gap: 12px; padding-top: 14px; }
 .tf-sel { position: relative; display: block; }
 .tf-sel .tf-i { padding-right: 40px; cursor: pointer; }
@@ -1895,8 +1892,7 @@ html:not(.js) .tf-card #tf-ref-alan[hidden] { display: flex !important; }
   .il-cards { grid-column: 1; grid-row: 2; display: grid; grid-auto-rows: 1fr; gap: 8px; }
   .il-c { gap: 14px; padding: 12px 18px; border-radius: 14px; }
   a.il-c:hover { transform: translateY(-2px); background: rgba(255, 255, 255, .06); box-shadow: inset 0 0 0 1px rgba(33, 82, 246, .45); }
-  .il-c__ic { flex-basis: 38px; width: 38px; height: 38px; border-radius: 11px; }
-  a.il-c:hover .il-c__ic svg { animation: ilSalla .7s ease; }
+  .il-c__ic { flex-basis: 44px; width: 44px; height: 44px; border-radius: 12px; }
   .il-c--main .il-c__v { font-size: 21px; }
   .il-kart { grid-column: 2; grid-row: 2; display: flex; flex-direction: column; margin: 0; padding: 18px 24px; scroll-margin-top: 110px; }
   .il-form { flex: 1 1 auto; display: flex; flex-direction: column; min-height: 0; }
@@ -1907,7 +1903,7 @@ html:not(.js) .tf-card #tf-ref-alan[hidden] { display: flex !important; }
   .il-fbody .tf-i { height: 38px; font-size: 14px; }
   .il-msg { flex: 1 1 auto; min-height: 0; }
   .il-msg .tf-ta { flex: 1 1 auto; height: auto; min-height: 44px; padding: 9px 14px; }
-  .il-send { flex-direction: row; align-items: center; gap: 18px; margin-top: 2px; }
+  .il-send { flex-direction: row; align-items: center; gap: 18px; margin-top: 10px; } /* üstteki ve alttaki boşluk eşit (18 px) */
   .il-send .btn-a { flex: 0 0 auto; width: auto; height: 42px; padding: 0 20px; font-size: 14px; }
   .il-send .tf-legal { font-size: 11.5px; line-height: 1.5; }
   .il-kart .tf-ok { flex: 1 1 auto; justify-content: center; padding: 12px; }
