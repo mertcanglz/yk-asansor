@@ -58,6 +58,8 @@ yapay zekâ asistanlarında üst sıralara çıkması için yapılacak işleri �
 yazıyor, `CLAUDE.md` ise GitHub Pages kullanılmaz diyor. Repo ayarlarında (Settings → Pages)
 yayın açıksa kapat. Yoksa eski yer tutucu site `mertcanglz.github.io/yk-asansor` adresinde
 dizine eklenebilir. README'yi de güncelleyelim.
+*Güncelleme (22 Kasım 2026):* depo `yka-asansor` oldu; test yayını bilerek GitHub Pages'te
+(`mertcanglz.github.io/yka-asansor`), tüm sayfalar `noindex` ile dizin dışında. README güncellendi.
 
 ---
 

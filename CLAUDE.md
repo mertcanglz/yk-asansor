@@ -12,8 +12,12 @@ Bu repo, **YKA Asansör** işletmesinin tanıtım web sitesidir. Site sahibi pro
 
 - **Derleme yok**: saf HTML + CSS + JavaScript. npm, framework veya build adımı ekleme
   (kullanıcı açıkça istemedikçe). Böylece bulut oturumunda kurulum gerekmez.
-- Yayın: GitHub Pages kullanılmaz. Site bitince deneme için Claude geçici bir adreste yayınlar;
-  onaylanırsa işletmenin kendi hosting'i (Alastyr) ve alan adıyla yayınlanır.
+- Yayın: test yayını GitHub Pages'te (22 Kasım 2026, kullanıcı kararı): `main`'e her push
+  https://mertcanglz.github.io/yka-asansor/ adresine yayınlanır. Test süresince tüm sayfalarda
+  `<meta name="robots" content="noindex, nofollow" data-test-yayini>` var (yeni sayfaya da ekle); gerçek yayında
+  `data-test-yayini` satırları silinir (teklif-formu ve 404'ün kendi noindex'i kalır). 404.html kök yolları
+  kullandığı için alt klasörlü test adresinde stilsiz görünür; alan adında düzelir. Onaylanınca işletmenin
+  kendi hosting'i (Alastyr) ve alan adıyla yayınlanır.
 - Formlar: Alastyr hosting'de çalışan küçük bir PHP betiğiyle kurumsal e-postaya gönderilir (SMTP).
   Sunucu tarafı doğrulama (ör. telefon `^05\d{9}$`) bu betikte yapılır. Betik adı `form-gonder.php`
   (henüz yazılmadı); formlar `fetch` ile gönderir, başarıda JSON `{"ok": true}`, hatada HTTP 422 + `{"hata": "…"}` bekler. Derleme yok kuralı geçerli;
@@ -213,8 +217,8 @@ Aşağıdaki `TODO` alanları sitede yer tutucu olarak duruyor. Kullanıcı bilg
 hem buraya hem siteye işle:
 
 - Firma adı: YKA Asansör (eski adı YK Asansör; 7 Kasım 2026'da değişti, kullanıcı kararı). Google İşletme Profili,
-  Instagram ve dizin kayıtları gibi dış kayıtlarda eski ad kalmış olabilir; GitHub deposu ve klasör adı da şimdilik
-  `yk-asansor`. `docs/rakip-inceleme.md` eski adla yapılmış tarihli bir incelemedir, metni değiştirilmez.
+  Instagram ve dizin kayıtları gibi dış kayıtlarda eski ad kalmış olabilir; GitHub deposu 22 Kasım 2026'da
+  `yka-asansor` oldu; yerel klasör adı şimdilik `yk-asansör`. `docs/rakip-inceleme.md` eski adla yapılmış tarihli bir incelemedir, metni değiştirilmez.
 - Hizmetler (kullanıcı onayladı; referans: gunesasansor.com.tr ile aynı kapsam):
   - Yeni asansör montajı (projelendirme dahil)
   - Periyodik bakım sözleşmesi (aylık bakım)
