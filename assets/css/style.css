@@ -329,26 +329,28 @@ svg { flex: 0 0 auto; }
 html.nav-acik, html.nav-acik body { overflow: hidden; }
 
 /* ---------- Kaydırma göstergesi (yalnızca ana sayfa, ilk açılış): sayfanın sabit olmadığını, aşağı kaydırılacağını gösterir.
-   Oval cam kutuda üstte "Aşağı kaydırın", altında hareketli ikon (farede fare tekerleği, dokunmatikte aşağı oklar).
-   Biraz gecikmeyle belirir, kaydırınca solar ve o sayfa açıkken bir daha görünmez (main.js, html.kaydirildi).
-   Telefonda (alt alta düzen) butonların altında ortada, çünkü ekranın altı çerez bildirimi ve kampanya kartının;
-   yan yana düzende ekranın alt ortasında sabit. ---------- */
-.kay { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 9px 16px 10px; border-radius: 999px; color: #e9ebee; background: linear-gradient(180deg, rgba(255, 255, 255, .12) 0%, rgba(255, 255, 255, .04) 100%), rgba(18, 20, 23, .45); -webkit-backdrop-filter: blur(14px) saturate(160%); backdrop-filter: blur(14px) saturate(160%); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .13), inset 0 1px 0 rgba(255, 255, 255, .2), 0 12px 28px -14px rgba(0, 0, 0, .8); pointer-events: none; animation: kayGir .8s cubic-bezier(.2, .8, .2, 1) 1.4s both; }
-.kay__t { font-size: 11.5px; font-weight: 600; letter-spacing: .4px; white-space: nowrap; }
-.kay__ic { display: flex; align-items: center; justify-content: center; height: 24px; color: #9fb8ff; }
+   Dar oval cam kutuda üstte kısa "Kaydırın", altında hareketli ikon (farede tekerlek yerine aşağı kayan ok, dokunmatikte
+   aşağı oklar). Kısa bir gecikmeyle belirir, kaydırınca solar ve o sayfa açıkken bir daha görünmez (main.js, html.kaydirildi).
+   Ekranın alt ortasında sabit; telefonda WhatsApp yuvarlağıyla aynı dikey ortada (kullanıcı kararı). Telefonda kampanya
+   kartı ya da çerez bildirimi ekranın altını kaplarken onların arkasında kalmasın diye butonların altına geçer (kay--m). ---------- */
+.kay { display: flex; flex-direction: column; align-items: center; gap: 5px; padding: 8px 17px 9px; border-radius: 999px; color: #e9ebee; background: linear-gradient(180deg, rgba(255, 255, 255, .12) 0%, rgba(255, 255, 255, .04) 100%), rgba(18, 20, 23, .45); -webkit-backdrop-filter: blur(14px) saturate(160%); backdrop-filter: blur(14px) saturate(160%); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .13), inset 0 1px 0 rgba(255, 255, 255, .2), 0 12px 28px -14px rgba(0, 0, 0, .8); pointer-events: none; animation: kayGir .6s cubic-bezier(.2, .8, .2, 1) .35s both; }
+.kay__t { font-size: 11px; font-weight: 600; letter-spacing: .5px; white-space: nowrap; }
+.kay__ic { display: flex; align-items: center; justify-content: center; height: 27px; color: #9fb8ff; }
 .kay__ic svg { display: block; }
 .kay__ic .kay__ok { display: none; }
 @media (pointer: coarse) { .kay__ic .kay__fare { display: none; } .kay__ic .kay__ok { display: block; } }
-.kay__teker { animation: kayTeker 1.8s cubic-bezier(.45, 0, .3, 1) infinite; }
-.kay__ok1, .kay__ok2 { animation: kayOk 1.8s ease-in-out infinite; }
+.kay__teker { animation: kayTeker 1.7s cubic-bezier(.45, 0, .3, 1) infinite; }
+.kay__ok1, .kay__ok2 { animation: kayOk 1.7s ease-in-out infinite; }
 .kay__ok2 { animation-delay: .18s; }
 @keyframes kayGir { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
-@keyframes kayTeker { 0% { transform: translateY(-1px); opacity: 0; } 25% { opacity: 1; } 70% { transform: translateY(6px); opacity: 0; } 100% { transform: translateY(6px); opacity: 0; } }
+@keyframes kayTeker { 0% { transform: translateY(-2px); opacity: 0; } 20% { opacity: 1; } 65% { transform: translateY(5px); opacity: 0; } 100% { transform: translateY(5px); opacity: 0; } }
 @keyframes kayOk { 0%, 100% { transform: translateY(-2px); opacity: .25; } 50% { transform: translateY(2px); opacity: 1; } }
-.kay--m { align-self: center; margin-top: 4px; }
-.kay--d { display: none; position: fixed; left: 50%; bottom: 28px; z-index: 20; translate: -50% 0; }
-.hw .kay--m { display: none; }
-.hw .kay--d { display: flex; }
+.kay--d { position: fixed; left: 50%; bottom: 28px; z-index: 20; translate: -50% 0; }
+/* telefon: WhatsApp yuvarlağı (alt 16 px, 56 px) ile aynı dikey ortada */
+html:not(.hw) .kay--d { bottom: calc(44px - 31px + env(safe-area-inset-bottom)); }
+.kay--m { display: none; align-self: center; margin-top: 2px; }
+html:not(.hw)[data-kampanya="acik"] .kay--m, html:not(.hw)[data-ck="yok"] .kay--m, html:not(.hw)[data-ck="tercih"] .kay--m { display: flex; }
+html:not(.hw)[data-kampanya="acik"] .kay--d, html:not(.hw)[data-ck="yok"] .kay--d, html:not(.hw)[data-ck="tercih"] .kay--d { display: none; }
 /* giriş animasyonu bittiyse yumuşakça solar; daha belirmeden kaydırıldıysa hiç görünmez (main.js kaydirildi--erken) */
 html.kaydirildi .kay { animation: kayCik .45s ease both; }
 html.kaydirildi--erken .kay { display: none; }

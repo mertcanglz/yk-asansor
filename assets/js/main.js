@@ -1,5 +1,5 @@
 // YKA Asansör — sayfa etkileşimleri (derleme yok, saf JS modülü)
-import { baslat as telefonBaslat } from './telefon.js?v=20261122j';
+import { baslat as telefonBaslat } from './telefon.js?v=20261122k';
 
 /* Analiz kimlikleri: boşken GA ve Meta Pixel hiç yüklenmez (onay verilse bile) */
 const GA_ID = ''; // TODO: GA4 ölçüm kimliği (ör. G-XXXXXXXXXX)
@@ -961,7 +961,7 @@ function kaydirma() {
   // ana sayfadaki kaydırma göstergesi: ilk kaydırmada solar, sayfa açık kaldıkça bir daha görünmez
   if (y > 24 && anaSayfa && !h.classList.contains('kaydirildi')) {
     h.classList.add('kaydirildi');
-    if (performance.now() < 2400) h.classList.add('kaydirildi--erken');
+    if (performance.now() < 1000) h.classList.add('kaydirildi--erken');
   }
   durakGuncelle(y);
   if (anaSayfa) durakSonra();

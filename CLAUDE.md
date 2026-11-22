@@ -115,9 +115,10 @@ Kodlamadan önce blog taslakları `docs/blog-taslaklari/` altında Markdown olar
   tek istisna teklif formu sayfası (`teklif-formu.html`), orada WhatsApp butonu yok.
   Kampanya kutusu yalnızca ana sayfada; kutu ve küçük etiketi grafit cam (`--promo-zemin`), mavi değil: ilk açılışta
   mavi fazla geliyordu (kullanıcı kararı).
-- **Kaydırma göstergesi (ana sayfa):** ilk açılışta oval cam kutuda "Aşağı kaydırın" ve altında hareketli ikon (farede
-  tekerlek, dokunmatikte aşağı oklar); ~1,4 sn sonra belirir, ilk kaydırmada solar ve sayfa açıkken bir daha görünmez.
-  Yan yana düzende ekranın alt ortasında sabit; telefonda butonların altında ortada (ekranın altı çerez ve kampanyanın).
+- **Kaydırma göstergesi (ana sayfa):** ilk açılışta dar oval cam kutuda kısa "Kaydırın" ve altında hareketli ikon (farede
+  içinde aşağı kayan ok olan fare, dokunmatikte aşağı oklar); ~0,35 sn sonra belirir, ilk kaydırmada solar ve sayfa açıkken
+  bir daha görünmez. Ekranın alt ortasında sabit, telefonda WhatsApp yuvarlağıyla aynı hizada; telefonda kampanya kartı ya
+  da çerez bildirimi açıkken onların arkasında kalmasın diye butonların altına geçer (kullanıcı kararı).
 - Header'daki telefon numarası koyu zeminde beyaz, açık zeminli bölümlere geçince sitenin siyahı (`--murekkep`).
 - **Telefonda header da zeminsiz** (masaüstündeki gibi, kullanıcı kararı): koyu bölümde arkada koyu gölge, açık bölümde
   (`is-acik`) beyaz degrade, siyah kutulu logo. Arama ve menü düğmeleri koyu zeminde eski sade hâlinde, açık zeminde 3B açık cam. Siyah header zemini eklenmez (logonun kendi zemini var).
