@@ -48,6 +48,22 @@ Yazılmayanlar (düşük hacim veya başka sayfanın konusu): apartmana sonradan
 ayrıntılı), asansör halat değişimi (70), yürüyen merdiven bakımı (sistem sayfası), asansör kaç kişilik (10;
 Başıbüyük sayfasında).
 
+## 3b. Ek konu yazıları (22 Kasım 2026)
+
+İlçe ve semt yazıları Hizmet bölgeleri sayfasına ayrıldıktan sonra blog için yeni konu yazıları. **Durum: taslak, onay
+bekliyor.** Hacimler bu turda Planlayıcı'yla ölçülmedi (yalnızca halat 19 Ekim ölçümünden). Mevzuat bilgileri Asansör
+İşletme ve Bakım Yönetmeliği'nin güncel metninden madde madde okundu; ücretli standartlardan doğrulanamayan rakamlar
+yazılmadı (her taslağın editör notunda listeli).
+
+| # | Yazı | Ana sorgu | Dosya |
+|---|---|---|---|
+| 15 | Asansör tescili: yeni asansör hangi belgelerle kullanıma açılır? | asansör tescili | `asansor-tescili.md` |
+| 16 | Asansör kaç kişilik? Kapasite, kişi hesabı ve doğru seçim | asansör kaç kişilik | `asansor-kac-kisilik.md` |
+| 17 | Asansör kuyusu: ölçüler, kuyu dibi ve inşaatta dikkat edilecekler | asansör kuyusu, kuyu ölçüleri | `asansor-kuyusu.md` |
+| 18 | Asansör halatı: ne zaman değişir, nasıl anlaşılır? | asansör halatı, halat değişimi (70) | `asansor-halati.md` |
+| 19 | Asansörün elektrik tüketimi: enerji nereye gidiyor, nasıl azalır? | asansör elektrik tüketimi | `asansor-elektrik-tuketimi.md` |
+| 20 | Asansör güvenlik sistemleri: paraşüt fren, regülatör ve diğerleri | asansör güvenlik sistemleri, paraşüt | `asansor-guvenlik-sistemleri.md` |
+
 ## 4. Yazım kuralları
 
 - Yer adı geçmez (İstanbul geneli ve Türkiye geneli aramalar için).
