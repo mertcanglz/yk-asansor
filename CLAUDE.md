@@ -23,6 +23,9 @@ Bu repo, **YKA Asansör** işletmesinin tanıtım web sitesidir. Site sahibi pro
   (henüz yazılmadı); formlar `fetch` ile gönderir, başarıda JSON `{"ok": true}`, hatada HTTP 422 + `{"hata": "…"}` bekler. Derleme yok kuralı geçerli;
   PHP yalnızca form gönderimi için. Kurumsal e-posta adresi: `info@ykaasansor.com` (alan adı henüz alınmadı, bkz. İşletme bilgileri).
 - Yerel önizleme: `python3 -m http.server 8080` → http://localhost:8080
+- **Önbellek sürümü:** sayfalarda `style.css`, `main.js`, `ses.js` bağlantıları ve main.js'teki `telefon.js` içe aktarımı
+  `?v=YYYYMMDDx` taşır. CSS/JS değişen her işte tüm sayfalarda bu değeri artır; yoksa tarayıcılar (GitHub Pages 10 dk
+  önbellek) eski stili göstermeye devam eder.
 
 ## Dosya yapısı
 
