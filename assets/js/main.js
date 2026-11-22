@@ -1,5 +1,5 @@
 // YKA Asansör — sayfa etkileşimleri (derleme yok, saf JS modülü)
-import { baslat as telefonBaslat } from './telefon.js?v=20261122g';
+import { baslat as telefonBaslat } from './telefon.js?v=20261122h';
 
 /* Analiz kimlikleri: boşken GA ve Meta Pixel hiç yüklenmez (onay verilse bile) */
 const GA_ID = ''; // TODO: GA4 ölçüm kimliği (ör. G-XXXXXXXXXX)
@@ -489,9 +489,10 @@ const Asansor = (() => {
     const f = (k) => (az ? 1 : 1 - Math.pow(1 - k, dt / 16.667));
     const masa = mqMasa.matches;
     const oncekiKab = kab;
-    p += (pt - p) * f(masa ? 0.07 : 0.08);
+    // telefonda katlar arası geçiş biraz daha yumuşak (sayfa durağa hızlı oturuyor, sahne onu daha sakin izler; kullanıcı kararı)
+    p += (pt - p) * f(masa ? 0.07 : genis ? 0.08 : 0.06);
     const st = faz(p);
-    cam += (st.pos - cam) * f(genis ? (masa ? 0.05 : 0.06) : 0.1);
+    cam += (st.pos - cam) * f(genis ? (masa ? 0.05 : 0.06) : 0.07);
     kabinDurumu(st);
     if (!genis) {
       const yaklas = (o, e) => { if (o.s !== o.h) o.s = Math.abs(o.h - o.s) < e ? o.h : o.s + (o.h - o.s) * f(0.08); };
@@ -849,7 +850,7 @@ const Kampanya = (() => {
   if (!kart || !etiket) return { guncelle() {} };
   let kapandi = false;
   try { kapandi = sessionStorage.getItem('yka-kampanya') === 'kapali'; } catch (e) { /* yoksay */ }
-  let sabit = false, sabitP = 0, sonP = 0, ilk = true, olculdu = false;
+  let sabit = false, sabitP = 0, sonP = 0, ilk = true, olculdu = false, kapanT = 0;
   function guncelle(q = sonP) {
     sonP = q;
     const ckAcik = h.dataset.ck === 'yok' || h.dataset.ck === 'tercih';
@@ -861,7 +862,15 @@ const Kampanya = (() => {
       kart.style.animationDelay = ilk && mqGenis.matches ? '1.6s' : '0s';
       ilk = false;
     }
-    kart.hidden = !acik;
+    // kart birden kaybolmaz: geldiği WhatsApp butonuna doğru küçülüp solar (1. kattan inerken geçiş sert görünüyordu)
+    if (acik) { clearTimeout(kapanT); kapanT = 0; kart.classList.remove('is-kapan'); kart.hidden = false; }
+    else if (!kart.hidden && !kapanT) {
+      if (mqAz.matches || mqMasa.matches) kart.hidden = true; // yalnızca telefon ve tablette
+      else {
+        kart.classList.add('is-kapan');
+        kapanT = setTimeout(() => { kapanT = 0; kart.classList.remove('is-kapan'); kart.hidden = true; }, 300);
+      }
+    }
     etiket.hidden = kapandi || acik || engel;
     // telefonda kart açıkken hero yazısının altı kart kadar açılır; kapanınca boşluk kalkar.
     // 2. ve 3. katta kampanya etiketi görünürken bağlantılar onun üstünde durur.

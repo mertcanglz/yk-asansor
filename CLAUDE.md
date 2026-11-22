@@ -117,9 +117,10 @@ Kodlamadan önce blog taslakları `docs/blog-taslaklari/` altında Markdown olar
   mavi fazla geliyordu (kullanıcı kararı).
 - Header'daki telefon numarası koyu zeminde beyaz, açık zeminli bölümlere geçince sitenin siyahı (`--murekkep`).
 - **Telefonda header da zeminsiz** (masaüstündeki gibi, kullanıcı kararı): koyu bölümde arkada koyu gölge, açık bölümde
-  (`is-acik`) beyaz degrade, siyah kutulu logo ve açık cam düğmeler. Siyah header zemini eklenmez (logonun kendi zemini var).
-- **Hamburger menü:** alttaki kutuda önce arıza hattı numarası, altında keşif butonu. Numara da butonla aynı boyda,
-  3B kabartmalı ama içi mavi değil grafit cam; ikon ve numara ortada. Açılır gruplar (menü ve footer)
+  (`is-acik`) beyaz degrade, siyah kutulu logo. Arama ve menü düğmeleri 3B cam (koyu zeminde koyu cam, açıkta açık cam). Siyah header zemini eklenmez (logonun kendi zemini var).
+- **Hamburger menü:** alttaki kutuda başlık ("Doğru hizmeti birlikte planlayalım") ortalı; altında arıza hattı numarası,
+  en altta keşif butonu. Numara da butonla aynı boyda, 3B kabartmalı ama içi mavi değil grafit cam; üstünde ayrıca
+  "7/24 arıza hattı" yazısı yok, çerçevesiz düz beyaz telefon ikonu ve numara ortada. Açılır gruplar (menü ve footer)
   tıklanınca yükseklikleriyle yumuşakça açılıp kapanır (main.js, birden değil).
 - **Kampanya etiketi (telefon/tablet):** WhatsApp'ın solunda iki satır: "**Kampanya** İlk keşif ve / 3 lt. ray yağı ücretsiz";
   yüksekliği 48 px, WhatsApp yuvarlağından (56 px) alçak.
@@ -143,7 +144,9 @@ Kodlamadan önce blog taslakları `docs/blog-taslaklari/` altında Markdown olar
   2. ve 3. katta bağlantı WhatsApp'ın solunda kaldığı için alt boşluk 28 px (kampanya etiketi görünürken 72 px).
   Telefonda hero'da her kaydırma bir kat ilerler, iki kat arasında kalınmaz (CSS scroll-snap `mandatory` +
   `scroll-snap-stop: always`). Duraklar yalnızca hero içindeyken açık (main.js `durak-acik`): hero'dan sonra kök kaydırmada
-  durak kalınca sayfanın geri kalanında elle kaydırma sert geliyordu (kullanıcı kararı, 22 Kasım 2026). Yalnızca dokunmatik ekranda —
+  durak kalınca sayfanın geri kalanında elle kaydırma sert geliyordu (kullanıcı kararı, 22 Kasım 2026). Durak hızlı oturduğu
+  için telefonda sahne (asansör ve yazılar) kaydırmayı biraz daha sakin izler; kampanya kartı 1. kattan inerken birden
+  kaybolmaz, WhatsApp'a doğru küçülerek solar. Yalnızca dokunmatik ekranda —
   fare/trackpad ile dar pencerede sayfa sonundaki esnemeyle çakışıp titretiyordu, orada katlara JS oturtur); hero bitince
   sayfa serbest kayar ve ilk bölüm header'ın (64 px) altına oturur. Hero yüksekliği `100vh` değil `100svh`/`100dvh`
   olsun (adres çubuğu butonları örtmesin); 360 px genişlik ve kısa ekranlarda (≤ 720 px) test et.

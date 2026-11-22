@@ -191,9 +191,11 @@ svg { flex: 0 0 auto; }
   .hdr::after { height: 110px; background: linear-gradient(180deg, rgba(243, 243, 241, .9) 0%, rgba(243, 243, 241, .74) 30%, rgba(243, 243, 241, .42) 58%, rgba(243, 243, 241, .12) 82%, rgba(243, 243, 241, 0) 100%); }
   .hdr.is-acik::before { opacity: 0; }
   .hdr.is-acik::after { opacity: 1; }
-  .hdr .ib { transition: color .4s ease, background .4s ease, box-shadow .4s ease; }
-  .hdr.is-acik .ib { color: var(--murekkep); background: rgba(255, 255, 255, .55); box-shadow: inset 0 0 0 1px rgba(21, 24, 27, .12), 0 6px 16px -10px rgba(21, 24, 27, .35); }
-  .hdr.is-acik .ib:active { background: rgba(255, 255, 255, .85); }
+  /* arama ve menü düğmeleri: 3B cam (üstte ışık, altta gölge, hafif kabarık); ikonlar aynı (kullanıcı kararı) */
+  .hdr .ib { background: linear-gradient(180deg, rgba(255, 255, 255, .16) 0%, rgba(255, 255, 255, .05) 55%, rgba(255, 255, 255, .09) 100%); -webkit-backdrop-filter: blur(12px) saturate(180%) brightness(1.06); backdrop-filter: blur(12px) saturate(180%) brightness(1.06); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .15), inset 0 1px 1px rgba(255, 255, 255, .28), inset 0 -1px 1px rgba(255, 255, 255, .06), inset 0 -8px 12px -8px rgba(0, 0, 0, .35), 0 8px 18px -10px rgba(0, 0, 0, .7); transition: color .4s ease, background .4s ease, box-shadow .4s ease, transform .2s ease; }
+  .hdr .ib:active { transform: scale(.96); background: linear-gradient(180deg, rgba(255, 255, 255, .22) 0%, rgba(255, 255, 255, .09) 55%, rgba(255, 255, 255, .13) 100%); }
+  .hdr.is-acik .ib { color: var(--murekkep); background: linear-gradient(180deg, rgba(255, 255, 255, .62) 0%, rgba(255, 255, 255, .30) 55%, rgba(255, 255, 255, .42) 100%); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .85), inset 0 1.5px 1.5px rgba(255, 255, 255, 1), inset 0 -8px 12px -8px rgba(21, 24, 27, .18), 0 0 0 .5px rgba(21, 24, 27, .14), 0 10px 20px -12px rgba(21, 24, 27, .4); }
+  .hdr.is-acik .ib:active { background: linear-gradient(180deg, rgba(255, 255, 255, .8) 0%, rgba(255, 255, 255, .5) 100%); }
 }
 .hdr__nav, .hdr__tel { display: none; }
 .hdr__end { display: flex; align-items: center; gap: 8px; }
@@ -319,11 +321,12 @@ svg { flex: 0 0 auto; }
    ikon ve numara ortada (kullanıcı kararı) */
 .m-nav__cta .yka-line { position: relative; overflow: hidden; justify-content: center; gap: 12px; min-height: 0; height: 52px; margin-bottom: -6px; padding: 0 18px; border-radius: 12px; background: linear-gradient(180deg, rgba(255, 255, 255, .13) 0%, rgba(255, 255, 255, .05) 100%), #1b1e22; box-shadow: inset 0 1px 0 rgba(255, 255, 255, .22), inset 0 0 0 1px rgba(255, 255, 255, .09), inset 0 -1px 0 rgba(0, 0, 0, .35), 0 10px 22px -12px rgba(0, 0, 0, .9); transition: transform .3s var(--ease), background .3s; }
 .m-nav__cta .yka-line:active { transform: translateY(1px); background: linear-gradient(180deg, rgba(255, 255, 255, .17) 0%, rgba(255, 255, 255, .07) 100%), #1b1e22; }
-.m-nav__cta .yka-line__ic { flex: 0 0 34px; width: 34px; height: 34px; color: #9fb8ff; background: rgba(33, 82, 246, .18); box-shadow: inset 0 0 0 1px rgba(121, 170, 253, .32); }
-.m-nav__cta .yka-line__ic svg { width: 17px; height: 17px; }
-.m-nav__cta .yka-line__tx { gap: 4px; }
-.m-nav__cta .yka-line__tx span { font-size: 11px; letter-spacing: .3px; }
-.m-nav__cta .yka-line__tx b { font-size: 18px; }
+.m-nav__cta .yka-line { gap: 10px; }
+.m-nav__cta .yka-line__ic { flex: 0 0 auto; width: auto; height: auto; border-radius: 0; color: #fff; background: none; box-shadow: none; } /* çerçevesiz, ışıksız düz beyaz ikon */
+.m-nav__cta .yka-line__ic svg { width: 18px; height: 18px; }
+.m-nav__cta .yka-line__tx b { font-size: 18px; line-height: 1; }
+.m-nav__cta .yka-line:hover .yka-line__ic { box-shadow: none; }
+.m-nav__t { text-align: center; } /* "Doğru hizmeti birlikte planlayalım" kutuda ortalı */
 html.nav-acik, html.nav-acik body { overflow: hidden; }
 
 /* ---------- Asansör katmanı (hero) ---------- */
@@ -1006,6 +1009,9 @@ html:not(.js) .fgrp__ac svg { display: none; }
 /* telefon: solda, WhatsApp yuvarlağıyla aynı alt hizada; ondan büyüyerek açılır, uç WhatsApp'a bakar */
 .promo { position: fixed; left: 20px; bottom: calc(16px + env(safe-area-inset-bottom)); z-index: 40; width: min(280px, calc(100% - 112px)); padding: 16px 18px 14px; border-radius: 16px; color: #fff; background: var(--promo-zemin); -webkit-backdrop-filter: blur(16px) saturate(150%); backdrop-filter: blur(16px) saturate(150%); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .16), inset 0 0 0 1px rgba(255, 255, 255, .11), 0 18px 44px -12px rgba(0, 0, 0, .6), 0 8px 24px rgba(0, 0, 0, .3); transform-origin: calc(100% + 60px) calc(100% - 28px); animation: promoInWa .75s cubic-bezier(.2, .8, .2, 1) both; }
 .promo[hidden] { display: none; }
+@keyframes promoOutWa { to { opacity: 0; transform: scale(.12); } }
+@keyframes promoOut { to { opacity: 0; transform: translateY(14px) scale(.6); } }
+.promo.is-kapan { animation: promoOutWa .3s cubic-bezier(.4, 0, .6, 1) both; pointer-events: none; }
 .promo::after { content: ""; position: absolute; right: -13px; bottom: 17px; width: 14px; height: 22px; background: var(--promo-uc); clip-path: polygon(0 0, 100% 50%, 0 100%); }
 .promo__k { display: block; font-size: 11px; font-weight: 600; letter-spacing: 1.2px; color: var(--mavi-acik); }
 .promo__t { display: block; margin-top: 4px; padding-right: 30px; font-size: 16px; line-height: 1.25; font-weight: 600; letter-spacing: -.2px; }
@@ -1020,12 +1026,14 @@ html:not(.js) .fgrp__ac svg { display: none; }
 /* telefon ve tablet: iki satır, WhatsApp yuvarlağından (56 px) alçak (48 px), onunla aynı dikey ortada (kullanıcı kararı) */
 @media (max-width: 1023px) {
   .promo-pill { bottom: calc(20px + env(safe-area-inset-bottom)); height: 48px; padding: 0 16px; border-radius: 16px; font-size: 12.5px; line-height: 16px; text-align: left; }
+  .promo-pill { animation-delay: .12s; } /* kart küçülürken hemen üstüne binmesin */
   .promo-pill__m { display: flex; flex-direction: column; }
   .promo-pill__m b { margin-right: 3px; font-weight: 700; color: var(--mavi-acik); }
   .promo-pill__m > span + span { font-weight: 700; }
 }
 @media (min-width: 760px) {
   .promo { left: auto; right: 16px; bottom: 88px; width: 282px; padding: 16px 20px 15px; transform-origin: calc(100% - 28px) calc(100% + 36px); animation: promoIn .7s cubic-bezier(.2, .8, .2, 1) both; }
+  .promo.is-kapan { animation-name: promoOut; } /* tablet (masaüstünde kart geçişsiz kapanır) */
   .promo::after { right: 20px; bottom: -7px; width: 16px; height: 16px; background: var(--promo-uc); clip-path: none; transform: rotate(45deg); border-radius: 0 0 4px 0; }
   .promo__t { margin-top: 6px; font-size: 17px; line-height: 1.28; }
   .promo__link { margin-top: 10px; min-height: 0; padding-bottom: 3px; }
