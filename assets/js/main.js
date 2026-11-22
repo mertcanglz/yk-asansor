@@ -1,5 +1,5 @@
 // YKA Asansör — sayfa etkileşimleri (derleme yok, saf JS modülü)
-import { baslat as telefonBaslat } from './telefon.js?v=20261122c';
+import { baslat as telefonBaslat } from './telefon.js?v=20261122e';
 
 /* Analiz kimlikleri: boşken GA ve Meta Pixel hiç yüklenmez (onay verilse bile) */
 const GA_ID = ''; // TODO: GA4 ölçüm kimliği (ör. G-XXXXXXXXXX)
@@ -942,7 +942,7 @@ function kaydirma() {
   if (hdr) {
     const gecti = y >= ekran.heroSon - (mqMasa.matches ? 92 : 64);
     hdr.classList.toggle('is-gecti', gecti);
-    if (!gecti || !mqMasa.matches) hdr.classList.remove('is-acik');
+    if (!gecti) hdr.classList.remove('is-acik');
     else if (!zeminIstegi) zeminIstegi = requestAnimationFrame(() => { zeminIstegi = 0; hdr.classList.toggle('is-acik', zeminAcikMi()); });
   }
   if (Menu.acikMi && Menu.acikMi()) Menu.kapat();
@@ -1206,14 +1206,33 @@ if ('IntersectionObserver' in window) {
 (() => {
   const dugmeler = $$('.fgrp__ac, .m-nav__ac');
   if (!dugmeler.length) return;
-  const ac = (b, v) => {
+  // tıklayınca yükseklik ve opaklık yumuşakça açılır/kapanır (birden değil, kullanıcı kararı); ilk kurulumda geçişsiz
+  const azHareket = matchMedia('(prefers-reduced-motion: reduce)');
+  const ac = (b, v, yumusak = false) => {
     b.setAttribute('aria-expanded', String(v));
-    d.getElementById(b.getAttribute('aria-controls')).hidden = !v;
+    const el = d.getElementById(b.getAttribute('aria-controls'));
+    const once = el.hidden ? 0 : el.getBoundingClientRect().height; // yarıda kalan geçişte o anki yükseklikten devam
+    if (el._anim) { el._anim.cancel(); el._anim = null; }
+    if (!yumusak || azHareket.matches || !el.animate) { el.hidden = !v; return; }
+    el.hidden = false;
+    const tam = el.getBoundingClientRect().height;
+    const cs = getComputedStyle(el);
+    const dolu = { height: tam + 'px', paddingTop: cs.paddingTop, paddingBottom: cs.paddingBottom, opacity: 1 };
+    const bos = { height: '0px', paddingTop: '0px', paddingBottom: '0px', opacity: 0 };
+    el.style.overflow = 'hidden';
+    // iç boşluk da birlikte küçülür; yoksa kapanırken son anda boşluk kadar takılıyordu
+    const anim = el.animate(
+      v ? [once ? { height: once + 'px', opacity: 1 } : bos, dolu]
+        : [{ ...dolu, height: once + 'px' }, bos],
+      { duration: v ? 420 : 320, easing: 'cubic-bezier(.22, .8, .24, 1)' }
+    );
+    el._anim = anim;
+    anim.onfinish = () => { el._anim = null; el.style.overflow = ''; if (!v) el.hidden = true; };
   };
   const footer = dugmeler.filter((b) => b.classList.contains('fgrp__ac'));
   dugmeler.forEach((b) => b.addEventListener('click', () => {
     if (footer.includes(b) && mqMasa.matches) return;
-    ac(b, b.getAttribute('aria-expanded') !== 'true');
+    ac(b, b.getAttribute('aria-expanded') !== 'true', true);
   }));
   const uygula = () => footer.forEach((b) => {
     ac(b, mqMasa.matches);

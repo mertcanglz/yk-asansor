@@ -185,8 +185,16 @@ svg { flex: 0 0 auto; }
 .hdr::before, .hdr::after { content: ""; position: absolute; left: 0; right: 0; top: 0; z-index: -1; pointer-events: none; transition: opacity .5s ease; }
 .hdr::before { height: 120px; background: linear-gradient(180deg, rgba(14, 16, 18, .86) 0%, rgba(14, 16, 18, .78) 24%, rgba(14, 16, 18, .55) 46%, rgba(14, 16, 18, .28) 66%, rgba(14, 16, 18, .09) 84%, rgba(14, 16, 18, 0) 100%); }
 .hdr::after { opacity: 0; }
-.hdr.is-gecti { background: rgba(14, 16, 18, .92); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); box-shadow: 0 1px 0 rgba(255, 255, 255, .06); }
-.hdr.is-gecti::before { opacity: 0; }
+/* telefonda da masaüstündeki gibi siyah zemin yok (logonun kendi zemini olduğu için her zeminde görünür, kullanıcı kararı):
+   koyu bölümlerde arkada koyu gölge, açık bölümlerde (JS: is-acik) beyaz degrade; logo ve düğmeler zemine göre döner */
+@media (max-width: 1023px) {
+  .hdr::after { height: 110px; background: linear-gradient(180deg, rgba(243, 243, 241, .9) 0%, rgba(243, 243, 241, .74) 30%, rgba(243, 243, 241, .42) 58%, rgba(243, 243, 241, .12) 82%, rgba(243, 243, 241, 0) 100%); }
+  .hdr.is-acik::before { opacity: 0; }
+  .hdr.is-acik::after { opacity: 1; }
+  .hdr .ib { transition: color .4s ease, background .4s ease, box-shadow .4s ease; }
+  .hdr.is-acik .ib { color: var(--murekkep); background: rgba(255, 255, 255, .55); box-shadow: inset 0 0 0 1px rgba(21, 24, 27, .12), 0 6px 16px -10px rgba(21, 24, 27, .35); }
+  .hdr.is-acik .ib:active { background: rgba(255, 255, 255, .85); }
+}
 .hdr__nav, .hdr__tel { display: none; }
 .hdr__end { display: flex; align-items: center; gap: 8px; }
 .hdr__cta { display: none; }
@@ -200,6 +208,7 @@ svg { flex: 0 0 auto; }
   .hdr::after { height: 128px; background: linear-gradient(180deg, rgba(14, 16, 18, .62) 0%, rgba(14, 16, 18, .58) 16%, rgba(14, 16, 18, .49) 30%, rgba(14, 16, 18, .37) 43%, rgba(14, 16, 18, .25) 56%, rgba(14, 16, 18, .15) 68%, rgba(14, 16, 18, .07) 80%, rgba(14, 16, 18, .02) 91%, rgba(14, 16, 18, 0) 100%); }
   /* açık zeminli bölümlerde zemin yok; yalnızca gölge hafifler */
   .hdr.is-gecti { background: none; -webkit-backdrop-filter: none; backdrop-filter: none; box-shadow: none; }
+  .hdr.is-gecti::before { opacity: 0; }
   .hdr.is-gecti::after { opacity: 1; }
   .hdr .logo { justify-self: start; }
   .hdr .logo img { height: 34px; }
@@ -360,11 +369,13 @@ html[data-kampanya="etiket"] .hx-sec:not(.hx-sec--1) .hx-in, html[data-kampanya=
 html:not(.hw)[data-kampanya="acik"] .hx-sec--1 .hx-in { --hx-alt: var(--promo-pad, calc(146px + env(safe-area-inset-bottom))); }
 @media (min-width: 760px) { html:not(.hw)[data-kampanya="acik"] .hx-sec--1 .hx-in { --hx-alt: var(--promo-pad, 220px); } }
 html[data-ck="yok"] .hx .hx-sec .hx-in { --hx-alt: var(--ck-pad, calc(140px + env(safe-area-inset-bottom))); }
-/* telefonda kat durakları: her kaydırma bir kat ilerler, hızlı kaydırmada katlar atlanmaz; hero bitince sayfa serbest kayar.
+/* telefonda kat durakları: sayfa parmağı ve momentumu diğer sayfalardaki gibi yumuşakça izler, bir katın yakınında
+   durunca o kata oturur (proximity). Önce her kaydırma zorla bir kat ilerliyordu (mandatory + snap-stop), elle kaydırmada
+   geçişler çok sert geliyordu (kullanıcı kararı, 22 Kasım 2026). Hero bitince sayfa serbest kayar.
    Yalnızca dokunmatik ekranda: fare/trackpad ile dar pencerede sayfa sonundaki esnemeyle çakışıp sayfayı titretir
    (orada katlara oturtmayı geniş ekrandaki gibi JS yapar). Kalınan yer geri yüklenirken kapalı (durak-yok, main.js Konum) */
-@media (pointer: coarse) { html.sayfa-ana:not(.hw):not(.durak-yok) { scroll-snap-type: y mandatory; } }
-.hx-durak { position: absolute; left: 0; top: 0; width: 1px; height: 100vh; height: 100svh; pointer-events: none; scroll-snap-align: start; scroll-snap-stop: always; }
+@media (pointer: coarse) { html.sayfa-ana:not(.hw):not(.durak-yok) { scroll-snap-type: y proximity; } }
+.hx-durak { position: absolute; left: 0; top: 0; width: 1px; height: 100vh; height: 100svh; pointer-events: none; scroll-snap-align: start; }
 .hx-durak:nth-child(2) { top: 100vh; top: 100svh; }
 .hx-durak:nth-child(3) { top: 200vh; top: 200svh; }
 /* hero bitince ilk bölüm header'ın (64 px) altında başlar: "Asansör sistemleri" başlığı header altında kalmaz */
@@ -996,6 +1007,13 @@ html:not(.js) .fgrp__ac svg { display: none; }
 .promo-pill[hidden] { display: none; }
 .promo-pill strong { margin-left: 5px; font-weight: 800; }
 .promo-pill:hover { filter: brightness(1.18); }
+/* telefon ve tablet: iki satır, WhatsApp yuvarlağından (56 px) alçak (48 px), onunla aynı dikey ortada (kullanıcı kararı) */
+@media (max-width: 1023px) {
+  .promo-pill { bottom: calc(20px + env(safe-area-inset-bottom)); height: 48px; padding: 0 16px; border-radius: 16px; font-size: 12.5px; line-height: 16px; text-align: left; }
+  .promo-pill__m { display: flex; flex-direction: column; }
+  .promo-pill__m b { margin-right: 3px; font-weight: 700; color: var(--mavi-acik); }
+  .promo-pill__m > span + span { font-weight: 700; }
+}
 @media (min-width: 760px) {
   .promo { left: auto; right: 16px; bottom: 88px; width: 282px; padding: 16px 20px 15px; transform-origin: calc(100% - 28px) calc(100% + 36px); animation: promoIn .7s cubic-bezier(.2, .8, .2, 1) both; }
   .promo::after { right: 20px; bottom: -7px; width: 16px; height: 16px; background: var(--promo-uc); clip-path: none; transform: rotate(45deg); border-radius: 0 0 4px 0; }
