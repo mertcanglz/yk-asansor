@@ -42,7 +42,13 @@ teklif-formu.html     Reklam açılış sayfası (noindex): detaylı teklif form
                       Her adreste sunulabildiği için tüm yollar köke göre (/assets/..., /hizmetler.html); yayında
                       .htaccess'e `ErrorDocument 404 /404.html` eklenir. Blog yazılarındaki form `../form-gonder.php`'ye gönderir
 blog.html             Blog listesi: kartlar HTML'de yazılı (SEO); JS ile kategori süzgeci, arama, "daha fazla" (telefonda 8, geniş
-                      ekranda 16) ve sıra sıra dizilen Pinterest ızgarası. Yeni yazı yayınlanınca kartı buraya da eklenir
+                      ekranda 16) ve sıra sıra dizilen Pinterest ızgarası. Yeni konu yazısı yayınlanınca kartı buraya da eklenir
+                      (ilçe ve semt yazıları buraya girmez, bkz. hizmet-bolgeleri.html)
+hizmet-bolgeleri.html Hizmet bölgeleri: her ilçe bir kutucuk (kendi yazısına gider), semtlerin yazıları ilçe kutucuğunun
+                      altında. İlçe ve semt yazıları blog/ klasöründe kalır (adres değişmez) ama blog listesine ve ana sayfa
+                      blog şeridine girmez; sayfa yolları "Ana sayfa / Hizmet bölgeleri / (ilçe) / semt" (kullanıcı kararı,
+                      22 Kasım 2026). Yeni ilçe/semt yazısı yayınlanınca kutucuğu buraya eklenir. Ayrıntı ve gerekçe:
+                      docs/hizmet-bolgeleri-ve-subdomain-arastirmasi.md (ilçe alt alan adı açılmaz)
 kvkk-aydinlatma.html, cerez-politikasi.html, gizlilik-politikasi.html, kullanim-sartlari.html
                       Yasal sayfalar: ortalı koyu başlık + sade metin; [KÖŞELİ PARANTEZ] yer tutucular avukat kontrolünde dolar.
                       Çerez tablosu sitenin gerçekte kullandığı kayıtlarla aynı tutulur (yeni çerez/depolama eklenirse buraya da yaz)
@@ -71,8 +77,8 @@ assets/img/kabin/, hizmetler/, sistemler/  Fotoğraflar; medya/ klasöründeki a
                       (WebP, ad-<genişlik>.webp, srcset ile; medya/ repoya girmez)
 blog/                 Blog yazıları (ör. blog/asansor-etiket-renkleri.html); şablon örneği blog/sancaktepe-asansor.html.
                       Yazı, taslağın yalnızca "## Metin" bölümünden üretilir (editör notları ve doğrulama yayınlanmaz;
-                      doldurulmamış [[İSTEĞE BAĞLI]] satırları çıkarılır). Yeni yazı yayınlanınca aynı işte
-                      ana sayfadaki blog şeridi (en yeni 12 yazı) ve blog.html listesi de güncellenir;
+                      doldurulmamış [[İSTEĞE BAĞLI]] satırları çıkarılır). Yeni konu yazısı yayınlanınca aynı işte
+                      ana sayfadaki blog şeridi (en yeni 12 konu yazısı) ve blog.html listesi de güncellenir;
                       kartlar HTML'de yazılı durur (SEO), JS ile sonradan çekilmez. `<title>` en çok 60, meta açıklama
                       en çok 160 karakter olmalı (taslaktaki sayılar elle yazıldığı için yayından önce sayılarak denetlenir)
 docs/                 Proje belgeleri (yayınlanmaz): SEO yol haritası, blog taslakları, kurallar
@@ -147,6 +153,14 @@ Kodlamadan önce blog taslakları `docs/blog-taslaklari/` altında Markdown olar
 - **Yumuşak kaydırma:** fare tekerleği/trackpad ile sayfa yumuşakça süzülerek kayar (main.js, kütüphanesiz). Dokunmatik
   ekranda tarayıcının kendi momentumlu kaydırması kalır (parmağın gerisinden gelmesin, adres çubuğu ve hero durakları
   bozulmasın); ana sayfanın hero katlarında da kat oturtma çalıştığı için tarayıcının kendi kaydırması.
+- **Sayfa başında/sonunda esneme yok:** tarayıcının esneyip geri yaylanması (Mac trackpad, telefonda kat durakları) sayfa
+  sonunda sarsılma gibi görünüyordu; fare/trackpad'de her sayfada, telefonda yalnızca kat duraklı ana sayfada
+  `overscroll-behavior-y: none` (kullanıcı kararı).
+- **Header menüsü:** Hizmetler, Asansör sistemleri, Yeşil etiket, Hizmet bölgeleri (deneme, İletişim'in solunda), İletişim.
+  1024–1439 px'te beş kutu ortada sığmadığı için menü logo ile sağ blok arasında ortalanır, kutular biraz daralır.
+  Footer'da "Hızlı erişim" grubunda tek "Hizmet bölgeleri" bağlantısı; ilçe listesi footer'a yazılmaz.
+- **"Bölgeler" kelimesi tek başına kullanılmaz:** adreste, başlıkta, menüde, kutucukta ve bağlantı metninde her yerde
+  "Hizmet bölgeleri" (kullanıcı kararı).
 - **"Bu sayfada" bağlantı şeridi yalnızca masaüstünde:** mobilde hiçbir sayfada gösterilmez (kullanıcı kararı).
 - **Blog tabloları telefonda kart:** telefona sığmayan geniş tablolar (`by-tablo--kart`, şimdilik etiket renkleri ve sistemler
   karşılaştırması yazıları) 760 px altında kart olur: satır = kart, sütun başlığı satır içi etiket (`data-l`), "–" olan hücre

@@ -88,6 +88,10 @@
 
 /* ---------- Temel ---------- */
 *, *::before, *::after { box-sizing: border-box; }
+/* Sayfa başında/sonunda tarayıcının esneyip geri yaylanması (Mac trackpad, telefonda kat durakları) sarsılma gibi görünüyordu:
+   fare/trackpad'de her sayfada, telefonda yalnızca kat duraklı ana sayfada kapalı (kullanıcı kararı) */
+@media (hover: hover) and (pointer: fine) { html, body { overscroll-behavior-y: none; } }
+@media (pointer: coarse) { html.sayfa-ana:not(.hw), html.sayfa-ana:not(.hw) body { overscroll-behavior-y: none; } }
 html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; scroll-behavior: smooth; }
 body { position: relative; margin: 0; background: var(--koyu); color: var(--yazi-k); font-family: var(--f-sans); font-size: 16px; line-height: 1.5; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; overflow-x: hidden; }
 img { max-width: 100%; height: auto; display: block; }
@@ -200,7 +204,14 @@ svg { flex: 0 0 auto; }
   .hdr__tel span { font-size: 12px; font-weight: 500; color: var(--yazi-k3); }
   .hdr__tel b { font-size: 16px; font-weight: 600; letter-spacing: .3px; }
 }
-@media (min-width: 1024px) and (max-width: 1279px) { .hdr__tel { display: none; } .hdr .logo img { height: 28px; } }
+@media (min-width: 1024px) and (max-width: 1279px) { .hdr__tel { display: none; } .hdr .logo img { height: 26px; } }
+/* 5 menü kutusu (Hizmet bölgeleri eklendi, deneme) 1440 px altında ortada sığmıyordu: menü logo ile sağ blok arasında ortalanır,
+   kutular biraz daralır */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .hdr { grid-template-columns: auto minmax(0, 1fr) auto; }
+  .hdr__nav { justify-self: center; gap: 6px; }
+  .hdr .pill { padding: 0 12px; font-size: 13.5px; }
+}
 /* Masaüstü header, Apple Liquid Glass (deneme): koyu zeminde kutular sıvı camın koyu hâli. Hero'dan sonra açık zeminli
    bölümlerin üzerinde (JS: is-acik) header yine zeminsiz; arkadaki siyah gölge beyaz degradeye döner, yazılar koyulaşır,
    kutular kalın sıvı cam olur. */
@@ -2152,4 +2163,45 @@ html:not(.js) .bl-tools, html:not(.js) .bl-more { display: none; }
   .grp__t, .hz-sss__t, .sp-h2 { font-size: 32px; letter-spacing: -.8px; }
   .by-art .sp-h2 { font-size: 28px; }
   .il-h1 { font-size: 44px; }
+}
+
+/* ---------- Hizmet bölgeleri: her ilçe bir kutucuk (ilçe yazısına gider), semtler kutucuğun altında ---------- */
+.hb-wrap { position: relative; z-index: 1; padding: var(--ic-ilk) var(--padx) var(--ic-bolum); background: var(--acik); color: var(--murekkep); }
+.hb-in { display: flex; flex-direction: column; gap: 20px; max-width: 1280px; margin: 0 auto; }
+.hb-head { display: flex; flex-direction: column; gap: 10px; }
+.hb-h2 { font-size: 26px; line-height: 1.15; font-weight: 300; letter-spacing: -.6px; }
+.hb-h2 > span { display: inline-block; }
+.hb-h2 em { display: inline-block; font-family: var(--f-serif); font-style: italic; font-weight: 500; letter-spacing: -.3px; }
+.hb-not { max-width: 680px; font-size: 14.5px; line-height: 1.6; color: var(--gri-2); }
+.hb-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; }
+.hb-card { display: flex; flex-direction: column; min-width: 0; border-radius: 16px; background: var(--beyaz); box-shadow: inset 0 0 0 1px var(--cizgi); transition: box-shadow .35s, transform .45s var(--ease); }
+.hb-card__a { flex: 1 1 auto; display: flex; flex-direction: column; gap: 8px; padding: 20px 20px 18px; border-radius: 16px; color: var(--murekkep); text-decoration: none; }
+.hb-card__k { font-size: 11px; font-weight: 600; letter-spacing: 1px; color: var(--mavi-koyu); }
+.hb-card__t { font-size: 22px; line-height: 1.15; font-weight: 500; letter-spacing: -.4px; }
+.hb-card__d { font-size: 14px; line-height: 1.55; color: var(--gri-2); }
+.hb-card__go { margin-top: auto; padding-top: 4px; display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; color: var(--mavi-koyu); }
+.hb-card__go svg { transition: transform .45s var(--ease); }
+.hb-semt { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; padding: 12px 20px 18px; border-top: 1px solid var(--cizgi); }
+.hb-semt__l { margin-right: 4px; font-size: 12px; font-weight: 600; color: var(--gri-3); }
+.hb-semt a { display: inline-flex; align-items: center; min-height: 34px; padding: 0 12px; border-radius: 999px; font-size: 13px; color: var(--murekkep-2); text-decoration: none; background: var(--kart); box-shadow: inset 0 0 0 1px var(--cizgi); transition: color .25s, background .25s, box-shadow .25s; }
+.hb-semt a:where(:hover), .hb-semt a:active { color: var(--mavi-koyu); background: var(--buz); box-shadow: inset 0 0 0 1px var(--buz-cizgi); }
+.hb-card__a:focus-visible, .hb-semt a:focus-visible { outline: 2px solid var(--mavi); outline-offset: 2px; }
+.hb-card__a:active { box-shadow: inset 0 0 0 1.5px var(--mavi); }
+.hb-cta { display: flex; flex-direction: column; gap: 16px; margin-top: 8px; padding: 24px 20px; border-radius: 16px; background: radial-gradient(90% 120% at 15% 0%, #1f2429 0%, var(--koyu) 70%); color: var(--yazi-k); }
+.hb-cta__tx { display: flex; flex-direction: column; gap: 8px; }
+.hb-cta__t { font-size: 20px; line-height: 1.25; font-weight: 400; letter-spacing: -.3px; }
+.hb-cta__d { font-size: 14px; line-height: 1.6; color: var(--yazi-k3); }
+.hb-cta__b { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 20px; }
+@media (min-width: 760px) { .hb-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; } }
+@media (min-width: 1024px) {
+  .hb-wrap { padding-left: max(var(--padx), calc((100% - 1280px) / 2)); padding-right: max(var(--padx), calc((100% - 1280px) / 2)); }
+  .hb-in { gap: 28px; }
+  .hb-h2 { font-size: 34px; letter-spacing: -.9px; }
+  .hb-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+  .hb-card:hover { transform: translateY(-3px); box-shadow: inset 0 0 0 1.5px var(--mavi), 0 18px 34px -26px rgba(25, 72, 221, .55); }
+  .hb-card__a:hover .hb-card__go svg { transform: translateX(3px); }
+  .hb-card__t { font-size: 24px; }
+  .hb-cta { flex-direction: row; align-items: center; justify-content: space-between; gap: 32px; padding: 32px 36px; }
+  .hb-cta__tx { max-width: 640px; }
+  .hb-cta__t { font-size: 24px; }
 }

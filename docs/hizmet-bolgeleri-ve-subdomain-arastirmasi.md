@@ -1,4 +1,4 @@
-# Bölgeler yapısı ve ilçe alt alan adları (subdomain): araştırma
+# Hizmet bölgeleri yapısı ve ilçe alt alan adları (subdomain): araştırma
 
 22 Kasım 2026. Soru: footer'a ve yazılara il/ilçe adları eklemek, sonra `sancaktepe.ykaasansor.com` gibi ilçe
 alt alan adları açmak, ilçe adı alan adında geçtiği için aramada üste çıkmamızı sağlar mı?
@@ -14,7 +14,7 @@ alt alan adları açmak, ilçe adı alan adında geçtiği için aramada üste �
   "sayfanın sıralanmak istediği şehir ve bölgeleri listeleyen metin blokları".
 - **Bizim bölgede bu taktikle 1. sıraya çıkan siteler var** (aşağıda, Bölüm 4). Ama oraya çıkaran alan adı değil; rekabet
   zayıf ve sayfa o sorguya birebir odaklı. Aynı odağı ana alan adımızda, ilçe sayfalarıyla risksiz kurabiliriz.
-- **Öneri:** alt alan adı açmayalım. Tek bir **Bölgeler** sayfası açalım. Bu sayfa zaten yazdığımız özgün ilçe yazılarına
+- **Öneri:** alt alan adı açmayalım. Tek bir **Hizmet bölgeleri** sayfası açalım. Bu sayfa zaten yazdığımız özgün ilçe yazılarına
   bağlansın. Footer'da kısa ve bağlantılı bir "Hizmet bölgeleri" grubu olsun. Asıl yerel yarış Google İşletme Profili'nde.
 
 ## 1. Alan adında ilçe adı sıralamayı yükseltir mi?
@@ -91,7 +91,7 @@ Bizim profilimiz Sancaktepe ve Samandıra aramalarında haritada zaten 5,0 puanl
 
 ## 6. Önerilen yapı
 
-**a) Bölgeler sayfası (klasör, alt alan adı değil):** `bolgeler.html` (ya da `bolgeler/`). Hizmet verdiğimiz Anadolu
+**a) Hizmet bölgeleri sayfası (klasör, alt alan adı değil):** `hizmet-bolgeleri.html`. Hizmet verdiğimiz Anadolu
 Yakası ilçeleri gruplu listelenir. Her ilçe, zaten yazdığımız özgün ilçe yazısına bağlanır; semtler kendi ilçesinin altında
 durur. Sayfada kısa bir giriş, hizmet bölgesi haritası ve "bölgeniz listede yoksa arayın" notu olur. Böylece ilçe yazıları
 blogda kaybolmaz, menü ve footer'dan 2 tıkla erişilir. Bu, Google'ın istediği "net, gezilebilir hiyerarşi".
@@ -107,7 +107,7 @@ bu yüzden görünüm bozulmaz. Masaüstünde ayrı bir sütun ya da "Hızlı er
 sayfa gerçek ve özgün olduğu için bu bir gezinme menüsüdür, liste doldurma değil.
 
 **c) Blog yazıları:** yazılara ilçe adı listesi eklemeyelim. İlçe adları yalnızca konuyla gerçekten ilgili olduğunda doğal
-cümle içinde geçsin. Konu yazılarında "Bölgenizdeki hizmet için" gibi tek bir bağlantı Bölgeler sayfasına yeter.
+cümle içinde geçsin. Konu yazılarında "Bölgenizdeki hizmet için" gibi tek bir bağlantı Hizmet bölgeleri sayfasına yeter.
 
 **d) Alt alan adı yalnızca şu durumda düşünülür:** bir ilçede gerçek bir şube açılırsa (ayrı adres, ekip, telefon, ayrı
 Google profili). O zaman bile önce `bolgeler/kartal-subesi` gibi bir klasör sayfası yeterlidir.
@@ -119,20 +119,23 @@ Google profili). O zaman bile önce `bolgeler/kartal-subesi` gibi bir klasör sa
 - Yalnızca ilçe adı değişen şablon metin olmasın. Paragrafların çoğu ilçeye göre gerçekten farklı olsun.
 - Yalnızca gerçekten hizmet verdiğimiz bölgeler (en uzak sınır Anadolu Yakası, CLAUDE.md).
 - Başlık ve H1 sorguya birebir odaklı olsun ("Sancaktepe Asansör Bakım ve Servisi" gibi). Rakipleri 1. sıraya çıkaran asıl şey bu.
-- Her ilçe sayfası Bölgeler sayfasına, komşu ilçelere ve ilgili hizmet sayfalarına bağlansın. Bölgeler sayfası da her ilçeye bağlansın.
+- Her ilçe sayfası Hizmet bölgeleri sayfasına, komşu ilçelere ve ilgili hizmet sayfalarına bağlansın. Hizmet bölgeleri sayfası da her ilçeye bağlansın.
 - `LocalBusiness` yapılandırılmış verisinde `areaServed` ile ilçeler belirtilsin. Adres tek ve gerçek kalsın (Sancaktepe).
 - Footer'da ve sayfa altlarında düz "hizmet verdiğimiz yerler: A, B, C…" metni olmasın.
 - Yayından sonra Search Console'da ilçe sayfalarının gösterim ve sıralamaları ayrı ayrı izlensin. Hangisi çalışıyor,
   hangisi zayıf, görürüz.
 
-## 8. Karar bekleyenler
+## 8. Verilen kararlar (22 Kasım 2026)
 
-1. Bölgeler sayfası açılsın mı? (öneri: evet)
-2. İlçe yazıları `blog/` altında mı kalsın, `bolgeler/` altına mı taşınsın?
-3. Footer'da "Hizmet bölgeleri" grubu (yaklaşık 10 ilçe + Tüm bölgeler) olsun mu, yoksa yalnızca tek "Hizmet bölgeleri"
-   bağlantısı mı?
-4. Alt alan adı: önerim açmamak. Yine de denemek istenirse en fazla tek bir ilçede, ana siteden bağımsız ve özgün içerikle,
-   sonucu 3–6 ay izleyerek denenebilir. Ama ana siteye yansıma riski sıfır değil.
+1. **Hizmet bölgeleri sayfası açıldı:** `hizmet-bolgeleri.html`. Her ilçe bir kutucuk, semtler ilçe kutucuğunun altında.
+   "Bölgeler" kelimesi tek başına hiçbir yerde kullanılmaz; adres, başlık ve bağlantılarda "Hizmet bölgeleri".
+2. **Taşıma yok:** ilçe ve semt yazıları `blog/` altında, aynı adreste kalır. Ama blog listesinden ve ana sayfa blog
+   şeridinden çıktılar; sayfa yolları "Ana sayfa / Hizmet bölgeleri / (ilçe) / semt" oldu. Bölge kutucuğuna yeni
+   metin yazılmadı, çünkü ilçe yazıları zaten "o ilçe + tüm hizmetlerimiz" metni; ikinci bir metin aynı aramada
+   birbiriyle yarışırdı. Blog alanı için ileride farklı konu yazıları üretilecek.
+3. **Footer:** yalnızca tek "Hizmet bölgeleri" bağlantısı (Hızlı erişim grubunda). Header'da deneme olarak
+   İletişim'in solunda "Hizmet bölgeleri" kutusu.
+4. **Alt alan adı açılmayacak.**
 
 ## Kaynaklar
 
