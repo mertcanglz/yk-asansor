@@ -132,10 +132,10 @@ Daire sayısına, kullanıcıya ve kuyuya göre değişir; kesin kapasite projed
 
 ## Kaynaklar
 
-- TS EN 81-20 (EN 81-20) Tablo 6, beyan yükü ve azami kullanılabilir kabin alanı; 75 kg yolcu esası. Değerlerin
-  aktarıldığı kaynaklar: Elevator World, "Rated Load and Maximum Available Car Area" (Barney):
-  https://elevatorworld.com/article/rated-load-and-maximum-available-car-area ;
-  Lift and Escalator Library: https://liftescalatorlibrary.org/paper_indexing/papers/00000492.pdf
+- TS EN 81-20 Tablo 6 (beyan yükü, azami kabin alanı, 75 kg yolcu esası), aktaran Elevator World, "Rated Load and
+  Maximum Available Car Area": https://elevatorworld.com/article/rated-load-and-maximum-available-car-area
+- TS EN 81-20 Tablo 6, aktaran Lift and Escalator Library:
+  https://liftescalatorlibrary.org/paper_indexing/papers/00000492.pdf
 - Asansör İşletme ve Bakım Yönetmeliği, güncel metin (beyan yükü değişikliği m. 9/4–6):
   https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=7&MevzuatNo=31394&MevzuatTertip=5
 
