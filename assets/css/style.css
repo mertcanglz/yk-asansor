@@ -1870,17 +1870,17 @@ a.il-c:hover .il-c__ic::before, a.il-c:focus-visible .il-c__ic::before { opacity
 .il-isik rect { fill: none; stroke: #3d76fb; stroke-linecap: round; animation-duration: 9s; animation-timing-function: linear; animation-iteration-count: infinite; }
 /* uzun, iki ucu incelen şerit: ortası aynı noktada duran, giderek kısalıp kalınlaşan çizgiler üst üste (ince → kalın → ince);
    en kalın çekirdek hafifçe kalınlaşıp incelerek dalgalanır. Opaklık düşük, göze batmasın. */
-.il-isik__1 { stroke-width: .8; stroke-opacity: .28; stroke-dasharray: 46 54; animation-name: ilIz46; }
-.il-isik__2 { stroke-width: 1.3; stroke-opacity: .26; stroke-dasharray: 32 68; animation-name: ilIz32; }
-.il-isik__3 { stroke-width: 1.8; stroke-opacity: .28; stroke-dasharray: 19 81; animation-name: ilIz19; }
-.il-isik__4 { stroke-width: 2.4; stroke-opacity: .32; stroke-dasharray: 8 92; animation-name: ilIz8, ilDalga; animation-duration: 9s, 2.6s; animation-timing-function: linear, ease-in-out; }
-.il-isik__h { stroke-width: 6; stroke-opacity: .16; stroke-dasharray: 26 74; animation-name: ilIz26; }
+.il-isik__1 { stroke-width: 1.2; stroke-opacity: .4; stroke-dasharray: 46 54; animation-name: ilIz46; }
+.il-isik__2 { stroke-width: 2; stroke-opacity: .38; stroke-dasharray: 32 68; animation-name: ilIz32; }
+.il-isik__3 { stroke-width: 2.8; stroke-opacity: .42; stroke-dasharray: 19 81; animation-name: ilIz19; }
+.il-isik__4 { stroke-width: 3.6; stroke-opacity: .5; stroke-dasharray: 8 92; animation-name: ilIz8, ilDalga; animation-duration: 9s, 2.6s; animation-timing-function: linear, ease-in-out; }
+.il-isik__h { stroke-width: 9; stroke-opacity: .24; stroke-dasharray: 26 74; animation-name: ilIz26; }
 @keyframes ilIz46 { from { stroke-dashoffset: 23; } to { stroke-dashoffset: -77; } }
 @keyframes ilIz32 { from { stroke-dashoffset: 16; } to { stroke-dashoffset: -84; } }
 @keyframes ilIz26 { from { stroke-dashoffset: 13; } to { stroke-dashoffset: -87; } }
 @keyframes ilIz19 { from { stroke-dashoffset: 9.5; } to { stroke-dashoffset: -90.5; } }
 @keyframes ilIz8 { from { stroke-dashoffset: 4; } to { stroke-dashoffset: -96; } }
-@keyframes ilDalga { 50% { stroke-width: 1.4; } }
+@keyframes ilDalga { 50% { stroke-width: 2.4; } }
 @media (hover: hover) {
   .il-kart:hover { box-shadow: inset 0 1px 0 #fff, inset 0 0 0 1px rgba(255, 255, 255, .95), inset 0 -1px 0 rgba(25, 72, 221, .16), 0 0 0 1px rgba(121, 170, 253, .38), 0 50px 90px -40px rgba(0, 0, 0, .75); }
   .il-kart:hover .il-isik { opacity: 1; }
