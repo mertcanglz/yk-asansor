@@ -1821,16 +1821,25 @@ html:not(.js) .tf-card #tf-ref-alan[hidden] { display: flex !important; }
 .js .il-cards { animation-delay: .12s; }
 .js .il-kart { animation-delay: .18s; }
 .js .il-soc { animation-delay: .22s; }
-.il-cards { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.il-cards { list-style: none; margin: 0; padding: 0; display: grid; grid-auto-rows: 1fr; gap: 10px; } /* dört kart eşit boy (kullanıcı kararı) */
+.il-cards > li { display: flex; }
+.il-cards .il-c { flex: 1 1 auto; }
 .il-c { display: flex; align-items: center; gap: 14px; min-height: 76px; padding: 14px 16px; border-radius: 16px; background: rgba(255, 255, 255, .035); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .09); color: var(--yazi-k); text-decoration: none; transition: background .3s, box-shadow .3s, transform .4s var(--ease); }
 .il-c:active { background: rgba(255, 255, 255, .07); box-shadow: inset 0 0 0 1px rgba(33, 82, 246, .45); }
-.il-c__ic { flex: 0 0 42px; width: 42px; height: 42px; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--mavi-acik); background: rgba(33, 82, 246, .12); box-shadow: inset 0 0 0 1px rgba(33, 82, 246, .24); }
+.il-c__ic { position: relative; flex: 0 0 42px; width: 42px; height: 42px; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #fff; background: linear-gradient(180deg, #2966fa, #1a3ad8); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .28); }
+/* ikon animasyonu: kutunun çevresinde sırayla genişleyip sönen halka (WhatsApp butonundaki gibi); üzerine gelince ikon kıpırdar */
+.il-c__ic::after { content: ""; position: absolute; inset: 0; border-radius: inherit; border: 1px solid rgba(121, 170, 253, .75); opacity: 0; pointer-events: none; animation: ilHalka 6s cubic-bezier(.2, .6, .3, 1) infinite; }
+.il-cards > li:nth-child(2) .il-c__ic::after { animation-delay: 1.5s; }
+.il-cards > li:nth-child(3) .il-c__ic::after { animation-delay: 3s; }
+.il-cards > li:nth-child(4) .il-c__ic::after { animation-delay: 4.5s; }
+@keyframes ilHalka { 0% { transform: scale(1); opacity: .7; } 30% { transform: scale(1.45); opacity: 0; } 100% { transform: scale(1.45); opacity: 0; } }
+@keyframes ilSalla { 0%, 100% { transform: none; } 20% { transform: rotate(-12deg); } 40% { transform: rotate(10deg); } 60% { transform: rotate(-6deg); } 80% { transform: rotate(3deg); } }
 .il-c__ic svg { width: 19px; height: 19px; }
-.il-c--main .il-c__ic { color: #fff; background: linear-gradient(180deg, #2966fa, #1a3ad8); box-shadow: none; }
 .il-c__tx { display: flex; flex-direction: column; justify-content: center; gap: 4px; min-width: 0; }
 .il-c__l { font-size: 11px; font-weight: 600; letter-spacing: .5px; color: var(--gri-4); }
 .il-c__v { font-size: 16px; line-height: 1.3; font-weight: 500; color: var(--yazi-k); }
 .il-c--main .il-c__v { font-size: 22px; font-weight: 600; letter-spacing: .2px; white-space: nowrap; }
+@media (max-width: 1023px) { .il-c__go { display: none; } .il-c__v { font-size: 15px; } .il-c--main .il-c__v { font-size: 21px; } } /* telefonda adres kısa kalsın, kartlar eşit boyda fazla uzamasın */
 .il-c__nw { white-space: nowrap; } /* adres "38-" ile "40/A" arasından bölünmesin */
 .il-c__go { margin-left: auto; flex: 0 0 auto; color: var(--mavi-acik); }
 .il-soc { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 18px; }
@@ -1840,7 +1849,15 @@ html:not(.js) .tf-card #tf-ref-alan[hidden] { display: flex !important; }
 .il-soc a:active { color: #fff; background: var(--mavi); box-shadow: none; }
 .il-soc a:focus-visible { outline: 2px solid #f6f3ee; outline-offset: 2px; }
 /* mesaj formu (teklif formu kartının stilleriyle) */
-.il-kart { margin-top: 26px; }
+.il-kart { margin-top: 26px; background: #f6f9ff; } /* çok açık buz mavisi (kullanıcı kararı) */
+.il-kart .tf-i { background: #fff; box-shadow: inset 0 0 0 1px #d8dfeb; }
+.il-kart .tf-i:focus { box-shadow: inset 0 0 0 1.5px var(--mavi), 0 0 0 4px rgba(25, 72, 222, .14); }
+/* form: fare üzerine gelince çevresinde dönen ışık (ana sayfadaki ses düğmesindeki gibi) */
+@property --il-a { syntax: "<angle>"; inherits: false; initial-value: 0deg; }
+.il-kart::before { content: ""; position: absolute; inset: -2px; border-radius: 18px; padding: 2px; pointer-events: none; opacity: 0; background: conic-gradient(from var(--il-a), rgba(121, 170, 253, 0) 0deg, rgba(121, 170, 253, 0) 190deg, rgba(121, 170, 253, .95) 320deg, rgba(121, 170, 253, 0) 360deg); -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0); transition: opacity .5s ease; animation: ilDon 3s linear infinite paused; }
+@keyframes ilDon { to { --il-a: 360deg; } }
+@media (hover: hover) { .il-kart:hover::before { opacity: 1; animation-play-state: running; } }
+@media (prefers-reduced-motion: reduce) { .il-c__ic::after, .il-kart::before, a.il-c:hover .il-c__ic svg { animation: none; } }
 .il-fbody { display: flex; flex-direction: column; gap: 12px; padding-top: 14px; }
 .tf-sel { position: relative; display: block; }
 .tf-sel .tf-i { padding-right: 40px; cursor: pointer; }
@@ -1876,11 +1893,10 @@ html:not(.js) .tf-card #tf-ref-alan[hidden] { display: flex !important; }
   .il-soc a:hover { color: #fff; background: var(--mavi); box-shadow: none; }
   /* kartlar ve form aynı satırda: form ilk kartın üstünden başlar, alt kenarlar eşit */
   .il-cards { grid-column: 1; grid-row: 2; display: grid; grid-auto-rows: 1fr; gap: 8px; }
-  .il-cards > li { display: flex; }
-  .il-cards .il-c { flex: 1 1 auto; }
   .il-c { gap: 14px; padding: 12px 18px; border-radius: 14px; }
   a.il-c:hover { transform: translateY(-2px); background: rgba(255, 255, 255, .06); box-shadow: inset 0 0 0 1px rgba(33, 82, 246, .45); }
   .il-c__ic { flex-basis: 38px; width: 38px; height: 38px; border-radius: 11px; }
+  a.il-c:hover .il-c__ic svg { animation: ilSalla .7s ease; }
   .il-c--main .il-c__v { font-size: 21px; }
   .il-kart { grid-column: 2; grid-row: 2; display: flex; flex-direction: column; margin: 0; padding: 18px 24px; scroll-margin-top: 110px; }
   .il-form { flex: 1 1 auto; display: flex; flex-direction: column; min-height: 0; }
