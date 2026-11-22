@@ -118,7 +118,8 @@ Kodlamadan önce blog taslakları `docs/blog-taslaklari/` altında Markdown olar
 - **Kaydırma göstergesi (ana sayfa):** kutu ve yazı yok; alt alta iki kalın, yuvarlak uçlu aşağı ok (üstteki beyaz,
   alttaki gri), sırayla yanıp aşağı akar (kullanıcı kararı). ~0,35 sn sonra belirir, ilk kaydırmada solar ve sayfa açıkken
   bir daha görünmez. Ekranın alt ortasında sabit, telefonda WhatsApp yuvarlağıyla aynı hizada; telefonda kampanya kartı ya
-  da çerez bildirimi açıkken onların arkasında kalmasın diye butonların altına geçer.
+  da çerez bildirimi açıkken onların arkasında kalmasın diye butonların altına geçer; kaydırınca kapladığı yer de yumuşakça
+  kapanır ve asansör yeniden ölçülür (kartlar kapanınca olduğu gibi).
 - Header'daki telefon numarası koyu zeminde beyaz, açık zeminli bölümlere geçince sitenin siyahı (`--murekkep`).
 - **Telefonda header da zeminsiz** (masaüstündeki gibi, kullanıcı kararı): koyu bölümde arkada koyu gölge, açık bölümde
   (`is-acik`) beyaz degrade, siyah kutulu logo. Arama ve menü düğmeleri koyu zeminde eski sade hâlinde, açık zeminde 3B açık cam. Siyah header zemini eklenmez (logonun kendi zemini var).

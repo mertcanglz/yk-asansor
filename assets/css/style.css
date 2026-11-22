@@ -344,7 +344,11 @@ html.nav-acik, html.nav-acik body { overflow: hidden; }
 /* telefon: WhatsApp yuvarlağı (alt 16 px, 56 px) ile aynı dikey ortada */
 html:not(.hw) .kay--d { bottom: calc(44px - 14px + env(safe-area-inset-bottom)); }
 html:not(.hw) .kay--d svg { width: 30px; height: 28px; }
-.kay--m { display: none; align-self: center; margin-top: 4px; }
+.kay--m { --kay-bosluk: 16px; display: none; align-self: center; height: 28px; margin-top: 4px; transition: height .45s var(--ease), margin-top .45s var(--ease); }
+@media (max-height: 720px) { .kay--m { --kay-bosluk: 12px; } }
+/* kaydırınca gösterge solarken kapladığı yer de (yüksekliği ve üstündeki boşluk) yumuşakça kapanır; yazı ve butonlar
+   eski yerine iner, asansör yeniden ölçülür (main.js yka:yerlesim) — kampanya kartı ya da çerez bildirimi kapanınca olduğu gibi */
+html.kaydirildi .kay--m { height: 0; margin-top: calc(-1 * var(--kay-bosluk)); }
 html:not(.hw)[data-kampanya="acik"] .kay--m, html:not(.hw)[data-ck="yok"] .kay--m, html:not(.hw)[data-ck="tercih"] .kay--m { display: flex; }
 html:not(.hw)[data-kampanya="acik"] .kay--d, html:not(.hw)[data-ck="yok"] .kay--d, html:not(.hw)[data-ck="tercih"] .kay--d { display: none; }
 /* giriş animasyonu bittiyse yumuşakça solar; daha belirmeden kaydırıldıysa hiç görünmez (main.js kaydirildi--erken) */

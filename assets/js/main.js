@@ -1,5 +1,5 @@
 // YKA Asansör — sayfa etkileşimleri (derleme yok, saf JS modülü)
-import { baslat as telefonBaslat } from './telefon.js?v=20261122m';
+import { baslat as telefonBaslat } from './telefon.js?v=20261122n';
 
 /* Analiz kimlikleri: boşken GA ve Meta Pixel hiç yüklenmez (onay verilse bile) */
 const GA_ID = ''; // TODO: GA4 ölçüm kimliği (ör. G-XXXXXXXXXX)
@@ -962,6 +962,8 @@ function kaydirma() {
   if (y > 24 && anaSayfa && !h.classList.contains('kaydirildi')) {
     h.classList.add('kaydirildi');
     if (performance.now() < 1000) h.classList.add('kaydirildi--erken');
+    // telefonda gösterge butonların altında yer kaplıyorsa o yer kapanır: yazı yeri değişti, asansör yeniden ölçülsün
+    d.dispatchEvent(new CustomEvent('yka:yerlesim'));
   }
   durakGuncelle(y);
   if (anaSayfa) durakSonra();
