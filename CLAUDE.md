@@ -117,7 +117,7 @@ Kodlamadan önce blog taslakları `docs/blog-taslaklari/` altında Markdown olar
   mavi fazla geliyordu (kullanıcı kararı).
 - Header'daki telefon numarası koyu zeminde beyaz, açık zeminli bölümlere geçince sitenin siyahı (`--murekkep`).
 - **Telefonda header da zeminsiz** (masaüstündeki gibi, kullanıcı kararı): koyu bölümde arkada koyu gölge, açık bölümde
-  (`is-acik`) beyaz degrade, siyah kutulu logo. Arama ve menü düğmeleri 3B cam (koyu zeminde koyu cam, açıkta açık cam). Siyah header zemini eklenmez (logonun kendi zemini var).
+  (`is-acik`) beyaz degrade, siyah kutulu logo. Arama ve menü düğmeleri koyu zeminde eski sade hâlinde, açık zeminde 3B açık cam. Siyah header zemini eklenmez (logonun kendi zemini var).
 - **Hamburger menü:** alttaki kutuda başlık ("Doğru hizmeti birlikte planlayalım") ortalı; altında arıza hattı numarası,
   en altta keşif butonu. Numara da butonla aynı boyda, 3B kabartmalı ama içi mavi değil grafit cam; üstünde ayrıca
   "7/24 arıza hattı" yazısı yok, çerçevesiz düz beyaz telefon ikonu ve numara ortada. Açılır gruplar (menü ve footer)

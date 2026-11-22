@@ -191,9 +191,8 @@ svg { flex: 0 0 auto; }
   .hdr::after { height: 110px; background: linear-gradient(180deg, rgba(243, 243, 241, .9) 0%, rgba(243, 243, 241, .74) 30%, rgba(243, 243, 241, .42) 58%, rgba(243, 243, 241, .12) 82%, rgba(243, 243, 241, 0) 100%); }
   .hdr.is-acik::before { opacity: 0; }
   .hdr.is-acik::after { opacity: 1; }
-  /* arama ve menü düğmeleri: 3B cam (üstte ışık, altta gölge, hafif kabarık); ikonlar aynı (kullanıcı kararı) */
-  .hdr .ib { background: linear-gradient(180deg, rgba(255, 255, 255, .16) 0%, rgba(255, 255, 255, .05) 55%, rgba(255, 255, 255, .09) 100%); -webkit-backdrop-filter: blur(12px) saturate(180%) brightness(1.06); backdrop-filter: blur(12px) saturate(180%) brightness(1.06); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .15), inset 0 1px 1px rgba(255, 255, 255, .28), inset 0 -1px 1px rgba(255, 255, 255, .06), inset 0 -8px 12px -8px rgba(0, 0, 0, .35), 0 8px 18px -10px rgba(0, 0, 0, .7); transition: color .4s ease, background .4s ease, box-shadow .4s ease, transform .2s ease; }
-  .hdr .ib:active { transform: scale(.96); background: linear-gradient(180deg, rgba(255, 255, 255, .22) 0%, rgba(255, 255, 255, .09) 55%, rgba(255, 255, 255, .13) 100%); }
+  /* arama ve menü düğmeleri: koyu zeminde eskisi gibi; açık zeminde 3B açık cam (kullanıcı kararı) */
+  .hdr .ib { transition: color .4s ease, background .4s ease, box-shadow .4s ease, transform .2s ease; }
   .hdr.is-acik .ib { color: var(--murekkep); background: linear-gradient(180deg, rgba(255, 255, 255, .62) 0%, rgba(255, 255, 255, .30) 55%, rgba(255, 255, 255, .42) 100%); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .85), inset 0 1.5px 1.5px rgba(255, 255, 255, 1), inset 0 -8px 12px -8px rgba(21, 24, 27, .18), 0 0 0 .5px rgba(21, 24, 27, .14), 0 10px 20px -12px rgba(21, 24, 27, .4); }
   .hdr.is-acik .ib:active { background: linear-gradient(180deg, rgba(255, 255, 255, .8) 0%, rgba(255, 255, 255, .5) 100%); }
 }
@@ -323,7 +322,7 @@ svg { flex: 0 0 auto; }
 .m-nav__cta .yka-line:active { transform: translateY(1px); background: linear-gradient(180deg, rgba(255, 255, 255, .17) 0%, rgba(255, 255, 255, .07) 100%), #1b1e22; }
 .m-nav__cta .yka-line { gap: 10px; }
 .m-nav__cta .yka-line__ic { flex: 0 0 auto; width: auto; height: auto; border-radius: 0; color: #fff; background: none; box-shadow: none; } /* çerçevesiz, ışıksız düz beyaz ikon */
-.m-nav__cta .yka-line__ic svg { width: 18px; height: 18px; }
+.m-nav__cta .yka-line__ic svg { display: block; width: 21px; height: 21px; stroke-width: 1.6; }
 .m-nav__cta .yka-line__tx b { font-size: 18px; line-height: 1; }
 .m-nav__cta .yka-line:hover .yka-line__ic { box-shadow: none; }
 .m-nav__t { text-align: center; } /* "Doğru hizmeti birlikte planlayalım" kutuda ortalı */
