@@ -153,9 +153,10 @@ Kodlamadan önce blog taslakları `docs/blog-taslaklari/` altında Markdown olar
 - **Yumuşak kaydırma:** fare tekerleği/trackpad ile sayfa yumuşakça süzülerek kayar (main.js, kütüphanesiz). Dokunmatik
   ekranda tarayıcının kendi momentumlu kaydırması kalır (parmağın gerisinden gelmesin, adres çubuğu ve hero durakları
   bozulmasın); ana sayfanın hero katlarında da kat oturtma çalıştığı için tarayıcının kendi kaydırması.
-- **Sayfa başında/sonunda esneme yok:** tarayıcının esneyip geri yaylanması (Mac trackpad, telefonda kat durakları) sayfa
-  sonunda sarsılma gibi görünüyordu; fare/trackpad'de her sayfada, telefonda yalnızca kat duraklı ana sayfada
-  `overscroll-behavior-y: none` (kullanıcı kararı).
+- **Sayfa başında/sonunda hafif esneme:** bilgisayarda sayfanın ucunda o yöne itilince tarayıcının kendi esnemesi çalışır
+  (Amazon'daki gibi, kullanıcı kararı); yumuşak kaydırma o sırada kaydırmaz ve konumu sayfa sınırları içinde okur.
+  Önceden kod esnemeyi geri çekmeye çalışıyor, Safari'de ikisi çekişince sayfa sarsılıyordu. Telefonda yalnızca kat
+  duraklı ana sayfada esneme kapalı (`overscroll-behavior-y: none`), kat duraklarıyla çakışıp titretiyordu.
 - **Header menüsü:** Hizmetler, Asansör sistemleri, Yeşil etiket, Hizmet bölgeleri (deneme, İletişim'in solunda), İletişim.
   1024–1439 px'te beş kutu ortada sığmadığı için menü logo ile sağ blok arasında ortalanır, kutular biraz daralır.
   Footer'da "Hızlı erişim" grubunda tek "Hizmet bölgeleri" bağlantısı; ilçe listesi footer'a yazılmaz.

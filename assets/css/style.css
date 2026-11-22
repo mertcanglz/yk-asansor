@@ -88,9 +88,8 @@
 
 /* ---------- Temel ---------- */
 *, *::before, *::after { box-sizing: border-box; }
-/* Sayfa başında/sonunda tarayıcının esneyip geri yaylanması (Mac trackpad, telefonda kat durakları) sarsılma gibi görünüyordu:
-   fare/trackpad'de her sayfada, telefonda yalnızca kat duraklı ana sayfada kapalı (kullanıcı kararı) */
-@media (hover: hover) and (pointer: fine) { html, body { overscroll-behavior-y: none; } }
+/* Sayfa başında/sonunda esneme: bilgisayarda tarayıcının kendi hafif esnemesi açık (yumuşak kaydırma onunla çekişmez,
+   main.js); telefonda yalnızca kat duraklı ana sayfada kapalı, esneme kat duraklarıyla çakışıp titretiyordu */
 @media (pointer: coarse) { html.sayfa-ana:not(.hw), html.sayfa-ana:not(.hw) body { overscroll-behavior-y: none; } }
 html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; scroll-behavior: smooth; }
 body { position: relative; margin: 0; background: var(--koyu); color: var(--yazi-k); font-family: var(--f-sans); font-size: 16px; line-height: 1.5; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; overflow-x: hidden; }

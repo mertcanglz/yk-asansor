@@ -979,12 +979,16 @@ acilisYerlesim();
 
 /* ---------- Yumuşak kaydırma (fare tekerleği): sayfa tekerle zıplamaz, yumuşakça süzülerek durur ----------
    Yalnızca fare/trackpad'de; dokunmatik ekranda tarayıcının kendi momentumlu kaydırması kalır.
-   Ana sayfanın hero katlarında kat oturtma çalıştığı için orada da tarayıcının kendi kaydırması. */
+   Ana sayfanın hero katlarında kat oturtma çalıştığı için orada da tarayıcının kendi kaydırması.
+   Sayfanın başında ve sonunda o yöne itilince tarayıcının kendi hafif esnemesi çalışır (Mac'te Amazon'daki gibi);
+   kod o sırada kaydırmaz. Safari esnerken scrollY sayfanın dışını gösteriyor: konum hep sınırlar içinde okunur.
+   (Önceden kod esnemeyi geri çekmeye çalışıyor, Safari'de ikisi çekişince sayfa sarsılıyordu.) */
 (() => {
   if (mqDokun.matches || !matchMedia('(hover: hover)').matches) return;
   const anaHero = d.getElementById('hx');
   let hedef = scrollY, simdi = scrollY, raf = 0, sonT = 0, beklenen = -1;
   const enFazla = () => h.scrollHeight - innerHeight;
+  const konum = () => clamp(scrollY, 0, Math.max(0, enFazla()));
   function adim(now) {
     const dt = Math.min(64, sonT ? now - sonT : 16.7);
     sonT = now;
@@ -997,7 +1001,7 @@ acilisYerlesim();
   function durdur() {
     cancelAnimationFrame(raf);
     raf = 0;
-    hedef = simdi = scrollY;
+    hedef = simdi = konum();
   }
   // tekerin altındaki öğe kendisi o yönde kayabiliyorsa (açık menü, metin kutusu) kaydırma ona kalır
   const icKaydirma = (el, dy) => {
@@ -1012,12 +1016,14 @@ acilisYerlesim();
     if (mqAz.matches || e.defaultPrevented || e.ctrlKey || h.classList.contains('nav-acik')) return;
     const dy = e.deltaY * (e.deltaMode === 1 ? 40 : e.deltaMode === 2 ? innerHeight : 1);
     if (!dy || Math.abs(e.deltaX) > Math.abs(dy) || icKaydirma(e.target, dy)) return;
-    if (!raf) hedef = simdi = scrollY;
+    if (!raf) hedef = simdi = konum();
     // ana sayfa: hero içindeyken ya da hero sonundan yukarı dönerken kaydırma tarayıcının (kat oturtma çalışır)
     if (anaHero && (simdi < ekran.heroSon - 1 || (dy < 0 && simdi <= ekran.heroSon + 1))) {
       if (raf) durdur();
       return;
     }
+    // sayfanın ucunda o yöne itiliyorsa: tarayıcının kendi esnemesi
+    if (!raf && ((dy > 0 && simdi >= enFazla() - 1) || (dy < 0 && simdi <= 1))) return;
     e.preventDefault();
     hedef = clamp(hedef + dy, anaHero ? ekran.heroSon : 0, enFazla());
     if (!raf) {
@@ -1027,8 +1033,9 @@ acilisYerlesim();
   }, { passive: false });
   // klavye, kaydırma çubuğu ya da bağlantıyla gelen kaydırmada yumuşak kaydırma kenara çekilir
   addEventListener('scroll', () => {
-    if (!raf) hedef = simdi = scrollY;
-    else if (Math.abs(scrollY - beklenen) > 2) durdur();
+    const y = konum();
+    if (!raf) hedef = simdi = y;
+    else if (Math.abs(y - beklenen) > 2) durdur();
   }, { passive: true });
 })();
 
