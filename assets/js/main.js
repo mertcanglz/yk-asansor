@@ -1,5 +1,5 @@
 // YKA Asansör — sayfa etkileşimleri (derleme yok, saf JS modülü)
-import { baslat as telefonBaslat } from './telefon.js?v=20261122e';
+import { baslat as telefonBaslat } from './telefon.js?v=20261122g';
 
 /* Analiz kimlikleri: boşken GA ve Meta Pixel hiç yüklenmez (onay verilse bile) */
 const GA_ID = ''; // TODO: GA4 ölçüm kimliği (ör. G-XXXXXXXXXX)
@@ -936,8 +936,21 @@ function noktaAcikMi(x) {
   }
   return false;
 }
+// telefonda kat durakları yalnızca hero'dayken (CSS: durak-acik); hero bitince sayfa serbest kayar. Hero'nun sonundaki
+// durağa (ilk bölüm header'ın altında) gelene kadar açık kalır, yukarı dönerken oraya varınca yeniden açılır.
+const anaSayfa = h.classList.contains('sayfa-ana');
+function durakGuncelle(y) {
+  if (anaSayfa) h.classList.toggle('durak-acik', y < ekran.heroSon - 64 - 2);
+}
+durakGuncelle(scrollY);
+// kaydırma bir durağa oturunca son konum her zaman scroll olayıyla gelmiyor: bitişte de bakılır
+let durakT = 0;
+const durakSonra = () => { clearTimeout(durakT); durakT = setTimeout(() => durakGuncelle(scrollY), 160); };
+if (anaSayfa) addEventListener('scrollend', () => durakGuncelle(scrollY));
 function kaydirma() {
   const y = scrollY;
+  durakGuncelle(y);
+  if (anaSayfa) durakSonra();
   if (Asansor) Asansor.kaydir(y);
   if (hdr) {
     const gecti = y >= ekran.heroSon - (mqMasa.matches ? 92 : 64);

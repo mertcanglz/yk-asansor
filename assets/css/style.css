@@ -315,6 +315,15 @@ svg { flex: 0 0 auto; }
 .m-nav__t { font-size: 20px; line-height: 1.25; font-weight: 300; }
 .m-nav__t span, .m-nav__t em { display: block; }
 .m-nav__t em { font-family: var(--f-serif); font-style: italic; font-weight: 500; }
+/* menü kutusunda arıza hattı da keşif butonu gibi bir buton: aynı boy ve 3B kabartma, ama içi mavi değil grafit cam;
+   ikon ve numara ortada (kullanıcı kararı) */
+.m-nav__cta .yka-line { position: relative; overflow: hidden; justify-content: center; gap: 12px; min-height: 0; height: 52px; margin-bottom: -6px; padding: 0 18px; border-radius: 12px; background: linear-gradient(180deg, rgba(255, 255, 255, .13) 0%, rgba(255, 255, 255, .05) 100%), #1b1e22; box-shadow: inset 0 1px 0 rgba(255, 255, 255, .22), inset 0 0 0 1px rgba(255, 255, 255, .09), inset 0 -1px 0 rgba(0, 0, 0, .35), 0 10px 22px -12px rgba(0, 0, 0, .9); transition: transform .3s var(--ease), background .3s; }
+.m-nav__cta .yka-line:active { transform: translateY(1px); background: linear-gradient(180deg, rgba(255, 255, 255, .17) 0%, rgba(255, 255, 255, .07) 100%), #1b1e22; }
+.m-nav__cta .yka-line__ic { flex: 0 0 34px; width: 34px; height: 34px; color: #9fb8ff; background: rgba(33, 82, 246, .18); box-shadow: inset 0 0 0 1px rgba(121, 170, 253, .32); }
+.m-nav__cta .yka-line__ic svg { width: 17px; height: 17px; }
+.m-nav__cta .yka-line__tx { gap: 4px; }
+.m-nav__cta .yka-line__tx span { font-size: 11px; letter-spacing: .3px; }
+.m-nav__cta .yka-line__tx b { font-size: 18px; }
 html.nav-acik, html.nav-acik body { overflow: hidden; }
 
 /* ---------- Asansör katmanı (hero) ---------- */
@@ -369,13 +378,14 @@ html[data-kampanya="etiket"] .hx-sec:not(.hx-sec--1) .hx-in, html[data-kampanya=
 html:not(.hw)[data-kampanya="acik"] .hx-sec--1 .hx-in { --hx-alt: var(--promo-pad, calc(146px + env(safe-area-inset-bottom))); }
 @media (min-width: 760px) { html:not(.hw)[data-kampanya="acik"] .hx-sec--1 .hx-in { --hx-alt: var(--promo-pad, 220px); } }
 html[data-ck="yok"] .hx .hx-sec .hx-in { --hx-alt: var(--ck-pad, calc(140px + env(safe-area-inset-bottom))); }
-/* telefonda kat durakları: sayfa parmağı ve momentumu diğer sayfalardaki gibi yumuşakça izler, bir katın yakınında
-   durunca o kata oturur (proximity). Önce her kaydırma zorla bir kat ilerliyordu (mandatory + snap-stop), elle kaydırmada
-   geçişler çok sert geliyordu (kullanıcı kararı, 22 Kasım 2026). Hero bitince sayfa serbest kayar.
+/* telefonda kat durakları: hero'da her kaydırma bir kat ilerler (aşağı kaydırınca alt kata, yukarı kaydırınca üst kata;
+   iki kat arasında kalınmaz), hızlı kaydırmada katlar atlanmaz. Duraklar yalnızca hero içindeyken açık (JS: durak-acik):
+   önce hero bittikten sonra da kök kaydırmada durak kalıyordu, sayfanın geri kalanında elle kaydırma sert geliyordu
+   (kullanıcı kararı, 22 Kasım 2026); hero'dan sonra sayfa diğer sayfalardaki gibi serbest kayar.
    Yalnızca dokunmatik ekranda: fare/trackpad ile dar pencerede sayfa sonundaki esnemeyle çakışıp sayfayı titretir
    (orada katlara oturtmayı geniş ekrandaki gibi JS yapar). Kalınan yer geri yüklenirken kapalı (durak-yok, main.js Konum) */
-@media (pointer: coarse) { html.sayfa-ana:not(.hw):not(.durak-yok) { scroll-snap-type: y proximity; } }
-.hx-durak { position: absolute; left: 0; top: 0; width: 1px; height: 100vh; height: 100svh; pointer-events: none; scroll-snap-align: start; }
+@media (pointer: coarse) { html.sayfa-ana.durak-acik:not(.hw):not(.durak-yok) { scroll-snap-type: y mandatory; } }
+.hx-durak { position: absolute; left: 0; top: 0; width: 1px; height: 100vh; height: 100svh; pointer-events: none; scroll-snap-align: start; scroll-snap-stop: always; }
 .hx-durak:nth-child(2) { top: 100vh; top: 100svh; }
 .hx-durak:nth-child(3) { top: 200vh; top: 200svh; }
 /* hero bitince ilk bölüm header'ın (64 px) altında başlar: "Asansör sistemleri" başlığı header altında kalmaz */
