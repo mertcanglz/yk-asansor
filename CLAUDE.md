@@ -116,7 +116,8 @@ Kodlamadan önce blog taslakları `docs/blog-taslaklari/` altında Markdown olar
   Kampanya kutusu yalnızca ana sayfada; kutu ve küçük etiketi grafit cam (`--promo-zemin`), mavi değil: ilk açılışta
   mavi fazla geliyordu (kullanıcı kararı).
 - **Kaydırma göstergesi (ana sayfa):** ilk açılışta dar oval cam kutuda kısa "Kaydırın" ve altında hareketli ikon (farede
-  içinde aşağı kayan ok olan fare, dokunmatikte aşağı oklar); ~0,35 sn sonra belirir, ilk kaydırmada solar ve sayfa açıkken
+  içinde aşağı kayan ok olan fare; dokunmatikte aşağı inen el ve yanında uzayıp ucunda ok beliren çizgi, Dribbble
+  "Scroll Micro Interaction" örneğinin aşağı hâli); ~0,35 sn sonra belirir, ilk kaydırmada solar ve sayfa açıkken
   bir daha görünmez. Ekranın alt ortasında sabit, telefonda WhatsApp yuvarlağıyla aynı hizada; telefonda kampanya kartı ya
   da çerez bildirimi açıkken onların arkasında kalmasın diye butonların altına geçer (kullanıcı kararı).
 - Header'daki telefon numarası koyu zeminde beyaz, açık zeminli bölümlere geçince sitenin siyahı (`--murekkep`).
