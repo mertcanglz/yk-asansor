@@ -68,8 +68,9 @@ assets/ses/           Hero sesleri (Pixabay, kaynaklar ses.js'in başında). Mü
                       kalite aynı), Opus çözemeyen tarayıcıya .mp3 (~1,7 MB); sayfa yüklendikten sonra arka planda iner
 assets/fonts/         Manrope + Newsreader italik 500 (woff2, latin + latin-ext)
 assets/img/           Görseller (fotoğraflar) — web için sıkıştırılmış .jpg/.webp, < 300 KB
-assets/img/logo/      Logo, dört biçim (SVG, "ASANSÖR" yazısı vektöre çevrili; asılları ../logo/deneme): yatay (header,
-                      footer), dikey, kademeli, rozet (sekme simgesi, her sayfada `<link rel="icon">`)
+assets/img/logo/      Logo, dört biçim (SVG, "ASANSÖR" yazısı vektöre çevrili; asılları ../logo/deneme): yatay (header), dikey,
+                      kademeli, rozet (sekme simgesi, her sayfada `<link rel="icon">`); footer'da dikey beyaz
+                      logo `yka-logo-dikey-beyaz.png` (asıl: ../logo/logolar/1-beyaz.png, kullanıcı kararı 22 Kasım 2026)
 assets/img/asansor/   Hero asansörü: kuyu + kapı kareleri (kare-692 geniş ekran, kare-400 telefon; 3 kat × 41 kare):
                       1. kat (giriş, ilk sahne) `marka-NN` logo mavisi ışık, 2. kat (hizmetler) `turuncu-NN` sıcak ışık,
                       3. kat (periyodik kontrol) `yesil-NN` (kullanıcı kararı)
