@@ -37,7 +37,7 @@ asansor-montaji.html  Hizmet şablonu (Yeni asansör montajı). Aynı yapıda: a
                       asansor-temizlik-muayene.html
 asansor-sistemleri.html  Asansör sistemleri: gruplu katalog (yolcu, yük ve araç, özel çözümler) + seçim ölçütleri + SSS
 dislili-asansor.html  Sistem şablonu (Dişlili asansör). Aynı yapıda: dislisiz-asansor.html, hidrolik-asansor.html,
-                      makine-dairesiz-asansor.html, yuk-asansoru.html (kendi kapağı yuk-asansoru-640/1264.webp, 27 Kasım 2026),
+                      makine-dairesiz-asansor.html, yuk-asansoru.html (sayfa kapağı yuk-asansoru-640/1264.webp; sistemler kartında eski yük kabini fotoğrafı kalır, kullanıcı tercihi 27 Kasım 2026),
                       arac-asansoru.html, villa-engelli-asansoru.html, yuruyen-merdiven.html. Teknik değerler "tipik" notuyla
 yesil-etiket.html     Yeşil etiket bilgi sayfası: etiket renkleri, süreler (telefonda kart), yeşil etikete geçiş, yönetmelik, SSS
 iletisim.html         İletişim: dört eşit boy kart (alt metin yok, sade ikonlar; WhatsApp ikonu sağ alttaki butondan; ikon
@@ -164,6 +164,10 @@ Kodlamadan önce blog taslakları `docs/blog-taslaklari/` altında Markdown olar
   Aynı görsel blog.html kartında `.bl-cover__img` olarak kapağı kaplar (görsel yoksa renkli zemin + simge kalır).
   Dosyalar `assets/img/blog/<yazı-adı>-640.webp` ve `-1264.webp`; asılları Magnific'te "YKA Asansör → Web Sitesi Eksik
   Görseller" space'inde, "Blog görselleri (konu yazıları)" sayfasında.
+  İlçe ve semt yazılarında kapak, o bölgenin gerçek fotoğrafıdır (yapay zekâ veya genel İstanbul fotoğrafı değil):
+  Wikimedia Commons'tan, yalnızca CC BY / CC BY-SA / CC0 / kamu malı lisanslı. Dosyalar `assets/img/bolge/<yazı-adı>-640/-1264.webp`
+  (3:2); künye yazının Kaynaklar listesinin sonunda "Kapak fotoğrafı: başlık, yazar, lisans, Wikimedia Commons (kırpılıp
+  küçültüldü)" (kullanıcı kararı, 27 Kasım 2026). Uygun fotoğrafı olmayan semt kapaksız kalır.
   Blog yazısında kaynaklar kapalı başlar: sade "Kaynaklar" düğmesi (ince alt çizgi), basınca liste küçük puntoyla
   yumuşakça açılır (kullanıcı kararı; HTML'de yazılı durur).
 - **Açılır grup başlıkları** (footer bağlantı grupları, hamburger menü): başlık metni kendi genel sayfasına gider
