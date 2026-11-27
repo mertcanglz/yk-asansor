@@ -37,7 +37,7 @@ asansor-montaji.html  Hizmet şablonu (Yeni asansör montajı). Aynı yapıda: a
                       asansor-temizlik-muayene.html
 asansor-sistemleri.html  Asansör sistemleri: gruplu katalog (yolcu, yük ve araç, özel çözümler) + seçim ölçütleri + SSS
 dislili-asansor.html  Sistem şablonu (Dişlili asansör). Aynı yapıda: dislisiz-asansor.html, hidrolik-asansor.html,
-                      makine-dairesiz-asansor.html, yuk-asansoru.html (kapakta şimdilik dikey yük-araç kabini fotoğrafı),
+                      makine-dairesiz-asansor.html, yuk-asansoru.html (kendi kapağı yuk-asansoru-640/1264.webp, 27 Kasım 2026),
                       arac-asansoru.html, villa-engelli-asansoru.html, yuruyen-merdiven.html. Teknik değerler "tipik" notuyla
 yesil-etiket.html     Yeşil etiket bilgi sayfası: etiket renkleri, süreler (telefonda kart), yeşil etikete geçiş, yönetmelik, SSS
 iletisim.html         İletişim: dört eşit boy kart (alt metin yok, sade ikonlar; WhatsApp ikonu sağ alttaki butondan; ikon
@@ -159,7 +159,11 @@ Kodlamadan önce blog taslakları `docs/blog-taslaklari/` altında Markdown olar
   alt satıra geçer, her parça `text-wrap: balance` ile dengeli kırılır; tek kelime alt satırda kalmaz.
   Ekrana sığan başlık zorla iki satıra bölünmez: iki parçalı başlıkta (düz + italik) parçalar
   `inline-block` + `nowrap`; sığarsa tek satır, sığmazsa yalnızca iki parçanın arasından kırılır.
-  Blog yazı başlığının genişliği yazı sütununu (848 px) geçmez; yazı kapağı görselsiz ve ortalıdır.
+  Blog yazı başlığının genişliği yazı sütununu (848 px) geçmez; yazı kapağı ortalıdır ve tasarımı değişmez. Kapak görseli
+  yalnızca arkada yarı saydam, belli belirsiz durur (`.by-hero__bg`, h1'den sonra son çocuk; kullanıcı kararı, 27 Kasım 2026).
+  Aynı görsel blog.html kartında `.bl-cover__img` olarak kapağı kaplar (görsel yoksa renkli zemin + simge kalır).
+  Dosyalar `assets/img/blog/<yazı-adı>-640.webp` ve `-1264.webp`; asılları Magnific'te "YKA Asansör → Web Sitesi Eksik
+  Görseller" space'inde, "Blog görselleri (konu yazıları)" sayfasında.
   Blog yazısında kaynaklar kapalı başlar: sade "Kaynaklar" düğmesi (ince alt çizgi), basınca liste küçük puntoyla
   yumuşakça açılır (kullanıcı kararı; HTML'de yazılı durur).
 - **Açılır grup başlıkları** (footer bağlantı grupları, hamburger menü): başlık metni kendi genel sayfasına gider
@@ -248,7 +252,8 @@ hem buraya hem siteye işle:
   - Yeşil etiket / A tipi muayene hazırlığı (sitede ayrı bilgilendirme bölümü olacak)
 - Asansör sistemleri: dişlili, dişlisiz, hidrolik, yük, lift (villa/engelli), araç,
   yürüyen merdiven, makine dairesiz (monospace)
-- Kabin çözümleri: panoramik cam, rezidans ve yolcu, sedye/medikal, yük ve araç
+- Kabin çözümleri: panoramik cam, rezidans ve yolcu, sedye/medikal, yük ve araç. Ana sayfadaki kabin kartları
+  bağlantısızdır, görsellere link verilmez (kullanıcı kararı, 27 Kasım 2026).
 - Hizmet bölgesi: Türkiye geneli. Hizmet ve sistem sayfalarının metinlerinde (giriş metinleri, SSS, meta
   açıklamaları) ilçe/mahalle adı ve "X merkezli ekibimiz" kalıbı kullanılmaz; hedef kitleyi daraltıyor
   (kullanıcı kararı). İstisna: yerel blog yazıları (aşağıda).
@@ -302,9 +307,11 @@ hem buraya hem siteye işle:
   gömülü Google Haritalar olacak; KVKK gereği harita ziyaretçi "Haritayı göster"e basınca yüklenir.
   Mobilde gömülü harita yok: harita görseli üstünde küçük kutu (ad, kısa adres) ve yalnızca
   "Google Haritalar'da açın" bağlantısı.
-- Sosyal medya: Instagram, Facebook, LinkedIn — hesap adresleri TODO (sitede `[INSTAGRAM]`, `[FACEBOOK]`,
-  `[LINKEDIN]` yer tutucusu). Instagram şimdilik `@ykasansorr` (resmî hesap bu; `yk.asansorr` değil), ama
-  marka adı YKA Asansör olduğu için kullanıcı adı da değişebilir, bu yüzden kullanıcı teyit edene kadar sitede yer tutucu kalır. İkonlar tüm footer'larda "Bize ulaşın" sütununun altında
+- Sosyal medya: Instagram `https://www.instagram.com/ykaasansor/` (kullanıcı verdi, 27 Kasım 2026; tüm sayfalarda işlendi).
+  Facebook ve LinkedIn hesap adresleri TODO (sitede `[FACEBOOK]`, `[LINKEDIN]` yer tutucusu). İkonlar tüm footer'larda "Bize ulaşın" sütununun altında
   kendi "Bizi takip edin" başlığıyla (`.ft__soc`, kullanıcı kararı) ve iletişim sayfasında "Bizi takip edin" olarak başlığın karşısında; yeni sekmede açılır.
-- Kuruluş yılı / deneyim: TODO
+- **Paylaşım görseli (og:image) — unutma:** görsel hazır (Magnific, "Görsel · Paylaşım"; yerelde `medya/uretilen/paylasim.png`,
+  1376×768). Alan adı alınınca: 1200×630'a kırp, sol boşluğa logo ve kısa başlık ekle, `assets/img/paylasim/` altına koy,
+  tüm sayfalara mutlak adresle `og:image` (+ `og:url`, canonical) ekle. Sayfalardaki `TODO (alan adı kesinleşince)` yorumları bunu işaret ediyor.
+- Kuruluş yılı ve tarih: sitede verilmeyecek (kullanıcı kararı, 27 Kasım 2026). Deneyim yalnızca rakamlar şeridindeki "10+ yıl ekip tecrübesi".
 - Logo ve marka renkleri: logo `assets/img/logo/` (siyah YKA + mavi ASANSÖR kutusu), ana renk `#1948dd`, logo siyahı `#1d1d1b`.

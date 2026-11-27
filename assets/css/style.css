@@ -779,7 +779,7 @@ html.js:not(.hw) .hx-sec--3::after { content: ""; position: absolute; left: 0; r
   .cabs > li { max-width: none; }
   .cab { gap: 6px; }
   .cab__img { height: 400px; margin-bottom: 12px; }
-  .cab:hover .cab__img { transform: translateY(-4px); }
+  /* kabin kartları bağlantısız (kullanıcı kararı, 27 Kasım 2026): üzerine gelince kalkma yok */
   .cab__t { font-size: 19px; }
 }
 
@@ -2056,6 +2056,10 @@ a.il-c:hover .il-c__ic::before, a.il-c:focus-visible .il-c__ic::before { opacity
 .bl-card:focus-visible { outline: 2px solid var(--mavi); outline-offset: 3px; }
 .bl-cover { display: flex; align-items: center; justify-content: center; aspect-ratio: 1 / 1; color: rgba(255, 255, 255, .92); }
 .bl-cover svg { width: 40px; height: 40px; transition: transform .6s var(--ease); }
+/* Kart kapak fotoğrafı (27 Kasım 2026): varsa renkli zeminin üstünü kaplar, simge gizlenir */
+.bl-cover { position: relative; overflow: hidden; }
+.bl-cover__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: var(--op, 60% 50%); transition: transform .6s var(--ease); }
+.bl-cover:has(.bl-cover__img) svg { display: none; }
 .bl-body { display: flex; flex-direction: column; gap: 6px; padding: 12px 12px 14px; }
 .bl-cat { font-size: 11px; font-weight: 600; letter-spacing: .4px; color: var(--mavi-koyu); }
 .bl-t { font-size: 14.5px; line-height: 1.35; font-weight: 500; letter-spacing: -.1px; }
@@ -2094,6 +2098,7 @@ html:not(.js) .bl-tools, html:not(.js) .bl-more { display: none; }
   .bl-card { border-radius: 18px; }
   .bl-card:hover { transform: translateY(-3px); box-shadow: inset 0 0 0 1px #d2d4d0, 0 22px 44px -30px rgba(21, 24, 27, .35); }
   .bl-card:hover .bl-cover svg { transform: scale(1.08); }
+  .bl-card:hover .bl-cover__img { transform: scale(1.04); }
   .bl-card:hover .bl-go svg { transform: translateX(3px); }
   .bl-card:active { box-shadow: inset 0 0 0 1px #d2d4d0; }
   .bl-cover svg { width: 48px; height: 48px; }
@@ -2114,6 +2119,10 @@ html:not(.js) .bl-tools, html:not(.js) .bl-more { display: none; }
 /* ---------- Blog yazısı: görselsiz ve ortalı kapak; yazı sütunu 848 px ---------- */
 .by-hero { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; gap: 16px; padding: 96px var(--padx) var(--ic-bolum); background: radial-gradient(100% 80% at 50% 25%, #1f2429 0%, var(--koyu) 72%); color: var(--yazi-k); text-align: center; }
 .by-hero .kp-crumb { justify-content: center; }
+/* Yazı kapağı arka plan görseli (27 Kasım 2026, kullanıcı kararı): tasarım aynı, görsel arkada yarı saydam ve belli belirsiz */
+.by-hero__bg { position: absolute; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; -webkit-mask-image: radial-gradient(75% 85% at 50% 45%, #000 30%, transparent 100%); mask-image: radial-gradient(75% 85% at 50% 45%, #000 30%, transparent 100%); }
+.by-hero__bg img { width: 100%; height: 100%; object-fit: cover; object-position: var(--op, 50% 50%); opacity: .16; filter: grayscale(.35); }
+.js .by-hero > .by-hero__bg { animation: none; }
 /* başlık ":" sonrası alt satıra geçer, her parça dengeli kırılır; genişliği yazı sütununu geçmez */
 .by-h1 { max-width: 848px; font-size: min(30px, 7.8vw); line-height: 1.16; font-weight: 300; letter-spacing: -.8px; }
 .by-h1 span, .by-h1 em { display: block; text-wrap: balance; }
